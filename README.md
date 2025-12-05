@@ -1,29 +1,101 @@
 # Tech Knowledge Base
 
-Personal Zettelkasten for technical knowledge. Focus: deep understanding, long-term retention, active recall.
+A personal **Zettelkasten** for technical knowledge.
 
-## Folder Structure
+Optimized for **deep understanding**, **long-term retention**, and **active recall**.
 
-### 00-Inbox/
-Capture zone for raw ideas, articles, highlights. Process within 7 days—either convert to atomic notes or discard.
+---
 
-### 01-MOCs/
-Maps of Content. Navigation hubs that link related atomic notes. One MOC per major topic (e.g., `Java MOC.md`, `System Design MOC.md`).
+## What is This?
 
-### 02-Zettelkasten/
-Core of the system. Atomic notes with statement-style titles (e.g., `WebSocket enables full-duplex communication.md`). Flat structure—no subfolders. Each note = one idea, 3-15 sentences, linked to related notes and parent MOC.
+A knowledge management system based on the Zettelkasten method.
 
-### 03-Reference/
-Quick-lookup material. Cheat sheets, command references, API docs. Uses folder hierarchy by topic. Not for learning—for retrieval.
+You capture ideas → process them → convert to permanent knowledge → practice with spaced repetition.
 
-### 04-Flashcards/
-Spaced repetition cards using Obsidian SR plugin. One file per topic. Q&A pairs and cloze deletions for active recall practice.
+Focus areas: **Backend**, **DevOps**, **System Design**.
 
-### 05-Projects/
-Active learning projects. Temporary workspace for courses, certifications, or focused study sprints. Move to Archive when complete.
+---
 
-### 06-Archive/
-Completed projects and outdated notes. Searchable but out of active workflow.
+## How It Works
 
-### Templates/
-Note templates for consistent formatting. Use with Templater or core Templates plugin.
+**Capture** raw ideas in Inbox.
+
+**Create** three types of permanent knowledge:
+- **Atomic Notes** — conceptual understanding (Zettelkasten)
+- **Reference** — syntax & commands (cheatsheets)
+- **Flashcards** — memorization (spaced repetition)
+
+**Navigate** with Maps of Content (MOCs) to connect related notes.
+
+**Review** flashcards daily for retention.
+
+---
+
+## Quick Links
+
+| Doc | Purpose |
+|-----|---------|
+| [[PROJECT_STRUCTURE]] | Detailed folder explanations |
+| [[WORKFLOW]] | Step-by-step note creation process |
+| [[CLAUDE.md]] | Configuration for Claude Code |
+
+---
+
+## Folder Overview
+
+```
+00-Inbox/           Raw captures (process within 7 days)
+01-MOCs/            Navigation hubs for topics
+02-Zettelkasten/    Atomic permanent notes (core)
+03-Reference/       Commands, cheatsheets, syntax
+04-Flashcards/      Spaced repetition cards
+05-Projects/        Active learning (courses, studies)
+06-Archive/         Completed projects & outdated notes
+Templates/          Note templates
+```
+
+See [[PROJECT_STRUCTURE]] for detailed explanations.
+
+---
+
+## Getting Started
+
+1. **Read** [[WORKFLOW]] to understand the phases
+2. **Capture** ideas in 00-Inbox/
+3. **Process** within 7 days (see [[WORKFLOW]] Phase 2)
+4. **Create** atomic notes or reference material
+5. **Review** flashcards daily (5-10 min)
+
+---
+
+## Key Principles
+
+**Atomic:** One idea per note.
+
+**Linked:** Every note connects to related notes & parent MOC.
+
+**Separate:** Learning notes (Zettelkasten) vs Lookup (Reference).
+
+**Permanent:** Inbox → Process → Permanent → Archive.
+
+---
+
+## For Claude Code Users
+
+Using AI to generate flashcards or notes? See [[CLAUDE.md]] for configuration.
+
+**Note:** Writing notes yourself is recommended. AI assists with structure, not understanding.
+
+---
+
+## Tech Stack
+
+Languages: Java, Kotlin, Python
+
+Tools: Obsidian + SR Plugin
+
+Version Control: Git (GitHub)
+
+---
+
+For detailed information, see the linked documents above.

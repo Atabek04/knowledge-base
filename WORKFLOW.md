@@ -124,34 +124,23 @@ Is this outdated/irrelevant?
 
 1. Create file: `04-Flashcards/{Topic}.md`
 2. Add frontmatter: `tags: [flashcards/topic]`
-3. Choose card type and syntax:
+3. Choose card type and use correct syntax (see [[04-Flashcards/00-Flashcard Syntax Guide]] for complete reference)
 
-**Single-line Q&A (::):**
-```
-What command undoes a commit?::`git reset --soft HEAD~1`
-```
+**Quick syntax examples:**
 
-**Multi-line Q&A (?):**
-```
-What is rebasing?
-?
-Moving commits on top of another branch to create linear history.
-Rewrites commit SHAs, so never rebase pushed commits.
-```
+Single-line Q&A: `question::answer`
 
-**Cloze deletion (==):**
-```
-Git reset moves the branch pointer ==backward==.
-```
+Multi-line Q&A: question on one line, `?`, then answer
 
-**Bidirectional (:::):**
-```
-DVCS:::Distributed Version Control System
-```
+Cloze deletion: `==hidden==`
+
+Bidirectional: `term:::definition`
 
 4. Bold **key terms** in both question and answer
 5. Keep one concept per card
 6. Use active recall (question requires retrieval)
+
+**See [[04-Flashcards/00-Flashcard Syntax Guide]] for complete syntax guide with all card types and examples.**
 
 ---
 
