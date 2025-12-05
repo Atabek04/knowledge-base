@@ -1,0 +1,265 @@
+{
+  "main": {
+    "id": "5bafa60154096566",
+    "type": "split",
+    "children": [
+      {
+        "id": "2752af9c4e98f327",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25da4f7617ef3fd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "c95bbcdaee679964",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WORKFLOW.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WORKFLOW"
+            }
+          },
+          {
+            "id": "5cee17fa11f44c39",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04-Flashcards/00-Flashcard Syntax Guide.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00-Flashcard Syntax Guide"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6bb289d69ecd7cf0",
+    "type": "split",
+    "children": [
+      {
+        "id": "11b880e900c24e46",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0d981c3b89de935",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5bd4c2a3ab121fe3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9b23fd7027f865c5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "551b3146c29fffb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "44f9ffbb195d7d05",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ece96fc498f3dd19",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "04-Flashcards/Git.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Git"
+            }
+          },
+          {
+            "id": "3c8a9a4eb4e97d2f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "04-Flashcards/Git.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Git"
+            }
+          },
+          {
+            "id": "49a2ced41b2d774a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ae69675bc5d3c9e4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "fe75b7ce7af995ac",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "04-Flashcards/00-Flashcard Syntax Guide.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 00-Flashcard Syntax Guide"
+            }
+          },
+          {
+            "id": "a7558a5b33825762",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-spaced-repetition:Review flashcards": false
+    }
+  },
+  "active": "5cee17fa11f44c39",
+  "lastOpenFiles": [
+    "WORKFLOW.md",
+    "README.md",
+    "CLAUDE.md",
+    "04-Flashcards/00-Flashcard Syntax Guide.md",
+    "Templates/Flashcard Deck.md",
+    "01-MOCs/Shortcuts MOC.md",
+    "01-MOCs/Shortcuts MOC.md.tmp.16847.1764910861981",
+    "Untitled 3.base",
+    "Untitled 2.base",
+    "Untitled 1.base",
+    "Untitled.base",
+    "03-Reference/IntelliJ IDEA/Shortcuts.md",
+    "02-Zettelkasten/Git rebase rewrites history by replaying commits on a new base.md",
+    "01-MOCs/Git MOC.md",
+    "02-Zettelkasten/Git reset removes commits while revert creates inverse commits.md",
+    "03-Reference/Obsidian/Shortcuts.md",
+    "WORKFLOW.md.tmp.16847.1764910535167",
+    "Templates/MOC.md",
+    "Obsidi.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "00-Inbox/Just checking frotmatter.md",
+    "03-Reference/Git/Commands.md",
+    "03-Reference/IntelliJ IDEA/Shortcuts.md.tmp.16847.1764908241670",
+    "03-Reference/Obsidian/Shortcuts.md.tmp.16847.1764908226914",
+    "03-Reference/Vim/Shortcuts.md",
+    "03-Reference/Vim/Shortcuts.md.tmp.16847.1764908214854",
+    "03-Reference/IntelliJ IDEA",
+    "Concept Note 2.md",
+    "02-Zettelkasten/Detached HEAD occurs when HEAD points to a commit instead of a branch.md",
+    "02-Zettelkasten/Git tilde selects ancestor depth while caret selects parent number.md",
+    "02-Zettelkasten/Git stash temporarily shelves changes without committing.md",
+    "02-Zettelkasten/Git merge preserves branch history while rebase linearizes it.md",
+    "02-Zettelkasten/Force push with --force-with-lease prevents overwriting others work.md",
+    "02-Zettelkasten/Cherry-pick applies specific commits to current branch.md",
+    "04-Flashcards/Git.md"
+  ]
+}
