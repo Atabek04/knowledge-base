@@ -107,13 +107,20 @@ Extract key concepts → create Q&A pairs → save to 04-Flashcards/{topic}.md
 
 ### Process inbox
 
-Move from 00-Inbox/ → appropriate location with proper formatting
+Check [[Inbox Review Dashboard]] for overdue items → Move from 00-Inbox/ → appropriate location with proper formatting
 
 ### Link audit
 
 Find orphan notes (no incoming links) → suggest connections
 
 ## File Operations
+
+### New inbox capture
+
+1. Create in `00-Inbox/`
+2. Use **Inbox Item** template (auto-adds `created` date)
+3. Minimal formatting (raw capture)
+4. Process within 7 days (check [[Inbox Review Dashboard]])
 
 ### New atomic note
 

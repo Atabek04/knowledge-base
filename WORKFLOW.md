@@ -16,9 +16,12 @@ The complete process for capturing, processing, and retaining knowledge in this 
 - Raw highlights from books
 
 **How:**
-1. Quick capture without formatting
+1. Quick capture using the **Inbox Item** template (auto-adds creation date)
 2. Minimal structure — just the idea
 3. No need for perfect wording
+
+**Tracking deadline:**
+Use [[Inbox Review Dashboard]] to see item age and identify overdue captures.
 
 **Example:**
 ```
@@ -281,8 +284,8 @@ Cheatsheets)                         Atomic Notes)
 ## Daily Routine
 
 1. **Morning (5 min):** Review due flashcards
-2. **During Learning:** Capture in Inbox
-3. **Evening (15 min):** Process inbox → create notes
+2. **During Learning:** Capture in Inbox (use Inbox Item template)
+3. **Evening (15 min):** Check [[Inbox Review Dashboard]] → process items → create notes
 4. **Weekly (30 min):** Review connections, audit orphans
 
 ---
