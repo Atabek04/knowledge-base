@@ -15,8 +15,10 @@ The complete process for capturing, processing, and retaining knowledge in this 
 - Links to articles/resources
 - Raw highlights from books
 
+Read more about:  [[Fleeting Notes]]
+
 **How:**
-1. Quick capture using the **Inbox Item** template (auto-adds creation date)
+1. Quick capture using the **Inbox Item** template: `Ctrl + Shift + I`
 2. Minimal structure — just the idea
 3. No need for perfect wording
 
@@ -33,7 +35,8 @@ Need to understand this better
 
 ## Phase 2: Process
 
-Convert inbox captures into permanent knowledge. Decide the destination.
+Convert inbox captures into permanent knowledge. 
+Decide the destination.
 
 ### Decision Tree
 
@@ -61,7 +64,7 @@ Is this outdated/irrelevant?
 
 **Steps:**
 
-1. **Write statement-style title** (not "Reset" but "Git reset removes commits by moving branch pointer")
+1. **Write statement-style title** [[#Title Rules|(learn here)]]
 2. **Explain in own words** (3-15 sentences)
 3. **Add frontmatter:**
    ```yaml
@@ -77,12 +80,36 @@ Is this outdated/irrelevant?
 5. **Link to parent MOC**
 6. **Review:** Does the title stand alone? Are key terms bolded?
 
-**Quality Check:**
-- ✓ Title is a complete statement
-- ✓ Explanation in own words (not copied)
-- ✓ Linked to related concepts
-- ✓ Linked to MOC
-- ✓ No orphan notes
+---
+
+#### Title Rules
+
+**Principle:** Title must be a complete claim, not a topic label.
+
+❌ Bad example: 
+	"WebSocket", 
+	"Reset", 
+	"TCP"
+✓ Good example: 
+	"WebSocket provides full-duplex communication over TCP",
+	"Git reset removes commits by moving branch pointer"
+
+**Why?**
+- Complete claim = standalone understanding
+- Searchable by concept, not just keyword
+- Self-explains when linked
+
+**Test:** ==Read title alone. Does it teach something==, or just name a thing?
+
+---
+
+#### Quality Check of Atomic Notes
+
+- Title is a complete statement
+- Explanation in own words (not copied)
+- ==Linked to related concepts==
+- ==Linked to MOC==
+- No orphan notes
 
 ---
 
@@ -111,9 +138,9 @@ Is this outdated/irrelevant?
 ```markdown
 ## Stashing
 
-| Command | Action |
-|---------|--------|
-| git stash | Save changes |
+| Command       | Action             |
+|---------------|--------------------|
+| git stash     | Save changes       |
 | git stash pop | Restore and remove |
 ```
 
@@ -127,27 +154,13 @@ Is this outdated/irrelevant?
 
 1. Create file: `04-Flashcards/{Topic}.md`
 2. Add frontmatter: `tags: [flashcards/topic]`
-3. Choose card type and use correct syntax (see [[04-Flashcards/00-Flashcard Syntax Guide]] for complete reference)
+3. Choose card type and use correct syntax
 
-**Quick syntax examples:**
-
-Single-line Q&A: `question::answer`
-
-Multi-line Q&A: question on one line, `?`, then answer
-
-Cloze deletion: `==hidden==`
-
-Bidirectional: `term:::definition`
-
-4. Bold **key terms** in both question and answer
-5. Keep one concept per card
-6. Use active recall (question requires retrieval)
-
-**See [[04-Flashcards/00-Flashcard Syntax Guide]] for complete syntax guide with all card types and examples.**
+Learn about syntax: [[04-Flashcards/00-Flashcard Syntax Guide]]
 
 ---
 
-### 3D. Maps of Content (01-MOCs/)
+### 3D. Maps of Content (MOCs)
 
 **When:** Creating a navigation hub for related atomic notes
 
@@ -231,53 +244,6 @@ Notes with 0 incoming links are orphaned:
 - Archived notes remain accessible
 - Use for historical context if needed
 - Don't delete permanently
-
----
-
-## Decision: Reference vs Zettelkasten
-
-| Aspect | Reference (03-Reference/) | Zettelkasten (02-Zettelkasten/) |
-|--------|--------------------------|--------------------------------|
-| **Purpose** | Lookup | Understanding |
-| **Question** | "How do I...?" | "Why does...?" |
-| **Format** | Commands, syntax, steps | Concepts, explanations |
-| **Retention** | Don't need to memorize | Build mental model |
-| **Flashcards?** | Maybe (frequent use) | Yes (foundational) |
-
-**Rule:** If you'd look it up the same way twice, it's Reference. If you need to understand it deeply, it's Zettelkasten.
-
----
-
-## Workflow at a Glance
-
-```
-Raw Idea
-   ↓
-00-Inbox/ (Capture)
-   ↓
-Decide: Lookup? Understand? Project? Archive?
-   ↓
-┌──────────────────────────────────────────┐
-│                                          │
-↓                                          ↓
-03-Reference/                         02-Zettelkasten/
-(Commands,                           (Concepts,
-Cheatsheets)                         Atomic Notes)
-   ↓                                    ↓
-   └────────────┬──────────────────────┘
-                ↓
-          01-MOCs/
-        (Navigation
-         Hub)
-                ↓
-          04-Flashcards/
-          (Active Recall)
-                ↓
-           Daily Review
-           (SR Plugin)
-                ↓
-          Long-term Retention
-```
 
 ---
 

@@ -11,7 +11,8 @@ Check this dashboard during your evening 15-minute inbox processing session.
 
 ---
 
-## 🔴 URGENT: Overdue Items (>7 days)
+## 🔴 URGENT
+### Overdue Items (>7 days)
 
 These items MUST be processed today. They've exceeded the 7-day deadline.
 
@@ -29,7 +30,8 @@ SORT created ASC
 
 ---
 
-## 🟡 WARNING: Approaching Deadline (4-7 days)
+## 🟡 WARNING
+### Approaching Deadline (4-7 days)
 
 These items are aging. Schedule processing soon.
 
@@ -48,7 +50,8 @@ SORT created ASC
 
 ---
 
-## 🟢 FRESH: Recent Captures (<4 days)
+## 🟢 FRESH
+### Recent Captures (<4 days)
 
 Newly captured items. Still within healthy processing window.
 
