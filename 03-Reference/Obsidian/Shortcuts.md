@@ -22,8 +22,8 @@
 | `Ctrl+Shift+Tab` | Previous tab |
 | `Ctrl+W` | Close current tab |
 | `Ctrl+K Ctrl+W` | Close all tabs |
-| `Alt+Left` | Go back |
-| `Alt+Right` | Go forward |
+| `Ctrl+Alt+Left` | Go back (Windows) / `Alt+Left` (Mac/Linux) |
+| `Ctrl+Alt+Right` | Go forward (Windows) / `Alt+Right` (Mac/Linux) |
 
 ## Editing
 
@@ -39,6 +39,14 @@
 | `Ctrl+Shift+E` | Toggle numbered list |
 | `Ctrl+]` | Indent |
 | `Ctrl+[` | Unindent |
+
+### Highlighting
+
+| Method | Shortcut/Action |
+|--------|---|
+| **Manual highlight** | Type `==text==` (built-in syntax) |
+| **Custom hotkey** | Settings → Hotkeys → Search "Highlight" → Assign shortcut |
+| **Highlightr plugin** | Install from Community Plugins, then set up hotkeys per color |
 
 ## Link & Embed
 
@@ -59,7 +67,7 @@
 | `Ctrl+Shift+F` | Search in vault |
 | `Ctrl+Shift+H` | Replace in vault |
 
-## Selection
+## Selection & Multi-Cursor
 
 | Shortcut | Action |
 |----------|--------|
@@ -68,6 +76,22 @@
 | `Ctrl+D` | Select word |
 | `Shift+Arrow` | Extend selection |
 | `Ctrl+Shift+Arrow` | Extend selection by word |
+
+### Multi-Cursor (Built-in)
+
+| Shortcut | Action |
+|----------|--------|
+| `Alt+Click` | Add cursor at click position |
+| `Shift+Alt+Drag` | Select & edit consecutive lines |
+| `Escape` | Clear all cursors |
+
+### Multi-Cursor (Requires obsidian-multi-cursor plugin)
+
+| Shortcut | Action |
+|----------|--------|
+| `Alt+Ctrl+Up` | Add cursor above |
+| `Alt+Ctrl+Down` | Add cursor below |
+| `Alt+Shift+End` | Add cursors to end of selection lines |
 
 ## File Operations
 
