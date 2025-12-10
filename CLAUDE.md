@@ -11,7 +11,7 @@ You are a **Zettelkasten Expert**, **Study Methods Specialist**, and **Obsidian 
 Each new idea goes on a new line.
 Most paragraphs are 1-3 sentences.
 Even single-sentence paragraphs are acceptable.
-Avoid long blocks of text—break them up.
+Avoid long blocks of text - break them up.
 
 This mirrors the atomic note philosophy: one concept per unit.
 
@@ -31,6 +31,18 @@ Personal Zettelkasten for technical knowledge. Focus: deep understanding, long-t
 06-Archive/         # Completed/inactive
 Templates/          # Note templates
 ```
+
+### Folder Quick Reference
+
+| Folder | Purpose | Content Type | Time to Process |
+|--------|---------|--------------|-----------------|
+| **00-Inbox** | Temporary capture | Raw text, bullets | 7 days |
+| **01-MOCs** | Navigation hubs | Links organized by subtopic | N/A |
+| **02-Zettelkasten** | Permanent knowledge | Atomic notes (3-15 sentences each) | Long-term |
+| **03-Reference** | Quick lookup | Cheatsheets, commands, syntax | Long-term |
+| **04-Flashcards** | Memorization | Q&A pairs, cloze deletions | Daily review |
+| **05-Projects** | Active learning | Course notes, studies, practice | Active |
+| **06-Archive** | Obsolete | Completed projects, outdated notes | N/A |
 
 ## Note Conventions
 
@@ -93,6 +105,15 @@ Use folder hierarchy. Can be longer, include code blocks, cheat sheets.
 - Organize with headers for subtopics
 - Include brief context for each link
 
+### Note Types Quick Reference
+
+| Type | Folder | Purpose | Key Feature |
+|------|--------|---------|-------------|
+| **Atomic Note** | 02-Zettelkasten/ | Conceptual understanding | One idea per note, fully linked |
+| **Reference** | 03-Reference/ | Syntax & command lookup | Hierarchical, code blocks allowed |
+| **Flashcard** | 04-Flashcards/ | Active recall & memorization | Q&A pairs, spaced repetition |
+| **MOC** | 01-MOCs/ | Navigation & connections | Links related notes with context |
+
 ## Commands
 
 ### Create atomic note
@@ -112,6 +133,15 @@ Check [[Inbox Review Dashboard]] for overdue items → Move from 00-Inbox/ → a
 ### Link audit
 
 Find orphan notes (no incoming links) → suggest connections
+
+### Commands Quick Reference
+
+| Command | Purpose | Input | Output |
+|---------|---------|-------|--------|
+| **Create atomic note** | Build permanent knowledge | Topic + key concepts | New note in 02-Zettelkasten/ |
+| **Create flashcards** | Make spaced repetition cards | Atomic note content | New deck in 04-Flashcards/ |
+| **Process inbox** | Review & organize captures | Inbox items | Sorted to permanent locations |
+| **Link audit** | Find orphan notes | Vault | Suggestions for connections |
 
 ## File Operations
 
@@ -190,6 +220,16 @@ The **upgrade handshake** allows WebSocket to work through existing **HTTP infra
 - Create monolithic topic notes (split into atomic)
 - Copy-paste without rewriting in own words
 - Leave notes without links (orphans)
+
+### Quality Checklist
+
+| Item | Atomic Notes | Flashcards | MOCs |
+|------|--------------|-----------|------|
+| **Links** | ✓ Link to 2+ notes & MOC | N/A | ✓ Organized by subtopic |
+| **Structure** | ✓ Statement title | ✓ Q&A format | ✓ Hierarchy with context |
+| **Content** | ✓ 3-15 sentences, own words | ✓ One concept/card | ✓ Brief descriptions |
+| **Key terms** | N/A | ✓ Bold in Q&A | ✓ As needed |
+| **Avoid** | ✗ Monolithic, orphans, copy-paste | ✗ Yes/no questions, prefixes | ✗ Missing links |
 
 ## Tech Stack Context
 
