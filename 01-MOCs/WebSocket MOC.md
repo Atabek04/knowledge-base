@@ -5,7 +5,8 @@ tags: [moc]
 
 # WebSocket MOC
 
-Full-duplex communication protocol for real-time applications over a single TCP connection. Covers WebSocket protocol mechanics, problem-solving capabilities, and comparisons with HTTP alternatives.
+Full-duplex communication protocol for real-time applications over a single TCP connection. 
+Covers WebSocket protocol mechanics, problem-solving capabilities, and comparisons with HTTP alternatives.
 
 ## Fundamentals
 

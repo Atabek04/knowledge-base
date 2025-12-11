@@ -111,13 +111,13 @@ Hint appears during review.
 
 ## Quick Reference
 
-| Type | Separator | Cards Created |
-|------|-----------|---------------|
-| Single-line basic | `::` | 1 |
-| Single-line bidirectional | `:::` | 2 |
-| Multi-line basic | `?` | 1 |
-| Multi-line bidirectional | `??` | 2 |
-| Cloze | `==text==` | 1 per deletion |
+| Type                      | Separator  | Cards Created  |
+| ------------------------- | ---------- | -------------- |
+| Single-line basic         | `::`       | 1              |
+| Single-line bidirectional | `:::`      | 2              |
+| Multi-line basic          | `?`        | 1              |
+| Multi-line bidirectional  | `??`       | 2              |
+| Cloze                     | `==text==` | 1 per deletion |
 
 ---
 
@@ -135,13 +135,13 @@ Hint appears during review.
 
 Settings → Spaced Repetition:
 
-| Setting | Recommended |
-|---------|-------------|
-| Flashcard tags | `#flashcards` |
-| Single-line separator | `::` (default) |
-| Multi-line separator | `?` (default) |
-| Bidirectional separator | `:::` / `??` |
-| Cloze delimiter | `==` (default) |
+| Setting                 | Recommended    |
+| ----------------------- | -------------- |
+| Flashcard tags          | `#flashcards`  |
+| Single-line separator   | `::` (default) |
+| Multi-line separator    | `?` (default)  |
+| Bidirectional separator | `:::` / `??`   |
+| Cloze delimiter         | `==` (default) |
 
 ---
 
