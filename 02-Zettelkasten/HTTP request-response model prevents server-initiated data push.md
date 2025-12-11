@@ -6,25 +6,24 @@ sr-interval:
 sr-ease:
 ---
 
-# HTTP request-response model prevents server-initiated data push
+HTTP is built on a **request-response model** where the **client must always initiate communication**.
 
-HTTP is built on a **request-response model** where the **client must always initiate communication**. The server cannot send data to the client unless the client asks for it first.
+The server cannot send data to the client unless the client asks for it first.
 
-This creates several problems for real-time scenarios:
+This is a ==fundamental architectural constraint==, not a bug.
 
-**1. Polling inefficiency:** The client must repeatedly ask "do you have updates?" even when there's nothing new, wasting bandwidth and server resources.
+HTTP was designed for document retrieval: client requests a page, server responds. This works well for traditional web browsing.
 
-**2. Latency:** There's always a delay between when the server has new data and when the client asks for it.
+But for real-time scenarios (chat, live prices, notifications), the server often has new data before the client knows to ask for it.
 
-**3. Connection overhead:** Each request requires establishing a connection, sending headers, and processing the request/response cycle.
+The server must wait for clients to ask, rather than pushing updates immediately.
 
-For scenarios like chat applications, live stock prices, or notifications, this limitation is significant. The server must wait for clients to ask, rather than pushing updates immediately.
-
-This is the fundamental problem that WebSocket solves by enabling server-initiated data push.
+This limitation led to workarounds like **polling**, and eventually to protocols like **WebSocket** that enable true server push.
 
 ## Links
 
 - [[Request-response communication requires new requests for each data exchange]]
 - [[HTTP Keep-Alive reuses TCP connections across multiple requests]]
 - [[Polling repeatedly requests updates to simulate real-time communication]]
+- [[Bandwidth is the max capacity of data in network connection]]
 - [[Networking MOC]]

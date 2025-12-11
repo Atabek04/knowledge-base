@@ -6,8 +6,6 @@ sr-interval:
 sr-ease:
 ---
 
-# WebSocket maintains persistent TCP connection for bidirectional messaging
-
 After the WebSocket upgrade handshake completes, the **TCP connection stays open continuously** and both client and server can **send data at any time** without request/response pairing.
 
 Key characteristics:

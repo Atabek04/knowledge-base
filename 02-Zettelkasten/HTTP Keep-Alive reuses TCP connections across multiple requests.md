@@ -6,9 +6,7 @@ sr-interval:
 sr-ease:
 ---
 
-# HTTP Keep-Alive reuses TCP connections across multiple requests
-
-HTTP/1.1 introduced **"Keep-Alive"** (also called "persistent connections"), which allows the TCP connection to remain open and be reused for **multiple request-response cycles**.
+HTTP/1.1 introduced **"Keep-Alive"** (also called "persistent connections"), which allows the TCP connection to remain open and be reused for **multiple request-response cycles**
 
 Without Keep-Alive, the connection closes after each response, requiring a new three-way handshake for every request.
 
@@ -22,7 +20,9 @@ With Keep-Alive:
 
 This is an **efficiency improvement** because establishing TCP connections is expensive (three-way handshake overhead).
 
-However, **Keep-Alive is still request-response only**. The server still cannot send data unless the client requests it first. Each message pair still has HTTP header overhead.
+However, **Keep-Alive is still request-response only**. 
+The server still cannot send data unless the client requests it first. 
+Each message pair still has HTTP header overhead.
 
 WebSocket goes further by upgrading the connection to enable true bidirectional communication.
 

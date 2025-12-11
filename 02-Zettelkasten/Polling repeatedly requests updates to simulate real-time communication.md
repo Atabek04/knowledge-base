@@ -6,8 +6,6 @@ sr-interval:
 sr-ease:
 ---
 
-# Polling repeatedly requests updates to simulate real-time communication
-
 **Polling** is a workaround pattern to simulate real-time updates when using HTTP's request-response model.
 
 The client repeatedly sends requests at fixed intervals asking "do you have updates?" For example, sending `GET /api/messages` every 5 seconds to check for new messages.

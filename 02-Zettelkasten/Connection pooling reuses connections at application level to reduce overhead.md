@@ -6,8 +6,6 @@ sr-interval:
 sr-ease:
 ---
 
-# Connection pooling reuses connections at application level to reduce overhead
-
 **Connection pooling** is an application-level pattern that maintains a **pool of reusable connections** to reduce the cost of creating new connections.
 
 Common examples:

@@ -6,9 +6,7 @@ sr-interval:
 sr-ease:
 ---
 
-# Persistent connections enable continuous bidirectional data flow
-
-In persistent connection communication, the client and server establish a connection that stays open continuously.
+In persistent connection communication, the client and server establish a ==connection that stays open continuously==.
 
 Either party can send data at any time without initiating a new request or establishing a new connection.
 

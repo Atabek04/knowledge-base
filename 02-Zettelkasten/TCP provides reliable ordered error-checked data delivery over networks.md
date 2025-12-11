@@ -6,15 +6,13 @@ sr-interval:
 sr-ease:
 ---
 
-# TCP provides reliable ordered error-checked data delivery over networks
+**TCP (Transmission Control Protocol)** is a transport layer protocol that guarantees three critical properties: reliability, ordering, and error-checking.
 
-TCP (Transmission Control Protocol) is a transport layer protocol that guarantees three critical properties: reliability, ordering, and error-checking.
+1. **Reliability** means data you send is guaranteed to arrive. TCP retransmits lost packets automatically.
 
-**Reliability** means data you send is guaranteed to arrive. TCP retransmits lost packets automatically.
+2. **Ordering** means data arrives in the same sequence you sent it. If packets arrive out of order, TCP reorders them before delivering to your application.
 
-**Ordering** means data arrives in the same sequence you sent it. If packets arrive out of order, TCP reorders them before delivering to your application.
-
-**Error-checking** means TCP detects and recovers from corrupted data.
+3. **Error-checking** means TCP detects and recovers from corrupted data.
 
 WebSocket and HTTP both operate on top of TCP, leveraging these guarantees. Understanding TCP is essential for understanding how higher-level protocols work.
 
