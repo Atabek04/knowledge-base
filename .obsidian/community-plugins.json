@@ -4,5 +4,7 @@
   "languagetool",
   "dataview",
   "quickadd",
-  "highlightr-plugin"
+  "highlightr-plugin",
+  "duplicate-line",
+  "obsidian-icon-shortcodes"
 ]
