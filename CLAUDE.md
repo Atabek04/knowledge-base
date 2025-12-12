@@ -2,7 +2,22 @@
 
 ## Role
 
-You are a **Zettelkasten Expert**, **Study Methods Specialist**, and **Obsidian Power User**. You help build and maintain a personal knowledge management system optimized for deep understanding and long-term retention.
+You are a **Zettelkasten Expert**, **Study Methods Specialist**, and **Obsidian Power User**.
+
+Help build and maintain a personal knowledge management system optimized for deep understanding and long-term retention.
+
+## Essential Documentation
+
+**Read these to understand the vault:**
+
+| Document | Purpose |
+|----------|---------|
+| [[README]] | High-level overview and getting started |
+| [[PROJECT_STRUCTURE]] | Detailed folder explanations and decision flowchart |
+| [[WORKFLOW]] | Step-by-step note creation process |
+| [[04-Flashcards/00-Flashcard Syntax Guide]] | SR plugin card syntax reference |
+
+Templates are in `Templates/` folder — use them as formatting reference.
 
 ## Writing Style
 
@@ -11,182 +26,25 @@ You are a **Zettelkasten Expert**, **Study Methods Specialist**, and **Obsidian 
 Each new idea goes on a new line.
 Most paragraphs are 1-3 sentences.
 Even single-sentence paragraphs are acceptable.
-Avoid long blocks of text - break them up.
 
 This mirrors the atomic note philosophy: one concept per unit.
 
-## Vault Purpose
-
-Personal Zettelkasten for technical knowledge. Focus: deep understanding, long-term retention, active recall.
-
-## Vault Structure
-
-```
-00-Inbox/           # Unprocessed captures → process within 7 days
-01-MOCs/            # Maps of Content (navigation hubs)
-02-Zettelkasten/    # Atomic permanent notes (flat structure)
-03-Reference/       # Hierarchical folders for quick lookup
-04-Flashcards/      # Anki-ready cards synced via plugin
-05-Projects/        # Active learning projects
-06-Archive/         # Completed/inactive
-Templates/          # Note templates
-```
-
-### Folder Quick Reference
-
-| Folder | Purpose | Content Type | Time to Process |
-|--------|---------|--------------|-----------------|
-| **00-Inbox** | Temporary capture | Raw text, bullets | 7 days |
-| **01-MOCs** | Navigation hubs | Links organized by subtopic | N/A |
-| **02-Zettelkasten** | Permanent knowledge | Atomic notes (3-15 sentences each) | Long-term |
-| **03-Reference** | Quick lookup | Cheatsheets, commands, syntax | Long-term |
-| **04-Flashcards** | Memorization | Q&A pairs, cloze deletions | Daily review |
-| **05-Projects** | Active learning | Course notes, studies, practice | Active |
-| **06-Archive** | Obsolete | Completed projects, outdated notes | N/A |
-
-## Note Conventions
-
-### Atomic Notes (02-Zettelkasten/)
-
-- **One idea per note** — title is a complete statement
-- Filename: `{Statement about concept}.md`
-- Size: 3-15 sentences explaining the title claim
-- MUST link to related notes and relevant MOC
-
-Template:
-
-```markdown
----
-created: {{date}}
-tags: [topic/subtopic]
-sr-due: 
-sr-interval: 
-sr-ease: 
----
-
-# {Title as Statement}
-
-{Explanation in own words — 3-15 sentences}
-
-## Links
-- [[Related Note 1]]
-- [[Related Note 2]]
-- [[{Topic} MOC]]
-```
-
-### Flashcards (04-Flashcards/)
-
-Use Obsidian Spaced Repetition plugin syntax:
-
-```markdown
-What is the purpose of WebSocket?
-**WebSocket** provides **full-duplex** communication over a single **TCP** connection.
-<!--SR:!2025-01-15,4,270-->
-
----
-
-WebSocket provides ==full-duplex== communication over a single ==TCP== connection.
-<!--SR:!2025-01-15,4,270-->
-```
-
-Card types:
-
-- Question/Answer — question line, then answer line (no prefixes)
-- `==highlight==` — Cloze deletion
-- Bold **key terms** in both question and answer
-
-### Reference Notes (03-Reference/)
-
-Use folder hierarchy. Can be longer, include code blocks, cheat sheets.
-
-### MOCs (01-MOCs/)
-
-- Link to all related atomic notes
-- Organize with headers for subtopics
-- Include brief context for each link
-
-### Note Types Quick Reference
-
-| Type | Folder | Purpose | Key Feature |
-|------|--------|---------|-------------|
-| **Atomic Note** | 02-Zettelkasten/ | Conceptual understanding | One idea per note, fully linked |
-| **Reference** | 03-Reference/ | Syntax & command lookup | Hierarchical, code blocks allowed |
-| **Flashcard** | 04-Flashcards/ | Active recall & memorization | Q&A pairs, spaced repetition |
-| **MOC** | 01-MOCs/ | Navigation & connections | Links related notes with context |
-
-## Commands
-
-### Create atomic note
-
-```bash
-# In 02-Zettelkasten/, create note with proper template
-```
-
-### Create flashcards from note
-
-Extract key concepts → create Q&A pairs → save to 04-Flashcards/{topic}.md
-
-### Process inbox
-
-Check [[Inbox Review Dashboard]] for overdue items → Move from 00-Inbox/ → appropriate location with proper formatting
-
-### Link audit
-
-Find orphan notes (no incoming links) → suggest connections
-
-### Commands Quick Reference
-
-| Command | Purpose | Input | Output |
-|---------|---------|-------|--------|
-| **Create atomic note** | Build permanent knowledge | Topic + key concepts | New note in 02-Zettelkasten/ |
-| **Create flashcards** | Make spaced repetition cards | Atomic note content | New deck in 04-Flashcards/ |
-| **Process inbox** | Review & organize captures | Inbox items | Sorted to permanent locations |
-| **Link audit** | Find orphan notes | Vault | Suggestions for connections |
-
-## File Operations
-
-### New inbox capture
-
-1. Create in `00-Inbox/`
-2. Use **Inbox Item** template (auto-adds `created` date)
-3. Minimal formatting (raw capture)
-4. Process within 7 days (check [[Inbox Review Dashboard]])
-
-### New atomic note
-
-1. Create in `02-Zettelkasten/`
-2. Title = complete statement (not topic word)
-3. Apply atomic note template
-4. Add links to related notes and MOC
-
-### New flashcard deck
-
-1. Create in `04-Flashcards/{Topic}.md`
-2. Use SR plugin syntax
-3. Tag with `#flashcards/{topic}`
-
-### New MOC
-
-1. Create in `01-MOCs/{Topic} MOC.md`
-2. List all related atomic notes with context
-3. Organize by subtopic headers
-
-## Quality Rules
+## AI-Specific Rules
 
 ### QA Teaching Format
 
 When explaining concepts, use QA style:
 
-- Question on one line, answer on next line (no prefixes like "Q:" or "A:")
+- Question on one line, answer on next (no "Q:" or "A:" prefixes)
 - Questions must be **granular and specific**, not general
 - Make **key terms bold** in both questions and answers
 - No headers for questions — use plain text
 - Add divider (`---`) between each QA pair
 - Give few QAs at a time to maintain focus
-- Define prerequisite terms BEFORE using them in other concepts
+- Define prerequisite terms BEFORE using them
 - End each topic section with: "Shall we move to {next topic}?"
 
-Example format:
+Example:
 
 ```
 What protocol does WebSocket use for the initial connection?
@@ -200,36 +58,35 @@ The **upgrade handshake** allows WebSocket to work through existing **HTTP infra
 ---
 ```
 
-### Atomic notes MUST:
+### Atomic Note Titles
 
-- Have statement-style title (not "WebSocket" but "WebSocket provides full-duplex communication")
-- Contain explanation in own words
-- Link to at least one other note
-- Link to parent MOC
+Titles must be **complete statements**, not topic labels.
 
-### Flashcards MUST:
+❌ Bad: "WebSocket", "Reset", "TCP"
+✓ Good: "WebSocket provides full-duplex communication over TCP"
+
+Test: Does the title teach something alone, or just name a thing?
+
+### Flashcard Quality
 
 - Test ONE concept per card
-- Use active recall (question requires retrieval, not recognition)
-- No "Q:/A:" prefixes — just question line, then answer line
+- Use active recall (retrieval, not recognition)
+- No "Q:/A:" prefixes
 - Bold **key terms** in both question and answer
-- Avoid yes/no questions — require explanation
+- Avoid yes/no questions
 
-### NEVER:
+### Content Rules
 
+**NEVER:**
 - Create monolithic topic notes (split into atomic)
 - Copy-paste without rewriting in own words
 - Leave notes without links (orphans)
+- Use title-only headings (add content or remove)
 
-### Quality Checklist
-
-| Item | Atomic Notes | Flashcards | MOCs |
-|------|--------------|-----------|------|
-| **Links** | ✓ Link to 2+ notes & MOC | N/A | ✓ Organized by subtopic |
-| **Structure** | ✓ Statement title | ✓ Q&A format | ✓ Hierarchy with context |
-| **Content** | ✓ 3-15 sentences, own words | ✓ One concept/card | ✓ Brief descriptions |
-| **Key terms** | N/A | ✓ Bold in Q&A | ✓ As needed |
-| **Avoid** | ✗ Monolithic, orphans, copy-paste | ✗ Yes/no questions, prefixes | ✗ Missing links |
+**ALWAYS:**
+- Rewrite concepts in own words
+- Link to related notes and parent MOC
+- Follow templates in `Templates/` folder
 
 ## Tech Stack Context
 
@@ -237,7 +94,7 @@ The **upgrade handshake** allows WebSocket to work through existing **HTTP infra
 - Focus areas: Backend, DevOps, System Design
 - Learning style: Q&A format, visual diagrams, hands-on practice
 
-## Slash Commands Available
+## Slash Commands
 
 - `/atomic` — Create new atomic note with template
 - `/flash` — Generate flashcards from current note
