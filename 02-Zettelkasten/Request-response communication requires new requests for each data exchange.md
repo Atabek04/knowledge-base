@@ -5,12 +5,10 @@ tags:
 sr-due:
 sr-interval:
 sr-ease:
-sr-due: 2025-12-11
-sr-interval: NaN
-sr-ease: NaN
+
 ---
 
-In request-response communication, the client sends a request to the server, the server processes it, and sends back a response. 
+In **request-response communication**, the client sends a request to the server, the server processes it, and sends back a response. 
 Then the connection typically **closes** or returns to **idle state**.
 
 Each interaction is independent. 
