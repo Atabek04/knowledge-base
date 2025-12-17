@@ -16,15 +16,13 @@ Covers WebSocket protocol mechanics, problem-solving capabilities, and compariso
 - TCP/IP Essentials
 
 ### WebSocket Fundamentals
-- [[WebSocket maintains persistent TCP connection for bidirectional messaging]] — core concept of persistent bidirectional communication
-- [[WebSocket protocol enables real-time applications through persistent connections]] — high-level overview and use cases
+- [[WebSocket maintains persistent TCP connection for bidirectional messaging]] — persistent bidirectional communication + use cases
 - [[HTTP request-response model prevents server-initiated data push]] — problem that WebSocket solves
-- [[WebSocket eliminates polling by enabling server push]] — replacing inefficient polling patterns
+- [[Polling repeatedly requests updates to simulate real-time communication]] — inefficient pattern WebSocket replaces
 - [[Persistent connections enable continuous bidirectional data flow]] — connection pattern that enables real-time updates
 
 ### WebSocket vs HTTP
 - [[HTTP Keep-Alive reuses TCP connections across multiple requests]] — HTTP/1.1 connection reuse vs WebSocket bidirectionality
-- [[Polling repeatedly requests updates to simulate real-time communication]] — what WebSocket replaces
 
 ## Phase 2: Protocol Deep Dive
 
@@ -32,28 +30,34 @@ Covers WebSocket protocol mechanics, problem-solving capabilities, and compariso
 - [[WebSocket upgrades HTTP connection to enable bidirectional communication]] — upgrade handshake and protocol switching
 - [[HTTP and WebSocket both run over TCP using three-way handshake]] — TCP foundation and connection establishment
 - [[WebSocket eliminates HTTP header overhead after initial handshake]] — efficiency benefit over HTTP Keep-Alive
-- Upgrade Headers
-- Protocol Negotiation
+- [[WebSocket can't start directly without HTTP upgrade]] — why HTTP upgrade is required
+- [[WebSocket designed to reuse HTTP to be compatible and for deployment simplicity]] — design rationale
+- [[WebSocket piggybacking works, because initial request is valid]] — proxy compatibility mechanism
+- [[Designing WebSocket with its own port creates massive problems]] — alternative design trade-offs
+- [[HTTP proxies operate in three modes for different traffic types]] — proxy behavior during upgrade
 
 ### Frame Structure
-- Frame Anatomy
-- Opcodes and Control Frames
-- Masking and Security
+- [[WebSocket frames are binary data chunks, not HTTP requests]] — post-upgrade data format
+- [[Frame is the basic unit of WebSocket communication]] — frame vs HTTP message
+- [[WebSocket frames use binary structure with opcodes and flags]] — binary frame anatomy with FIN, opcode, MASK
+- [[Masking is XORing the payload]] — masking algorithm with 32-bit key
 
 ### Connection Management
-- Ping/Pong Mechanism
-- Close Handshake
-- Connection States
+- [[WebSocket connection progresses through four lifecycle states]] — CONNECTING, OPEN, CLOSING, CLOSED
+- [[WebSocket readyState property tracks connection lifecycle phase]] — checking current state
+- [[Ping-Pong frames detect dead connections and prevent timeouts]] — heartbeat mechanism
+- [[WebSocket close handshake is for graceful shutdown]] — graceful termination protocol
+- [[WebSocket close status codes indicate termination reason]] — standard status codes (1000-1011)
 
 ## Phase 3: Implementation
 
 ### Client-Side WebSockets
-- Browser WebSocket API
-- Event Handling
-- Error Management
+- [[Browser WebSocket API is JS interface to create and manage connections]] — creating WebSocket instances
+- [[WebSocket has four event handlers]] — onopen, onmessage, onerror, onclose
+- [[WebSocket send method transmits text and binary data]] — sending strings, JSON, ArrayBuffer, Blob
 
 ### Server-Side WebSockets
-- Server Implementation Patterns
+- [[Server stores WebSocket connections because it cannot initiate connections to clients]] — why and how to manage client connections
 - Scaling Considerations
 - Load Balancing
 

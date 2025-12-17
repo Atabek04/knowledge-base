@@ -10,6 +10,7 @@ Transmission Control Protocol — reliable, ordered, and error-checked data deli
 ## Fundamentals
 
 - [[TCP provides reliable ordered error-checked data delivery over networks]] — what TCP is and its three key guarantees
+- [[Single port handles multiple TCP connections via unique socket tuples]] — port multiplexing and connection identification
 
 ## Connection Lifecycle
 
@@ -17,6 +18,8 @@ Transmission Control Protocol — reliable, ordered, and error-checked data deli
 - [[SYN synchronizes Initial Sequence Numbers between hosts]] — SYN flag explained
 - [[ACK acknowledges receipt and specifies next expected sequence number]] — ACK flag explained
 - [[FIN terminates TCP connections through graceful shutdown handshake]] — connection termination with graceful closure
+- [[Either side can initiate TCP connection termination with FIN]] — bidirectional termination capability
+- [[HTTP Keep-Alive prevents FIN signal to reuse TCP connection]] — Keep-Alive mechanics and connection reuse
 
 ## Data Transmission
 
