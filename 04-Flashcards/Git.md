@@ -10,6 +10,7 @@ tags: [flashcards, flashcards/git]
 How does a **distributed VCS** differ from a **centralized VCS** like Subversion?
 ?
 In a **centralized VCS**, only the server holds the complete repository and history. Developers must be connected to the server for most operations and there's a single point of failure.
+<!--SR:!2026-01-02,3,250-->
 
 In **DVCS** like Git, every developer clones the **entire repository** including full history, enabling offline work, fast operations, and peer-to-peer collaboration.
 
@@ -458,5 +459,489 @@ What is a typical pre-commit hook workflow?
 ---
 
 Git hooks are **executable scripts** that run automatically at specific workflow points, enabling automation of ==linting==, ==testing==, and ==policy enforcement==.
+
+---
+
+## Command Reference
+
+### Setup
+
+To configure your Git identity globally: ==git config --global user.name "Name"== and ==git config --global user.email "email@example.com"==
+
+---
+
+To initialize a new Git repository: ==git init==
+
+---
+
+To create a bare repository (for shared server use): ==git init --bare repo.git==
+
+---
+
+### Staging
+
+What command stages a specific file for commit?
+?
+`git add <file>`
+
+This moves the file from unstaged to staged (ready to commit).
+
+---
+
+To stage all changes: ==git add .==
+
+---
+
+To unstage a specific file (remove from staging): ==git reset HEAD <file>==
+
+---
+
+To unstage all staged files: ==git reset HEAD==
+
+---
+
+How do you view what files are staged before committing?
+?
+`git status`
+
+Shows which files are staged, unstaged, and untracked.
+
+---
+
+### Commits
+
+To commit staged changes with a message: ==git commit -m "message"==
+
+---
+
+To stage all tracked files and commit in one command: ==git commit -am "message"==
+
+---
+
+To modify the last commit (amend message or add files): ==git commit --amend==
+
+---
+
+What's the difference between `git commit -m` and `git commit --amend`?
+?
+- **`-m`**: Creates a **new commit** with message
+- **`--amend`**: Modifies the **last commit** — adds files or changes message without creating a new commit
+
+---
+
+When should you use `git commit --amend`?
+?
+Use **`--amend`** when you:
+- Forgot to include a file in the last commit
+- Made a typo in the commit message
+- Want to keep your local history clean
+
+Only amend **before pushing** — amending shared commits breaks other developers' clones.
+
+---
+
+### Undo Commits
+
+To undo the last commit but keep changes staged: ==git reset --soft HEAD~1==
+
+---
+
+To undo the last commit but keep changes unstaged: ==git reset HEAD~1==
+
+---
+
+To undo the last commit and permanently discard changes: ==git reset --hard HEAD~1==
+
+---
+
+What do the three `git reset` modes do?
+?
+- **`--soft`**: Keeps changes **staged**, ready to recommit
+- **`--mixed`** (default): Keeps changes **unstaged** in working directory
+- **`--hard`**: **Discards all changes** permanently
+
+Remember: only use `--hard` when certain you want to lose the work.
+
+---
+
+To undo a commit on a shared branch without rewriting history: ==git revert <hash>==
+
+---
+
+### Branches
+
+To create a new branch: ==git branch <name>==
+
+---
+
+To list all local branches: ==git branch==
+
+---
+
+To list remote branches: ==git branch -r==
+
+---
+
+To delete a branch (safe): ==git branch -d <name>==
+
+---
+
+To force-delete a branch: ==git branch -D <name>==
+
+---
+
+To switch to a different branch: ==git checkout <branch>==
+
+---
+
+To create a new branch and switch to it (legacy): ==git checkout -b <branch>==
+
+---
+
+To switch to a branch (modern syntax): ==git switch <branch>==
+
+---
+
+To create and switch to a new branch (modern): ==git switch -c <branch>==
+
+---
+
+What's the difference between `git checkout -b` and `git switch -c`?
+?
+Both commands do the same thing: **create a branch and switch to it**.
+
+**`git switch -c`** is the **modern, cleaner syntax** (Git 2.23+).
+
+**`git checkout -b`** is the **legacy syntax** (still works, widely used).
+
+Prefer `git switch -c` for new projects.
+
+---
+
+To rename the current branch: ==git branch -m <new>==
+
+---
+
+### Merging
+
+To merge a branch into the current branch: ==git merge <branch>==
+
+---
+
+To force a merge commit even when fast-forward is possible: ==git merge --no-ff <branch>==
+
+---
+
+When should you use `git merge --no-ff`?
+?
+Use **`--no-ff`** to create a merge commit, which:
+- Preserves the **branch topology** in history
+- Makes it clear that a **feature was developed together**
+- Simplifies reverting entire features with `git revert`
+
+For feature branches, use `--no-ff` to maintain clean history.
+
+---
+
+To cancel a merge in progress: ==git merge --abort==
+
+---
+
+### Rebasing
+
+To rebase the current branch onto another branch: ==git rebase <branch>==
+
+---
+
+To interactively rebase (edit, reorder, squash commits): ==git rebase -i <branch>==
+
+---
+
+To interactively rebase the last 3 commits: ==git rebase -i HEAD~3==
+
+---
+
+What can you do in interactive rebase (`git rebase -i`)?
+?
+You can:
+- **Reorder** commits
+- **Squash** commits together
+- **Edit** commit messages
+- **Drop** commits entirely
+
+Interactive rebase is powerful for cleaning up messy history before merging.
+
+---
+
+To continue after resolving rebase conflicts: ==git rebase --continue==
+
+---
+
+To cancel a rebase in progress: ==git rebase --abort==
+
+---
+
+### Stashing
+
+To save uncommitted changes temporarily: ==git stash==
+
+---
+
+To list all stashes: ==git stash list==
+
+---
+
+To restore the latest stash without removing it: ==git stash apply==
+
+---
+
+To restore and remove the latest stash: ==git stash pop==
+
+---
+
+To restore a specific stash: ==git stash apply stash@{2}==
+
+---
+
+To delete a specific stash: ==git stash drop stash@{2}==
+
+---
+
+What's the difference between `git stash apply` and `git stash pop`?
+?
+- **`apply`**: Restores the stash but **keeps it** in the stack (can re-apply)
+- **`pop`**: Restores the stash and **removes it** from the stack
+
+Use `apply` if you might need the stash again; use `pop` when you're done.
+
+---
+
+### Remote
+
+To list all remote repositories: ==git remote -v==
+
+---
+
+To add a new remote: ==git remote add <name> <url>==
+
+---
+
+To rename a remote: ==git remote rename <old> <new>==
+
+---
+
+To remove a remote: ==git remote remove <name>==
+
+---
+
+To download changes from remote without merging: ==git fetch==
+
+---
+
+To fetch and remove deleted remote branches: ==git fetch -p==
+
+---
+
+To fetch and merge changes from remote: ==git pull origin <branch>==
+
+---
+
+To fetch and rebase (instead of merge) changes: ==git pull --rebase==
+
+---
+
+To push changes to remote: ==git push origin <branch>==
+
+---
+
+To push and set upstream tracking: ==git push -u origin <branch>==
+
+---
+
+To force push (overwrite remote): ==git push --force==
+
+---
+
+To force push safely (only if remote hasn't changed): ==git push --force-with-lease==
+
+---
+
+What's the safest way to force push after rebasing?
+?
+**Use `git push --force-with-lease`** instead of `--force`.
+
+`--force-with-lease` checks if the remote branch matches your tracking reference. If a teammate pushed since your last fetch, the push is rejected, protecting their work.
+
+Always communicate with your team before force pushing to shared branches.
+
+---
+
+### Tags
+
+To create a lightweight tag: ==git tag <name>==
+
+---
+
+To create an annotated tag with message: ==git tag -a <name> -m "msg"==
+
+---
+
+To tag a specific commit: ==git tag <name> <hash>==
+
+---
+
+To list all tags: ==git tag==
+
+---
+
+To filter tags by pattern: ==git tag -l "v2*"==
+
+---
+
+To list tags with their messages: ==git tag -n==
+
+---
+
+To delete a local tag: ==git tag -d <name>==
+
+---
+
+To push a single tag to remote: ==git push origin <tag>==
+
+---
+
+To push all tags to remote: ==git push origin --tags==
+
+---
+
+What's the difference between lightweight and annotated tags?
+?
+- **Lightweight tag**: Just a reference to a commit (no metadata)
+- **Annotated tag**: Full object with author, date, message (good for releases)
+
+Use **annotated** for version releases; use **lightweight** for quick marks.
+
+---
+
+### History
+
+To view commit history: ==git log==
+
+---
+
+To view commit history in compact form: ==git log --oneline==
+
+---
+
+To view commit history with diffs: ==git log -p==
+
+---
+
+To view history of a specific file: ==git log <file>==
+
+---
+
+To view history of specific line range: ==git log -L 100,150:<file>==
+
+---
+
+To view all HEAD movements (reflog): ==git reflog==
+
+---
+
+When should you use `git reflog`?
+?
+**`git reflog`** shows all movements of HEAD, not just commits. Use it to:
+- **Recover deleted commits** from detached HEAD
+- **Find a commit** you lost after a reset
+- **Undo a rebase** you regret
+
+It's a safety net for undoing mistakes at the ref level.
+
+---
+
+### Diff
+
+To view unstaged changes: ==git diff==
+
+---
+
+To view staged changes: ==git diff --staged==
+
+---
+
+To view differences between branches: ==git diff <branch1>..<branch2>==
+
+---
+
+To view differences between commits: ==git diff <hash1>..<hash2>==
+
+---
+
+### Inspection
+
+To show repository status: ==git status==
+
+---
+
+To show detailed information about a commit: ==git show <hash>==
+
+---
+
+To show which lines were changed by whom: ==git blame <file>==
+
+---
+
+To show blame for specific line range: ==git blame -L 100,150 <file>==
+
+---
+
+### Cherry-pick
+
+To apply a specific commit to current branch: ==git cherry-pick <hash>==
+
+---
+
+To cherry-pick a range of commits (excludes start): ==git cherry-pick <start>..<end>==
+
+---
+
+To continue cherry-pick after resolving conflicts: ==git cherry-pick --continue==
+
+---
+
+To cancel a cherry-pick in progress: ==git cherry-pick --abort==
+
+---
+
+### Restore
+
+To discard changes in working directory: ==git restore <file>==
+
+---
+
+To restore a file from a specific commit: ==git restore --source=<hash> <file>==
+
+---
+
+To discard changes (older syntax): ==git checkout -- <file>==
+
+---
+
+### Interactive Operations
+
+To interactively stage parts of files: ==git add -i==
+
+---
+
+To stage specific changes (patch mode): ==git add -p==
+
+---
+
+To stash specific changes (patch mode): ==git stash -p==
+
+---
+
+To selectively unstage changes: ==git reset -p==
 
 ---
