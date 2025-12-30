@@ -15,8 +15,6 @@ The complete process for capturing, processing, and retaining knowledge in this 
 - Links to articles/resources
 - Raw highlights from books
 
-Read more about:  [[Fleeting Notes]]
-
 **How:**
 1. Quick capture using the **Inbox Item** template: `Ctrl + Shift + I`
 2. Minimal structure — just the idea

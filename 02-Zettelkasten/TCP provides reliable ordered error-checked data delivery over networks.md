@@ -20,6 +20,5 @@ TCP establishes connections using a three-way handshake and maintains them until
 
 ## Links
 
-- [[TCP three-way handshake establishes connection with SYN-SYN-ACK-ACK]]
 - [[WebSocket maintains persistent TCP connection for bidirectional messaging]]
 - [[TCP MOC]]

@@ -1,4 +1,0 @@
----
-created: {{date}}
-status: inbox
----

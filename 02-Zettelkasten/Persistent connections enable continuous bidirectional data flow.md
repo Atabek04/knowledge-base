@@ -5,7 +5,6 @@ sr-due:
 sr-interval:
 sr-ease:
 ---
-
 In persistent connection communication, the client and server establish a ==connection that stays open continuously==.
 
 Either party can send data at any time ==without initiating a new request or establishing a new connection==.
@@ -19,6 +18,6 @@ The connection lifecycle is: establish â†’ exchange bidirectional data anytime â
 ## Links
 
 - [[Request-response communication requires new requests for each data exchange]]
-- [[Implement persisten connection communication]]
+- [[Persistent connections keep sockets open at protocol level not application level]]
 - [[WebSocket maintains persistent TCP connection for bidirectional messaging]]
 - [[Networking MOC]]

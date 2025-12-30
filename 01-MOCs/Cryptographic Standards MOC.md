@@ -1,0 +1,70 @@
+---
+created: 2025-12-24
+tags: [moc]
+---
+
+Concepts for understanding cryptographic encoding standards, PKCS formats, and Kazakhstan infrastructure.
+Covers ASN.1 encoding, PKCS standards, key storage formats, and NCALayer implementation.
+
+## ASN.1 & Encoding
+
+### Schema & Format
+
+- [[ASN.1 schema defines field types and structure]] — abstract syntax notation
+- [[ASN.1 is language not file format]] — schema definition language
+- [[DER provides Tag-Length-Value encoding for ASN.1]] — deterministic encoding rules
+- [[BER allows multiple encodings while DER ensures single encoding]] — basic encoding rules
+- [[Raw values lack type and length information]] — unstructured data problem
+
+### Text-Safe Encoding
+
+- [[PEM Base64-encodes DER for text-safe transport]] — privacy-enhanced mail format
+- [[PEM headers identify content type between markers]] — content type markers
+- [[Tag-Length-Value structure enables unambiguous DER parsing]] — TLV parsing
+
+## PKCS Standards
+
+### Key Container Formats
+
+- [[PKCS#1 specifically defines RSA key structures]] — RSA-only format
+- [[PKCS#8 provides algorithm-agnostic private key format]] — generic private key format
+- [[PKCS#12 bundles certificate and private key in encrypted archive]] — encrypted key archive
+- [[PKCS#12 password protects sensitive key material]] — password-based encryption
+- [[P12 file extension indicates PKCS#12 format]] — file naming convention
+
+### Interoperability
+
+- [[PKCS standards ensure interoperability across systems]] — cross-platform compatibility
+
+## Kazakhstan Standards
+
+### NCALayer Infrastructure
+
+- [[NCALayer bridges browsers to local cryptographic hardware]] — browser-to-hardware bridge
+- [[NCALayer runs WebSocket server on localhost port 13579]] — local WebSocket service
+- [[NCALayer accesses hardware tokens and PKCS#12 files]] — multi-source key access
+- [[Modern browsers removed plugin support for security]] — plugin deprecation context
+
+### Cryptographic Implementation
+
+- [[KalkanCrypt implements Kazakhstan-certified GOST algorithms]] — NCA-certified library
+- [[ЭЦП requires GOST signature for legal force]] — legal signature requirement
+- [[ИС ЭСФ uses XMLDSig for electronic invoices]] — electronic invoice system
+
+## Related MOCs
+
+- [[Cryptography MOC]] — cryptographic fundamentals
+- [[PKI MOC]] — certificate authorities
+- [[Digital Signatures MOC]] — signature formats
+- [[X.509 Certificates MOC]] — certificate structure
+
+## Practice
+
+(Flashcards to be added)
+
+## External Resources
+
+- [ASN.1 Complete by John Larmouth](http://www.oss.com/asn1/resources/books-whitepapers-pubs/larmouth-asn1-book.pdf)
+- [PKCS Standards - RSA Laboratories](https://en.wikipedia.org/wiki/PKCS)
+- [Kazakhstan NCA Portal](https://pki.gov.kz/)
+- [NCALayer Documentation](https://ncalayer.pki.gov.kz/)

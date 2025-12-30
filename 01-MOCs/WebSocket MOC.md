@@ -84,7 +84,7 @@ Covers WebSocket protocol mechanics, problem-solving capabilities, and compariso
 
 ## Practice
 
-- [[WebSocket|04-Flashcards/WebSocket]] — spaced repetition cards for WebSocket protocol
+- [[WebSocket Flashcards|04-Flashcards/WebSocket]] — spaced repetition cards for WebSocket protocol
 
 ## External Resources
 

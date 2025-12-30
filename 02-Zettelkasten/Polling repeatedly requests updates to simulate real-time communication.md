@@ -6,26 +6,28 @@ sr-interval:
 sr-ease:
 ---
 
-**Polling** is a workaround pattern to simulate real-time updates when using HTTP's request-response model.
+# Polling repeatedly requests updates to simulate real-time communication
 
-The client repeatedly sends requests at fixed intervals asking "do you have updates?" For example, sending `GET /api/messages` every 5 seconds to check for new messages.
+Polling is a workaround for HTTP's limitation: server cannot push data first.
 
-This is **inefficient** for several reasons:
+Client repeatedly asks "do you have updates?" at fixed intervals (e.g., `GET /messages` every 5 seconds).
 
-**1. Wasted requests:** Most polls return "no updates" but still consume bandwidth and server resources.
+**Why it's inefficient:**
 
-**2. Latency:** If messages arrive 4 seconds after a poll, the client waits up to 5 more seconds to discover them.
+1. **Wasted requests**: most polls return "no updates" but consume bandwidth
+2. **Latency**: if data arrives after a poll, client waits until next interval
+3. **Scalability**: 10,000 clients polling every 5s = 2,000 req/sec even with no updates
+4. **Battery drain**: mobile devices waste energy on empty requests
 
-**3. Scalability problems:** If 10,000 clients poll every 5 seconds, the server handles 2,000 requests per second—even when there are no updates.
+**WebSocket eliminates polling:**
 
-**4. Resource consumption:** Network bandwidth, server CPU, and battery (on mobile) are all wasted on unnecessary requests.
+Server pushes data immediately when available. Client asks once (upgrade handshake), then receives updates instantly.
 
-Polling is better than nothing for basic real-time scenarios, but it's inherently inefficient compared to true push mechanisms.
-
-WebSocket eliminates the need for polling by enabling the server to push updates immediately.
+Example comparison for chat:
+- **Polling**: 50 requests in 100 seconds, 45 return "no messages"
+- **WebSocket**: 1 handshake + N actual messages, zero waste
 
 ## Links
-
 - [[HTTP request-response model prevents server-initiated data push]]
-- [[WebSocket eliminates polling by enabling server push]]
+- [[WebSocket maintains persistent TCP connection for bidirectional messaging]]
 - [[Networking MOC]]

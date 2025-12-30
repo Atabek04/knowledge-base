@@ -5,10 +5,7 @@ sr-due:
 sr-interval:
 sr-ease:
 ---
-
-# HTTP and WebSocket both run over TCP using three-way handshake
-
-Both HTTP and WebSocket run on top of TCP and both use the **same TCP three-way handshake** to establish the initial connection.
+Both HTTP and WebSocket run on top of TCP, and both use the **same TCP three-way handshake** to establish the initial connection.
 
 The key difference isn't about the TCP connection itself, but about the **protocol** and **communication pattern** that runs **over that TCP connection**.
 

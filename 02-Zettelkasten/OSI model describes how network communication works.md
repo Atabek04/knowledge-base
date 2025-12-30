@@ -112,10 +112,19 @@ It can persist across multiple connection.
 > to Transport Layer, without any changes. 
 
 ---
-#### Layer 4: Transport
+#### Layer 4: <mark style="background: #FFF3A3A6;">Transport</mark>
 
-Transport Layer transports data segments between applications.
-Handles end-to-end delivery logistics.
+Transport Layer prepares data for transfer
+- Breaks data into segments
+- Adds port numbers and sequence numbers
+- Handles end-to-end delivery logistics.
+
+> Does NOT transfer data between devices.
+> 
+> Data stays on the same host.
+> Not actual network transmission yet
+
+**Key protocols**: TCP, UDP
 
 ##### Main functions:
 
@@ -144,17 +153,8 @@ Handles end-to-end delivery logistics.
 | Synchronization & recovery   | Reliability & ordering      |     |
 | Can survive connection drops | IS the connection           |     |
 
----
-
 2. <mark style="background: #ABF7F7A6;">Segmentation & Reassembly</mark>
-
-	- **Segment** (in TCP-context) or **Datagram** (in UDP-context) :luc_arrow_right: chunk of data with Transport header.
-	- Sending:
-		- breaks the data :luc_arrow_big_right: :luc_plus_circle: port number :luc_arrow_big_right: :luc_plus_circle: sequence numbers
-	- Receiving:
-		- Reassembles segments in correct order
-
----
+	Read more: [[Segment is a chunk of data in Transport Layer]]
 
 3. <mark style="background: #ABF7F7A6;">Flow Control & Buffer Overflow Prevention</mark>
 
@@ -167,9 +167,64 @@ Handles end-to-end delivery logistics.
 	by **Window Size** mechanism (inside TCP)
 	- Receiver tells sender, how much data he can handle
 	- Sender adjust speed accordingly
-	
-#### Layer 3
-#### Layer 2
-#### Layer 1
+
+---
+#### Layer 3: <mark style="background: #FFF3A3A6;">Network</mark>
+
+Network Layer handles routing and forwarding of data packets between different networks
+	If devices talking in the same network, no need for this layer
+
+The actual data transmission happens in this layer
+	Packets physically leave your device and travel to the destination
+
+**Key protocols**: IP, ICMP, IGMP, IPsec
+
+See also: [[Packet is Segment with IP address]]
+
+##### Main functions:
+
+1. <mark style="background: #ABF7F7A6;">Logical Addressing</mark>
+
+	- Network Layer assigns and uses **IP addresses** to identify **source** and **destiny**
+		- Every packet gets tagged with sender and receiver IP address
+		- Your ISP gives one public IP to your router
+			- Your router translates private IPs of devices to that one public IP
+
+2. <mark style="background: #ABF7F7A6;">Routing</mark>
+	- Network Layer determines the best path to transfer data between routers
+	- Routers analyze network topology and select optimal routes.
+
+---
+#### Layer 2: <mark style="background: #FFF3A3A6;">Data Link</mark>
+
+- Data Link Layer receives Packets from Network Layer.
+- Wraps those Packets with MAC **Header** and **Trailer**
+	- Now that wrapped data is called **Frame**
+
+Additional MAC address is added
+	By that you can send packets to the correct device on the same LAN.
+
+For that we use physical device called Switch.
+	Learn more about Switch: 
+	[[Switch physical device that connects multiple devices on a single LAN]]
+
+**Data Link Layer is similar to Network Layer** 
+- In Network Layer you transport packets across the networks
+- Whereas in Data Link Layer you transport frames to devices in the same network
+
+Read more:
+[[MAC address burned into network card]]
+[[Frame is a Packet with MAC header and trailer]]
+[[Frame Check Sequence (FCS) inside trailer detects corruped data]]
+
+---
+#### Layer 1: <mark style="background: #FFF3A3A6;">Physical</mark>
+
+- Receives raw data, from the payload of the frame
+- Converts those digital bits (0s and 1s) into physical signals
+
+Read more: [[Raw bits encoding for different types of signals]]
+
+---
 
 ![[OSI model 7 layers.png]]

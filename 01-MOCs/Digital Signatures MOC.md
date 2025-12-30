@@ -1,0 +1,97 @@
+---
+created: 2025-12-24
+tags: [moc]
+---
+
+Concepts for understanding digital signatures, signature formats, and XML security.
+Covers signature fundamentals, CMS/PKCS#7, XMLDSig, and common security attacks.
+
+## Digital Signature Fundamentals
+
+- [[Digital signature proves who signed and ensures message integrity]] — cryptographic proof mechanism
+- [[Authenticity confirms identity of message sender]] — sender verification
+- [[Integrity detects any modification to signed data]] — tamper detection
+- [[Non-repudiation prevents signer from denying signature]] — undeniable proof
+- [[Signing hashes message then encrypts hash with private key]] — signature creation process
+- [[Verification decrypts signature with public key and compares hashes]] — signature verification process
+
+## Signature Algorithms
+
+- [[RSA-PSS adds randomized padding for signature security]] — RSA signature with PSS padding
+- [[ECDSA provides efficient signatures using elliptic curves]] — elliptic curve digital signature
+
+## CMS/PKCS#7 Format
+
+### Structure & Components
+
+- [[CMS wraps data with signature and signer certificate]] — cryptographic message syntax
+- [[CMS structure includes content signature algorithm and certificates]] — CMS components
+- [[CMS signing hashes data then wraps in ASN.1 container]] — CMS creation process
+- [[SignerInfo identifies signer and holds signature value]] — signer information structure
+
+### Signature Types
+
+- [[Detached CMS signature stores data separately from signature]] — detached mode
+- [[Attached CMS signature includes original document]] — attached mode
+- [[CMS supports multiple signers on same document]] — counter-signature support
+
+### Kazakhstan Usage
+
+- [[Kazakhstan NCALayer uses CMS for legal digital signatures]] — ЭЦП implementation
+
+## XML Digital Signatures
+
+### XMLDSig Structure
+
+- [[XMLDSig signs XML documents with embedded signatures]] — XML signature standard
+- [[XMLDSig handles XML structure unlike binary CMS]] — XML-aware signing
+- [[SignedInfo contains what was signed and how]] — signature metadata
+- [[Reference element points to data being signed]] — data reference mechanism
+- [[DigestValue holds hash of referenced data]] — hash storage
+- [[SignatureValue contains actual signature bytes]] — signature storage
+- [[KeyInfo embeds signer public key or certificate]] — key information
+
+### Canonicalization
+
+- [[Canonicalization normalizes XML before signing]] — XML normalization
+- [[C14N removes whitespace and orders attributes consistently]] — canonical XML
+- [[Exclusive C14N includes only used namespaces]] — namespace-optimized canonicalization
+
+### Transforms
+
+- [[Transforms apply operations before hashing]] — pre-hash transformations
+- [[Enveloped signature transform removes signature element]] — signature exclusion
+- [[XPath filter selects specific XML parts to sign]] — partial document signing
+- [[Base64 transform decodes embedded binary data]] — binary data handling
+
+## Security Attacks
+
+### Attack Vectors
+
+- [[Signature wrapping moves valid signature to different data]] — XML signature attack
+- [[XXE attack exploits XML external entity loading]] — entity injection attack
+- [[XPath injection manipulates queries from unsanitized input]] — query injection
+
+### Defense Mechanisms
+
+- [[Unique IDs prevent signature wrapping attacks]] — wrapping defense
+- [[Disabling external entities prevents XXE attacks]] — XXE mitigation
+- [[Fixed XPath patterns avoid injection vulnerabilities]] — injection prevention
+
+## Related MOCs
+
+- [[Cryptography MOC]] — cryptographic primitives
+- [[X.509 Certificates MOC]] — certificate formats
+- [[PKI MOC]] — trust infrastructure
+- [[Cryptographic Standards MOC]] — encoding standards
+
+## Practice
+
+(Flashcards to be added)
+
+## External Resources
+
+- [W3C XML Signature Syntax and Processing](https://www.w3.org/TR/xmldsig-core/)
+- [RFC 5652 - CMS Specification](https://datatracker.ietf.org/doc/html/rfc5652)
+- [OWASP XML Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/XML_Security_Cheat_Sheet.html)
+- [XML Signature Best Practices](https://www.w3.org/TR/xmldsig-bestpractices/)

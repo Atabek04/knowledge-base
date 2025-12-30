@@ -845,7 +845,7 @@ To view history of specific line range: ==git log -L 100,150:{file}==
 
 ---
 
-To view all HEAD movements (reflog): ==git reflog==
+To view all HEAD movements: ==git reflog==
 
 ---
 

@@ -12,7 +12,9 @@ The server cannot send data to the client unless the client asks for it first.
 
 This is a ==fundamental architectural constraint==, not a bug.
 
-HTTP was designed for document retrieval: client requests a page, server responds. This works well for traditional web browsing.
+HTTP was designed for **document retrieval**: 
+- client requests a page, server responds. 
+- This works well for traditional web browsing.
 
 But for real-time scenarios (chat, live prices, notifications), the server often has new data before the client knows to ask for it.
 
