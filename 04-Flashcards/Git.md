@@ -806,7 +806,7 @@ To delete a local tag: ==git tag -d {name}==
 
 ---
 
-To push a single tag to remote: ==git push origin <tag>==
+To push a single tag to remote: ==git push origin {tag}==
 
 ---
 
@@ -870,11 +870,11 @@ To view staged changes: ==git diff --staged==
 
 ---
 
-To view differences between branches: ==git diff <branch1>..<branch2>==
+To view differences between branches: ==git diff {branch1}..{branch2}==
 
 ---
 
-To view differences between commits: ==git diff <hash1>..<hash2>==
+To view differences between commits: ==git diff {hash1}..{hash2}==
 
 ---
 
@@ -902,7 +902,7 @@ To apply a specific commit to current branch: ==git cherry-pick {hash}==
 
 ---
 
-To cherry-pick a range of commits (excludes start): ==git cherry-pick <start>..<end>==
+To cherry-pick a range of commits (excludes start): ==git cherry-pick {start}..{end}==
 
 ---
 
