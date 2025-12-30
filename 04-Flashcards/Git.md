@@ -482,7 +482,7 @@ To create a bare repository (for shared server use): ==git init --bare repo.git=
 
 What command stages a specific file for commit?
 ?
-`git add <file>`
+`git add {file}`
 
 This moves the file from unstaged to staged (ready to commit).
 
@@ -492,7 +492,7 @@ To stage all changes: ==git add .==
 
 ---
 
-To unstage a specific file (remove from staging): ==git reset HEAD <file>==
+To unstage a specific file (remove from staging): ==git reset HEAD {file}==
 
 ---
 
@@ -564,13 +564,13 @@ Remember: only use `--hard` when certain you want to lose the work.
 
 ---
 
-To undo a commit on a shared branch without rewriting history: ==git revert <hash>==
+To undo a commit on a shared branch without rewriting history: ==git revert {hash}==
 
 ---
 
 ### Branches
 
-To create a new branch: ==git branch <name>==
+To create a new branch: ==git branch {name}==
 
 ---
 
@@ -582,27 +582,27 @@ To list remote branches: ==git branch -r==
 
 ---
 
-To delete a branch (safe): ==git branch -d <name>==
+To delete a branch (safe): ==git branch -d {name}==
 
 ---
 
-To force-delete a branch: ==git branch -D <name>==
+To force-delete a branch: ==git branch -D {name}==
 
 ---
 
-To switch to a different branch: ==git checkout <branch>==
+To switch to a different branch: ==git checkout {branch}==
 
 ---
 
-To create a new branch and switch to it (legacy): ==git checkout -b <branch>==
+To create a new branch and switch to it (legacy): ==git checkout -b {branch}==
 
 ---
 
-To switch to a branch (modern syntax): ==git switch <branch>==
+To switch to a branch (modern syntax): ==git switch {branch}==
 
 ---
 
-To create and switch to a new branch (modern): ==git switch -c <branch>==
+To create and switch to a new branch (modern): ==git switch -c {branch}==
 
 ---
 
@@ -618,17 +618,17 @@ Prefer `git switch -c` for new projects.
 
 ---
 
-To rename the current branch: ==git branch -m <new>==
+To rename the current branch: ==git branch -m {new}==
 
 ---
 
 ### Merging
 
-To merge a branch into the current branch: ==git merge <branch>==
+To merge a branch into the current branch: ==git merge {branch}==
 
 ---
 
-To force a merge commit even when fast-forward is possible: ==git merge --no-ff <branch>==
+To force a merge commit even when fast-forward is possible: ==git merge --no-ff {branch}==
 
 ---
 
@@ -649,11 +649,11 @@ To cancel a merge in progress: ==git merge --abort==
 
 ### Rebasing
 
-To rebase the current branch onto another branch: ==git rebase <branch>==
+To rebase the current branch onto another branch: ==git rebase {branch}==
 
 ---
 
-To interactively rebase (edit, reorder, squash commits): ==git rebase -i <branch>==
+To interactively rebase (edit, reorder, squash commits): ==git rebase -i {branch}==
 
 ---
 
@@ -722,15 +722,15 @@ To list all remote repositories: ==git remote -v==
 
 ---
 
-To add a new remote: ==git remote add <name> <url>==
+To add a new remote: ==git remote add {name} {url}==
 
 ---
 
-To rename a remote: ==git remote rename <old> <new>==
+To rename a remote: ==git remote rename {old} {new}==
 
 ---
 
-To remove a remote: ==git remote remove <name>==
+To remove a remote: ==git remote remove {name}==
 
 ---
 
@@ -742,7 +742,7 @@ To fetch and remove deleted remote branches: ==git fetch -p==
 
 ---
 
-To fetch and merge changes from remote: ==git pull origin <branch>==
+To fetch and merge changes from remote: ==git pull origin {branch}==
 
 ---
 
@@ -750,11 +750,11 @@ To fetch and rebase (instead of merge) changes: ==git pull --rebase==
 
 ---
 
-To push changes to remote: ==git push origin <branch>==
+To push changes to remote: ==git push origin {branch}==
 
 ---
 
-To push and set upstream tracking: ==git push -u origin <branch>==
+To push and set upstream tracking: ==git push -u origin {branch}==
 
 ---
 
@@ -778,15 +778,15 @@ Always communicate with your team before force pushing to shared branches.
 
 ### Tags
 
-To create a lightweight tag: ==git tag <name>==
+To create a lightweight tag: ==git tag {name}==
 
 ---
 
-To create an annotated tag with message: ==git tag -a <name> -m "msg"==
+To create an annotated tag with message: ==git tag -a {name} -m "msg"==
 
 ---
 
-To tag a specific commit: ==git tag <name> <hash>==
+To tag a specific commit: ==git tag {name} {hash}==
 
 ---
 
@@ -802,7 +802,7 @@ To list tags with their messages: ==git tag -n==
 
 ---
 
-To delete a local tag: ==git tag -d <name>==
+To delete a local tag: ==git tag -d {name}==
 
 ---
 
@@ -837,11 +837,11 @@ To view commit history with diffs: ==git log -p==
 
 ---
 
-To view history of a specific file: ==git log <file>==
+To view history of a specific file: ==git log {file}==
 
 ---
 
-To view history of specific line range: ==git log -L 100,150:<file>==
+To view history of specific line range: ==git log -L 100,150:{file}==
 
 ---
 
@@ -884,21 +884,21 @@ To show repository status: ==git status==
 
 ---
 
-To show detailed information about a commit: ==git show <hash>==
+To show detailed information about a commit: ==git show {hash}==
 
 ---
 
-To show which lines were changed by whom: ==git blame <file>==
+To show which lines were changed by whom: ==git blame {file}==
 
 ---
 
-To show blame for specific line range: ==git blame -L 100,150 <file>==
+To show blame for specific line range: ==git blame -L 100,150 {file}==
 
 ---
 
 ### Cherry-pick
 
-To apply a specific commit to current branch: ==git cherry-pick <hash>==
+To apply a specific commit to current branch: ==git cherry-pick {hash}==
 
 ---
 
@@ -916,15 +916,15 @@ To cancel a cherry-pick in progress: ==git cherry-pick --abort==
 
 ### Restore
 
-To discard changes in working directory: ==git restore <file>==
+To discard changes in working directory: ==git restore {file}==
 
 ---
 
-To restore a file from a specific commit: ==git restore --source=<hash> <file>==
+To restore a file from a specific commit: ==git restore --source={hash} {file}==
 
 ---
 
-To discard changes (older syntax): ==git checkout -- <file>==
+To discard changes (older syntax): ==git checkout -- {file}==
 
 ---
 

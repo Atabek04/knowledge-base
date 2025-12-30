@@ -11,6 +11,22 @@ tags: [reference]
 2. Use correct syntax for each card type (see below)
 3. Cards are stored in the same file — plugin adds `<!--SR:...-->` scheduling data
 
+## ⚠️ Critical Syntax Warning
+
+**Do NOT use angle brackets `< >` in cloze deletions** — they break the `== ==` highlighter syntax.
+
+**❌ Wrong:**
+```
+To unstage a file: ==git reset HEAD <file>==
+```
+
+**✅ Correct (use curly braces instead):**
+```
+To unstage a file: ==git reset HEAD {file}==
+```
+
+Apply this to all placeholders: `{name}`, `{branch}`, `{hash}`, `{file}`, etc.
+
 ---
 
 ## Card Types
@@ -89,7 +105,7 @@ Text with ==hidden part== visible.
 Git reset --soft keeps changes ==staged==.
 ```
 
-Creates **1 card** per `==deletion==`.
+Creates **1 card** per =deletion=
 
 **Multiple clozes = multiple cards:**
 ```
@@ -111,63 +127,13 @@ Hint appears during review.
 
 ## Quick Reference
 
-| Type                      | Separator  | Cards Created  |
-| ------------------------- | ---------- | -------------- |
-| Single-line basic         | `::`       | 1              |
-| Single-line bidirectional | `:::`      | 2              |
-| Multi-line basic          | `?`        | 1              |
-| Multi-line bidirectional  | `??`       | 2              |
-| Cloze                     | `==text==` | 1 per deletion |
-
----
-
-## Common Mistakes
-
-| Wrong | Right |
-|-------|-------|
-| Question on line 1, answer on line 2 (no separator) | Use `?` between them |
-| `Q: question A: answer` | `question::answer` |
-| Blank line inside multi-line card | Change end delimiter in settings to `+++` |
-
----
-
-## Settings to Configure
-
-Settings → Spaced Repetition:
-
-| Setting                 | Recommended    |
-| ----------------------- | -------------- |
-| Flashcard tags          | `#flashcards`  |
-| Single-line separator   | `::` (default) |
-| Multi-line separator    | `?` (default)  |
-| Bidirectional separator | `:::` / `??`   |
-| Cloze delimiter         | `==` (default) |
-
----
-
-## Card End Delimiter
-
-By default, **blank line** ends a multi-line card.
-
-For cards with tables or code blocks, change:
-**Settings → Characters denoting end of clozes** → `+++`
-
-Then end cards with `+++` instead of blank line.
-
----
-
-## SR vs Anki Comparison
-
-| Feature | Obsidian SR | Anki |
-|---------|-------------|------|
-| Algorithm | SM-2 | SM-2 + FSRS |
-| Integration | Lives with notes | Separate app |
-| Card types | Basic, Bidirectional, Cloze | More (image occlusion, etc.) |
-| Sync | Obsidian Sync or git | AnkiWeb (free) |
-| Mobile | Obsidian Mobile | Native apps |
-| Maturity | Plugin | 15+ years |
-
-**Verdict:** SR is sufficient for note-integrated learning. Use Anki for high-volume memorization or advanced card types.
+| Type                      | Separator | Cards Created  |
+| ------------------------- | --------- | -------------- |
+| Single-line basic         | `::`      | 1              |
+| Single-line bidirectional | `:::`     | 2              |
+| Multi-line basic          | `?`       | 1              |
+| Multi-line bidirectional  | `??`      | 2              |
+| Cloze                     | =text=    | 1 per deletion |
 
 ---
 
