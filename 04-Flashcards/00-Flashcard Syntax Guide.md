@@ -82,6 +82,30 @@ Creates **1 card**. Blank line ends the card.
 
 ---
 
+## ⚠️ Blank Lines in Multiline Answers
+
+**Problem:** By default, blank lines terminate multiline cards. If your answer has multiple paragraphs, only the first paragraph displays during review.
+
+**Solution:** Configure the plugin setting **"Characters denoting the end of clozes and multiline flashcards"** to `---`, then end each multiline card with `---` on a separate line:
+
+```
+Question with multiple paragraph answer?
+?
+First paragraph.
+
+Second paragraph.
+
+Third paragraph.
+
+---
+
+---
+```
+
+This allows blank lines within answers while explicitly marking where cards end.
+
+---
+
 ### 4. Multi-Line Bidirectional
 
 ```

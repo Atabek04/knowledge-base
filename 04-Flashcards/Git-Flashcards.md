@@ -10,7 +10,6 @@ tags: [flashcards, flashcards/git]
 How does a **distributed VCS** differ from a **centralized VCS** like Subversion?
 ?
 In a **centralized VCS**, only the server holds the complete repository and history. Developers must be connected to the server for most operations and there's a single point of failure.
-<!--SR:!2026-01-02,3,250-->
 
 In **DVCS** like Git, every developer clones the **entire repository** including full history, enabling offline work, fast operations, and peer-to-peer collaboration.
 
@@ -162,11 +161,17 @@ This fundamental difference determines when each is safe to use.
 
 ---
 
+---
+
+---
+
 When should you use `git reset` versus `git revert`?
 ?
 Use **git reset** only for **local commits not yet pushed** to shared branches. Resetting rewrites history, which breaks other developers' clones.
 
 Use **git revert** for commits on **shared/remote branches**. Reverting preserves history and doesn't disrupt collaborators who have already fetched the commit.
+
+---
 
 ---
 
@@ -178,11 +183,15 @@ Why is `git revert` safer than `git reset` for shared branches?
 
 ---
 
+---
+
 How do the three `git reset` modes differ in what they preserve?
 ?
 - **`--soft`**: Removes commits but **keeps changes staged** in the index, ready to re-commit
 - **`--mixed`** (default): Removes commits and **keeps changes unstaged** in the working directory
 - **`--hard`**: **Discards all changes** — working directory becomes exactly as it was at the target commit
+
+---
 
 ---
 
@@ -194,10 +203,14 @@ This is why `--hard` requires caution and is often preceded by `git stash` to sa
 
 ---
 
+---
+
 What is the practical difference between `git reset --soft HEAD~1` and `git reset HEAD~1`?
 ?
 - **`--soft`**: Removes the last commit but **stages all changes**, letting you modify and recommit
 - **Default (`--mixed`)**: Removes the last commit and **unstages changes**, letting you selectively stage and commit parts
+
+---
 
 ---
 
@@ -208,6 +221,8 @@ How does `git merge` differ from `git rebase` when integrating branches?
 **Merge** creates a **merge commit** that combines two branches, preserving the **complete history** of parallel development and showing both ancestral lines.
 
 **Rebase** **replays commits** from one branch onto another, creating **new commits** with new SHA hashes and a **linear history** without a merge commit.
+
+---
 
 ---
 
@@ -226,6 +241,8 @@ How does `git rebase` mechanically rewrite history?
 
 ---
 
+---
+
 Why does rebasing create **new commit SHAs** even though the code changes are identical?
 ?
 Because a commit's SHA is a **hash of its entire content**, including the **parent pointer**. Rebasing changes the parent pointer (to a different base commit), so even identical code changes produce different SHA hashes.
@@ -240,6 +257,8 @@ Fast-forward is only possible when there's a **direct linear path** from the cur
 
 ---
 
+---
+
 When is a **fast-forward merge** impossible?
 ?
 When the target branch has **received new commits** after the source branch diverged, creating **parallel histories**. Git must create a **merge commit** to explicitly combine the two branches.
@@ -251,6 +270,8 @@ Why use the `--no-ff` flag even when fast-forward is possible?
 Using `git merge --no-ff` **forces a merge commit** to be created, preserving the **branch topology** in history. This shows that a feature was developed as a coherent unit and makes it easier to identify and revert complete features.
 
 Without `--no-ff`, fast-forward merges obscure the branch structure.
+
+---
 
 ---
 
@@ -273,11 +294,15 @@ When would you use `git cherry-pick` instead of `git merge`?
 
 ---
 
+---
+
 What happens to the original commit after `git cherry-pick`?
 ?
 The **original commit remains unchanged** on its branch. **Cherry-pick creates a new commit** with the same changes but a different SHA. It copies, not moves.
 
 Both commits exist in the repository; neither is deleted.
+
+---
 
 ---
 
@@ -299,6 +324,8 @@ You can't switch branches with conflicting local changes, but you don't want to 
 
 ---
 
+---
+
 How does stashing differ from committing?
 ?
 **Commits** create permanent history with a message and are shared when you push.
@@ -307,11 +334,15 @@ How does stashing differ from committing?
 
 ---
 
+---
+
 When should you use `git stash` versus creating a **WIP branch**?
 ?
 **Stash** for truly temporary work (minutes to hours) — context switching to fix a bug, then returning.
 
 Create a **WIP (work-in-progress) branch** for longer-term storage (days or more) — a more durable record of work that can be shared and referenced.
+
+---
 
 ---
 
@@ -325,6 +356,8 @@ What is the difference between `git stash pop` and `git stash apply`?
 ?
 - **`pop`**: Restores the stash **and removes it** from the stack
 - **`apply`**: Restores the stash **without removing** it, allowing re-application
+
+---
 
 ---
 
@@ -342,11 +375,15 @@ How does `--force-with-lease` differ from `--force` when pushing?
 
 ---
 
+---
+
 Why is `--force-with-lease` safer than `--force`?
 ?
 **`--force-with-lease` adds a safety check**: it aborts if the remote branch has changed since your last fetch, preventing you from accidentally destroying a teammate's commits.
 
 **`--force`** has no safety check—it always overwrites, making accidental data loss much more likely.
+
+---
 
 ---
 
@@ -362,6 +399,8 @@ It compares the **remote branch** against your **local tracking reference** (wha
 
 ---
 
+---
+
 What workflow prevents most force-push conflicts?
 ?
 1. **Fetch from remote** to update your local tracking references
@@ -369,6 +408,8 @@ What workflow prevents most force-push conflicts?
 3. **Force push** with `--force-with-lease`
 
 This ensures your tracking references are current before pushing.
+
+---
 
 ---
 
@@ -391,11 +432,15 @@ What are **Git hooks** and what do they enable?
 
 ---
 
+---
+
 Where are Git hooks stored and how are they enabled?
 ?
 Hooks are executable scripts stored in the **`.git/hooks/` directory**, named after the event (e.g., `pre-commit`, `pre-push`).
 
 To enable: `chmod +x .git/hooks/pre-commit`
+
+---
 
 ---
 
@@ -413,6 +458,8 @@ When developers clone the repository, hooks are automatically set up from the co
 
 ---
 
+---
+
 How does a **pre-commit hook** differ from a **pre-push hook**?
 ?
 - **`pre-commit`**: Runs before commits are created — good for code quality checks (lint, format, basic tests)
@@ -422,11 +469,15 @@ Pre-push prevents bad commits from reaching the remote; pre-commit prevents bad 
 
 ---
 
+---
+
 What is the difference between **client-side** and **server-side** hooks?
 ?
 **Client-side** hooks run on developers' machines (pre-commit, commit-msg, pre-push) — fast feedback but can be bypassed.
 
 **Server-side** hooks run on the server (pre-receive, post-receive) — enforce policy at the repository level, can't be bypassed.
+
+---
 
 ---
 
@@ -440,11 +491,15 @@ This should be **rare and justified** — document why you're bypassing.
 
 ---
 
+---
+
 Why would a team want to use **server-side hooks** in addition to client-side hooks?
 ?
 **Client-side hooks** provide developer feedback and prevent most mistakes but can be bypassed.
 
 **Server-side hooks** enforce policy at the repository level, preventing anyone (even with `--no-verify`) from violating team standards. This is critical for shared branches and production safety.
+
+---
 
 ---
 
@@ -455,6 +510,8 @@ What is a typical pre-commit hook workflow?
 3. Pre-commit hook **automatically lints and formats** files
 4. If checks fail: commit is **aborted** and errors are shown
 5. Developer fixes issues and retries
+
+---
 
 ---
 
