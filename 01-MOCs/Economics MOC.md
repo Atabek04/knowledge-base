@@ -2,9 +2,6 @@
 created: 2025-12-15
 tags: [moc]
 ---
-
-# Economics MOC
-
 Concepts for understanding money, value exchange, and financial systems. Covers the history and evolution of money from pre-metallic societies to modern paper currency.
 
 ## Nature of Money

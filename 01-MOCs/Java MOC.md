@@ -1,5 +1,3 @@
-# Java MOC
-
 ## Java Basics
 
 ### JVM & Compilation Fundamentals

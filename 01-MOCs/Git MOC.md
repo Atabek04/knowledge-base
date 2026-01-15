@@ -7,10 +7,6 @@ tags: [moc]
 
 Distributed version control system for tracking changes in source code.
 
-## Quick Reference
-
-- [[Commands|03-Reference/Git/Commands]] — syntax cheatsheet
-
 ## Fundamentals
 
 - [[Distributed VCS gives every developer a full repository copy]] — why Git is a DVCS
@@ -43,7 +39,7 @@ Distributed version control system for tracking changes in source code.
 
 ## Practice
 
-- [[Git|04-Flashcards/Git]] — spaced repetition cards
+- [[Git-Flashcards]] — spaced repetition cards
 
 ## External Resources
 

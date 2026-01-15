@@ -82,10 +82,6 @@ Covers WebSocket protocol mechanics, problem-solving capabilities, and compariso
 
 - [[Networking MOC]] — parent navigation hub for all networking concepts
 
-## Practice
-
-- [[WebSocket Flashcards|04-Flashcards/WebSocket]] — spaced repetition cards for WebSocket protocol
-
 ## External Resources
 
 - [MDN WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
