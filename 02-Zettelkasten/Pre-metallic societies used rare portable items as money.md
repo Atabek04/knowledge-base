@@ -1,13 +1,8 @@
 ---
 created: 2025-12-15
-tags: [economics/money]
-sr-due:
-sr-interval:
-sr-ease:
+tags:
+  - economics/money
 ---
-
-# Pre-metallic societies used rare portable items as money
-
 Before metal coins, people used naturally scarce items as currency.
 
 Examples: seashells, animal teeth, beads.

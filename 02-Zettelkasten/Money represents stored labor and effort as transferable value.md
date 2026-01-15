@@ -2,13 +2,9 @@
 created: 2025-12-15
 tags:
   - economics/money
-  - review
-sr-due:
-sr-interval:
-sr-ease:
 sr-due: 2025-12-30
-sr-interval: NaN
-sr-ease: NaN
+sr-interval: 1
+sr-ease: 2.5
 ---
 When you work, you create value.
 

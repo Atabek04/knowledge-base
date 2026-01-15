@@ -1,26 +1,21 @@
 ---
 created: 2025-12-17
-tags: [economics/money]
-sr-due:
-sr-interval:
-sr-ease:
+tags:
+  - economics/money
 ---
-
-# Standardized coins reduced friction but government dilution destroyed trust
-
 Early monetary systems had significant **friction**:
 - Memorizing who owed what to whom
 - Managing and protecting physical items like shells
-
-## Lydia's innovation: standardized metal coins
+---
+### Lydia's innovation: standardized metal coins
 
 **Lydia** pioneered melting metals into **standardized coins** with official stamps. This reduced friction — coins had recognized value without needing to weigh or verify each time. Other countries followed, producing their own coins.
 
-## War funding led to debasement
+### War funding led to debasement
 
 Wars required funding military campaigns, and governments ran out of money. Their solution: **add copper to gold coins** to increase the number of coins without finding more gold.
 
-## Trust destruction
+### Trust destruction
 
 This **debasement** led to:
 - **Depletion of intrinsic value** — coins contained less precious metal
@@ -31,7 +26,7 @@ The lesson: standardization reduces friction, but **trust is essential** for mon
 
 ---
 
-## Links
+### Links
 
 - [[First stamped coin appeared around 650 BC in Lydia]]
 - [[Money represents stored labor and effort as transferable value]]

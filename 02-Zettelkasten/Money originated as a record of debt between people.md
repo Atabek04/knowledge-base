@@ -1,13 +1,11 @@
 ---
 created: 2025-12-15
-tags: [economics/money]
-sr-due:
-sr-interval:
-sr-ease:
+tags:
+  - economics/money
+sr-due: 2026-01-02
+sr-interval: 3
+sr-ease: 216
 ---
-
-# Money originated as a record of debt between people
-
 Credit theory of money: money emerged from social obligations, not barter.
 
 If someone gives you water, you owe them something in return.

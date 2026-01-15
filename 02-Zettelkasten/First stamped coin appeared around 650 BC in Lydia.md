@@ -1,13 +1,8 @@
 ---
 created: 2025-12-15
-tags: [economics/money]
-sr-due:
-sr-interval:
-sr-ease:
+tags:
+  - economics/money
 ---
-
-# First stamped coin appeared around 650 BC in Lydia
-
 Lydia (modern Turkey) produced the first coins with official stamps.
 
 Before this, people used raw metal pieces — but weight and purity varied.

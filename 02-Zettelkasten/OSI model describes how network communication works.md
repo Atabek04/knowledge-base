@@ -4,9 +4,9 @@ tags:
   - networking
   - networking/osi-model
   - networking/protocols
-sr-due:
-sr-interval:
-sr-ease:
+sr-due: 2026-01-06
+sr-interval: 1
+sr-ease: 230
 ---
 ### OSI model has 7 layers to explain communication
 
@@ -141,17 +141,17 @@ Transport Layer prepares data for transfer
 		- **Server** (device: IP = 93.184.216.34)
 			- Web server (app: port 443)
 			- Email server (app: port 25)
-	- Transport Layer itself only deals with ports. 
-	- The IP addresses get added later when the segment moves down to the Network Layer (Layer 3)
+	- <mark style="background: #ADCCFFA6;">Transport Layer itself only deals with ports. </mark>
+	- <mark style="background: #D2B3FFA6;"> The IP addresses get added later when the segment moves down to the Network Layer (Layer 3)</mark>
 
 ###### Session vs End-to-End connection
 
-| Session Layer                | Transport Layer             |     |
-| ---------------------------- | --------------------------- | --- |
-| Logical dialogue/session     | Physical connection pathway |     |
-| Manages "conversation state" | Ensures actual delivery     |     |
-| Synchronization & recovery   | Reliability & ordering      |     |
-| Can survive connection drops | IS the connection           |     |
+| Session Layer                | Transport Layer             |
+| ---------------------------- | --------------------------- |
+| Logical dialogue/session     | Physical connection pathway |
+| Manages "conversation state" | Ensures actual delivery     |
+| Synchronization & recovery   | Reliability & ordering      |
+| Can survive connection drops | IS the connection           |
 
 2. <mark style="background: #ABF7F7A6;">Segmentation & Reassembly</mark>
 	Read more: [[Segment is a chunk of data in Transport Layer]]
@@ -198,7 +198,7 @@ See also: [[Packet is Segment with IP address]]
 #### Layer 2: <mark style="background: #FFF3A3A6;">Data Link</mark>
 
 - Data Link Layer receives Packets from Network Layer.
-- Wraps those Packets with MAC **Header** and **Trailer**
+- <mark style="background: #D2B3FFA6;">Wraps those Packets with MAC **Header** and **Trailer**</mark>
 	- Now that wrapped data is called **Frame**
 
 Additional MAC address is added

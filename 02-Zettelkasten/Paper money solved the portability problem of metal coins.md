@@ -1,9 +1,7 @@
 ---
 created: 2025-12-15
-tags: [economics/money]
-sr-due:
-sr-interval:
-sr-ease:
+tags:
+  - economics/money
 ---
 
 # Paper money solved the portability problem of metal coins

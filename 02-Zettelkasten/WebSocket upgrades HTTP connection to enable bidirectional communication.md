@@ -2,7 +2,6 @@
 created: 2025-12-08
 tags:
   - networking/websocket
-  - review/websocket
 sr-due:
 sr-interval:
 sr-ease:
