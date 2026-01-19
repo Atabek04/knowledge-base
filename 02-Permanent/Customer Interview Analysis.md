@@ -38,6 +38,7 @@ Each segment has different switching costs, pain points, and value drivers.
 - Sets expectation for listening, not validation
 
 **Strong Behavioral Questions**
+
 | Question | Why It Works |
 |----------|-------------|
 | "What did you pay for your last Arabic learning method?" | Tests real currency (money), not hypothetical |
