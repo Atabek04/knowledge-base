@@ -15,12 +15,12 @@ Deep analysis of customer interview questions aligned with **The Mom Test framew
 
 Your platform validates three core hypotheses:
 
-1. **Willingness to pay:** Target audience will pay $20/month (when they currently use free/cheap solutions)
+1. **Willingness to pay:** Target audience will pay $20/month (when they currently pay $25-40/month for live classes)
 2. **Hybrid model value:** Pre-recorded lessons + live practice combination is more valuable than either alone
 3. **Differentiation:** Grammar teaching + engagement + AI tutor addresses real pain points competitors don't solve
 
 **Your customer segments:**
-- **Telegram live class students** (community-based, free/cheap)
+- **Telegram live class students** (community-based, $25-40/month)
 - **Arabicle.ru users** ($48.97 sunk cost, one-time payment model)
 - **Self-taught learners** (YouTube + textbooks + AI, entirely free)
 
