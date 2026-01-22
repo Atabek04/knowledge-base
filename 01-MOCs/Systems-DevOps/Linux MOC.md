@@ -18,6 +18,8 @@ Operating system fundamentals, Linux kernel architecture, Unix/Linux history, an
 
 - [[GUI and CLI are applications that mediate between users and kernel through system calls]] — graphical vs command-line interfaces
 - [[Linux terminal prompt shows username, hostname, current directory, and user privilege level]] — understanding the prompt format
+- [[Shell interprets user commands and translates them into system calls for the kernel]] — shell as intermediary between user and kernel
+- [[Every program has 3 built-in streams - stdin, stdout, stderr]] — standard input/output/error streams
 
 ## Part 2 — Linux History & Philosophy
 
@@ -49,6 +51,27 @@ Operating system fundamentals, Linux kernel architecture, Unix/Linux history, an
 
 - [[Linux root filesystem uses a hierarchical tree structure with standardized directories for different purposes]] — FHS directory layout
 
+## Part 3.5 — Command-Line Tools & Shell Scripting
+
+### Command-Line Utilities
+
+- [[ls command displays files with options for hidden files and detailed format]] — listing files with options
+- [[grep searches files for lines matching text patterns using regular expressions]] — text pattern matching and filtering
+- [[less command displays files one screen at a time with navigation and search]] — pager for efficient file viewing
+- [[Pipe operator chains Linux commands by connecting stdout of one to stdin of another]] — command composition and data flow
+- [[Output redirection operators write command output to files in Linux]] — redirecting stdout and stderr
+
+### Shell Scripting Fundamentals
+
+- [[Shell scripts automate Linux tasks by combining multiple commands in a text file]] — automation and task composition
+- [[Shebang tells the operating system which interpreter should execute a script]] — script execution headers
+- [[Bash variables store data and command output for reuse in scripts]] — variables and command substitution
+- [[Bash positional parameters access command-line arguments as numbered variables]] — handling script arguments
+- [[Bash read command captures user input from stdin during script execution]] — interactive user input
+- [[Bash if statements execute commands conditionally using test operators for comparison]] — conditional execution
+- [[Bash loops iterate over lists with for or repeat while conditions are true]] — iteration and repetition
+- [[Bash functions encapsulate reusable code blocks that accept parameters and return exit codes]] — code modularity and reuse
+
 ## Part 4 — Package Management
 
 ### Package Concepts
@@ -73,6 +96,8 @@ Operating system fundamentals, Linux kernel architecture, Unix/Linux history, an
 
 ### Permission Systems
 
+- [[Linux file ownership assigns files to users and groups for permission control]] — user and group ownership
+- [[Linux file permissions control read, write, and execute access for owner, group, and others]] — rwx permissions and chmod
 - [[Linux permission management operates at user level and group level]] — two-tier permission model
 - [[Every Linux user must have exactly one primary group but can have multiple secondary groups]] — group membership rules
 
