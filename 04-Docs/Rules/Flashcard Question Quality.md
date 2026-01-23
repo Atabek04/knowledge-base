@@ -99,13 +99,13 @@ Before adding a card, verify:
 
 ## Red Flags During Review
 
-| Signal | Meaning | Fix |
-|--------|---------|-----|
-| "I can never remember this" | Too hard or poorly defined | Simplify or rewrite |
-| "I knew the answer but don't understand it" | Surface-level pattern-matching | Remove hints; require deeper retrieval |
-| "This feels like trivia" | Orphaned, disconnected card | Link to MOC; create related cards |
-| "I got it right but guessed" | Ambiguous question | Tighten phrasing |
-| "This is too easy" | No retrieval challenge | Combine with related concept; ask deeper |
+| Signal                                      | Meaning                        | Fix                                      |
+| ------------------------------------------- | ------------------------------ | ---------------------------------------- |
+| "I can never remember this"                 | Too hard or poorly defined     | Simplify or rewrite                      |
+| "I knew the answer but don't understand it" | Surface-level pattern-matching | Remove hints; require deeper retrieval   |
+| "This feels like trivia"                    | Orphaned, disconnected card    | Link to MOC; create related cards        |
+| "I got it right but guessed"                | Ambiguous question             | Tighten phrasing                         |
+| "This is too easy"                          | No retrieval challenge         | Combine with related concept; ask deeper |
 
 ---
 
