@@ -1,3 +1,9 @@
+---
+created: 2026-01-22
+tags:
+  - ml/training
+  - ml/loss
+---
 
 > Loss function - **mathematical formula** that measures "**how wrong**" the model is.
 
@@ -33,3 +39,9 @@ loss = 50² = 2,500
     - Square makes all errors **<mark style="background: #FFB8EBA6;">positive</mark>** → both +50k and −50k become 2,500.
     - **Larger mistakes are penalized more** (50² = 2,500 vs 10² = 100)
 	    - *meaning, punishes big mistakes more heavily.*
+
+---
+
+Read more:
+- [[Gradient adjusts params to reduce loss]]
+- [[Parameter is a value that defines how a system behaves]]

@@ -1,4 +1,11 @@
 
+---
+created: 2026-01-22
+tags:
+  - ml/fundamentals
+  - ml/parameters
+---
+
 Function = takes input, produces output.
 
 Input = image of cat

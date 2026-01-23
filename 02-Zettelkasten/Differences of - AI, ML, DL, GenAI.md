@@ -1,3 +1,10 @@
+---
+created: 2026-01-22
+tags:
+  - ml/fundamentals
+  - ml/concepts
+---
+
 ```
 AI (biggest box)
 └─ ML (inside AI)
@@ -33,3 +40,8 @@ GenAI (generates content)
 ├─ Music generators
 └─ Video generators
 ```
+
+---
+
+Read more:
+- [[Types of ML]]

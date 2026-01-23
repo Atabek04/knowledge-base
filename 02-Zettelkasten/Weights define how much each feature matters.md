@@ -1,5 +1,11 @@
+---
+created: 2026-01-22
+tags:
+  - ml/fundamentals
+  - ml/parameters
+---
 
-> **A weight (`w`) is a number the model learns 
+> **A weight (`w`) is a number the model learns
 > :luc_arrow_right_circle: that multiplies a feature to make predictions.**
 
 The weight tells you: **"How much does this feature affect the prediction?"**
@@ -25,7 +31,7 @@ How do weights get learned?
 4. Adjust weights slightly to reduce loss
 5. Repeat thousands of times until weights are accurate
 
-See: [[Gradient adjusts params to reduce loss.md]]
+See: [[Gradient adjusts params to reduce loss]]
 
 ---
 
@@ -45,5 +51,5 @@ Are weights the same as parameters?
 **No.** Weights ARE a type of parameter, but parameters also include bias and other settings.
 
 Read more:
-- [[Parameter is a value that defines how a system behaves.md]]
-- [[Bias adds a baseline shift to all predictions.md]])
+- [[Parameter is a value that defines how a system behaves]]
+- [[Bias adds a baseline shift to all predictions]]

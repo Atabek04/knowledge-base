@@ -1,6 +1,12 @@
+---
+created: 2026-01-22
+tags:
+  - ml/fundamentals
+  - ml/parameters
+---
 
-> **Bias (`b`) is a number the model learns 
-> :luc_arrow_right_circle: that gets added to every prediction, 
+> **Bias (`b`) is a number the model learns
+> :luc_arrow_right_circle: that gets added to every prediction,
 > ⚠️ *regardless of features.***
 
 Bias tells you: **"What's the baseline prediction before we consider any features?"**

@@ -1,5 +1,11 @@
+---
+created: 2026-01-22
+tags:
+  - ml/fundamentals
+  - ml/types
+---
 
-> All ML works by **learning from data**. 
+> All ML works by **learning from data**.
 > But they differ in **what kind of guidance** (instructions) they get while learning.
 
 ---
@@ -31,6 +37,12 @@ You train with `X` only (no `Y`)
 
 ### Reinforcement Learning
 
-The system learns by `trail-and-error`
+The system learns by `trial-and-error`
 Getting reward for good actions
 Penalties for bad ones
+
+---
+
+Read more:
+- [[Differences of - AI, ML, DL, GenAI]]
+- [[Regression and Classification]]
