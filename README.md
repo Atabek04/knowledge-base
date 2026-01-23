@@ -20,9 +20,8 @@ Focus areas: **Backend**, **DevOps**, **System Design**.
 
 **Capture** raw ideas in Inbox.
 
-**Create** three types of permanent knowledge:
+**Create** two types of permanent knowledge:
 - **Atomic Notes** — conceptual understanding (Zettelkasten)
-- **Reference** — syntax & commands (cheatsheets)
 - **Flashcards** — memorization (spaced repetition)
 
 **Navigate** with Maps of Content (MOCs) to connect related notes.
@@ -33,9 +32,12 @@ Focus areas: **Backend**, **DevOps**, **System Design**.
 
 ## Quick Links
 
-| Doc                   | Purpose                       |
-| --------------------- | ----------------------------- |
-| [[CLAUDE.md]]         | Configuration for Claude Code |
+| Doc                                              | Purpose                           |
+| ------------------------------------------------ | --------------------------------- |
+| [[CLAUDE.md]]                                    | Configuration for Claude Code     |
+| [[04-Docs/Rules/Zettelkasten Note Validation.md]] | Pre-move validation checklist     |
+| [[04-Docs/Rules/Flashcard Syntax Reference.md]]  | Flashcard format & syntax rules   |
+| [[04-Docs/Rules/Flashcard Question Quality.md]]  | Question design principles        |
 
 ---
 
@@ -45,10 +47,9 @@ Focus areas: **Backend**, **DevOps**, **System Design**.
 00-Inbox/           Raw captures (process within 7 days)
 01-MOCs/            Navigation hubs for topics
 02-Zettelkasten/    Atomic permanent notes (core)
-03-Reference/       Commands, cheatsheets, syntax
-04-Flashcards/      Spaced repetition cards
-05-Projects/        Active learning (courses, studies)
-06-Archive/         Completed projects & outdated notes
+03-Flashcards/      Spaced repetition cards
+04-Docs/            Rules, guides, documentation
+05-Archive/         Completed projects & outdated notes
 Templates/          Note templates
 ```
 
