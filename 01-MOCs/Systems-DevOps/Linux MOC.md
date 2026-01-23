@@ -103,7 +103,7 @@ Operating system fundamentals, Linux kernel architecture, Unix/Linux history, an
 
 ### System Configuration
 
-- [[Linux stores user configuration in plain text files under /etc directory]] — where user data lives
+- [[etc directory]] — where user data lives
 - [[User management commands like useradd and usermod safely modify system user configuration]] — command-line user administration
 - [[LDAP and FreeIPA provide centralized authentication for Linux similar to Active Directory on Windows]] — enterprise authentication
 

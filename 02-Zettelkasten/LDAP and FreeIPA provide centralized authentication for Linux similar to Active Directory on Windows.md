@@ -36,5 +36,5 @@ Many companies and universities implement centralized authentication so employee
 ## Links
 
 - [[Linux MOC]] — Linux operating system fundamentals
-- [[Linux stores user configuration in plain text files under /etc directory]]
+- [[etc directory]]
 - [[Separate user accounts enable accountability through audit logs and granular permission control]]

@@ -49,5 +49,5 @@ These commands abstract away the complexity of `/etc/` file management. They ens
 ## Links
 
 - [[Linux MOC]] — Linux operating system fundamentals
-- [[Linux stores user configuration in plain text files under /etc directory]]
+- [[etc directory]]
 - [[Every Linux user must have exactly one primary group but can have multiple secondary groups]]

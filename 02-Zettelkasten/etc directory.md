@@ -2,7 +2,6 @@
 created: 2026-01-20
 tags: [linux/configuration]
 ---
-
 **Linux system configuration**, including user accounts, groups, and passwords, is stored in **plain text files** located under the `/etc/` directory. This design choice provides transparency and flexibility.
 
 **Primary Configuration Files**
