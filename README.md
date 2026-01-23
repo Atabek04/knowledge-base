@@ -33,10 +33,9 @@ Focus areas: **Backend**, **DevOps**, **System Design**.
 
 ## Quick Links
 
-| Doc                   | Purpose                            |
-| --------------------- | ---------------------------------- |
-| [[PROJECT_STRUCTURE]] | Detailed folder explanations       |
-| [[CLAUDE.md]]         | Configuration for Claude Code      |
+| Doc                   | Purpose                       |
+| --------------------- | ----------------------------- |
+| [[CLAUDE.md]]         | Configuration for Claude Code |
 
 ---
 
@@ -53,18 +52,6 @@ Focus areas: **Backend**, **DevOps**, **System Design**.
 Templates/          Note templates
 ```
 
-See [[PROJECT_STRUCTURE]] for detailed explanations.
-
----
-
-## Getting Started
-
-1. **Read** [[WORKFLOW]] to understand the phases
-2. **Capture** ideas in 00-Inbox/
-3. **Process** within 7 days (see [[WORKFLOW]] Phase 2)
-4. **Create** atomic notes or reference material
-5. **Review** flashcards daily (5-10 min)
-
 ---
 
 ## Key Principles
@@ -73,28 +60,6 @@ See [[PROJECT_STRUCTURE]] for detailed explanations.
 
 **Linked:** Every note connects to related notes & parent MOC.
 
-**Separate:** Learning notes (Zettelkasten) vs Lookup (Reference).
-
 **Permanent:** Inbox → Process → Permanent → Archive.
 
 ---
-
-## For Claude Code Users
-
-Using AI to generate flashcards or notes? See [[CLAUDE.md]] for configuration.
-
-**Note:** Writing notes yourself is recommended. AI assists with structure, not understanding.
-
----
-
-## Tech Stack
-
-Languages: Java, Kotlin, Python
-
-Tools: Obsidian + SR Plugin
-
-Version Control: Git (GitHub)
-
----
-
-For detailed information, see the linked documents above.
