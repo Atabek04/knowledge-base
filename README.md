@@ -33,11 +33,10 @@ Focus areas: **Backend**, **DevOps**, **System Design**.
 
 ## Quick Links
 
-| Doc | Purpose |
-|-----|---------|
-| [[PROJECT_STRUCTURE]] | Detailed folder explanations |
-| [[WORKFLOW]] | Step-by-step note creation process |
-| [[CLAUDE.md]] | Configuration for Claude Code |
+| Doc                   | Purpose                            |
+| --------------------- | ---------------------------------- |
+| [[PROJECT_STRUCTURE]] | Detailed folder explanations       |
+| [[CLAUDE.md]]         | Configuration for Claude Code      |
 
 ---
 

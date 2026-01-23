@@ -2,70 +2,46 @@
 created: 2025-12-08
 tags: [moc, inbox, system]
 ---
-
-# Inbox Review Dashboard
-
-**Daily checkpoint for processing captured knowledge.**
-
-Check this dashboard during your evening 15-minute inbox processing session.
-
----
-
-## 🔴 URGENT
-### Overdue Items (>7 days)
-
-These items MUST be processed today. They've exceeded the 7-day deadline.
+## 🔴 URGENT - Overdue Items (>7 days)
 
 ```dataview
 TABLE WITHOUT ID
   file.link as "📝 Item",
-  created as "Created",
-  choice(date(today) - date(created) = dur(1 day), "1 day ago", string(round((date(today) - date(created)).days)) + " days ago") as "⏰ Age"
+  dateformat(file.cday, "yyyy-MM-dd") as "Created",
+  dur(date(today) - date(file.cday)) as "⏰ Age"
 FROM "00-Inbox"
-WHERE created <= date(today) - dur(7 days)
-SORT created ASC
+WHERE file.cday <= date(today) - dur(7 days)
+SORT file.cday ASC
 ```
-
-**Action:** Process immediately → move to appropriate folder (Zettelkasten/Reference/Projects) or discard.
 
 ---
 
-## 🟡 WARNING
-### Approaching Deadline (4-7 days)
-
-These items are aging. Schedule processing soon.
+## 🟡 WARNING - Approaching Deadline (4–7 days)
 
 ```dataview
 TABLE WITHOUT ID
   file.link as "📝 Item",
-  created as "Created",
-  choice(date(today) - date(created) = dur(1 day), "1 day ago", string(round((date(today) - date(created)).days)) + " days ago") as "⏰ Age"
+  dateformat(file.cday, "yyyy-MM-dd") as "Created",
+  dur(date(today) - date(file.cday)) as "⏰ Age"
 FROM "00-Inbox"
-WHERE created > date(today) - dur(7 days)
-  AND created <= date(today) - dur(4 days)
-SORT created ASC
+WHERE file.cday > date(today) - dur(7 days)
+  AND file.cday <= date(today) - dur(4 days)
+SORT file.cday ASC
 ```
-
-**Action:** Review and prioritize for next 1-2 days.
 
 ---
 
-## 🟢 FRESH
-### Recent Captures (<4 days)
-
-Newly captured items. Still within healthy processing window.
+## 🟢 FRESH - Recent Captures (<4 days)
 
 ```dataview
 TABLE WITHOUT ID
   file.link as "📝 Item",
-  created as "Created",
-  choice(date(today) - date(created) = dur(0 day), "Today", choice(date(today) - date(created) = dur(1 day), "Yesterday", string(round((date(today) - date(created)).days)) + " days ago")) as "⏰ Age"
+  dateformat(file.cday, "yyyy-MM-dd") as "Created",
+  dur(date(today) - date(file.cday)) as "⏰ Age"
 FROM "00-Inbox"
-WHERE created > date(today) - dur(4 days)
-SORT created DESC
+WHERE file.cday > date(today) - dur(4 days)
+SORT file.cday DESC
 ```
-
-**Action:** No immediate action needed, but keep on radar.
 
 ---
 
@@ -86,30 +62,10 @@ TABLE WITHOUT ID
     choice(length(rows) = 1, "⚠️ 1 overdue item",
       "🚨 " + string(length(rows)) + " overdue items")) as "Status"
 FROM "00-Inbox"
-WHERE created <= date(today) - dur(7 days)
+WHERE file.cday <= date(today) - dur(7 days)
 GROUP BY true
 ```
-
 ---
-
-## Processing Decision Tree
-
-```
-Quick fact to look up?
-  → 03-Reference/ (commands, syntax, cheatsheets)
-
-Concept to understand deeply?
-  → 02-Zettelkasten/ (atomic note with links)
-
-Active learning project?
-  → 05-Projects/ (course work, study sprint)
-
-Outdated or irrelevant?
-  → Delete or 06-Archive/
-```
-
----
-
 ## Tips
 
 **Best practice:** Process inbox items in order of age (oldest first).
