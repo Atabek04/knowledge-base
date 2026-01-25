@@ -24,15 +24,6 @@ Titles must be **complete statements**, not topic labels.
 ✓ Good: "WebSocket provides full-duplex communication over TCP"
 
 Test: Does the title teach something alone, or just name a thing?
-
-### Flashcard Quality
-
-- Test ONE concept per card
-- Use active recall (retrieval, not recognition)
-- No "Q:/A:" prefixes
-- Bold **key terms** in both question and answer
-- Avoid yes/no questions
-
 ### Content Rules
 
 **NEVER:**
@@ -44,6 +35,14 @@ Test: Does the title teach something alone, or just name a thing?
 - Rewrite concepts in own words
 - Link to related notes and parent MOC
 - Follow templates in `Templates/` folder
+
+## Flashcard Generation
+
+When generating Anki flashcards from atomic notes, follow these rules:
+
+- [Workflow](04-Docs/Rules/WORKFLOW.md) — sync process
+- [Syntax](04-Docs/Rules/FLASHCARD_SYNTAX.md) — Q&A and Cloze formats
+- [Question Rules](04-Docs/Rules/QUESTION_RULES.md) — active recall best practices
 
 ## Tech Stack Context
 
