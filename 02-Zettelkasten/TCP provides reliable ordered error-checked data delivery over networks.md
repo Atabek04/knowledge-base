@@ -1,9 +1,7 @@
 ---
 created: 2025-12-08
-tags: [networking/tcp]
-sr-due:
-sr-interval:
-sr-ease:
+tags:
+  - networking/tcp
 ---
 
 **TCP (Transmission Control Protocol)** is a transport layer protocol that guarantees three critical properties: reliability, ordering, and error-checking.
