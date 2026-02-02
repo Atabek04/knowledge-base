@@ -2,5 +2,10 @@
   "obsidian-git",
   "languagetool",
   "dataview",
-  "obsidian-to-anki-plugin"
+  "obsidian-to-anki-plugin",
+  "obsidian-icon-shortcodes",
+  "highlightr-plugin",
+  "obsidian-functionplot",
+  "quickadd",
+  "duplicate-line"
 ]
