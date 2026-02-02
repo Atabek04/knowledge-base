@@ -5,7 +5,7 @@ tags:
 ---
 Lydia (modern Turkey) produced the first coins with official stamps.
 
-Before this, people used raw metal pieces — but weight and purity varied.
+Before this, people used raw metal pieces — but <mark style="background: #BBFABBA6;">weight and purity varied</mark>.
 
 Stamping solved trust: the ruler's mark guaranteed standard value.
 

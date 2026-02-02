@@ -13,7 +13,7 @@ Early monetary systems had significant **friction**:
 
 ### War funding led to debasement
 
-Wars required funding military campaigns, and governments ran out of money. Their solution: **add copper to gold coins** to increase the number of coins without finding more gold.
+Wars required funding military campaigns, and governments ran out of money. Their solution: <mark style="background: #FFB8EBA6;">add copper to gold coins to increase the number of coins without finding more gold.</mark>
 
 ### Trust destruction
 

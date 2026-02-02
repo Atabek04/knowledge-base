@@ -3,10 +3,7 @@ created: 2025-12-15
 tags:
   - economics/money
 ---
-
-# Paper money solved the portability problem of metal coins
-
-China pioneered paper money — certificates representing metal stored elsewhere.
+China pioneered paper money — <mark style="background: #BBFABBA6;">certificates representing metal stored elsewhere</mark>.
 
 Advantages over coins:
 - Lighter to carry
