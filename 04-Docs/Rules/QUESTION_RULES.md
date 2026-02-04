@@ -61,13 +61,13 @@ How would you apply [principle] to [scenario]?
 
 ## Common Pitfalls
 
-| Problem | Fix |
-|---------|-----|
-| **Ambiguous question** (multiple valid answers) | Specify the retrieval target: "What guarantees does TCP provide that UDP doesn't?" |
-| **Hidden hints** (answer revealed in question) | Remove descriptive context. Make it a pure retrieval cue. |
-| **Multi-concept questions** (5 ideas in one card) | Split into atomic cards. One concept per card. |
-| **Orphan cards** (disconnected from knowledge network) | Link to MOC or related concepts. Ask: "Does this relate to my broader knowledge?" |
-| **Question-answer mismatch** (depth/scope don't align) | Ensure both require same level of retrieval. |
+| Problem                                                | Fix                                                                                |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| **Ambiguous question** (multiple valid answers)        | Specify the retrieval target: "What guarantees does TCP provide that UDP doesn't?" |
+| **Hidden hints** (answer revealed in question)         | Remove descriptive context. Make it a pure retrieval cue.                          |
+| **Multi-concept questions** (5 ideas in one card)      | Split into atomic cards. One concept per card.                                     |
+| **Orphan cards** (disconnected from knowledge network) | Link to MOC or related concepts. Ask: "Does this relate to my broader knowledge?"  |
+| **Question-answer mismatch** (depth/scope don't align) | Ensure both require same level of retrieval.                                       |
 
 ---
 

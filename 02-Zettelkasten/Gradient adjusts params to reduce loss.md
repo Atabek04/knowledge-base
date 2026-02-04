@@ -116,7 +116,7 @@ The **minus sign** is the key: it makes us move **opposite** the derivative.
 
 You **choose** it before training.
 
-It's a **hyperparameter** that controls **<mark style="background: #BBFABBA6;">how big each step is</mark>**.
+It's a **hyperparameter** that controls **<mark style="background: #BBFABBA6;">how big each step is</mark>**
 
 Common values: `0.001`, `0.01`, `0.1`
 
