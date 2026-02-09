@@ -6,29 +6,47 @@ sr-interval:
 sr-ease:
 ---
 
+### Core Concept
+
 Ephemeral ECDH generates a fresh private-public key pair for each session and deletes the private key immediately after use.
 This provides **forward secrecy** — compromise of long-term keys doesn't reveal past session keys.
+
+### Terminology
 
 The "E" in ECDHE stands for "ephemeral" meaning temporary.
 Each TLS connection uses brand new ECDH keys that exist only for that connection.
 
+### How It Works
+
 After deriving the session key, both parties securely erase their ephemeral private keys.
 An attacker who later steals the server's long-term private key cannot decrypt recorded past sessions.
+
+### Contrast with Key Transport
 
 This contrasts with RSA key transport where the same server private key decrypts all session keys.
 Compromising that key exposes all past communications.
 
+### Authentication
+
 The ephemeral keys are authenticated using long-term keys (certificates).
 The server signs its ephemeral public key with its certificate's private key to prove identity.
+
+### Performance Considerations
 
 Ephemeral keys add computational cost — generating a fresh key pair for each connection.
 Modern elliptic curves like X25519 make this efficient enough for practical use.
 
+### Security Benefits
+
 Forward secrecy is crucial for long-term confidentiality.
 Even if an attacker records encrypted traffic and breaks the encryption years later, ephemeral keys protect past sessions.
 
+### Modern Requirements
+
 TLS 1.3 requires forward secrecy by removing non-ephemeral key exchange methods.
 All connections must use ECDHE or DHE.
+
+---
 
 ## Links
 - [[ECDH derives shared secret using elliptic curve mathematics]]

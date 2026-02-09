@@ -16,7 +16,7 @@ This eliminated the ability for websites to directly access USB tokens or smart 
 1. Native application runs on user's computer
 2. Opens WebSocket server on localhost
 3. Websites connect via JavaScript
-4. NCALayer accesses hardware tokens and PKCS#12 files
+4. NCALayer accesses hardware tokens and PKCS-12 files
 5. Returns signature results to website
 
 The WebSocket connection stays within the local machine.
@@ -42,7 +42,7 @@ Other countries implemented similar middleware for their national PKI systems.
 
 ## Links
 - [[NCALayer runs WebSocket server on localhost port 13579]]
-- [[NCALayer accesses hardware tokens and PKCS#12 files]]
+- [[NCALayer accesses hardware tokens and PKCS-12 files]]
 - [[Modern browsers removed plugin support for security]]
 - [[Kazakhstan uses ST RK GOST R 34.10-2015 with 512-bit keys]]
 - [[Cryptographic Standards MOC]]

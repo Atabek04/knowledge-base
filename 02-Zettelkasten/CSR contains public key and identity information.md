@@ -15,7 +15,7 @@ For a web server, the CN field contains the domain name; for a person, it contai
 The entire CSR is signed with your private key.
 This proves you possess the private key corresponding to the public key in the CSR.
 
-Standard CSR formats use PKCS#10 encoded in DER or PEM.
+Standard CSR formats use PKCS-10 encoded in DER or PEM.
 You'll see `-----BEGIN CERTIFICATE REQUEST-----` in PEM format.
 
 The CA verifies the CSR signature before proceeding with identity verification.
@@ -34,5 +34,5 @@ Many web hosting panels and cloud services automate CSR generation.
 - [[Certificate issuance begins with key pair generation]]
 - [[CA verification confirms identity through various methods]]
 - [[CA signs certificate with private key to prove authenticity]]
-- [[PKCS#10 standard defines CSR format]]
+- [[PKCS-10 standard defines CSR format]]
 - [[PKI MOC]]

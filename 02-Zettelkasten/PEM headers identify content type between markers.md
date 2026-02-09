@@ -11,12 +11,12 @@ The header tells parsers what structure to expect after Base64 decoding.
 
 **Common PEM labels**:
 - **CERTIFICATE**: X.509 certificate (DER-encoded)
-- **PRIVATE KEY**: PKCS#8 private key (algorithm-agnostic)
-- **RSA PRIVATE KEY**: PKCS#1 RSA private key (RSA-specific)
+- **PRIVATE KEY**: PKCS-8 private key (algorithm-agnostic)
+- **RSA PRIVATE KEY**: PKCS-1 RSA private key (RSA-specific)
 - **PUBLIC KEY**: SPKI public key (algorithm-agnostic)
-- **RSA PUBLIC KEY**: PKCS#1 RSA public key
-- **ENCRYPTED PRIVATE KEY**: PKCS#8 encrypted private key
-- **CERTIFICATE REQUEST**: PKCS#10 CSR
+- **RSA PUBLIC KEY**: PKCS-1 RSA public key
+- **ENCRYPTED PRIVATE KEY**: PKCS-8 encrypted private key
+- **CERTIFICATE REQUEST**: PKCS-10 CSR
 - **X509 CRL**: Certificate Revocation List
 
 **Format**: `-----BEGIN [label]-----` and `-----END [label]-----`
@@ -25,7 +25,7 @@ The label must match between BEGIN and END.
 Mismatched labels indicate corrupted data.
 
 Different labels indicate different ASN.1 schemas.
-`PRIVATE KEY` uses PKCS#8 structure; `RSA PRIVATE KEY` uses PKCS#1.
+`PRIVATE KEY` uses PKCS-8 structure; `RSA PRIVATE KEY` uses PKCS-1.
 
 **Parser behavior**:
 1. Read the header label
@@ -51,8 +51,8 @@ Others strictly enforce label-schema matching.
 
 ## Links
 - [[PEM Base64-encodes DER for text-safe transport]]
-- [[PKCS#1 defines RSA key format with modulus and exponent]]
-- [[PKCS#8 provides generic private key container for all algorithms]]
+- [[PKCS-1 defines RSA key format with modulus and exponent]]
+- [[PKCS-8 provides generic private key container for all algorithms]]
 - [[SPKI structure holds algorithm identifier and public key bits]]
 - [[Base64 converts binary to printable ASCII for text channels]]
 - [[Cryptographic Standards MOC]]

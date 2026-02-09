@@ -50,7 +50,7 @@ Developers don't need to discover or configure service endpoints.
 
 ## Links
 - [[NCALayer bridges browsers to local cryptographic hardware]]
-- [[NCALayer accesses hardware tokens and PKCS#12 files]]
+- [[NCALayer accesses hardware tokens and PKCS-12 files]]
 - [[Modern browsers removed plugin support for security]]
 - [[Kazakhstan NCALayer uses CMS for legal digital signatures]]
 - [[Cryptographic Standards MOC]]

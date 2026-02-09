@@ -22,8 +22,8 @@ The application must know "these bytes are a 256-bit ECC public key on secp256r1
 
 **Structured formats add metadata**:
 - **SPKI** (Subject Public Key Info): includes algorithm identifier and public key bits
-- **PKCS#1**: includes structure identifying this as an RSA key
-- **PKCS#8**: includes algorithm identifier for any key type
+- **PKCS-1**: includes structure identifying this as an RSA key
+- **PKCS-8**: includes algorithm identifier for any key type
 
 The metadata enables self-describing data.
 You can parse a SPKI structure and determine "this is an RSA-2048 public key."
@@ -50,5 +50,5 @@ Libraries handle the encoding/decoding automatically.
 - [[DER provides Tag-Length-Value encoding for ASN.1]]
 - [[RSA public key contains modulus and exponent integers]]
 - [[EC public key contains x y coordinates on elliptic curve]]
-- [[PKCS#1 defines RSA key format with modulus and exponent]]
+- [[PKCS-1 defines RSA key format with modulus and exponent]]
 - [[Cryptographic Standards MOC]]

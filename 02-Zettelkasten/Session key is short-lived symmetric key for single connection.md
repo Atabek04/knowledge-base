@@ -6,11 +6,17 @@ sr-interval:
 sr-ease:
 ---
 
+### Purpose
+
 A session key is a temporary symmetric encryption key used for one communication session or file encryption.
 It's generated fresh for each use and discarded afterward.
 
+### Properties
+
 Typical session keys are AES keys — 128, 192, or 256 bits.
 They provide fast symmetric encryption for bulk data.
+
+### Advantages
 
 The key advantage is limiting damage from key compromise.
 If a session key leaks, only that one session's data is exposed, not all past or future communications.
@@ -18,17 +24,25 @@ If a session key leaks, only that one session's data is exposed, not all past or
 Session keys solve the performance problem of asymmetric cryptography.
 Use asymmetric encryption only to exchange the session key, then use the fast session key for actual data.
 
+### Usage Example
+
 In TLS (HTTPS), a fresh session key is negotiated for every connection.
 The asymmetric handshake exchanges a session key, which then encrypts all HTTP traffic.
 
+### Generation
+
 Session keys should be cryptographically random.
 Never derive them from predictable sources like timestamps or sequential counters.
+
+### Security Practices
 
 After use, session keys should be securely erased from memory.
 Leaving them accessible can enable attacks that recover encrypted data.
 
 Some protocols support session key rotation during long connections.
 Periodically generating new session keys limits exposure even if one key is compromised.
+
+---
 
 ## Links
 - [[Symmetric cryptography uses single key for encryption and decryption]]

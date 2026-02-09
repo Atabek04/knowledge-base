@@ -6,11 +6,11 @@ sr-interval:
 sr-ease:
 ---
 
-The `.p12` file extension indicates a PKCS#12 encoded file.
+The `.p12` file extension indicates a PKCS-12 encoded file.
 It signals that the file contains an encrypted bundle of certificates and private keys.
 
 **Alternative extension**: `.pfx` (Personal Information Exchange)
-Both `.p12` and `.pfx` refer to the same PKCS#12 format.
+Both `.p12` and `.pfx` refer to the same PKCS-12 format.
 
 The `.pfx` extension originated from Microsoft implementations.
 `.p12` is the more standards-compliant naming.
@@ -39,7 +39,7 @@ openssl pkcs12 -in file.p12 -clcerts -nokeys -out cert.pem
 openssl pkcs12 -in file.p12 -nocerts -out key.pem
 ```
 
-All operations require the PKCS#12 password.
+All operations require the PKCS-12 password.
 
 **Kazakhstan digital signatures** distribute as `.p12` files.
 Users download their certificate and key bundle from NCA as a password-protected P12 file.
@@ -54,8 +54,8 @@ Opening in a text editor shows gibberish.
 Web servers and email systems use this content type.
 
 ## Links
-- [[PKCS#12 bundles certificate and private key in encrypted archive]]
-- [[PKCS#12 password protects sensitive key material]]
+- [[PKCS-12 bundles certificate and private key in encrypted archive]]
+- [[PKCS-12 password protects sensitive key material]]
 - [[DER provides deterministic binary encoding of ASN.1]]
 - [[PEM Base64-encodes DER for text-safe transport]]
 - [[Cryptographic Standards MOC]]

@@ -6,29 +6,47 @@ sr-interval:
 sr-ease:
 ---
 
+### Purpose
+
 PEM (Privacy-Enhanced Mail) format wraps binary DER data in Base64 encoding with distinctive header and footer lines.
 This makes binary cryptographic data safe to transmit through text-only channels like email or configuration files.
+
+### Structure
 
 A PEM file consists of three parts: header, Base64-encoded DER, and footer.
 Example: `-----BEGIN PUBLIC KEY-----`, Base64 data, `-----END PUBLIC KEY-----`.
 
+### Content Type Labels
+
 The header/footer labels indicate what type of object is encoded.
 `PUBLIC KEY` for public keys, `CERTIFICATE` for X.509 certificates, `PRIVATE KEY` for private keys.
+
+### Base64 Encoding
 
 Base64 encoding converts every 3 bytes of binary into 4 ASCII characters.
 This increases size by about 33% but ensures the data won't be corrupted by text processing.
 
+### Text-Friendly
+
 PEM files can be opened in any text editor and copied/pasted safely.
 Line breaks in the Base64 data are ignored during decoding.
+
+### Concatenation
 
 Multiple PEM objects can be concatenated in one file.
 Certificate chains often use this — root cert + intermediate cert in a single `.pem` file.
 
+### Widespread Use
+
 Despite the "Mail" in the name, PEM is used far beyond email.
 Web servers, key management systems, and command-line tools all use PEM format.
 
+### Relationship to DER
+
 The content between headers is identical DER — just Base64-encoded.
 Decoding the Base64 recovers the exact same DER bytes.
+
+---
 
 ## Links
 - [[DER provides deterministic binary encoding of ASN.1]]

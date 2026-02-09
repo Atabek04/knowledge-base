@@ -22,7 +22,7 @@ All implementations must use the same curve to ensure interoperability.
 Documents are hashed with Streebog-512 before signature creation.
 
 The NCA provides **NCALayer** as the middleware for browser-based signing.
-NCALayer interfaces with hardware tokens or PKCS#12 files containing GOST keys.
+NCALayer interfaces with hardware tokens or PKCS-12 files containing GOST keys.
 
 **KalkanCrypt** is the certified cryptographic library implementing ST RK GOST R 34.10-2015.
 Application developers use this library to ensure compliance with Kazakhstan standards.

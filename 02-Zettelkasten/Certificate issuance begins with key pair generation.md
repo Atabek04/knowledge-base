@@ -34,5 +34,5 @@ The CA will bind this public key to your verified identity in the issued certifi
 - [[CSR contains public key and identity information]]
 - [[CA signs certificate with private key to prove authenticity]]
 - [[Public key encrypts while private key decrypts in asymmetric systems]]
-- [[PKCS#12 bundles certificate and private key in encrypted archive]]
+- [[PKCS-12 bundles certificate and private key in encrypted archive]]
 - [[PKI MOC]]

@@ -14,7 +14,7 @@ Websites communicate with NCALayer through JavaScript to request signature opera
 
 When a user signs a document through their browser:
 1. Website sends data to NCALayer via WebSocket
-2. NCALayer accesses the user's hardware token or PKCS#12 file
+2. NCALayer accesses the user's hardware token or PKCS-12 file
 3. KalkanCrypt library performs GOST signature creation
 4. NCALayer returns CMS SignedData structure to the website
 5. Website submits the signed CMS to the server

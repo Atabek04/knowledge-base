@@ -6,7 +6,7 @@ sr-interval:
 sr-ease:
 ---
 
-PKCS#12 files encrypt sensitive private keys using password-based encryption.
+PKCS-12 files encrypt sensitive private keys using password-based encryption.
 The password protects against unauthorized access to the stored credentials.
 
 **Password-based key derivation** transforms the password into encryption keys.
@@ -18,7 +18,7 @@ It prevents pre-computed rainbow table attacks.
 **Iteration count** determines how many times the derivation function runs.
 Higher iterations make each password guess slower, deterring brute-force.
 
-Modern PKCS#12 files use thousands or millions of iterations.
+Modern PKCS-12 files use thousands or millions of iterations.
 Legacy files might use only 1024 or 2048 iterations for compatibility.
 
 **Two separate passwords** can protect different parts:
@@ -44,15 +44,15 @@ Weak passwords like "password123" are easily cracked.
 - Use password managers
 - High iteration counts (100,000+)
 
-**Kazakhstan NCALayer** stores user keys in PKCS#12 files.
+**Kazakhstan NCALayer** stores user keys in PKCS-12 files.
 The password protects the GOST private keys on disk.
 
-Export from browsers typically creates PKCS#12 with user-chosen password.
+Export from browsers typically creates PKCS-12 with user-chosen password.
 Import requires the same password to decrypt and install the key.
 
 ## Links
-- [[PKCS#12 bundles certificate and private key in encrypted archive]]
-- [[P12 file extension indicates PKCS#12 format]]
+- [[PKCS-12 bundles certificate and private key in encrypted archive]]
+- [[P12 file extension indicates PKCS-12 format]]
 - [[MAC provides integrity and authenticity using keyed hash]]
 - [[HMAC creates fingerprint using hash function and secret key]]
 - [[HSM protects private keys with tamper-resistant hardware]]

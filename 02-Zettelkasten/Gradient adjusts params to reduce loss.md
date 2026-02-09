@@ -46,7 +46,12 @@ L(w) = (prediction − actual)²
 ```
 
 Our example: $L(w) = (w - 5)^2$
-**Derivative:** $L'(w) = 2(w - 5)$
+
+**Taking the derivative:**
+
+$$\frac{d}{dw}(w - 5)^2 = 2(w - 5) \cdot \frac{d}{dw}(w - 5) = 2(w - 5) \cdot 1 = 2(w - 5)$$
+
+**Result:** $L'(w) = 2(w - 5)$
 
 ---
 

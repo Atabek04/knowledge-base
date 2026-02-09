@@ -24,7 +24,7 @@ It's a public random value that gets embedded in the signature structure.
 During verification, the salt is extracted from the signature.
 The verifier reconstructs the padded hash using the salt and compares it to the decrypted signature.
 
-RSA-PSS is specified in PKCS#1 v2.1 and later.
+RSA-PSS is specified in PKCS-1 v2.1 and later.
 It's becoming the standard for new RSA signature applications.
 
 The security proof for RSA-PSS is stronger than older schemes.
@@ -44,5 +44,5 @@ The size difference is minimal and rarely a practical concern.
 - [[Signing hashes message then encrypts hash with private key]]
 - [[RSA uses modular exponentiation with large primes for encryption]]
 - [[ECDSA provides efficient signatures using elliptic curves]]
-- [[PKCS#1 defines RSA key format with modulus and exponent]]
+- [[PKCS-1 defines RSA key format with modulus and exponent]]
 - [[Digital Signatures MOC]]
