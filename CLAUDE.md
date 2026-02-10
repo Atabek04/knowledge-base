@@ -94,3 +94,11 @@ When generating Anki flashcards from atomic notes, follow these rules:
 - Languages: Java, Kotlin, Python
 - Focus areas: Backend, DevOps, System Design
 - Learning style: Q&A format, visual diagrams, hands-on practice
+
+## Git Commit Rules
+
+**NEVER:**
+- Include "Co-Authored-By" messages in commits
+- Add attribution or author tags in commit messages
+
+Keep commits clean and focused on the change description only.
