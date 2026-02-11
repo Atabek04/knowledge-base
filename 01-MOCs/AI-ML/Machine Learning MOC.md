@@ -81,6 +81,7 @@ Learning from labeled data to make predictions.
 
 - [[Classification outputs probability scores to express confidence in predictions|Classification]]
 - [[Regression and Classification#Regression|Regression]]
+- [[Linear regression finds the best-fit line through data|Linear Regression]]
 
 ### Unsupervised Learning
 Finding patterns in unlabeled data.

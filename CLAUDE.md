@@ -89,6 +89,15 @@ When generating Anki flashcards from atomic notes, follow these rules:
 - [Syntax](04-Docs/Rules/FLASHCARD_SYNTAX.md) — Q&A and Cloze formats
 - [Question Rules](04-Docs/Rules/QUESTION_RULES.md) — active recall best practices
 
+### Vocabulary Cards
+
+When user sends a sentence + asks what a word means → create a vocab flashcard.
+
+- [Vocab Flashcard Rules](04-Docs/Rules/VOCAB_FLASHCARDS.md) — full format, fields, examples
+- Note type: `A_English_Translate` (Definition → recall English word)
+- Location: `05-Flashcards/vocab/{category}.md`
+- Deck: `English Vocab::{Category}`
+
 ## Tech Stack Context
 
 - Languages: Java, Kotlin, Python

@@ -203,7 +203,6 @@ y = 2*x - 1
 - Method 2: **Visual estimation** → approximate
 
 ---
-
 ### Summary
 
 **Slope:**
@@ -222,4 +221,22 @@ y = 2*x - 1
 > **Slope measures how fast something changes;
 > derivatives tell you that change at an exact moment.**
 
-[[Derivative]]
+---
+
+### Connection to Machine Learning
+
+In math: slope = how much y changes per unit of x.
+
+In ML: slope = how much the **prediction changes** per unit of the **feature**.
+
+A [[Linear regression finds the best-fit line through data|linear regression]] model learns the best slope and intercept from data automatically — instead of you calculating it by hand.
+
+The prediction formula is the same: $y = mx + b$
+
+---
+
+Read more about [[Derivative]]
+
+Good YouTube videos:
+- [Understanding Differentiation Part 1: The Slope of a Tangent Line](https://youtu.be/ktOYbZ8CpLA)
+

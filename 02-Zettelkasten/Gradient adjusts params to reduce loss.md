@@ -131,6 +131,14 @@ Think of it as "caution level":
 
 We **always** subtract — the derivative itself carries the direction.
 
+When the derivative is **negative** (predicted too low), the two minuses become a plus:
+
+$w_{new} = w_{old} - (0.01 \times (-6)) = w_{old} - (-0.06) = w_{old} + 0.06$
+
+So the weight **increases** — exactly what we need.
+
+> The learning rate is **multiplied** by the gradient, not added. It scales the step size — a bigger gradient means a bigger step, and the learning rate controls how much we trust that step.
+
 ---
 #### Parabola - convex function
 
