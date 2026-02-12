@@ -4,7 +4,6 @@ tags:
   - ml/regression
   - math/slope
 ---
-
 ### What is linear regression?
 
 > **Linear regression** finds the line that best fits your data, so you can predict new values.

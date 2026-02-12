@@ -1,11 +1,88 @@
 
 A comprehensive learning roadmap for Machine Learning Engineering covering the full spectrum from foundational concepts to advanced applications.
 
+## Overview
+
+- [[Machine learning follows five stages from problem framing to deployment|ML Process Stages]] — problem framing → data prep → modeling → evaluation → deployment
+- [[Feature is an input variable the model uses to make predictions|Feature]] — input variable the model uses to make predictions
+- [[Types of ML]] • [[Differences of - AI, ML, DL, GenAI]]
+
+## Types of Machine Learning
+
+The big picture — what kinds of ML exist and how they differ.
+
+### Supervised Learning
+Learning from labeled data to make predictions.
+- Regression — predicting continuous values (see Regression section below)
+- Classification — predicting discrete labels (see Classification section below)
+
+### Unsupervised Learning
+Finding patterns in unlabeled data without predefined labels.
+
+### Semi-supervised Learning
+Combining labeled and unlabeled data for training.
+
+### Reinforcement Learning
+Learning through interaction and rewards.
+
+### Self-supervised Learning
+Using data structure as labels for training.
+
 ## Mathematical Foundations
 
 Core mathematics required for understanding machine learning algorithms.
 
 - [[Math for ML MOC]] — comprehensive guide to linear algebra, calculus, probability, and discrete math for ML
+
+## Data
+
+### Data Collection
+
+Sourcing and gathering data from various origins.
+
+- Data Sources
+- Databases (SQL, NoSQL)
+- Internet
+- APIs
+- Mobile Apps
+- IoT
+
+### Data Formats
+
+- JSON
+- Parquet
+- CSV
+- Excel
+- Other Data Formats
+
+### Data Cleaning and Preparation
+
+Transforming raw data into usable features for models.
+
+#### Data Preprocessing Workflow
+Essential techniques for preparing raw data for machine learning.
+
+- [[Train-test split evaluates model performance on unseen data|Train-test split]]: dividing dataset into training and testing subsets for unbiased evaluation
+- Handling missing data: imputation strategies using mean, median, or mode values
+- Encoding categorical variables: converting text categories into numerical format
+- One-hot encoding: creating binary columns for each category value to avoid ordinal assumptions
+- Label encoding: assigning integer values to categorical labels for simpler categorical variables
+- Dummy variable trap: avoiding multicollinearity by dropping one dummy variable from encoded features
+- [[Feature scaling transforms features to similar ranges for efficient training|Feature scaling]]: normalization (0-1 range) vs standardization (mean=0, std=1)
+- [[Unscaled features cause learning rate conflict in gradient descent|Learning rate conflict]]: why unscaled features break gradient descent
+- [[Oscillation happens when gradient overcorrects and bounces around the optimal value|Oscillation]]: gradient overcorrection causing bouncing
+- [[Normalization scales features to a fixed range using min and max|Normalization]]: min-max scaling to [0, 1] range
+- [[Standardization centers features around zero using mean and standard deviation|Standardization]]: z-score scaling (mean=0, std=1)
+- When to apply feature scaling: before vs after train-test split to prevent data leakage
+
+#### Feature Engineering
+Creating new features from existing data.
+
+#### Feature Selection
+Identifying the most relevant features for models.
+
+#### Outlier Detection and Handling
+Identifying and managing anomalous data points that may distort model training.
 
 ## Model Training Concepts
 
@@ -17,61 +94,15 @@ Core concepts used in training machine learning models.
 - [[Loss function - formula that measures how wrong the model is]]
 - [[Gradient adjusts params to reduce loss]]
 
-## Data Collection
-
-Sourcing and gathering data from various origins.
-
-- Data Sources
-- Databases (SQL, NoSQL)
-- Internet
-- APIs
-- Mobile Apps
-- IoT
-
-## Data Formats
-
-Understanding different data formats used in machine learning.
-
-- JSON
-- Parquet
-- CSV
-- Excel
-- Other Data Formats
-
-## Data Cleaning and Preparation
-
-Transforming raw data into usable features for models.
-
-### Data Preprocessing Workflow
-Essential techniques for preparing raw data for machine learning.
-
-- Train-test split: dividing dataset into training and testing subsets for unbiased evaluation
-- Handling missing data: imputation strategies using mean, median, or mode values
-- Encoding categorical variables: converting text categories into numerical format
-- One-hot encoding: creating binary columns for each category value to avoid ordinal assumptions
-- Label encoding: assigning integer values to categorical labels for simpler categorical variables
-- Dummy variable trap: avoiding multicollinearity by dropping one dummy variable from encoded features
-- Feature scaling methods: normalization (0-1 range) vs standardization (mean=0, std=1)
-- StandardScaler: standardization technique using mean and standard deviation to scale features
-- When to apply feature scaling: before vs after train-test split to prevent data leakage
-
-### Feature Engineering
-Creating new features from existing data.
-
-### Feature Selection
-Identifying the most relevant features for models.
-
-### Outlier Detection and Handling
-Identifying and managing anomalous data points that may distort model training.
-
 ## Regression
 
-Predicting continuous numerical outcomes using various modeling approaches.
+Predicting continuous numerical outcomes (supervised learning).
 
 ### Linear Regression Models
 Modeling relationships between predictors and continuous targets using linear functions.
 
 - Simple Linear Regression: modeling relationship between one predictor and outcome variable
+- [[Linear regression finds the best-fit line through data|Linear Regression]]
 - Ordinary Least Squares (OLS): method for finding best fit line by minimizing squared residuals
 - Multiple Linear Regression: using multiple independent variables to predict continuous outcome
 - Linear regression assumptions: linearity, homoscedasticity, independence, and normality of residuals
@@ -88,65 +119,45 @@ Capturing complex relationships that violate linearity assumptions.
 - Decision Tree Regression: recursive binary splitting on features to create predictive leafs
 - Random Forest Regression: ensemble of decision trees voting for final prediction value
 
-### Regression Evaluation Metrics
-Quantifying regression model performance and comparing different approaches.
+## Classification
 
-- R-squared: proportion of variance in outcome explained by predictor variables (0 to 1 scale)
-- Adjusted R-squared: R-squared adjusted for number of predictors to penalize model complexity
-- Mean Absolute Error (MAE): average absolute difference between predicted and actual values
-- Mean Squared Error (MSE): average squared difference penalizing large errors more heavily
-- Root Mean Squared Error (RMSE): square root of MSE in original units for interpretability
-- Model comparison: evaluating different regression algorithms using consistent metrics
-
-## Types of Machine Learning
-
-Different paradigms and approaches to solving problems.
-
-[[Types of ML]] • [[Differences of - AI, ML, DL, GenAI]]
-
-### Supervised Learning
-Learning from labeled data to make predictions.
-
-#### Classification
-Predicting discrete class labels using various algorithms.
+Predicting discrete class labels (supervised learning).
 
 - [[Classification outputs probability scores to express confidence in predictions|Classification]]
 
-**Linear Classification Models**
+### Linear Classification Models
+
 - Logistic Regression: predicting binary/multiclass outcomes using sigmoid function and probability thresholds
 - Maximum Likelihood Estimation: finding parameters that maximize probability of observed training data
 - Decision boundary: threshold separating different predicted classes in feature space
 
-**Instance-Based Learning**
+### Instance-Based Learning
+
 - K-Nearest Neighbors (K-NN): classifying based on majority vote of K nearest neighbors in training data
 - Distance metrics: Euclidean and Manhattan distances for measuring similarity between instances
 - K selection: choosing appropriate number of neighbors to balance bias-variance tradeoff
 
-**Support Vector Machines**
+### Support Vector Machines
+
 - Support Vector Machine (SVM): finding optimal hyperplane maximizing margin between class boundaries
 - Kernel SVM: using kernel trick for non-linear classification in transformed feature spaces
 - Kernel functions: transforming data into higher dimensions for linear separability (RBF, polynomial, linear)
 - Margin maximization: prioritizing examples near decision boundary for robust generalization
 
-**Probabilistic Models**
+### Probabilistic Models
+
 - Naive Bayes: probabilistic classifier using Bayes' theorem with feature independence assumption
 - Conditional probability: calculating likelihood of features given class for prediction
 
-**Tree-Based Classification**
+### Tree-Based Classification
+
 - Decision Tree Classification: hierarchical binary splitting based on feature thresholds and information gain
 - Information gain: reduction in entropy when splitting on a feature to select best split
 - Random Forest Classification: ensemble of decision trees using bootstrap aggregation and majority voting
 
-#### Regression
-- [[Regression and Classification#Regression|Regression]]
-- [[Linear regression finds the best-fit line through data|Linear Regression]]
+## Unsupervised Learning
 
-See Regression section above for detailed regression algorithms and evaluation metrics.
-
-### Unsupervised Learning
-Finding patterns in unlabeled data without predefined labels.
-
-#### Clustering
+### Clustering
 Grouping similar data points into clusters based on distance or density metrics.
 
 - K-Means clustering: partitioning data into K clusters by iteratively assigning points to nearest centroid
@@ -154,7 +165,7 @@ Grouping similar data points into clusters based on distance or density metrics.
 - DBSCAN: density-based clustering identifying core points and expanding clusters from them
 - Silhouette score: measuring cluster quality by comparing intra-cluster and inter-cluster distances
 
-#### Association Rule Learning
+### Association Rule Learning
 Discovering relationships between variables in large datasets.
 
 - Association Rule Learning: finding frequent itemsets and rules showing variable relationships
@@ -164,18 +175,20 @@ Discovering relationships between variables in large datasets.
 - Confidence: proportion of transactions containing antecedent that also contain consequent
 - Lift: ratio of observed to expected co-occurrence frequency indicating strength of rule
 
-### Semi-supervised Learning
-Combining labeled and unlabeled data for training.
+## Model Evaluation
 
-### Reinforcement Learning
-Learning through interaction and rewards.
+Assessing model performance and quality.
 
-### Self-supervised Learning
-Using data structure as labels for training.
+### Regression Metrics
 
-## Classification Evaluation Metrics
+- R-squared: proportion of variance in outcome explained by predictor variables (0 to 1 scale)
+- Adjusted R-squared: R-squared adjusted for number of predictors to penalize model complexity
+- Mean Absolute Error (MAE): average absolute difference between predicted and actual values
+- Mean Squared Error (MSE): average squared difference penalizing large errors more heavily
+- Root Mean Squared Error (RMSE): square root of MSE in original units for interpretability
+- Model comparison: evaluating different regression algorithms using consistent metrics
 
-Quantifying classification model performance using specialized evaluation metrics.
+### Classification Metrics
 
 - Confusion Matrix: table showing true positives, false positives, true negatives, and false negatives
 - Accuracy: proportion of correct predictions out of total predictions (useful for balanced datasets)
@@ -186,12 +199,7 @@ Quantifying classification model performance using specialized evaluation metric
 - AUC (Area Under Curve): aggregate metric summarizing classifier performance across all thresholds
 - Decision boundary visualization: plotting predicted regions to understand how classifier separates classes
 
-## Model Evaluation
-
-Assessing model performance and quality across different learning paradigms.
-
 ### Validation Techniques
-Cross-validation, train-test splits, and evaluation strategies for robust performance assessment.
 
 - Cross-validation: K-fold technique for assessing model generalization using multiple train-test splits
 - Stratified cross-validation: maintaining class distributions in folds for imbalanced classification

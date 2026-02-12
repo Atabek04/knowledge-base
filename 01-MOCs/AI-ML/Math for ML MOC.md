@@ -80,8 +80,10 @@ Mathematical tools for understanding change and optimization in continuous funct
 ### Derivatives and Differentiation
 
 - Delta method: using small changes (deltas) to approximate derivative
-- Derivative: instantaneous rate of change at a point
-- Slope: steepness of line or tangent to curve
+- [[Derivative measures how fast something is changing at a specific point|Derivative]]: instantaneous rate of change at a point
+- [[Slope measures how much y changes when x changes|Slope]]: steepness of line or tangent to curve
+- [[Tangent line touches curve at exactly one point and shows instantaneous slope|Tangent line]]: visual representation of derivative at a point
+- [[Two methods to find slope of a curve - calculation or visual estimation|Finding curve slope]]: calculation vs visual estimation
 - Derivative rules for constant: derivative of constant is zero
 - Derivative rules for power: power rule for polynomial terms
 - Derivative rules for sum: derivative of sum equals sum of derivatives

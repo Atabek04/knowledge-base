@@ -41,11 +41,6 @@ Limit to 4-5 colors maximum to avoid visual clutter.
 <mark style="background: yellow">highlighted text</mark>
 ```
 
-Or with CSS classes:
-```html
-<mark class="hltr-yellow">highlighted text</mark>
-```
-
 **Color system (optimized for dark theme):**
 
 - **Yellow** → Key concepts, definitions, core principles
@@ -80,6 +75,26 @@ Test: Does the title teach something alone, or just name a thing?
 - Follow templates in `Templates/` folder
 - Use `###` and `####` headings to organize sections (avoid `#` and `##` — too large)
 - Use horizontal lines `---` to separate major content blocks
+
+### Note Linking
+
+**Inline links** — use when the note title fits naturally in a sentence.
+Use aliases to keep it smooth: `[[Long atomic title|short alias]]`.
+
+**"Read more" section** — add at the bottom of every note with bullet-pointed links.
+- Notes linked inline should be repeated here
+- Notes with strong connections that didn't fit inline also go here
+- Format: `Read more:` heading followed by bullet list
+
+**When to link:**
+- One note directly explains, depends on, or extends another
+- The connection adds genuine navigation value
+
+**When NOT to link:**
+- Vague or obvious relationships (don't link every mention of "data" to a data note)
+- No forced inline links — if the title doesn't flow in the sentence, put it in "Read more" only
+
+**No orphans** — every note must have at least one link.
 
 ## Flashcard Generation
 

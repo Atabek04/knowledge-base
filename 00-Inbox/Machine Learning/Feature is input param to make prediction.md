@@ -1,6 +1,0 @@
-
-> **Feature** = an **input variable** (or attribute) that the model uses to make predictions.
-
-- Predicting house price → features: square footage, bedrooms, location
-- Spam detection → features: word count, sender domain, contains "free"
-- Image recognition → features: pixel values, edges, colors
