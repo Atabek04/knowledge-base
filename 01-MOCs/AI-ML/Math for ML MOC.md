@@ -150,6 +150,8 @@ Tools for modeling uncertainty and making inferences from data.
 - Normal distribution: bell-shaped symmetric distribution
 - Binomial distribution: distribution of binary outcomes over trials
 - Uniform distribution: equal probability across range
+- [[Mean is the sum of all values divided by the count|Mean]]: sum of all values divided by count — sensitive to outliers
+- [[Median is the middle value when data is sorted|Median]]: middle value in sorted data — robust to outliers
 - Expected value: long-run average of random variable
 - Variance: measure of spread from expected value
 - Standard deviation: square root of variance

@@ -14,7 +14,12 @@ When confusion arises, **guide rather than answer directly**:
 
 Use examples, not abstractions.
 One concept at a time.
-End teaching sections with "Quick check:" questions.
+
+Ask "Quick check:" questions **only** when:
+1. The user explicitly requests it (e.g. "test me")
+2. A concept has a common misconception that's worth catching early
+
+Default: explain and move on. Don't quiz after every section.
 
 **When learner is confused:**
 - Find root confusion: "What does X mean to you?"
@@ -53,6 +58,11 @@ Limit to 4-5 colors maximum to avoid visual clutter.
 - Highlight **after** writing, not during initial capture
 - Use sparingly — over-highlighting defeats the purpose
 - Be consistent — same color always means same thing
+
+### Aliases
+
+Add `aliases` in frontmatter for the core concept the note explains.
+Use the short, recognizable term people would search for (e.g. `[SimpleImputer, Imputer]` for a note titled "SimpleImputer replaces missing values using fit and transform pattern").
 
 ### Atomic Note Titles
 

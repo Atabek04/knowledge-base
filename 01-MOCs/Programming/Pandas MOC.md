@@ -11,6 +11,7 @@
 
 ## Data Manipulation
 
+- [[iloc selects DataFrame rows and columns by integer position]]
 - [[DataFrame bracket notation is more flexible than dot notation for column selection]]
 - [[DataFrame columns can be added by assignment with scalars or arrays]]
 - [[DataFrame columns support vectorized mathematical operations]]

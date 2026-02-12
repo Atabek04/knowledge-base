@@ -14,5 +14,7 @@ tags:
 ---
 
 Read more:
+- [[Target is the output variable the model learns to predict]]
+- [[X represents features and y represents target in ML notation]]
 - [[Feature scaling transforms features to similar ranges for efficient training]]
 - [[Machine learning follows five stages from problem framing to deployment]]

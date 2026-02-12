@@ -28,3 +28,4 @@ tags:
 Read more:
 - [[Machine learning follows five stages from problem framing to deployment]]
 - [[Feature is an input variable the model uses to make predictions]]
+- [[iloc selects DataFrame rows and columns by integer position]]

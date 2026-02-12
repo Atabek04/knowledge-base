@@ -8,6 +8,8 @@ tags:
 > **Feature scaling** is transforming features to similar numerical ranges.
 > ⚠️ That's why **Feature scaling** only applies to **numerical features**.
 
+Here "scaling" means **changing the measurement scale** — not making values bigger. You're re-expressing values on a new scale, like converting Celsius to Fahrenheit.
+
 Our features have different scales:
 - Age: 18-65
 - Income: $20,000-$200,000

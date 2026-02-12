@@ -5,6 +5,8 @@ A comprehensive learning roadmap for Machine Learning Engineering covering the f
 
 - [[Machine learning follows five stages from problem framing to deployment|ML Process Stages]] — problem framing → data prep → modeling → evaluation → deployment
 - [[Feature is an input variable the model uses to make predictions|Feature]] — input variable the model uses to make predictions
+- [[Target is the output variable the model learns to predict|Target]] — output variable the model learns to predict
+- [[X represents features and y represents target in ML notation|X and y notation]] — uppercase matrix vs lowercase vector convention
 - [[Types of ML]] • [[Differences of - AI, ML, DL, GenAI]]
 
 ## Types of Machine Learning
@@ -35,26 +37,6 @@ Core mathematics required for understanding machine learning algorithms.
 - [[Math for ML MOC]] — comprehensive guide to linear algebra, calculus, probability, and discrete math for ML
 
 ## Data
-
-### Data Collection
-
-Sourcing and gathering data from various origins.
-
-- Data Sources
-- Databases (SQL, NoSQL)
-- Internet
-- APIs
-- Mobile Apps
-- IoT
-
-### Data Formats
-
-- JSON
-- Parquet
-- CSV
-- Excel
-- Other Data Formats
-
 ### Data Cleaning and Preparation
 
 Transforming raw data into usable features for models.
@@ -63,10 +45,11 @@ Transforming raw data into usable features for models.
 Essential techniques for preparing raw data for machine learning.
 
 - [[Train-test split evaluates model performance on unseen data|Train-test split]]: dividing dataset into training and testing subsets for unbiased evaluation
-- Handling missing data: imputation strategies using mean, median, or mode values
-- Encoding categorical variables: converting text categories into numerical format
-- One-hot encoding: creating binary columns for each category value to avoid ordinal assumptions
-- Label encoding: assigning integer values to categorical labels for simpler categorical variables
+- [[Missing data must be handled because most ML algorithms cannot compute with NaN|Handling missing data]]: imputation strategies using mean, median, or mode values
+- [[SimpleImputer replaces missing values using fit and transform pattern|SimpleImputer]]: sklearn's fit-transform pattern for replacing NaN values
+- [[Categorical data must be encoded into numbers because ML algorithms only compute with numbers|Encoding categorical variables]]: converting text categories into numerical format
+- [[One-hot encoding creates a binary column for each category|One-hot encoding]]: creating binary columns for each category value to avoid ordinal assumptions
+- [[Label encoding assigns an integer to each category|Label encoding]]: assigning integer values to categorical labels for simpler categorical variables
 - Dummy variable trap: avoiding multicollinearity by dropping one dummy variable from encoded features
 - [[Feature scaling transforms features to similar ranges for efficient training|Feature scaling]]: normalization (0-1 range) vs standardization (mean=0, std=1)
 - [[Unscaled features cause learning rate conflict in gradient descent|Learning rate conflict]]: why unscaled features break gradient descent
@@ -256,6 +239,9 @@ Processing and understanding human language.
 
 ### Deep Learning Frameworks and Libraries
 Tools and frameworks for building deep learning models.
+
+- [[Scikit-learn provides ready-to-use ML algorithms and preprocessing tools|Scikit-learn]]
+- [[Matplotlib is a Python library for creating static and interactive visualizations|Matplotlib]]
 
 ---
 
