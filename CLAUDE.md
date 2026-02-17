@@ -95,6 +95,7 @@ Use aliases to keep it smooth: `[[Long atomic title|short alias]]`.
 - Notes linked inline should be repeated here
 - Notes with strong connections that didn't fit inline also go here
 - Format: `Read more:` heading followed by bullet list
+- **Always use full note titles** — no aliases. Aliases are only for inline links where readability matters
 
 **When to link:**
 - One note directly explains, depends on, or extends another

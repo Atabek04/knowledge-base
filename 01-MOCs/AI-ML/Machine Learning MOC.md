@@ -3,23 +3,108 @@ A comprehensive learning roadmap for Machine Learning Engineering covering the f
 
 ## Overview
 
-- [[Machine learning follows five stages from problem framing to deployment|ML Process Stages]] — problem framing → data prep → modeling → evaluation → deployment
+Machine learning is a subset of AI where models learn patterns from data instead of being explicitly programmed.
+
+- [[Differences of - AI, ML, DL, GenAI]] — how AI, ML, Deep Learning, and GenAI relate to each other
+- [[Types of ML]] — supervised, unsupervised, reinforcement, and more
+- [[Machine learning follows five stages from problem framing to deployment|ML Process Stages]] — the end-to-end workflow every ML project follows
+
+### Core Vocabulary
+
 - [[Feature is an input variable the model uses to make predictions|Feature]] — input variable the model uses to make predictions
 - [[Target is the output variable the model learns to predict|Target]] — output variable the model learns to predict
 - [[X represents features and y represents target in ML notation|X and y notation]] — uppercase matrix vs lowercase vector convention
-- [[Types of ML]] • [[Differences of - AI, ML, DL, GenAI]]
+- [[Supervised learning means the model learns from labeled data with known answers|Supervised learning]] — model learns from labeled data with known answers
+- [[Regression predicts a continuous number|Regression]] — predicting a continuous number
+- [[Classification predicts a discrete category|Classification]] — predicting a discrete category
 
 ## Types of Machine Learning
 
-The big picture — what kinds of ML exist and how they differ.
-
 ### Supervised Learning
-Learning from labeled data to make predictions.
-- Regression — predicting continuous values (see Regression section below)
-- Classification — predicting discrete labels (see Classification section below)
+
+[[Supervised learning means the model learns from labeled data with known answers|Supervised learning]] — the model learns from labeled data where the correct answer is known.
+
+#### Regression
+
+[[Regression predicts a continuous number|Regression]] — predicting continuous numerical values (how much? how many?).
+
+##### Linear Regression Models
+Modeling relationships between predictors and continuous targets using linear functions.
+
+- Simple Linear Regression: modeling relationship between one predictor and outcome variable
+- Ordinary Least Squares (OLS): method for finding best fit line by minimizing squared residuals
+- Multiple Linear Regression: using multiple independent variables to predict continuous outcome
+- Linear regression assumptions: linearity, homoscedasticity, independence, and normality of residuals
+- P-values: measuring statistical significance of predictor variables in determining true effect
+- Backward elimination: iteratively removing insignificant variables from model to improve parsimony
+- Multicollinearity: detecting and handling correlated predictor variables that distort coefficients
+
+##### Non-Linear Regression Models
+Capturing complex relationships that violate linearity assumptions.
+
+- Polynomial Regression: modeling non-linear relationships using polynomial features of varying degrees
+- Support Vector Regression (SVR): using support vectors with kernel trick for regression tasks
+- RBF kernel: radial basis function kernel for non-linear SVR transformations in high dimensions
+- Decision Tree Regression: recursive binary splitting on features to create predictive leafs
+- Random Forest Regression: ensemble of decision trees voting for final prediction value
+
+#### Classification
+
+[[Classification predicts a discrete category|Classification]] — predicting discrete class labels (which one? what type?).
+
+- [[Classification outputs probability scores to express confidence in predictions|Probability scores]] — models output confidence levels, not just labels
+
+##### Linear Classification Models
+
+- Logistic Regression: predicting binary/multiclass outcomes using sigmoid function and probability thresholds
+- Maximum Likelihood Estimation: finding parameters that maximize probability of observed training data
+- Decision boundary: threshold separating different predicted classes in feature space
+
+##### Instance-Based Learning
+
+- K-Nearest Neighbors (K-NN): classifying based on majority vote of K nearest neighbors in training data
+- Distance metrics: Euclidean and Manhattan distances for measuring similarity between instances
+- K selection: choosing appropriate number of neighbors to balance bias-variance tradeoff
+
+##### Support Vector Machines
+
+- Support Vector Machine (SVM): finding optimal hyperplane maximizing margin between class boundaries
+- Kernel SVM: using kernel trick for non-linear classification in transformed feature spaces
+- Kernel functions: transforming data into higher dimensions for linear separability (RBF, polynomial, linear)
+- Margin maximization: prioritizing examples near decision boundary for robust generalization
+
+##### Probabilistic Models
+
+- Naive Bayes: probabilistic classifier using Bayes' theorem with feature independence assumption
+- Conditional probability: calculating likelihood of features given class for prediction
+
+##### Tree-Based Classification
+
+- Decision Tree Classification: hierarchical binary splitting based on feature thresholds and information gain
+- Information gain: reduction in entropy when splitting on a feature to select best split
+- Random Forest Classification: ensemble of decision trees using bootstrap aggregation and majority voting
 
 ### Unsupervised Learning
+
 Finding patterns in unlabeled data without predefined labels.
+
+#### Clustering
+Grouping similar data points into clusters based on distance or density metrics.
+
+- K-Means clustering: partitioning data into K clusters by iteratively assigning points to nearest centroid
+- Hierarchical clustering: building tree of clusters through agglomerative or divisive approaches
+- DBSCAN: density-based clustering identifying core points and expanding clusters from them
+- Silhouette score: measuring cluster quality by comparing intra-cluster and inter-cluster distances
+
+#### Association Rule Learning
+Discovering relationships between variables in large datasets.
+
+- Association Rule Learning: finding frequent itemsets and rules showing variable relationships
+- Apriori algorithm: level-wise approach finding frequent itemsets by iterating through candidate sets
+- Eclat algorithm: depth-first algorithm using vertical data format for association rule mining
+- Support: frequency of itemset appearing together in dataset transactions
+- Confidence: proportion of transactions containing antecedent that also contain consequent
+- Lift: ratio of observed to expected co-occurrence frequency indicating strength of rule
 
 ### Semi-supervised Learning
 Combining labeled and unlabeled data for training.
@@ -37,6 +122,7 @@ Core mathematics required for understanding machine learning algorithms.
 - [[Math for ML MOC]] — comprehensive guide to linear algebra, calculus, probability, and discrete math for ML
 
 ## Data
+
 ### Data Cleaning and Preparation
 
 Transforming raw data into usable features for models.
@@ -45,18 +131,21 @@ Transforming raw data into usable features for models.
 Essential techniques for preparing raw data for machine learning.
 
 - [[Train-test split evaluates model performance on unseen data|Train-test split]]: dividing dataset into training and testing subsets for unbiased evaluation
+- [[random_state is a seed that makes random operations reproducible|random_state]]: fixing the random seed for reproducible results
 - [[Missing data must be handled because most ML algorithms cannot compute with NaN|Handling missing data]]: imputation strategies using mean, median, or mode values
 - [[SimpleImputer replaces missing values using fit and transform pattern|SimpleImputer]]: sklearn's fit-transform pattern for replacing NaN values
 - [[Categorical data must be encoded into numbers because ML algorithms only compute with numbers|Encoding categorical variables]]: converting text categories into numerical format
 - [[One-hot encoding creates a binary column for each category|One-hot encoding]]: creating binary columns for each category value to avoid ordinal assumptions
 - [[Label encoding assigns an integer to each category|Label encoding]]: assigning integer values to categorical labels for simpler categorical variables
-- Dummy variable trap: avoiding multicollinearity by dropping one dummy variable from encoded features
+- [[Irrelevant or unique columns should be dropped before training|Dropping columns]]: removing identifiers and useless string columns before encoding
+- [[Dummy variable is a binary column created by one-hot encoding|Dummy variable]]: binary column created by one-hot encoding to represent a category
+- [[Dummy variable trap is multicollinearity from redundant one-hot encoded columns|Dummy variable trap]]: avoiding multicollinearity by dropping one dummy variable from encoded features
 - [[Feature scaling transforms features to similar ranges for efficient training|Feature scaling]]: normalization (0-1 range) vs standardization (mean=0, std=1)
 - [[Unscaled features cause learning rate conflict in gradient descent|Learning rate conflict]]: why unscaled features break gradient descent
 - [[Oscillation happens when gradient overcorrects and bounces around the optimal value|Oscillation]]: gradient overcorrection causing bouncing
 - [[Normalization scales features to a fixed range using min and max|Normalization]]: min-max scaling to [0, 1] range
 - [[Standardization centers features around zero using mean and standard deviation|Standardization]]: z-score scaling (mean=0, std=1)
-- When to apply feature scaling: before vs after train-test split to prevent data leakage
+- [[Feature scaling must happen after train-test split to prevent data leakage|When to apply feature scaling]]: always after split — fit on train only to prevent data leakage
 
 #### Feature Engineering
 Creating new features from existing data.
@@ -76,87 +165,6 @@ Core concepts used in training machine learning models.
 - [[Bias adds a baseline shift to all predictions]]
 - [[Loss function - formula that measures how wrong the model is]]
 - [[Gradient adjusts params to reduce loss]]
-
-## Regression
-
-Predicting continuous numerical outcomes (supervised learning).
-
-### Linear Regression Models
-Modeling relationships between predictors and continuous targets using linear functions.
-
-- Simple Linear Regression: modeling relationship between one predictor and outcome variable
-- [[Linear regression finds the best-fit line through data|Linear Regression]]
-- Ordinary Least Squares (OLS): method for finding best fit line by minimizing squared residuals
-- Multiple Linear Regression: using multiple independent variables to predict continuous outcome
-- Linear regression assumptions: linearity, homoscedasticity, independence, and normality of residuals
-- P-values: measuring statistical significance of predictor variables in determining true effect
-- Backward elimination: iteratively removing insignificant variables from model to improve parsimony
-- Multicollinearity: detecting and handling correlated predictor variables that distort coefficients
-
-### Non-Linear Regression Models
-Capturing complex relationships that violate linearity assumptions.
-
-- Polynomial Regression: modeling non-linear relationships using polynomial features of varying degrees
-- Support Vector Regression (SVR): using support vectors with kernel trick for regression tasks
-- RBF kernel: radial basis function kernel for non-linear SVR transformations in high dimensions
-- Decision Tree Regression: recursive binary splitting on features to create predictive leafs
-- Random Forest Regression: ensemble of decision trees voting for final prediction value
-
-## Classification
-
-Predicting discrete class labels (supervised learning).
-
-- [[Classification outputs probability scores to express confidence in predictions|Classification]]
-
-### Linear Classification Models
-
-- Logistic Regression: predicting binary/multiclass outcomes using sigmoid function and probability thresholds
-- Maximum Likelihood Estimation: finding parameters that maximize probability of observed training data
-- Decision boundary: threshold separating different predicted classes in feature space
-
-### Instance-Based Learning
-
-- K-Nearest Neighbors (K-NN): classifying based on majority vote of K nearest neighbors in training data
-- Distance metrics: Euclidean and Manhattan distances for measuring similarity between instances
-- K selection: choosing appropriate number of neighbors to balance bias-variance tradeoff
-
-### Support Vector Machines
-
-- Support Vector Machine (SVM): finding optimal hyperplane maximizing margin between class boundaries
-- Kernel SVM: using kernel trick for non-linear classification in transformed feature spaces
-- Kernel functions: transforming data into higher dimensions for linear separability (RBF, polynomial, linear)
-- Margin maximization: prioritizing examples near decision boundary for robust generalization
-
-### Probabilistic Models
-
-- Naive Bayes: probabilistic classifier using Bayes' theorem with feature independence assumption
-- Conditional probability: calculating likelihood of features given class for prediction
-
-### Tree-Based Classification
-
-- Decision Tree Classification: hierarchical binary splitting based on feature thresholds and information gain
-- Information gain: reduction in entropy when splitting on a feature to select best split
-- Random Forest Classification: ensemble of decision trees using bootstrap aggregation and majority voting
-
-## Unsupervised Learning
-
-### Clustering
-Grouping similar data points into clusters based on distance or density metrics.
-
-- K-Means clustering: partitioning data into K clusters by iteratively assigning points to nearest centroid
-- Hierarchical clustering: building tree of clusters through agglomerative or divisive approaches
-- DBSCAN: density-based clustering identifying core points and expanding clusters from them
-- Silhouette score: measuring cluster quality by comparing intra-cluster and inter-cluster distances
-
-### Association Rule Learning
-Discovering relationships between variables in large datasets.
-
-- Association Rule Learning: finding frequent itemsets and rules showing variable relationships
-- Apriori algorithm: level-wise approach finding frequent itemsets by iterating through candidate sets
-- Eclat algorithm: depth-first algorithm using vertical data format for association rule mining
-- Support: frequency of itemset appearing together in dataset transactions
-- Confidence: proportion of transactions containing antecedent that also contain consequent
-- Lift: ratio of observed to expected co-occurrence frequency indicating strength of rule
 
 ## Model Evaluation
 
@@ -243,6 +251,3 @@ Tools and frameworks for building deep learning models.
 - [[Scikit-learn provides ready-to-use ML algorithms and preprocessing tools|Scikit-learn]]
 - [[Matplotlib is a Python library for creating static and interactive visualizations|Matplotlib]]
 
----
-
-**Status:** MOC created with all topics from roadmap.sh/machine-learning
