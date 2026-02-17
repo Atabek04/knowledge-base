@@ -34,14 +34,30 @@ Feature scaling solves this by making all gradients comparable in size, so one l
 | Oscillation? | Yes — bounces above and below | No — smooth approach |
 | Error pattern | -200k → +120k → -72k → +43k... | -300k → -75k → -19k → -5k → -1k |
 
-<mark style="background: yellow">Feature scaling isn't about whether the model **can** learn — it's about learning **efficiently and stably**.</mark>
+> Feature scaling isn't about whether the model can learn
+> it's about learning efficiently and stably.
+
+---
+
+### When to apply
+
+[[Feature scaling must happen after train-test split to prevent data leakage|Always after train-test split]] — fit on training data only, then transform both sets.
 
 ---
 
 ### Two main methods
 
-- [[Normalization scales features to a fixed range using min and max]]
-- [[Standardization centers features around zero using mean and standard deviation]]
+- [[Normalization scales features to a fixed range using min and max]] — bounds values to [0, 1]
+- [[Standardization centers features around zero using mean and standard deviation]] — centers around 0, std = 1
+
+#### Which to use
+
+| Scenario | Method |
+|---|---|
+| Data has **outliers** | Standardization — outliers won't compress the rest into a tiny range |
+| You need a **fixed range** (e.g. neural networks, image pixels) | Normalization |
+| Data is roughly **normally distributed** | Standardization |
+| **Not sure** | Standardization — safer default, works well in most cases |
 
 ---
 

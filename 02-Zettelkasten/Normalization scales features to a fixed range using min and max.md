@@ -1,5 +1,6 @@
 ---
 created: 2026-02-12
+aliases: [Normalization, MinMaxScaler, Min-Max Scaling]
 tags:
   - ml/preprocessing
 ---

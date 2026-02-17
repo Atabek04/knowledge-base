@@ -7,6 +7,9 @@ tags:
 
 > In ML code, **X** (uppercase) = [[Feature is an input variable the model uses to make predictions|features]], **y** (lowercase) = [[Target is the output variable the model learns to predict|target]].
 
+Features are also called **independent variables** — they don't *depend* on anything in the model.
+Target is also called the **dependent variable** — it *depends* on the features.
+
 **X** is uppercase because it's a **matrix** — multiple columns (features) and rows (observations).
 
 **y** is lowercase because it's a **vector** — a single column of values to predict.

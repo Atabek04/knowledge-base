@@ -30,11 +30,11 @@ Use label encoding when:
 
 **1. The category has a natural order:**
 
-| Size | Encoded |
-|---|---|
-| Small | 0 |
-| Medium | 1 |
-| Large | 2 |
+| Size   | Encoded |
+| ------ | ------- |
+| Small  | 0       |
+| Medium | 1       |
+| Large  | 2       |
 
 Here `Small < Medium < Large` is real — the model should know this.
 

@@ -9,6 +9,8 @@ tags:
 
 It's the opposite of a [[Feature is an input variable the model uses to make predictions|feature]]. Features are what goes **in**, target is what comes **out**.
 
+It's called "dependent" because its value *depends* on the features (independent variables).
+
 - Predicting house price → target: **price**
 - Spam detection → target: **spam or not spam**
 - Image recognition → target: **cat or dog**

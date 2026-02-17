@@ -18,6 +18,7 @@ The name: **Sci**entific tool**kit** for machine **learn**ing. Originally built 
 | ------------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
 | `sklearn.preprocessing`   | [[Feature scaling transforms features to similar ranges for efficient training\|Feature scaling]], encoding | `StandardScaler`, `LabelEncoder`, `OneHotEncoder` |
 | `sklearn.impute`          | [[Missing data must be handled because most ML algorithms cannot compute with NaN\|Handle missing data]]    | `SimpleImputer`                                   |
+| `sklearn.compose`         | Apply different transformers to different columns                                                            | `ColumnTransformer`                               |
 | `sklearn.model_selection` | [[Train-test split evaluates model performance on unseen data\|Train-test split]], cross-validation         | `train_test_split`, `GridSearchCV`                |
 | `sklearn.linear_model`    | Linear/logistic regression                                                                                  | `LinearRegression`, `LogisticRegression`          |
 | `sklearn.tree`            | Decision trees                                                                                              | `DecisionTreeClassifier`                          |
@@ -32,6 +33,7 @@ The name: **Sci**entific tool**kit** for machine **learn**ing. Originally built 
 ```python
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder
 ```
 
 ---
