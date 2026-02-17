@@ -1,5 +1,8 @@
 {
   "baseFontSize": 19,
   "cssTheme": "Things",
-  "theme": "system"
+  "theme": "system",
+  "enabledCssSnippets": [
+    "highlights"
+  ]
 }
