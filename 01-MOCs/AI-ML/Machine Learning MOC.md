@@ -28,25 +28,32 @@ Machine learning is a subset of AI where models learn patterns from data instead
 
 [[Regression predicts a continuous number|Regression]] — predicting continuous numerical values (how much? how many?).
 
-##### Linear Regression Models
-Modeling relationships between predictors and continuous targets using linear functions.
+##### Simple Linear Regression
+Modeling relationship between one predictor and one outcome variable.
 
-- Simple Linear Regression: modeling relationship between one predictor and outcome variable
 - Ordinary Least Squares (OLS): method for finding best fit line by minimizing squared residuals
-- Multiple Linear Regression: using multiple independent variables to predict continuous outcome
 - Linear regression assumptions: linearity, homoscedasticity, independence, and normality of residuals
+
+##### Multiple Linear Regression
+Using multiple independent variables to predict continuous outcome.
+
 - P-values: measuring statistical significance of predictor variables in determining true effect
 - Backward elimination: iteratively removing insignificant variables from model to improve parsimony
 - Multicollinearity: detecting and handling correlated predictor variables that distort coefficients
 
-##### Non-Linear Regression Models
-Capturing complex relationships that violate linearity assumptions.
+##### Polynomial Regression
+Modeling non-linear relationships using polynomial features of varying degrees.
 
-- Polynomial Regression: modeling non-linear relationships using polynomial features of varying degrees
-- Support Vector Regression (SVR): using support vectors with kernel trick for regression tasks
+##### Support Vector Regression (SVR)
+Using support vectors with kernel trick for regression tasks.
+
 - RBF kernel: radial basis function kernel for non-linear SVR transformations in high dimensions
-- Decision Tree Regression: recursive binary splitting on features to create predictive leafs
-- Random Forest Regression: ensemble of decision trees voting for final prediction value
+
+##### Decision Tree Regression
+Recursive binary splitting on features to create predictive leafs.
+
+##### Random Forest Regression
+Ensemble of decision trees voting for final prediction value.
 
 #### Classification
 
