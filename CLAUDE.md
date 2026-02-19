@@ -111,9 +111,20 @@ Use aliases to keep it smooth: `[[Long atomic title|short alias]]`.
 
 When generating Anki flashcards from atomic notes, follow these rules:
 
+- [Syntax](04-Docs/Rules/FLASHCARD_SYNTAX.md) — note types, deck hierarchy, START/END format
 - [Workflow](04-Docs/Rules/WORKFLOW.md) — sync process
-- [Syntax](04-Docs/Rules/FLASHCARD_SYNTAX.md) — Q&A and Cloze formats
 - [Question Rules](04-Docs/Rules/QUESTION_RULES.md) — active recall best practices
+
+### Flashcard Maintenance Rule
+
+When adding a new `[[]]` linked note to a MOC chapter that already has a flashcard file, **immediately create flashcards** for that new note in the corresponding flashcard file. Don't wait — keep flashcards in sync with notes.
+
+### Extraction Rules
+
+- **Don't skip important points** — every key concept, definition, formula, command, or code snippet should become a card
+- Use `START/END` block format with the appropriate note type
+- Location: `05-Flashcards/{topic}/{subtopic}.md`
+- One flashcard file per topic area, matching the deck hierarchy
 
 ### Vocabulary Cards
 
