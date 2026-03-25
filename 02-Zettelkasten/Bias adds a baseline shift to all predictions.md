@@ -11,6 +11,8 @@ tags:
 
 Bias tells you: **"What's the baseline prediction before we consider any features?"**
 
+<mark style="background: cyan">Bias is also called the **intercept** (`b₀`).</mark> Same thing — the value of y when all features are 0. "Intercept" is the math/statistics term, "bias" is the ML term.
+
 ---
 
 `predicted_price = w₁ × (square_feet) + w₂ × (bedrooms) + b`

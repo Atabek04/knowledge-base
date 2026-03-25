@@ -49,3 +49,22 @@ Back: The gradient (derivative of loss) tells the **direction** to nudge each pa
 Tags: ml training
 <!--ID: 1771415062805-->
 END
+
+START
+Coding Questions
+What does `.fit()` do in scikit-learn, and what does it learn for LinearRegression vs SimpleImputer vs StandardScaler?
+Back:
+`.fit()` tells the object: "look at this data and learn what you need."
+- **LinearRegression** → learns best weight (slope) and bias (intercept)
+- **SimpleImputer** → learns the mean/median of each column
+- **StandardScaler** → learns the mean and std of each column
+Always fit on **training data only** to prevent data leakage.
+Tags: ml training
+END
+
+START
+Coding Questions
+What does `.predict()` do in scikit-learn and what do you pass to it?
+Back: `.predict(X_test)` returns predicted targets using the weight and bias learned during `.fit()`. You pass **features only** — no targets. It does **not** return accuracy — to measure that, you compare `y_pred` vs `y_test` using evaluation metrics separately.
+Tags: ml training
+END

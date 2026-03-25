@@ -102,6 +102,8 @@ In math: slope = how much y changes per unit of x.
 
 In ML: slope = how much the **prediction changes** per unit of the **feature**.
 
+<mark style="background: cyan">In ML, slope is also called **weight** (`w` or `b₁`).</mark> Same idea — how much one feature influences the output. "Slope" is the math term, "weight" is the ML term.
+
 A [[Linear regression finds the best-fit line through data|linear regression]] model learns the best slope and intercept from data automatically — instead of you calculating it by hand.
 
 The prediction formula is the same: $y = mx + b$

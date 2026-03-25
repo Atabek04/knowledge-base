@@ -29,9 +29,9 @@ Machine learning is a subset of AI where models learn patterns from data instead
 [[Regression predicts a continuous number|Regression]] — predicting continuous numerical values (how much? how many?).
 
 ##### Simple Linear Regression
-Modeling relationship between one predictor and one outcome variable.
+[[Simple linear regression predicts a target using one feature and a straight line|Simple Linear Regression]] — one feature, one target, one straight line.
 
-- Ordinary Least Squares (OLS): method for finding best fit line by minimizing squared residuals
+- [[Ordinary Least Squares minimizes the sum of squared errors to find the best-fit line|OLS]]: finding best-fit line by minimizing squared errors algebraically
 - Linear regression assumptions: linearity, homoscedasticity, independence, and normality of residuals
 
 ##### Multiple Linear Regression
@@ -172,6 +172,9 @@ Core concepts used in training machine learning models.
 - [[Bias adds a baseline shift to all predictions]]
 - [[Loss function - formula that measures how wrong the model is]]
 - [[Gradient adjusts params to reduce loss]]
+- [[fit() trains the model by learning parameters from training data|.fit()]]: the universal scikit-learn method that learns parameters from training data
+- [[predict() uses learned parameters to compute outputs for new data|.predict()]]: computes predicted targets using learned parameters
+- [[OLS solves linear regression directly while gradient descent iterates toward the solution|OLS vs Gradient Descent]]: when to use direct solution vs iterative optimization
 
 ## Model Evaluation
 

@@ -33,4 +33,6 @@ result = arr * 2  # [2, 4, 6, 8]
 
 ---
 
-**Links**: [[Pandas MOC]]
+Read more:
+- [[NumPy exists because Python lists are too slow for numerical computing]]
+- [[Pandas provides data manipulation and analysis for tabular data in Python]]

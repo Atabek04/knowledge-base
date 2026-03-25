@@ -13,11 +13,10 @@ Three requirements:
 
 ## Question Type Effectiveness
 
-| Type | Best For | Effectiveness |
-|------|----------|---|
-| **Open-Ended Q&A** | Conceptual understanding, mechanisms, relationships | ⭐⭐⭐⭐⭐ |
-| **Cloze Deletion** | Vocabulary, definitions, drilling | ⭐⭐⭐⭐ |
-| **Definition** | Prerequisites in new domains | ⭐⭐ |
+| Type               | Best For                                            | Effectiveness |
+| ------------------ | --------------------------------------------------- | ------------- |
+| **Open-Ended Q&A** | Conceptual understanding, mechanisms, relationships | ⭐⭐⭐⭐⭐         |
+| **Definition**     | Prerequisites in new domains                        | ⭐⭐            |
 
 **Strategy**: Create understanding with Q&A first, then use cloze for maintenance drilling.
 

@@ -1,91 +1,75 @@
 # Flashcard Syntax Reference
 
+## Note Type: Coding Questions
+
+Fields: `Front`, `Back`
+
+**Anki setup:** Tools → Manage Note Types → Add → Blank → Name: `Coding Questions` → Fields: Front, Back → Cards: Front `{{Front}}`, Back `{{Back}}`
+
+---
+
+## Deck Hierarchy
+
+### Machine Learning
+
+```
+Machine Learning::Fundamentals
+Machine Learning::Data Preprocessing
+Machine Learning::Model Training
+Machine Learning::Regression
+Machine Learning::Classification
+Machine Learning::Unsupervised
+Machine Learning::Model Evaluation
+Machine Learning::Dimensionality Reduction
+Machine Learning::Model Selection
+```
+
+### Python
+
+```
+Python::NumPy
+Python::Pandas
+Python::Matplotlib
+Python::Scikit-learn
+```
+
+---
+
 ## File Header
 
 ```markdown
-TARGET DECK: Category::Subcategory
-FILE TAGS: tag1 tag2
+TARGET DECK: Machine Learning::Regression
+Tags: ml regression
+**Related:** [[Link to MOC or concept]]
 ```
 
 ---
 
-## Q&A One-liner
+## START/END Block Format
+
+### One-liner
 
 ```markdown
-Q: What is Tawhid?
-A: The oneness of Allah in His lordship, worship, and names/attributes
-
-Q: What does JVM stand for?
-A: Java Virtual Machine
+START
+Coding Questions
+What does OLS stand for?
+Back: Ordinary Least Squares — finds best-fit line by minimizing sum of squared errors
+Tags: ml regression
+<!--ID: 1771415062868-->
+END
 ```
 
----
-
-## Q&A Multi-line Answer
+### Multi-line
 
 ```markdown
-Q: What are the three categories of Tawhid?
-A: 
-1. **Rububiyyah** — Lordship (Allah is sole Creator/Sustainer)
-2. **Uluhiyyah** — Worship (Allah alone deserves worship)
-3. **Asma wa Sifat** — Names & Attributes (unique to Allah)
-
-Q: What are the four OOP principles?
-A:
-- Encapsulation — bundling data with methods
-- Inheritance — child class extends parent
-- Polymorphism — same interface, different behavior
-- Abstraction — hiding implementation details
+START
+Coding Questions
+What are the three properties that describe the structure of a NumPy array?
+Back:
+- `.shape` → rows × columns as tuple, e.g. `(2, 3)`
+- `.ndim` → number of dimensions, e.g. `2`
+- `.size` → total element count, e.g. `6`
+Tags: python numpy
+<!--ID: 1771415062870-->
+END
 ```
-
----
-
-## Cloze
-
-```markdown
-The {five} pillars of Islam are {2:Shahada}, {3:Salah}, {4:Zakat}, {5:Sawm}, and {6:Hajj}
-
-The JVM converts bytecode to {native machine code} via the {2:JIT compiler}
-
-In Java, {synchronized} keyword prevents {2:race conditions} in multithreading
-```
-
-**Cloze with hints:**
-```markdown
-The {{c1::Quran::holy book}} was revealed to {{c2::Prophet Muhammad ﷺ::final messenger}}
-```
-
----
-
-## Images
-
-**Basic:**
-```markdown
-Q: What is the JVM architecture?
-A: ![[jvm-architecture.png]]
-
-Q: Identify this prayer position
-A: ![[rukoo.jpg]]
-This is Rukoo (bowing position)
-```
-
-**Standard markdown syntax:**
-```markdown
-Q: What does this diagram show?
-A: ![JVM Memory Model](attachments/jvm-memory.png)
-```
-
-**Image in question:**
-```markdown
-Q: ![[unknown-component.png]]
-What JVM component is highlighted?
-A: The Class Loader subsystem
-```
-
-**Cloze with image:**
-```markdown
-The prayer position shown is called {Sujood}
-![[sujood.jpg]]
-```
-
-> **Note:** Images must exist in your vault. They auto-copy to Anki's media folder on sync.

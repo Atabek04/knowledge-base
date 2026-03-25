@@ -1,7 +1,7 @@
 ## Core Concepts
 
 - [[Pandas provides data manipulation and analysis for tabular data in Python]]
-- [[NumPy provides efficient array operations for numerical computing in Python]]
+- [[NumPy provides efficient array operations for numerical computing in Python]] → see also [[NumPy MOC]]
 
 ## Data Structures
 
