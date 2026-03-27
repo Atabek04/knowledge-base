@@ -23,6 +23,30 @@ END
 
 START
 Coding Questions
+The model works fine without a fixed `random_state` — so why does it matter?
+Back: It matters for **the developer, not the model**. Without a fixed seed, you can't tell if a change in results came from your code or just a different data split. You get 85% accuracy, your colleague gets 82% on the same code — is there a bug? You can't tell. A fixed seed gives you three things:
+- **Debugging** — if there's a problem, you can reproduce it exactly
+- **Fair comparison** — you compare model versions on identical data splits
+- **Sharing code** — others can run your code and get your exact results
+Tags: ml preprocessing
+END
+
+START
+Coding Questions
+Why can't computers generate truly random numbers, and what do they use instead?
+Back: Computers use a **pseudorandom number generator (PRNG)** — a deterministic formula. It takes a starting number (seed), runs math on it, and produces an output. That output becomes input for the next number. Same seed → same math → same sequence every time. Without an explicit seed, Python uses the **system clock** (nanoseconds), which changes constantly — making it *feel* random.
+Tags: ml preprocessing
+END
+
+START
+Coding Questions
+Is 42 a special seed number? Why do ML tutorials always use it?
+Back: No — 42 has no mathematical advantage. It comes from *The Hitchhiker's Guide to the Galaxy* where it's "the answer to life, the universe, and everything." Programmers adopted it as a convention. Any number (7, 123, 999) works identically — different seeds produce different sequences, but each is equally valid and reproducible. Pick any number and stick with it.
+Tags: ml preprocessing
+END
+
+START
+Coding Questions
 Why must missing data be handled before training?
 Back: Most ML algorithms **cannot compute with NaN** (will crash or produce garbage). Also, missingness often isn't random, causing biased models. Two strategies: **Delete** rows/columns (when <1-2% missing) or **Impute** with a substitute value.
 Tags: ml preprocessing

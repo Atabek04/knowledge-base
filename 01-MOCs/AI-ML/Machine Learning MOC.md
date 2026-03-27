@@ -6,6 +6,7 @@ A comprehensive learning roadmap for Machine Learning Engineering covering the f
 Machine learning is a subset of AI where models learn patterns from data instead of being explicitly programmed.
 
 - [[Differences of - AI, ML, DL, GenAI]] — how AI, ML, Deep Learning, and GenAI relate to each other
+- [[Machine learning is called learning because the model improves from data not instructions|Why "machine learning"]] — the name comes from machines discovering patterns from data, not instructions
 - [[Types of ML]] — supervised, unsupervised, reinforcement, and more
 - [[Machine learning follows five stages from problem framing to deployment|ML Process Stages]] — the end-to-end workflow every ML project follows
 
@@ -139,6 +140,8 @@ Essential techniques for preparing raw data for machine learning.
 
 - [[Train-test split evaluates model performance on unseen data|Train-test split]]: dividing dataset into training and testing subsets for unbiased evaluation
 - [[random_state is a seed that makes random operations reproducible|random_state]]: fixing the random seed for reproducible results
+- [[Computers generate pseudorandom numbers using a formula not true randomness|PRNG]]: computers use a formula, not true randomness — same seed produces same sequence
+- [[42 is not a special seed it is just a convention from pop culture|Why 42]]: the number is a pop culture convention, not mathematically special
 - [[Missing data must be handled because most ML algorithms cannot compute with NaN|Handling missing data]]: imputation strategies using mean, median, or mode values
 - [[SimpleImputer replaces missing values using fit and transform pattern|SimpleImputer]]: sklearn's fit-transform pattern for replacing NaN values
 - [[Categorical data must be encoded into numbers because ML algorithms only compute with numbers|Encoding categorical variables]]: converting text categories into numerical format
@@ -260,4 +263,22 @@ Tools and frameworks for building deep learning models.
 
 - [[Scikit-learn provides ready-to-use ML algorithms and preprocessing tools|Scikit-learn]]
 - [[Matplotlib is a Python library for creating static and interactive visualizations|Matplotlib]]
+
+---
+
+### Flashcard Coverage
+
+Flashcards exist only for sections with `[[]]` linked atomic notes. Sections **without flashcards** (no notes yet):
+- Classification models (Logistic Regression, KNN, SVM, Naive Bayes, Decision Trees, Random Forest)
+- Multiple Linear Regression, Polynomial Regression, SVR, Decision Tree Regression, Random Forest Regression
+- Unsupervised Learning (K-Means, Hierarchical, DBSCAN, Association Rules)
+- Model Evaluation (all metrics, validation techniques)
+- Dimensionality Reduction (PCA, LDA, Kernel PCA)
+- Model Selection & Boosting (Grid/Random Search, XGBoost)
+- Deep Learning (ANNs, CNNs)
+- Semi-supervised, Reinforcement, Self-supervised Learning
+- Feature Engineering, Feature Selection, Outlier Detection
+- Natural Language Processing
+
+> When creating atomic notes for any of these topics, create flashcards immediately in the corresponding `05-Flashcards/ml/` file.
 
