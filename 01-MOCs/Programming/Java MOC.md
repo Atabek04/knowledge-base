@@ -10,8 +10,14 @@
 ### Variables & Types
 
 - [[Primitive types store actual value, references store only address in memory]]
+- [[Java has dual type system because JVM optimizes primitives for performance]] — primitives vs wrappers and autoboxing
+- [[Casting converts between types in an inheritance hierarchy]] — upcasting, downcasting, and instanceof
 - [[Object variable types start with capital letter, whereas primitives with small letter]]
 - [[Variable scope - where var exists and can be accessed]]
+
+### Classes
+
+- [[Java inner classes hold a hidden reference to the outer instance by default]] — hidden `this$0`, memory leak risk, `static` fix
 
 ### Language Features
 

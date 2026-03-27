@@ -77,11 +77,11 @@ All vocab cards go under one Anki deck `English Vocab`, split into category file
 
 ```
 05-Flashcards/vocab/
-├── idioms.md          → TARGET DECK: English Vocab::Idioms
-├── phrasal-verbs.md   → TARGET DECK: English Vocab::Phrasal Verbs
-├── advanced.md        → TARGET DECK: English Vocab::Advanced
-├── it-terms.md        → TARGET DECK: English Vocab::IT Terms
-└── collocations.md    → TARGET DECK: English Vocab::Collocations
+├── idioms.md          → TARGET DECK: Tech-KB::English Vocab::Idioms
+├── phrasal-verbs.md   → TARGET DECK: Tech-KB::English Vocab::Phrasal Verbs
+├── advanced.md        → TARGET DECK: Tech-KB::English Vocab::Advanced
+├── it-terms.md        → TARGET DECK: Tech-KB::English Vocab::IT Terms
+└── collocations.md    → TARGET DECK: Tech-KB::English Vocab::Collocations
 ```
 
 Files and folders are created on-demand. Pick the best-fitting category for the word.
@@ -89,7 +89,7 @@ Files and folders are created on-demand. Pick the best-fitting category for the 
 Each file needs a header:
 
 ```markdown
-TARGET DECK: English Vocab::{Category}
+TARGET DECK: Tech-KB::English Vocab::{Category}
 ```
 
 ---
@@ -129,7 +129,7 @@ TARGET DECK: English Vocab::{Category}
 ## Example Cards
 
 ```markdown
-TARGET DECK: English Vocab::Idioms
+TARGET DECK: Tech-KB::English Vocab::Idioms
 
 START
 A_English_Translate
@@ -154,7 +154,7 @@ END
 ```
 
 ```markdown
-TARGET DECK: English Vocab::IT Terms
+TARGET DECK: Tech-KB::English Vocab::IT Terms
 
 START
 A_English_Translate

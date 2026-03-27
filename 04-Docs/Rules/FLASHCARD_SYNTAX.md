@@ -13,24 +13,31 @@ Fields: `Front`, `Back`
 ### Machine Learning
 
 ```
-Machine Learning::Fundamentals
-Machine Learning::Data Preprocessing
-Machine Learning::Model Training
-Machine Learning::Regression
-Machine Learning::Classification
-Machine Learning::Unsupervised
-Machine Learning::Model Evaluation
-Machine Learning::Dimensionality Reduction
-Machine Learning::Model Selection
+Tech-KB::Machine Learning::Fundamentals
+Tech-KB::Machine Learning::Data Preprocessing
+Tech-KB::Machine Learning::Model Training
+Tech-KB::Machine Learning::Regression
+Tech-KB::Machine Learning::Classification
+Tech-KB::Machine Learning::Unsupervised
+Tech-KB::Machine Learning::Model Evaluation
+Tech-KB::Machine Learning::Dimensionality Reduction
+Tech-KB::Machine Learning::Model Selection
+```
+
+### Math for ML
+
+```
+Tech-KB::Math for ML::Calculus
+Tech-KB::Math for ML::Probability
 ```
 
 ### Python
 
 ```
-Python::NumPy
-Python::Pandas
-Python::Matplotlib
-Python::Scikit-learn
+Tech-KB::Python::NumPy
+Tech-KB::Python::Pandas
+Tech-KB::Python::Matplotlib
+Tech-KB::Python::Scikit-learn
 ```
 
 ---
@@ -38,7 +45,7 @@ Python::Scikit-learn
 ## File Header
 
 ```markdown
-TARGET DECK: Machine Learning::Regression
+TARGET DECK: Tech-KB::Machine Learning::Regression
 Tags: ml regression
 **Related:** [[Link to MOC or concept]]
 ```

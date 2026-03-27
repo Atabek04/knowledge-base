@@ -1,4 +1,4 @@
-TARGET DECK: Machine Learning::Regression
+TARGET DECK: Tech-KB::Machine Learning::Regression
 Tags: ml regression
 **Chapter:** Simple Linear Regression
 **Related:** [[Machine Learning MOC]]
@@ -10,7 +10,7 @@ Coding Questions
 What is simple linear regression and what is its equation?
 Back: Finds the best straight line through data to predict a continuous target from **one** feature. Equation: **y = b₀ + b₁x** (b₀ = intercept/bias, b₁ = slope).
 Tags: ml regression
-<!--ID: 1771415062835-->
+<!--ID: 1774613880830-->
 END
 
 START
@@ -18,7 +18,7 @@ Coding Questions
 What does OLS (Ordinary Least Squares) do and why does it square the errors?
 Back: Finds the best-fit line by minimizing the **sum of squared errors**. Squaring prevents positive and negative errors from canceling out, and punishes large errors more heavily (50² = 2500 vs 10² = 100). Uses calculus to find exact b₀ and b₁ directly — no iterations needed.
 Tags: ml regression
-<!--ID: 1771415062837-->
+<!--ID: 1774613880832-->
 END
 
 START
@@ -29,5 +29,5 @@ Back:
 - **Gradient Descent** — non-linear model OR > ~10,000 features. Iterative steps. Requires feature scaling and learning rate tuning.
 - OLS becomes too slow at high dimensions because matrix inversion is O(n³).
 Tags: ml regression
-<!--ID: 1771415062839-->
+<!--ID: 1774613880833-->
 END

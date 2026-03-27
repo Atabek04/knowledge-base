@@ -1,4 +1,4 @@
-TARGET DECK: English Vocab::IT Terms
+TARGET DECK: Tech-KB::English Vocab::IT Terms
 
 START
 A_English_Translate
@@ -8,7 +8,7 @@ Russian: Вменять; подставлять (пропущенные знач
 Example: Before training the model, we **imputed** missing ages using the column's median value.
 Note: General English: to attribute (blame/credit) to someone. In ML/statistics: to fill in missing data using estimation methods (mean, median, KNN, etc.).
 Tags: ml data-preprocessing statistics
-<!--ID: 1771415062857-->
+<!--ID: 1774613880795-->
 END
 
 START
@@ -18,7 +18,7 @@ English: bias
 Russian: Предубеждение; пристрастие
 Example: Hiring decisions can reflect **bias** if interviewers favor candidates from their own background.
 Tags: general
-<!--ID: 1771415062858-->
+<!--ID: 1774613880797-->
 END
 
 START
@@ -29,7 +29,7 @@ Russian: Смещённая модель; модель с предвзятост
 Example: High-income people skipped the income field, so after dropping those rows the **biased model** predicted everyone earns less.
 Note: Not the technical bias in y = wx + b. This is the everyday meaning: a systematic blind spot from unrepresentative training data.
 Tags: ml data-preprocessing
-<!--ID: 1771415062860-->
+<!--ID: 1774613880799-->
 END
 
 START
@@ -39,7 +39,7 @@ English: outlier
 Russian: Выброс; аномальное значение
 Example: People who live past 100 are genetic **outliers**, whose longevity is unreachable for most of us.
 Tags: statistics ml
-<!--ID: 1771415062862-->
+<!--ID: 1774613880801-->
 END
 
 START
@@ -50,7 +50,7 @@ Russian: Категориальный столбец
 Example: The "Gender" and "City" columns are **categorical columns** — they hold text labels like "Male" or "London", not numeric values.
 Note: Most ML algorithms require converting categorical columns to numbers first (e.g. via one-hot encoding or label encoding).
 Tags: ml data-preprocessing
-<!--ID: 1771415062864-->
+<!--ID: 1774613880802-->
 END
 
 START
@@ -60,5 +60,5 @@ English: seed
 Russian: Начальное значение (генератора случайных чисел)
 Example: Setting `random_state=42` provides a **seed** so the train-test split is identical every run.
 Tags: ml programming
-<!--ID: 1771415062866-->
+<!--ID: 1774613880804-->
 END

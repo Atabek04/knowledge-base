@@ -1,61 +1,32 @@
+---
+aliases: [Kotlin single type system]
+created: 2025-12-30
+tags: [kotlin, types]
+---
+
 Parent: [[Kotlin MOC]]
 
 ---
 
-## Java has 2 Type System
+### No dual system
 
-1. **Primitive**: int, boolean, double, char, etc.
-2. **Wrappers**: Integer, Boolean, Double, Character, etc.
+Unlike [[Java has dual type system because JVM optimizes primitives for performance|Java's dual type system]], Kotlin has **one unified type system**.
 
----
-#### Why this duality?
+You always write `Int`, never `Integer`. No primitives vs wrappers distinction at the language level.
 
-<mark style="background: #FFB86CA6;">Performance reason.</mark>
-Primitives are stored directly in stack.
-Objects are stored on heap with reference overhead.
-
----
-#### JVM connection
-
-This duality actually coupled with JVM architecture
-JVM optimized for primitive operations
-
----
-#### Why not just Objects?
-
-Performance penalty:
-- heap allocation
-- GC overhead
-- pointer dereferencing, etc.
-
----
-### Trade-off
-
-Primitives :luc_arrow_right_circle: fast, but **can't use in generics or collections**
-Wrappers :luc_arrow_right_circle: work everywhere, but **slower**
-
-**Autoboxing** (Java 5+) bridges the gap automatically
+```kotlin
+val age: Int = 21     // looks like an object
+val active: Boolean = true
+```
 
 ---
 
-## Kotlin's Approach
+### Under the hood — compiler decides
 
-### Single Type System
+Kotlin compiler optimizes automatically:
 
-You always write: `val age: Int = 21`
-No Integer wrapper class exposed
-Everything looks like an object
-
-#### Under the hood
-
-Kotlin compiler decides.
-
-Uses primitives when possible:
-- non-nullable types
-
-Users wrappers when necessary:
-- nullable types
-- generic types
+- **Non-nullable** → compiles to JVM primitive (`int`, `boolean`)
+- **Nullable or generic** → compiles to wrapper (`Integer`, `Boolean`)
 
 ```kotlin
 val a: Int = 5        // → int a = 5
@@ -63,4 +34,12 @@ val b: Int? = null    // → Integer b = null
 val list = listOf(1)  // → List<Integer>
 ```
 
+<mark style="background: #FFF3A3A6;">You get Java's performance without managing two type systems.</mark>
+
 ---
+
+Read more:
+
+- [[Java has dual type system because JVM optimizes primitives for performance]]
+- [[Variable declaration in Kotlin is done by var and val]]
+- [[Kotlin MOC]]

@@ -64,6 +64,8 @@ Limit to 4-5 colors maximum to avoid visual clutter.
 Add `aliases` in frontmatter for the core concept the note explains.
 Use the short, recognizable term people would search for (e.g. `[SimpleImputer, Imputer]` for a note titled "SimpleImputer replaces missing values using fit and transform pattern").
 
+**No special characters in aliases** — symbols like `?.`, `?:`, `::` break Obsidian YAML parsing. Use plain text only (e.g. `safe call` not `?.`).
+
 ### Atomic Note Titles
 
 Titles must be **complete statements**, not topic labels.
@@ -85,6 +87,8 @@ Test: Does the title teach something alone, or just name a thing?
 - Follow templates in `Templates/` folder
 - Use `###` and `####` headings to organize sections (avoid `#` and `##` — too large)
 - Use horizontal lines `---` to separate major content blocks
+- Start notes directly with the topic content — no `Parent: [[MOC]]` header at the top
+- Place MOC links and related links in the "Read more" section at the bottom
 
 ### Note Linking
 
@@ -114,6 +118,7 @@ When generating Anki flashcards from atomic notes, follow these rules:
 - [Syntax](04-Docs/Rules/FLASHCARD_SYNTAX.md) — note types, deck hierarchy, START/END format
 - [Workflow](04-Docs/Rules/WORKFLOW.md) — sync process
 - [Question Rules](04-Docs/Rules/QUESTION_RULES.md) — active recall best practices
+- [Remove IDs](scripts/remove-flashcard-ids.sh) — strip all `<!--ID: ...-->` before re-syncing with Anki
 
 ### Flashcard Maintenance Rule
 
@@ -121,7 +126,8 @@ When adding a new `[[]]` linked note to a MOC chapter that already has a flashca
 
 ### Extraction Rules
 
-- **Don't skip important points** — every key concept, definition, formula, command, or code snippet should become a card
+- **Only create flashcards for existing atomic notes** — flashcards exist to review and actively recall note content. Never generate cards from general knowledge or MOC bullet points that have no `[[]]` linked note. If no note exists, no card is created.
+- **Don't skip important points** — every key concept, definition, formula, command, or code snippet in a note should become a card
 - Use `START/END` block format with the appropriate note type
 - Location: `05-Flashcards/{topic}/{subtopic}.md`
 - One flashcard file per topic area, matching the deck hierarchy
