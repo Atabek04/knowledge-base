@@ -128,6 +128,7 @@ Using data structure as labels for training.
 Core mathematics required for understanding machine learning algorithms.
 
 - [[Math for ML MOC]] — comprehensive guide to linear algebra, calculus, probability, and discrete math for ML
+- [[AI History MOC]] — evolution of AI from Perceptron to ChatGPT as a chain of problems and breakthroughs
 
 ## Data
 
@@ -182,6 +183,8 @@ Core concepts used in training machine learning models.
 ## Model Evaluation
 
 Assessing model performance and quality.
+
+- [[Overfitting happens when a model memorizes noise instead of learning patterns|Overfitting]]: model memorizes training noise, performs well on training data but fails on unseen data
 
 ### Regression Metrics
 

@@ -44,7 +44,9 @@ END
 START
 Coding Questions
 What is a feature in machine learning?
-Back: An input variable the model uses to make predictions. Example: in house price prediction, features are square footage, bedrooms, location.
+Back: A **feature** is a measurable property the model uses as input to make predictions.
+- Example: in house price prediction, features are square footage, bedrooms, location
+- Each feature becomes a column in the dataset
 Tags: ml fundamentals
 <!--ID: 1774613880864-->
 END
@@ -52,7 +54,9 @@ END
 START
 Coding Questions
 What is a target in machine learning?
-Back: The output variable the model learns to predict (also called label or dependent variable). Continuous target → regression; categorical target → classification.
+Back: The **target** is the output variable the model learns to predict (also called label or dependent variable).
+- Continuous target → regression
+- Categorical target → classification
 Tags: ml fundamentals
 <!--ID: 1774613880866-->
 END
@@ -68,7 +72,9 @@ END
 START
 Coding Questions
 What is supervised learning?
-Back: The model learns from labeled data where the correct answer is already known. Each row has input features (X) and a label (y). Two types: regression (continuous) and classification (discrete).
+Back: The model learns by being **supervised** by labeled data — each example comes with the correct answer.
+- Each row has input features (X) and a known label (y)
+- Two types: **regression** (continuous) and **classification** (discrete)
 Tags: ml fundamentals
 <!--ID: 1774613880869-->
 END
@@ -86,7 +92,10 @@ END
 START
 Coding Questions
 Why is it called "machine learning" instead of just programming?
-Back: Because the **machine discovers patterns from data on its own** instead of a human writing explicit rules. In traditional programming, you code if-else rules. In ML, you provide examples and the model adjusts its weights to reduce error through repeated cycles — that iterative self-improvement is the "learning."
+Back: Because the **machine learns** patterns from data on its own — no human writes explicit rules.
+- Traditional programming: you code if-else rules
+- ML: you provide examples, the model adjusts its weights to reduce error through repeated cycles
+- That iterative self-improvement is the "**learning**"
 Tags: ml fundamentals
 <!--ID: 1774613880873-->
 END
@@ -94,7 +103,9 @@ END
 START
 Coding Questions
 Why is supervised learning called "supervised"?
-Back: Because **labeled data acts as a supervisor** — it tells the model the correct answer for each example. The model predicts, gets corrected by comparing to the label, and improves. Without labels (no supervisor), it becomes unsupervised learning.
+Back: Because labeled data acts as a **supervisor** — it tells the model the correct answer for each example.
+- The model predicts, gets corrected by comparing to the label, and improves
+- Without labels (no supervisor) → unsupervised learning
 Tags: ml fundamentals
 <!--ID: 1774613880874-->
 END

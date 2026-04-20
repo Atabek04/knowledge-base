@@ -15,6 +15,8 @@ tags:
 - Evaluate real-world performance
 - Ensure model generalizes beyond training examples
 
+If the model trains on data it will later see, it memorizes answers instead of learning patterns — like a student given exam questions before the test.
+
 ---
 
 ### Popular split ratios

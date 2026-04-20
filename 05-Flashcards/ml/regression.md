@@ -8,7 +8,9 @@ Tags: ml regression
 START
 Coding Questions
 What is simple linear regression and what is its equation?
-Back: Finds the best straight line through data to predict a continuous target from **one** feature. Equation: **y = b₀ + b₁x** (b₀ = intercept/bias, b₁ = slope).
+Back: **Regressing** a continuous target from **one** feature by fitting the best straight line through data.
+- Equation: **y = b₀ + b₁x**
+- b₀ = intercept/bias, b₁ = slope
 Tags: ml regression
 <!--ID: 1774613880830-->
 END
@@ -16,7 +18,10 @@ END
 START
 Coding Questions
 What does OLS (Ordinary Least Squares) do and why does it square the errors?
-Back: Finds the best-fit line by minimizing the **sum of squared errors**. Squaring prevents positive and negative errors from canceling out, and punishes large errors more heavily (50² = 2500 vs 10² = 100). Uses calculus to find exact b₀ and b₁ directly — no iterations needed.
+Back: OLS finds the best-fit line by minimizing the **sum of squared errors**.
+- Squaring prevents positive/negative errors from canceling out
+- Punishes large errors more heavily (50² = 2500 vs 10² = 100)
+- Uses calculus to find exact b₀ and b₁ directly — no iterations needed
 Tags: ml regression
 <!--ID: 1774613880832-->
 END
