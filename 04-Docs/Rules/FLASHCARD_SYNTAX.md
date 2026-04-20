@@ -31,6 +31,12 @@ Tech-KB::Math for ML::Calculus
 Tech-KB::Math for ML::Probability
 ```
 
+### Software Engineering
+
+```
+Tech-KB::Software Engineering::Requirements Engineering
+```
+
 ### Python
 
 ```
@@ -38,6 +44,14 @@ Tech-KB::Python::NumPy
 Tech-KB::Python::Pandas
 Tech-KB::Python::Matplotlib
 Tech-KB::Python::Scikit-learn
+```
+
+### Linux
+
+```
+Tech-KB::Linux::Command-Line Tools
+Tech-KB::Linux::Shell Scripting
+Tech-KB::Linux::Permissions
 ```
 
 ---

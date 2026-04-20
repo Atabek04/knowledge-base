@@ -25,8 +25,9 @@ tags: [linux/permissions]
 
 On Linux systems, these two permission levels work together: you might own certain files personally (user-level permissions) while being part of groups that grant you access to shared resources (group-level permissions). This two-tier system balances individual control with efficient team access management.
 
-## Links
+### Read more
 
-- [[Linux MOC]] — Linux operating system fundamentals
 - [[Separate user accounts enable accountability through audit logs and granular permission control]]
 - [[Every Linux user must have exactly one primary group but can have multiple secondary groups]]
+- [[Linux file permissions control read, write, and execute access for owner, group, and others]]
+- [[Linux file ownership assigns files to users and groups for permission control]]
