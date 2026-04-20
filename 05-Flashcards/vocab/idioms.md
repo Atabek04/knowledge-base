@@ -10,3 +10,12 @@ Note: Literally a street allowing travel in one direction only. Here: remote wor
 Tags: idiom figurative
 <!--ID: 1774613880793-->
 END
+
+START
+A_English_Translate
+An unexpected turn of events that changes the whole meaning of a situation; used humorously online to introduce a surprise ending
+English: plot twist
+Russian: неожиданный поворот (сюжета)
+Example: He said he hated cats. **Plot twist** — he now has three.
+Tags: idiom informal
+END
