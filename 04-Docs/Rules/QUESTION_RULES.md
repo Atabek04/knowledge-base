@@ -58,6 +58,37 @@ How would you apply [principle] to [scenario]?
 
 ---
 
+## Answer Writing Rules
+
+### Use the term in the definition
+
+When defining a concept, use the word itself (or its verb/adjective form) in the answer. This creates a natural association between the term and its meaning.
+
+- **Classification** → "Classifying input into a discrete category or group"
+- **Regression** → "Predicting a continuous number by fitting a line through data"
+- **Normalization** → "Normalizing features to a fixed [0, 1] range"
+
+Avoid generic phrasing like "a technique that does X" — instead, show what the term *means* by using it.
+
+### Structure answers for readability
+
+Break answers into scannable chunks — don't write a wall of text. Use:
+
+- **Line breaks** between distinct ideas
+- **Bullet lists** for multiple points, steps, or comparisons
+- **Bold** for key terms within the answer
+
+❌ Bad: `Back: Classification is a type of supervised learning where the model predicts which category an input belongs to. It outputs probability scores. Common algorithms include logistic regression, KNN, and SVM.`
+
+✓ Good:
+```
+Back: **Classifying** input into a discrete category or group (which one? what type?).
+- Outputs **probability scores** expressing confidence in each class
+- Common algorithms: Logistic Regression, KNN, SVM, Decision Trees
+```
+
+---
+
 ## Common Pitfalls
 
 | Problem                                                | Fix                                                                                |

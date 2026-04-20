@@ -124,6 +124,22 @@ When generating Anki flashcards from atomic notes, follow these rules:
 
 When adding a new `[[]]` linked note to a MOC chapter that already has a flashcard file, **immediately create flashcards** for that new note in the corresponding flashcard file. Don't wait — keep flashcards in sync with notes.
 
+### Atomic Note → Flashcard Workflow
+
+After **every** atomic note is created and mapped to a MOC, immediately create flashcards for it. This is mandatory, not optional.
+
+**Steps:**
+1. Identify the MOC section the note belongs to
+2. Check `05-Flashcards/` for a matching deck file (e.g. `java/variables-types.md` for a Variables & Types note)
+3. **If a compatible file exists** — append cards to it
+4. **If no compatible file exists** — ask the user: *"No flashcard file found for `{MOC section}`. Should I create `05-Flashcards/{topic}/{subtopic}.md` with deck `Tech-KB::{Category}::{Topic}`?"*
+5. Never silently skip flashcard creation
+
+### Answer Writing Style
+
+- **Use the term in the definition** — when defining a concept, use the word itself (or its verb/adjective form) in the answer. E.g. "**Classifying** input into a discrete category", not "a technique that predicts categories"
+- **Structure answers for readability** — break into bullet lists, use line breaks between distinct ideas, bold key terms. Never write a wall of text in a single line
+
 ### Extraction Rules
 
 - **Only create flashcards for existing atomic notes** — flashcards exist to review and actively recall note content. Never generate cards from general knowledge or MOC bullet points that have no `[[]]` linked note. If no note exists, no card is created.
