@@ -19,6 +19,9 @@ Includes core concepts for writing idiomatic Kotlin code with proper type handli
 
 - [[Kotlin allows top-level functions]] — functions outside classes at file level
 - [[Kotlin single-expression functions use equals sign instead of block body]] — drop `{}` and `return` for one-liners
+- [[Kotlin default parameters reduce function overloads]] — `prefix: String = "Info"` eliminates overloads
+- [[Kotlin named arguments improve call-site readability]] — pass by name, swap order, skip optional params
+- [[Kotlin extension functions add methods to existing types without modifying them]] — receiver type, replaces `*Utils` classes
 
 ### String Handling
 
@@ -32,6 +35,7 @@ Includes core concepts for writing idiomatic Kotlin code with proper type handli
 - [[Kotlin object declaration creates a singleton instance immediately]] — one instance, no constructor, replaces Java singleton pattern
 - [[Kotlin companion object holds class-level members like Java static]] — factory methods, constants, no `static` keyword
 - [[Kotlin nested classes are static by default unlike Java]] — `inner` opts into outer reference, safe default
+- [[Kotlin constructor parameters without val or var are not stored as properties]] — plain param → init-only, not a field
 
 ## Enums
 
@@ -46,7 +50,10 @@ Includes core concepts for writing idiomatic Kotlin code with proper type handli
 
 ## Control Flow
 
+- [[Kotlin for loop iterates over ranges and collections]] — `1..5` range syntax, list iteration
+- [[Kotlin if expression replaces ternary operator]] — `if (a > b) a else b` as expression, no `? :` in Kotlin
 - [[Kotlin when expression replaces switch with more power and flexibility]] — pattern matching, ranges, type checks, and more
+- [[Kotlin when expression without subject uses boolean conditions]] — `when {}` replaces `if-else` chains
 
 ## Null Safety
 
@@ -54,6 +61,7 @@ Includes core concepts for writing idiomatic Kotlin code with proper type handli
 - [[Safe call operator avoids null crashes by returning null instead]] — `?.` returns null instead of crashing
 - [[Elvis operator provides a default when left side is null]] — `?:` fallback when value is null
 - [[Kotlin provides multiple strategies for safely extracting and validating nullable values]] — `?.`, `?:`, `?.let`, `requireNotNull()`, `require()`
+- [[Not-null assertion operator bypasses null safety and throws NPE]] — `!!` forces non-null, throws NPE if null, use sparingly
 
 ## Scope Functions
 
@@ -72,13 +80,22 @@ Includes core concepts for writing idiomatic Kotlin code with proper type handli
 - [[To obtain map's keys and values use these methods]] — accessing Map properties
 - [[Kotlin collection transformations chain operations to process data]] — filter, map, flatMap, groupBy, associate, and more
 
+## Annotations
+
+- [[Kotlin data class properties need use-site targets for framework annotations]] — `@field:` for Jakarta Validation, default targets parameter
+- [[Kotlin custom validation annotations combine annotation class with ConstraintValidator]] — annotation + validator + `@field:Valid` for nested objects
+
 ## Related MOCs
 
 - [[Java MOC]] — Java primitives and wrapper types for comparison
 
 ## Practice
 
-(Flashcards to be added)
+- [[basics]] — variables, functions, strings (17 cards)
+- [[classes]] — constructors, data class, object, companion, nested (15 cards)
+- [[enums-sealed]] — enum methods, sealed types, data object (12 cards)
+- [[null-safety]] — nullable types, safe call, elvis, when expression (17 cards)
+- [[collections]] — scope functions, let, collections, transformations (23 cards)
 
 ## External Resources
 
