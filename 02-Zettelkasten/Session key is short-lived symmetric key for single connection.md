@@ -50,4 +50,4 @@ Periodically generating new session keys limits exposure even if one key is comp
 - [[Key agreement derives shared key without transmitting it]]
 - [[Ephemeral ECDH provides forward secrecy by using fresh keys]]
 - [[AES is most widely used symmetric encryption algorithm]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

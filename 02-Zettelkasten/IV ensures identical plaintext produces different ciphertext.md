@@ -46,4 +46,4 @@ Use cryptographically secure random number generators.
 - [[CTR mode converts block cipher into stream cipher using counter]]
 - [[GCM mode combines encryption with authentication tag]]
 - [[Mode of operation defines how block cipher processes long messages]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

@@ -68,6 +68,8 @@ Even a single bit change in input produces a completely different hash output.
 This property is called the **avalanche effect**.
 
 ## Links
+- [[Birthday problem explains why collision resistance requires double the security bits]]
+- [[Checksum verifies integrity but signature on checksum verifies authenticity]]
 - [[Encryption transforms data using key to ensure confidentiality]]
 - [[Encoding converts data format without providing secrecy]]
 - [[Digital signature proves who signed and ensures message integrity]]

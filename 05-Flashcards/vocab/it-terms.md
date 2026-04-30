@@ -62,3 +62,23 @@ Example: Setting `random_state=42` provides a **seed** so the train-test split i
 Tags: ml programming
 <!--ID: 1774613880804-->
 END
+
+START
+A_English_Translate
+To give up control or priority to something else; to hand over execution flow so another task can proceed.
+English: to yield (general)
+Russian: уступить, передать управление
+Example: At an intersection, you must **yield** to oncoming traffic before turning.
+Note: Core meaning: surrender or give way. Used for traffic, arguments, and control flow alike.
+Tags: general english
+END
+
+START
+A_English_Translate
+In async programming: to pause the current task and hand execution back to the event loop so other tasks can run.
+English: to yield control (async / await context)
+Russian: передать управление (событийному циклу)
+Example: `await` suspends the current coroutine and **yields** control back to the event loop, letting other coroutines run.
+Note: In Python `await` does exactly this — the coroutine is paused at that point until the awaited result is ready, but the thread is not blocked.
+Tags: python async programming
+END

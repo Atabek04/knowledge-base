@@ -46,4 +46,4 @@ Modern systems should use authenticated encryption modes like GCM instead.
 - [[IV ensures identical plaintext produces different ciphertext]]
 - [[CTR mode converts block cipher into stream cipher using counter]]
 - [[GCM mode combines encryption with authentication tag]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

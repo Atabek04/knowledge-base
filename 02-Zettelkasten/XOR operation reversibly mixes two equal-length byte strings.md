@@ -43,4 +43,4 @@ If `C1 = M1 XOR K` and `C2 = M2 XOR K`, then `C1 XOR C2 = M1 XOR M2`, revealing 
 - [[CBC mode chains blocks by XORing with previous ciphertext]]
 - [[CTR mode converts block cipher into stream cipher using counter]]
 - [[Keystream is generated from counter values in CTR mode]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

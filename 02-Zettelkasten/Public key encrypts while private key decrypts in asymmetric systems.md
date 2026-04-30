@@ -45,4 +45,4 @@ This is why hybrid systems use asymmetric encryption only for key exchange, then
 - [[ECDH derives shared secret using elliptic curve mathematics]]
 - [[Key transport encrypts session key with recipient public key]]
 - [[Digital signature proves who signed and ensures message integrity]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

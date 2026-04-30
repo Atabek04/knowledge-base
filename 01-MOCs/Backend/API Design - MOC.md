@@ -25,6 +25,8 @@
 - [ ] Status codes (2xx, 3xx, 4xx, 5xx)
 - [ ] Idempotency
 - [ ] HATEOAS
+- [[Content-Type header tells receiver how to parse the HTTP body]] — what it is and how it works
+- [[Content-Type common values grouped by purpose]] — reference table by category
 
 ### API Design Best Practices
 - [ ] Resource-oriented design

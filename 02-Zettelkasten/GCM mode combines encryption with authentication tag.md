@@ -47,4 +47,4 @@ The main alternative is ChaCha20-Poly1305 which offers similar properties with d
 - [[Authentication tag detects tampering in GCM mode]]
 - [[MAC provides integrity and authenticity using keyed hash]]
 - [[IV ensures identical plaintext produces different ciphertext]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

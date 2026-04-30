@@ -53,4 +53,4 @@ Generate exactly as many bits as needed for your keys — 256 bits for AES-256, 
 - [[Key agreement derives shared key without transmitting it]]
 - [[HMAC creates fingerprint using hash function and secret key]]
 - [[Session key is short-lived symmetric key for single connection]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

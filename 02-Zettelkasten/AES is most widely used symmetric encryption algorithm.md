@@ -44,4 +44,4 @@ Using weak keys, reusing IVs, or skipping authentication can all compromise secu
 - [[Block cipher processes fixed-size data chunks]]
 - [[Mode of operation defines how block cipher processes long messages]]
 - [[GCM mode combines encryption with authentication tag]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

@@ -34,4 +34,5 @@ Python uses both terms. The distinction matters when reading docs.
 
 Read more:
 - [[A Python module is a single file and a package is a folder of modules]]
+- [[classmethod uses cls instead of self because it operates on the class not an instance]]
 - [[Python MOC]]

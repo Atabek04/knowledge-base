@@ -49,4 +49,4 @@ It doesn't need to be kept secret — its security comes from being unforgeable 
 - [[MAC provides integrity and authenticity using keyed hash]]
 - [[Integrity detects any modification to signed data]]
 - [[CTR mode converts block cipher into stream cipher using counter]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

@@ -24,12 +24,43 @@
 
 ## Object-Oriented Programming
 
+- [[classmethod uses cls instead of self because it operates on the class not an instance]]
+- [[Underscore prefix marks private members by convention not enforcement in Python]]
+
+## Async
+
+- [[asynccontextmanager splits startup and shutdown logic at the yield]]
+- [[await suspends a coroutine and returns control to the event loop until IO completes]]
+- [[The event loop is a Python runtime scheduler that drives async concurrency on one thread]]
+- [[A coroutine executes line by line and only yields at an await point]]
+
 ## Functional Programming
+
+- [[List comprehension is Python's inline filter-map equivalent to Stream API]]
 
 ## Standard Library
 
 ## File I/O
 
 ## Testing
+
+## Pydantic
+
+- [[Pydantic BaseModel provides serialization and deserialization via model_validate and model_dump]]
+- [[pydantic-settings reads env files and type-coerces automatically]]
+- [[field_validator runs before Pydantic assigns a field value]]
+
+## Configuration & Settings
+
+- [[pydantic-settings reads env files and type-coerces automatically]] — BaseSettings, .env, fail-fast on missing fields
+- [[field_validator runs before Pydantic assigns a field value]] — @field_validator, mode before/after, cls + v params
+
+## Resource Management
+
+- [[with-as is Python's try-with-resources that guarantees cleanup on exit]]
+
+## Error Handling
+
+- [[Nested try-except creates a waterfall of fallbacks for independent failure points]]
 
 ## Best Practices
