@@ -43,3 +43,4 @@ When done, `git worktree remove ../agent-auth` cleans up.
 
 - [[Git worktree checks out multiple branches into separate folders sharing one .git]]
 - [[Git MOC]]
+- [[Agentic Engineering MOC]]
