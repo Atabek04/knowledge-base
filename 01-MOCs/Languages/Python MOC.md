@@ -37,6 +37,7 @@
 ## Functional Programming
 
 - [[List comprehension is Python's inline filter-map equivalent to Stream API]]
+- [[yield in Python is one keyword with three different jobs]]
 
 ## Standard Library
 

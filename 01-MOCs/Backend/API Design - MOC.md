@@ -55,7 +55,10 @@
 - [ ] API keys
 - [ ] OAuth2 flows
 - [ ] JWT tokens
-- [ ] CORS
+- [x] CORS
+  - [[CORS relaxes Same-Origin Policy to allow controlled cross-origin browser requests]] — what & why
+  - [[CORS preflight uses OPTIONS request to authorize non-simple cross-origin calls]] — preflight mechanics
+  - [[Browser sends Origin header on cross-origin requests and on non-simple same-origin requests]] — when Origin is/isn't sent
 - [ ] Rate limiting
 - [ ] Input validation
 

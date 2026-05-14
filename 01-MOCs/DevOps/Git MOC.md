@@ -33,6 +33,11 @@ Distributed version control system for tracking changes in source code.
 - [[Git stash temporarily shelves changes without committing]] — context switching
 - [[Force push with --force-with-lease prevents overwriting others work]] — safe force push
 
+## Worktrees
+
+- [[Git worktree checks out multiple branches into separate folders sharing one .git]] — what, why, and how
+- [[Git worktree enables parallel agentic coding with isolated sub-agent workspaces]] — parallel AI agents
+
 ## Automation
 
 - [[Git hooks automate actions at specific points in the workflow]] — pre-commit, pre-push, etc.

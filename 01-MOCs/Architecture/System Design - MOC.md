@@ -70,6 +70,15 @@
 - [ ] Background jobs
 - [ ] Batch processing
 
+### Geospatial Indexing
+- [ ] "Find X near me" problem — why naive 2D distance scans don't scale
+- [ ] Geohash — encoding 2D coordinates into a 1D string
+- [ ] Shared prefix → shared geography (proximity property)
+- [ ] Reusing B-tree index for spatial queries via geohash prefix
+- [ ] Geohash precision levels and cell sizes
+- [ ] Edge cases — boundary cells, neighbor lookup
+- [ ] Alternatives — quadtree, R-tree, S2, H3
+
 ### System Design Process
 1. Requirements clarification
 2. Capacity estimation

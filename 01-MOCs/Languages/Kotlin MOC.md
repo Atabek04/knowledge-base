@@ -30,6 +30,7 @@ Includes core concepts for writing idiomatic Kotlin code with proper type handli
 
 ## Classes
 
+- [[Kotlin classes are final by default and Spring needs open classes for CGLIB proxying]] — `open` keyword, allopen plugin, CGLIB subclass proxying
 - [[Kotlin primary constructor is declared in the class header with parentheses]] — why `()` not `{}`
 - [[Kotlin data class auto-generates common methods for data holders]] — equals, toString, copy for free
 - [[Kotlin object declaration creates a singleton instance immediately]] — one instance, no constructor, replaces Java singleton pattern
@@ -85,9 +86,33 @@ Includes core concepts for writing idiomatic Kotlin code with proper type handli
 - [[Kotlin data class properties need use-site targets for framework annotations]] — `@field:` for Jakarta Validation, default targets parameter
 - [[Kotlin custom validation annotations combine annotation class with ConstraintValidator]] — annotation + validator + `@field:Valid` for nested objects
 
+## Kotlin + Spring
+
+- [ ] Kotlin Spring Boot setup
+- [ ] Null-safety and Spring
+- [ ] Data classes as DTOs
+- [ ] Repository with Kotlin
+- [ ] Coroutines with Spring WebFlux
+- [ ] Testing with Kotlin
+
+## Kotlin vs Java
+
+- [ ] When to use Kotlin
+- [ ] Interoperability with Java
+- [ ] Kotlin-specific Spring features
+- [ ] Migration strategies
+
+## Books
+
+| Book | Priority | Status |
+|------|----------|--------|
+| **Kotlin in Action** — Manning | 🟡 Important | ⏳ |
+
 ## Related MOCs
 
 - [[Java MOC]] — Java primitives and wrapper types for comparison
+- [[Java Core - MOC]]
+- [[Spring Ecosystem - MOC]]
 
 ## Practice
 

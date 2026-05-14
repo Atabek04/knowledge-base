@@ -74,6 +74,15 @@ Titles must be **complete statements**, not topic labels.
 ✓ Good: "WebSocket provides full-duplex communication over TCP"
 
 Test: Does the title teach something alone, or just name a thing?
+### Explanation Style
+
+When explaining code or concepts, **always use the actual class/method/annotation name** — not vague descriptions.
+
+❌ Bad: "the filter", "the resolver", "the helper method"
+✓ Good: "`JwtAuthenticationFilter`", "`UserContextResolver`", "`requireValidClaim()`"
+
+The name is the identity. Vague labels force the reader to guess which thing you mean.
+
 ### Content Rules
 
 **NEVER:**
