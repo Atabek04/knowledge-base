@@ -19,6 +19,7 @@
 
 - [[A Python module is a single file and a package is a folder of modules]]
 - [[Python functions are standalone while methods are attached to objects]]
+- [[Generics parameterize a type so the container and its element type are both known]] — `list[str]`, `AsyncGenerator[str, None]`, Java analogy
 
 ## Data Structures
 
@@ -29,10 +30,16 @@
 
 ## Async
 
-- [[asynccontextmanager splits startup and shutdown logic at the yield]]
-- [[await suspends a coroutine and returns control to the event loop until IO completes]]
 - [[The event loop is a Python runtime scheduler that drives async concurrency on one thread]]
 - [[A coroutine executes line by line and only yields at an await point]]
+- [[await suspends a coroutine and returns control to the event loop until IO completes]]
+- [[asynccontextmanager splits startup and shutdown logic at the yield]]
+- [[asyncio.create_task schedules a coroutine to run concurrently without blocking the caller]] — fire-and-await-later; vs direct `await`
+
+## Concurrency
+
+- [[IO-bound and CPU-bound work require different concurrency strategies]] — async vs threads vs processes; GIL factor
+- [[run_in_executor offloads a blocking function to a thread pool without blocking the event loop]] — `ThreadPoolExecutor`, custom pool, `max_workers`, Java analogy
 
 ## Functional Programming
 
@@ -63,5 +70,16 @@
 ## Error Handling
 
 - [[Nested try-except creates a waterfall of fallbacks for independent failure points]]
+
+## HTTP Clients
+
+- [[httpx is a modern HTTP client for Python with async support]] — vs `requests`, sync/async, Java analogy
+- [[httpx.AsyncClient manages connection lifecycle as an async context manager]] — context manager, per-request vs shared, exception hierarchy
+- [[httpx request-response-error pattern is the standard cycle for async HTTP calls]] — send, read, error handling order, senior pattern
+
+## FastAPI
+
+- [[FastAPI Depends wires service creation to endpoint function signatures]] — `Depends`, `Annotated`, factory pattern, test overrides
+- [[Type alias collapses a repeated complex type into one named reference]] — why aliases exist, `Annotated[..., Depends(...)]` pattern, Java comparison
 
 ## Best Practices

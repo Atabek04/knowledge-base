@@ -61,4 +61,6 @@ async def good():
 Related:
 - [[await suspends a coroutine and returns control to the event loop until IO completes]]
 - [[The event loop is a Python runtime scheduler that drives async concurrency on one thread]]
+- [[run_in_executor offloads a blocking function to a thread pool without blocking the event loop]] — full explanation of the fix shown above
+- [[IO-bound and CPU-bound work require different concurrency strategies]] — why CPU loops block but I/O doesn't
 - [[Python MOC]]
