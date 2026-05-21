@@ -94,6 +94,6 @@
 ---
 
 ## Related
-- [[Java Core - MOC]]
+- [[Java MOC]]
 - [[Architecture - MOC]]
 - [[00 - IT Career - MOC]]

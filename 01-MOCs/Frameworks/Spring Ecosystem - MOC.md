@@ -128,7 +128,7 @@
 ---
 
 ## Related
-- [[Java Core - MOC]]
+- [[Java MOC]]
 - [[Databases - MOC]]
 - [[API Design - MOC]]
 - [[00 - IT Career - MOC]]

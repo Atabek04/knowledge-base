@@ -73,5 +73,5 @@ When reading, create notes with:
 
 ## Related
 - [[00 - IT Career - MOC]]
-- [[Java Core - MOC]]
+- [[Java MOC]]
 - [[Architecture - MOC]]
