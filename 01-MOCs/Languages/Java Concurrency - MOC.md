@@ -110,6 +110,6 @@
 ---
 
 ## Related
-- [[Java Core - MOC]]
+- [[Java MOC]]
 - [[Testing - MOC]]
 - [[00 - IT Career - MOC]]

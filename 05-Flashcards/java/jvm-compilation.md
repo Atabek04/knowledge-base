@@ -103,3 +103,38 @@ Back: **Profiling** — JVM monitors and measures code while it's running to ide
 - This is why Java gets faster the longer it runs
 Tags: java jvm
 END
+
+START
+Coding Questions
+What is `javap`?
+Back: JDK **class file disassembler**. Reads a `.class` file and prints its structure: fields, methods, signatures, and bytecode instructions.
+Tags: java jvm tooling javap
+END
+
+START
+Coding Questions
+What does `javap -p` do?
+Back: Includes **private** and **package-private** members in the output (default shows only public).
+Tags: java jvm tooling javap
+END
+
+START
+Coding Questions
+What does `javap -c` do?
+Back: Disassembles method bodies into **JVM bytecode** (`iload`, `invokevirtual`, etc.) — the main reason to use javap.
+Tags: java jvm tooling javap
+END
+
+START
+Coding Questions
+What does the common combo `javap -p -c ClassName` show?
+Back: Every member (public + private) **plus** its bytecode. Standard "what did the compiler produce?" command.
+Tags: java jvm tooling javap
+END
+
+START
+Coding Questions
+What does `javap -v` add?
+Back: **Verbose** dump — constant pool, stack map frames, line number table, access flags, and full method bytecode.
+Tags: java jvm tooling javap
+END

@@ -111,7 +111,7 @@ Includes core concepts for writing idiomatic Kotlin code with proper type handli
 ## Related MOCs
 
 - [[Java MOC]] — Java primitives and wrapper types for comparison
-- [[Java Core - MOC]]
+- [[Java MOC]]
 - [[Spring Ecosystem - MOC]]
 
 ## Practice
