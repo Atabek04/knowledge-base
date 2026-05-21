@@ -39,14 +39,7 @@
 - [ ] Stored procedures and functions
 
 ### PostgreSQL Deep Dive
-- [ ] Data types (arrays, JSON, UUID)
-- [ ] JSONB queries and indexing
-- [ ] Full-text search
-- [ ] Partitioning
-- [ ] Replication basics
-- [ ] pg_stat for monitoring
-- [ ] VACUUM and maintenance
-- [ ] Connection pooling (PgBouncer)
+→ [[PostgreSQL - MOC]]
 
 ### Transactions & Isolation
 - [ ] ACID properties
@@ -126,6 +119,7 @@
 ---
 
 ## Related
+- [[PostgreSQL - MOC]] — OLTP RDBMS
 - [[ClickHouse - MOC]] — OLAP DBMS
 - [[Spring Ecosystem - MOC]]
 - [[Architecture - MOC]]

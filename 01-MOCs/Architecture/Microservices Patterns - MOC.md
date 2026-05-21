@@ -69,10 +69,8 @@
 ### Data Patterns
 
 #### Outbox Pattern
-- [ ] Transactional outbox
-- [ ] Polling publisher
-- [ ] Transaction log tailing
-- [ ] Debezium (CDC)
+- [[Outbox pattern guarantees event delivery by writing to an outbox table in the same transaction]]
+- [[Debezium streams PostgreSQL WAL changes to Kafka using LSN offsets and replication slots]]
 
 #### Inbox Pattern
 - [ ] Idempotent consumers

@@ -12,7 +12,8 @@ tags: [moc, clickhouse, database, olap]
 ## Fundamentals
 
 - [ ] What ClickHouse is and when to use it
-- [ ] Why ClickHouse is fast (columnar storage, vectorized execution, compression)
+- [[ClickHouse columnar storage reads only queried columns by preserving row position across files]]
+- [[ClickHouse column compression reduces I/O with LZ4 by default and opt-in codecs per column]]
 - [ ] Installation and deployment (binary, Docker, Kubernetes)
 - [ ] Client tools (clickhouse-client, DBeaver, HTTP interface)
 
@@ -20,7 +21,7 @@ tags: [moc, clickhouse, database, olap]
 
 - [ ] DDL — databases, tables, schema evolution
 - [ ] DQL — SELECT, filtering, aggregation
-- [ ] DML — INSERT, ALTER, mutations vs OLTP UPDATE/DELETE
+- [[ClickHouse lightweight DELETE marks rows with hidden flag removed during background merge]]
 - [ ] Views — normal, materialized, parameterized
 - [ ] Joins and unions — types, performance trade-offs
 
@@ -37,7 +38,7 @@ tags: [moc, clickhouse, database, olap]
 
 ## MergeTree Engine
 
-- [ ] MergeTree concept — why it's called that, part merges
+- [[MergeTree stores each INSERT as an immutable data part merged in background]]
 - [ ] On-disk layout — data directory, bin files, mark files, primary index
 - [ ] Primary key vs ORDER BY key
 - [ ] Partitioning strategy
@@ -46,7 +47,9 @@ tags: [moc, clickhouse, database, olap]
 
 ## MergeTree Family Variants
 
-- [ ] ReplacingMergeTree — dedup by sort key
+- [[ReplacingMergeTree deduplicates rows on merge using ORDER BY key and optional version column]]
+- [[FINAL forces deduplication at query time but degrades performance with many unmerged parts]]
+- [[argMax retrieves the value corresponding to the maximum of another column]]
 - [ ] SummingMergeTree — pre-aggregated sums
 - [ ] AggregatingMergeTree — arbitrary aggregate states
 - [ ] CollapsingMergeTree — sign-based row collapsing
@@ -72,7 +75,7 @@ tags: [moc, clickhouse, database, olap]
 
 - [ ] MySQL / PostgreSQL — table engines and federated queries
 - [ ] MongoDB
-- [ ] Apache Kafka — streaming ingest
+- [[Dual-write pattern uses PostgreSQL for transactional writes and ClickHouse for analytics]]
 - [ ] S3 and object storage
 
 ## Administration
