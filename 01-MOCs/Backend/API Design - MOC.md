@@ -23,7 +23,7 @@
 - [ ] Resource naming conventions
 - [ ] HTTP methods semantics (GET, POST, PUT, PATCH, DELETE)
 - [ ] Status codes (2xx, 3xx, 4xx, 5xx)
-- [ ] Idempotency
+- [[Idempotency key prevents duplicate processing when clients retry failed requests]] — client-generated key, server caches result
 - [ ] HATEOAS
 - [[Content-Type header tells receiver how to parse the HTTP body]] — what it is and how it works
 - [[Content-Type common values grouped by purpose]] — reference table by category
@@ -32,10 +32,12 @@
 - [ ] Resource-oriented design
 - [ ] Consistent naming (plural nouns, kebab-case)
 - [ ] Filtering, sorting, pagination
-- [ ] Partial responses (field selection)
+- [[Sparse fieldsets let clients request only needed fields reducing payload size]] — ?fields= query param
+- [[PATCH with JsonMergePatch updates only the fields present in the request leaving others unchanged]] — RFC 7396, partial updates
 - [ ] Bulk operations
 - [ ] Rate limiting headers
 - [ ] API versioning strategies (URL, header, query param)
+- [[ETag header enables optimistic concurrency by rejecting updates based on stale resource versions]] — If-Match / 412
 
 ### Error Handling
 - [ ] Standard error response format
@@ -105,4 +107,3 @@
 ## Related
 - [[Spring Ecosystem - MOC]]
 - [[Distributed Systems - MOC]]
-- [[00 - IT Career - MOC]]
