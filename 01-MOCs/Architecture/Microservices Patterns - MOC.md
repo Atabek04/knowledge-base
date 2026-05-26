@@ -71,6 +71,8 @@
 #### Outbox Pattern
 - [[Outbox pattern guarantees event delivery by writing to an outbox table in the same transaction]]
 - [[Debezium streams PostgreSQL WAL changes to Kafka using LSN offsets and replication slots]]
+- [[Outbox over Debezium eliminates polling overhead while preserving business event contracts]]
+- [[Open-source CDC tools differ in database support, Kafka coupling, and operational overhead]]
 
 #### Inbox Pattern
 - [ ] Idempotent consumers
@@ -147,4 +149,3 @@
 - [[Distributed Systems - MOC]]
 - [[Architecture - MOC]]
 - [[Observability - MOC]]
-- [[00 - IT Career - MOC]]

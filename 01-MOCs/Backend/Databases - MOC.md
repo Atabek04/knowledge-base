@@ -20,6 +20,7 @@
 ## Topics
 
 ### SQL Fundamentals
+- [[Primary key uniquely identifies each row and anchors referential integrity across tables]]
 - [ ] SELECT, INSERT, UPDATE, DELETE
 - [ ] WHERE, ORDER BY, LIMIT, OFFSET
 - [ ] JOINs (INNER, LEFT, RIGHT, FULL, CROSS)
