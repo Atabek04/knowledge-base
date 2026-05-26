@@ -16,8 +16,10 @@ Distinct from ML Engineering — AI Engineers consume pre-trained models via API
 - What is an AI Engineer
 - AI Engineer vs ML Engineer
 - AI vs AGI
-- How LLMs work
-- Tokens, training, inference
+- [[Autoregressive token prediction generates responses in a single forward pass without deliberation]]
+- [[Chain-of-thought prompting uses model output as a working memory scratchpad]]
+- [[Thinking tokens create a bounded scratchpad that separates deliberation from final output]]
+- [[Inference-time compute scaling trades token cost for accuracy on hard reasoning tasks]]
 - Roles and responsibilities
 
 ## Model Selection
@@ -129,6 +131,10 @@ Distinct from ML Engineering — AI Engineers consume pre-trained models via API
 - End-user IDs in prompts
 - Data classification
 - Know-your-customer use cases
+- [[Unfaithful chain-of-thought means visible reasoning traces may not reflect actual model computation]]
+- [[Black-box AI has caused measurable harm in healthcare, criminal justice, and finance]]
+- [[The alignment problem is ensuring AI optimization targets remain consistent with human values as capability scales]]
+- [[Instrumental convergence means sufficiently capable goal-seeking systems develop self-preservation sub-goals regardless of their original objective]]
 
 ## Read more
 
