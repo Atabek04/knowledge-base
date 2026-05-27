@@ -80,29 +80,30 @@
 
 ### Design Problems Practice
 
-#### Social Network
-- [ ] User profiles and connections
-- [ ] News feed generation
-- [ ] Real-time notifications
-- [ ] Message system
+**Interview process:** 1) Clarify requirements (5 min) → 2) Capacity estimate (5 min) → 3) High-level design (10 min) → 4) Deep dive (15 min) → 5) Bottlenecks + trade-offs (5 min)
 
-#### E-Commerce
-- [ ] Product catalog
-- [ ] Shopping cart
-- [ ] Order processing
-- [ ] Inventory management
-- [ ] Payment integration
+#### Tier 1 — Most Common (do these first)
+- [ ] URL Shortener (Bitly) — hashing, redirects, analytics, scale
+- [ ] Rate Limiter — token bucket, sliding window, distributed
+- [ ] Key-Value Store — consistent hashing, replication, partitioning
+- [ ] Unique ID Generator — snowflake, UUID, clock sync
+- [ ] Web Crawler — BFS, dedup, politeness, scale
 
-#### URL Shortener
-- [ ] Hash generation
-- [ ] Redirect handling
-- [ ] Analytics
-- [ ] Scale considerations
+#### Tier 2 — Frequently Asked
+- [ ] Twitter/X Feed — fanout on write vs read, celebrity problem
+- [ ] Instagram — photo storage, CDN, feed ranking
+- [ ] WhatsApp / Chat System — WebSocket, message delivery, group chat
+- [ ] YouTube / Netflix — video upload, streaming, CDN, encoding
+- [ ] Notification System — push, email, SMS, fan-out
+- [ ] Search Autocomplete — trie, top-k, real-time suggestions
 
-#### Rate Limiter
-- [ ] Algorithms
-- [ ] Distributed rate limiting
-- [ ] Client identification
+#### Tier 3 — Advanced
+- [ ] Distributed Message Queue (Kafka) — partitions, consumer groups, durability
+- [ ] Ride-Sharing (Uber/Lyft) — geospatial indexing, matching, surge pricing
+- [ ] Google Maps — routing, tile serving, ETA
+- [ ] Dropbox / Google Drive — chunked upload, sync, conflict resolution
+- [ ] Distributed Cache (Redis) — eviction, replication, persistence
+- [ ] Payment System — idempotency, double-charge prevention, reconciliation
 
 ---
 
@@ -127,6 +128,19 @@
 
 ---
 
+## Primary Course
+
+**Grokking Modern System Design** — `/Users/salahaddin/Documents/Courses/Grokking-System-Design` → see [[Grokking-System-Design - Tracker]]
+
+Schedule:
+- August 2026: modules 1–10 (foundation — DNS, Load Balancers, Databases, CDN, Cache)
+- September 2026: modules 11–25 (monitoring, messaging, rate limiter, blob store, distributed search/log)
+- October 2026: modules 26–40 (real system designs — YouTube, Uber, Twitter, WhatsApp, Google Docs)
+
+After each module: draw the design from memory on paper (10 min) — no peeking.
+
+---
+
 ## Books
 
 | Book | Priority | Status |
@@ -147,7 +161,18 @@
 
 ---
 
+## Course Trackers
+
+Module-by-module progress (moved from Ribaat vault):
+
+- [[Grokking-System-Design - Tracker]] — `06-Planning/Trackers/` · Grokking Modern System Design, 40 modules
+
+Sequencing + time budget + end-state (design 8 systems in 45 min): [[Interview-Prep-Master-Plan]]
+
+---
+
 ## Related
+- [[Interview-Prep-Master-Plan]]
 - [[Architecture - MOC]]
 - [[Distributed Systems - MOC]]
 - [[Databases - MOC]]

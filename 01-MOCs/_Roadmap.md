@@ -52,7 +52,23 @@
 
 ### Practice
 - [[System Design - MOC]] — NFRs, scaling, high availability, design problems
+- [[LeetCode - MOC]] — NeetCode 150 roadmap, pattern tracking
 - [[Technical Books - MOC]] — Reading list with priorities
+- [[Projects to Build - MOC]] — Backlog of projects to build/improve (web, mobile, foundational systems)
+
+### Fintech Domain (for Revolut/Wise/N26-type roles)
+- Idempotency — payment APIs, idempotency keys, safe retry
+- Exact-once semantics — at-least-once delivery + idempotent consumer
+- Double-entry ledger design — schema constraints, balancing
+- Payment retry logic — exponential backoff with jitter, dedup
+- Reconciliation — matching internal records with payment processor data
+- Outbox + Inbox patterns — reliable messaging in financial transactions
+- Pure Java coding (no Spring) — required for some live coding rounds
+
+### Interview Simulation Courses
+- **Grokking Coding Interview Patterns** — `/Users/salahaddin/Documents/Courses/Grokking-Coding-Interview-Patterns` → [[Grokking-Coding-Interview-Patterns - Tracker]]
+- **Grokking Modern System Design** — `/Users/salahaddin/Documents/Courses/Grokking-System-Design` → [[Grokking-System-Design - Tracker]]
+- **Decode Coding Interview Java** — `/Users/salahaddin/Documents/Courses/Decode-Coding-Interview-Java` → [[Decode-Coding-Interview-Java - Tracker]]
 
 ---
 
@@ -141,7 +157,3 @@ Single project that evolves from CRUD monolith to full microservices.
 - [Baeldung Spring](https://www.baeldung.com/spring-tutorial)
 
 ---
-
-## Related
-- [[Long-Term-Vision]]
-- [[2026-Yearly-Goals]]

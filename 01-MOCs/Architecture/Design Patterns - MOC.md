@@ -93,7 +93,20 @@
 
 ---
 
+## Learning Path
+
+No course for this track — it's learned by **implementing in Java**, not reading. Sequence: master the **core 8** deeply first (Strategy, Factory Method, Builder, Observer, Decorator, Adapter, Facade, Command), then breadth on the rest, then enterprise patterns. For each: implement it → code the painful "without it" version → tie it to a Spring/Java example you already use.
+
+Module-by-module progress:
+
+- [[Design-Patterns - Tracker]] — `06-Planning/Trackers/` · sequenced implementation path (33 patterns)
+
+Sequencing + time budget: [[Interview-Prep-Master-Plan]]
+
+---
+
 ## Related
+- [[Interview-Prep-Master-Plan]]
 - [[Java Core - MOC]]
 - [[Architecture - MOC]]
 - [[00 - IT Career - MOC]]

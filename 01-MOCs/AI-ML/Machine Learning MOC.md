@@ -261,11 +261,44 @@ Specialized architecture for processing grid-like data such as images.
 ### Natural Language Processing
 Processing and understanding human language.
 
+#### Transformers & LLMs — Stanford CME 295 (Autumn 2025)
+
+A 9-lecture series from Stanford Online covering the Transformer architecture through to agentic LLMs. Taught by Afshine & Shervine Amidi.
+
+- [Full playlist](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy) · [Course site](https://cme295.stanford.edu/)
+
+| # | Lecture | Topics | Link |
+|---|---------|--------|------|
+| 1 | Transformer | End-to-end walkthrough | [▶](https://www.youtube.com/watch?v=Ub3GoFaUcds) |
+| 2 | Transformer-Based Models & Tricks | Architecture variants, tricks | [▶](https://www.youtube.com/watch?v=yT84Y5zCnaA) |
+| 3 | Transformers & Large Language Models | From transformers to LLMs | [▶](https://www.youtube.com/watch?v=Q5baLehv5So) |
+| 4 | LLM Training | Pretraining, SFT, LoRA | [▶](https://www.youtube.com/watch?v=VlA_jt_3Qc4) |
+| 5 | LLM Tuning | RLHF, PPO, DPO | [▶](https://www.youtube.com/watch?v=PmW_TMQ3l0I) |
+| 6 | LLM Reasoning | RL scaling with GRPO | [▶](https://www.youtube.com/watch?v=k5Fh-UgTuCo) |
+| 7 | Agentic LLMs | RAG, tool calling, agents | [▶](https://www.youtube.com/watch?v=h-7S6HNq0Vg) |
+| 8 | LLM Evaluation | LLM-as-a-Judge, benchmarks | [▶](https://www.youtube.com/watch?v=8fNP4N46RRo) |
+| 9 | Recap & Current Trends | Synthesis, where the field is going | [▶](https://www.youtube.com/watch?v=Q86qzJ1K1Ss) |
+
 ### Deep Learning Frameworks and Libraries
 Tools and frameworks for building deep learning models.
 
 - [[Scikit-learn provides ready-to-use ML algorithms and preprocessing tools|Scikit-learn]]
 - [[Matplotlib is a Python library for creating static and interactive visualizations|Matplotlib]]
+
+---
+
+## Learning Resources & Curricula
+
+External courses to mine for atomic notes — watch/read, then extract notes into this MOC.
+
+### Stanford CME 295 — Transformers & LLMs (theory)
+Lecture series on Transformer architecture → agentic LLMs. Full table under [[#Transformers & LLMs — Stanford CME 295 (Autumn 2025)|Natural Language Processing]].
+**Topics:** transformer internals · LLM training (pretraining, SFT, LoRA) · tuning (RLHF, PPO, DPO) · reasoning (GRPO) · agents · evaluation.
+
+### AI Engineering from Scratch (hands-on)
+[github.com/rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) — MIT, free. 435 lessons / 20 phases. Build from math → from scratch → framework. Pairs with CME 295 (theory ↔ implementation).
+**Topics:** math foundations · classical ML · deep learning · vision · NLP · speech · transformers · generative & multimodal AI · tools, agents & multi-agent systems · deployment · ethics · capstones.
+**How to use:** skip Phases 0–3 (already covered here); start at Phase 4+ (Vision/NLP/Transformers/Agents) where it fills MOC gaps.
 
 ---
 

@@ -37,6 +37,12 @@ Tech-KB::Math for ML::Probability
 Tech-KB::Software Engineering::Requirements Engineering
 ```
 
+### Economics
+
+```
+Tech-KB::Economics::AI and Labor
+```
+
 ### Python
 
 ```
@@ -52,6 +58,44 @@ Tech-KB::Python::Scikit-learn
 Tech-KB::Linux::Command-Line Tools
 Tech-KB::Linux::Shell Scripting
 Tech-KB::Linux::Permissions
+```
+
+### DSA (one deck per pattern)
+
+```
+Tech-KB::DSA::Sliding Window
+Tech-KB::DSA::Two Pointers
+Tech-KB::DSA::Fast & Slow Pointers
+Tech-KB::DSA::Merge Intervals
+Tech-KB::DSA::Trees
+Tech-KB::DSA::Graphs
+Tech-KB::DSA::Dynamic Programming
+(… one per NeetCode/Grokking pattern)
+```
+
+### System Design
+
+```
+Tech-KB::System Design::Non-Functional Requirements
+Tech-KB::System Design::Building Blocks
+Tech-KB::System Design::Designs
+```
+
+### Design Patterns
+
+```
+Tech-KB::Design Patterns::Creational
+Tech-KB::Design Patterns::Structural
+Tech-KB::Design Patterns::Behavioral
+Tech-KB::Design Patterns::Enterprise
+```
+
+### Behavioral
+
+```
+Tech-KB::Behavioral::STAR Method
+Tech-KB::Behavioral::Story Bank
+Tech-KB::Behavioral::Negotiation
 ```
 
 ---

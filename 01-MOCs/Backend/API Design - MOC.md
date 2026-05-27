@@ -30,6 +30,9 @@
 - [ ] Resource-oriented design
 - [ ] Consistent naming (plural nouns, kebab-case)
 - [ ] Filtering, sorting, pagination
+  - [[Offset pagination slows at deep pages because the database scans and discards skipped rows]]
+  - [[Keyset pagination filters by the last seen key for stable performance at any depth]]
+  - [[Cursor pagination hides the paging position inside an opaque token]]
 - [ ] Partial responses (field selection)
 - [ ] Bulk operations
 - [ ] Rate limiting headers
