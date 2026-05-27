@@ -9,13 +9,24 @@ sr-ease:
 ### Core Concept
 
 Asymmetric cryptography uses **two mathematically related keys** instead of one.
-The **public key** encrypts data while the **private key** decrypts it.
+
+The keys work in two opposite modes depending on the goal:
+
+| Goal | Operation | Who does it |
+|---|---|---|
+| **Confidentiality** | encrypt with public key | anyone |
+| | decrypt with private key | owner only |
+| **Signatures** | sign with private key | owner only |
+| | verify with public key | anyone |
 
 The public key can be freely distributed to anyone.
-Anyone can use it to encrypt messages that only you can decrypt with your private key.
 
-Think of it like a mailbox with a mail slot.
+Think of it like a mailbox 📫 with a mail slot.
 Anyone can drop letters through the slot (public key) but only you have the key to open the box (private key).
+
+> Note: "encrypting with private key" in signatures is technically imprecise.
+> The math is similar, but the operation is called **sign/verify**, not encrypt/decrypt.
+> Purpose is proving identity, not hiding data.
 
 ### Common Algorithms
 
@@ -34,8 +45,7 @@ Typical use is for key exchange and digital signatures, not bulk data encryption
 
 ### Hybrid Encryption
 
-Real systems use **hybrid encryption** — asymmetric to exchange a session key, symmetric to encrypt data.
-This combines the security of asymmetric with the speed of symmetric.
+Real systems combine both — see [[Hybrid encryption uses asymmetric to exchange key then symmetric to encrypt data]].
 
 ---
 
@@ -45,4 +55,4 @@ This combines the security of asymmetric with the speed of symmetric.
 - [[RSA uses modular exponentiation with large primes for encryption]]
 - [[ECDH derives shared secret using elliptic curve mathematics]]
 - [[Session key is short-lived symmetric key for single connection]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

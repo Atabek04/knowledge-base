@@ -57,9 +57,20 @@ Operating system fundamentals, Linux kernel architecture, Unix/Linux history, an
 
 - [[ls command displays files with options for hidden files and detailed format]] — listing files with options
 - [[grep searches files for lines matching text patterns using regular expressions]] — text pattern matching and filtering
+- [[sed performs stream editing for find-and-replace on text]] — non-interactive find-and-replace, deletion, extraction
+- [[find searches filesystem for files by name, type, or attributes]] — locate files recursively, bulk-operate via -exec
+- [[cat concatenates files and prints contents to stdout]] — dump or merge files
+- [[Heredoc passes multi-line text as stdin using cat and EOF marker]] — embed multi-line input in scripts
+- [[test command checks file properties and compares values in shell]] — `test -f`, `[ ... ]`, file/string/integer checks
 - [[less command displays files one screen at a time with navigation and search]] — pager for efficient file viewing
 - [[Pipe operator chains Linux commands by connecting stdout of one to stdin of another]] — command composition and data flow
 - [[Output redirection operators write command output to files in Linux]] — redirecting stdout and stderr
+- [[2 greater than ampersand 1 redirects stderr to the same place as stdout]] — `2>&1`, merging streams, order matters
+
+### Network & JSON CLI Tools
+
+- [[curl transfers data to and from servers over many protocols]] — CLI replacement for Postman, REST API testing
+- [[jq parses, filters, and transforms JSON data on the command line]] — extract fields, filter arrays, reshape JSON
 
 ### Shell Scripting Fundamentals
 

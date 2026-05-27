@@ -38,6 +38,7 @@ The private key must remain absolutely secret.
 Anyone with the private key can create signatures that appear authentic.
 
 ## Links
+- [[Hashing before signing is required because asymmetric algorithms cannot process arbitrary-length data]]
 - [[Digital signature proves who signed and ensures message integrity]]
 - [[Verification decrypts signature with public key and compares hashes]]
 - [[Hashing produces fixed-length fingerprint that cannot be reversed]]

@@ -8,7 +8,7 @@ sr-ease:
 
 ### Core Concept
 
-A block cipher encrypts data in **fixed-size chunks** called blocks rather than processing the entire message at once.
+A block cipher encrypts data in **fixed-size chunks** called blocks rather than processing the entire message at once — see [[Cryptographic algorithms cannot encrypt arbitrary-length data for different reasons|why size limits exist]].
 Each block is encrypted independently using the same key.
 
 ### Block Size
@@ -40,8 +40,8 @@ Larger blocks are generally more secure but may be slower and waste space on sma
 ---
 
 ## Links
+- [[Cryptographic algorithms cannot encrypt arbitrary-length data for different reasons]]
 - [[AES is most widely used symmetric encryption algorithm]]
 - [[Mode of operation defines how block cipher processes long messages]]
 - [[CBC mode chains blocks by XORing with previous ciphertext]]
 - [[CTR mode converts block cipher into stream cipher using counter]]
-- [[Cryptography MOC]]

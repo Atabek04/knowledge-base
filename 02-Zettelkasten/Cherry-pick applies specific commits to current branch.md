@@ -1,6 +1,7 @@
 ---
 created: 2025-01-04
 tags: [git/workflow]
+aliases: [cherry-pick, git cherry-pick]
 sr-due:
 sr-interval:
 sr-ease:
@@ -37,6 +38,12 @@ git cherry-pick A^..B     # includes A through B
 
 Cherry-picking duplicates commits rather than moving them. The original commit remains on its branch.
 
-## Links
+If instead you want to **remove** a commit, see [[Git reset moves the branch pointer backward to remove commits|reset]] (local) or [[Git revert creates a new commit that undoes a previous commit|revert]] (shared).
+
+### Read more
+
+- [[Git reset moves the branch pointer backward to remove commits]]
+- [[Git revert creates a new commit that undoes a previous commit]]
+- [[Choose revert for shared history reset for local cleanup cherry-pick to port commits]]
 - [[Git rebase rewrites history by replaying commits on a new base]]
 - [[Git MOC]]

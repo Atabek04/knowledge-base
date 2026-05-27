@@ -23,8 +23,10 @@
 - [ ] Resource naming conventions
 - [ ] HTTP methods semantics (GET, POST, PUT, PATCH, DELETE)
 - [ ] Status codes (2xx, 3xx, 4xx, 5xx)
-- [ ] Idempotency
+- [[Idempotency key prevents duplicate processing when clients retry failed requests]] — client-generated key, server caches result
 - [ ] HATEOAS
+- [[Content-Type header tells receiver how to parse the HTTP body]] — what it is and how it works
+- [[Content-Type common values grouped by purpose]] — reference table by category
 
 ### API Design Best Practices
 - [ ] Resource-oriented design
@@ -34,9 +36,12 @@
   - [[Keyset pagination filters by the last seen key for stable performance at any depth]]
   - [[Cursor pagination hides the paging position inside an opaque token]]
 - [ ] Partial responses (field selection)
+  - [[Sparse fieldsets let clients request only needed fields reducing payload size]] — ?fields= query param
+  - [[PATCH with JsonMergePatch updates only the fields present in the request leaving others unchanged]] — RFC 7396, partial updates
 - [ ] Bulk operations
 - [ ] Rate limiting headers
 - [ ] API versioning strategies (URL, header, query param)
+- [[ETag header enables optimistic concurrency by rejecting updates based on stale resource versions]] — If-Match / 412
 
 ### Error Handling
 - [ ] Standard error response format
@@ -56,7 +61,10 @@
 - [ ] API keys
 - [ ] OAuth2 flows
 - [ ] JWT tokens
-- [ ] CORS
+- [x] CORS
+  - [[CORS relaxes Same-Origin Policy to allow controlled cross-origin browser requests]] — what & why
+  - [[CORS preflight uses OPTIONS request to authorize non-simple cross-origin calls]] — preflight mechanics
+  - [[Browser sends Origin header on cross-origin requests and on non-simple same-origin requests]] — when Origin is/isn't sent
 - [ ] Rate limiting
 - [ ] Input validation
 
@@ -103,4 +111,3 @@
 ## Related
 - [[Spring Ecosystem - MOC]]
 - [[Distributed Systems - MOC]]
-- [[00 - IT Career - MOC]]

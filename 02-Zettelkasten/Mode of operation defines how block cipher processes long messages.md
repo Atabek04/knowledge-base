@@ -45,4 +45,3 @@ ECB mode is notoriously insecure as it produces identical ciphertext for identic
 - [[CTR mode converts block cipher into stream cipher using counter]]
 - [[GCM mode combines encryption with authentication tag]]
 - [[IV ensures identical plaintext produces different ciphertext]]
-- [[Cryptography MOC]]

@@ -120,6 +120,9 @@ Combining labeled and unlabeled data for training.
 ### Reinforcement Learning
 Learning through interaction and rewards.
 
+- [[Reasoning models use reinforcement learning on outcome rewards to discover thinking strategies]]
+- [[GRPO trains reasoning models by comparing outcome rewards across sampled response groups]]
+
 ### Self-supervised Learning
 Using data structure as labels for training.
 
@@ -248,6 +251,9 @@ Layered networks of interconnected neurons inspired by biological neural systems
 - Backpropagation: training algorithm using gradient descent to update weights through layers
 - Forward propagation: passing input through network layers to compute output predictions
 - Epochs and batch size: number of training iterations and samples per update affecting convergence
+- [[Neural network weights are compressed statistical patterns not human-readable instructions]]
+- [[Superposition allows neural networks to encode more features than neurons using overlapping activation patterns]]
+- [[Polysemantic neurons respond to multiple unrelated concepts making them individually uninterpretable]]
 
 #### Convolutional Neural Networks (CNNs)
 Specialized architecture for processing grid-like data such as images.

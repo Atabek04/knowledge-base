@@ -66,6 +66,50 @@ Transformer + scale + RLHF. The jump from perception to language and reasoning.
 
 ---
 
+### 6. Can Machines Think? — Philosophy & Interpretability
+
+The question behind all AI history: what counts as intelligence, and do these systems have it?
+
+- [[Turing Test replaces the question of machine thinking with behavioral indistinguishability]]
+- [[Searle's Chinese Room shows that symbol manipulation without understanding cannot constitute thought]]
+- [[Chollet's ARC benchmark exposes the gap between pattern memorization and genuine reasoning]]
+- [[LeCun argues LLMs lack world models needed for general intelligence]]
+- [[Gary Marcus argues deep learning lacks compositionality required for systematic generalization]]
+- [[Black-box AI models prevent auditing of decision-making processes]]
+- [[Black-box AI has caused measurable harm in healthcare, criminal justice, and finance]]
+- [[Mechanistic interpretability reverse-engineers neural network computations into readable circuits]]
+- [[Chain-of-thought in LLMs may be constrained imitation of human reasoning patterns rather than genuine inference]]
+- [[Unfaithful chain-of-thought means visible reasoning traces may not reflect actual model computation]]
+
+### 6b. Why We Don't Know How AI Works — The Technical Reality
+
+- [[Neural network weights are compressed statistical patterns not human-readable instructions]]
+- [[Superposition allows neural networks to encode more features than neurons using overlapping activation patterns]]
+- [[Polysemantic neurons respond to multiple unrelated concepts making them individually uninterpretable]]
+
+### 8. AI Consciousness & Existential Risk
+
+Why some of the people who built these systems are afraid of them.
+
+- [[The Hard Problem of Consciousness asks why physical processes produce subjective experience]]
+- [[Hinton's substrate independence argument suggests AI systems may already have subjective experience]]
+- [[Instrumental convergence means sufficiently capable goal-seeking systems develop self-preservation sub-goals regardless of their original objective]]
+- [[The paperclip maximizer illustrates how any terminal goal pursued without constraint conflicts with human survival]]
+- [[The alignment problem is ensuring AI optimization targets remain consistent with human values as capability scales]]
+
+### 7. Reasoning Models — How "Thinking" Actually Works
+
+What changed when o1, o3, and DeepSeek-R1 appeared — technically and philosophically.
+
+- [[Autoregressive token prediction generates responses in a single forward pass without deliberation]]
+- [[Chain-of-thought prompting uses model output as a working memory scratchpad]]
+- [[Reasoning models use reinforcement learning on outcome rewards to discover thinking strategies]]
+- [[GRPO trains reasoning models by comparing outcome rewards across sampled response groups]]
+- [[Thinking tokens create a bounded scratchpad that separates deliberation from final output]]
+- [[Inference-time compute scaling trades token cost for accuracy on hard reasoning tasks]]
+
+---
+
 ### Read more
 
 - [[Machine Learning MOC]]

@@ -54,4 +54,4 @@ All connections must use ECDHE or DHE.
 - [[Session key is short-lived symmetric key for single connection]]
 - [[Public key encrypts while private key decrypts in asymmetric systems]]
 - [[Key transport encrypts session key with recipient public key]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

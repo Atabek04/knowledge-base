@@ -55,4 +55,4 @@ Encrypt first, then compute MAC over the ciphertext.
 - [[Authentication tag detects tampering in GCM mode]]
 - [[GCM mode combines encryption with authentication tag]]
 - [[Integrity detects any modification to signed data]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

@@ -11,7 +11,7 @@ sr-ease:
 Symmetric encryption uses **one shared secret key** for both encrypting and decrypting data.
 The same key that locks the data also unlocks it.
 
-Think of it like a physical padlock where the same key locks and unlocks the mechanism.
+Think of it like a physical padlock :luc_lock: where the same key locks and unlocks the mechanism.
 Both sender and receiver must possess the identical key.
 
 ### Common Algorithms
@@ -36,8 +36,7 @@ Longer keys provide stronger security but may be slightly slower.
 
 ### Hybrid Approach
 
-Modern systems often combine symmetric and asymmetric encryption.
-Use asymmetric to securely exchange a symmetric key, then use symmetric to encrypt the actual data.
+Modern systems combine both — see [[Hybrid encryption uses asymmetric to exchange key then symmetric to encrypt data]].
 
 ---
 
@@ -46,4 +45,3 @@ Use asymmetric to securely exchange a symmetric key, then use symmetric to encry
 - [[Encryption transforms data using key to ensure confidentiality]]
 - [[AES is most widely used symmetric encryption algorithm]]
 - [[Session key is short-lived symmetric key for single connection]]
-- [[Cryptography MOC]]

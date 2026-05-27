@@ -47,4 +47,4 @@ Derive separate keys for different purposes using a KDF.
 - [[Hashing produces fixed-length fingerprint that cannot be reversed]]
 - [[KDF turns shared point into uniform cryptographic keys]]
 - [[Authentication tag detects tampering in GCM mode]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

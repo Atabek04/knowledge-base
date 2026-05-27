@@ -48,4 +48,4 @@ Never use raw RSA encryption — it's mathematically vulnerable.
 - [[Key agreement derives shared key without transmitting it]]
 - [[RSA uses modular exponentiation with large primes for encryption]]
 - [[Ephemeral ECDH provides forward secrecy by using fresh keys]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

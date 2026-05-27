@@ -52,7 +52,7 @@
 - [ ] Producers and consumers
 - [ ] Consumer groups
 - [ ] Replication and durability
-- [ ] Exactly-once semantics
+- [[Kafka delivers messages at-least-once by default and exactly-once with atomic offset commits]]
 - [ ] Kafka Streams basics
 - [ ] Schema Registry (Avro)
 

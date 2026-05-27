@@ -51,4 +51,4 @@ Common curves include P-256 (NIST), Curve25519 (modern preference), and GOST cur
 - [[KDF turns shared point into uniform cryptographic keys]]
 - [[Ephemeral ECDH provides forward secrecy by using fresh keys]]
 - [[Key agreement derives shared key without transmitting it]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

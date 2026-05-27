@@ -107,6 +107,6 @@ Sequencing + time budget: [[Interview-Prep-Master-Plan]]
 
 ## Related
 - [[Interview-Prep-Master-Plan]]
-- [[Java Core - MOC]]
+- [[Java MOC]]
 - [[Architecture - MOC]]
 - [[00 - IT Career - MOC]]

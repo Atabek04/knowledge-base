@@ -20,6 +20,7 @@
 ## Topics
 
 ### SQL Fundamentals
+- [[Primary key uniquely identifies each row and anchors referential integrity across tables]]
 - [ ] SELECT, INSERT, UPDATE, DELETE
 - [ ] WHERE, ORDER BY, LIMIT, OFFSET
 - [ ] JOINs (INNER, LEFT, RIGHT, FULL, CROSS)
@@ -39,14 +40,7 @@
 - [ ] Stored procedures and functions
 
 ### PostgreSQL Deep Dive
-- [ ] Data types (arrays, JSON, UUID)
-- [ ] JSONB queries and indexing
-- [ ] Full-text search
-- [ ] Partitioning
-- [ ] Replication basics
-- [ ] pg_stat for monitoring
-- [ ] VACUUM and maintenance
-- [ ] Connection pooling (PgBouncer)
+→ [[PostgreSQL - MOC]]
 
 ### Transactions & Isolation
 - [ ] ACID properties
@@ -126,6 +120,8 @@
 ---
 
 ## Related
+- [[PostgreSQL - MOC]] — OLTP RDBMS
+- [[ClickHouse - MOC]] — OLAP DBMS
 - [[Spring Ecosystem - MOC]]
 - [[Architecture - MOC]]
 - [[00 - IT Career - MOC]]

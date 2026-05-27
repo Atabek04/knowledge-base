@@ -62,3 +62,43 @@ Example: Setting `random_state=42` provides a **seed** so the train-test split i
 Tags: ml programming
 <!--ID: 1774613880804-->
 END
+
+START
+A_English_Translate
+To give up control or priority to something else; to hand over execution flow so another task can proceed.
+English: to yield (general)
+Russian: уступить, передать управление
+Example: At an intersection, you must **yield** to oncoming traffic before turning.
+Note: Core meaning: surrender or give way. Used for traffic, arguments, and control flow alike.
+Tags: general english
+END
+
+START
+A_English_Translate
+In async programming: to pause the current task and hand execution back to the event loop so other tasks can run.
+English: to yield control (async / await context)
+Russian: передать управление (событийному циклу)
+Example: `await` suspends the current coroutine and **yields** control back to the event loop, letting other coroutines run.
+Note: In Python `await` does exactly this — the coroutine is paused at that point until the awaited result is ready, but the thread is not blocked.
+Tags: python async programming
+END
+
+START
+A_English_Translate
+To go deeper into a topic, moving from a broad overview to specific details
+English: to drill down
+Russian: Углубляться; переходить к деталям
+Example: The dashboard shows total revenue — click it and you **drill down** into revenue by country, then by city.
+Note: General English: to focus more closely on something. In UI/data: navigating from a high-level summary into increasingly granular layers (dashboard → country → city).
+Tags: it ui data
+END
+
+START
+A_English_Translate
+To restrict or limit something within set boundaries so it cannot go beyond them
+English: to constrain
+Russian: Ограничивать; стеснять рамками
+Example: Tight deadlines **constrain** how much we can polish the design before release.
+Note: General English: to force someone/something to stay within limits. In tech: limiting a query, scope, or value to an allowed set (e.g. constrain territory to user's allowed unit codes, constrain a type parameter, DB CHECK constraint).
+Tags: general it
+END

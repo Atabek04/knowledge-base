@@ -44,4 +44,4 @@ For this reason, CTR is often combined with authentication.
 - [[XOR operation reversibly mixes two equal-length byte strings]]
 - [[GCM mode combines encryption with authentication tag]]
 - [[IV ensures identical plaintext produces different ciphertext]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

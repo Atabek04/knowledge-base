@@ -49,4 +49,4 @@ ECC provides equivalent security with much smaller keys and faster operations.
 - [[RSA-PSS adds randomized padding for signature security]]
 - [[ECDH derives shared secret using elliptic curve mathematics]]
 - [[Key transport encrypts session key with recipient public key]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

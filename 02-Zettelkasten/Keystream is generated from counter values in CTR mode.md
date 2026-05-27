@@ -49,4 +49,4 @@ This is equivalent to using the same one-time pad twice, which completely breaks
 - [[XOR operation reversibly mixes two equal-length byte strings]]
 - [[IV ensures identical plaintext produces different ciphertext]]
 - [[GCM mode combines encryption with authentication tag]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

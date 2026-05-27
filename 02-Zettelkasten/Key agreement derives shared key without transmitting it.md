@@ -54,4 +54,4 @@ Using the raw shared point directly as an encryption key is insecure.
 - [[KDF turns shared point into uniform cryptographic keys]]
 - [[Ephemeral ECDH provides forward secrecy by using fresh keys]]
 - [[Session key is short-lived symmetric key for single connection]]
-- [[Cryptography MOC]]
+- [[1. Cryptography MOC]]

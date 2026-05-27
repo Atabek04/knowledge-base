@@ -71,6 +71,7 @@ data class GenerateReportRequest(
 | Jackson | Constructor parameter | `@param:` (default) |
 | Jakarta Validation | Field or getter | `@field:` |
 | JPA | Field | `@field:` |
+| Swagger / OpenAPI (`@Schema`) | Field (reflection) | `@field:` |
 
 ---
 
