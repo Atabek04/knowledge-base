@@ -118,6 +118,8 @@
 5. Bottleneck identification
 6. Trade-off discussion
 
+> Interview-day running order with time budgets: [[HelloInterview Delivery Framework structures a system design interview into six timed steps]]
+
 ### Design Problems Practice
 
 **Interview process:** 1) Clarify requirements (5 min) → 2) Capacity estimate (5 min) → 3) High-level design (10 min) → 4) Deep dive (15 min) → 5) Bottlenecks + trade-offs (5 min)
