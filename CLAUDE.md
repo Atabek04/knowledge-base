@@ -172,6 +172,12 @@ When user sends a sentence + asks what a word means → create a vocab flashcard
 - Focus areas: Backend, DevOps, System Design
 - Learning style: Q&A format, visual diagrams, hands-on practice
 
+## Interview Prep
+
+- **Methodology + trackers (this vault):** `06-Planning/Interview-Prep-Master-Plan.md` (track end-states) · `06-Planning/Trackers/` (per-course tick lists — Grokking Patterns/SD, Decode, Behavioral, Design Patterns).
+- **Month→week schedule + applications (Ribaat vault):** `06-Planning/Job-Search/Interview-Prep-Execution.md` (the executable plan) · `Tracker-Kanban.md` + `Application-Log.md` (pipeline tracking).
+- **LeetCode solve-log (Obsidian Base, replaces Notion):** `06-Planning/Trackers/LeetCode Tracker.base` over the `LeetCode-Log/` folder — one note per problem (status Solved/Cheated/Not started, topic, solve-count). Folder-based filter: "New" creates notes in-folder; see `LeetCode-Log/README.md`.
+
 ## Git Commit Rules
 
 **NEVER:**
