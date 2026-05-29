@@ -52,6 +52,7 @@ Use the data in your [[Daily Self-Accounting Closes the Gap Between Plans and Ex
 
 ## Read more
 
+- [[Pomodoro session cycle alternates four timed focus blocks with short breaks and one long recovery break]]
 - [[If-Then Plans Pre-Decide Your Response to Interruptions Before They Happen]]
 - [[Parkinson's Law Means Your Time Estimate Is the Ceiling, Not the Floor]]
 - [[Batching Urgent Smalls Protects Deep Work From a Thousand Small Cuts]]

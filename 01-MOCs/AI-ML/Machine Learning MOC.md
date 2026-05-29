@@ -248,7 +248,9 @@ Layered networks of interconnected neurons inspired by biological neural systems
 
 - Neural network architecture: layers of interconnected neurons (input, hidden, output layers)
 - Activation functions: non-linear functions (ReLU, sigmoid, tanh) introducing non-linearity to networks
-- Backpropagation: training algorithm using gradient descent to update weights through layers
+- [[Neural network layers build increasingly abstract representations of input data]]
+- [[Backpropagation propagates gradients backward through layers using the chain rule]]
+- [[Softmax converts raw model scores into a probability distribution summing to 100%]]
 - Forward propagation: passing input through network layers to compute output predictions
 - Epochs and batch size: number of training iterations and samples per update affecting convergence
 - [[Neural network weights are compressed statistical patterns not human-readable instructions]]
@@ -266,6 +268,15 @@ Specialized architecture for processing grid-like data such as images.
 
 ### Natural Language Processing
 Processing and understanding human language.
+
+#### Language Models
+
+- [[LLM training uses next-token prediction on existing text to learn statistical patterns]]
+- [[Cross-entropy loss measures probability assigned to the correct token]]
+- [[Perplexity measures LLM quality as how many words the model effectively considers at each step]]
+- [[Tokenization splits text into subword units to balance vocabulary size and meaning]]
+- [[BPE builds a tokenizer vocabulary by iteratively merging the most frequent character pairs]]
+- [[Each model trains its own tokenizer on its training corpus producing different token splits]]
 
 #### Transformers & LLMs — Stanford CME 295 (Autumn 2025)
 

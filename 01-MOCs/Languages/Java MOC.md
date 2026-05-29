@@ -43,6 +43,7 @@ Master Java fundamentals before frameworks. This MOC tracks atomic notes (alread
 - [[Primitive types store actual value, references store only address in memory]]
 - [[Java has dual type system because JVM optimizes primitives for performance]] — primitives vs wrappers and autoboxing
 - [[Casting converts between types in an inheritance hierarchy]] — upcasting, downcasting, and instanceof
+- [[Java objects always live on heap; reference location depends on declaration site]] — stack vs heap for references vs objects
 - [[Object variable types start with capital letter, whereas primitives with small letter]]
 - [[Variable scope - where var exists and can be accessed]]
 
@@ -147,9 +148,12 @@ Master Java fundamentals before frameworks. This MOC tracks atomic notes (alread
 
 - [[From Java 10 you can use Type Inference]]
 
-### Topics pending notes — Java 17+
+### Notes
 
-- [ ] Records
+- [[Java records auto-generate accessor, equals, hashCode, and toString from their components]]
+- [[Java records are shallowly immutable — final fields prevent reassignment but not mutation of mutable objects]]
+
+### Topics pending notes — Java 17+
 - [ ] Sealed classes
 - [ ] Pattern matching for `instanceof`
 - [ ] Text blocks

@@ -80,6 +80,13 @@ A personal knowledge map covering study techniques, habits, discipline, time man
 - [[Scheduling by Energy Peaks Makes Interruptions Less Costly]]
 - [[Parkinson's Law Means Your Time Estimate Is the Ceiling, Not the Floor]]
 - [[Pomodoro Interruption Log Separates What Broke Your Focus From What Actually Needed You]]
+- [[Pomodoro session cycle alternates four timed focus blocks with short breaks and one long recovery break]]
+
+### Focus, breaks & recovery
+
+- [[Vigilance decrement causes sustained attention and accuracy to degrade within 20 minutes of monotonous focus]]
+- [[Restorative breaks recover directed attention by shifting the brain to involuntary attention through low-demand activity]]
+- [[Prolonged sitting without movement breaks reduces cerebral blood flow and degrades executive function]]
 
 ---
 

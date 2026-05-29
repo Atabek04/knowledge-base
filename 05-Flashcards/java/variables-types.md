@@ -157,3 +157,36 @@ Back: **Naming convention:**
 - **Object/wrapper types** start with uppercase: `Integer`, `Double`, `Boolean`, `Character`, `String`
 Tags: java types naming
 END
+
+START
+Coding Questions
+Where does a Java object live vs where does its reference live?
+Back:
+- **Object** → always on the **heap**, regardless of where it's declared
+- **Reference** (the variable holding the address) → depends on declaration site:
+  - Local variable → **stack**
+  - Instance variable → **heap** (part of the enclosing object)
+  - Static variable → **metaspace**
+Tags: java memory heap stack
+END
+
+START
+Coding Questions
+For `List<Integer> list = new ArrayList<>()` declared inside a method — what lives on the stack vs heap?
+Back:
+- `list` reference → **stack**
+- `ArrayList` object → **heap**
+- Each `Integer` wrapper object → **heap**
+
+Only the variable `list` is on the stack. All objects are always on the heap.
+Tags: java memory heap stack
+END
+
+START
+Coding Questions
+Why is passing an object to a Java method cheap?
+Back: You copy the **reference** (4 or 8 bytes), not the object itself.
+
+The reference has a fixed size regardless of how large the object is — so the cost is always the same.
+Tags: java memory references
+END

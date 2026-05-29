@@ -81,3 +81,102 @@ Back: `.predict(X_test)` **predicts** targets using the weight and bias learned 
 Tags: ml training
 <!--ID: 1774613880827-->
 END
+
+START
+Coding Questions
+Why do neural networks need multiple layers instead of one?
+Back: Complex outputs require **hierarchical understanding** — each step depends on the previous one.
+- Example: detecting sarcasm requires word meaning → phrase structure → sentence meaning → tone
+- No single layer can jump from raw input to high-level output
+- Early layers learn concrete patterns (words, syntax); later layers learn abstract ones (intent, tone)
+- These divisions emerge automatically from backpropagation — nobody programs them
+Tags: ml deep-learning
+END
+
+START
+Coding Questions
+What is a token and why not use whole words?
+Back: A **token** is a subword unit — the smallest piece of text an LLM processes.
+- Whole words → millions of unrelated tokens, unknown words break the model
+- Subwords capture shared meaning: `"un-"`, `"-ing"`, `"-able"` learned once, applied everywhere
+- GPT-4 uses ~100k tokens covering English, code, multiple languages efficiently
+- Example: `"unbelievable"` → `["un", "believ", "able"]` — 3 tokens
+Tags: ml nlp tokenization
+END
+
+START
+Coding Questions
+What is BPE and how does it build a tokenizer vocabulary?
+Back: **Byte Pair Encoding (BPE)** builds vocabulary by iteratively merging the most frequent character pairs.
+1. Start with individual characters
+2. Count all adjacent pairs across training corpus
+3. Merge most frequent pair into a new token
+4. Repeat until target vocabulary size reached (~100k)
+- Common words → single tokens; rare words → split into pieces
+- Trained on the model's own corpus → each model tokenizes differently
+Tags: ml nlp tokenization
+END
+
+START
+Coding Questions
+Why does GPT-4 tokenize the same sentence differently from Llama 3?
+Back: Each model **trains its own tokenizer** on its own corpus using BPE — the tokenizer is not shared.
+- Different training data → different frequent pairs → different merges → different splits
+- GPT-4: ~100k tokens · Llama 3: ~32k tokens
+- Affects: API cost (charged per token), context window usage, generation speed
+Tags: ml nlp tokenization
+END
+
+START
+Coding Questions
+What is the core task an LLM learns during training?
+Back: **Next-token prediction** — given all tokens before the blank, predict the token that actually came next in the original text.
+- Correct answer = whatever word was already there in the training data
+- Nobody labels it manually; the text itself provides the targets
+- After training, weights are frozen — no training happens during inference
+Tags: ml training nlp
+END
+
+START
+Coding Questions
+What does softmax do and why is it needed?
+Back: **Softmax** converts raw model scores (logits) into a probability distribution that sums to 100%.
+- Raw scores can be any number — softmax makes them all positive and forces sum = 1
+- Higher raw score → disproportionately higher probability (amplifies differences)
+- Required before cross-entropy loss can be computed
+Tags: ml training
+END
+
+START
+Coding Questions
+What is cross-entropy loss and what is its formula?
+Back: **Cross-entropy loss** measures how much probability the model assigned to the correct token.
+- Formula: `Loss = -log( probability of correct token )`
+- High probability for correct token → low loss (good)
+- Low probability for correct token → high loss (bad)
+- Same gradient descent underneath as regression — just a different loss formula
+Tags: ml training nlp
+END
+
+START
+Coding Questions
+What is backpropagation and why does it go "backward"?
+Back: **Backpropagation** computes gradients for every weight in a neural network by applying the chain rule backward from the loss.
+- Forward pass: input → layer 1 → ... → layer N → loss
+- Backprop: loss → layer N → ... → layer 1 (reverse order)
+- Goes backward because you must know how later layers contributed before computing earlier layers' gradients
+- Same math as gradient descent — just applied through many layers via chain rule
+Tags: ml training deep-learning
+END
+
+START
+Coding Questions
+What is perplexity and what values indicate a good LLM?
+Back: **Perplexity** (PPL) = `e^(average cross-entropy loss)` — measures how many words the model effectively considers at each prediction step.
+- Untrained/random model: PPL ≈ 50,000 (full vocabulary size)
+- Poor model: PPL ≈ 33
+- GPT-4 level: PPL ≈ 5–15
+- Perfect: PPL = 1
+- Lower = better: model is more confident in the right answer
+Tags: ml nlp
+END

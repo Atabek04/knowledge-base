@@ -67,14 +67,41 @@ public List<String> getTransactions() {
 
 ---
 
+### Who Is "The Caller"?
+
+The caller is **any code** that calls your method — your own code, a teammate, a library, or an attacker. The vulnerability exists without any hacking tools.
+
+Anyone holding the leaked reference can mutate your private field directly:
+
+```java
+Account acc = new Account(transactions);
+List<String> leaked = acc.getTransactions(); // points to private field
+leaked.clear();        // wipes all internal transactions
+leaked.add("FAKE TX"); // injects data
+```
+
+No setter was called. No reflection used. The class has no idea its state changed.
+
+---
+
+### Security Classification
+
+- **CWE-374** — passing a mutable object to an untrusted method (input boundary)
+- **CWE-375** — returning a mutable object to an untrusted caller (output boundary)
+
+High-risk when the field is: a transaction log, audit trail, access control list, or any security-sensitive collection.
+
+---
+
 ### Performance
 
 Copying has overhead, but correctness beats performance — especially at security boundaries.
 
-<mark style="background: pink">Prefer `List.copyOf()` (modern, returns unmodifiable copy) over `new ArrayList<>()` unless you need a mutable internal list.</mark>
+Prefer `List.copyOf()` (modern, returns unmodifiable copy) over `new ArrayList<>()` unless you need a mutable internal list.
 
 ---
 
 Read more:
 - [[Class ownership pattern copies data at input and output boundaries]]
 - [[Data ownership defines which code is responsible for an object's lifecycle]]
+- [[Java records are shallowly immutable — final fields prevent reassignment but not mutation of mutable objects]]

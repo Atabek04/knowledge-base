@@ -16,7 +16,13 @@ Distinct from ML Engineering — AI Engineers consume pre-trained models via API
 - What is an AI Engineer
 - AI Engineer vs ML Engineer
 - AI vs AGI
+- [[LLM training uses next-token prediction on existing text to learn statistical patterns]]
 - [[Autoregressive token prediction generates responses in a single forward pass without deliberation]]
+- [[Tokenization splits text into subword units to balance vocabulary size and meaning]]
+- [[BPE builds a tokenizer vocabulary by iteratively merging the most frequent character pairs]]
+- [[Each model trains its own tokenizer on its training corpus producing different token splits]]
+- [[Cross-entropy loss measures probability assigned to the correct token]]
+- [[Perplexity measures LLM quality as how many words the model effectively considers at each step]]
 - [[Chain-of-thought prompting uses model output as a working memory scratchpad]]
 - [[Thinking tokens create a bounded scratchpad that separates deliberation from final output]]
 - [[Inference-time compute scaling trades token cost for accuracy on hard reasoning tasks]]

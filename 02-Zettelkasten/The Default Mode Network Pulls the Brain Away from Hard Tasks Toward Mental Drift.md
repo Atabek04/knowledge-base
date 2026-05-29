@@ -48,6 +48,7 @@ It's also why [[Environment Design Shapes Behavior More Reliably Than Willpower]
 
 ## Read more
 
+- [[Vigilance decrement causes sustained attention and accuracy to degrade within 20 minutes of monotonous focus]]
 - [[The Habit Loop Converts Goal-Directed Behavior into Automatic Response]]
 - [[Akrasia Is the Ancient Name for Knowing What's Right and Doing the Opposite]]
 - [[Shrinking the Action to Absurdity Removes the Brain's Resistance to Starting]]

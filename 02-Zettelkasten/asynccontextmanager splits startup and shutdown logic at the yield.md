@@ -1,6 +1,6 @@
 ---
 created: 2026-04-30
-aliases: [@asynccontextmanager, lifespan, async context manager]
+aliases: [asynccontextmanager, lifespan, async context manager]
 tags:
   - python/async
   - python/fastapi

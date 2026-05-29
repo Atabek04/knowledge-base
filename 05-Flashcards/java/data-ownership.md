@@ -94,6 +94,34 @@ END
 
 START
 Coding Questions
+Who is "the caller" in the context of Java encapsulation vulnerabilities?
+Back: **Any code** that calls your method — your own code, a teammate, a library, or an attacker.
+
+The vulnerability exists without hacking tools. Anyone holding a leaked reference can mutate your private field:
+
+```java
+List<String> leaked = acc.getTransactions(); // points to private field
+leaked.clear();        // wipes all internal transactions
+leaked.add("FAKE TX"); // injects data
+```
+
+No setter called. No reflection. The class never knows its state changed.
+Tags: java ownership defensive-copy security
+END
+
+START
+Coding Questions
+What are CWE-374 and CWE-375 in Java?
+Back:
+- **CWE-374** — passing a mutable object to an untrusted method (input boundary leak)
+- **CWE-375** — returning a mutable object to an untrusted caller (output boundary leak)
+
+High-risk targets: transaction logs, audit trails, access control lists — any security-sensitive collection.
+Tags: java ownership security cwe
+END
+
+START
+Coding Questions
 What does `Collections.unmodifiableList()` prevent — and what does it NOT prevent?
 Back:
 - **Prevents:** the class from modifying the list through the wrapped reference

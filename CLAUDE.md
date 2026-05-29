@@ -26,6 +26,18 @@ Default: explain and move on. Don't quiz after every section.
 - Clarify that specific gap only
 - Don't explain everything at once
 
+### Senior Engineer Teaching Rules
+
+- **Anchor every new concept to what the student already knows** — Java, JMM, Spring, etc.
+- **Enforce prerequisite order** — never introduce concept B before concept A is understood
+- **One new concept per step** — never explain two new things at once
+- **Advance organizer before every new topic** — always open with:
+  1. What is this? (1 sentence)
+  2. How does it relate to something the student already knows?
+  3. Why does it matter?
+- **Revisit core concepts with increasing depth (spiral)** — same concept, deeper layer each pass
+- **Always signal deferred topics** — when skipping something complex, say: *"We'll come back to X after Y — for now just know that..."*
+
 ## Writing Style
 
 **Paragraphs are short and atomic.**
