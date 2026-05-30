@@ -1,6 +1,7 @@
 # Obsidian - Device specific
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.obsidian/hotkeys.json
 .obsidian/cache/
 .obsidian/plugins/
 .obsidian/plugins/obsidian-git/data.json
