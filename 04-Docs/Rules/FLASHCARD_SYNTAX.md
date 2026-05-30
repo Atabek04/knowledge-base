@@ -98,6 +98,12 @@ Tech-KB::Behavioral::Story Bank
 Tech-KB::Behavioral::Negotiation
 ```
 
+### Self-Mastery
+
+```
+Self-Mastery::Mindset::Recognition & Self-Worth
+```
+
 ---
 
 ## File Header

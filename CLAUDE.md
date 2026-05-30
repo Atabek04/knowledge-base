@@ -190,6 +190,16 @@ When user sends a sentence + asks what a word means → create a vocab flashcard
 - **Month→week schedule + applications (Ribaat vault):** `06-Planning/Job-Search/Interview-Prep-Execution.md` (the executable plan) · `Tracker-Kanban.md` + `Application-Log.md` (pipeline tracking).
 - **LeetCode solve-log (Obsidian Base, replaces Notion):** `06-Planning/Trackers/LeetCode Tracker.base` over the `LeetCode-Log/` folder — one note per problem (status Solved/Cheated/Not started, topic, solve-count). Folder-based filter: "New" creates notes in-folder; see `LeetCode-Log/README.md`.
 
+## Islamic Filter for Western Content
+
+All self-help, psychology, and productivity content must be evaluated through tawhid and deen first. Accept what aligns, correct what partially conflicts, reject what contradicts Islamic foundations.
+
+- **No evolutionary framing** — never explain behavior as "evolution designed us to X". Frame through fitrah, nafs, and Allah's creation.
+- **Halal examples only** — avoid music; use tea/coffee rituals, bakhoor, du'a before blocks, etc.
+- Reference: `[[Islamic tradition covers every self-help category with greater depth than western authors]]`
+
+---
+
 ## Git Commit Rules
 
 **NEVER:**

@@ -51,8 +51,25 @@ A personal knowledge map covering study techniques, habits, discipline, time man
 - [[Akrasia Is the Ancient Name for Knowing What's Right and Doing the Opposite]]
 - [[Present Bias Makes Future Goals Lose to Immediate Distraction by Default]]
 - [[Ego Depletion May Be a Belief, Not a Biological Limit]]
+- [[Ego Depletion shows willpower is a limited resource that fails as a daily strategy against designed temptations|Ego Depletion (applied)]] — willpower is an emergency brake, not a drive system; pre-decide to avoid depleting it
 - [[The Habit Loop Converts Goal-Directed Behavior into Automatic Response]]
 - [[The Default Mode Network Pulls the Brain Away from Hard Tasks Toward Mental Drift]]
+- [[Self-control failures happen when the impulsive brain system overwhelms the deliberative system not when knowledge fails|Dual-Systems Conflict]] — impulsive (mesolimbic) vs deliberative (PFC); failures happen when control is weakened, not when knowledge disappears
+- [[Dopamine encodes wanting not pleasure which is why craving persists even after the reward stops satisfying|Dopamine & Wanting]] — wanting and liking are separate circuits; the craving fires from cues, not rational evaluation
+
+### Breaking bad habits & addictions
+
+- [[Identifying the reward a bad habit delivers is the prerequisite to replacing it with a halal substitute|Habit Breaking]] — diagnose the hidden reward first; Ibn al-Qayyim's replacement principle + sadd al-dharā'i
+
+### Nafs, Agency & Accountability
+
+*Why the human is responsible despite the weakness of the nafs.*
+
+- [[Nafs weakness explains the mechanism of sin but the Shariah was sent to address it not exempt from it|Taklīf & Nafs Weakness]] — the three conditions of taklīf; da'f al-nafs is what Sharī'ah addresses, not exempts
+- [[Ibtila requires genuine human agency because a predetermined test is theatre not a trial|Ibtilā' & Ikhtiyār]] — if the nafs mechanically wins, ibtilā' becomes theatre, darajāt meaningless, tawbah impossible
+- [[Ibn Taymiyyah distinguishes irada kawniyya from irada shariyya to close the qadar-as-excuse fallacy|Irāda Kawniyya vs Sharī'iyya]] — how Ibn Taymiyyah closes the "Allah willed my sin" rationalization
+- [[Ghaflah is voluntary heedlessness not ignorance which is why Allah commands against it and dhikr reverses it|Ghaflah]] — chosen heedlessness, not ignorance; iman's light withdraws at moment of sin; Ibn Abbas in Bukhari #6809
+- [[Voluntary action requires ilm and irada — information alone cannot produce movement|'Ilm + Irāda]] — Ibn Taymiyyah's triad; the three yaqīn levels; why the akhirah must become felt reality not just known fact
 
 ---
 
@@ -67,6 +84,21 @@ A personal knowledge map covering study techniques, habits, discipline, time man
 - [[Maker's Schedule Protects Deep Execution by Avoiding Mid-Block Interruptions]]
 - [[The 80-20 Rule Applied to Tasks Reveals That Most Effort Is Low-Leverage]]
 - [[Every Yes to an Urgent Task Is a No to Your Most Important Goal]]
+
+### Distraction & temptation
+
+- [[Present Bias makes immediate rewards defeat future goals by default unless the environment is designed against it|Present Bias]] — the nafs pulls toward now; fix with commitment devices and temptation bundling
+
+### Planning & estimation
+
+- [[Planning Fallacy causes systematic underestimation of task duration even with past evidence|Planning Fallacy]] — estimates default to best-case; fix with 1.5–2x multiplier and the Outside View
+
+### Focus & recovery
+
+- [[Attention Residue leaves cognitive residue after any task switch that degrades focus for up to 20 minutes|Attention Residue]] — brief task switches leave a cognitive cost that lasts 10–20 minutes
+- [[Ultradian Rhythms cap sustainable deep focus at 90 minutes before cognitive performance drops|Ultradian Rhythms]] — biological 90-minute focus ceiling; how to rest properly between blocks
+- [[Flowtime Technique extends Pomodoro by following natural focus rhythms instead of fixed intervals|Flowtime Technique]] — work until focus fades naturally, then take a proportional screen-free break
+- [[Hemingway Bridge stops work mid-task to preserve active context and eliminate cold starts|Hemingway Bridge]] — stop mid-task on purpose to eliminate cold starts next session
 
 ### Scheduling methods that survive interruptions
 
@@ -100,11 +132,21 @@ A personal knowledge map covering study techniques, habits, discipline, time man
 
 *Cognitive frameworks that shape how we approach challenges.*
 
+### Recognition & Self-Worth
+
+- [[Sociometer Theory treats self-esteem as a real-time gauge of social acceptance|Sociometer Theory]] — self-esteem is a social-standing gauge, not a measure of how good you feel
+- [[Contingent self-worth makes recognition addictive because the relief is always temporary|Contingent Self-Worth]] — when worth depends on approval, more recognition never fixes the dependency
+- [[Riya is the structural reorientation of the self toward creation's gaze instead of Allah's|Riya]] — the heart disease of performing for creation; Ibn al-Qayyim's diagnosis and cure
+- [[Terror Management Theory explains fame-seeking as a defense against mortality anxiety|Terror Management Theory]] — fame-seeking as unconscious defense against the fear of being erased
+
 ---
 
 ## Principles from Books
 
 *Distilled ideas from self-improvement literature.*
+
+- [[Self-help books are ~5% insight padded to book length by publisher pressure]]
+- [[Islamic tradition covers every self-help category with greater depth than western authors]]
 
 ---
 
