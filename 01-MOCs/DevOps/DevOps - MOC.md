@@ -120,5 +120,6 @@
 
 ## Related
 - [[Architecture - MOC]]
+- [[AWS - MOC]]
 - [[Observability - MOC]]
 - [[00 - IT Career - MOC]]

@@ -17,7 +17,15 @@
 
 ## Topics
 
-### Non-Functional Requirements (NFRs)
+### Collecting Requirements
+
+#### Functional Requirements
+- [ ] Define what the system does from a user perspective
+- [ ] Narrow a vague prompt (e.g. "Design Instagram") to a specific slice
+- [ ] Ask open-ended questions to force decisions with the interviewer
+- [ ] State assumptions explicitly ("I'll assume a Users API already exists")
+
+#### Non-Functional Requirements (NFRs)
 - [ ] Performance (latency, throughput)
 - [ ] Scalability (vertical, horizontal)
 - [ ] Availability (uptime, SLA/SLO)
@@ -26,6 +34,37 @@
 - [ ] Consistency requirements
 - [ ] Security requirements
 - [ ] Cost constraints
+
+### The Basics
+
+#### Client / Server Model
+- [ ] Client (browser/mobile) sends request → Server handles logic → returns data
+- [ ] In distributed systems: load balancer routes to stateless compute nodes (EC2, Fargate)
+- [ ] Key decisions: where logic lives, what can be cached client-side vs server-side
+
+#### Stateless vs Stateful Services
+- [ ] **Stateless** — no session/user data between requests; easy horizontal scaling; default choice
+- [ ] **Stateful** — retains in-memory session state; hard to scale; use only when latency gain justifies it (e.g. multiplayer games)
+- [ ] Real-world nuance: delegate state to external DB → server is stateless, system has state
+
+#### Access Patterns
+- [ ] DB choice should be driven by how data is read/written, not by trends
+- [ ] Simple key lookups → key-value store (DynamoDB, Redis)
+- [ ] Complex relationships / joins → relational (PostgreSQL, MySQL)
+- [ ] High write throughput / time-series → wide-column (Cassandra, HBase)
+- [ ] Nested/flexible documents → document store (MongoDB, Firestore)
+- [ ] Relationship traversal → graph DB (Neo4j, Amazon Neptune)
+
+#### Database Types & CAP Theorem
+- [ ] **CAP theorem** — can only guarantee 2 of 3: Consistency, Availability, Partition Tolerance
+- [ ] P is always given (networks fail) → real choice is **CP vs AP**
+- [ ] CP systems (CockroachDB, PostgreSQL) — consistent but may reject during partition
+- [ ] AP systems (Cassandra, DynamoDB) — always available but may return stale data
+- [ ] **RDBMS** — ACID, structured schema, joins, CP → banking, inventory, orders
+- [ ] **Key-Value** — fast O(1) lookups, no schema, AP → caching, sessions, shopping carts
+- [ ] **Document** — flexible JSON/BSON schema, can be CP or AP → content platforms, user profiles
+- [ ] **Wide-Column** — sparse rows, high write throughput, AP → logging, telemetry, analytics
+- [ ] **Graph** — nodes + edges for relationship traversal → social networks, fraud detection
 
 ### Capacity Planning
 - [ ] Traffic estimation
@@ -93,6 +132,55 @@
 - [ ] Retry storms — exponential backoff + jitter to avoid thundering herd
 - [ ] Load shedding — controlled degradation under extreme load
 - [ ] Backpressure — upstream flow control when consumers lag producers
+
+### Trade-Offs
+
+#### Consistency vs Availability (CAP)
+- [ ] Consistency — all nodes see same data; stale reads never allowed; needs distributed locking or quorum
+- [ ] Availability — always responds, even if data is stale
+- [ ] Choose consistency: financial transactions, user permissions, inventory counts
+- [ ] Choose availability: news feeds, caches, logging/analytics
+- [ ] Hybrid: same system can use AP for browsing and CP for checkout
+
+#### Latency vs Durability
+- [ ] Durability — acknowledged write survives crash; requires fsync, replication, WAL → adds 50–200ms
+- [ ] Latency strategies: write-behind cache, buffer + flush, write to memory only
+- [ ] Prioritize durability: payments, orders, password changes
+- [ ] Prioritize latency: likes, views, logs (low-risk reversible writes)
+
+#### Cost vs Performance
+- [ ] Every performance boost has a cost (AWS bill + engineering cost)
+- [ ] Cost reduction: smaller instances, fewer replicas, batching, rate limiting, shorter log retention
+- [ ] Justify performance spend only when it directly impacts revenue
+
+#### Monolith vs Microservices
+- [ ] **Monolith** — single codebase; simple to develop/debug/scale as unit; default for startups
+- [ ] **Microservices** — independent services per concern; independent scaling; teams don't block each other
+- [ ] Microservices cost: network calls, version mismatches, distributed monitoring, auth between services
+- [ ] Choose microservices when components serve distinct use cases and scale independently
+
+#### Read vs Write Optimization
+- [ ] **Read-heavy** → denormalize data, cache aggressively, read replicas, minimize joins
+- [ ] **Write-heavy** → normalize, append-only, bulk writes, async pipelines
+- [ ] **CQRS** (Command Query Responsibility Segregation) — split write path (normalized, durable) from read path (denormalized, fast)
+- [ ] CQRS trade-off: eventual consistency between read/write models + added complexity
+
+#### Real-Time vs Eventually Consistent
+- [ ] **Strongly consistent** — every read reflects latest write; needs distributed locking + quorum; adds latency
+- [ ] **Eventually consistent** — replicas catch up asynchronously; faster writes; stale reads briefly possible
+- [ ] Use strong consistency: password changes, auth tokens, account state
+- [ ] Use eventual consistency: likes, comments, feed updates, profile pictures
+
+### Large File Uploads & Downloads
+
+#### Pre-signed URLs
+- [ ] Client requests a pre-signed URL from your server → server generates it using storage credentials → client uploads/downloads directly to storage (bypasses your server)
+- [ ] Benefit: large files never pass through your app servers → no bandwidth bottleneck, no memory pressure
+- [ ] Pre-signed URL contains: bucket, object key, expiry time, signature — storage validates on arrival
+- [ ] **S3** — native support via `presignedPutObject` / `presignedGetObject`
+- [ ] **MinIO** — S3-compatible API, same pre-signed URL pattern works (investigate SDK compatibility)
+- [ ] **Garage** — S3-compatible; pre-signed URL support present but less documented — verify behavior under load
+- [ ] Common pattern: server issues URL with short TTL (5–15 min) → client uploads → storage triggers webhook/event → server confirms
 
 ### AI System Design
 - [ ] RAG architecture — retrieval-augmented generation, when and why
@@ -243,4 +331,5 @@ Sequencing + time budget + end-state (design 8 systems in 45 min): [[Interview-P
 - [[Architecture - MOC]]
 - [[Distributed Systems - MOC]]
 - [[Databases - MOC]]
+- [[AWS - MOC]]
 - [[00 - IT Career - MOC]]

@@ -60,6 +60,7 @@ A personal knowledge map covering study techniques, habits, discipline, time man
 ### Breaking bad habits & addictions
 
 - [[Identifying the reward a bad habit delivers is the prerequisite to replacing it with a halal substitute|Habit Breaking]] — diagnose the hidden reward first; Ibn al-Qayyim's replacement principle + sadd al-dharā'i
+- [[Breaking an addiction requires removing the cue replacing the reward and pre-deciding before willpower is tested|Addiction Protocol]] — the 6-step action protocol tying the "why" notes into one practical sequence
 
 ### Nafs, Agency & Accountability
 
@@ -120,11 +121,32 @@ A personal knowledge map covering study techniques, habits, discipline, time man
 - [[Restorative breaks recover directed attention by shifting the brain to involuntary attention through low-demand activity]]
 - [[Prolonged sitting without movement breaks reduces cerebral blood flow and degrades executive function]]
 
+### Physical performance & cognition
+
+- [[Janda's Crossed Syndromes explain how prolonged sitting inhibits postural muscles and produces slouch and dizziness|Janda's Crossed Syndromes]] — reciprocal inhibition switches off glutes and deep neck flexors; produces slouch and proprioceptive dizziness
+- [[Physical movement triggers BDNF release which directly enables learning and memory consolidation|BDNF]] — exercise releases neuroplasticity protein; prime the brain with movement before the hardest cognitive task
+
 ---
 
 ## Study Techniques
 
 *Evidence-based methods for learning and retention.*
+
+### Learning Methods
+
+- [[Worked Examples method reduces cognitive load by showing solved problems before independent practice|Worked Examples]] — study fully solved problems before attempting independently; ~6x faster for novices (Sweller & Cooper, 1985)
+- [[Expertise Reversal Effect means worked examples hurt performance once domain knowledge grows|Expertise Reversal]] — once the schema exists, worked examples become redundant and harmful; switch to problem-first
+- [[Faded Examples gradually remove solved steps to bridge novice learning and independent practice|Faded Examples]] — gradually remove solved steps as competence grows; calibrates difficulty to current schema
+
+---
+
+### Caffeine & Cognitive Performance
+
+- [[Caffeine blocks adenosine receptors to remove cognitive fog rather than add energy|Adenosine Antagonism]] — caffeine removes the brain's slow-down signal, not adds energy; timing matters
+- [[Coffee rituals become conditioned stimuli that trigger study-mode before caffeine is absorbed|Conditioned Arousal]] — the ritual itself triggers focus before the molecule kicks in; protect the cue
+- [[Physical inactivity accelerates adenosine buildup and creates cognitive drag independent of sleep debt|Inactivity Fog]] — sitting still compounds adenosine; movement first, then caffeine
+- [[Caffeine is most effective at 100–200mg taken 90 minutes after waking and cut off before 2pm|Caffeine Dosing & Timing]] — wait 90 min after waking, 100–200mg max, stop by 2pm
+- [[L-Theanine combined with caffeine sustains focus longer and smooths the stimulant curve|L-Theanine + Caffeine]] — tea's amino acid blunts jitter and extends the focus window; better for long sessions
 
 ---
 

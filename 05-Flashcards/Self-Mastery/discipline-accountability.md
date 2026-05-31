@@ -285,3 +285,64 @@ Back:
 Counter to both despair ("my nafs is too strong to change") and passivity ("everything is from Allah anyway").
 Tags: self-mastery islamic aqeedah
 END
+
+---
+
+## Addiction-Breaking Protocol
+
+START
+Coding Questions
+What is the governing principle of the addiction-breaking protocol?
+Back:
+**Never fight the addiction at the moment of craving — win it earlier, by design.**
+
+At the moment of craving the wanting circuit has already fired and willpower is already losing. Every effective move happens *upstream* of that moment: removing the cue, pre-deciding the response, and replacing the reward in advance.
+
+Knowing was never the missing piece — **design** is.
+Tags: self-mastery discipline
+END
+
+START
+Coding Questions
+What are the six steps of the addiction-breaking protocol, in order?
+Back:
+1. **Diagnose the hidden reward** — track 3 days before stopping; name what it really gives (boredom escape / stress relief / connection / avoidance)
+2. **Remove or modify the cue** (sadd al-dharā'i) — if the cue never fires, the wanting circuit never activates
+3. **Install a halal substitute** that delivers the *same* reward (the heart can't be emptied, only refilled)
+4. **Pre-decide everything predictable** — blockers on a schedule, implementation intentions; reserve willpower for surprises only
+5. **Raise the felt weight of the akhirah** — fix the irāda deficit, not the 'ilm (dhikr, tafakkur al-mawt, suhba)
+6. **When it fires anyway** — immediate tawbah, immediate redirect; no extended guilt
+Tags: self-mastery discipline islamic
+END
+
+START
+Coding Questions
+Why is "remove or modify the cue" the highest-leverage step in breaking an addiction?
+Back:
+It is **upstream of the entire loop**. The craving responds to cues, not to willpower at the moment of temptation.
+
+If the cue never fires, the wanting circuit never activates — so there is no urge to resist in the first place. (Phone in another room *before* starting; fill the post-Asr boredom slot in advance.)
+
+Block the path *before* you reach it, not after.
+Tags: self-mastery discipline islamic
+END
+
+START
+Coding Questions
+Why must an addiction's replacement substitute deliver a *real* version of the reward, not a weaker one?
+Back:
+The heart cannot be emptied, only refilled (Ibn al-Qayyim). Remove the routine without replacing the reward and the vacuum pulls the old habit back.
+
+A **dull** substitute gets rejected by the loop. If the habit delivered strong stimulation, a weak replacement won't satisfy the same need — so match the substitute to the *diagnosed* reward (boredom→dhikr/study, stress→salāh/movement, connection→good company, avoidance→shrink the task).
+Tags: self-mastery discipline islamic
+END
+
+START
+Coding Questions
+In the addiction protocol, why is extended guilt after a relapse counterproductive?
+Back:
+The wired loop fades over **weeks** of non-use, not instantly — so it will fire again. Each time it does and you redirect to the substitute, the new loop strengthens and the old weakens.
+
+Extended guilt is itself a **cue** that feeds the escape loop — the shaytan wins twice when the second loss is made worse than the first. The fix: fast tawbah, fast redirect, no self-punishment.
+Tags: self-mastery discipline islamic
+END

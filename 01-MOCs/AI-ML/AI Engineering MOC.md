@@ -80,6 +80,7 @@ Distinct from ML Engineering — AI Engineers consume pre-trained models via API
 - RAG with dynamic filters
 - RAG vs fine-tuning
 - RAGFlow, manual implementation
+- [[LLM wiki pattern replaces vector RAG with a maintained markdown knowledge graph]]
 
 ## Fine-Tuning
 
