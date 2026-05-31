@@ -32,12 +32,14 @@ Focus areas: **Backend**, **DevOps**, **System Design**.
 
 ## Quick Links
 
-| Doc                                              | Purpose                           |
-| ------------------------------------------------ | --------------------------------- |
-| [[CLAUDE.md]]                                    | Configuration for Claude Code     |
-| [[04-Docs/Rules/Zettelkasten Note Validation.md]] | Pre-move validation checklist     |
-| [[04-Docs/Rules/Flashcard Syntax Reference.md]]  | Flashcard format & syntax rules   |
-| [[04-Docs/Rules/Flashcard Question Quality.md]]  | Question design principles        |
+| [[CLAUDE.md]] | Configuration for Claude Code |
+
+**Operational rules now live as Claude Code skills** (under `.claude/skills/`, hidden from Obsidian) rather than as vault docs:
+
+| Skill               | Purpose                                                                            |
+| ------------------- | ---------------------------------------------------------------------------------- |
+| `flashcard-creator` | Flashcard syntax, deck hierarchy, question quality, vocab cards, Anki sync          |
+| `note-validator`    | Pre-move Zettelkasten validation (atomicity, title, content → PASS/SPLIT/REWRITE)   |
 
 ---
 
@@ -47,10 +49,11 @@ Focus areas: **Backend**, **DevOps**, **System Design**.
 00-Inbox/           Raw captures (process within 7 days)
 01-MOCs/            Navigation hubs for topics
 02-Zettelkasten/    Atomic permanent notes (core)
-03-Flashcards/      Spaced repetition cards
-04-Docs/            Rules, guides, documentation
-05-Archive/         Completed projects & outdated notes
-Templates/          Note templates
+05-Flashcards/      Spaced repetition cards (Obsidian → Anki)
+06-Planning/        Interview prep, trackers, schedules
+Assets/             Images and attachments
+scripts/            Maintenance scripts
+.claude/skills/     Operational workflow skills (flashcard-creator, note-validator)
 ```
 
 ---

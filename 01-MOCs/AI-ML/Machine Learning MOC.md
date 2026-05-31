@@ -1,6 +1,13 @@
 
 A comprehensive learning roadmap for Machine Learning Engineering covering the full spectrum from foundational concepts to advanced applications.
 
+> ### 📍 Teaching Progress
+> Live "you are here" marker for the tutoring walk through this roadmap.
+>
+> **Stopped at:** Regression → about to start Simple Linear Regression.
+>
+> **Covered so far:** Feature / Target / X-y notation · supervised learning (labeled data) · regression vs classification (meaning, origin, difference) · train-test split · handling missing data (SimpleImputer, fit/transform) · feature scaling (normalization, standardization) · encoding (label, one-hot) · Python core (modules/packages, functions vs methods) · libraries (Matplotlib, pyplot, scikit-learn, Pandas `iloc`).
+
 ## Overview
 
 Machine learning is a subset of AI where models learn patterns from data instead of being explicitly programmed.

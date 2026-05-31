@@ -1,5 +1,9 @@
 # Vocabulary Flashcard Rules
 
+For when the user sends a sentence and asks what a word or phrase means. These cards test
+**production recall** — the user reads an English definition and must produce the word. A
+different note type and deck from technical cards; don't reuse the tech-card format here.
+
 ## Prerequisites
 
 ### Anki Setup (One-time)
@@ -36,13 +40,15 @@
 
 User sends a sentence and asks what a word/phrase means.
 
-**Action:** Add a new `START...END` block to the appropriate flashcard file in `05-Flashcards/vocab/`.
+**Action:** Add a new `START...END` block to the appropriate flashcard file in
+`05-Flashcards/vocab/`.
 
 ---
 
 ## How It Works
 
-The card tests **production recall**: user reads a definition and must recall the English word.
+The card tests **production recall**: user reads a definition and must recall the English
+word.
 
 ```
 Front (Definition):  "A situation where only one outcome or direction is possible"
@@ -73,7 +79,7 @@ END
 
 ## File Location & Deck
 
-All vocab cards go under one Anki deck `English Vocab`, split into category files:
+All vocab cards go under the `Tech-KB::English Vocab` deck root, split into category files:
 
 ```
 05-Flashcards/vocab/

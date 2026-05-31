@@ -26,6 +26,8 @@ Default: explain and move on. Don't quiz after every section.
 - Clarify that specific gap only
 - Don't explain everything at once
 
+**Roadmap-driven tutoring:** when teaching a subject, use its MOC as the roadmap — walk it section by section, treating each bullet as a teaching topic, in prerequisite order. Track where the live session stopped in the MOC itself (e.g. a "Teaching Progress" marker), not here.
+
 ### Senior Engineer Teaching Rules
 
 - **Anchor every new concept to what the student already knows** — Java, JMM, Spring, etc.
@@ -132,51 +134,22 @@ Use aliases to keep it smooth: `[[Long atomic title|short alias]]`.
 
 **No orphans** — every note must have at least one link.
 
+## Skills
+
+Operational workflows live as Claude Code skills in `.claude/skills/`. They load full detail on demand — invoke the matching one instead of improvising the procedure.
+
+- **`flashcard-creator`** — building or maintaining Anki cards from atomic notes, or vocab cards when the user asks what a word means. Triggers on a finished atomic note, "make/test/add cards", a new linked note in a MOC that already has a flashcard file, or a sentence + "what does this word mean". See the proactive rule under [Flashcard Generation](#flashcard-generation) below.
+- **`note-validator`** — judging whether an inbox note is ready to move from `00-Inbox/` into `02-Zettelkasten/`. Triggers on "validate this note", "is this ready", "process my inbox", or a pasted draft. Returns PASS / SPLIT / REWRITE — it diagnoses, it does not rewrite the user's content.
+
 ## Flashcard Generation
 
-When generating Anki flashcards from atomic notes, follow these rules:
+All flashcard rules — syntax, deck hierarchy, question quality, vocab cards, Anki sync — live in the **`flashcard-creator`** skill (`.claude/skills/flashcard-creator/`). The skill loads its full detail on demand; this section only carries the always-on triggers it must not miss.
 
-- [Syntax](04-Docs/Rules/FLASHCARD_SYNTAX.md) — note types, deck hierarchy, START/END format
-- [Workflow](04-Docs/Rules/WORKFLOW.md) — sync process
-- [Question Rules](04-Docs/Rules/QUESTION_RULES.md) — active recall best practices
+**Mandatory, proactive:** after **every** atomic note is created and mapped to a MOC, immediately create its flashcards — don't wait to be asked. Likewise, when a new `[[]]` linked note is added to a MOC chapter that already has a flashcard file, add its cards to that file right away. Notes and cards stay in lockstep.
+
+- Tech cards → `05-Flashcards/{topic}/{subtopic}.md`, deck `Tech-KB::{Category}::{Topic}`
+- Vocab cards (user sends a sentence + asks what a word means) → `05-Flashcards/vocab/{category}.md`, deck `Tech-KB::English Vocab::{Category}`
 - [Remove IDs](scripts/remove-flashcard-ids.sh) — strip all `<!--ID: ...-->` before re-syncing with Anki
-
-### Flashcard Maintenance Rule
-
-When adding a new `[[]]` linked note to a MOC chapter that already has a flashcard file, **immediately create flashcards** for that new note in the corresponding flashcard file. Don't wait — keep flashcards in sync with notes.
-
-### Atomic Note → Flashcard Workflow
-
-After **every** atomic note is created and mapped to a MOC, immediately create flashcards for it. This is mandatory, not optional.
-
-**Steps:**
-1. Identify the MOC section the note belongs to
-2. Check `05-Flashcards/` for a matching deck file (e.g. `java/variables-types.md` for a Variables & Types note)
-3. **If a compatible file exists** — append cards to it
-4. **If no compatible file exists** — ask the user: *"No flashcard file found for `{MOC section}`. Should I create `05-Flashcards/{topic}/{subtopic}.md` with deck `Tech-KB::{Category}::{Topic}`?"*
-5. Never silently skip flashcard creation
-
-### Answer Writing Style
-
-- **Use the term in the definition** — when defining a concept, use the word itself (or its verb/adjective form) in the answer. E.g. "**Classifying** input into a discrete category", not "a technique that predicts categories"
-- **Structure answers for readability** — break into bullet lists, use line breaks between distinct ideas, bold key terms. Never write a wall of text in a single line
-
-### Extraction Rules
-
-- **Only create flashcards for existing atomic notes** — flashcards exist to review and actively recall note content. Never generate cards from general knowledge or MOC bullet points that have no `[[]]` linked note. If no note exists, no card is created.
-- **Don't skip important points** — every key concept, definition, formula, command, or code snippet in a note should become a card
-- Use `START/END` block format with the appropriate note type
-- Location: `05-Flashcards/{topic}/{subtopic}.md`
-- One flashcard file per topic area, matching the deck hierarchy
-
-### Vocabulary Cards
-
-When user sends a sentence + asks what a word means → create a vocab flashcard.
-
-- [Vocab Flashcard Rules](04-Docs/Rules/VOCAB_FLASHCARDS.md) — full format, fields, examples
-- Note type: `A_English_Translate` (Definition → recall English word)
-- Location: `05-Flashcards/vocab/{category}.md`
-- Deck: `English Vocab::{Category}`
 
 ## Tech Stack Context
 

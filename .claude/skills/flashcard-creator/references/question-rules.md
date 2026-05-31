@@ -1,8 +1,12 @@
 # Flashcard Question Quality Principles
 
+Read this whenever a card feels weak, trivial, or like trivia — it's the craft of *what
+makes a question worth asking*.
+
 ## Core Principle: Effortful Retrieval
 
-**Testing Effect**: Answering strengthens memory 2x more than passive review—but only if the question forces genuine cognitive effort.
+**Testing Effect**: Answering strengthens memory ~2x more than passive review — but only
+if the question forces genuine cognitive effort.
 
 Three requirements:
 1. **Specificity** — One retrievable idea, clearly defined
@@ -62,13 +66,15 @@ How would you apply [principle] to [scenario]?
 
 ### Use the term in the definition
 
-When defining a concept, use the word itself (or its verb/adjective form) in the answer. This creates a natural association between the term and its meaning.
+When defining a concept, use the word itself (or its verb/adjective form) in the answer.
+This creates a natural association between the term and its meaning.
 
 - **Classification** → "Classifying input into a discrete category or group"
 - **Regression** → "Predicting a continuous number by fitting a line through data"
 - **Normalization** → "Normalizing features to a fixed [0, 1] range"
 
-Avoid generic phrasing like "a technique that does X" — instead, show what the term *means* by using it.
+Avoid generic phrasing like "a technique that does X" — instead, show what the term
+*means* by using it.
 
 ### Structure answers for readability
 
@@ -101,17 +107,58 @@ Back: **Classifying** input into a discrete category or group (which one? what t
 
 ---
 
-## Quality Checklist
+## Phrasing and cross-card rules
 
-Before adding a card, verify:
+These catch the failure modes that survive a per-card read but hurt over a whole batch.
 
-- [ ] **Single Concept** — One retrievable idea only
-- [ ] **No Hints** — Question doesn't contain contextual clues
-- [ ] **Connected** — Linked to MOC or related concepts
-- [ ] **Unambiguous** — One clear, correct answer
-- [ ] **Effortful** — Requires meaningful cognitive work (not trivial, not impossible)
-- [ ] **Right Granularity** — Definition (low), How (mechanism), Why (reasoning), When (application)
-- [ ] **Properly Phrased** — Phrased as a question, not a statement
+**No yes/no stems.** "Is TCP connection-oriented?" trains recognition — you can guess and
+feel right. Rephrase with *what / how / why / when / which*: "What does TCP's three-way
+handshake establish before data flows?" A good stem forces production, not a coin flip.
+
+**Recall, not recognition.** Never write multiple-choice / "which of these" cards. Your
+deck trains you to *produce* the answer; the real exam (or interview) supplies the
+distractors. A card that hands you options does the retrieval for you.
+
+**The 70% spoiler test.** Cover the answer, read the stem alone. If someone who never
+studied could guess it ≥70% of the time, the stem leaks the answer — strip the descriptive
+context until the stem is a pure cue.
+
+**Check interference across the batch.** After writing a set, read the stems in sequence.
+If two stems would cue the *same* answer in their first few words, they'll collide on
+review. Add a distinctive landmark to each (a specific term, a system name, the consequence)
+so every stem uniquely points to one answer.
+
+**Cap the answer.** Keep an answer to ≤ ~1 sentence or ≤ 3 bullets. If it runs longer,
+that's usually two cards wearing a trench coat — split it.
+
+**Split enumerations.** A list of 4+ items can't be retrieved as one answer, and cloze
+doesn't rescue it. Break it into a count card + one card per item. The mechanical protocol
+is in `quality-checklist.md`.
+
+---
+
+## Extraction sweep: what's card-worthy in a tech note
+
+Don't skip substance — walk the note and make a card for each type present:
+
+- **Definition** — what a term means (use the term in the answer)
+- **Mechanism** — how something works, step by step
+- **Why / trade-off** — the reason a design exists, what it costs, what it buys
+- **Formula / complexity** — equations, Big-O, capacity math
+- **Command / syntax** — the exact invocation, flags, signature
+- **Code pattern** — an idiom worth reproducing from memory
+- **Gotcha / edge case** — the thing that breaks, the failure mode
+- **Comparison** — A vs B, when to choose which
+
+If the note states it and it's testable, it earns a card.
+
+---
+
+## Quality gate
+
+The pre-sync checklist lives in **`quality-checklist.md`** — run it over every batch before
+syncing. This file is the *craft* (why questions work); that file is the *gate* (fast pass
+to catch failures).
 
 ---
 
@@ -143,4 +190,5 @@ Before adding a card, verify:
 
 **The spacing algorithm is only as good as your question quality.**
 
-A poor question wastes intervals. A good question produces lasting understanding through effortful retrieval.
+A poor question wastes intervals. A good question produces lasting understanding through
+effortful retrieval.
