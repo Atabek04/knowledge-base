@@ -25,11 +25,9 @@
 - [ ] Clocks and ordering
 
 ### CAP Theorem & PACELC
-- [ ] Consistency, Availability, Partition tolerance
-- [ ] CAP theorem explained
-- [ ] PACELC extension
+- [[CAP theorem forces a partitioned system to choose between consistency and availability]] — C/A/P, the "pick 2 under partition" framing, CP vs AP, PACELC
+- [[Eventual consistency lets replicas accept writes during a partition and converge afterward]] — the consistency model an AP system adopts
 - [ ] Trade-off decisions
-- [ ] Eventual consistency
 
 ### Consistency Models
 - [ ] Strong consistency

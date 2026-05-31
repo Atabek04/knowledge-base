@@ -123,6 +123,18 @@
 
 ---
 
+## Domain-Driven Design
+
+*Model the business in objects defined by identity, value, and consistency boundaries — not by table layout.*
+
+- [[A domain entity is defined by a continuous identity that persists through state changes]] — identity-based, mutable over its lifecycle
+- [[A value object has no identity and is compared by the equality of its attributes]] — immutable, equality by value
+- [[An aggregate is a cluster of objects treated as one consistency boundary]] — why one transaction = one aggregate
+- [[The aggregate root is the only object outside code may hold a reference to]] — the single gatekeeper that enforces invariants
+- [[A domain model captures behavior and rules while a data model captures storage structure]] — domain model vs relational/ERD data model
+
+---
+
 ## Related MOCs
 
 - [[Architecture - MOC]]
