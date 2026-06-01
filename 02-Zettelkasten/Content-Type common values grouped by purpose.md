@@ -90,5 +90,5 @@ sr-ease:
 
 ## Read more
 - [[Content-Type header tells receiver how to parse the HTTP body]]
-- [[SSE uses text/event-stream content type to signal streaming response]]
+- [[SSE uses event-stream content type to signal streaming response]]
 - [[API Design - MOC]]

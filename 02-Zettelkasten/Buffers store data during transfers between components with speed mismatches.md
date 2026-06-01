@@ -51,4 +51,5 @@ The buffer is the temporary storage area. It sits between the slow disk and the 
 - [[RAM is volatile fast storage while disk is persistent slow storage]]
 - [[System calls provide the bridge from user programs to kernel services]]
 - [[CPU mode switch transitions from User Mode to Kernel Mode during syscalls]]
+- [[HTTP response flushing sends buffered bytes immediately instead of waiting to accumulate]]
 - [[VMs & Containers MOC]]
