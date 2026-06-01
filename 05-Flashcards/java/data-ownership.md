@@ -17,6 +17,7 @@ The owner is responsible for:
 
 Without clear ownership, each side assumes the other is protecting the data → race conditions, corruption.
 Tags: java ownership
+<!--ID: 1780311507682-->
 END
 
 START
@@ -28,6 +29,7 @@ Back:
 
 Choosing explicitly eliminates ambiguity at every call site.
 Tags: java ownership
+<!--ID: 1780311507702-->
 END
 
 START
@@ -39,6 +41,7 @@ Back: **Copies data in both directions:**
 
 External mutations to the original list have no effect on the class.
 Tags: java ownership encapsulation
+<!--ID: 1780311507723-->
 END
 
 START
@@ -51,6 +54,7 @@ Back: Choose **class ownership** (defensive copy) when:
 
 Default choice when ownership is unclear — copying is safer than sharing.
 Tags: java ownership
+<!--ID: 1780311507744-->
 END
 
 START
@@ -70,6 +74,7 @@ public class ReadOnlyProcessor {
 
 Caller can still modify their original list — the class sees those changes.
 Tags: java ownership
+<!--ID: 1780311507764-->
 END
 
 START
@@ -79,6 +84,7 @@ Back: **Defensive copying** — making a new copy of mutable data at boundaries 
 
 Copy on input (constructor/setter) and copy on output (getter) so neither side can corrupt the other's state.
 Tags: java ownership defensive-copy
+<!--ID: 1780311507785-->
 END
 
 START
@@ -90,6 +96,7 @@ Back:
 
 Use `List.copyOf()` for defensive copies (Java 10+). Use `Collections.unmodifiableList()` for caller-owns pattern.
 Tags: java ownership defensive-copy
+<!--ID: 1780311507806-->
 END
 
 START
@@ -107,6 +114,7 @@ leaked.add("FAKE TX"); // injects data
 
 No setter called. No reflection. The class never knows its state changed.
 Tags: java ownership defensive-copy security
+<!--ID: 1780311507826-->
 END
 
 START
@@ -118,6 +126,7 @@ Back:
 
 High-risk targets: transaction logs, audit trails, access control lists — any security-sensitive collection.
 Tags: java ownership security cwe
+<!--ID: 1780311507847-->
 END
 
 START
@@ -134,4 +143,5 @@ myList.add("x"); // wrapped now shows "x" — NOT blocked
 wrapped.add("y"); // throws UnsupportedOperationException — blocked
 ```
 Tags: java ownership
+<!--ID: 1780311507867-->
 END

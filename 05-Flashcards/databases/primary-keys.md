@@ -14,6 +14,7 @@ Back:
 
 Together: every row has exactly one identity, and no two rows share it.
 Tags: database sql relational-model fundamentals
+<!--ID: 1780311508415-->
 END
 
 START
@@ -25,6 +26,7 @@ Back:
 3. **Automatic index** — PK auto-creates a unique index → O(log n) lookup instead of full scan
 4. **JOIN anchor** — JOINs match FK values to PK values; PK makes multi-table queries coherent and fast
 Tags: database sql relational-model fundamentals
+<!--ID: 1780311508436-->
 END
 
 START
@@ -37,6 +39,7 @@ Back:
 - DB engine enforces: every `user_id` in `orders` must exist in `users.id`
 - Without a PK, FK constraints cannot be defined → relational model breaks down
 Tags: database sql relational-model foreign-key
+<!--ID: 1780311508457-->
 END
 
 START
@@ -49,6 +52,7 @@ Every PK **automatically creates a unique index** on that column.
 
 This is why the PK is always the cheapest lookup path in any query.
 Tags: database sql index performance
+<!--ID: 1780311508477-->
 END
 
 START
@@ -64,6 +68,7 @@ Back:
 Natural keys appear stable but change (emails get updated, passports reissued).
 Changing a PK cascades to every FK reference — expensive and risky.
 Tags: database sql relational-model surrogate-key natural-key
+<!--ID: 1780311508498-->
 END
 
 START
@@ -80,6 +85,7 @@ Back:
 Use `BIGINT` for single-node high-write tables.
 Use `UUID v7` (time-ordered) for distributed systems — avoids fragmentation.
 Tags: database sql surrogate-key uuid bigint performance
+<!--ID: 1780311508519-->
 END
 
 START
@@ -95,6 +101,7 @@ This causes:
 
 Fix: use **UUID v7** (time-ordered) or `BIGINT` auto-increment for high-write tables.
 Tags: database postgresql uuid performance index
+<!--ID: 1780311508540-->
 END
 
 START
@@ -110,6 +117,7 @@ Back:
 - JOINs get harder to read and maintain
 - ORM mapping is more complex
 Tags: database sql composite-key design
+<!--ID: 1780311508560-->
 END
 
 START
@@ -121,4 +129,5 @@ Back:
 - **Duplicate rows** become possible → silent data corruption
 - ORM frameworks (JPA/Hibernate) require `@Id` → **refuse to map the entity**
 Tags: database sql relational-model fundamentals
+<!--ID: 1780311508580-->
 END

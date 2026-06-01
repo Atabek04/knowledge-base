@@ -21,6 +21,7 @@ For one feature:
 
 Content is not duplicated (same trees), but graph topology grows criss-cross merges. Mitigated by squash-merge at `feature → develop` + `--first-parent` viewing.
 Tags: gitflow merge-noise
+<!--ID: 1780311507993-->
 END
 
 START
@@ -34,6 +35,7 @@ Back: From his 2010 post: *"avoids losing information about the historical exist
 
 **Modern critique:** predates squash-merge UIs. If feature is already squashed to one commit, the bubble is empty noise.
 Tags: gitflow no-ff
+<!--ID: 1780311508014-->
 END
 
 START
@@ -53,6 +55,7 @@ git commit -m "Add feature X"
 - **Loses** per-commit history, breaks `revert -m 1` semantics
 - Bad for multi-contributor branches (co-author attribution collapses)
 Tags: squash-merge
+<!--ID: 1780311508035-->
 END
 
 START
@@ -71,6 +74,7 @@ Mixing both gives the worst of each: extra merge commit on top of a squash + los
 
 nvie himself rejected `--squash` in `git flow feature finish` for this reason.
 Tags: gitflow no-ff squash-merge
+<!--ID: 1780311508056-->
 END
 
 START
@@ -88,6 +92,7 @@ git log --graph --oneline --first-parent main
 
 **Requires convention:** always merge **into** the long-lived branch, never the other way. Use `--no-ff` for integrations so each is a single first-parent merge commit (not multiple fast-forwarded commits).
 Tags: git log first-parent
+<!--ID: 1780311508076-->
 END
 
 START
@@ -102,4 +107,5 @@ Back: Modern (2022–2026) consensus:
 
 Atlassian, Mergify, DNSimple converge: squash-merge mainstream **even in Gitflow shops**, applied at the `feature → develop` boundary.
 Tags: gitflow policy clean-history
+<!--ID: 1780311508096-->
 END

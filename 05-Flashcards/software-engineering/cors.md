@@ -14,6 +14,7 @@ Back: The **Same-Origin Policy** blocks JavaScript on `a.com` from reading respo
 - Protects the **user's browser**, not the server
 - `curl` / backend-to-backend ignore CORS
 Tags: web security cors
+<!--ID: 1780311502094-->
 END
 
 START
@@ -24,6 +25,7 @@ Back: **scheme + host + port** — all three must match.
 - `https://app.com` ≠ `https://api.app.com` (different host)
 - `https://app.com` ≠ `https://app.com:8443` (different port)
 Tags: web security cors
+<!--ID: 1780311502115-->
 END
 
 START
@@ -35,6 +37,7 @@ Back: For **non-simple** cross-origin requests. A request is **simple** only if 
 - `Content-Type` ∈ {`application/x-www-form-urlencoded`, `multipart/form-data`, `text/plain`}
 Anything else (PUT/DELETE/PATCH, custom headers, `Authorization`, `Content-Type: application/json`) → preflight required.
 Tags: web cors http
+<!--ID: 1780311502136-->
 END
 
 START
@@ -45,6 +48,7 @@ Back: Browsers **omit** the `Origin` header on simple same-origin GETs but **alw
 - `Origin` present but not in allow-list → 403 "Invalid CORS request"
 Common Swagger-UI symptom when the API's own host isn't in `allowedOrigins`.
 Tags: web cors debugging
+<!--ID: 1780311502160-->
 END
 
 START
@@ -53,6 +57,7 @@ Why use `Access-Control-Allow-Credentials: true` and what is its constraint?
 Back: Tells the browser it's safe to expose responses to JS when the request carried cookies or `Authorization`.
 **Constraint:** `Access-Control-Allow-Origin` cannot be `*` — must be the exact origin string. Same for `Allow-Methods` / `Allow-Headers`.
 Tags: web cors security
+<!--ID: 1780311502181-->
 END
 
 START
@@ -63,6 +68,7 @@ Back: CORS, **not** auth. Spring's `DefaultCorsProcessor` rejects before securit
 2. Behind ingress, set `server.forward-headers-strategy=framework` so `isSameOrigin` works on the public URL
 3. For credentialed requests, ensure `allowCredentials=true` + exact origin (no `*`)
 Tags: spring cors debugging
+<!--ID: 1780311502203-->
 END
 
 START
@@ -73,4 +79,5 @@ Back:
 - **Referer**: full URL including path/query. Subject to referrer policy stripping.
 CORS decisions key on `Origin`, never `Referer`.
 Tags: web http headers
+<!--ID: 1780311502223-->
 END

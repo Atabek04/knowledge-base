@@ -18,6 +18,7 @@ Back:
 PG's deal: write to WAL → tell client "committed" → update data files in background.
 Same durability, far fewer slow random writes.
 Tags: postgresql wal storage
+<!--ID: 1780311501970-->
 END
 
 START
@@ -34,6 +35,7 @@ Transaction never completed. PG discards those changes.
 
 No manual intervention — PG reconstructs correct state automatically from the log.
 Tags: postgresql wal transactions
+<!--ID: 1780311501990-->
 END
 
 START
@@ -49,6 +51,7 @@ LSN 101: UPDATE items stock=9
 
 External tools like **Debezium** use LSNs to track exactly where they are in the WAL — on restart, they resume from the last saved LSN without missing or replaying events.
 Tags: postgresql wal cdc
+<!--ID: 1780311502011-->
 END
 
 START
@@ -68,6 +71,7 @@ COMMIT;
 ```
 No partial state is ever visible to other queries.
 Tags: postgresql transactions acid
+<!--ID: 1780311502031-->
 END
 
 START
@@ -87,6 +91,7 @@ The second buyer **waits at the lock**, then re-reads `stock = 0` after the firs
 
 Lock scope: held from `SELECT FOR UPDATE` until `COMMIT` or `ROLLBACK`.
 Tags: postgresql transactions locking
+<!--ID: 1780311502053-->
 END
 
 START
@@ -100,4 +105,5 @@ Adding multi-statement transaction locks would require **global coordination** b
 CH chose **OLAP** (analytical reads, bulk inserts) over **OLTP** (transactional consistency, row-level updates).
 This is the core reason transactional workloads belong in PostgreSQL.
 Tags: postgresql clickhouse transactions
+<!--ID: 1780311502073-->
 END

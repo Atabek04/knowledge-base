@@ -12,6 +12,7 @@ Back: **JVM (Java Virtual Machine)** — runtime engine that executes Java bytec
 - Platform-specific implementation (different JVM for each OS/CPU)
 - Core component that actually runs Java programs
 Tags: java jvm
+<!--ID: 1780311507123-->
 END
 
 START
@@ -22,6 +23,7 @@ Back: **JRE (Java Runtime Environment)** = JVM + standard libraries (`java.lang`
 - Does NOT include development tools
 - Installed by end users who only run apps, not develop them
 Tags: java jvm
+<!--ID: 1780311507144-->
 END
 
 START
@@ -31,6 +33,7 @@ Back: **JDK (Java Development Kit)** = JRE + development tools (`javac`, debugge
 - Everything needed to **develop and run** Java applications
 - Required by developers — not end users
 Tags: java jvm
+<!--ID: 1780311507164-->
 END
 
 START
@@ -43,6 +46,7 @@ Back:
 4. **Platform abstraction** — consistent API regardless of OS; translates Java threads to OS threads
 5. **Runtime optimization** — profiling hot code paths, method inlining, dead code elimination
 Tags: java jvm
+<!--ID: 1780311507185-->
 END
 
 START
@@ -52,6 +56,7 @@ Back: Two mechanisms:
 - **Interpretation** — JVM reads each bytecode instruction and maps it to a pre-compiled C function
 - **JIT compilation** — hot code paths are compiled to native machine code at runtime for faster re-execution
 Tags: java jvm
+<!--ID: 1780311507206-->
 END
 
 START
@@ -62,6 +67,7 @@ Back: Bytecode targets the **JVM (virtual machine)**, not physical CPU hardware.
 - CPU only understands its own instruction set (`mov eax`, `add eax, ebx`)
 - JVM interpreter bridges the gap by mapping bytecode → native machine code
 Tags: java jvm
+<!--ID: 1780311507227-->
 END
 
 START
@@ -70,6 +76,7 @@ What is the full execution chain from .java source to CPU?
 Back:
 `.java` → `javac` → `.class` (bytecode) → JVM interpreter → pre-compiled C function → native machine code → CPU
 Tags: java jvm
+<!--ID: 1780311507247-->
 END
 
 START
@@ -80,6 +87,7 @@ Back: The **JVM itself is a compiled C program** — it must be compiled separat
 - But the JVM that runs it is platform-specific
 - That's what enables "Write Once, Run Anywhere" — same bytecode, different JVMs
 Tags: java jvm
+<!--ID: 1780311507268-->
 END
 
 START
@@ -92,6 +100,7 @@ Back:
 | **Portability** | Must recompile per platform | Platform-independent code |
 | **Safety** | No runtime checks | Runtime verification possible |
 Tags: java jvm
+<!--ID: 1780311507289-->
 END
 
 START
@@ -102,6 +111,7 @@ Back: **Profiling** — JVM monitors and measures code while it's running to ide
 - Rarely executed code stays interpreted
 - This is why Java gets faster the longer it runs
 Tags: java jvm
+<!--ID: 1780311507309-->
 END
 
 START
@@ -109,6 +119,7 @@ Coding Questions
 What is `javap`?
 Back: JDK **class file disassembler**. Reads a `.class` file and prints its structure: fields, methods, signatures, and bytecode instructions.
 Tags: java jvm tooling javap
+<!--ID: 1780311507329-->
 END
 
 START
@@ -116,6 +127,7 @@ Coding Questions
 What does `javap -p` do?
 Back: Includes **private** and **package-private** members in the output (default shows only public).
 Tags: java jvm tooling javap
+<!--ID: 1780311507349-->
 END
 
 START
@@ -123,6 +135,7 @@ Coding Questions
 What does `javap -c` do?
 Back: Disassembles method bodies into **JVM bytecode** (`iload`, `invokevirtual`, etc.) — the main reason to use javap.
 Tags: java jvm tooling javap
+<!--ID: 1780311507370-->
 END
 
 START
@@ -130,6 +143,7 @@ Coding Questions
 What does the common combo `javap -p -c ClassName` show?
 Back: Every member (public + private) **plus** its bytecode. Standard "what did the compiler produce?" command.
 Tags: java jvm tooling javap
+<!--ID: 1780311507391-->
 END
 
 START
@@ -137,4 +151,5 @@ Coding Questions
 What does `javap -v` add?
 Back: **Verbose** dump — constant pool, stack map frames, line number table, access flags, and full method bytecode.
 Tags: java jvm tooling javap
+<!--ID: 1780311507412-->
 END

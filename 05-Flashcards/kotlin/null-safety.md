@@ -212,4 +212,5 @@ val length = name!!.length  // throws NullPointerException if name is null
 - Use only when you are **absolutely certain** the value cannot be null (e.g. external API guarantees non-null despite nullable return type)
 - Prefer `?.`, `?:`, or `requireNotNull()` in almost all cases
 Tags: kotlin null-safety
+<!--ID: 1780311506379-->
 END

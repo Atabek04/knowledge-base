@@ -14,6 +14,7 @@ Back: **Moves the current branch pointer** backward to the target commit.
 - **Rewrites history** → safe locally, dangerous on shared remotes
 - What happens to changes depends on the flag (`--soft` / `--mixed` / `--hard`)
 Tags: git reset
+<!--ID: 1780311508117-->
 END
 
 START
@@ -31,6 +32,7 @@ Back: All three move HEAD. They differ in what else they touch:
 - `--mixed` → uncommit, **unstage** (files keep edits)
 - `--hard` → wipe everything. **Destructive** — uncommitted work gone
 Tags: git reset flags
+<!--ID: 1780311508139-->
 END
 
 START
@@ -45,6 +47,7 @@ Back: Creates a **new commit whose diff is the inverse** of the target.
 git revert -m 1 <merge-sha>
 ```
 Tags: git revert
+<!--ID: 1780311508160-->
 END
 
 START
@@ -62,6 +65,7 @@ Back: Decision flow:
 | reset | yes |
 | cherry-pick | no |
 Tags: git undo decision
+<!--ID: 1780311508181-->
 END
 
 START
@@ -73,6 +77,7 @@ Back: It wipes the working tree and index back to the target commit.
 - On a shared branch → forces collaborators to recover from their reflogs
 - Prefer `--soft` or `--mixed` unless you specifically want to discard changes
 Tags: git reset danger
+<!--ID: 1780311508202-->
 END
 
 START
@@ -88,4 +93,5 @@ git cherry-pick A^..B   # includes A through B
 - New commits get new SHAs (different parents, different timestamps)
 - Original commits remain untouched on their source branch
 Tags: git cherry-pick range
+<!--ID: 1780311508224-->
 END

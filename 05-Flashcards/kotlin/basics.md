@@ -251,6 +251,7 @@ fun String.toReportType(): ReportType =
 - Under the hood compiles to a static method (same as Java util) — but the call site reads naturally
 - Replaces `*Utils` classes with discoverable, autocomplete-friendly calls
 Tags: kotlin basics
+<!--ID: 1780311506400-->
 END
 
 START
@@ -261,6 +262,7 @@ Back:
 - Resolved **statically** — compile-time type determines which extension is called, no polymorphism
 - Should be scoped `private` or `internal` when only relevant in one file/module
 Tags: kotlin basics
+<!--ID: 1780311506421-->
 END
 
 START
@@ -276,6 +278,7 @@ Back:
 - Logic is complex (20+ lines) — use a service method instead
 - It substitutes proper class design
 Tags: kotlin basics
+<!--ID: 1780311506441-->
 END
 
 START
@@ -285,6 +288,7 @@ Back: A Kotlin data class property is simultaneously a **constructor parameter**
 - Jakarta Validation inspects **fields** (or getters), not constructor parameters
 - So `@NotBlank val name: String` places the annotation on the parameter — validation is silently skipped
 Tags: kotlin basics
+<!--ID: 1780311506462-->
 END
 
 START
@@ -299,6 +303,7 @@ data class GenerateReportRequest(
 ```
 - Without `@field:`, the annotation targets the constructor parameter and validation does nothing
 Tags: kotlin basics
+<!--ID: 1780311506482-->
 END
 
 START
@@ -313,6 +318,7 @@ Back:
 | `@set:` | Setter method |
 | `@property:` | Kotlin property (not visible to Java) |
 Tags: kotlin basics
+<!--ID: 1780311506503-->
 END
 
 START
@@ -323,6 +329,7 @@ Back: The primary constructor is the **source** declaration — field and getter
 - If Kotlin defaulted to `@field:`, `@JsonProperty("user_name")` would be invisible to Jackson
 - Field-based frameworks (Jakarta Validation, JPA) need explicit `@field:` instead
 Tags: kotlin basics
+<!--ID: 1780311506523-->
 END
 
 START
@@ -334,6 +341,7 @@ Back:
 3. **Application** — place the annotation on the target class or field
 - The annotation must declare `message`, `groups`, and `payload` — required by Jakarta spec
 Tags: kotlin basics
+<!--ID: 1780311506543-->
 END
 
 START
@@ -343,6 +351,7 @@ Back: To **separate concerns** — let `@NotNull` handle nullability independent
 - If the validator rejects `null`, you can't have an optional field that's valid when absent but validated when present
 - Convention: custom validators assume non-null, null-checking is a separate annotation's job
 Tags: kotlin basics
+<!--ID: 1780311506564-->
 END
 
 START
@@ -352,6 +361,7 @@ Back: Jakarta Validation only validates the **top-level object** by default. `@V
 - In Kotlin, must use `@field:Valid` because the default target is parameter, not field
 - Without it, custom annotations on the nested class (like `@ValidDateRange`) never fire
 Tags: kotlin basics
+<!--ID: 1780311506585-->
 END
 
 START
@@ -362,6 +372,7 @@ Back:
 - **`FIELD`** — when the rule validates a **single value** (e.g. custom format check)
 - Class-level targets validate the whole object, so the validator receives all fields at once
 Tags: kotlin basics
+<!--ID: 1780311506606-->
 END
 
 START
@@ -378,6 +389,7 @@ printMessage("Hello", "Log")  // [Log] Hello
 - Eliminates the need for multiple overloads
 - In Java you'd write two separate methods; Kotlin covers both with one function
 Tags: kotlin basics
+<!--ID: 1780311506626-->
 END
 
 START
@@ -392,6 +404,7 @@ printMessage(prefix = "Log", message = "Hello")
 - Especially helpful for `Boolean` and `String` params where position is ambiguous
 - Combine with default params: skip optional args, name only the ones you pass
 Tags: kotlin basics
+<!--ID: 1780311506647-->
 END
 
 START
@@ -407,6 +420,7 @@ for (number in 1..5) {
 - `1..5` is a **closed range** — both endpoints inclusive
 - Works with any `Comparable` type
 Tags: kotlin basics
+<!--ID: 1780311506668-->
 END
 
 START
@@ -423,6 +437,7 @@ for (cake in cakes) {
 - `in` works with any `Iterable`
 - No index by default — use `withIndex()` if you need both index and value
 Tags: kotlin basics
+<!--ID: 1780311506689-->
 END
 
 START
@@ -436,4 +451,5 @@ val max = if (a > b) a else b
 - Both branches must return a compatible type
 - Java equivalent: `int max = a > b ? a : b;`
 Tags: kotlin basics
+<!--ID: 1780311506709-->
 END

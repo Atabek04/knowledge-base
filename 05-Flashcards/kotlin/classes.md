@@ -234,4 +234,5 @@ class Contact(id: Int, email: String)
 ```
 Use plain params when the value is only needed to initialize other properties and should not be exposed.
 Tags: kotlin classes
+<!--ID: 1780311506358-->
 END

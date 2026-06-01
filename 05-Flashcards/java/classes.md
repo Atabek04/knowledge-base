@@ -20,6 +20,7 @@ class School {
 
 This is why inner classes can access outer class fields — they secretly hold a pointer back to the outer instance.
 Tags: java classes inner-class
+<!--ID: 1780311507600-->
 END
 
 START
@@ -40,6 +41,7 @@ class Activity {
 
 GC can't free the outer object because the inner class still holds a reference to it.
 Tags: java classes inner-class memory
+<!--ID: 1780311507620-->
 END
 
 START
@@ -58,6 +60,7 @@ class School {
 
 Trade-off: static nested class can no longer access outer instance fields.
 Tags: java classes inner-class memory
+<!--ID: 1780311507640-->
 END
 
 START
@@ -69,4 +72,5 @@ Developers must remember to add `static` every time to opt out of this behavior.
 
 Kotlin fixed this — nested classes are static by default.
 Tags: java classes inner-class
+<!--ID: 1780311507661-->
 END

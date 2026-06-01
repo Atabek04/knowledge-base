@@ -30,6 +30,7 @@ Russian: Дилемма заключённого
 Example: Price wars between companies are a classic **Prisoner's Dilemma** — both would profit more by keeping prices high, but each fears being undercut.
 Note: Classic example: two suspects interrogated separately. Both silent → both go free. One betrays → betrayer free, silent one gets max punishment. Both betray → both get moderate punishment. Rational self-interest leads both to betray, even though mutual silence is better. Key insight: individually rational decisions → collectively irrational outcomes.
 Tags: noun game-theory
+<!--ID: 1780311501820-->
 END
 
 START
@@ -40,6 +41,7 @@ Russian: обесценивание, снижение качества
 Example: **Currency debasement** means that the more dollars there are in circulation, the less each dollar is worth.
 Note: Common in economics — refers to inflating the money supply until each unit buys less.
 Tags: noun economics
+<!--ID: 1780311501841-->
 END
 
 START
@@ -49,6 +51,7 @@ English: deplete
 Russian: истощать, исчерпывать
 Example: The illness **depletes** the body of important vitamins.
 Tags: verb
+<!--ID: 1780311501862-->
 END
 
 START
@@ -58,6 +61,7 @@ English: perpetual debt
 Russian: бессрочный долг, вечный долг
 Example: Some government bonds are structured as **perpetual debt**, paying interest forever with no repayment date.
 Tags: noun economics finance
+<!--ID: 1780311501882-->
 END
 
 START
@@ -67,6 +71,7 @@ English: scarcity
 Russian: дефицит, нехватка, редкость
 Example: The **scarcity** of skilled workers drove salaries up across the industry.
 Tags: noun economics
+<!--ID: 1780311501905-->
 END
 
 START
@@ -76,6 +81,7 @@ English: ransom
 Russian: выкуп
 Example: The hacker held the company's data as **ransom**, demanding $1 million to restore access.
 Tags: noun
+<!--ID: 1780311501926-->
 END
 
 START
@@ -85,4 +91,5 @@ English: forgery
 Russian: подделка, фальсификация
 Example: The expert confirmed that these banknotes were **forgeries**.
 Tags: noun
+<!--ID: 1780311501947-->
 END

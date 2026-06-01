@@ -19,6 +19,7 @@ Neither database covers both workloads:
 
 Systems needing operational consistency **and** real-time analytics require both.
 Tags: dual-write architecture clickhouse postgresql
+<!--ID: 1780311508979-->
 END
 
 START
@@ -35,6 +36,7 @@ app → INSERT into CH  ✗  (crash/network drop)
 
 PG has the record. CH doesn't. No error is raised — the inconsistency is invisible.
 Tags: dual-write architecture data-engineering
+<!--ID: 1780311509001-->
 END
 
 START
@@ -58,6 +60,7 @@ app → PG (transactional write)
 
 Both guarantee at-least-once delivery. CH's `ReplacingMergeTree` handles duplicates.
 Tags: dual-write architecture data-engineering
+<!--ID: 1780311509023-->
 END
 
 START
@@ -76,6 +79,7 @@ COMMIT; -- both committed atomically, or neither
 A **publisher process** reads the outbox and forwards to Kafka. On failure it retries.
 Result: **at-least-once** — no lost events, occasional duplicates on retry.
 Tags: outbox-pattern messaging architecture
+<!--ID: 1780311509045-->
 END
 
 START
@@ -93,6 +97,7 @@ Back:
 
 Choose polling for simplicity at low scale; choose log tailing for low latency and high throughput.
 Tags: outbox-pattern messaging architecture
+<!--ID: 1780311509067-->
 END
 
 START
@@ -114,6 +119,7 @@ Back:
 - Legacy system — can't change app code
 - Need to capture changes from multiple apps on the same DB
 Tags: outbox-pattern cdc architecture
+<!--ID: 1780311509088-->
 END
 
 START
@@ -131,6 +137,7 @@ On restart:
 
 PG's **replication slot** guarantees WAL entries are retained until Debezium confirms it has read them — even during long outages.
 Tags: debezium cdc postgresql wal
+<!--ID: 1780311509109-->
 END
 
 START
@@ -150,6 +157,7 @@ In ClickHouse, `ReplacingMergeTree` handles duplicate inserts naturally via vers
 
 Exactly-once available with Kafka Connect 3.3+ but rarely needed if consumer is idempotent.
 Tags: debezium kafka delivery-guarantees
+<!--ID: 1780311509129-->
 END
 
 START
@@ -166,6 +174,7 @@ Back:
 
 **Fix**: idempotent consumers (e.g. `ReplacingMergeTree` in ClickHouse discards duplicates on merge).
 Tags: kafka messaging distributed-systems
+<!--ID: 1780311509150-->
 END
 
 START
@@ -185,4 +194,5 @@ Back:
 
 > At-least-once prioritises **no data loss** over **no duplicates** — a lost message is usually worse than a discarded duplicate.
 Tags: kafka messaging distributed-systems delivery-guarantees
+<!--ID: 1780311509170-->
 END

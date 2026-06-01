@@ -17,6 +17,7 @@ var myVar = "A string!"; // compiler infers String
 var count = 42;          // compiler infers int
 ```
 Tags: java features type-inference
+<!--ID: 1780311507433-->
 END
 
 START
@@ -29,6 +30,7 @@ var name = "John"; // ✅ local variable
 private var name;  // ❌ field — not allowed
 ```
 Tags: java features type-inference
+<!--ID: 1780311507453-->
 END
 
 START
@@ -43,6 +45,7 @@ Back:
 
 No setters generated — records are value carriers.
 Tags: java records
+<!--ID: 1780311507476-->
 END
 
 START
@@ -56,6 +59,7 @@ Back:
 
 Both return the raw reference — no defensive copy by default.
 Tags: java records lombok
+<!--ID: 1780311507497-->
 END
 
 START
@@ -72,6 +76,7 @@ var updated = new Account(acc.owner(), acc.balance() + 50);
 
 No built-in `with` in the JDK yet — mutation = new instance.
 Tags: java records
+<!--ID: 1780311507518-->
 END
 
 START
@@ -87,6 +92,7 @@ record Account(List<String> transactions) {}
 acc.transactions().add("FAKE"); // ✅ compiles — record not truly immutable
 ```
 Tags: java records immutability
+<!--ID: 1780311507538-->
 END
 
 START
@@ -102,6 +108,7 @@ list = new ArrayList<>(); // ❌ compile error
 list.add("x");            // ✅ fine
 ```
 Tags: java records immutability final
+<!--ID: 1780311507559-->
 END
 
 START
@@ -119,4 +126,5 @@ record Account(List<String> transactions) {
 
 `List.copyOf()` creates a new unmodifiable copy — mutation attempts throw `UnsupportedOperationException`.
 Tags: java records immutability defensive-copy
+<!--ID: 1780311507579-->
 END

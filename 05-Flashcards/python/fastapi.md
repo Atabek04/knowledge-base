@@ -14,6 +14,7 @@ Back:
 
 Fix for CPU-bound: `run_in_executor` — offload to a thread pool, event loop stays free.
 Tags: python async concurrency
+<!--ID: 1780311502915-->
 END
 
 START
@@ -27,6 +28,7 @@ async def _flush(text):
 ```
 Fix: `await loop.run_in_executor(executor, tts_service.synthesize, text)`
 Tags: python async concurrency event-loop
+<!--ID: 1780311502936-->
 END
 
 START
@@ -37,6 +39,7 @@ Back: **Submits `fn(*args)` to a thread pool** and returns an awaitable. The eve
 - `executor=ThreadPoolExecutor(max_workers=2)` → custom pool with cap
 - `fn` must be a **sync callable**, not a coroutine
 Tags: python async concurrency run-in-executor
+<!--ID: 1780311502957-->
 END
 
 START
@@ -49,6 +52,7 @@ Back:
 
 Default pool (`None`) has up to 32 workers — too many for memory-heavy work.
 Tags: python async concurrency thread-pool
+<!--ID: 1780311502977-->
 END
 
 START
@@ -58,6 +62,7 @@ Back: No — C extensions like PyTorch and NumPy **release the GIL** during comp
 GIL only blocks pure Python bytecode. So `ThreadPoolExecutor` gives real parallelism for PyTorch TTS synthesis.
 For pure Python CPU loops → use `ProcessPoolExecutor` (bypasses GIL via separate processes).
 Tags: python concurrency gil thread-pool
+<!--ID: 1780311502997-->
 END
 
 ---
@@ -69,6 +74,7 @@ Back: **Wires dependency injection** — FastAPI calls `factory_fn` before the e
 - `Annotated[AgentService, Depends(get_agent_service)]` = type hint + wiring in one name
 - Nested deps resolved automatically (graph walk per request)
 Tags: python fastapi dependency-injection
+<!--ID: 1780311503018-->
 END
 
 START
@@ -79,6 +85,7 @@ Back:
 - **Keeps router thin** — endpoint body is one-liner delegation, not object-graph assembly
 - **Easy test overrides** — `app.dependency_overrides[get_fn] = lambda: MockService()`
 Tags: python fastapi dependency-injection
+<!--ID: 1780311503038-->
 END
 
 START
@@ -87,6 +94,7 @@ What is the Spring/Java equivalent of FastAPI's `Depends`?
 Back: `@Bean` methods in a `@Configuration` class — Spring calls the factory and injects the result wherever `@Autowired` appears.
 Difference: FastAPI resolves at **request scope** by default; Spring beans are typically **application scope**.
 Tags: python fastapi dependency-injection java
+<!--ID: 1780311503058-->
 END
 
 START
@@ -97,6 +105,7 @@ Back: `app.dependency_overrides[original_dep_fn] = lambda: MockService()`
 - Value = replacement callable returning the mock
 - Reset after test: `app.dependency_overrides = {}`
 Tags: python fastapi testing dependency-injection
+<!--ID: 1780311503079-->
 END
 
 START
@@ -111,6 +120,7 @@ endpoint needs AgentService
   → AgentService injected into endpoint
 ```
 Tags: python fastapi dependency-injection
+<!--ID: 1780311503104-->
 END
 
 START
@@ -121,6 +131,7 @@ Back: **Eliminates repetition** — `Annotated[AgentService, Depends(get_agent_s
 - Use everywhere: `agent_svc: AgentServiceDep`
 - One edit site → all endpoints updated automatically
 Tags: python fastapi type-alias dependency-injection
+<!--ID: 1780311503128-->
 END
 
 START
@@ -135,4 +146,5 @@ type AgentServiceDep = Annotated[AgentService, Depends(get_agent_service)]
 - No wrapper class, no overhead
 - Java has no equivalent (closest: dedicated wrapper class or generic bounds)
 Tags: python type-alias
+<!--ID: 1780311503150-->
 END

@@ -14,6 +14,7 @@ Back:
 - PostgreSQL stores each row as a full tuple — a query on 2 of 20 columns still reads all 20
 - **Column count has almost no effect** on CH query I/O when only a few columns are selected
 Tags: clickhouse storage columnar
+<!--ID: 1780311508603-->
 END
 
 START
@@ -30,6 +31,7 @@ price.bin:  [100, 200, 300, 400]
 Row 2 is always `region=EU, price=300` across all files.
 No join, no pointer, no row ID — **position is the key**.
 Tags: clickhouse storage columnar
+<!--ID: 1780311508624-->
 END
 
 START
@@ -42,6 +44,7 @@ Back:
 
 All column encodings are decompressed in memory first; the positional contract holds at query time.
 Tags: clickhouse storage columnar
+<!--ID: 1780311508645-->
 END
 
 START
@@ -56,6 +59,7 @@ region LowCardinality(String)
 Stores unique values once; rows store small integer indices.
 Effective below ~10,000 distinct values; can hurt above ~100,000.
 Tags: clickhouse compression storage
+<!--ID: 1780311508666-->
 END
 
 START
@@ -70,6 +74,7 @@ Back:
 - Order is fully preserved — decoding replays runs in sequence
 - Best for **sorted low-cardinality columns** (status, region, category)
 Tags: clickhouse compression storage
+<!--ID: 1780311508687-->
 END
 
 START
@@ -86,6 +91,7 @@ event_time DateTime CODEC(Delta, LZ4)
 - Codecs chain **left-to-right on write, right-to-left on read**
 - Example: `CODEC(Delta, LZ4)` → delta-encode first, then LZ4-compress
 Tags: clickhouse compression storage
+<!--ID: 1780311508708-->
 END
 
 START
@@ -105,6 +111,7 @@ table/
 - Row positions are **local to a part**, not global across the table
 - Parts are **immutable** — never modified after being written
 Tags: clickhouse mergetree storage
+<!--ID: 1780311508728-->
 END
 
 START
@@ -117,6 +124,7 @@ Parts are **never modified after being written**. This enables:
 - **Consistent read snapshots** — a SELECT sees the exact parts that existed when it started
 - **Simple replication** — immutable files can be copied without synchronization
 Tags: clickhouse mergetree storage
+<!--ID: 1780311508750-->
 END
 
 START
@@ -131,6 +139,7 @@ Background merge **continuously consolidates small parts into larger ones**:
 
 Trade-off: merge is async — parts accumulate between merges.
 Tags: clickhouse mergetree storage
+<!--ID: 1780311508773-->
 END
 
 START
@@ -147,6 +156,7 @@ CH must:
 This is a **mutation** — even a single-row change rewrites millions of rows.
 Mutations are expensive and should be avoided.
 Tags: clickhouse mergetree mutations
+<!--ID: 1780311508796-->
 END
 
 START
@@ -164,6 +174,7 @@ ORDER BY id;
 ```
 `ORDER BY id` → same `id` = duplicate, regardless of other columns.
 Tags: clickhouse mergetree deduplication
+<!--ID: 1780311508818-->
 END
 
 START
@@ -177,6 +188,7 @@ During merge, CH sorts by `ORDER BY` key → duplicates become adjacent → keep
 
 Always prefer an explicit version column.
 Tags: clickhouse mergetree deduplication
+<!--ID: 1780311508841-->
 END
 
 START
@@ -192,6 +204,7 @@ Solutions at query time:
 - `SELECT ... FINAL` — deduplicates synchronously (expensive)
 - `argMax(col, version)` + `GROUP BY` — picks latest version (preferred)
 Tags: clickhouse mergetree deduplication
+<!--ID: 1780311508862-->
 END
 
 START
@@ -209,6 +222,7 @@ CH reads all parts, holds all versions in memory, picks the winner per `ORDER BY
 **Cost**: 21–550% query slowdown (avg ~280%), 20–200× higher memory usage.
 Cost scales with **number of unmerged parts** — worst on tables with active inserts.
 Tags: clickhouse mergetree deduplication performance
+<!--ID: 1780311508885-->
 END
 
 START
@@ -227,6 +241,7 @@ SELECT id, argMax(email, version) FROM users GROUP BY id;
 
 Never use FINAL on tables receiving continuous inserts.
 Tags: clickhouse mergetree deduplication performance
+<!--ID: 1780311508908-->
 END
 
 START
@@ -247,6 +262,7 @@ GROUP BY id;
 - Must pair with `GROUP BY` on the unique key
 - If multiple rows tie on `val`, result is **non-deterministic** — use a strictly increasing version
 Tags: clickhouse sql aggregate-functions
+<!--ID: 1780311508930-->
 END
 
 START
@@ -267,4 +283,5 @@ Back:
 - Drops partition directory instantly
 → **Near-zero cost** — best for bulk time-based deletes
 Tags: clickhouse mergetree delete mutations
+<!--ID: 1780311508953-->
 END

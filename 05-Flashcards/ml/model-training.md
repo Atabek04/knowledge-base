@@ -95,6 +95,39 @@ END
 
 START
 Coding Questions
+What is a word embedding and how does it encode meaning?
+Back: An **embedding** maps each token to a high-dimensional vector (hundreds–thousands of numbers) that encodes meaning.
+- Not hand-crafted — learned automatically during training via backpropagation
+- Words appearing in similar contexts → similar vectors
+- Famous example: `king - man + woman ≈ queen`
+- Context changes the vector: `"bank"` near `"river"` ≠ `"bank"` near `"money"` — attention refines it per layer
+Tags: ml nlp embeddings
+END
+
+START
+Coding Questions
+What problem did attention solve and how does it work?
+Back: **Attention** lets each token directly reference any other token regardless of distance — solving RNN's vanishing memory problem.
+- RNNs: sequential, hidden state fades → long-range dependencies lost
+- Attention: every token assigns relevance scores to all other tokens simultaneously
+- High-score tokens contribute more to updating the current token's embedding
+- Example: `"it"` in "The animal was tired" → high score to `"animal"`, low to `"street"`
+Tags: ml nlp attention transformer
+END
+
+START
+Coding Questions
+What did the "Attention Is All You Need" paper change?
+Back: Introduced the **Transformer** — replaced RNNs entirely with pure attention.
+- RNN: sequential (one token at a time), slow, bad long-range memory
+- Transformer: parallel (all tokens at once), fast on GPU, direct access to all tokens
+- Each layer = self-attention + feed-forward network, stacked N times
+- All major LLMs (GPT, Claude, Gemini, Llama) are Transformers
+Tags: ml nlp transformer
+END
+
+START
+Coding Questions
 What is a token and why not use whole words?
 Back: A **token** is a subword unit — the smallest piece of text an LLM processes.
 - Whole words → millions of unrelated tokens, unknown words break the model

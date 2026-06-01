@@ -14,6 +14,7 @@ Back: An **additional working directory** linked to the same repository.
 - All worktrees share the same `.git` object database and refs
 - Each worktree has its own index, HEAD, and working files
 Tags: git worktree
+<!--ID: 1780311507889-->
 END
 
 START
@@ -27,6 +28,7 @@ Back: The cost of **branch switching**:
 
 Worktree removes the switch entirely — each branch lives in its own folder with its own processes and caches. You `cd` instead of `checkout`.
 Tags: git worktree
+<!--ID: 1780311507909-->
 END
 
 START
@@ -38,6 +40,7 @@ Back: One shared `.git`, many working trees.
 - Objects and refs are shared → commits/fetches visible everywhere instantly
 - A branch can be checked out in **only one** worktree at a time
 Tags: git worktree internals
+<!--ID: 1780311507930-->
 END
 
 START
@@ -54,6 +57,7 @@ Back: Agents edit files **directly on disk**. Running multiple agents in one wor
 - Still one source of truth for history (shared `.git`)
 - Beats cloning the repo N times (wastes disk, fetches don't propagate)
 Tags: git worktree agentic-coding ai
+<!--ID: 1780311507951-->
 END
 
 START
@@ -70,4 +74,5 @@ git worktree prune                        # remove stale metadata
 - Cannot check out the same branch in two worktrees
 - Cheap to create — no re-clone, no object copy
 Tags: git worktree commands
+<!--ID: 1780311507971-->
 END

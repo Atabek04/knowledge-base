@@ -14,6 +14,7 @@ Back: **Progressively elaborating** requirements from broad business goals to gr
 - **FRS** → WHAT exactly (field-level behavior)
 Each level adds precision while staying traceable to the level above.
 Tags: software-engineering requirements
+<!--ID: 1780311502244-->
 END
 
 START
@@ -24,6 +25,7 @@ Back: A chain linking every level of requirements:
 - Every low-level requirement traces **back** to a business goal
 - Every requirement traces **forward** to a test case that validates it
 Tags: software-engineering requirements
+<!--ID: 1780311502265-->
 END
 
 START
@@ -37,6 +39,7 @@ Back: The **business case** — no technical detail:
 - **Success criteria** — measurable outcomes
 The BRD answers **"WHY are we building this?"**
 Tags: software-engineering requirements
+<!--ID: 1780311502285-->
 END
 
 START
@@ -47,6 +50,7 @@ Back: Because you must establish **business justification** before any technical
 - The BRD gets **signed off by the client** — it's the contractual agreement on project scope
 - Without a BRD, technical work has no grounding in business value
 Tags: software-engineering requirements
+<!--ID: 1780311502306-->
 END
 
 START
@@ -57,6 +61,7 @@ Back: Because you must understand the **business process** before designing the 
 - **UML** is system-facing and object-oriented — shows how software components interact
 - Jumping to UML before BPMN means designing a system for a process you don't fully understand
 Tags: software-engineering requirements
+<!--ID: 1780311502327-->
 END
 
 START
@@ -67,6 +72,7 @@ Back:
 - **UML** (detailed) = **specification tool** — formalizes requirements that are already understood and documented.
 - Exception: UML **Use Case Diagrams** appear early alongside TO-BE BPMN (high-level enough to be an elicitation tool).
 Tags: software-engineering requirements
+<!--ID: 1780311502348-->
 END
 
 START
@@ -77,6 +83,7 @@ Back: **Mapping current-state workflows** with BPMN to identify bottlenecks and 
 - You might miss edge cases users handle manually
 - Happens in **Phase 2** — right after BRD signoff
 Tags: software-engineering requirements
+<!--ID: 1780311502369-->
 END
 
 START
@@ -87,6 +94,7 @@ Back:
 2. **UML Use Case Diagram** — the first UML artifact, showing actors, system boundaries, and major interactions
 - Together they answer: "How should work flow?" (BPMN) and "What does the system do within that flow?" (Use Cases)
 Tags: software-engineering requirements
+<!--ID: 1780311502390-->
 END
 
 START
@@ -97,6 +105,7 @@ Back:
 - **Use cases** — functions users can access within the system
 - **System boundary** — what's inside vs outside the system scope
 Tags: software-engineering requirements
+<!--ID: 1780311502410-->
 END
 
 START
@@ -108,6 +117,7 @@ Back: **As a [role], I want [action], so that [benefit]** + acceptance criteria.
 - **Benefit** → WHY they need it (business motivation)
 - **Acceptance criteria** → DONE WHEN conditions (testable outcomes)
 Tags: software-engineering requirements
+<!--ID: 1780311502431-->
 END
 
 START
@@ -119,6 +129,7 @@ Back:
 - User stories are **not a replacement** for the BRD or SRS — they live at a different abstraction level
 - Depending on the project, you may need both together
 Tags: software-engineering requirements
+<!--ID: 1780311502457-->
 END
 
 START
@@ -132,6 +143,7 @@ Back: The **bridge** between business and development:
 - **High-level architecture** — overall system structure
 The SRS answers **"HOW"** — it describes the structure and stages of implementation.
 Tags: software-engineering requirements
+<!--ID: 1780311502480-->
 END
 
 START
@@ -145,6 +157,7 @@ Back:
 | **FRS** | WHAT exactly? | Field-level behavior | Developers |
 The SRS sits in the middle — technical enough for developers, readable enough for stakeholders.
 Tags: software-engineering requirements
+<!--ID: 1780311502501-->
 END
 
 START
@@ -155,6 +168,7 @@ Back: Because UML **specification diagrams** formalize requirements that must al
 - Each UML model elaborates a specific written requirement from the SRS
 - You don't model in a vacuum — every model must be grounded in a requirement
 Tags: software-engineering requirements
+<!--ID: 1780311502522-->
 END
 
 START
@@ -166,6 +180,7 @@ Back:
 - **Class Diagrams / ERDs** — data model, entity relationships
 - **State Machine Diagrams** — lifecycle of key objects (e.g., Order: created → paid → shipped)
 Tags: software-engineering requirements
+<!--ID: 1780311502542-->
 END
 
 START
@@ -178,6 +193,7 @@ Back: The most **granular** document — developer's working specification:
 - **Error messages** — exact wording for every error state
 - **References to UML** — links directly to sequence/activity diagrams
 Tags: software-engineering requirements
+<!--ID: 1780311502563-->
 END
 
 START
@@ -188,6 +204,7 @@ Prevents two problems:
 - **Gold plating** — features built that trace to no business goal (wasted effort)
 - **Coverage gaps** — requirements with no test case (untested behavior)
 Tags: software-engineering requirements
+<!--ID: 1780311502584-->
 END
 
 START
@@ -198,6 +215,7 @@ Back: **BRD → BPMN (AS-IS) → BPMN (TO-BE) + Use Cases → User Stories → S
 - Each phase produces an artifact that feeds the next
 - BABOK treats knowledge areas as concurrent — analysis happens during elicitation
 Tags: software-engineering requirements
+<!--ID: 1780311502604-->
 END
 
 START
@@ -209,4 +227,5 @@ Back: Because documents and models **co-evolve** — each validates the other:
 - The BABOK treats requirements activities as concurrent, not waterfall
 - Practitioner consensus: keep docs lean, use models for clarity, iterate frequently
 Tags: software-engineering requirements
+<!--ID: 1780311502625-->
 END

@@ -21,6 +21,7 @@ Back: A branching model (Vincent Driessen, 2010) with **two permanent branches**
 
 Fits **versioned software** (mobile, desktop, libraries). Bad fit for continuous delivery.
 Tags: gitflow
+<!--ID: 1780311508247-->
 END
 
 START
@@ -40,6 +41,7 @@ Back: One long-lived branch — `main` ("trunk"). All developers integrate conti
 
 Standard at Google, Facebook, Netflix.
 Tags: trunk-based tbd
+<!--ID: 1780311508268-->
 END
 
 START
@@ -61,6 +63,7 @@ Anti-patterns:
 - Gitflow on daily-deploy service → release branches become bottleneck
 - TBD without feature flags → half-built features ship to prod
 Tags: branching-strategy decision
+<!--ID: 1780311508289-->
 END
 
 START
@@ -73,6 +76,7 @@ Back: Divergence cost grows with branch lifetime.
 - Risk of "merge hell" — multi-day untangling
 - Feature flags + short branches (< 2 days) avoid this entirely → why TBD works
 Tags: branching divergence
+<!--ID: 1780311508310-->
 END
 
 START
@@ -88,6 +92,7 @@ Back: Build once from trunk commit → versioned artifact (Docker image, JAR, bi
 
 Standard model at Google, Facebook, Netflix, Spotify.
 Tags: artifact-promotion deployment
+<!--ID: 1780311508331-->
 END
 
 START
@@ -102,6 +107,7 @@ Back: Trunk-based development extended with **environment branches**: `dev → t
 
 Trade-off vs artifact promotion: git-visible deploy history, but adds merge overhead and MR duplication.
 Tags: gitlab-flow environment-branches
+<!--ID: 1780311508353-->
 END
 
 START
@@ -120,6 +126,7 @@ dev: ──●──●──[tag: test-1.4.0]──●──[tag: release-1.4.0
 - Rollback = deploy previous tag.
 - Works naturally with immutable artifact promotion.
 Tags: tag-driven deployment
+<!--ID: 1780311508374-->
 END
 
 START
@@ -133,4 +140,5 @@ Back: **GitHub Flow** is essentially trunk-based with PR gating.
 
 Pure trunk-based **direct commit** skips PR review (small teams only). GitHub Flow adds the PR gate while keeping all other TBD properties. Most "trunk-based" teams in practice run GitHub Flow.
 Tags: github-flow trunk-based
+<!--ID: 1780311508394-->
 END

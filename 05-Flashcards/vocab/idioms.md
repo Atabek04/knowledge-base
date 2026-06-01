@@ -18,4 +18,5 @@ English: plot twist
 Russian: неожиданный поворот (сюжета)
 Example: He said he hated cats. **Plot twist** — he now has three.
 Tags: idiom informal
+<!--ID: 1780311501799-->
 END

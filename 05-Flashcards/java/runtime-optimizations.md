@@ -18,6 +18,7 @@ int result = add(5, 3); // → calls add(), creates stack frame
 int result = 5 + 3; // → method disappears, code inserted inline
 ```
 Tags: java jvm optimization
+<!--ID: 1780311507041-->
 END
 
 START
@@ -30,6 +31,7 @@ Back: Eliminates **method call overhead**:
 
 Result: fewer CPU instructions, faster execution — especially for small, frequently called methods.
 Tags: java jvm optimization
+<!--ID: 1780311507062-->
 END
 
 START
@@ -45,6 +47,7 @@ if (false) {
 
 Also removes unreachable code after a `return` statement.
 Tags: java jvm optimization
+<!--ID: 1780311507082-->
 END
 
 START
@@ -55,4 +58,5 @@ Back: Produces **smaller, faster compiled code**:
 - Fewer CPU instructions to execute
 - Cleaner native output after JIT compilation
 Tags: java jvm optimization
+<!--ID: 1780311507102-->
 END

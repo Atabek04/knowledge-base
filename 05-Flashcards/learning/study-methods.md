@@ -12,6 +12,7 @@ Back: **PQRST** is a 5-stage active reading method by Francis P. Robinson — an
 - Prevents passive reading by making you seek answers rather than absorb words
 - Stages: **Preview → Question → Read → State → Test**
 Tags: learning study-methods
+<!--ID: 1780311506730-->
 END
 
 START
@@ -21,6 +22,7 @@ Back: **Previewing** the material before reading a single word — skim headings
 - Goal: build a **mental map** of the content, not comprehension
 - You are not reading word by word — just getting the overall structure
 Tags: learning study-methods
+<!--ID: 1780311506750-->
 END
 
 START
@@ -31,6 +33,7 @@ Back: **Questioning** converts each heading into a question before reading that 
 - Sets up **active search mode** — you read to find answers, not just absorb text
 - Questions stimulate curiosity and focus attention on key details
 Tags: learning study-methods
+<!--ID: 1780311506771-->
 END
 
 START
@@ -40,6 +43,7 @@ Back: **Reading** the section thoroughly to find answers to the questions you cr
 - Don't rush — understand before moving on
 - Brain is in **search mode**: looking for specific answers, not scanning
 Tags: learning study-methods
+<!--ID: 1780311506791-->
 END
 
 START
@@ -50,6 +54,7 @@ Back: **Stating** — after finishing a section, explain what you just learned i
 - If you can't explain it, you haven't learned it yet
 - Reinforces understanding by forcing paraphrase, not repetition
 Tags: learning study-methods
+<!--ID: 1780311506811-->
 END
 
 START
@@ -59,6 +64,7 @@ Back: **Testing** comprehension at the end of the session by answering all the q
 - Struggle signals which areas need extra review
 - Forces **active recall**, not passive re-reading
 Tags: learning study-methods
+<!--ID: 1780311506833-->
 END
 
 START
@@ -69,6 +75,7 @@ Back: Converting headings into questions shifts reading from **passive absorptio
 - Questions stimulate curiosity → increased focus → better retention
 - Without questions, reading can feel productive but leave no trace in memory
 Tags: learning study-methods
+<!--ID: 1780311506853-->
 END
 
 START
@@ -79,6 +86,7 @@ Back: **3-Pass Rule** structures coding practice into three stages:
 - **Pass 2 — Study**: read the solution, understand *why* it works (invariant, data structure choice, complexity) — don't memorize steps
 - **Pass 3 — Reproduce**: days later, solve from scratch with no help — if stuck, revisit Pass 2
 Tags: learning dsa practice
+<!--ID: 1780311506874-->
 END
 
 START
@@ -88,6 +96,7 @@ Back: Pass 1 creates **cognitive struggle** — the brain encodes harder under r
 - Skipping Pass 1 turns practice into reading, not problem-solving
 - The struggle itself is the learning mechanism, not the solution
 Tags: learning dsa practice
+<!--ID: 1780311506894-->
 END
 
 START
@@ -97,6 +106,7 @@ Back: Pass 3 **reproduces** the solution from scratch with no help — days afte
 - Uses **spaced repetition**: returning after a delay forces retrieval from long-term memory, not short-term recall
 - If stuck, the concept didn't consolidate — signals a gap, not a failure
 Tags: learning dsa practice
+<!--ID: 1780311506914-->
 END
 
 START
@@ -107,6 +117,7 @@ Back: **Recognizing** recurring algorithmic patterns instead of memorizing indiv
 - Learning patterns builds a mental toolkit that transfers to unseen problems
 - Goal: identify the pattern from the problem statement, not after reading the solution
 Tags: learning dsa practice
+<!--ID: 1780311506935-->
 END
 
 START
@@ -121,6 +132,7 @@ Back:
 - **Dynamic programming** — overlapping subproblems with optimal substructure
 - **Backtracking** — explore decision trees with pruning
 Tags: learning dsa practice
+<!--ID: 1780311506958-->
 END
 
 START
@@ -130,6 +142,7 @@ Back: Group problems by **pattern**, not by difficulty or topic label.
 - Solve **3–5 problems per pattern** before moving to the next
 - After each problem, ask: *which pattern did this use, and why?*
 Tags: learning dsa practice
+<!--ID: 1780311506978-->
 END
 
 START
@@ -140,6 +153,7 @@ Back: **Switching** resets momentum and creates shallow coverage of everything.
 - A single resource builds a **connected mental model** — concepts refer back to each other
 - Switching mid-course breaks those connections before they solidify
 Tags: learning dsa practice
+<!--ID: 1780311506998-->
 END
 
 START
@@ -149,4 +163,5 @@ Back: Only when the current resource has a **fundamental flaw** — wrong explan
 - Not justified: another resource looks more appealing or clearer on one point
 - Depth within one resource beats breadth across many
 Tags: learning dsa practice
+<!--ID: 1780311507018-->
 END
