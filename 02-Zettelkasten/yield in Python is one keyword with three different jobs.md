@@ -1,6 +1,6 @@
 ---
 created: 2026-05-04
-aliases: [yield, generator, yield keyword]
+aliases: [yield, yield keyword]
 tags:
   - python/core
   - python/async
@@ -12,19 +12,7 @@ tags:
 
 ### Job 1 — Generator (lazy sequence)
 
-Produces values one at a time without loading everything into memory.
-
-```python
-def count_up():
-    yield 1
-    yield 2
-    yield 3
-
-for n in count_up():
-    print(n)   # 1, 2, 3
-```
-
-Function pauses at each `yield`, returns the value, resumes on next iteration. Java equivalent: `Iterator<T>` — but `yield` is far less painful.
+Produces values one at a time without loading everything into memory. See [[Python generator produces values one at a time on demand|generator]] for the full picture.
 
 ---
 
@@ -69,6 +57,8 @@ One token arrives from LLM → `yield` pushes it to the user. Browser renders it
 ---
 
 Related:
+- [[Python generator produces values one at a time on demand]]
+- [[Call stack is a LIFO structure that tracks active method frames]]
 - [[asynccontextmanager splits startup and shutdown logic at the yield]]
 - [[await suspends a coroutine and returns control to the event loop until IO completes]]
 - [[Python MOC]]

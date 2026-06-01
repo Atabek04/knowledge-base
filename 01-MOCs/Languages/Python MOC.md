@@ -15,6 +15,12 @@
   - [[plt.show renders and displays the chart on screen|plt.show]] — render the chart on screen
 - [[Scikit-learn provides ready-to-use ML algorithms and preprocessing tools|Scikit-learn]]
 
+## Memory Model
+
+- [[Python has no primitives because every value is a heap-allocated object]]
+- [[Python variables are name bindings to heap objects not value containers]]
+- [[CPython manages memory through reference counting with immediate deallocation]]
+
 ## Core Concepts
 
 - [[A Python module is a single file and a package is a folder of modules]]
@@ -45,6 +51,12 @@
 
 - [[List comprehension is Python's inline filter-map equivalent to Stream API]]
 - [[yield in Python is one keyword with three different jobs]]
+- [[Python generator produces values one at a time on demand]]
+- [[Call stack is a LIFO structure that tracks active method frames]]
+- [[A generator object is a suspended stack frame that resumes at yield]]
+- [[Python for loop works with any iterable not just lists]]
+- [[A list holds all values in RAM even when you only process one at a time]]
+- [[Python range computes values on demand without storing them]]
 
 ## Standard Library
 
