@@ -284,6 +284,9 @@ Processing and understanding human language.
 - [[Tokenization splits text into subword units to balance vocabulary size and meaning]]
 - [[BPE builds a tokenizer vocabulary by iteratively merging the most frequent character pairs]]
 - [[Each model trains its own tokenizer on its training corpus producing different token splits]]
+- [[Word embeddings map tokens to high-dimensional vectors that encode meaning through context]]
+- [[Attention allows each token to directly reference any other token regardless of distance]]
+- [[Transformers replaced RNNs by processing all tokens in parallel using attention]]
 
 #### Transformers & LLMs — Stanford CME 295 (Autumn 2025)
 
