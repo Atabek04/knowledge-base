@@ -65,6 +65,7 @@
 - [ ] Request/Response DTOs
 - [ ] Content negotiation
 - [ ] CORS configuration
+- [[Spring SseEmitter and Flux ServerSentEvent hold response open like FastAPI StreamingResponse]] — SSE streaming: imperative (SseEmitter) vs reactive (Flux)
 
 ### Spring Validation
 - [ ] Bean Validation (JSR-380)

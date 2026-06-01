@@ -103,6 +103,7 @@ The name is the identity. Vague labels force the reader to guess which thing you
 - Create monolithic topic notes (split into atomic)
 - Copy-paste without rewriting in own words
 - Leave notes without links (orphans)
+- Add application-specific context to a general note — e.g. don't add "why this matters for SSE" inside a TCP note. The general note owns only its own mechanic. The connecting note (SSE, LLM streaming, etc.) is responsible for explaining why it links to the general concept — that context lives there, not in the thing being linked to. A note must be fully meaningful without knowing who links to it.
 
 **ALWAYS:**
 - Rewrite concepts in own words
@@ -111,7 +112,13 @@ The name is the identity. Vague labels force the reader to guess which thing you
 - Use `###` and `####` headings to organize sections (avoid `#` and `##` — too large)
 - Use horizontal lines `---` to separate major content blocks
 - Start notes directly with the topic content — no `Parent: [[MOC]]` header at the top
-- Place MOC links and related links in the "Read more" section at the bottom
+- **Never repeat the filename as a `#` heading inside the note** — Obsidian uses the filename as the displayed title; a matching H1 is pure duplication
+- Place MOC links and related links in the "Read more" section at the bottom, using `### Read more` (not `##`)
+- Open every note with a brief intro that gives context — the reader has no prior knowledge from the conversation. Don't start mid-thought or with a definition that assumes context.
+- Keep code examples consistent in scale — if the problem shows 1B numbers, the fix must also use 1B, not 3
+- After every new atomic note: add it to the MOC and link it to strongly connected notes
+- Add highlights (`<mark>`) to key terms, critical warnings, and core definitions before considering a note "done" — a note with no highlights is incomplete
+- Remove empty sr-due / sr-interval / sr-ease frontmatter fields — leave them out entirely if not yet scheduled
 
 ### Note Linking
 
@@ -121,7 +128,7 @@ Use aliases to keep it smooth: `[[Long atomic title|short alias]]`.
 **"Read more" section** — add at the bottom of every note with bullet-pointed links.
 - Notes linked inline should be repeated here
 - Notes with strong connections that didn't fit inline also go here
-- Format: `Read more:` heading followed by bullet list
+- Format: `### Read more` heading followed by bullet list (never `##`)
 - **Always use full note titles** — no aliases. Aliases are only for inline links where readability matters
 
 **When to link:**
