@@ -1,12 +1,7 @@
 ---
 created: 2026-04-28
 tags: [networking/sse, ai-agents]
-sr-due:
-sr-interval:
-sr-ease:
 ---
-
-# AI agents use SSE to stream LLM tokens to browser as they are generated
 
 LLMs generate output token by token. Waiting for the full response before sending creates poor UX — users stare at a blank screen for seconds.
 
@@ -67,7 +62,7 @@ data: \n\n
 
 SSE lets the UI show live progress — which tool is running, what it returned — instead of a spinner until everything finishes.
 
-## Read more
+### Read more
 - [[SSE is unidirectional server-to-client unlike WebSocket bidirectional channel]]
 - [[SSE event field lets server label events so client routes them separately]]
 - [[SSE keeps HTTP response body open to push text chunks continuously]]

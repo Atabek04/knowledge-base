@@ -1,14 +1,10 @@
 ---
 created: 2026-04-28
-tags: [networking/sse]
-sr-due:
-sr-interval:
-sr-ease:
+tags:
+  - networking/sse
 ---
 
-# SSE keeps HTTP response body open to push text chunks continuously
-
-Server writes headers, then keeps yielding chunks without ever closing the body. Each flush reaches the client immediately as an event.
+In a normal HTTP response the server sends a full body and closes the connection. SSE breaks that contract: the server writes headers, then keeps [[Python generator produces values one at a time on demand|yielding]] chunks without ever closing the body. Each [[Python generator produces values one at a time on demand#What "yielding" means|flush]] reaches the client immediately as an event.
 
 **Normal HTTP flow:**
 1. Client: `GET /data`
@@ -17,16 +13,6 @@ Server writes headers, then keeps yielding chunks without ever closing the body.
 **SSE flow:**
 1. Client: `GET /stream`
 2. Server: headers → chunk → chunk → chunk → (never closes until done)
-
----
-
-### Required response headers
-
-```
-Content-Type: text/event-stream
-Cache-Control: no-cache
-Connection: keep-alive
-```
 
 ---
 
@@ -42,8 +28,12 @@ async def stream():
 
 Each `yield` flushes immediately to the client.
 
-## Read more
-- [[SSE uses text/event-stream content type to signal streaming response]]
-- [[SSE event has four optional fields: data, event, id, retry]]
+### Read more
+- [[Python generator produces values one at a time on demand#What "yielding" means|What "yielding" and "flushing" mean]]
+- [[SSE uses event-stream content type to signal streaming response]]
+- [[SSE event has four optional fields - data, event, id, retry]]
 - [[SSE streams server events to client over a single persistent HTTP connection]]
+- [[FastAPI StreamingResponse wraps an async generator to flush each yield as an SSE chunk]]
+- [[HTTP response flushing sends buffered bytes immediately instead of waiting to accumulate]]
+- [[Nginx buffers proxied responses by default and X-Accel-Buffering disables this for SSE]]
 - [[SSE MOC]]

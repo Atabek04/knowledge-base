@@ -2,12 +2,7 @@
 created: 2026-04-28
 tags: [networking/sse]
 aliases: [EventSource]
-sr-due:
-sr-interval:
-sr-ease:
 ---
-
-# Browser EventSource API opens SSE connection and receives events
 
 `EventSource` is the browser's built-in SSE client. One line to connect:
 
@@ -39,7 +34,7 @@ es.close(); // stops reconnection too
 
 Without `close()`, the browser reconnects automatically on any disconnect.
 
-## Read more
+### Read more
 - [[SSE event field lets server label events so client routes them separately]]
 - [[Browser auto-reconnects SSE after disconnect using Last-Event-ID header]]
 - [[SSE reuses HTTP so it works through proxies and needs no protocol upgrade]]

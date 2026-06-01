@@ -1,12 +1,7 @@
 ---
 created: 2026-04-28
 tags: [networking/sse]
-sr-due:
-sr-interval:
-sr-ease:
 ---
-
-# Browser auto-reconnects SSE after disconnect using Last-Event-ID header
 
 When an SSE connection drops, the browser automatically reopens it after a delay (default 3 s).
 
@@ -21,7 +16,7 @@ This is built into the `EventSource` spec — no manual reconnect logic needed o
 
 WebSocket has no equivalent: reconnection must be coded manually.
 
-## Read more
+### Read more
 - [[SSE id field marks event position so client can resume after reconnect]]
 - [[SSE retry field lets server control reconnection delay in milliseconds]]
 - [[SSE is unidirectional server-to-client unlike WebSocket bidirectional channel]]

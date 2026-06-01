@@ -1,12 +1,7 @@
 ---
 created: 2026-04-28
 tags: [networking/sse]
-sr-due:
-sr-interval:
-sr-ease:
 ---
-
-# SSE id field marks event position so client can resume after reconnect
 
 The browser stores the last received `id` internally. On reconnect it sends it back:
 
@@ -29,7 +24,7 @@ data: second event\n\n
 
 IDs are arbitrary strings — sequential integers are conventional but not required.
 
-## Read more
+### Read more
 - [[Browser auto-reconnects SSE after disconnect using Last-Event-ID header]]
-- [[SSE event has four optional fields: data, event, id, retry]]
+- [[SSE event has four optional fields - data, event, id, retry]]
 - [[SSE MOC]]
