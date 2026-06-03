@@ -3,39 +3,37 @@ created: 2025-12-08
 tags: [moc]
 ---
 
-# Networking MOC
-
 Concepts for understanding network communication patterns, protocols, and real-time data exchange. Covers communication fundamentals, TCP protocol details, HTTP protocol features, and WebSocket for bidirectional communication.
 
 ## Communication Patterns
 
-- [[Request-response communication requires new requests for each data exchange]] — traditional client-server model with independent interactions
-- [[Persistent connections enable continuous bidirectional data flow]] — always-open connections for real-time communication
-- [[HTTP request-response model prevents server-initiated data push]] — why HTTP can't efficiently push updates
-- [[Polling repeatedly requests updates to simulate real-time communication]] — inefficient pattern for real-time scenarios
+- [[Request-response communication requires new requests for each data exchange|Request-response needs a new request per exchange]]
+- [[Persistent connections enable continuous bidirectional data flow|Persistent connections enable continuous bidirectional flow]]
+- [[HTTP request-response model prevents server-initiated data push|HTTP can't push server-initiated data]]
+- [[Polling repeatedly requests updates to simulate real-time communication|Polling simulates real-time by repeated requests]]
 
 ## OSI Model Layers
 
 ### Layer 1: Physical
-- [[Physical Layer encodes bits as electrical optical or radio signals]] — copper, fiber, wireless encoding
+- [[Physical Layer encodes bits as electrical optical or radio signals|L1 Physical: bits as electrical/optical/radio signals]]
 
 ### Layer 2: Data Link
-- [[Data Link Layer encapsulates packets into frames with MAC headers]] — frame structure and encapsulation
-- [[MAC address is a permanent 48-bit identifier burned into network hardware]] — hardware addressing
-- [[Frame Check Sequence detects corrupted frames using checksum comparison]] — error detection in frames
+- [[Data Link Layer encapsulates packets into frames with MAC headers|L2 Data Link: packets into frames with MAC headers]]
+- [[MAC address is a permanent 48-bit identifier burned into network hardware|MAC address: permanent 48-bit hardware ID]]
+- [[Frame Check Sequence detects corrupted frames using checksum comparison|Frame Check Sequence detects corruption via checksum]]
 
 ### Layer 3: Network
-- [[Network Layer wraps segments into packets by adding IP addresses]] — packet creation and IP addressing
-- [[IP addresses flow hierarchically from IANA through RIRs and ISPs]] — IP allocation hierarchy
-- [[Routers have private IP for LAN and public IP for internet]] — NAT and address types
+- [[Network Layer wraps segments into packets by adding IP addresses|L3 Network: segments into packets with IP addresses]]
+- [[IP addresses flow hierarchically from IANA through RIRs and ISPs|IP allocation flows IANA → RIRs → ISPs]]
+- [[Routers have private IP for LAN and public IP for internet|Routers: private LAN IP, public internet IP (NAT)]]
 
 ### Layer 4: Transport
-- [[Transport Layer breaks data into segments with TCP headers]] — segmentation and TCP headers
-- [[TCP provides reliable ordered error-checked data delivery over networks]] — TCP fundamentals
+- [[Transport Layer breaks data into segments with TCP headers|L4 Transport: data into segments with TCP headers]]
+- [[TCP provides reliable ordered error-checked data delivery over networks|TCP: reliable, ordered, error-checked delivery]]
 
 ## Protocol Foundations
 
-- [[HTTP and WebSocket both run over TCP using three-way handshake]] — shared TCP foundation for different protocols
+- [[HTTP and WebSocket both run over TCP using three-way handshake|HTTP and WebSocket both run over TCP]]
 
 ## TCP Protocol Deep Dive
 
@@ -43,7 +41,7 @@ Concepts for understanding network communication patterns, protocols, and real-t
 
 ## HTTP Protocol
 
-- [[HTTP Keep-Alive reuses TCP connections across multiple requests]] — connection reuse in HTTP/1.1
+- [[HTTP Keep-Alive reuses TCP connections across multiple requests|HTTP Keep-Alive reuses TCP across requests]]
 
 ## WebSocket Protocol
 
@@ -51,12 +49,12 @@ Concepts for understanding network communication patterns, protocols, and real-t
 
 ## Network Devices
 
-- [[Switches forward frames within a LAN by reading MAC addresses]] — Layer 2 forwarding
-- [[Home router combines router switch and wireless access point]] — ISP combo devices
+- [[Switches forward frames within a LAN by reading MAC addresses|Switches forward frames by MAC within a LAN]]
+- [[Home router combines router switch and wireless access point|Home router = router + switch + access point]]
 
 ## Connection Management
 
-- [[Connection pooling reuses connections at application level to reduce overhead]] — application-level connection reuse patterns
+- [[Connection pooling reuses connections at application level to reduce overhead|Connection pooling reuses connections to cut overhead]]
 
 ## Practice
 

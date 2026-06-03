@@ -1,6 +1,3 @@
-# API Design — MOC
-
-> Part of [[00 - IT Career - MOC]]
 > Design robust, well-documented APIs
 
 ---
@@ -20,28 +17,29 @@
 
 ### REST Fundamentals
 - [ ] REST constraints (stateless, cacheable, uniform interface)
+- [ ] Richardson Maturity Model
 - [ ] Resource naming conventions
 - [ ] HTTP methods semantics (GET, POST, PUT, PATCH, DELETE)
 - [ ] Status codes (2xx, 3xx, 4xx, 5xx)
-- [[Idempotency key prevents duplicate processing when clients retry failed requests]] — client-generated key, server caches result
+- [[Idempotency key prevents duplicate processing when clients retry failed requests|Idempotency key dedupes client retries]]
 - [ ] HATEOAS
-- [[Content-Type header tells receiver how to parse the HTTP body]] — what it is and how it works
-- [[Content-Type common values grouped by purpose]] — reference table by category
+- [[Content-Type header tells receiver how to parse the HTTP body|Content-Type tells the receiver how to parse the body]]
+- [[Content-Type common values grouped by purpose|Content-Type common values by purpose]]
 
 ### API Design Best Practices
 - [ ] Resource-oriented design
 - [ ] Consistent naming (plural nouns, kebab-case)
 - [ ] Filtering, sorting, pagination
-  - [[Offset pagination slows at deep pages because the database scans and discards skipped rows]]
-  - [[Keyset pagination filters by the last seen key for stable performance at any depth]]
-  - [[Cursor pagination hides the paging position inside an opaque token]]
+- [[Offset pagination slows at deep pages because the database scans and discards skipped rows|Offset pagination slows at deep pages]]
+- [[Keyset pagination filters by the last seen key for stable performance at any depth|Keyset pagination: stable performance at any depth]]
+- [[Cursor pagination hides the paging position inside an opaque token|Cursor pagination hides position in an opaque token]]
 - [ ] Partial responses (field selection)
-  - [[Sparse fieldsets let clients request only needed fields reducing payload size]] — ?fields= query param
-  - [[PATCH with JsonMergePatch updates only the fields present in the request leaving others unchanged]] — RFC 7396, partial updates
+- [[Sparse fieldsets let clients request only needed fields reducing payload size|Sparse fieldsets (?fields=) cut payload size]]
+- [[PATCH with JsonMergePatch updates only the fields present in the request leaving others unchanged|PATCH JsonMergePatch updates only sent fields (RFC 7396)]]
 - [ ] Bulk operations
 - [ ] Rate limiting headers
 - [ ] API versioning strategies (URL, header, query param)
-- [[ETag header enables optimistic concurrency by rejecting updates based on stale resource versions]] — If-Match / 412
+- [[ETag header enables optimistic concurrency by rejecting updates based on stale resource versions|ETag enables optimistic concurrency (If-Match / 412)]]
 
 ### Error Handling
 - [ ] Standard error response format
@@ -61,10 +59,9 @@
 - [ ] API keys
 - [ ] OAuth2 flows
 - [ ] JWT tokens
-- [x] CORS
-  - [[CORS relaxes Same-Origin Policy to allow controlled cross-origin browser requests]] — what & why
-  - [[CORS preflight uses OPTIONS request to authorize non-simple cross-origin calls]] — preflight mechanics
-  - [[Browser sends Origin header on cross-origin requests and on non-simple same-origin requests]] — when Origin is/isn't sent
+- [[CORS relaxes Same-Origin Policy to allow controlled cross-origin browser requests|CORS relaxes Same-Origin Policy for cross-origin requests]]
+- [[CORS preflight uses OPTIONS request to authorize non-simple cross-origin calls|CORS preflight: OPTIONS authorizes non-simple calls]]
+- [[Browser sends Origin header on cross-origin requests and on non-simple same-origin requests|Browser sends Origin on cross-origin (and non-simple) requests]]
 - [ ] Rate limiting
 - [ ] Input validation
 
@@ -74,6 +71,8 @@
 - [ ] Unary vs streaming
 - [ ] gRPC vs REST tradeoffs
 - [ ] grpc-java and grpc-spring-boot-starter
+- [ ] Deadlines, retries, and interceptors
+- [ ] Health checks and reflection
 
 ### GraphQL
 - [ ] Schema definition
@@ -82,6 +81,10 @@
 - [ ] GraphQL vs REST
 - [ ] When to use GraphQL
 - [ ] graphql-java
+- [ ] Schema-first vs code-first
+- [ ] Subscriptions
+- [ ] DataLoader — N+1 problem in GraphQL
+- [ ] Spring for GraphQL
 
 ---
 
@@ -111,3 +114,4 @@
 ## Related
 - [[Spring Ecosystem - MOC]]
 - [[Distributed Systems - MOC]]
+- [[Security - MOC]]

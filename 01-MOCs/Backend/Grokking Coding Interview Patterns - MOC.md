@@ -1,7 +1,11 @@
-# Grokking Coding Interview Patterns
+Map of the 19 coding patterns from the Grokking course. Each pattern has two altitudes:
 
-**Path:** `/Users/salahaddin/Documents/Courses/Grokking-Coding-Interview-Patterns`
-**Progress:** 0 / 19 modules
+1. **Pattern note** — the concept (trigger, mechanic, template). Linked as a plain bullet once learned.
+2. **Problems** — practice checklist. `- [ ]` = not yet solved; replace with a `[[solve-log]]` bullet once done (logs live in `06-Planning/Trackers/LeetCode-Log/`).
+
+> Convention: a `- [ ]` means "not learned yet". When learned, delete the checkbox and put the `[[link]]` as a plain bullet. New pattern notes follow `Templates/Coding Pattern.md`.
+
+**Progress:** 1 / 19 patterns noted
 
 ---
 
@@ -12,13 +16,15 @@
 
 ## 2. Pattern: Sliding Window
 
-- [ ] Introduction
-- [ ] Maximum Sum Subarray of Size K (easy)
-- [ ] Smallest Subarray with a Given Sum (easy)
-- [ ] Longest Substring with K Distinct Characters (medium)
-- [ ] Fruits into Baskets (medium)
-- [ ] No-repeat Substring (hard)
-- [ ] Longest Substring with Same Letters after Replacement (hard)
+- [[Sliding Window scans contiguous subarrays in O(n) by reusing overlap instead of recomputing|Sliding Window]] — pattern note ✅
+
+Problems:
+- [[Maximum Sum Subarray of Size K]] (easy)
+- [[Smallest Subarray with a Given Sum]] (easy)
+- [[Longest Substring with K Distinct Characters]] (medium)
+- [[Fruits into Baskets]] (medium)
+- [[Longest Substring Without Repeating Characters|No-repeat Substring]] (hard)
+- [[Longest Substring with Same Letters after Replacement]] (hard)
 - [ ] Longest Subarray with Ones after Replacement (hard)
 - [ ] Problem Challenge 1
 - [ ] Solution Review: Problem Challenge 1
@@ -177,11 +183,11 @@
 ## 14. Pattern: Top K Elements
 
 - [ ] Introduction
-- [ ] Top K Numbers (easy)
+- [ ] Top K Largest Numbers (easy)
 - [ ] Kth Smallest Number (easy)
 - [ ] K Closest Points to the Origin (easy)
 - [ ] Connect Ropes (easy)
-- [ ] Top K Frequent Numbers (medium)
+- [ ] [[Top K Frequent Elements|Top K Frequent Numbers]] (medium)
 - [ ] Frequency Sort (medium)
 - [ ] Kth Largest Number in a Stream (medium)
 - [ ] K Closest Numbers (medium)

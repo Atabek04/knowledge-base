@@ -1,7 +1,6 @@
-# Design Patterns — MOC
-
-> **Phase 1** of [[00 - IT Career - MOC]]
 > Learn patterns to write maintainable, flexible code
+>
+> **Hands-on practice:** `~/design-pattern-katas` (WSL git repo) — tests-first refactor katas, Java/Kotlin/Python. Tracker: [[Design-Patterns - Tracker]].
 
 ---
 
@@ -40,7 +39,7 @@
 - [ ] **Memento** — Capture and restore object state
 - [ ] **Observer** — Notify dependents of state changes
 - [ ] **State** — Alter behavior when state changes
-- [ ] **Strategy** — Interchangeable algorithms
+- [[The Strategy pattern makes algorithms interchangeable by hiding each behind a common interface|Strategy]] — interchangeable algorithms (Kotlin · Python · Java impls linked in note)
 - [ ] **Template Method** — Define algorithm skeleton, defer steps
 - [ ] **Visitor** — Add operations without modifying classes
 
@@ -74,6 +73,8 @@
 ---
 
 ## Books
+
+- [[The Gang of Four book cataloged 23 reusable object-oriented design patterns|Gang of Four cataloged 23 OO design patterns]]
 
 | Book | Priority | Status |
 |------|----------|--------|
@@ -109,4 +110,3 @@ Sequencing + time budget: [[Interview-Prep-Master-Plan]]
 - [[Interview-Prep-Master-Plan]]
 - [[Java MOC]]
 - [[Architecture - MOC]]
-- [[00 - IT Career - MOC]]

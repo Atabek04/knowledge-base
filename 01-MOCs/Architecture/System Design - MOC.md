@@ -1,6 +1,3 @@
-# System Design — MOC
-
-> **Phase 10** of [[00 - IT Career - MOC]]
 > Design scalable, reliable systems
 
 ---
@@ -206,7 +203,7 @@
 5. Bottleneck identification
 6. Trade-off discussion
 
-> Interview-day running order with time budgets: [[HelloInterview Delivery Framework structures a system design interview into six timed steps]]
+> Interview-day running order with time budgets: [[HelloInterview Delivery Framework structures a system design interview into six timed steps|HelloInterview framework: six timed interview steps]]
 
 ### Design Problems Practice
 
@@ -332,4 +329,3 @@ Sequencing + time budget + end-state (design 8 systems in 45 min): [[Interview-P
 - [[Distributed Systems - MOC]]
 - [[Databases - MOC]]
 - [[AWS - MOC]]
-- [[00 - IT Career - MOC]]

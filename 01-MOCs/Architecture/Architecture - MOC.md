@@ -1,6 +1,3 @@
-# Architecture — MOC
-
-> **Phase 7** of [[00 - IT Career - MOC]]
 > Build maintainable, scalable systems
 
 ---
@@ -66,6 +63,11 @@
 - [ ] Decomposition strategies
 - [ ] Microservices tradeoffs
 
+#### Hexagonal & Clean Architecture
+- [ ] Hexagonal architecture (Ports & Adapters)
+- [ ] Clean Architecture — the dependency rule
+- [ ] Layered vs hexagonal trade-offs
+
 ### Domain-Driven Design
 - [ ] Ubiquitous language
 - [ ] Bounded contexts
@@ -125,4 +127,4 @@
 - [[Design Patterns - MOC]]
 - [[Microservices Patterns - MOC]]
 - [[System Design - MOC]]
-- [[00 - IT Career - MOC]]
+- [[Soft Skills & Leadership - MOC]]

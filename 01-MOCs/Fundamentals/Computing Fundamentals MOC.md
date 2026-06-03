@@ -1,4 +1,3 @@
-
 A complete learning roadmap exploring the history, physics, and engineering principles behind how computers work.
 
 ---
@@ -19,9 +18,9 @@ This MOC weaves these threads together chronologically and thematically.
 ### Mechanical Era: First Tools for Calculation
 
 **Linked notes:**
-- [[Abacus was the first mechanical computing device invented around 2700 BC]]
-- [[Mechanical calculators automated arithmetic in the 1600s]]
-- [[Charles Babbage designed the first programmable computing machine in 1822]]
+- [[Abacus was the first mechanical computing device invented around 2700 BC|Abacus: first mechanical computer (~2700 BC)]]
+- [[Mechanical calculators automated arithmetic in the 1600s|Mechanical calculators automated arithmetic (1600s)]]
+- [[Charles Babbage designed the first programmable computing machine in 1822|Babbage: first programmable machine (1822)]]
 
 **Possible notes to create:**
 - Roman numeral system limited mathematical operations and made complex calculations tedious
@@ -54,8 +53,8 @@ This MOC weaves these threads together chronologically and thematically.
 ### Binary Representation
 
 **Linked notes:**
-- [[Binary representation uses two symbols (0 and 1) to encode all information in computers]]
-- [[Bits and bytes are the fundamental units of digital information]]
+- [[Binary representation uses two symbols (0 and 1) to encode all information in computers|Binary: two symbols encode all information]]
+- [[Bits and bytes are the fundamental units of digital information|Bits and bytes: units of digital information]]
 
 **Possible notes to create:**
 - Hexadecimal (base-16) system provides compact representation of binary (4 bits = 1 hex digit)
@@ -72,7 +71,7 @@ This MOC weaves these threads together chronologically and thematically.
 ### Electromechanical Bridge
 
 **Linked notes:**
-- [[Electromechanical relays enabled automatic control systems in the early 1900s]]
+- [[Electromechanical relays enabled automatic control systems in the early 1900s|Relays enabled automatic control (early 1900s)]]
 
 **Possible notes to create:**
 - Relay defined as electrically-controlled switch that opens/closes circuits
@@ -84,7 +83,7 @@ This MOC weaves these threads together chronologically and thematically.
 ### Vacuum Tube Revolution
 
 **Linked notes:**
-- [[Vacuum tubes replaced relays with electronic switching in the 1940s]]
+- [[Vacuum tubes replaced relays with electronic switching in the 1940s|Vacuum tubes: electronic switching (1940s)]]
 
 **Possible notes to create:**
 - Vacuum tube defined as glass envelope containing filament that glows and releases electrons
@@ -104,8 +103,8 @@ This MOC weaves these threads together chronologically and thematically.
 ### Boolean Logic Foundation
 
 **Linked notes:**
-- [[Boolean logic provides the mathematical foundation for digital circuits]]
-- [[Logic gates are the fundamental building blocks of digital circuits]]
+- [[Boolean logic provides the mathematical foundation for digital circuits|Boolean logic underlies digital circuits]]
+- [[Logic gates are the fundamental building blocks of digital circuits|Logic gates: building blocks of circuits]]
 
 **Possible notes to create:**
 - Boolean algebra defined by George Boole using only AND, OR, NOT operations
@@ -138,8 +137,8 @@ This MOC weaves these threads together chronologically and thematically.
 ### Why Transistors Changed Everything
 
 **Linked notes:**
-- [[Transistors are semiconductor devices that amplify or switch electronic signals]]
-- [[Transistors replaced vacuum tubes and enabled miniaturization in the 1950s]]
+- [[Transistors are semiconductor devices that amplify or switch electronic signals|Transistors: amplify or switch signals]]
+- [[Transistors replaced vacuum tubes and enabled miniaturization in the 1950s|Transistors replaced tubes, enabled miniaturization (1950s)]]
 
 **Possible notes to create:**
 - Transistor invented at Bell Labs (1947) using semiconductor material instead of vacuum
@@ -156,8 +155,8 @@ This MOC weaves these threads together chronologically and thematically.
 ### Integration and Miniaturization
 
 **Linked notes:**
-- [[Integrated circuits put thousands of transistors on a single chip in the 1960s]]
-- [[Moore's Law describes exponential transistor density growth on semiconductor chips]]
+- [[Integrated circuits put thousands of transistors on a single chip in the 1960s|ICs: thousands of transistors per chip (1960s)]]
+- [[Moore's Law describes exponential transistor density growth on semiconductor chips|Moore's Law: exponential transistor density]]
 
 **Possible notes to create:**
 - Discrete transistors early 1950s: each transistor soldered individually to circuits
@@ -175,7 +174,7 @@ This MOC weaves these threads together chronologically and thematically.
 ### Memory: RAM (Volatile Storage)
 
 **Linked notes:**
-- [[RAM stores data in volatile memory using transistors and capacitors]]
+- [[RAM stores data in volatile memory using transistors and capacitors|RAM: volatile storage via transistors + capacitors]]
 
 **Possible notes to create:**
 - Memory cell contains capacitor and transistor combination
@@ -191,7 +190,7 @@ This MOC weaves these threads together chronologically and thematically.
 ### Storage: SSD (Persistent Storage)
 
 **Linked notes:**
-- [[Solid-state storage uses floating-gate transistors to retain data without power]]
+- [[Solid-state storage uses floating-gate transistors to retain data without power|SSD: floating-gate transistors retain data]]
 
 **Possible notes to create:**
 - Floating gate: isolated conductor surrounded by insulator storing charge
@@ -207,7 +206,7 @@ This MOC weaves these threads together chronologically and thematically.
 ### Storage: HDD (Mechanical Storage)
 
 **Linked notes:**
-- [[Hard disk drives store data in rotating magnetic platters]]
+- [[Hard disk drives store data in rotating magnetic platters|HDD: data on rotating magnetic platters]]
 
 **Possible notes to create:**
 - Platter rotates at 5,400 to 15,000 RPM depending on drive speed class
@@ -223,7 +222,7 @@ This MOC weaves these threads together chronologically and thematically.
 ### Cache Hierarchy
 
 **Linked notes:**
-- [[Cache memory bridges the speed gap between fast processors and slow main memory]]
+- [[Cache memory bridges the speed gap between fast processors and slow main memory|Cache bridges the CPU–RAM speed gap]]
 
 **Possible notes to create:**
 - Memory hierarchy: different storage types balance speed versus capacity
@@ -257,12 +256,12 @@ This MOC weaves these threads together chronologically and thematically.
 ### Fundamental Design (continued)
 
 **Linked notes:**
-- [[Von Neumann architecture separates processor, memory, and control units]]
+- [[Von Neumann architecture separates processor, memory, and control units|Von Neumann: separate processor, memory, control]]
 
 ### Instruction Set Architecture (ISA)
 
 **Linked notes:**
-- [[Instruction sets define the operations a processor can execute]]
+- [[Instruction sets define the operations a processor can execute|ISA defines a processor's operations]]
 
 **Possible notes to create:**
 - ISA defined as contract between software and hardware specifying available operations
@@ -296,7 +295,7 @@ This MOC weaves these threads together chronologically and thematically.
 ### Photolithography: Creating Circuits on Silicon
 
 **Linked notes:**
-- [[Photolithography creates circuit patterns by etching silicon with light]]
+- [[Photolithography creates circuit patterns by etching silicon with light|Photolithography etches circuits with light]]
 
 **Possible notes to create:**
 - Wafer: circular disc of pure silicon serving as substrate for transistors
@@ -333,7 +332,7 @@ This MOC weaves these threads together chronologically and thematically.
 ### Microprocessor Evolution
 
 **Linked notes:**
-- [[Microprocessors brought programmable computing to consumer devices in the 1970s]]
+- [[Microprocessors brought programmable computing to consumer devices in the 1970s|Microprocessors: programmable computing for consumers (1970s)]]
 
 **Possible notes to create:**
 - Intel 4004 (1971): first commercial microprocessor, 2,300 transistors, 10 MHz
@@ -394,7 +393,7 @@ This MOC weaves these threads together chronologically and thematically.
 ### Computability and Turing Completeness
 
 **Linked notes:**
-- [[Alan Turing proved computability and programmability are universal principles]]
+- [[Alan Turing proved computability and programmability are universal principles|Turing: computability is universal]]
 
 **Possible notes to create:**
 - Turing machine: tape, head, states, and transition rules defining computation

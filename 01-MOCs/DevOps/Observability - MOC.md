@@ -1,6 +1,3 @@
-# Observability — MOC
-
-> **Phase 9** of [[00 - IT Career - MOC]]
 > Monitor and debug distributed systems
 
 ---
@@ -58,6 +55,7 @@
 #### Concepts
 - [ ] Spans and traces
 - [ ] Trace context propagation
+- [ ] Baggage propagation
 - [ ] Sampling strategies
 - [ ] Parent-child relationships
 
@@ -66,10 +64,12 @@
 - [ ] Jaeger
 - [ ] Zipkin
 - [ ] Spring Cloud Sleuth / Micrometer Tracing
+- [ ] Auto vs manual instrumentation
 
 ### Alerting
 - [ ] Alert rules
 - [ ] Thresholds and SLOs
+- [ ] Error budgets
 - [ ] Alert fatigue
 - [ ] Runbooks
 - [ ] On-call practices
@@ -126,4 +126,3 @@
 - [[Microservices Patterns - MOC]]
 - [[DevOps - MOC]]
 - [[System Design - MOC]]
-- [[00 - IT Career - MOC]]

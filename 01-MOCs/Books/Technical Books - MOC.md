@@ -1,6 +1,3 @@
-# Technical Books — MOC
-
-> Reading list for [[00 - IT Career - MOC]]
 > **Resources:** Books + Documentation only (no video dependencies)
 
 ---
@@ -61,6 +58,17 @@
 
 ---
 
+## Documentation Resources
+
+- [Java SE](https://docs.oracle.com/en/java/) · [Kotlin](https://kotlinlang.org/docs/home.html)
+- [Spring Framework](https://docs.spring.io/spring-framework/reference/) · [Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/)
+- [PostgreSQL](https://www.postgresql.org/docs/) · [Redis](https://redis.io/docs/)
+- [Docker](https://docs.docker.com/) · [Kubernetes](https://kubernetes.io/docs/) · [Kafka](https://kafka.apache.org/documentation/)
+- [roadmap.sh/java](https://roadmap.sh/java) · [roadmap.sh/spring-boot](https://roadmap.sh/spring-boot) · [roadmap.sh/backend](https://roadmap.sh/backend)
+- [Baeldung Java](https://www.baeldung.com/java-tutorial) · [Baeldung Spring](https://www.baeldung.com/spring-tutorial)
+
+---
+
 ## Notes Template
 
 When reading, create notes with:
@@ -72,6 +80,5 @@ When reading, create notes with:
 ---
 
 ## Related
-- [[00 - IT Career - MOC]]
 - [[Java MOC]]
 - [[Architecture - MOC]]

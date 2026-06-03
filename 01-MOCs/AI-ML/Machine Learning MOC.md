@@ -1,4 +1,3 @@
-
 A comprehensive learning roadmap for Machine Learning Engineering covering the full spectrum from foundational concepts to advanced applications.
 
 > ### 📍 Teaching Progress
@@ -12,19 +11,19 @@ A comprehensive learning roadmap for Machine Learning Engineering covering the f
 
 Machine learning is a subset of AI where models learn patterns from data instead of being explicitly programmed.
 
-- [[Differences of - AI, ML, DL, GenAI]] — how AI, ML, Deep Learning, and GenAI relate to each other
-- [[Machine learning is called learning because the model improves from data not instructions|Why "machine learning"]] — the name comes from machines discovering patterns from data, not instructions
-- [[Types of ML]] — supervised, unsupervised, reinforcement, and more
-- [[Machine learning follows five stages from problem framing to deployment|ML Process Stages]] — the end-to-end workflow every ML project follows
+- [[Differences of - AI, ML, DL, GenAI|AI vs ML vs DL vs GenAI]]
+- [[Machine learning is called learning because the model improves from data not instructions|Why it's called "machine learning"]]
+- [[Types of ML|Types of ML: supervised, unsupervised, reinforcement]]
+- [[Machine learning follows five stages from problem framing to deployment|ML process: five stages, framing → deployment]]
 
 ### Core Vocabulary
 
-- [[Feature is an input variable the model uses to make predictions|Feature]] — input variable the model uses to make predictions
-- [[Target is the output variable the model learns to predict|Target]] — output variable the model learns to predict
-- [[X represents features and y represents target in ML notation|X and y notation]] — uppercase matrix vs lowercase vector convention
-- [[Supervised learning means the model learns from labeled data with known answers|Supervised learning]] — model learns from labeled data with known answers
-- [[Regression predicts a continuous number|Regression]] — predicting a continuous number
-- [[Classification predicts a discrete category|Classification]] — predicting a discrete category
+- [[Feature is an input variable the model uses to make predictions|Feature: input the model uses to predict]]
+- [[Target is the output variable the model learns to predict|Target: output the model predicts]]
+- [[X represents features and y represents target in ML notation|X and y: features matrix vs target vector]]
+- [[Supervised learning means the model learns from labeled data with known answers|Supervised learning: labeled data, known answers]]
+- [[Regression predicts a continuous number|Regression: predict a continuous number]]
+- [[Classification predicts a discrete category|Classification: predict a discrete category]]
 
 ## Types of Machine Learning
 
@@ -39,7 +38,7 @@ Machine learning is a subset of AI where models learn patterns from data instead
 ##### Simple Linear Regression
 [[Simple linear regression predicts a target using one feature and a straight line|Simple Linear Regression]] — one feature, one target, one straight line.
 
-- [[Ordinary Least Squares minimizes the sum of squared errors to find the best-fit line|OLS]]: finding best-fit line by minimizing squared errors algebraically
+- [[Ordinary Least Squares minimizes the sum of squared errors to find the best-fit line|OLS: best-fit line by minimizing squared errors]]
 - Linear regression assumptions: linearity, homoscedasticity, independence, and normality of residuals
 
 ##### Multiple Linear Regression
@@ -67,7 +66,7 @@ Ensemble of decision trees voting for final prediction value.
 
 [[Classification predicts a discrete category|Classification]] — predicting discrete class labels (which one? what type?).
 
-- [[Classification outputs probability scores to express confidence in predictions|Probability scores]] — models output confidence levels, not just labels
+- [[Classification outputs probability scores to express confidence in predictions|Probability scores: confidence, not just labels]]
 
 ##### Linear Classification Models
 
@@ -127,8 +126,8 @@ Combining labeled and unlabeled data for training.
 ### Reinforcement Learning
 Learning through interaction and rewards.
 
-- [[Reasoning models use reinforcement learning on outcome rewards to discover thinking strategies]]
-- [[GRPO trains reasoning models by comparing outcome rewards across sampled response groups]]
+- [[Reasoning models use reinforcement learning on outcome rewards to discover thinking strategies|Reasoning models: RL on outcome rewards]]
+- [[GRPO trains reasoning models by comparing outcome rewards across sampled response groups|GRPO: compare rewards across sampled groups]]
 
 ### Self-supervised Learning
 Using data structure as labels for training.
@@ -149,24 +148,24 @@ Transforming raw data into usable features for models.
 #### Data Preprocessing Workflow
 Essential techniques for preparing raw data for machine learning.
 
-- [[Train-test split evaluates model performance on unseen data|Train-test split]]: dividing dataset into training and testing subsets for unbiased evaluation
-- [[random_state is a seed that makes random operations reproducible|random_state]]: fixing the random seed for reproducible results
-- [[Computers generate pseudorandom numbers using a formula not true randomness|PRNG]]: computers use a formula, not true randomness — same seed produces same sequence
-- [[42 is not a special seed it is just a convention from pop culture|Why 42]]: the number is a pop culture convention, not mathematically special
-- [[Missing data must be handled because most ML algorithms cannot compute with NaN|Handling missing data]]: imputation strategies using mean, median, or mode values
-- [[SimpleImputer replaces missing values using fit and transform pattern|SimpleImputer]]: sklearn's fit-transform pattern for replacing NaN values
-- [[Categorical data must be encoded into numbers because ML algorithms only compute with numbers|Encoding categorical variables]]: converting text categories into numerical format
-- [[One-hot encoding creates a binary column for each category|One-hot encoding]]: creating binary columns for each category value to avoid ordinal assumptions
-- [[Label encoding assigns an integer to each category|Label encoding]]: assigning integer values to categorical labels for simpler categorical variables
-- [[Irrelevant or unique columns should be dropped before training|Dropping columns]]: removing identifiers and useless string columns before encoding
-- [[Dummy variable is a binary column created by one-hot encoding|Dummy variable]]: binary column created by one-hot encoding to represent a category
-- [[Dummy variable trap is multicollinearity from redundant one-hot encoded columns|Dummy variable trap]]: avoiding multicollinearity by dropping one dummy variable from encoded features
-- [[Feature scaling transforms features to similar ranges for efficient training|Feature scaling]]: normalization (0-1 range) vs standardization (mean=0, std=1)
-- [[Unscaled features cause learning rate conflict in gradient descent|Learning rate conflict]]: why unscaled features break gradient descent
-- [[Oscillation happens when gradient overcorrects and bounces around the optimal value|Oscillation]]: gradient overcorrection causing bouncing
-- [[Normalization scales features to a fixed range using min and max|Normalization]]: min-max scaling to [0, 1] range
-- [[Standardization centers features around zero using mean and standard deviation|Standardization]]: z-score scaling (mean=0, std=1)
-- [[Feature scaling must happen after train-test split to prevent data leakage|When to apply feature scaling]]: always after split — fit on train only to prevent data leakage
+- [[Train-test split evaluates model performance on unseen data|Train-test split: evaluate on unseen data]]
+- [[random_state is a seed that makes random operations reproducible|random_state: seed for reproducibility]]
+- [[Computers generate pseudorandom numbers using a formula not true randomness|PRNG: a formula, not true randomness]]
+- [[42 is not a special seed it is just a convention from pop culture|Why 42: pop-culture convention, not special]]
+- [[Missing data must be handled because most ML algorithms cannot compute with NaN|Handling missing data: algorithms can't use NaN]]
+- [[SimpleImputer replaces missing values using fit and transform pattern|SimpleImputer: fit-transform to fill NaN]]
+- [[Categorical data must be encoded into numbers because ML algorithms only compute with numbers|Encoding categoricals: text → numbers]]
+- [[One-hot encoding creates a binary column for each category|One-hot encoding: a binary column per category]]
+- [[Label encoding assigns an integer to each category|Label encoding: an integer per category]]
+- [[Irrelevant or unique columns should be dropped before training|Dropping columns: remove IDs and useless strings]]
+- [[Dummy variable is a binary column created by one-hot encoding|Dummy variable: a one-hot binary column]]
+- [[Dummy variable trap is multicollinearity from redundant one-hot encoded columns|Dummy variable trap: drop one to avoid multicollinearity]]
+- [[Feature scaling transforms features to similar ranges for efficient training|Feature scaling: bring features to similar ranges]]
+- [[Unscaled features cause learning rate conflict in gradient descent|Learning-rate conflict from unscaled features]]
+- [[Oscillation happens when gradient overcorrects and bounces around the optimal value|Oscillation: gradient overcorrects and bounces]]
+- [[Normalization scales features to a fixed range using min and max|Normalization: min-max to [0, 1]]]
+- [[Standardization centers features around zero using mean and standard deviation|Standardization: z-score (mean 0, std 1)]]
+- [[Feature scaling must happen after train-test split to prevent data leakage|Scale after the split to avoid leakage]]
 
 #### Feature Engineering
 Creating new features from existing data.
@@ -181,20 +180,20 @@ Identifying and managing anomalous data points that may distort model training.
 
 Core concepts used in training machine learning models.
 
-- [[Parameter is a value that defines how a system behaves]]
-- [[Weights define how much each feature matters]]
-- [[Bias adds a baseline shift to all predictions]]
-- [[Loss function - formula that measures how wrong the model is]]
-- [[Gradient adjusts params to reduce loss]]
-- [[fit() trains the model by learning parameters from training data|.fit()]]: the universal scikit-learn method that learns parameters from training data
-- [[predict() uses learned parameters to compute outputs for new data|.predict()]]: computes predicted targets using learned parameters
-- [[OLS solves linear regression directly while gradient descent iterates toward the solution|OLS vs Gradient Descent]]: when to use direct solution vs iterative optimization
+- [[Parameter is a value that defines how a system behaves|Parameter: value defining system behavior]]
+- [[Weights define how much each feature matters|Weights: how much each feature matters]]
+- [[Bias adds a baseline shift to all predictions|Bias: baseline shift on predictions]]
+- [[Loss function - formula that measures how wrong the model is|Loss function: measures how wrong the model is]]
+- [[Gradient adjusts params to reduce loss|Gradient: adjusts params to reduce loss]]
+- [[fit() trains the model by learning parameters from training data|.fit(): learn parameters from training data]]
+- [[predict() uses learned parameters to compute outputs for new data|.predict(): outputs for new data]]
+- [[OLS solves linear regression directly while gradient descent iterates toward the solution|OLS vs gradient descent: direct vs iterative]]
 
 ## Model Evaluation
 
 Assessing model performance and quality.
 
-- [[Overfitting happens when a model memorizes noise instead of learning patterns|Overfitting]]: model memorizes training noise, performs well on training data but fails on unseen data
+- [[Overfitting happens when a model memorizes noise instead of learning patterns|Overfitting: memorizes noise, fails on unseen data]]
 
 ### Regression Metrics
 
@@ -255,14 +254,14 @@ Layered networks of interconnected neurons inspired by biological neural systems
 
 - Neural network architecture: layers of interconnected neurons (input, hidden, output layers)
 - Activation functions: non-linear functions (ReLU, sigmoid, tanh) introducing non-linearity to networks
-- [[Neural network layers build increasingly abstract representations of input data]]
-- [[Backpropagation propagates gradients backward through layers using the chain rule]]
-- [[Softmax converts raw model scores into a probability distribution summing to 100%]]
+- [[Neural network layers build increasingly abstract representations of input data|NN layers build increasingly abstract features]]
+- [[Backpropagation propagates gradients backward through layers using the chain rule|Backprop: gradients backward via the chain rule]]
+- [[Softmax converts raw model scores into a probability distribution summing to 100%|Softmax: scores → probability distribution]]
 - Forward propagation: passing input through network layers to compute output predictions
 - Epochs and batch size: number of training iterations and samples per update affecting convergence
-- [[Neural network weights are compressed statistical patterns not human-readable instructions]]
-- [[Superposition allows neural networks to encode more features than neurons using overlapping activation patterns]]
-- [[Polysemantic neurons respond to multiple unrelated concepts making them individually uninterpretable]]
+- [[Neural network weights are compressed statistical patterns not human-readable instructions|NN weights: compressed statistics, not instructions]]
+- [[Superposition allows neural networks to encode more features than neurons using overlapping activation patterns|Superposition: more features than neurons]]
+- [[Polysemantic neurons respond to multiple unrelated concepts making them individually uninterpretable|Polysemantic neurons fire for many concepts]]
 
 #### Convolutional Neural Networks (CNNs)
 Specialized architecture for processing grid-like data such as images.
@@ -278,15 +277,15 @@ Processing and understanding human language.
 
 #### Language Models
 
-- [[LLM training uses next-token prediction on existing text to learn statistical patterns]]
-- [[Cross-entropy loss measures probability assigned to the correct token]]
-- [[Perplexity measures LLM quality as how many words the model effectively considers at each step]]
-- [[Tokenization splits text into subword units to balance vocabulary size and meaning]]
-- [[BPE builds a tokenizer vocabulary by iteratively merging the most frequent character pairs]]
-- [[Each model trains its own tokenizer on its training corpus producing different token splits]]
-- [[Word embeddings map tokens to high-dimensional vectors that encode meaning through context]]
-- [[Attention allows each token to directly reference any other token regardless of distance]]
-- [[Transformers replaced RNNs by processing all tokens in parallel using attention]]
+- [[LLM training uses next-token prediction on existing text to learn statistical patterns|LLM training: next-token prediction on text]]
+- [[Cross-entropy loss measures probability assigned to the correct token|Cross-entropy loss: probability on the correct token]]
+- [[Perplexity measures LLM quality as how many words the model effectively considers at each step|Perplexity: effective branching per step]]
+- [[Tokenization splits text into subword units to balance vocabulary size and meaning|Tokenization: text into subword units]]
+- [[BPE builds a tokenizer vocabulary by iteratively merging the most frequent character pairs|BPE merges frequent char pairs into a vocab]]
+- [[Each model trains its own tokenizer on its training corpus producing different token splits|Each model trains its own tokenizer]]
+- [[Word embeddings map tokens to high-dimensional vectors that encode meaning through context|Word embeddings: tokens → meaning vectors]]
+- [[Attention allows each token to directly reference any other token regardless of distance|Attention: any token references any other]]
+- [[Transformers replaced RNNs by processing all tokens in parallel using attention|Transformers parallelize tokens via attention (vs RNNs)]]
 
 #### Transformers & LLMs — Stanford CME 295 (Autumn 2025)
 

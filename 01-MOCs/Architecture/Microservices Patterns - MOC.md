@@ -1,6 +1,3 @@
-# Microservices Patterns — MOC
-
-> **Phase 8** of [[00 - IT Career - MOC]]
 > Patterns for reliable microservices
 
 ---
@@ -69,10 +66,10 @@
 ### Data Patterns
 
 #### Outbox Pattern
-- [[Outbox pattern guarantees event delivery by writing to an outbox table in the same transaction]]
-- [[Debezium streams PostgreSQL WAL changes to Kafka using LSN offsets and replication slots]]
-- [[Outbox over Debezium eliminates polling overhead while preserving business event contracts]]
-- [[Open-source CDC tools differ in database support, Kafka coupling, and operational overhead]]
+- [[Outbox pattern guarantees event delivery by writing to an outbox table in the same transaction|Outbox: write event in the same transaction]]
+- [[Debezium streams PostgreSQL WAL changes to Kafka using LSN offsets and replication slots|Debezium streams Postgres WAL to Kafka (LSN, slots)]]
+- [[Outbox over Debezium eliminates polling overhead while preserving business event contracts|Outbox over Debezium drops polling, keeps event contracts]]
+- [[Open-source CDC tools differ in database support, Kafka coupling, and operational overhead|CDC tools differ in DB support, Kafka coupling, ops]]
 
 #### Inbox Pattern
 - [ ] Idempotent consumers
@@ -109,6 +106,11 @@
 - [ ] Joining across services
 - [ ] Data consistency challenges
 - [ ] Shared database anti-pattern
+
+### Migration & Deployment Patterns
+- [ ] Sidecar pattern
+- [ ] Strangler Fig — incremental monolith migration
+- [ ] Anti-Corruption Layer
 
 ---
 

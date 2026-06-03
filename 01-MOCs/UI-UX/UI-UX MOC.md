@@ -3,8 +3,6 @@ created: 2026-05-31
 tags: [moc]
 ---
 
-# UI/UX Design MOC
-
 Understanding how people think, perceive, and behave — then designing around that.
 
 UI/UX is not about making things look good. It is about removing friction between human intention and system response.

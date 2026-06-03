@@ -1,6 +1,3 @@
-# Spring Ecosystem — MOC
-
-> **Phase 4** of [[00 - IT Career - MOC]]
 > Master the Spring Framework
 
 ---
@@ -46,6 +43,7 @@
 - [ ] Health checks
 - [ ] Custom configuration properties (@ConfigurationProperties)
 - [ ] Embedded servers
+- [ ] Spring Boot with virtual threads (3.2+)
 
 ### Spring Data JPA
 - [ ] Repository interfaces (JpaRepository, CrudRepository)
@@ -55,6 +53,7 @@
 - [ ] Specifications for dynamic queries
 - [ ] Auditing (@CreatedDate, @LastModifiedDate)
 - [ ] Custom repository implementations
+- [ ] Projections (interface and DTO)
 
 ### Spring Web (REST APIs)
 - [ ] @RestController and @RequestMapping
@@ -65,7 +64,14 @@
 - [ ] Request/Response DTOs
 - [ ] Content negotiation
 - [ ] CORS configuration
-- [[Spring SseEmitter and Flux ServerSentEvent hold response open like FastAPI StreamingResponse]] — SSE streaming: imperative (SseEmitter) vs reactive (Flux)
+- [[Spring SseEmitter and Flux ServerSentEvent hold response open like FastAPI StreamingResponse|SSE streaming: SseEmitter (imperative) vs Flux (reactive)]]
+
+### Spring WebFlux (Reactive)
+- [ ] Reactive Streams — Publisher, Subscriber, Subscription
+- [ ] Mono and Flux — operators and composition
+- [ ] Non-blocking I/O — when it helps and when it doesn't
+- [ ] WebClient vs RestTemplate vs RestClient
+- [ ] Backpressure handling
 
 ### Spring Validation
 - [ ] Bean Validation (JSR-380)
@@ -85,6 +91,8 @@
 - [ ] Method security (@PreAuthorize, @Secured)
 - [ ] CORS and CSRF
 - [ ] Role-based access control
+- [ ] Refresh token rotation
+- [ ] mTLS for service-to-service auth
 
 ### Spring Cloud (Microservices)
 - [ ] Spring Cloud Config
@@ -132,4 +140,4 @@
 - [[Java MOC]]
 - [[Databases - MOC]]
 - [[API Design - MOC]]
-- [[00 - IT Career - MOC]]
+- [[Security - MOC]]

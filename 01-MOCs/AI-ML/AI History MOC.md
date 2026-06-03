@@ -1,4 +1,3 @@
-
 The evolution of AI told as a chain of problems and breakthroughs. Each milestone exists because the previous one hit a wall.
 
 ### Overview
@@ -70,43 +69,43 @@ Transformer + scale + RLHF. The jump from perception to language and reasoning.
 
 The question behind all AI history: what counts as intelligence, and do these systems have it?
 
-- [[Turing Test replaces the question of machine thinking with behavioral indistinguishability]]
-- [[Searle's Chinese Room shows that symbol manipulation without understanding cannot constitute thought]]
-- [[Chollet's ARC benchmark exposes the gap between pattern memorization and genuine reasoning]]
-- [[LeCun argues LLMs lack world models needed for general intelligence]]
-- [[Gary Marcus argues deep learning lacks compositionality required for systematic generalization]]
-- [[Black-box AI models prevent auditing of decision-making processes]]
-- [[Black-box AI has caused measurable harm in healthcare, criminal justice, and finance]]
-- [[Mechanistic interpretability reverse-engineers neural network computations into readable circuits]]
-- [[Chain-of-thought in LLMs may be constrained imitation of human reasoning patterns rather than genuine inference]]
-- [[Unfaithful chain-of-thought means visible reasoning traces may not reflect actual model computation]]
+- [[Turing Test replaces the question of machine thinking with behavioral indistinguishability|Turing Test: behavior replaces "thinking"]]
+- [[Searle's Chinese Room shows that symbol manipulation without understanding cannot constitute thought|Chinese Room: symbol manipulation ≠ understanding]]
+- [[Chollet's ARC benchmark exposes the gap between pattern memorization and genuine reasoning|ARC benchmark: memorization vs reasoning gap]]
+- [[LeCun argues LLMs lack world models needed for general intelligence|LeCun: LLMs lack world models]]
+- [[Gary Marcus argues deep learning lacks compositionality required for systematic generalization|Marcus: deep learning lacks compositionality]]
+- [[Black-box AI models prevent auditing of decision-making processes|Black-box AI prevents auditing decisions]]
+- [[Black-box AI has caused measurable harm in healthcare, criminal justice, and finance|Black-box AI has caused real-world harm]]
+- [[Mechanistic interpretability reverse-engineers neural network computations into readable circuits|Mechanistic interpretability: weights → circuits]]
+- [[Chain-of-thought in LLMs may be constrained imitation of human reasoning patterns rather than genuine inference|CoT may be imitation, not genuine inference]]
+- [[Unfaithful chain-of-thought means visible reasoning traces may not reflect actual model computation|Unfaithful CoT: traces may not reflect computation]]
 
 ### 6b. Why We Don't Know How AI Works — The Technical Reality
 
-- [[Neural network weights are compressed statistical patterns not human-readable instructions]]
-- [[Superposition allows neural networks to encode more features than neurons using overlapping activation patterns]]
-- [[Polysemantic neurons respond to multiple unrelated concepts making them individually uninterpretable]]
+- [[Neural network weights are compressed statistical patterns not human-readable instructions|NN weights: compressed statistics, not instructions]]
+- [[Superposition allows neural networks to encode more features than neurons using overlapping activation patterns|Superposition: more features than neurons]]
+- [[Polysemantic neurons respond to multiple unrelated concepts making them individually uninterpretable|Polysemantic neurons fire for many concepts]]
 
 ### 8. AI Consciousness & Existential Risk
 
 Why some of the people who built these systems are afraid of them.
 
-- [[The Hard Problem of Consciousness asks why physical processes produce subjective experience]]
-- [[Hinton's substrate independence argument suggests AI systems may already have subjective experience]]
-- [[Instrumental convergence means sufficiently capable goal-seeking systems develop self-preservation sub-goals regardless of their original objective]]
-- [[The paperclip maximizer illustrates how any terminal goal pursued without constraint conflicts with human survival]]
-- [[The alignment problem is ensuring AI optimization targets remain consistent with human values as capability scales]]
+- [[The Hard Problem of Consciousness asks why physical processes produce subjective experience|Hard Problem: why physical processes feel like something]]
+- [[Hinton's substrate independence argument suggests AI systems may already have subjective experience|Hinton: substrate independence → AI may experience]]
+- [[Instrumental convergence means sufficiently capable goal-seeking systems develop self-preservation sub-goals regardless of their original objective|Instrumental convergence: self-preservation sub-goals emerge]]
+- [[The paperclip maximizer illustrates how any terminal goal pursued without constraint conflicts with human survival|Paperclip maximizer: unconstrained goals conflict with survival]]
+- [[The alignment problem is ensuring AI optimization targets remain consistent with human values as capability scales|Alignment problem: targets stay aligned as capability scales]]
 
 ### 7. Reasoning Models — How "Thinking" Actually Works
 
 What changed when o1, o3, and DeepSeek-R1 appeared — technically and philosophically.
 
-- [[Autoregressive token prediction generates responses in a single forward pass without deliberation]]
-- [[Chain-of-thought prompting uses model output as a working memory scratchpad]]
-- [[Reasoning models use reinforcement learning on outcome rewards to discover thinking strategies]]
-- [[GRPO trains reasoning models by comparing outcome rewards across sampled response groups]]
-- [[Thinking tokens create a bounded scratchpad that separates deliberation from final output]]
-- [[Inference-time compute scaling trades token cost for accuracy on hard reasoning tasks]]
+- [[Autoregressive token prediction generates responses in a single forward pass without deliberation|Autoregressive prediction: one forward pass, no deliberation]]
+- [[Chain-of-thought prompting uses model output as a working memory scratchpad|Chain-of-thought: output as a scratchpad]]
+- [[Reasoning models use reinforcement learning on outcome rewards to discover thinking strategies|Reasoning models: RL on outcome rewards]]
+- [[GRPO trains reasoning models by comparing outcome rewards across sampled response groups|GRPO: compare rewards across sampled groups]]
+- [[Thinking tokens create a bounded scratchpad that separates deliberation from final output|Thinking tokens: bounded deliberation scratchpad]]
+- [[Inference-time compute scaling trades token cost for accuracy on hard reasoning tasks|Inference-time compute: tokens for accuracy]]
 
 ---
 

@@ -1,5 +1,3 @@
-# React Learning Path - MOC (Jul 2026+)
-
 ## Phase 1: React Fundamentals (Weeks 1-3)
 
 ### JSX & Components

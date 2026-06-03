@@ -10,81 +10,103 @@ Includes core concepts for writing idiomatic Kotlin code with proper type handli
 
 ### Variables & Mutability
 
-- [[Variable declaration in Kotlin is done by var and val]] — mutable vs immutable references
-- [[val in Kotlin guards only its own level of reference not nested objects]] — val on fields, composition, and cascading immutability
-- [[Kotlin tells you to declare variables with initialization]] — variable initialization requirements
-- [[Kotlin is single type system, no wrappers]] — unified type handling compared to Java
+- [[Variable declaration in Kotlin is done by var and val|var vs val — mutable vs immutable references]]
+- [[val in Kotlin guards only its own level of reference not nested objects|val guards only its own reference level, not nested objects]]
+- [[Kotlin tells you to declare variables with initialization|Variables must be initialized before they are read]]
+- [[Kotlin is single type system, no wrappers|Single type system, no wrappers]]
 
 ### Functions
 
-- [[Kotlin allows top-level functions]] — functions outside classes at file level
-- [[Kotlin single-expression functions use equals sign instead of block body]] — drop `{}` and `return` for one-liners
-- [[Kotlin default parameters reduce function overloads]] — `prefix: String = "Info"` eliminates overloads
-- [[Kotlin named arguments improve call-site readability]] — pass by name, swap order, skip optional params
-- [[Kotlin extension functions add methods to existing types without modifying them]] — receiver type, replaces `*Utils` classes
+- [[Kotlin allows top-level functions|Top-level functions need no class]]
+- [[Kotlin single-expression functions use equals sign instead of block body|Single-expression functions with =]]
+- [[Kotlin default parameters reduce function overloads|Default parameters replace overloads]]
+- [[Kotlin named arguments improve call-site readability|Named arguments improve call-site readability]]
+- [[Kotlin extension functions add methods to existing types without modifying them|Extension functions add methods via a receiver type]]
+- [ ] Higher-order functions and lambdas
+- [ ] Operator overloading
 
 ### String Handling
 
-- [[Use String templates for string concatenation]] — variable interpolation in strings
-- [[Kotlin string format specifiers use percent prefix with type flags]] — `%d` for integers, `%f` for doubles, `%,` for thousands
+- [[Use String templates for string concatenation|String templates interpolate variables]]
+- [[Kotlin string format specifiers use percent prefix with type flags|Format specifiers: %d, %f, %, ]]
 
 ## Classes
 
-- [[Kotlin classes are final by default and Spring needs open classes for CGLIB proxying]] — `open` keyword, allopen plugin, CGLIB subclass proxying
-- [[Kotlin primary constructor is declared in the class header with parentheses]] — why `()` not `{}`
-- [[Kotlin data class auto-generates common methods for data holders]] — equals, toString, copy for free
-- [[Kotlin object declaration creates a singleton instance immediately]] — one instance, no constructor, replaces Java singleton pattern
-- [[Kotlin companion object holds class-level members like Java static]] — factory methods, constants, no `static` keyword
-- [[Kotlin nested classes are static by default unlike Java]] — `inner` opts into outer reference, safe default
-- [[Kotlin constructor parameters without val or var are not stored as properties]] — plain param → init-only, not a field
+- [[Kotlin classes are final by default and Spring needs open classes for CGLIB proxying|Classes final by default; open for CGLIB proxies]]
+- [[Kotlin primary constructor is declared in the class header with parentheses|Primary constructor lives in the class header ()]]
+- [[Kotlin data class auto-generates common methods for data holders|data class auto-generates equals, toString, copy]]
+- [[Kotlin object declaration creates a singleton instance immediately|object declaration = eager singleton]]
+- [[Kotlin companion object holds class-level members like Java static|companion object = class-level members (Java static)]]
+- [[Kotlin nested classes are static by default unlike Java|Nested classes static by default; inner opts in]]
+- [[Kotlin constructor parameters without val or var are not stored as properties|Param without val/var is init-only, not a field]]
+- [ ] Value classes (`@JvmInline`) — zero-overhead wrappers
+- [ ] Delegation with the `by` keyword
 
 ## Enums
 
-- [[Kotlin enums can have methods that enforce business rules]] — transition logic inside the enum itself
-- [[Kotlin enums provide entries and valueOf for iteration and string conversion]] — `entries`, `valueOf()`
+- [[Kotlin enums can have methods that enforce business rules|Enums can hold methods that enforce rules]]
+- [[Kotlin enums provide entries and valueOf for iteration and string conversion|Enum entries and valueOf()]]
 
 ## Sealed Types
 
-- [[Kotlin sealed types restrict subclasses to compile-time known set]] — when enums aren't enough, each variant carries different data
-- [[Kotlin sealed interface is preferred over sealed class]] — prefer interface unless you need shared state
-- [[Kotlin data object is a singleton with toString for free]] — for variants with no data
+- [[Kotlin sealed types restrict subclasses to compile-time known set|Sealed types = fixed compile-time subclass set]]
+- [[Kotlin sealed interface is preferred over sealed class|Prefer sealed interface over sealed class]]
+- [[Kotlin data object is a singleton with toString for free|data object = singleton with toString]]
 
 ## Control Flow
 
-- [[Kotlin for loop iterates over ranges and collections]] — `1..5` range syntax, list iteration
-- [[Kotlin if expression replaces ternary operator]] — `if (a > b) a else b` as expression, no `? :` in Kotlin
-- [[Kotlin when expression replaces switch with more power and flexibility]] — pattern matching, ranges, type checks, and more
-- [[Kotlin when expression without subject uses boolean conditions]] — `when {}` replaces `if-else` chains
+- [[Kotlin for loop iterates over ranges and collections|for loop over ranges (1..5) and collections]]
+- [[Kotlin if expression replaces ternary operator|if is an expression, replacing the ternary]]
+- [[Kotlin when expression replaces switch with more power and flexibility|when expression replaces switch]]
+- [[Kotlin when expression without subject uses boolean conditions|Subjectless when replaces if-else chains]]
 
 ## Null Safety
 
-- [[Kotlin nullable types are declared with question mark suffix]] — `Type?` allows null, plain `Type` does not
-- [[Safe call operator avoids null crashes by returning null instead]] — `?.` returns null instead of crashing
-- [[Elvis operator provides a default when left side is null]] — `?:` fallback when value is null
-- [[Kotlin provides multiple strategies for safely extracting and validating nullable values]] — `?.`, `?:`, `?.let`, `requireNotNull()`, `require()`
-- [[Not-null assertion operator bypasses null safety and throws NPE]] — `!!` forces non-null, throws NPE if null, use sparingly
+- [[Kotlin nullable types are declared with question mark suffix|Nullable types use the ? suffix]]
+- [[Safe call operator avoids null crashes by returning null instead|Safe call ?. returns null instead of crashing]]
+- [[Elvis operator provides a default when left side is null|Elvis ?: provides a default for null]]
+- [[Kotlin provides multiple strategies for safely extracting and validating nullable values|Strategies to extract and validate nullables]]
+- [[Not-null assertion operator bypasses null safety and throws NPE|Not-null assertion !! throws NPE]]
 
 ## Scope Functions
 
-- [[Kotlin has five scope functions that differ by object reference and return value]] — let, apply, also, run, with overview
-- [[Kotlin let executes a block on a non-null object and returns the result]] — `?.let`, scoping, chaining
+- [[Kotlin has five scope functions that differ by object reference and return value|Five scope functions: let, apply, also, run, with]]
+- [[Kotlin let executes a block on a non-null object and returns the result|let runs a block and returns its result]]
 
 ## Collections
 
 ### Overview
 
-- [[Kotlin has 3 main collections for grouping items]] — Lists, Sets, and Maps fundamentals
+- [[Kotlin has 3 main collections for grouping items|Three collections: List, Set, Map]]
+- [[Kotlin read-only List type omits mutators so the reference cannot modify the collection|Read-only List omits mutators (List vs MutableList)]]
 
 ### Collection Operations
 
-- [[To check that an item is in a list, use in operator]] — membership testing for collections
-- [[To obtain map's keys and values use these methods]] — accessing Map properties
-- [[Kotlin collection transformations chain operations to process data]] — filter, map, flatMap, groupBy, associate, and more
+- [[To check that an item is in a list, use in operator|in operator tests membership]]
+- [[To obtain map's keys and values use these methods|Map keys and values accessors]]
+- [[Kotlin collection transformations chain operations to process data|Transformations: filter, map, flatMap, groupBy]]
 
 ## Annotations
 
-- [[Kotlin data class properties need use-site targets for framework annotations]] — `@field:` for Jakarta Validation, default targets parameter
-- [[Kotlin custom validation annotations combine annotation class with ConstraintValidator]] — annotation + validator + `@field:Valid` for nested objects
+- [[Kotlin data class properties need use-site targets for framework annotations|Use-site targets (@field:) for annotations]]
+- [[Kotlin custom validation annotations combine annotation class with ConstraintValidator|Custom validation = annotation + ConstraintValidator]]
+
+## Coroutines
+
+- [ ] `suspend` functions — what they compile to
+- [ ] `CoroutineScope`, `CoroutineContext`, `Job`
+- [ ] Builders — `launch`, `async`, `runBlocking`
+- [ ] Dispatchers — `IO`, `Default`, `Main`, `Unconfined`
+- [ ] Structured concurrency
+- [ ] `Flow` — cold streams, operators, collection
+- [ ] `StateFlow` and `SharedFlow`
+- [ ] Exception handling in coroutines
+- [ ] Coroutines vs virtual threads — when to use each
+
+## Build & DSL
+
+- [ ] Gradle with Kotlin DSL
+- [ ] Kotlin DSL construction (type-safe builders)
 
 ## Kotlin + Spring
 
@@ -99,6 +121,7 @@ Includes core concepts for writing idiomatic Kotlin code with proper type handli
 
 - [ ] When to use Kotlin
 - [ ] Interoperability with Java
+- [ ] Platform types and nullability annotations
 - [ ] Kotlin-specific Spring features
 - [ ] Migration strategies
 

@@ -1,6 +1,3 @@
-# Databases — MOC
-
-> **Phase 3** of [[00 - IT Career - MOC]]
 > Master data persistence and database design
 
 ---
@@ -20,7 +17,7 @@
 ## Topics
 
 ### SQL Fundamentals
-- [[Primary key uniquely identifies each row and anchors referential integrity across tables]]
+- [[Primary key uniquely identifies each row and anchors referential integrity across tables|Primary key identifies rows and anchors referential integrity]]
 - [ ] SELECT, INSERT, UPDATE, DELETE
 - [ ] WHERE, ORDER BY, LIMIT, OFFSET
 - [ ] JOINs (INNER, LEFT, RIGHT, FULL, CROSS)
@@ -37,6 +34,7 @@
 - [ ] Index types (B-tree, Hash, GiST, GIN)
 - [ ] Index optimization
 - [ ] Query optimization techniques
+- [ ] Covering indexes and index-only scans
 - [ ] Stored procedures and functions
 
 ### PostgreSQL Deep Dive
@@ -49,6 +47,7 @@
 - [ ] Locking (row-level, table-level)
 - [ ] Deadlock detection and prevention
 - [ ] Optimistic vs pessimistic locking
+- [ ] Advisory locks
 - [ ] Two-phase commit (2PC)
 
 ### JPA / Hibernate
@@ -68,6 +67,11 @@
 - [ ] Connection validation
 - [ ] Leak detection
 
+### Schema Migration
+- [ ] Flyway — versioned migrations (`V001__*.sql`)
+- [ ] Liquibase — changelog-based migrations
+- [ ] Migration best practices (forward-only, idempotent)
+
 ### Redis
 - [ ] Data structures (Strings, Lists, Sets, Sorted Sets, Hashes)
 - [ ] Commands and operations
@@ -86,6 +90,16 @@
 - [ ] Aggregation pipeline
 - [ ] When to use NoSQL vs SQL
 
+### Cassandra
+- [ ] Partition key and clustering key design
+- [ ] Consistency levels and read repair
+- [ ] Wide-column data modeling
+
+### DynamoDB
+- [ ] Partition key design and hot partitions
+- [ ] GSI vs LSI
+- [ ] DynamoDB Streams
+
 ---
 
 ## Data Modeling
@@ -94,42 +108,42 @@
 
 *Each fact in exactly one place — removing redundancy to kill anomalies.*
 
-- [[Normalization eliminates redundancy to prevent insert update and delete anomalies]] — the insert/update/delete anomalies normalization prevents
-- [[First normal form requires atomic column values with no repeating groups]] — 1NF: atomic values, no lists in a cell
-- [[Second normal form removes partial dependencies on part of a composite key]] — 2NF: no dependence on part of a composite key
-- [[Third normal form removes transitive dependencies between non-key columns]] — 3NF: no non-key → non-key dependency
-- [[Boyce-Codd normal form requires every determinant to be a candidate key]] — BCNF: every determinant is a candidate key
-- [[Denormalization trades write integrity for read performance by reintroducing redundancy]] — when to break the rules for read speed
-- [[Fourth and fifth normal forms remove multivalued and join dependencies]] — 4NF/5NF awareness
+- [[Normalization eliminates redundancy to prevent insert update and delete anomalies|Normalization kills insert/update/delete anomalies]]
+- [[First normal form requires atomic column values with no repeating groups|1NF: atomic values, no repeating groups]]
+- [[Second normal form removes partial dependencies on part of a composite key|2NF: no partial dependency on a composite key]]
+- [[Third normal form removes transitive dependencies between non-key columns|3NF: no transitive non-key dependency]]
+- [[Boyce-Codd normal form requires every determinant to be a candidate key|BCNF: every determinant is a candidate key]]
+- [[Denormalization trades write integrity for read performance by reintroducing redundancy|Denormalization trades integrity for read speed]]
+- [[Fourth and fifth normal forms remove multivalued and join dependencies|4NF/5NF: multivalued and join dependencies]]
 
 ### Database Types & Selection
 
 *Match a store's data model and guarantees to the requirements.*
 
-- [[Relational databases enforce a fixed schema and ACID while NoSQL relaxes them for scale]] — relational vs NoSQL, when each fits
-- [[A document database stores self-describing records queried by their nested content]] — document store (MongoDB)
-- [[A key-value store maps opaque keys to values for the fastest possible lookups]] — key-value store (Redis, DynamoDB)
-- [[A column-family store groups columns into families for wide sparse write-heavy tables]] — wide-column store (Cassandra)
-- [[A graph database makes relationships first-class for traversal-heavy queries]] — graph database (Neo4j)
-- [[Choosing a database means matching its model and guarantees to non-functional requirements]] — NFR → database decision heuristic
-- [[CAP theorem forces a partitioned system to choose between consistency and availability]] — the consistency/availability trade-off → [[Distributed Systems - MOC]]
+- [[Relational databases enforce a fixed schema and ACID while NoSQL relaxes them for scale|Relational (schema + ACID) vs NoSQL (relaxed for scale)]]
+- [[A document database stores self-describing records queried by their nested content|Document store: self-describing records (MongoDB)]]
+- [[A key-value store maps opaque keys to values for the fastest possible lookups|Key-value store: fastest lookups (Redis, DynamoDB)]]
+- [[A column-family store groups columns into families for wide sparse write-heavy tables|Column-family store: wide sparse tables (Cassandra)]]
+- [[A graph database makes relationships first-class for traversal-heavy queries|Graph database: relationships first-class (Neo4j)]]
+- [[Choosing a database means matching its model and guarantees to non-functional requirements|Choose a database by matching its model to NFRs]]
+- [[CAP theorem forces a partitioned system to choose between consistency and availability|CAP: consistency vs availability under partition]] → [[Distributed Systems - MOC]]
 
 ### Requirements Artifacts for Data
 
 *Documenting what the data means and who touches it.*
 
-- [[A data dictionary is the authoritative catalog defining every data element and its rules]] — formal definitions of every data element
-- [[A CRUD matrix maps entities against operations to expose missing or unowned data lifecycles]] — entity × operation grid; reveals gaps
+- [[A data dictionary is the authoritative catalog defining every data element and its rules|Data dictionary: authoritative catalog of data elements]]
+- [[A CRUD matrix maps entities against operations to expose missing or unowned data lifecycles|CRUD matrix: entity × operation grid reveals gaps]]
 
 ### Data Governance
 
 *Who owns the data, what "one truth" means, and how its lifecycle ends.*
 
-- [[A data owner is accountable for a data domain while a data steward maintains its quality]] — Data Owner vs Data Steward
-- [[Master data management enforces one trusted record for entities shared across systems]] — MDM and the golden record
-- [[Data quality is measured along completeness accuracy consistency and timeliness]] — quality dimensions as verifiable requirements
-- [[Data governance documents the retention archival and deletion rules for each class of data]] — retention / archival / deletion policy
-- [[Process mining reconstructs the real process from event logs to compare against the documented one]] — actual vs documented process from event logs
+- [[A data owner is accountable for a data domain while a data steward maintains its quality|Data owner vs data steward]]
+- [[Master data management enforces one trusted record for entities shared across systems|MDM: one golden record across systems]]
+- [[Data quality is measured along completeness accuracy consistency and timeliness|Data quality: completeness, accuracy, consistency, timeliness]]
+- [[Data governance documents the retention archival and deletion rules for each class of data|Data governance: retention, archival, deletion rules]]
+- [[Process mining reconstructs the real process from event logs to compare against the documented one|Process mining: actual vs documented process from logs]]
 
 ---
 
@@ -169,4 +183,3 @@
 - [[ClickHouse - MOC]] — OLAP DBMS
 - [[Spring Ecosystem - MOC]]
 - [[Architecture - MOC]]
-- [[00 - IT Career - MOC]]

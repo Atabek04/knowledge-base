@@ -1,5 +1,3 @@
-# Behavioral Interview — MOC
-
 > Track 4 of the [[Interview-Prep-Master-Plan|Senior Backend interview-prep system]]
 > The behavioral round is the **leveling round** — it decides senior vs mid, not just pass/fail. Most engineers underprepare here. Don't.
 
@@ -128,4 +126,4 @@ Your numbers (from [[Remote-Job-Prep]]): floor **$2,000/mo**, ask **$4,500-6,000
 - [[System Design - MOC]]
 - [[Design Patterns - MOC]]
 - [[LeetCode - MOC]]
-- [[Senior Java-Kotlin Developer Roadmap]]
+- [[Java-Kotlin-Roadmap]]

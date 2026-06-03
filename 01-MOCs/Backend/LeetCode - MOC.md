@@ -1,5 +1,3 @@
-# LeetCode — MOC
-
 > Following NeetCode 150 roadmap (neetcode.io/roadmap)
 > **Schedule:** see [[Interview-Prep-Master-Plan]] (source of truth). At ~18h/week starting Jun 2026, DSA runs as the backbone track (~8 problems/week) → interview-ready by ~Oct/Nov 2026.
 > ⚠️ The monthly table below reflects the older conservative 1h/day-from-Sept pace (150 by Apr 2027). It is now a *fallback*, superseded by the compressed master-plan schedule.
@@ -113,4 +111,4 @@ Module-by-module progress (moved from Ribaat vault):
 - [[Interview-Prep-Master-Plan]]
 - [[System Design - MOC]]
 - [[Behavioral Interview - MOC]]
-- [[Senior Java-Kotlin Developer Roadmap]]
+- [[Java-Kotlin-Roadmap]]

@@ -1,5 +1,3 @@
-# Projects to Build — MOC
-
 > A backlog of projects worth building or improving — web apps, mobile apps, and foundational systems engineering projects.
 > Status legend: 💡 Idea · 🔄 In Progress · ✅ Done · 🧊 On Hold
 
@@ -57,6 +55,6 @@ Existing tools or systems worth improving, or small utilities worth building.
 
 ## Related
 
-- [[Senior Java-Kotlin Developer Roadmap]]
+- [[Java-Kotlin-Roadmap]]
 - [[System Design - MOC]]
 - [[Architecture - MOC]]

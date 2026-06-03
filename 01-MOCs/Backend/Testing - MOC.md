@@ -1,6 +1,3 @@
-# Testing — MOC
-
-> **Phase 2** of [[00 - IT Career - MOC]]
 > Write reliable, maintainable tests
 
 ---
@@ -20,6 +17,7 @@
 ### JUnit 5 Fundamentals
 - [ ] Test lifecycle (@BeforeAll, @BeforeEach, @AfterEach, @AfterAll)
 - [ ] Assertions (assertEquals, assertTrue, assertThrows, assertAll)
+- [ ] AssertJ — fluent assertions (assertThat)
 - [ ] @Test, @DisplayName, @Disabled
 - [ ] @Nested test classes
 - [ ] @ParameterizedTest (ValueSource, CsvSource, MethodSource)
@@ -51,6 +49,7 @@
 - [ ] @DataJpaTest (repository tests)
 - [ ] @MockBean
 - [ ] TestRestTemplate, WebTestClient
+- [ ] MockMvc — HTTP layer testing without a server
 - [ ] Test profiles and configuration
 
 ### TestContainers
@@ -61,6 +60,11 @@
 - [ ] @Container and @Testcontainers
 - [ ] Reusable containers
 
+### Contract Testing
+- [ ] Consumer-Driven Contract testing — concept
+- [ ] Pact — consumer test, pact file, provider verification
+- [ ] Spring Cloud Contract — DSL, stub generation
+
 ### Testing Best Practices
 - [ ] Test pyramid (unit > integration > e2e)
 - [ ] Test coverage (meaningful coverage vs 100%)
@@ -68,6 +72,8 @@
 - [ ] Testing private methods (don't)
 - [ ] Flaky tests
 - [ ] Test data builders
+- [ ] Test doubles — mock vs stub vs spy vs fake vs dummy
+- [ ] Property-based testing (jqwik)
 
 ---
 
@@ -91,6 +97,5 @@
 ---
 
 ## Related
-- [[Java Concurrency - MOC]]
+- [[Java MOC]]
 - [[Spring Ecosystem - MOC]]
-- [[00 - IT Career - MOC]]

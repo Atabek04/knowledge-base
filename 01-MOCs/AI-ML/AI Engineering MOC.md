@@ -3,8 +3,6 @@ created: 2026-05-14
 tags: [moc]
 ---
 
-# AI Engineering MOC
-
 Building software **powered by** LLMs — apps, agents, RAG pipelines, MCP servers, multimodal systems.
 
 Different from [[Agentic Engineering MOC]], which is about *using* AI tools to write code. This MOC is about *producing* AI-powered products: you are the developer, the LLM is a runtime dependency.
@@ -16,19 +14,19 @@ Distinct from ML Engineering — AI Engineers consume pre-trained models via API
 - What is an AI Engineer
 - AI Engineer vs ML Engineer
 - AI vs AGI
-- [[LLM training uses next-token prediction on existing text to learn statistical patterns]]
-- [[Autoregressive token prediction generates responses in a single forward pass without deliberation]]
-- [[Tokenization splits text into subword units to balance vocabulary size and meaning]]
-- [[BPE builds a tokenizer vocabulary by iteratively merging the most frequent character pairs]]
-- [[Each model trains its own tokenizer on its training corpus producing different token splits]]
-- [[Word embeddings map tokens to high-dimensional vectors that encode meaning through context]]
-- [[Attention allows each token to directly reference any other token regardless of distance]]
-- [[Transformers replaced RNNs by processing all tokens in parallel using attention]]
-- [[Cross-entropy loss measures probability assigned to the correct token]]
-- [[Perplexity measures LLM quality as how many words the model effectively considers at each step]]
-- [[Chain-of-thought prompting uses model output as a working memory scratchpad]]
-- [[Thinking tokens create a bounded scratchpad that separates deliberation from final output]]
-- [[Inference-time compute scaling trades token cost for accuracy on hard reasoning tasks]]
+- [[LLM training uses next-token prediction on existing text to learn statistical patterns|LLM training: next-token prediction on text]]
+- [[Autoregressive token prediction generates responses in a single forward pass without deliberation|Autoregressive prediction: one forward pass, no deliberation]]
+- [[Tokenization splits text into subword units to balance vocabulary size and meaning|Tokenization: text into subword units]]
+- [[BPE builds a tokenizer vocabulary by iteratively merging the most frequent character pairs|BPE merges frequent char pairs into a vocab]]
+- [[Each model trains its own tokenizer on its training corpus producing different token splits|Each model trains its own tokenizer]]
+- [[Word embeddings map tokens to high-dimensional vectors that encode meaning through context|Word embeddings: tokens → meaning vectors]]
+- [[Attention allows each token to directly reference any other token regardless of distance|Attention: any token references any other]]
+- [[Transformers replaced RNNs by processing all tokens in parallel using attention|Transformers parallelize tokens via attention (vs RNNs)]]
+- [[Cross-entropy loss measures probability assigned to the correct token|Cross-entropy loss: probability on the correct token]]
+- [[Perplexity measures LLM quality as how many words the model effectively considers at each step|Perplexity: effective branching per step]]
+- [[Chain-of-thought prompting uses model output as a working memory scratchpad|Chain-of-thought: output as a scratchpad]]
+- [[Thinking tokens create a bounded scratchpad that separates deliberation from final output|Thinking tokens: bounded deliberation scratchpad]]
+- [[Inference-time compute scaling trades token cost for accuracy on hard reasoning tasks|Inference-time compute: tokens for accuracy]]
 - Roles and responsibilities
 
 ## Model Selection
@@ -83,7 +81,7 @@ Distinct from ML Engineering — AI Engineers consume pre-trained models via API
 - RAG with dynamic filters
 - RAG vs fine-tuning
 - RAGFlow, manual implementation
-- [[LLM wiki pattern replaces vector RAG with a maintained markdown knowledge graph]]
+- [[LLM wiki pattern replaces vector RAG with a maintained markdown knowledge graph|LLM wiki pattern replaces vector RAG with markdown]]
 
 ## Fine-Tuning
 
@@ -141,10 +139,10 @@ Distinct from ML Engineering — AI Engineers consume pre-trained models via API
 - End-user IDs in prompts
 - Data classification
 - Know-your-customer use cases
-- [[Unfaithful chain-of-thought means visible reasoning traces may not reflect actual model computation]]
-- [[Black-box AI has caused measurable harm in healthcare, criminal justice, and finance]]
-- [[The alignment problem is ensuring AI optimization targets remain consistent with human values as capability scales]]
-- [[Instrumental convergence means sufficiently capable goal-seeking systems develop self-preservation sub-goals regardless of their original objective]]
+- [[Unfaithful chain-of-thought means visible reasoning traces may not reflect actual model computation|Unfaithful CoT: traces may not reflect computation]]
+- [[Black-box AI has caused measurable harm in healthcare, criminal justice, and finance|Black-box AI has caused real-world harm]]
+- [[The alignment problem is ensuring AI optimization targets remain consistent with human values as capability scales|Alignment problem: targets stay aligned as capability scales]]
+- [[Instrumental convergence means sufficiently capable goal-seeking systems develop self-preservation sub-goals regardless of their original objective|Instrumental convergence: self-preservation sub-goals emerge]]
 
 ## Read more
 

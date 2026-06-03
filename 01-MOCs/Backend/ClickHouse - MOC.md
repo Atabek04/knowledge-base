@@ -3,8 +3,6 @@ created: 2026-05-12
 tags: [moc, clickhouse, database, olap]
 ---
 
-# ClickHouse — MOC
-
 > Fast open-source OLAP DBMS — columnar storage, vectorized execution, MergeTree family.
 
 ---
@@ -12,8 +10,8 @@ tags: [moc, clickhouse, database, olap]
 ## Fundamentals
 
 - [ ] What ClickHouse is and when to use it
-- [[ClickHouse columnar storage reads only queried columns by preserving row position across files]]
-- [[ClickHouse column compression reduces I/O with LZ4 by default and opt-in codecs per column]]
+- [[ClickHouse columnar storage reads only queried columns by preserving row position across files|Columnar storage reads only the queried columns]]
+- [[ClickHouse column compression reduces I/O with LZ4 by default and opt-in codecs per column|Column compression: LZ4 default + per-column codecs]]
 - [ ] Installation and deployment (binary, Docker, Kubernetes)
 - [ ] Client tools (clickhouse-client, DBeaver, HTTP interface)
 
@@ -21,7 +19,7 @@ tags: [moc, clickhouse, database, olap]
 
 - [ ] DDL — databases, tables, schema evolution
 - [ ] DQL — SELECT, filtering, aggregation
-- [[ClickHouse lightweight DELETE marks rows with hidden flag removed during background merge]]
+- [[ClickHouse lightweight DELETE marks rows with hidden flag removed during background merge|Lightweight DELETE: flag now, remove on merge]]
 - [ ] Views — normal, materialized, parameterized
 - [ ] Joins and unions — types, performance trade-offs
 
@@ -38,7 +36,7 @@ tags: [moc, clickhouse, database, olap]
 
 ## MergeTree Engine
 
-- [[MergeTree stores each INSERT as an immutable data part merged in background]]
+- [[MergeTree stores each INSERT as an immutable data part merged in background|MergeTree: each INSERT is an immutable part, merged later]]
 - [ ] On-disk layout — data directory, bin files, mark files, primary index
 - [ ] Primary key vs ORDER BY key
 - [ ] Partitioning strategy
@@ -47,9 +45,9 @@ tags: [moc, clickhouse, database, olap]
 
 ## MergeTree Family Variants
 
-- [[ReplacingMergeTree deduplicates rows on merge using ORDER BY key and optional version column]]
-- [[FINAL forces deduplication at query time but degrades performance with many unmerged parts]]
-- [[argMax retrieves the value corresponding to the maximum of another column]]
+- [[ReplacingMergeTree deduplicates rows on merge using ORDER BY key and optional version column|ReplacingMergeTree dedupes on merge by ORDER BY key]]
+- [[FINAL forces deduplication at query time but degrades performance with many unmerged parts|FINAL dedupes at query time (slow with many parts)]]
+- [[argMax retrieves the value corresponding to the maximum of another column|argMax: value at the max of another column]]
 - [ ] SummingMergeTree — pre-aggregated sums
 - [ ] AggregatingMergeTree — arbitrary aggregate states
 - [ ] CollapsingMergeTree — sign-based row collapsing
@@ -75,7 +73,7 @@ tags: [moc, clickhouse, database, olap]
 
 - [ ] MySQL / PostgreSQL — table engines and federated queries
 - [ ] MongoDB
-- [[Dual-write pattern uses PostgreSQL for transactional writes and ClickHouse for analytics]]
+- [[Dual-write pattern uses PostgreSQL for transactional writes and ClickHouse for analytics|Dual-write: Postgres for writes, ClickHouse for analytics]]
 - [ ] S3 and object storage
 
 ## Administration

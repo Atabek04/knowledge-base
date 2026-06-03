@@ -1,23 +1,19 @@
-# Software Engineering Principles — MOC
-
-> Foundational ideas about how to write, organize, and expose code — beyond patterns and syntax.
-
 ---
 
 ## Encapsulation & API Boundaries
 
 *What should a module hide, and how?*
 
-- [[Getters and setters add boilerplate without real encapsulation]] — the anti-pattern and when accessors actually make sense
-- [[C achieves data hiding by omitting struct definitions from headers]] — opaque pointer pattern, zero keywords needed
-- [[Private keyword in C++ created header dependencies and long compile times]] — the cost of solving encapsulation at the type level
-- [[Private fields are a type-level fix for a module-level problem]] — synthesis: wrong level of abstraction
+- [[Getters and setters add boilerplate without real encapsulation|Getters/setters add boilerplate, not encapsulation]]
+- [[C achieves data hiding by omitting struct definitions from headers|C hides data via opaque pointers in headers]]
+- [[Private keyword in C++ created header dependencies and long compile times|C++ private created header deps and slow compiles]]
+- [[Private fields are a type-level fix for a module-level problem|Private fields: type-level fix for a module problem]]
 
 ## API Contract Theory
 
 *What does an API actually promise?*
 
-- [[Hyrum's Law states any observable behavior in a library will be depended on]] — why "private" protects less than you think
+- [[Hyrum's Law states any observable behavior in a library will be depended on|Hyrum's Law: any observable behavior gets depended on]]
 
 ---
 
@@ -116,7 +112,7 @@
 
 *Inheritance is the strongest coupling in OOP. Reach for it last.*
 
-- [ ] Favor composition over inheritance — why the Gang of Four said it
+- [[Favor composition over inheritance when behaviors vary independently|Favor composition over inheritance (HAS-A vs IS-A)]]
 - [ ] The fragile base class problem — subclassing breaks when the parent changes
 - [ ] Mixin vs inheritance vs delegation
 - [ ] When inheritance is correct — true is-a relationships, not code reuse
@@ -127,11 +123,11 @@
 
 *Model the business in objects defined by identity, value, and consistency boundaries — not by table layout.*
 
-- [[A domain entity is defined by a continuous identity that persists through state changes]] — identity-based, mutable over its lifecycle
-- [[A value object has no identity and is compared by the equality of its attributes]] — immutable, equality by value
-- [[An aggregate is a cluster of objects treated as one consistency boundary]] — why one transaction = one aggregate
-- [[The aggregate root is the only object outside code may hold a reference to]] — the single gatekeeper that enforces invariants
-- [[A domain model captures behavior and rules while a data model captures storage structure]] — domain model vs relational/ERD data model
+- [[A domain entity is defined by a continuous identity that persists through state changes|Entity: continuous identity through state changes]]
+- [[A value object has no identity and is compared by the equality of its attributes|Value object: no identity, equality by value]]
+- [[An aggregate is a cluster of objects treated as one consistency boundary|Aggregate: one consistency boundary per transaction]]
+- [[The aggregate root is the only object outside code may hold a reference to|Aggregate root: the only externally held reference]]
+- [[A domain model captures behavior and rules while a data model captures storage structure|Domain model (behavior) vs data model (storage)]]
 
 ---
 

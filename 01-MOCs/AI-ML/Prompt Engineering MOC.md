@@ -3,8 +3,6 @@ created: 2026-05-14
 tags: [moc]
 ---
 
-# Prompt Engineering MOC
-
 Designing inputs to LLMs to get reliable, accurate, and useful outputs.
 
 Prompting is the interface to the model — the same model gives wildly different results depending on instruction clarity, context placement, examples, and output format.

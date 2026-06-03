@@ -1,5 +1,3 @@
-# AWS — MOC
-
 > Cloud infrastructure for backend engineers — services, patterns, and system design context
 
 ---

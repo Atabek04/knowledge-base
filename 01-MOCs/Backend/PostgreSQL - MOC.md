@@ -3,8 +3,6 @@ created: 2026-05-21
 tags: [moc, postgresql, database, oltp]
 ---
 
-# PostgreSQL — MOC
-
 > Open-source relational DBMS — ACID transactions, row-oriented storage, OLTP workloads.
 
 ---
@@ -19,8 +17,8 @@ tags: [moc, postgresql, database, oltp]
 
 ## Transactions & Isolation
 
-- [[PostgreSQL transactions wrap multiple operations in an atomic unit with automatic rollback on failure]]
-- [[PostgreSQL WAL records every change before applying to data files enabling crash recovery]]
+- [[PostgreSQL transactions wrap multiple operations in an atomic unit with automatic rollback on failure|Transactions: atomic unit, auto-rollback on failure]]
+- [[PostgreSQL WAL records every change before applying to data files enabling crash recovery|WAL records changes before data files (crash recovery)]]
 - [ ] ACID properties
 - [ ] Isolation levels (Read Uncommitted, Read Committed, Repeatable Read, Serializable)
 - [ ] Dirty reads, non-repeatable reads, phantom reads
@@ -39,7 +37,7 @@ tags: [moc, postgresql, database, oltp]
 
 ## Replication & CDC
 
-- [[PostgreSQL WAL records every change before applying to data files enabling crash recovery]]
+- [[PostgreSQL WAL records every change before applying to data files enabling crash recovery|WAL records changes before data files (crash recovery)]]
 - [ ] Replication basics (streaming, logical)
 - [ ] Replication slots
 

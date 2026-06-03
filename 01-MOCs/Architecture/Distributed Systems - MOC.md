@@ -1,6 +1,3 @@
-# Distributed Systems — MOC
-
-> **Phase 8** of [[00 - IT Career - MOC]]
 > Understand distributed computing fundamentals
 
 ---
@@ -23,10 +20,12 @@
 - [ ] Network partitions
 - [ ] Latency and timeouts
 - [ ] Clocks and ordering
+- [ ] BASE vs ACID
+- [ ] Idempotency keys
 
 ### CAP Theorem & PACELC
-- [[CAP theorem forces a partitioned system to choose between consistency and availability]] — C/A/P, the "pick 2 under partition" framing, CP vs AP, PACELC
-- [[Eventual consistency lets replicas accept writes during a partition and converge afterward]] — the consistency model an AP system adopts
+- [[CAP theorem forces a partitioned system to choose between consistency and availability|CAP: pick C or A under partition (CP vs AP, PACELC)]]
+- [[Eventual consistency lets replicas accept writes during a partition and converge afterward|Eventual consistency: replicas converge after a partition]]
 - [ ] Trade-off decisions
 
 ### Consistency Models
@@ -50,9 +49,13 @@
 - [ ] Producers and consumers
 - [ ] Consumer groups
 - [ ] Replication and durability
-- [[Kafka delivers messages at-least-once by default and exactly-once with atomic offset commits]]
+- [ ] Producer acks, idempotent producer, batching
+- [ ] Consumer rebalancing & partition assignment strategies
+- [[Kafka delivers messages at-least-once by default and exactly-once with atomic offset commits|Kafka: at-least-once default, exactly-once with atomic offsets]]
 - [ ] Kafka Streams basics
-- [ ] Schema Registry (Avro)
+- [ ] Schema Registry (Avro, Protobuf)
+- [ ] Dead Letter Queue (DLQ) pattern
+- [ ] Compacted topics
 
 #### RabbitMQ
 - [ ] Exchanges, queues, bindings
@@ -60,6 +63,10 @@
 - [ ] Acknowledgments
 - [ ] Dead letter queues
 - [ ] Message TTL
+
+#### Apache Pulsar
+- [ ] Topics, tenants, namespaces
+- [ ] Pulsar vs Kafka — when each fits
 
 ### Event-Driven Architecture
 - [ ] Events vs Commands vs Queries
@@ -109,4 +116,3 @@
 - [[Microservices Patterns - MOC]]
 - [[Architecture - MOC]]
 - [[Databases - MOC]]
-- [[00 - IT Career - MOC]]

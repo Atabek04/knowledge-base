@@ -3,8 +3,6 @@ created: 2026-05-14
 tags: [moc]
 ---
 
-# Agentic Engineering MOC
-
 Using autonomous LLM agents to write, refactor, and ship code — the **consumer** side of AI in software engineering.
 
 Distinct from [[AI Engineering MOC]], which is about *building* AI-powered products. Here the LLM is your collaborator, not your product.
@@ -37,7 +35,7 @@ Different from chat-style prompting: coding agents have a **loop** (observe → 
 
 ## Parallelism & Isolation
 
-- [[Git worktree enables parallel agentic coding with isolated sub-agent workspaces]] — one worktree per sub-agent
+- [[Git worktree enables parallel agentic coding with isolated sub-agent workspaces|Git worktree isolates parallel sub-agent workspaces]]
 - Sub-agents for research vs. coding (cost trade-offs)
 - When parallelism helps vs. when it just burns tokens
 

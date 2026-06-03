@@ -1,64 +1,67 @@
 ## Environment Management
 
-- [[Python virtual environments isolate project dependencies]]
-- [[requirements.txt specifies Python package dependencies]]
-- [[uv is a fast all-in-one Python package manager written in Rust|uv]] — fast all-in-one replacement for pip, virtualenv, and pyenv
+- [[Python virtual environments isolate project dependencies|Virtual environments isolate project deps]]
+- [[requirements.txt specifies Python package dependencies|requirements.txt lists package deps]]
+- [[uv is a fast all-in-one Python package manager written in Rust|uv: fast all-in-one package manager (Rust)]]
 
 ## Libraries & Frameworks
 
 - [[Pandas MOC]]
 - [[Matplotlib is a Python library for creating static and interactive visualizations|Matplotlib]]
 - [[Pyplot is the convenience module for quick plotting in Matplotlib|pyplot]]
-  - [[plt.scatter draws individual data points as dots on a chart|plt.scatter]] — draws individual dots
-  - [[plt.plot draws a line by connecting points in order|plt.plot]] — connects points with a line
-  - [[plt.title, xlabel, and ylabel add text labels to a chart|plt.title / xlabel / ylabel]] — add text labels
-  - [[plt.show renders and displays the chart on screen|plt.show]] — render the chart on screen
+- [[plt.scatter draws individual data points as dots on a chart|plt.scatter: individual dots]]
+- [[plt.plot draws a line by connecting points in order|plt.plot: line connecting points]]
+- [[plt.title, xlabel, and ylabel add text labels to a chart|plt.title / xlabel / ylabel: text labels]]
+- [[plt.show renders and displays the chart on screen|plt.show: render the chart]]
 - [[Scikit-learn provides ready-to-use ML algorithms and preprocessing tools|Scikit-learn]]
 
 ## Memory Model
 
-- [[Python has no primitives because every value is a heap-allocated object]]
-- [[Python variables are name bindings to heap objects not value containers]]
-- [[CPython manages memory through reference counting with immediate deallocation]]
+- [[Python has no primitives because every value is a heap-allocated object|No primitives: every value is a heap object]]
+- [[Python variables are name bindings to heap objects not value containers|Variables are name bindings, not containers]]
+- [[CPython manages memory through reference counting with immediate deallocation|CPython: reference counting, immediate dealloc]]
 
 ## Core Concepts
 
-- [[A Python module is a single file and a package is a folder of modules]]
-- [[Python functions are standalone while methods are attached to objects]]
-- [[Generics parameterize a type so the container and its element type are both known]] — `list[str]`, `AsyncGenerator[str, None]`, Java analogy
+- [[A Python module is a single file and a package is a folder of modules|Module = file; package = folder of modules]]
+- [[Python functions are standalone while methods are attached to objects|Functions are standalone; methods attach to objects]]
+- [[Generics parameterize a type so the container and its element type are both known|Generics parameterize container + element type]]
 
 ## Data Structures
 
 ## Object-Oriented Programming
 
-- [[classmethod uses cls instead of self because it operates on the class not an instance]]
-- [[Underscore prefix marks private members by convention not enforcement in Python]]
+- [[classmethod uses cls instead of self because it operates on the class not an instance|classmethod uses cls: operates on the class]]
+- [[Underscore prefix marks private members by convention not enforcement in Python|Underscore marks private by convention]]
 
 ## Async
 
-- [[The event loop is a Python runtime scheduler that drives async concurrency on one thread]]
-- [[A coroutine executes line by line and only yields at an await point]]
-- [[await suspends a coroutine and returns control to the event loop until IO completes]]
-- [[asynccontextmanager splits startup and shutdown logic at the yield]]
-- [[asyncio.create_task schedules a coroutine to run concurrently without blocking the caller]] — fire-and-await-later; vs direct `await`
+- [[The event loop is a Python runtime scheduler that drives async concurrency on one thread|Event loop: one-thread async scheduler]]
+- [[A coroutine executes line by line and only yields at an await point|Coroutine yields only at await points]]
+- [[await suspends a coroutine and returns control to the event loop until IO completes|await suspends until IO completes]]
+- [[asynccontextmanager splits startup and shutdown logic at the yield|asynccontextmanager splits setup/teardown at yield]]
+- [[asyncio.create_task schedules a coroutine to run concurrently without blocking the caller|create_task schedules a coroutine concurrently]]
 
 ## Concurrency
 
-- [[IO-bound and CPU-bound work require different concurrency strategies]] — async vs threads vs processes; GIL factor
-- [[run_in_executor offloads a blocking function to a thread pool without blocking the event loop]] — `ThreadPoolExecutor`, custom pool, `max_workers`, Java analogy
+- [[IO-bound and CPU-bound work require different concurrency strategies|IO-bound vs CPU-bound: different strategies (GIL)]]
+- [[run_in_executor offloads a blocking function to a thread pool without blocking the event loop|run_in_executor offloads blocking calls to a thread pool]]
 
 ## Functional Programming
 
-- [[List comprehension is Python's inline filter-map equivalent to Stream API]]
-- [[yield in Python is one keyword with three different jobs]]
-- [[Python generator produces values one at a time on demand]]
-- [[Call stack is a LIFO structure that tracks active method frames]]
-- [[A generator object is a suspended stack frame that resumes at yield]]
-- [[Python for loop works with any iterable not just lists]]
-- [[A list holds all values in RAM even when you only process one at a time]]
-- [[Python range computes values on demand without storing them]]
+- [[List comprehension is Python's inline filter-map equivalent to Stream API|List comprehension: inline filter-map (like Stream API)]]
+- [[yield in Python is one keyword with three different jobs|yield: one keyword, three jobs]]
+- [[Python generator produces values one at a time on demand|Generator: values one at a time, on demand]]
+- [[Call stack is a LIFO structure that tracks active method frames|Call stack: LIFO of active frames]]
+- [[A generator object is a suspended stack frame that resumes at yield|Generator object: a suspended frame resuming at yield]]
+- [[Python for loop works with any iterable not just lists|for loop works on any iterable]]
+- [[A list holds all values in RAM even when you only process one at a time|A list holds all values in RAM]]
+- [[Python range computes values on demand without storing them|range computes on demand, stores nothing]]
 
 ## Standard Library
+
+- [[Python sorted() returns a new sorted list while list.sort() mutates in place|sorted() returns new; list.sort() mutates]]
+- [[Python sorted() key argument maps each element to the value used for comparison|sorted(key=...) maps elements to compare values]]
 
 ## File I/O
 
@@ -66,32 +69,32 @@
 
 ## Pydantic
 
-- [[Pydantic BaseModel provides serialization and deserialization via model_validate and model_dump]]
-- [[pydantic-settings reads env files and type-coerces automatically]]
-- [[field_validator runs before Pydantic assigns a field value]]
+- [[Pydantic BaseModel provides serialization and deserialization via model_validate and model_dump|BaseModel: model_validate / model_dump]]
+- [[pydantic-settings reads env files and type-coerces automatically|pydantic-settings reads .env and type-coerces]]
+- [[field_validator runs before Pydantic assigns a field value|field_validator runs before field assignment]]
 
 ## Configuration & Settings
 
-- [[pydantic-settings reads env files and type-coerces automatically]] — BaseSettings, .env, fail-fast on missing fields
-- [[field_validator runs before Pydantic assigns a field value]] — @field_validator, mode before/after, cls + v params
+- [[pydantic-settings reads env files and type-coerces automatically|pydantic-settings: BaseSettings, .env, fail-fast]]
+- [[field_validator runs before Pydantic assigns a field value|field_validator: mode before/after, cls + v]]
 
 ## Resource Management
 
-- [[with-as is Python's try-with-resources that guarantees cleanup on exit]]
+- [[with-as is Python's try-with-resources that guarantees cleanup on exit|with-as: try-with-resources, guaranteed cleanup]]
 
 ## Error Handling
 
-- [[Nested try-except creates a waterfall of fallbacks for independent failure points]]
+- [[Nested try-except creates a waterfall of fallbacks for independent failure points|Nested try-except: waterfall of fallbacks]]
 
 ## HTTP Clients
 
-- [[httpx is a modern HTTP client for Python with async support]] — vs `requests`, sync/async, Java analogy
-- [[httpx.AsyncClient manages connection lifecycle as an async context manager]] — context manager, per-request vs shared, exception hierarchy
-- [[httpx request-response-error pattern is the standard cycle for async HTTP calls]] — send, read, error handling order, senior pattern
+- [[httpx is a modern HTTP client for Python with async support|httpx: modern async HTTP client (vs requests)]]
+- [[httpx.AsyncClient manages connection lifecycle as an async context manager|httpx.AsyncClient: lifecycle as async context manager]]
+- [[httpx request-response-error pattern is the standard cycle for async HTTP calls|httpx send → read → error: the async HTTP cycle]]
 
 ## FastAPI
 
-- [[FastAPI Depends wires service creation to endpoint function signatures]] — `Depends`, `Annotated`, factory pattern, test overrides
-- [[Type alias collapses a repeated complex type into one named reference]] — why aliases exist, `Annotated[..., Depends(...)]` pattern, Java comparison
+- [[FastAPI Depends wires service creation to endpoint function signatures|FastAPI Depends wires services into endpoints]]
+- [[Type alias collapses a repeated complex type into one named reference|Type alias names a repeated complex type]]
 
 ## Best Practices

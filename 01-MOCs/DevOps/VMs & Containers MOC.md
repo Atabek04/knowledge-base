@@ -11,15 +11,15 @@ Foundation concepts about how operating systems manage resources, enforce isolat
 
 ### Kernel & System Architecture
 
-- [[Kernel is the core OS program with complete control over system]] — first program loaded after bootloader, stays in memory
-- [[User Space and Kernel Space represent two CPU privilege modes]] — restricted vs unrestricted hardware access
-- [[System calls provide the bridge from user programs to kernel services]] — only legal way to request kernel operations
-- [[CPU mode switch transitions from User Mode to Kernel Mode during syscalls]] — trap mechanism triggered by privileged requests
+- [[Kernel is the core OS program with complete control over system|Kernel: core OS program with total control]]
+- [[User Space and Kernel Space represent two CPU privilege modes|User space vs kernel space: two privilege modes]]
+- [[System calls provide the bridge from user programs to kernel services|System calls: the only path to kernel services]]
+- [[CPU mode switch transitions from User Mode to Kernel Mode during syscalls|Mode switch: user → kernel on a syscall (trap)]]
 
 ### Memory & Data Transfer
 
-- [[RAM is volatile fast storage while disk is persistent slow storage]] — speed and persistence tradeoff
-- [[Buffers store data during transfers between components with speed mismatches]] — temporary storage decouples producer/consumer speeds
+- [[RAM is volatile fast storage while disk is persistent slow storage|RAM: volatile/fast; disk: persistent/slow]]
+- [[Buffers store data during transfers between components with speed mismatches|Buffers absorb speed mismatches in transfers]]
 
 ## Part 2 — Virtualization & VMs
 
@@ -27,21 +27,21 @@ Technology enabling multiple isolated operating systems on single physical hardw
 
 ### Core Virtualization Concepts
 
-- [[Virtualization solves hardware underutilization and application isolation problems]] — consolidates multiple workloads on one server
-- [[Virtual Machine emulates complete physical computer in software]] — virtual CPU, RAM, disk, network card
-- [[Guest OS runs inside VM while Host OS runs on physical hardware]] — two-tier operating system architecture
-- [[Hypervisor creates and manages virtual machines by dividing physical resources]] — software layer that tricks Guest OS into thinking it owns hardware
+- [[Virtualization solves hardware underutilization and application isolation problems|Virtualization: utilization + isolation]]
+- [[Virtual Machine emulates complete physical computer in software|VM emulates a whole computer in software]]
+- [[Guest OS runs inside VM while Host OS runs on physical hardware|Guest OS in the VM, Host OS on hardware]]
+- [[Hypervisor creates and manages virtual machines by dividing physical resources|Hypervisor divides hardware among VMs]]
 
 ### Hypervisor Architecture
 
-- [[Hypervisor Type 1 runs on bare metal while Type 2 runs on Host OS]] — direct vs hosted architecture
-- [[Type 1 hypervisor is faster due to direct hardware access]] — fewer software layers means less overhead
-- [[Guest OS communicates with emulated hardware through hypervisor intercepts]] — hypervisor software pretends to be physical hardware
+- [[Hypervisor Type 1 runs on bare metal while Type 2 runs on Host OS|Type 1 on bare metal, Type 2 on a host OS]]
+- [[Type 1 hypervisor is faster due to direct hardware access|Type 1 is faster: direct hardware access]]
+- [[Guest OS communicates with emulated hardware through hypervisor intercepts|Guest OS hits emulated hardware via the hypervisor]]
 
 ### VM Architecture Layers
 
-- [[VM architecture layers from hardware through Guest OS to applications]] — server → Host OS → hypervisor → Guest OS → bins/libs → app
-- [[Each VM carries full Guest OS making it resource-heavy]] — each VM runs complete OS kernel consuming GBs of RAM
+- [[VM architecture layers from hardware through Guest OS to applications|VM stack: hardware → host → hypervisor → guest → app]]
+- [[Each VM carries full Guest OS making it resource-heavy|Each VM ships a full OS → heavy]]
 
 ## Part 3 — Containerization
 
@@ -49,18 +49,18 @@ Lightweight isolation technology using shared kernel instead of full operating s
 
 ### Core Container Concepts
 
-- [[Containerization solves VM heaviness by sharing the Host OS kernel]] — isolation without duplicate kernels and OS overhead
-- [[Containers share kernel but isolate everything above it]] — single shared kernel, multiple isolated application environments
+- [[Containerization solves VM heaviness by sharing the Host OS kernel|Containers share the host kernel (lighter than VMs)]]
+- [[Containers share kernel but isolate everything above it|Containers share the kernel, isolate above it]]
 
 ### Linux Isolation Primitives
 
-- [[Namespaces isolate what container processes can see]] — six types (PID, NET, MNT, UTS, USER, IPC) control visibility
-- [[PID namespace makes container think it owns process tree]] — kernel maintains two PID numbers for each process
-- [[NET namespace gives each container isolated network stack]] — own IP addresses, ports, routing table
-- [[Virtual network interfaces are software-emulated NICs]] — kernel simulates hardware without physical device
-- [[Docker bridge connects container networks to host NIC]] — virtual switch routes container traffic to outside world
-- [[Cgroups limit how many resources container processes can consume]] — control CPU, memory, disk I/O, network bandwidth
-- [[Namespaces provide isolation while cgroups provide resource fairness]] — visibility boundary vs usage limits
+- [[Namespaces isolate what container processes can see|Namespaces isolate what a container sees (PID, NET, …)]]
+- [[PID namespace makes container think it owns process tree|PID namespace: container owns its process tree]]
+- [[NET namespace gives each container isolated network stack|NET namespace: isolated network stack]]
+- [[Virtual network interfaces are software-emulated NICs|Virtual NICs are software-emulated]]
+- [[Docker bridge connects container networks to host NIC|Docker bridge links container nets to the host NIC]]
+- [[Cgroups limit how many resources container processes can consume|Cgroups cap container resource use]]
+- [[Namespaces provide isolation while cgroups provide resource fairness|Namespaces isolate; cgroups ration]]
 
 ### Not Yet Covered
 

@@ -7,20 +7,20 @@ tags: [moc]
 
 ## Part 1 — Modal Editing System
 
-- [[Vim operates in six primary modes with normal, insert, and visual being most commonly used]] — understanding Vim's mode architecture
-- [[Vim insert mode can be entered from different positions using i, a, o and their uppercase variants]] — flexible insertion points
+- [[Vim operates in six primary modes with normal, insert, and visual being most commonly used|Six modes; normal, insert, visual most used]]
+- [[Vim insert mode can be entered from different positions using i, a, o and their uppercase variants|Enter insert mode: i, a, o (and uppercase)]]
 
 ## Part 2 — Navigation
 
-- [[Vim normal mode navigation uses hjkl keys with optional number multipliers]] — efficient cursor movement
+- [[Vim normal mode navigation uses hjkl keys with optional number multipliers|Normal-mode navigation: hjkl + count]]
 
 ## Part 3 — Editing Operations
 
-- [[Vim undo and redo use u and Ctrl+R respectively in normal mode]] — reversing changes
+- [[Vim undo and redo use u and Ctrl+R respectively in normal mode|Undo u, redo Ctrl+R]]
 
 ## Part 4 — Commands
 
-- [[Exclamation mark prefix executes shell commands while suffix forces Vim commands]] — shell integration and command forcing
+- [[Exclamation mark prefix executes shell commands while suffix forces Vim commands|! prefix runs shell; suffix forces a command]]
 
 ## Related MOCs
 

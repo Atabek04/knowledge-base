@@ -57,7 +57,12 @@ Limit to 4-5 colors maximum to avoid visual clutter.
 
 **Syntax** (inline-style):
 ```html
-<mark style="background: yellow">highlighted text</mark>
+<mark style="background: #FFF3A3A6;">highlighted text</mark>
+```
+
+**Bold inside highlights** — Obsidian does NOT render `**bold**` inside `<mark>` tags in edit mode (CM6 limitation, not a bug). Use `font-weight: bold` inline instead:
+```html
+<mark style="background: #FFF3A3A6; font-weight: bold;">bold highlighted text</mark>
 ```
 
 **Color system (optimized for dark theme):**
@@ -97,6 +102,15 @@ When explaining code or concepts, **always use the actual class/method/annotatio
 
 The name is the identity. Vague labels force the reader to guess which thing you mean.
 
+### Name as Mnemonic
+
+When a concept's name encodes its meaning, **explain why it's called that** — the name itself becomes the recall hook.
+
+✓ "**Strategy** — a chosen, swappable *way* to do a task"
+✓ "**Composition** — an object *composed* of parts it holds (HAS-A), vs **Inheritance** — a subclass that *inherits* (IS-A)"
+
+Once the reader sees why the name fits, they can re-derive the concept from the name alone. Do this for patterns, principles, and any jargon whose label is descriptive.
+
 ### Content Rules
 
 **NEVER:**
@@ -109,10 +123,14 @@ The name is the identity. Vague labels force the reader to guess which thing you
 - Rewrite concepts in own words
 - Link to related notes and parent MOC
 - Follow templates in `Templates/` folder
-- Use `###` and `####` headings to organize sections (avoid `#` and `##` — too large)
-- Use horizontal lines `---` to separate major content blocks
+- **Heading hierarchy** — only two levels inside a note, never `#` or `##` (their rendered size rivals the filename title and breaks the visual hierarchy):
+    - `###` — a **major section** of the note (a distinct facet of the concept: "Accessors vs getters", "No setters", "Returns reference not copy")
+    - `####` — a **new point inside that section**. The moment you introduce a fresh concept, mechanism, or named feature mid-section (a `with` pattern, an edge case, a gotcha), give it its own `####` so the reader *sees* a new idea start instead of it hiding in a paragraph. Don't bury a teachable sub-concept in running prose.
+    - Never skip a level (no `####` without a parent `###`) and never use a heading for a single sentence — if it doesn't earn a paragraph, it's not a heading
+    - Bold lead-ins (`**Manual wither method:**`) are for labelling a code block or list item *within* a `####` point, not a substitute for the heading itself
+- Use horizontal lines `---` to separate major content blocks (between `###` sections, not between `####` points inside one section)
 - Start notes directly with the topic content — no `Parent: [[MOC]]` header at the top
-- **Never repeat the filename as a `#` heading inside the note** — Obsidian uses the filename as the displayed title; a matching H1 is pure duplication
+- **Never use a `#` heading inside any note or MOC** — Obsidian renders the filename as the page title; a `#` heading is always duplication. MOCs use `##` for sections and `###` for subsections. Atomic notes use `###` for sections and `####` for points. The `#` level is permanently reserved for the filename.
 - Place MOC links and related links in the "Read more" section at the bottom, using `### Read more` (not `##`)
 - Open every note with a brief intro that gives context — the reader has no prior knowledge from the conversation. Don't start mid-thought or with a definition that assumes context.
 - Keep code examples consistent in scale — if the problem shows 1B numbers, the fix must also use 1B, not 3
@@ -123,13 +141,28 @@ The name is the identity. Vague labels force the reader to guess which thing you
 ### Note Linking
 
 **Inline links** — use when the note title fits naturally in a sentence.
-Use aliases to keep it smooth: `[[Long atomic title|short alias]]`.
+- **MUST use an alias** — never drop a full atomic title into a sentence. Full titles are complete statements (often 10+ words) and wreck the prose: `[[Long atomic title|short alias]]`.
+- The alias is a noun phrase that flows in the sentence, not a vague label. ✓ `wrap the list in a defensive copy` ❌ `this note` / `see here`
+- If no alias reads smoothly, do **not** force the inline link — move it to "Read more" only (see "When NOT to link").
 
 **"Read more" section** — add at the bottom of every note with bullet-pointed links.
-- Notes linked inline should be repeated here
+- Notes linked inline MUST be repeated here
 - Notes with strong connections that didn't fit inline also go here
 - Format: `### Read more` heading followed by bullet list (never `##`)
-- **Always use full note titles** — no aliases. Aliases are only for inline links where readability matters
+- **MUST use full note titles — never an alias.** This is the rule's whole point: inline = alias for flow, Read more = full title for the reader to recognize the destination. The two never swap.
+- **Group related links under a sub-list** — when several links share a label (e.g. `Implementations:`, `See also:`), put each on its own indented sub-bullet, never inline-separated with `·`. One link per line reads cleaner:
+  ```
+  - Implementations:
+      - [[Strategy pattern in Kotlin ...]]
+      - [[Strategy pattern in Python ...]]
+  ```
+
+**MOC chapter lists** — when listing atomic notes under a MOC section heading, link with an alias so each note fits on one readable line, book-outline style: `[[Full atomic title|short meaningful alias]]`.
+- The alias is a condensed-but-meaningful restatement of the title (e.g. `[[Differences between JDK, JRE, JVM|JDK vs JRE vs JVM]]`), never a vague label
+- Drop trailing `— description` annotations — the alias carries the meaning
+- This is the one place besides inline links where aliases are used; "Read more" sections still use full titles
+- Pending topics with no note yet stay as plain `- [ ]` checkboxes; replace the checkbox with an aliased link once the note exists
+- **Never nest atomic note links as sub-bullets under a `- [ ]` todo or another link** — always promote them to the same flat level as the other bullets in the section. If a group of notes needs visual structure, add a `###` sub-heading, not indentation.
 
 **When to link:**
 - One note directly explains, depends on, or extends another
@@ -147,6 +180,8 @@ Operational workflows live as Claude Code skills in `.claude/skills/`. They load
 
 - **`flashcard-creator`** — building or maintaining Anki cards from atomic notes, or vocab cards when the user asks what a word means. Triggers on a finished atomic note, "make/test/add cards", a new linked note in a MOC that already has a flashcard file, or a sentence + "what does this word mean". See the proactive rule under [Flashcard Generation](#flashcard-generation) below.
 - **`note-validator`** — judging whether an inbox note is ready to move from `00-Inbox/` into `02-Zettelkasten/`. Triggers on "validate this note", "is this ready", "process my inbox", or a pasted draft. Returns PASS / SPLIT / REWRITE — it diagnoses, it does not rewrite the user's content.
+- **`design-pattern-note`** — writing or structuring a design pattern note (concept hub + per-language impls + principle notes, language choice, diagrams, refactoring.guru-style pedagogy). Triggers on creating/documenting any GoF pattern, adding a pattern to the Design Patterns MOC, or writing implementation notes for a pattern.
+- **`teach`** *(global skill, `~/.claude/skills/teach`)* — Socratic deep-learning tutor. Teaches one concept at a time: starts from a real problem, guides you to re-invent the solution through questions, never lectures, and waits for your approval before each next chunk. Suggests an atomic note after each concept lands. Triggers on `/teach`, `/learn`, "teach me X", "explain X step by step", "I want to learn X".
 
 ## Flashcard Generation
 

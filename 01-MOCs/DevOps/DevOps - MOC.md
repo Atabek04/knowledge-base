@@ -1,6 +1,3 @@
-# DevOps — MOC
-
-> **Phase 6** of [[00 - IT Career - MOC]]
 > Infrastructure and deployment skills
 
 ---
@@ -65,6 +62,7 @@
 - [ ] Namespaces
 - [ ] Labels and selectors
 - [ ] Resource limits
+- [ ] Horizontal Pod Autoscaler (HPA)
 - [ ] Liveness and readiness probes
 - [ ] Ingress
 - [ ] kubectl commands
@@ -94,6 +92,17 @@
 - [ ] Health checks
 - [ ] SSL termination
 
+### Infrastructure as Code
+- [ ] Terraform — providers, resources, state, modules
+- [ ] Remote state (S3 + DynamoDB locking)
+- [ ] CI/CD integration
+
+### Deployment Strategies
+- [ ] Blue-green deployment
+- [ ] Canary deployment
+- [ ] Rolling updates
+- [ ] Feature flags (LaunchDarkly, Unleash)
+
 ---
 
 ## Russian Curriculum (Модуль 9)
@@ -122,4 +131,3 @@
 - [[Architecture - MOC]]
 - [[AWS - MOC]]
 - [[Observability - MOC]]
-- [[00 - IT Career - MOC]]
