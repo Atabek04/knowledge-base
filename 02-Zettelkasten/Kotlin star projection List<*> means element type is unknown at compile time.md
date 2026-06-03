@@ -78,4 +78,4 @@ something as List<String>  // JVM checks "is List?" ✓, but skips element type 
 
 - [[Kotlin reified type parameter makes generic type available at runtime for inline functions]]
 - [[Kotlin safe cast as? returns null instead of throwing ClassCastException]]
-- [[Kotlin - MOC]]
+- [[Kotlin MOC]]

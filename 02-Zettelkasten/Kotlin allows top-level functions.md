@@ -1,7 +1,3 @@
-Parent: [[Kotlin MOC]]
-
----
-
 ### Previously in Java
 
 Every method must be declared inside a class
@@ -47,3 +43,9 @@ The generated class name is bases on the file name
 - Pure functions without state (*instance variables*)
 - Extension functions
 - Helper functions that operate on data
+
+---
+
+### Read more
+
+- [[Kotlin MOC]]

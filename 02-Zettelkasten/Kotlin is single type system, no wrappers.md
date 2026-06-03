@@ -4,10 +4,6 @@ created: 2025-12-30
 tags: [kotlin, types]
 ---
 
-Parent: [[Kotlin MOC]]
-
----
-
 ### No dual system
 
 Unlike [[Java has dual type system because JVM optimizes primitives for performance|Java's dual type system]], Kotlin has **one unified type system**.

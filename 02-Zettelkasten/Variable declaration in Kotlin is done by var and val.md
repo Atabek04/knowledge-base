@@ -1,7 +1,3 @@
-Parent: [[Kotlin MOC]]
-
----
-
 ### Two keywords for controlling mutability
 
 `var` — mutable variable (can reassign)

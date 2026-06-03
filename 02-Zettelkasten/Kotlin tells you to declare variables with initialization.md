@@ -1,7 +1,3 @@
-Parent: [[Kotlin MOC]]
-
----
-
 ### Well, you can declare var without initialization
 
 ```kotlin

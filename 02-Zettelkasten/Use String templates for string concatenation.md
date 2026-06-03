@@ -1,7 +1,3 @@
-Parent: [[Kotlin MOC]]
-
----
-
 ### Template expression `$`
 
 When the template expression is processed, Kotlin automatically calls the `.toString()` function.
@@ -25,4 +21,10 @@ val s = "abc"
 println("$s.length is ${s.length}") 
 // abc.length is 3
 ```
+
+---
+
+### Read more
+
+- [[Kotlin MOC]]
 

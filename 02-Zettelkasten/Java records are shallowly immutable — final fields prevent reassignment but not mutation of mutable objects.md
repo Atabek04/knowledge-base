@@ -45,7 +45,13 @@ record Account(List<String> transactions) {
 }
 ```
 
-Now the field holds an unmodifiable copy. Mutation attempts throw `UnsupportedOperationException`.
+`Account { }` is the record's [[Java records auto-generate accessor, equals, hashCode, and toString from their components#Compact constructor — validate and normalize components|compact constructor]] — it normalizes each component before the field is assigned. Here it swaps the incoming list for an [[Java List is an interface and its mutability depends on the implementation, not the type|unmodifiable copy whose `add()` throws]], so a later mutation through the accessor blows up:
+
+```java
+acc.transactions().add("FAKE"); // 💥 UnsupportedOperationException
+```
+
+The field now holds that unmodifiable copy — the corruption from the previous section is shut down.
 
 ---
 
@@ -65,5 +71,6 @@ Records are not a substitute for defensive copying — they only automate `final
 
 - [[Defensive copying prevents external mutation of internal state]]
 - [[Java records auto-generate accessor, equals, hashCode, and toString from their components]]
+- [[Java List is an interface and its mutability depends on the implementation, not the type]]
 - [[Java objects always live on heap; reference location depends on declaration site]]
 - [[Primitive types store actual value, references store only address in memory]]

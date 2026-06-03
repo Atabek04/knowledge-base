@@ -65,4 +65,4 @@ Kotlin's `as?` compiles to the same `instanceof` + cast pattern.
 ### Read more
 
 - [[Kotlin as keyword performs explicit type cast at runtime]]
-- [[Kotlin - MOC]]
+- [[Kotlin MOC]]

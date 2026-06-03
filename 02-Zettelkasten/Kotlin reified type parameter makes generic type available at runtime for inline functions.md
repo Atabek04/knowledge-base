@@ -81,4 +81,4 @@ Kotlin `reified` eliminates this boilerplate.
 ### Read more
 
 - [[Kotlin star projection List<*> means element type is unknown at compile time]]
-- [[Kotlin - MOC]]
+- [[Kotlin MOC]]

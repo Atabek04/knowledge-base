@@ -1,7 +1,3 @@
-Parent: [[Kotlin MOC]]
-
----
-
 1. Lists - ordered collections of item
 2. Sets - unique unordered collections of items
 3. Maps - sets of key-value pairs
@@ -100,4 +96,12 @@ println(juiceMenu)
 ```
 
 Read more about:
+- [[To obtain map's keys and values use these methods]]
+
+---
+
+### Read more
+
+- [[Kotlin MOC]]
+- [[To check that an item is in a list, use in operator]]
 - [[To obtain map's keys and values use these methods]]
