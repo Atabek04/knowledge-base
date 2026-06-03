@@ -22,7 +22,8 @@ Includes core concepts for writing idiomatic Kotlin code with proper type handli
 - [[Kotlin default parameters reduce function overloads|Default parameters replace overloads]]
 - [[Kotlin named arguments improve call-site readability|Named arguments improve call-site readability]]
 - [[Kotlin extension functions add methods to existing types without modifying them|Extension functions add methods via a receiver type]]
-- [ ] Higher-order functions and lambdas
+- [[First-class functions treat functions as values that can be passed, stored, and returned|First-class functions — pass, store, return]]
+- [[Kotlin typealias creates a readable alias for an existing type without creating a new class|typealias — readable name for existing type]]
 - [ ] Operator overloading
 
 ### String Handling
