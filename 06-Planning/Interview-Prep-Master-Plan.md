@@ -16,9 +16,9 @@
 
 | Track | MOC | Tracker | Flashcards |
 |---|---|---|---|
-| DSA / LeetCode | [[LeetCode - MOC]] | [[Grokking-Coding-Interview-Patterns - Tracker]] · [[Decode-Coding-Interview-Java - Tracker]] | `05-Flashcards/dsa/` |
-| System Design | [[System Design - MOC]] | [[Grokking-System-Design - Tracker]] | `05-Flashcards/system-design/` |
-| Design Patterns | [[Design Patterns - MOC]] | [[Design-Patterns - Tracker]] | `05-Flashcards/design-patterns/` |
+| DSA / LeetCode | [[LeetCode - MOC]] · [[Coding Interview Patterns - MOC]] | [[Decode-Coding-Interview-Java - Tracker]] · `LeetCode Tracker.base` | `05-Flashcards/dsa/` |
+| System Design | [[System Design - MOC]] | modules embedded in MOC | `05-Flashcards/system-design/` |
+| Design Patterns | [[Design Patterns - MOC]] | patterns embedded in MOC | `05-Flashcards/design-patterns/` |
 | Behavioral | [[Behavioral Interview - MOC]] | [[Behavioral-Interview - Tracker]] | `05-Flashcards/behavioral/` |
 
 ---
@@ -143,4 +143,4 @@ Per track, the "ATTEMPT" step is non-negotiable — it creates the cognitive str
 - [[System Design - MOC]]
 - [[Design Patterns - MOC]]
 - [[Behavioral Interview - MOC]]
-- [[Senior Java-Kotlin Developer Roadmap]]
+- [[Java-Kotlin-Roadmap]]

@@ -11,6 +11,8 @@ properties:
     displayName: Status
   note.topic:
     displayName: Topic
+  note.tags:
+    displayName: Tags
   note.solved:
     displayName: Times Solved
   note.link:
@@ -20,13 +22,21 @@ properties:
 views:
   - type: table
     name: All Problems
+    groupBy:
+      property: status
+      direction: ASC
     order:
       - file.name
+      - status
       - difficulty
       - topic
+      - tags
       - solved
       - last_solved
       - link
+    sort:
+      - property: file.name
+        direction: ASC
   - type: table
     name: Re-solve Queue
     filters:
@@ -60,3 +70,35 @@ views:
       - last_solved
     summaries:
       solved: Sum
+  - type: table
+    name: NeetCode 150
+    filters:
+      and:
+        - tags.contains("neetcode-150")
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - difficulty
+      - topic
+      - tags
+      - last_solved
+      - link
+  - type: table
+    name: Grokking Patterns
+    filters:
+      and:
+        - tags.contains("grokking-patterns")
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - difficulty
+      - topic
+      - tags
+      - last_solved
+      - link
