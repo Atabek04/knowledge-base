@@ -74,3 +74,74 @@ Kotlin fixed this — nested classes are static by default.
 Tags: java classes inner-class
 <!--ID: 1780311507661-->
 END
+
+START
+Coding Questions
+What does the inherited `Object.equals()` compare by default?
+Back: **Reference identity** — it is literally `this == obj`.
+
+It returns `true` only for the *same instance in memory*, not for two objects with identical field values.
+
+```java
+new Point(1,2).equals(new Point(1,2)); // false — different objects
+```
+Tags: java classes equals-hashcode
+END
+
+START
+Coding Questions
+By default, do two distinct objects with identical fields share a `hashCode()`?
+Back: **No.** The inherited `Object.hashCode()` is identity-based (typically derived from the memory address), so distinct instances almost always get **different** hash codes — even with identical fields.
+Tags: java classes equals-hashcode
+END
+
+START
+Coding Questions
+When should you override `equals()` and `hashCode()` instead of keeping the defaults?
+Back: When the class is a **value object** — equality should depend on *contents*, not identity.
+
+- Used as a `HashMap` key or in a `HashSet`
+- Money, `Point`, `Range`, DTOs
+
+Keep the identity default for objects unique by identity (a `Thread`, a DB connection).
+Tags: java classes equals-hashcode
+END
+
+START
+Coding Questions
+What are the five clauses of the `equals()` contract?
+Back: For non-null `x, y, z`:
+
+- **Reflexive** — `x.equals(x)` is true
+- **Symmetric** — `x.equals(y)` ⟺ `y.equals(x)`
+- **Transitive** — `x.equals(y)` ∧ `y.equals(z)` → `x.equals(z)`
+- **Consistent** — repeated calls return the same result
+- **Non-null** — `x.equals(null)` is false
+
+(Equivalence relation + consistent + non-null.)
+Tags: java classes equals-hashcode
+END
+
+START
+Coding Questions
+What is the binding rule linking `equals()` and `hashCode()`?
+Back: **If two objects are equal, their hash codes must be equal.**
+
+The reverse does NOT hold — equal hash codes do *not* imply equal objects (just a bucket collision).
+Tags: java classes equals-hashcode
+END
+
+START
+Coding Questions
+Why does a `HashMap` lookup fail if you override `equals()` but not `hashCode()`?
+Back: Lookup is two steps: **hashCode picks the bucket, equals confirms the key**.
+
+With the identity `hashCode()`, an equal-but-different key lands in a **different bucket**, so the map never reaches the `equals()` check.
+
+```java
+var m = new HashMap<Point,String>();
+m.put(new Point(1,2), "x");
+m.get(new Point(1,2)); // null ❌
+```
+Tags: java classes equals-hashcode
+END

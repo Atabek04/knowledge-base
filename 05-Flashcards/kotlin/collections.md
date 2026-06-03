@@ -297,3 +297,54 @@ val ayubTotal = orders
 Tags: kotlin collections
 <!--ID: 1774840548524-->
 END
+
+START
+Coding Questions
+What is the difference between `List` and `MutableList` in Kotlin?
+Back: Kotlin splits collections into **read-only** and **mutable** type hierarchies:
+- **`List`** — declares only read ops (`get`, `size`, `contains`); **no** `add`/`remove`/`set`
+- **`MutableList`** — extends `List`, adding the mutators `add`, `remove`, `set`
+```kotlin
+val items: List<String> = listOf("a")
+items.add("b") // ❌ compile error — List has no add()
+```
+Read-only is a **narrower type**, not a defensive copy — it costs nothing.
+Tags: kotlin collections
+END
+
+START
+Coding Questions
+Why does Kotlin's read-only `List` catch a mutation bug that Java's record accessor lets through?
+Back: It's a **type-level** guard caught at compile time:
+- **Java** — `java.util.List` interface declares `add()`, so a record accessor's return type still carries mutators. `acc.transactions().add("X")` compiles, fails only at runtime (if immutable)
+- **Kotlin** — `List` omits `add()` entirely, so `acc.transactions.add("X")` **won't compile**
+Tags: kotlin collections
+END
+
+START
+Coding Questions
+Is a Kotlin `List` immutable?
+Back: **No — read-only is not immutable.** `List` is a read-only **view**; the underlying object can still be a `MutableList` held elsewhere:
+```kotlin
+val mutable = mutableListOf("a")
+val readOnly: List<String> = mutable
+mutable.add("b")  // ✅ changes show through
+println(readOnly) // [a, b]
+```
+A `List` reference promises only that **you** can't mutate through it. For true immutability, copy or use `kotlinx.collections.immutable`.
+Tags: kotlin collections
+END
+
+START
+Coding Questions
+A Kotlin `List` reference still changed when the original `MutableList` was appended. Why, and how do you prevent it?
+Back: **Why** — `val readOnly: List<String> = mutable` copies nothing; both names point to the **same object**. The `List` type only hides `add()` from that name.
+**Prevent** — copy, don't alias:
+```kotlin
+val readOnly = mutable.toList()  // independent snapshot
+mutable.add("b")
+println(readOnly)  // [a] — unaffected
+```
+For a never-mutable type use `kotlinx.collections.immutable` (`toImmutableList()`).
+Tags: kotlin collections
+END

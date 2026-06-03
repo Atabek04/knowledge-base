@@ -128,3 +128,19 @@ record Account(List<String> transactions) {
 Tags: java records immutability defensive-copy
 <!--ID: 1780311507579-->
 END
+
+START
+Coding Questions
+What is a Java record's **compact constructor** and why does it have no parameter list?
+Back: It hooks into the auto-generated canonical constructor to **validate or normalize** components before they're assigned.
+```java
+record Account(List<String> transactions) {
+    Account {                       // no ()
+        transactions = List.copyOf(transactions);
+    }
+}
+```
+- **No `()`** — the record header already declares the parameters; the compact form receives them implicitly
+- **No `this.x = x`** — at the end of the block the compiler auto-assigns each (possibly reassigned) parameter to its field
+Tags: java records
+END

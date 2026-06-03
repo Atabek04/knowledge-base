@@ -453,3 +453,45 @@ val max = if (a > b) a else b
 Tags: kotlin basics
 <!--ID: 1780311506709-->
 END
+
+START
+Coding Questions
+What is `typealias` in Kotlin, and what does it NOT do?
+Back:
+- `typealias` gives an **existing type a new name** — no new class is created
+- The alias and the original type are **fully interchangeable** at compile time
+- Most common use: naming function types for readability:
+```kotlin
+typealias PaymentStrategy = (Order) -> Unit
+```
+- **NOT** a new type — you cannot overload on `Foo` vs its alias `Bar`
+- **NOT** a value class — use `@JvmInline value class` for actual type safety
+Tags: kotlin basics
+END
+
+START
+Coding Questions
+What does it mean for functions to be "first-class" in Kotlin? Show an example.
+Back:
+- Functions are **values** — store, pass, and return them like any other type
+- Function type syntax: `(ParamType) -> ReturnType`
+```kotlin
+val greet: (String) -> String = { name -> "Hi, $name" }
+
+fun run(fn: (String) -> String) = fn("Atabek")
+
+run(greet)  // "Hi, Atabek"
+```
+- A function that accepts/returns another function = **higher-order function**
+Tags: kotlin basics
+END
+
+START
+Coding Questions
+How do Java, Python, and Kotlin differ in support for first-class functions?
+Back:
+- **Kotlin** — native first-class functions; function type `(A) -> B`; `typealias` names them
+- **Python** — functions are objects; pass directly; `lambda` for inline anonymous fns
+- **Java** — no true first-class fns; uses `@FunctionalInterface` + lambdas as syntactic sugar for anonymous class instances; common types: `Function<A,B>`, `Runnable`, `Consumer<T>`
+Tags: kotlin basics
+END
