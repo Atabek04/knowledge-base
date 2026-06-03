@@ -1,3 +1,24 @@
-.theme-dark mark {
-  color: black !important;
+/* ── Reading view ─────────────────────────────────────── */
+.markdown-rendered mark {
+  color: #1a1a1a !important;
+}
+
+/* ── Live Preview — CM6 inline HTML widgets ───────────── */
+.cm-s-obsidian .cm-html-embed mark,
+.cm-s-obsidian .cm-htmlView mark,
+.cm-line mark {
+  color: #1a1a1a !important;
+}
+
+/* ── Source mode ──────────────────────────────────────── */
+.cm-s-obsidian mark {
+  color: #1a1a1a !important;
+}
+
+/* ── Inherit on nested elements (bold, italic inside mark) */
+mark strong,
+mark em,
+mark b,
+mark i {
+  color: inherit !important;
 }

@@ -130,7 +130,8 @@ Once the reader sees why the name fits, they can re-derive the concept from the 
     - Bold lead-ins (`**Manual wither method:**`) are for labelling a code block or list item *within* a `####` point, not a substitute for the heading itself
 - Use horizontal lines `---` to separate major content blocks (between `###` sections, not between `####` points inside one section)
 - Start notes directly with the topic content — no `Parent: [[MOC]]` header at the top
-- **Never use a `#` heading inside any note or MOC** — Obsidian renders the filename as the page title; a `#` heading is always duplication. MOCs use `##` for sections and `###` for subsections. Atomic notes use `###` for sections and `####` for points. The `#` level is permanently reserved for the filename.
+- **Never use a `#` heading inside any note or MOC** — Obsidian renders the filename as the page title; a `#` heading is always duplication. Atomic notes use `###` for sections and `####` for points. The `#` level is permanently reserved for the filename.
+- **MOC heading hierarchy** — MOCs use `##` for top-level sections only. Add a `###` sub-section *only* when a single `##` section contains enough notes (roughly 6+) that grouping them aids navigation. For small MOCs (under ~20 notes total) or sections with fewer than 6 items, stay flat — one `##` per group, bullets directly underneath.
 - Place MOC links and related links in the "Read more" section at the bottom, using `### Read more` (not `##`)
 - Open every note with a brief intro that gives context — the reader has no prior knowledge from the conversation. Don't start mid-thought or with a definition that assumes context.
 - Keep code examples consistent in scale — if the problem shows 1B numbers, the fix must also use 1B, not 3
@@ -157,12 +158,16 @@ Once the reader sees why the name fits, they can re-derive the concept from the 
       - [[Strategy pattern in Python ...]]
   ```
 
-**MOC chapter lists** — when listing atomic notes under a MOC section heading, link with an alias so each note fits on one readable line, book-outline style: `[[Full atomic title|short meaningful alias]]`.
-- The alias is a condensed-but-meaningful restatement of the title (e.g. `[[Differences between JDK, JRE, JVM|JDK vs JRE vs JVM]]`), never a vague label
-- Drop trailing `— description` annotations — the alias carries the meaning
+**MOC chapter lists** — each bullet is exactly one link, nothing else: `- [[Full atomic title|alias]]`.
+- The alias is a **compressed teaching statement** — it must convey the core mechanic or insight, not just name the concept. Think: what would the atomic note title say if it had to fit in 6–8 words?
+  - ✓ `[[Sliding Window...|Sliding Window — scans contiguous subarrays by reusing overlap]]`
+  - ✓ `[[Differences between JDK, JRE, JVM|JDK vs JRE vs JVM — what each layer adds]]`
+  - ✗ `[[Sliding Window...|Sliding Window]]` — just a name, teaches nothing
+  - ✗ `[[Sliding Window...|Sliding Window — reuses the overlap between consecutive subarrays so each element enters and leaves the window exactly once, reducing time complexity from O(n²) to O(n)]]` — too long
+- **Nothing after the closing `]]`** — no `—`, no description, no parenthetical. The alias carries the full meaning. Any text after `]]` is a rule violation.
 - This is the one place besides inline links where aliases are used; "Read more" sections still use full titles
-- Pending topics with no note yet stay as plain `- [ ]` checkboxes; replace the checkbox with an aliased link once the note exists
-- **Never nest atomic note links as sub-bullets under a `- [ ]` todo or another link** — always promote them to the same flat level as the other bullets in the section. If a group of notes needs visual structure, add a `###` sub-heading, not indentation.
+- Pending topics with no note yet stay as plain `- [ ]` text (no link); replace the checkbox with `- [[Full title|alias]]` once the note exists
+- **Never nest atomic note links as sub-bullets** — always flat at section level. If grouping is needed, add a `###` sub-heading (only when the section has 6+ items — see heading rule above).
 
 **When to link:**
 - One note directly explains, depends on, or extends another
@@ -173,6 +178,16 @@ Once the reader sees why the name fits, they can re-derive the concept from the 
 - No forced inline links — if the title doesn't flow in the sentence, put it in "Read more" only
 
 **No orphans** — every note must have at least one link.
+
+**Don't teach a borrowed sub-concept — reference it.** This is the atomicity guard for linking. The moment a note starts *explaining* a mechanism, named feature, or term that is not the note's own subject (e.g. teaching the record *compact constructor* inside an *immutability* note), stop. That detail belongs in the note that owns it; teaching it here duplicates knowledge and bloats the note past one concept.
+
+Instead, **gloss-and-link**:
+- Replace the explanation with a one-clause gloss of what it is — *"`Account { }` is the record's compact constructor — it normalizes each component before assignment"* — then move on. The gloss says *that* it exists and *why it's here*, never *how it works*.
+- Make the gloss an **inline alias link to the owning note**, so the full teaching is one hover away.
+- When the owning note is long, link to the **specific heading or block**, not just the note: `[[Owning note#The exact heading|alias]]` (or `[[Owning note#^blockid|alias]]`). Obsidian's hover-preview then opens *at that section*, so the reader lands on the feature itself, not the top of a 200-line note. Heading text must match the target `###`/`####` exactly.
+- If the owning note doesn't exist yet, write the gloss + link anyway (a dangling `[[…]]` is a valid backlog marker) and create the owning note next.
+
+Litmus test before writing a second paragraph about something: *"Is this note's title a statement about this thing?"* If no, you're teaching a neighbour's concept — gloss-and-link it instead.
 
 ## Skills
 
