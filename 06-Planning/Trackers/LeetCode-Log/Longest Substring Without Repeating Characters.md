@@ -1,11 +1,16 @@
 ---
 difficulty: Medium
-status: Not started
-topic: [Sliding Window]
-tags: [hash-table, string, sliding-window, neetcode-150]
+status: Timeout
+topic:
+  - Sliding Window
+tags:
+  - hash-table
+  - string
+  - sliding-window
+  - neetcode-150
 solved: 0
-last_solved: 
-link: "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+last_solved: 2026-06-05
+link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 ---
 
 ### Problem

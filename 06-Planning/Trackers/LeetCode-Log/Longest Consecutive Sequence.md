@@ -1,11 +1,16 @@
 ---
 difficulty: Medium
-status: Not started
-topic: [Arrays & Hashing]
-tags: [union-find, array, hash-table, neetcode-150]
+status: Cheated
+topic:
+  - Arrays & Hashing
+tags:
+  - union-find
+  - array
+  - hash-table
+  - neetcode-150
 solved: 0
-last_solved: 
-link: "https://leetcode.com/problems/longest-consecutive-sequence/"
+last_solved: 2026-06-05
+link: https://leetcode.com/problems/longest-consecutive-sequence/
 ---
 
 ### Problem

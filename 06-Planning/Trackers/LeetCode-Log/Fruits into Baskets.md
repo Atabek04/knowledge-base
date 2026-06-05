@@ -1,11 +1,16 @@
 ---
 difficulty: Medium
-status: Not started
-topic: [Sliding Window, Arrays]
-tags: [sliding-window, array, grokking-patterns]
+status: Cheated
+topic:
+  - Sliding Window
+  - Arrays
+tags:
+  - sliding-window
+  - array
+  - grokking-patterns
 solved: 0
-last_solved: 
-link: ""
+last_solved: 2026-06-04
+link: https://leetcode.com/problems/fruit-into-baskets/description/
 ---
 
 ### Problem

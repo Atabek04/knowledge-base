@@ -17,7 +17,7 @@ tags:
   - top-k-elements
   - grokking-patterns
 solved: 0
-last_solved:
+last_solved: 2026-06-03
 link: https://leetcode.com/problems/top-k-frequent-elements/
 ---
 

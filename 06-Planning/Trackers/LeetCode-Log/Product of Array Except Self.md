@@ -1,11 +1,15 @@
 ---
 difficulty: Medium
-status: Not started
-topic: [Arrays & Hashing]
-tags: [array, prefix-sum, neetcode-150]
+status: Cheated
+topic:
+  - Arrays & Hashing
+tags:
+  - array
+  - prefix-sum
+  - neetcode-150
 solved: 0
-last_solved: 
-link: "https://leetcode.com/problems/product-of-array-except-self/"
+last_solved: 2026-06-04
+link: https://leetcode.com/problems/product-of-array-except-self/
 ---
 
 ### Problem
