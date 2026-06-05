@@ -26,4 +26,5 @@ A [[Python generator produces values one at a time on demand|generator]] is just
 ### Read more
 
 - [[Python generator produces values one at a time on demand]]
+- [[Python for loop unpacks tuples into multiple loop variables]]
 - [[Python MOC]]

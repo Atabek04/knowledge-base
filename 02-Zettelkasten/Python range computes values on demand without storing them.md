@@ -46,4 +46,5 @@ Both are lazy, but `range` supports more:
 
 - [[Python generator produces values one at a time on demand]]
 - [[A list holds all values in RAM even when you only process one at a time]]
+- [[range takes start stop step with stop always exclusive]]
 - [[Python MOC]]

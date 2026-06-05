@@ -29,6 +29,14 @@
 
 ## Data Structures
 
+- [[list.append adds to the end in O(1) while insert shifts every element after the index|list append vs insert — end is O(1), index shift is O(n)]]
+- [[Python dict bracket access raises KeyError while get returns a default|dict access — brackets raise, get falls back]]
+- [[dict.pop removes a key and returns its value or a default|dict.pop — remove + return, optional default]]
+- [[dict keys values and items return live views not lists|dict views — live windows, list() to snapshot]]
+- [[A tuple is an immutable sequence whose fixedness makes it hashable|tuple — immutable, therefore a valid dict key]]
+- [[Counter counts hashable items and treats missing keys as zero|Counter — dict for counting, missing key reads 0]]
+- [[defaultdict creates and inserts a default value on first access to a missing key|defaultdict — factory fills missing keys on access]]
+
 ## Object-Oriented Programming
 
 - [[classmethod uses cls instead of self because it operates on the class not an instance|classmethod uses cls: operates on the class]]
@@ -50,13 +58,18 @@
 ## Functional Programming
 
 - [[List comprehension is Python's inline filter-map equivalent to Stream API|List comprehension: inline filter-map (like Stream API)]]
+- [[dict comprehension builds a transformed dict from any iterable inline|dict comprehension — transform, filter, invert dicts inline]]
 - [[yield in Python is one keyword with three different jobs|yield: one keyword, three jobs]]
 - [[Python generator produces values one at a time on demand|Generator: values one at a time, on demand]]
 - [[Call stack is a LIFO structure that tracks active method frames|Call stack: LIFO of active frames]]
 - [[A generator object is a suspended stack frame that resumes at yield|Generator object: a suspended frame resuming at yield]]
 - [[Python for loop works with any iterable not just lists|for loop works on any iterable]]
+- [[Python for loop unpacks tuples into multiple loop variables|for loop unpacks tuples into multiple variables]]
+- [[enumerate yields index-value pairs so you never manage a counter manually|enumerate — index-value pairs, no manual counter]]
 - [[A list holds all values in RAM even when you only process one at a time|A list holds all values in RAM]]
 - [[Python range computes values on demand without storing them|range computes on demand, stores nothing]]
+- [[range takes start stop step with stop always exclusive|range(start, stop, step) — stop always exclusive]]
+- [[reversed iterates a sequence backward without index arithmetic|reversed() — backward values, no index math]]
 
 ## Standard Library
 

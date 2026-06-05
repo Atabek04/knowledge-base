@@ -52,4 +52,5 @@ Same pipeline — Python puts the **map expression first**, filter last.
 
 Related:
 - [[Python functions are standalone while methods are attached to objects]]
+- [[dict comprehension builds a transformed dict from any iterable inline]]
 - [[Python MOC]]
