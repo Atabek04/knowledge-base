@@ -62,8 +62,17 @@ Core building blocks: data structures that organize data + algorithms that opera
 - [ ] Union-Find disjoint set operations for connectivity
 - [ ] Dijkstra shortest path in weighted graphs
 
+## Complexity Analysis
+
+- [[A nested loop is O(n) not O(n²) when the inner pointer never resets|Monotone inner pointer — why nested loops can be O(n) not O(n²)]]
+
 ## Specific Problem Techniques
 
 - [ ] Longest Consecutive uses set to O(1) check num±1 existence
 - [ ] Subarray Sum uses prefix sum + hash map for O(n) lookup
 - [ ] Majority Element Boyer-Moore voting in O(1) space
+
+---
+
+### Read more
+- [[Coding Interview Patterns - MOC]]
