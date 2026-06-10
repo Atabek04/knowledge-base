@@ -17,7 +17,7 @@
 
 ### Creational Patterns
 - [ ] **Singleton** — Single instance, global access
-- [ ] **Factory Method** — Delegate object creation to subclasses
+- [[The Factory Method pattern lets subclasses decide which object to instantiate by overriding a factory method|Factory Method — subclass overrides the creation step, Creator never names a concrete type]]
 - [ ] **Abstract Factory** — Create families of related objects
 - [ ] **Builder** — Construct complex objects step by step
 - [ ] **Prototype** — Clone existing objects
