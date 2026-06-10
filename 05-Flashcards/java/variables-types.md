@@ -190,3 +190,47 @@ Back: You copy the **reference** (4 or 8 bytes), not the object itself.
 The reference has a fixed size regardless of how large the object is — so the cost is always the same.
 Tags: java memory references
 END
+
+START
+Coding Questions
+What is `var` in Java and since which version?
+Back: **`var`** — type inference for local variables, introduced in **Java 10**.
+
+The compiler infers the type from the assigned value:
+
+```java
+var myVar = "A string!"; // compiler infers String
+var count = 42;          // compiler infers int
+```
+Tags: java variables type-inference
+<!--ID: 1780311507433-->
+END
+
+START
+Coding Questions
+What is the limitation of `var` in Java?
+Back: `var` can only be used for **local variables** — not for fields, method parameters, or return types.
+
+```java
+var name = "John"; // ✅ local variable
+private var name;  // ❌ field — not allowed
+```
+Tags: java variables type-inference
+<!--ID: 1780311507453-->
+END
+
+START
+Coding Questions
+What is the difference between a parameter and an argument?
+Back:
+- **Parameter** — the variable declared in the method signature (the slot)
+- **Argument** — the actual value passed at the call site (what fills the slot)
+
+```java
+void install(String platform) { }  // "platform" is the PARAMETER
+install("windows");                 // "windows" is the ARGUMENT
+```
+
+Common mistake: saying "pass a parameter" — you pass an *argument*, you declare a *parameter*.
+Tags: java fundamentals methods
+END

@@ -145,3 +145,40 @@ m.get(new Point(1,2)); // null ❌
 ```
 Tags: java classes equals-hashcode
 END
+
+START
+Coding Questions
+What does `instanceof` pattern matching add over a traditional `instanceof` check?
+Back: It combines the type check and cast into one step, binding the result to a variable:
+
+```java
+// Before (Java <16)
+if (obj instanceof String) {
+    String s = (String) obj; // redundant cast
+    System.out.println(s.length());
+}
+
+// Java 16+
+if (obj instanceof String s) {
+    System.out.println(s.length()); // s already bound, no cast
+}
+```
+
+The binding variable is only in scope where the check is provably true.
+Tags: java pattern-matching oop
+END
+
+START
+Coding Questions
+What are the scope rules for `instanceof` pattern binding variables?
+Back:
+- ✅ **`&&`** — right side is guarded; `s` is in scope: `obj instanceof String s && s.length() > 5`
+- ❌ **`||`** — right side is unguarded; compile error: `obj instanceof String s || s.length() > 5`
+- ✅ **Negation + early return** — binding available *after* the block (flow typing):
+
+```java
+if (!(obj instanceof String s)) return;
+System.out.println(s.length()); // s in scope here
+```
+Tags: java pattern-matching oop
+END

@@ -5,11 +5,11 @@ tags: [moc, java]
 
 ## JVM & Compilation
 
-- [[Differences between JDK, JRE, JVM|JDK vs JRE vs JVM]]
+- [[Differences between JDK, JRE, JVM|JDK vs JRE vs JVM — what each layer adds]]
 - [[Write Once, Run Anywhere principle works because of JVM|Write Once, Run Anywhere via the JVM]]
 - [[JVM has 5 key responsibilities|The JVM's 5 core responsibilities]]
 - [[JVM interpreter executes bytecode by mapping instructions to pre-compiled C functions|Interpreter maps bytecode to C functions]]
-- [[Java bytecode isn't Machine code|Bytecode is not machine code]]
+- [[Java bytecode is not machine code — it targets the JVM instruction set, not a physical CPU|Bytecode is not machine code — targets JVM, not the CPU]]
 - [ ] JVM memory areas (stack, heap, metaspace, method area)
 - [ ] Class loading process (loading, linking, initialization)
 - [ ] Just-In-Time (JIT) compilation
@@ -26,11 +26,15 @@ tags: [moc, java]
 - [[Java objects always live on heap; reference location depends on declaration site|Objects on heap, references stack-or-heap]]
 - [[Object variable types start with capital letter, whereas primitives with small letter|Capital = object type, lowercase = primitive]]
 - [[Variable scope - where var exists and can be accessed|Variable scope]]
+- [[From Java 10 you can use Type Inference|var — local type inference, eliminates redundant type declarations]]
+- [[A parameter is the variable in the method signature; an argument is the value passed at the call site|Parameter vs argument — slot in signature vs value at call site]]
 - [ ] Strings and String Pool
 - [ ] StringBuilder vs StringBuffer
 - [ ] Arrays and memory layout
 - [ ] Wrapper classes and caching (Integer cache -128 to 127)
-- [ ] `var` keyword (local variable type inference, Java 10+)
+- [ ] Text blocks — multiline string literals
+- [ ] Switch expressions — value-producing switch
+- [ ] String templates (preview)
 
 ---
 
@@ -45,6 +49,9 @@ tags: [moc, java]
 - [ ] Composition over inheritance
 - [ ] `final`, `static`, `abstract` keywords
 - [ ] Nested vs inner vs anonymous vs local classes
+- [ ] Sealed classes — restrict which classes can extend a type
+- [[Java instanceof pattern matching binds the checked type to a variable, eliminating the cast|instanceof pattern matching — binds the type check and cast into one]]
+- [ ] Pattern matching for `switch`
 
 ### SOLID Principles
 
@@ -53,6 +60,19 @@ tags: [moc, java]
 - [ ] Liskov Substitution
 - [ ] Interface Segregation
 - [ ] Dependency Inversion
+
+---
+
+## Records
+
+- [[Java records auto-generate accessor, equals, hashCode, and toString from their components|Records auto-generate accessors, equals, hashCode, toString]]
+- [[Java records are shallowly immutable — final fields prevent reassignment but not mutation of mutable objects|Records are shallowly immutable]]
+- [[Java records auto-generate accessor, equals, hashCode, and toString from their components#Compact constructor — validate and normalize components|Compact constructor — validates and normalizes components before field assignment]]
+- [[Java records support convenience constructors by delegating to the canonical constructor|Convenience constructors — must delegate to canonical via this()]]
+- [[Java records can implement interfaces but cannot extend classes or other records|Records implement interfaces but cannot extend classes]]
+- [[Java records are natural DTOs — immutable value carriers with generated equality|Records as DTOs — value equality and immutability built-in]]
+- [[Java record is a dependency-free alternative to Lombok @Value for immutable value types|record vs @Value — record needs no dependency, @Value allows class extension]]
+- [[Java record patterns destructure record components directly inside pattern matching|Record patterns — destructure components directly in instanceof and switch]]
 
 ---
 
@@ -85,6 +105,7 @@ tags: [moc, java]
 - [ ] Collections internals (hashing, red-black trees)
 - [ ] Choosing the right collection
 - [ ] Iterator vs ListIterator, fail-fast vs fail-safe
+- [ ] Sequenced Collections — ordered access to first/last elements
 
 ---
 
@@ -110,34 +131,6 @@ tags: [moc, java]
 - [ ] Optional (proper usage, anti-patterns)
 - [ ] Collectors
 - [ ] Parallel streams — when worth it, when not
-
----
-
-## Language Features by Version
-
-### Java 10+
-
-- [[From Java 10 you can use Type Inference|Local type inference with var]]
-
-### Java 14+ Records
-
-- [[Java records auto-generate accessor, equals, hashCode, and toString from their components|Records auto-generate accessors, equals, hashCode, toString]]
-- [[Java records are shallowly immutable — final fields prevent reassignment but not mutation of mutable objects|Records are shallowly immutable]]
-
-### Java 17+
-
-- [ ] Sealed classes
-- [ ] Pattern matching for `instanceof`
-- [ ] Text blocks
-- [ ] Switch expressions
-
-### Java 21+
-
-- [ ] Pattern matching for `switch`
-- [ ] Record patterns
-- [ ] Sequenced Collections
-- [ ] String templates (preview)
-- Virtual Threads → see [Concurrency](#concurrency)
 
 ---
 
@@ -217,7 +210,7 @@ tags: [moc, java]
 - [ ] Happens-before relationship
 - [ ] Memory visibility
 
-### Virtual Threads (Java 21+)
+### Virtual Threads
 
 - [ ] Virtual vs platform threads
 - [ ] Creating virtual threads
