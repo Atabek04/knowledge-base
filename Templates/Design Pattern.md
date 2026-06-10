@@ -9,7 +9,9 @@ aliases: []
 
 ### Intent
 
-{{One sentence: what the pattern does.}}
+<!-- Read GoF + refactoring.guru before writing. Synthesize both — never copy verbatim. -->
+
+{{One sentence that captures what the pattern does.}}
 
 ### Problem
 

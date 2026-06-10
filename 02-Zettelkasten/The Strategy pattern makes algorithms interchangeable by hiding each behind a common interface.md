@@ -6,7 +6,7 @@ The name says what it does: a **strategy** is *a chosen way to accomplish a task
 
 ### Intent
 
-Define a family of algorithms, put each one behind a shared interface, and make them **interchangeable**. The algorithm can vary independently from the code that uses it.
+Give each algorithm its own class behind a shared interface, so the client swaps behavior by switching objects — never by changing its own code.
 
 ### Problem
 
