@@ -1,11 +1,16 @@
 ---
 difficulty: Easy
-status: Not started
-topic: [Arrays & Hashing]
-tags: [array, hash-table, sorting, neetcode-150]
-solved: 0
-last_solved: 
-link: "https://leetcode.com/problems/contains-duplicate/"
+status: Solved
+topic:
+  - Arrays & Hashing
+tags:
+  - array
+  - hash-table
+  - sorting
+  - neetcode-150
+solved: 1
+last_solved: 2026-06-08
+link: https://leetcode.com/problems/contains-duplicate/
 ---
 
 ### Problem

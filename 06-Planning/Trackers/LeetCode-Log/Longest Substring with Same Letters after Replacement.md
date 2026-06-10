@@ -1,11 +1,16 @@
 ---
-difficulty: Hard
-status: Not started
-topic: [Sliding Window, Strings]
-tags: [sliding-window, string, grokking-patterns]
+difficulty: Medium
+status: Cheated
+topic:
+  - Sliding Window
+  - Strings
+tags:
+  - sliding-window
+  - string
+  - grokking-patterns
 solved: 0
-last_solved: 
-link: ""
+last_solved: 2026-06-10
+link: https://leetcode.com/problems/longest-repeating-character-replacement/
 ---
 
 ### Problem
@@ -29,6 +34,11 @@ Given a string of lowercase letters and an integer k, you may replace at most k 
 
 ---
 
+### Video explanation
+
+https://youtu.be/gqXU1UyA8pk
+
+---
 ### Java
 
 ```java

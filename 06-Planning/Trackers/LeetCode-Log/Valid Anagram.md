@@ -1,11 +1,16 @@
 ---
 difficulty: Easy
-status: Not started
-topic: [Arrays & Hashing]
-tags: [hash-table, string, sorting, neetcode-150]
+status: Cheated
+topic:
+  - Arrays & Hashing
+tags:
+  - hash-table
+  - string
+  - sorting
+  - neetcode-150
 solved: 0
-last_solved: 
-link: "https://leetcode.com/problems/valid-anagram/"
+last_solved: 2026-06-10
+link: https://leetcode.com/problems/valid-anagram/
 ---
 
 ### Problem
@@ -22,8 +27,15 @@ s = "rat",     t = "car"      →  false
 ```
 
 ### Next solve approach
-1. Brute Force first — sort both strings and compare character by character, O(n log n)
-2. Optimized — count array of size 26; increment for s, decrement for t, check all zeros, O(n)
+1. Brute Force first — sort both strings and compare character by character
+   - Time: O(n log n)
+   - Space: O(n) (sort buffer)
+2. HashMap counters — two maps, count each char in s and t, compare maps
+   - Time: O(n)
+   - Space: O(n) — up to 26 keys, but scales with alphabet size
+3. Single count array — one int[26], increment for s, decrement for t, check all zeros
+   - Time: O(n)
+   - Space: O(1) — fixed 26-element array
 
 ---
 

@@ -1,10 +1,15 @@
 ---
-difficulty: Hard
-status: Not started
-topic: [Sliding Window, Arrays]
-tags: [sliding-window, array, grokking-patterns]
-solved: 0
-last_solved: 
+difficulty: Medium
+status: Solved
+topic:
+  - Sliding Window
+  - Arrays
+tags:
+  - sliding-window
+  - array
+  - grokking-patterns
+solved: 1
+last_solved: 2026-06-10
 link: ""
 ---
 
@@ -24,8 +29,12 @@ Given a binary array (containing only 0s and 1s) and an integer k, you may flip 
 ```
 
 ### Next solve approach
-1. Brute Force first — try every subarray, count zeros, keep maximum length where zeros <= k, O(n²)
-2. Optimized (Sliding Window) — track zero count in window; when zeros > k, shrink left until valid again, O(n)
+1. Brute Force first — try every subarray, count zeros, keep maximum length where zeros <= k
+   - Time: O(n²)
+   - Space: O(1)
+2. Optimized (Sliding Window) — track zero count in window; when zeros > k, shrink left until valid again
+   - Time: O(n)
+   - Space: O(1)
 
 ---
 

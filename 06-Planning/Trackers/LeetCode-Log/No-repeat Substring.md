@@ -1,11 +1,16 @@
 ---
-difficulty: Hard
-status: Not started
-topic: [Sliding Window, Strings]
-tags: [sliding-window, string, grokking-patterns]
-solved: 0
-last_solved: 
-link: ""
+difficulty: Medium
+status: Solved
+topic:
+  - Sliding Window
+  - Strings
+tags:
+  - sliding-window
+  - string
+  - grokking-patterns
+solved: 1
+last_solved: 2026-06-08
+link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 ---
 
 ### Problem

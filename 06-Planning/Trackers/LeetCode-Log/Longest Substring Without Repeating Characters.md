@@ -1,6 +1,6 @@
 ---
 difficulty: Medium
-status: Timeout
+status: Cheated
 topic:
   - Sliding Window
 tags:

@@ -1,11 +1,15 @@
 ---
 difficulty: Easy
-status: Not started
-topic: [Arrays & Hashing]
-tags: [array, hash-table, neetcode-150]
+status: Cheated
+topic:
+  - Arrays & Hashing
+tags:
+  - array
+  - hash-table
+  - neetcode-150
 solved: 0
-last_solved: 
-link: "https://leetcode.com/problems/two-sum/"
+last_solved: 2026-06-08
+link: https://leetcode.com/problems/two-sum/
 ---
 
 ### Problem
