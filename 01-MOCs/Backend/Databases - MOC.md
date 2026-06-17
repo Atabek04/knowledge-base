@@ -41,14 +41,7 @@
 → [[PostgreSQL - MOC]]
 
 ### Transactions & Isolation
-- [ ] ACID properties
-- [ ] Isolation levels (Read Uncommitted, Read Committed, Repeatable Read, Serializable)
-- [ ] Dirty reads, non-repeatable reads, phantom reads
-- [ ] Locking (row-level, table-level)
-- [ ] Deadlock detection and prevention
-- [ ] Optimistic vs pessimistic locking
-- [ ] Advisory locks
-- [ ] Two-phase commit (2PC)
+→ [[Database Transactions & Concurrency - MOC]] — anomalies, isolation levels, locking strategies (engine-agnostic)
 
 ### JPA / Hibernate
 - [ ] Entity mapping (@Entity, @Table, @Column)
@@ -179,6 +172,7 @@
 ---
 
 ## Related
+- [[Database Transactions & Concurrency - MOC]] — ACID, anomalies, isolation, locking
 - [[PostgreSQL - MOC]] — OLTP RDBMS
 - [[ClickHouse - MOC]] — OLAP DBMS
 - [[Spring Ecosystem - MOC]]

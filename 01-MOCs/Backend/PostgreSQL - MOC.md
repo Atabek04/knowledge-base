@@ -15,17 +15,17 @@ tags: [moc, postgresql, database, oltp]
 - [ ] Partitioning
 - [ ] Connection pooling (PgBouncer)
 
-## Transactions & Isolation
+## Transactions & Concurrency
 
-- [[PostgreSQL transactions wrap multiple operations in an atomic unit with automatic rollback on failure|Transactions: atomic unit, auto-rollback on failure]]
-- [[PostgreSQL WAL records every change before applying to data files enabling crash recovery|WAL records changes before data files (crash recovery)]]
-- [ ] ACID properties
-- [ ] Isolation levels (Read Uncommitted, Read Committed, Repeatable Read, Serializable)
-- [ ] Dirty reads, non-repeatable reads, phantom reads
-- [ ] Locking (row-level, table-level)
-- [ ] Deadlock detection and prevention
-- [ ] Optimistic vs pessimistic locking
-- [ ] Two-phase commit (2PC)
+General relational concepts — ACID, the anomalies, isolation levels, locking strategies — live in → [[Database Transactions & Concurrency - MOC]]. Listed here only where PostgreSQL behaves *specially*.
+
+- [[PostgreSQL enforces stricter isolation than the SQL standard requires|Stricter isolation — no dirty reads ever, RR is snapshot isolation, SERIALIZABLE is SSI]]
+- [[A blocking FOR UPDATE re-checks the WHERE clause against the updated row when the lock is released|EvalPlanQual — blocked FOR UPDATE re-checks WHERE on the updated row]]
+- [ ] MVCC implementation — tuple versions, xmin/xmax, visibility
+- [ ] SELECT FOR UPDATE SKIP LOCKED — PG locking-clause syntax and wait policies
+- [ ] Advisory locks — `pg_advisory_lock`, app-defined locks
+- [ ] Lock modes and table-level locks — `LOCK TABLE`, conflict matrix
+- [ ] Deadlock detection — `deadlock_timeout`
 
 ## Performance & Internals
 
@@ -45,6 +45,7 @@ tags: [moc, postgresql, database, oltp]
 
 ## Related
 
+- [[Database Transactions & Concurrency - MOC]]
 - [[Databases - MOC]]
 - [[ClickHouse - MOC]]
 - [[Distributed Systems - MOC]]
