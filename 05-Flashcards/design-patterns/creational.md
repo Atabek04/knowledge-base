@@ -43,3 +43,37 @@ logistics.planDelivery();                  // Creator never sees "Truck"
 
 Q: Why must the Creator be an abstract class and not an interface?
 A: Creator holds shared business logic (e.g. `planDelivery()`). An interface can't contain implementation. Making it an interface forces you to duplicate that logic in every ConcreteCreator.
+
+---
+
+## Factory Method in Spring
+
+Q: How does `BeanFactory.getBean()` map to the Factory Method pattern?
+A:
+- `BeanFactory` = Abstract Creator (interface)
+- `getBean()` = the factory method
+- `DefaultListableBeanFactory` = Concrete Creator
+- The returned bean = Product
+
+The caller never calls `new`. The factory decides whether to return a cached singleton or a new prototype.
+
+---
+
+Q: What is `FactoryBean<T>` and which method is the factory method?
+A:
+- `FactoryBean<T>` is Spring's interface for beans whose creation requires complex logic
+- `getObject()` is the factory method — Spring calls it instead of injecting the factory itself
+- To get the factory bean itself (not its product), prefix the name with `&`: `ctx.getBean("&myBean")`
+
+---
+
+Q: Name three built-in Spring `FactoryBean` implementations and what each creates.
+A:
+- `ProxyFactoryBean` → an AOP proxy (JDK dynamic or CGLIB) wrapping a target bean
+- `LocalSessionFactoryBean` → a Hibernate `SessionFactory` (hides all bootstrap complexity)
+- `JndiObjectFactoryBean` → a JNDI-looked-up resource (DataSource, Queue, etc.)
+
+---
+
+Q: How do `@Configuration` + `@Bean` methods relate to Factory Method?
+A: Each `@Bean` method IS a factory method — Spring calls it at startup to produce and register the bean. The method name = bean name; the return type = product type. The caller uses `getBean()` or injection, never `new`.

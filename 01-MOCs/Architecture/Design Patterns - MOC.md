@@ -18,6 +18,8 @@
 ### Creational Patterns
 - [ ] **Singleton** — Single instance, global access
 - [[The Factory Method pattern lets subclasses decide which object to instantiate by overriding a factory method|Factory Method — subclass overrides the creation step, Creator never names a concrete type]]
+    - [[Factory Method in Java uses an abstract creator class whose subclasses override the factory method|Java implementation — abstract Creator, ConcreteCreator subclasses]]
+    - [[Spring applies Factory Method through BeanFactory and FactoryBean to decouple object creation from business logic|Spring — BeanFactory, FactoryBean, and @Bean methods as factory methods]]
 - [ ] **Abstract Factory** — Create families of related objects
 - [ ] **Builder** — Construct complex objects step by step
 - [ ] **Prototype** — Clone existing objects

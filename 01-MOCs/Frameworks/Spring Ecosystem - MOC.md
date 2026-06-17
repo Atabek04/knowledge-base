@@ -16,6 +16,7 @@
 ## Topics
 
 ### Spring Core
+- [[Spring applies Factory Method through BeanFactory and FactoryBean to decouple object creation from business logic|BeanFactory and FactoryBean — Factory Method pattern baked into the container]]
 - [ ] Inversion of Control (IoC) container
 - [ ] Dependency Injection (constructor, setter, field)
 - [ ] Bean lifecycle

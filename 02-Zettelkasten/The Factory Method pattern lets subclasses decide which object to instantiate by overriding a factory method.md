@@ -106,6 +106,7 @@ logistics.planDelivery()
 ### Read more
 - Implementations:
     - [[Factory Method in Java uses an abstract creator class whose subclasses override the factory method]]
+    - [[Spring applies Factory Method through BeanFactory and FactoryBean to decouple object creation from business logic]]
 - Related patterns:
     - [[The Strategy pattern makes algorithms interchangeable by hiding each behind a common interface]]
 - [[Design Patterns - MOC]]
