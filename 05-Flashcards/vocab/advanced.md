@@ -93,3 +93,13 @@ Example: The expert confirmed that these banknotes were **forgeries**.
 Tags: noun
 <!--ID: 1780311501947-->
 END
+
+START
+A_English_Translate
+To hit something very hard, or informally to defeat someone decisively
+English: to clobber
+Russian: лупить, отделать, разгромить
+Example: The favorites **clobbered** the underdogs 6-0.
+Note: Informal. Two senses: physically strike hard, or beat badly in a contest.
+Tags: verb informal
+END

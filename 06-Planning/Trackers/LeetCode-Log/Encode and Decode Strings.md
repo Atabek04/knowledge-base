@@ -1,11 +1,16 @@
 ---
 difficulty: Medium
-status: Not started
-topic: [Arrays & Hashing]
-tags: [design, array, string, neetcode-150]
+status: Cheated
+topic:
+  - Arrays & Hashing
+tags:
+  - design
+  - array
+  - string
+  - neetcode-150
 solved: 0
-last_solved: 
-link: "https://leetcode.com/problems/encode-and-decode-strings/"
+last_solved: 2026-06-11
+link: https://www.lintcode.com/problem/659/
 ---
 
 ### Problem
@@ -64,21 +69,32 @@ public class Codec {
 
 ### Python
 
+Length-prefixed encoding: each string is written as `len(s) + '#' + s`. The `#` marks where the length digits end; decode reads the length, then slices exactly that many chars. Self-delimiting, so `#` inside the payload never confuses the parser.
+
 ```python
 from typing import List
 
 
 class Codec:
     def encode(self, strs: List[str]) -> str:
-        # TODO: implement
-        pass
+        # ''.join is O(n); repeated += rebuilds the string each iter → O(n²)
+        return ''.join(f'{len(s)}#{s}' for s in strs)
 
     def decode(self, s: str) -> List[str]:
-        # TODO: implement
-        pass
+        res = []
+        i = 0
+        while i < len(s):
+            delim = s.find('#', i)          # end of the length digits
+            length = int(s[i:delim])
+            start = delim + 1
+            res.append(s[start:start + length])  # length=0 → '' (empty string preserved)
+            i = start + length
+        return res
 
 
 codec = Codec()
 print(codec.decode(codec.encode(["Hello", "World"])))  # expected: ['Hello', 'World']
 print(codec.decode(codec.encode([""])))                # expected: ['']
 ```
+
+**Complexity:** encode O(n) total chars, decode O(n) — single pass, `str.find` and slicing run in C.

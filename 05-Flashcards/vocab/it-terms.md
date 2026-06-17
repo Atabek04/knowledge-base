@@ -170,3 +170,12 @@ Note: General English: to force someone/something to stay within limits. In tech
 Tags: general it
 <!--ID: 1780311501778-->
 END
+
+START
+A_English_Translate
+To overwrite existing data destructively, erasing its previous value
+English: to clobber
+Russian: затереть, перезаписать (с потерей данных)
+Example: In a lost update, the second writer **clobbers** the first commit with a value computed from stale data.
+Note: From the general "hit hard" sense. In IT: one write blindly overwrites another, destroying it (e.g. lost update anomaly).
+Tags: concurrency transactions

@@ -111,6 +111,27 @@ When a concept's name encodes its meaning, **explain why it's called that** — 
 
 Once the reader sees why the name fits, they can re-derive the concept from the name alone. Do this for patterns, principles, and any jargon whose label is descriptive.
 
+Applies to **live explaining too**, not just notes — when explaining a keyword/clause/command (`FOR UPDATE`, `SKIP LOCKED`), lean on its own words to make the behavior intuitive and memorable.
+
+### Search Before Creating, Build Prerequisites First
+
+**Before writing any atomic note, search the vault** (`grep -rli "<concept>" /mnt/d/obsidian/Knowledge-Base/`) — never start writing blind. The search serves two distinct purposes, and you must act on both:
+
+1. **Dedupe** — if a note already owns the concept, extend or link it instead of creating a near-duplicate. One concept, one note.
+2. **Map the knowledge floor** — the search tells you which prerequisite concepts the reader *already has notes for* and which are *missing*. This decides where your explanation can start and what it is allowed to assume.
+
+**Prerequisite-first ordering is mandatory.** A note may only build on concepts that already have their own note. If the note you're about to write *uses* a foundational concept that has no note yet (e.g. writing "lost update" when no *DB anomalies* or *isolation levels* note exists), you must **stop and create the foundational note(s) first**, in dependency order — roots before leaves. Never introduce a concept and its solution while the background they rest on is missing; that produces notes the reader cannot follow and a graph with no floor.
+
+Concretely, when a dependency is missing:
+- Create the **prerequisite atomic note(s) first**, deepest dependency first.
+- *Then* write the dependent note, and connect them so the learning path is smooth:
+    - **Inline alias link** at the first point the prerequisite is invoked, for a frictionless hand-off mid-sentence: `[[Full prerequisite title|natural phrase]]`.
+    - When only one **section** of the prerequisite is relevant, link the **specific heading or block**, not the whole note: `[[Prerequisite#The exact heading|phrase]]` (or `#^blockid`) — so hover-preview lands the reader on that section.
+    - **Always repeat it in `### Read more`** as a **full title** link (never an alias).
+- The litmus test: a reader following your note top-to-bottom should never hit a term whose meaning depends on knowledge that exists nowhere in the vault. If they would, the prerequisite note is missing — write it first.
+
+This is the structural complement to *gloss-and-link* (below): gloss-and-link keeps a note atomic by **not re-teaching** a neighbour's concept; search-before-creating guarantees that neighbour's note **actually exists to link to**, and is written **before** the note that leans on it.
+
 ### Content Rules
 
 **NEVER:**
