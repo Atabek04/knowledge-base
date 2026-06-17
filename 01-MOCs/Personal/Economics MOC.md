@@ -55,9 +55,14 @@ The other side: much of the "AI apocalypse" coverage is hype, and the 2026 data 
 - [[Vibe reporting conflates tech layoffs with AI to manufacture an apocalypse narrative|Vibe reporting conflates layoffs with AI]]
 - [[Recent tech layoffs are pandemic over-hiring corrections, not AI automation|Tech layoffs = pandemic over-hiring, not AI]]
 - [[AI CEOs have an incentive to overstate job replacement|AI CEOs overstate job replacement]]
+- [[Amodei's prediction that AI will do all engineering within a year is a self-interested forecast that has slipped before|Amodei's 6-12 month replacement forecast has slipped before]]
 - [[Technology diffuses along an S-curve, not a runaway exponential|Tech diffuses on an S-curve, not exponential]]
 - [[Physical compute constraints cap how fast AI can automate industries|Compute constraints cap automation speed]]
 - [[Treating AI as a normal technology enables accountability and measured regulation|AI as normal technology enables regulation]]
+
+### Historical precedent
+
+- [[ATM automation grew bank-teller jobs for two decades before mobile banking reversed the trend|ATMs grew teller jobs for 20 years — until the iPhone reversed it]]
 
 ## Origin Theories
 

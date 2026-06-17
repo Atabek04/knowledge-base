@@ -22,5 +22,6 @@ Your understanding must precede the commit.
 ---
 
 ### Read more
+- [[AI-native juniors miss the foundational knowledge that came from struggling through problems manually]]
 - [[Rebuilding confidence requires starting with small achievable goals before scaling up]]
 - [[Learning Strategies MOC]]

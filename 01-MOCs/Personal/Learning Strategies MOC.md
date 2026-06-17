@@ -38,6 +38,7 @@ Study methods and learning strategies for effective knowledge acquisition and re
 - [[Education 2030 makes technology invisible while personalizing learning at scale|Education 2030: invisible tech, personalized at scale]]
 - [[AI agent building is the foundational career skill of the next thirty years|Agent building: the foundational skill for 30 years]]
 - [[Doing reps with AI builds intuition for its real limits and capabilities|Reps with AI build intuition for its limits]]
+- [[Heavy AI use correlates with weaker critical thinking but the causal arrow may run both ways|Heavy AI use correlates with weaker thinking — but causation cuts both ways]]
 
 ## Pedagogy & Instructional Design
 

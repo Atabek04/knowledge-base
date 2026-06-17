@@ -36,6 +36,8 @@ How to apply it deliberately: [[Effective AI learning removes friction from busy
 ---
 
 ### Read more
+- [[AI-assisted learners score about two letter grades lower with debugging the most degraded skill]]
+- [[Heavy AI use correlates with weaker critical thinking but the causal arrow may run both ways]]
 - [[Effective AI learning removes friction from busywork and adds friction to thinking]]
 - [[Over-relying on AI coding tools without reading output erodes genuine programming confidence]]
 - [[Treating AI as a collaborator rather than an assistant separates top learners]]

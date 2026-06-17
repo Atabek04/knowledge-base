@@ -66,6 +66,22 @@ Different from chat-style prompting: coding agents have a **loop** (observe → 
 - Treating LLM memory as ground truth
 - Letting agents run destructive commands without confirmation
 
+## Skill & Cognition Effects
+
+*What heavy AI-assisted coding does to the developer's own skill — the measured evidence, not the hype.*
+
+- [[AI-assisted learners score about two letter grades lower with debugging the most degraded skill|AI-assisted learners score two grades lower — debugging hit worst]]
+- [[Experienced developers were measured 19 percent slower with AI while believing they were faster|Devs measured 19% slower with AI yet felt 20% faster]]
+- [[AI-native juniors miss the foundational knowledge that came from struggling through problems manually|AI-native juniors miss the foundations the struggle used to build]]
+
+## The Developer's Evolving Role
+
+*Expert opinion (2025-2026) on what the job becomes and who stays valuable when AI writes the code.*
+
+- [[The software engineer's role is shifting from writing code to specifying reviewing and orchestrating it|Role shifts from writing code to specifying, reviewing, orchestrating]]
+- [[The Expert Generalist gains value as AI writes more code because fundamentals decomposition and judgment compound|Expert Generalist — fundamentals + judgment compound as AI writes more]]
+- [[AI-generated code is harder to review because it looks clean even when the logic is wrong|AI code is harder to review — clean-looking even when logic is wrong]]
+
 ## Read more
 
 - [[Prompt Engineering MOC]] — the substrate
