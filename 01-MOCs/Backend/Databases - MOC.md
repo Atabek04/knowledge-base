@@ -138,6 +138,12 @@
 - [[Data governance documents the retention archival and deletion rules for each class of data|Data governance: retention, archival, deletion rules]]
 - [[Process mining reconstructs the real process from event logs to compare against the documented one|Process mining: actual vs documented process from logs]]
 
+### Schema Migrations
+
+*Versioning schema changes safely in production without downtime or data loss.*
+
+- [[Database migrations version schema changes while backups recover data loss — they are never substitutes]] — when to use migrations vs backups, expand/contract pattern, auto-gen vs handwritten, fix-forward rollback
+
 ---
 
 ## Russian Curriculum (Модуль 7)

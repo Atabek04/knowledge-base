@@ -125,6 +125,10 @@ Distinct from ML Engineering — AI Engineers consume pre-trained models via API
 - Image generation (DALL·E API, Nanobanana, Gemini)
 - Audio processing
 - Speech-to-text (Whisper API)
+  - [[HMM-GMM STT models speech as a sequence of hidden phoneme states over acoustic features]] — classical pre-AI pipeline
+  - [[Whisper transcribes audio using an encoder-decoder Transformer trained end-to-end on 680k hours]] — how Whisper works
+  - [[Fine-tuning adapts a pretrained Whisper checkpoint to a new domain without training from scratch]] — why fine-tuned beats base
+  - [[Hugging Face hosts community fine-tuned Whisper variants for domain-specific transcription]] — where to find better models
 - Text-to-speech
 - Video understanding
 
