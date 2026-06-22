@@ -115,6 +115,7 @@ record Account(List<String> transactions) {
 - **No `()`** — the record header already declares the parameters; the compact form receives them implicitly
 - **No `this.x = x`** — at the end of the block the compiler auto-assigns each (possibly reassigned) parameter to its field
 Tags: java records
+<!--ID: 1782128729987-->
 END
 
 START
@@ -132,6 +133,7 @@ record Account(String owner, int balance) {
 
 **Why mandatory:** the canonical constructor is the only place field assignment happens. Skipping it leaves fields uninitialized. As a bonus, any compact constructor validation automatically applies to all paths.
 Tags: java records constructors
+<!--ID: 1782128729989-->
 END
 
 START
@@ -150,6 +152,7 @@ record Point(int x, int y) implements Describable {
 
 **Why final:** records are value types — subclassing would let a child add state and break `equals()` / `hashCode()`.
 Tags: java records inheritance interfaces
+<!--ID: 1782128729991-->
 END
 
 START
@@ -170,6 +173,7 @@ record UserDto(String name, String email) {}  // replaces ~35 lines of boilerpla
 
 **Caveat:** never use a record as a JPA `@Entity` — JPA requires a no-arg constructor.
 Tags: java records dto
+<!--ID: 1782128729994-->
 END
 
 START
@@ -188,6 +192,7 @@ Back:
 
 **Key difference:** `record` needs no external dependency; `@Value` requires Lombok but supports class inheritance.
 Tags: java records lombok
+<!--ID: 1782128729996-->
 END
 
 START
@@ -211,6 +216,7 @@ if (obj instanceof Point(int x, int y)) {
 
 A record pattern matches if the object is the right type **and** its components can be extracted.
 Tags: java records pattern-matching
+<!--ID: 1782128729998-->
 END
 
 START
@@ -229,6 +235,7 @@ if (obj instanceof Person(String name, Address(String city, String country))) {
 
 Without nesting: two `instanceof` checks + four accessor calls.
 Tags: java records pattern-matching
+<!--ID: 1782128730000-->
 END
 
 START
@@ -251,4 +258,5 @@ Add `when` for guard conditions:
 case Point(int x, int y) when x == 0 && y == 0 -> "origin";
 ```
 Tags: java records pattern-matching switch
+<!--ID: 1782128730003-->
 END

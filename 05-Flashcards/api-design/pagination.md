@@ -14,6 +14,7 @@ SELECT * FROM products ORDER BY id LIMIT 20 OFFSET 4980;
 ```
 Client sends `?limit=20&offset=4980` to get page 250.
 Tags: api-design pagination
+<!--ID: 1782128729591-->
 END
 
 START
@@ -24,6 +25,7 @@ Back: The DB can't jump straight to the offset row.
 - Cost grows **linearly with the offset**
 - Page 1 is instant; page 5000 crawls through ~100k rows just to throw them away
 Tags: api-design pagination
+<!--ID: 1782128729598-->
 END
 
 START
@@ -33,6 +35,7 @@ Back: The window **shifts** because offset assumes frozen data:
 - A row inserted at the top → last item of page 1 reappears on page 2 (**duplicate**)
 - A row deleted → an item is **skipped** entirely
 Tags: api-design pagination
+<!--ID: 1782128729601-->
 END
 
 START
@@ -44,6 +47,7 @@ SELECT * FROM products WHERE id > 4980 ORDER BY id LIMIT 20;
 ```
 Client sends `?limit=20&since_id=4980`.
 Tags: api-design pagination
+<!--ID: 1782128729604-->
 END
 
 START
@@ -53,6 +57,7 @@ Back: `WHERE id > 4980` lets the DB **seek directly into the index** and read 20
 - No skipped rows to scan and discard
 - Page 1 and page 5000 cost the same → **constant, predictable latency**
 Tags: api-design pagination
+<!--ID: 1782128729607-->
 END
 
 START
@@ -62,6 +67,7 @@ Back: Order by a column that is **unique and indexed** (PK, timestamp, or compos
 - For non-unique columns add a **tiebreaker**: `ORDER BY created_at, id`, compared as a pair
 - Without it, rows duplicate or are skipped at page boundaries
 Tags: api-design pagination
+<!--ID: 1782128729611-->
 END
 
 START
@@ -72,6 +78,7 @@ Back: You lose **random access**.
 - No "jump to page 250", no cheap total page count
 - Acceptable for feeds, infinite scroll, and exports
 Tags: api-design pagination
+<!--ID: 1782128729614-->
 END
 
 START
@@ -82,6 +89,7 @@ Back: **Cursor** pagination is keyset with the position wrapped in an **opaque t
 - Same seek mechanism and performance underneath
 - Difference is the **contract**: cursor hides the key; keyset exposes it (`since_id=40`)
 Tags: api-design pagination
+<!--ID: 1782128729617-->
 END
 
 START
@@ -93,4 +101,5 @@ Back: The opacity buys flexibility:
 - Can pack extra state (direction, filters, version) into one string
 This is why Stripe/GitHub/Twitter use cursors.
 Tags: api-design pagination
+<!--ID: 1782128729620-->
 END

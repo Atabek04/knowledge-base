@@ -11,6 +11,7 @@ Back: A type's **natural ordering** — its one built-in way to sort — through
 
 A `Comparable` object can compare *itself* to another of its kind.
 Tags: java comparable
+<!--ID: 1782128730005-->
 END
 
 START
@@ -23,6 +24,7 @@ Back:
 
 Only the sign matters.
 Tags: java comparable
+<!--ID: 1782128730008-->
 END
 
 START
@@ -30,6 +32,7 @@ Coding Questions
 Why use `Integer.compare(a, b)` instead of `a - b` in `compareTo`?
 Back: Subtraction **overflows** for large or negative ints, giving the wrong sign. `Integer.compare()` is overflow-safe.
 Tags: java comparable gotcha
+<!--ID: 1782128730014-->
 END
 
 START
@@ -39,6 +42,7 @@ Back: It supplies an ordering from the **outside**, so the same type can be sort
 
 `Comparable` allows only one natural ordering (one `compareTo`).
 Tags: java comparator
+<!--ID: 1782128730016-->
 END
 
 START
@@ -48,6 +52,7 @@ Back:
 - `compareTo(other)` — **one** arg; object compares itself; **internal**, one per class
 - `compare(a, b)` — **two** args; outside judge compares two objects; **external**, many per type
 Tags: java comparator comparable
+<!--ID: 1782128730019-->
 END
 
 START
@@ -61,6 +66,7 @@ Comparator.comparing(Person::getName)
 - `comparing` — key extractor for the main field
 - `thenComparing` — tie-breaker
 Tags: java comparator
+<!--ID: 1782128730021-->
 END
 
 START
@@ -73,6 +79,7 @@ To reverse one key only:
 Comparator.comparing(Person::getAge, Comparator.reverseOrder())
 ```
 Tags: java comparator gotcha
+<!--ID: 1782128730024-->
 END
 
 START
@@ -82,6 +89,7 @@ Back:
 - `sorted()` — natural ordering; elements **must** implement `Comparable` or you get `ClassCastException`
 - `sorted(Comparator)` — any custom ordering
 Tags: java streams sorted
+<!--ID: 1782128730027-->
 END
 
 START
@@ -94,6 +102,7 @@ counts.entrySet().stream()
 ```
 `comparingByKey()` sorts by key instead.
 Tags: java streams map
+<!--ID: 1782128730029-->
 END
 
 START
@@ -105,6 +114,7 @@ Back: Collect into a **`LinkedHashMap`** (preserves insertion order). A `HashMap
 .collect(Collectors.toMap(k, v, (a, b) -> a, LinkedHashMap::new))
 ```
 Tags: java streams map gotcha
+<!--ID: 1782128730032-->
 END
 
 START
@@ -112,4 +122,5 @@ Coding Questions
 Why filter before `sorted()` in a stream pipeline?
 Back: `sorted()` is a **stateful, blocking** step — it buffers the whole stream at `O(n log n)`. Filtering first means sorting fewer elements.
 Tags: java streams sorted performance
+<!--ID: 1782128730034-->
 END

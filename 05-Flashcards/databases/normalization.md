@@ -15,6 +15,7 @@ Back:
 - Each form removes a specific harmful **dependency**
 - Goal: no duplicated facts → no contradictions
 Tags: database normalization
+<!--ID: 1782128729777-->
 END
 
 START
@@ -25,6 +26,7 @@ Back:
 - **Update anomaly** — a duplicated fact must change in all rows or data contradicts itself (professor's office updated in 40 of 50 rows)
 - **Delete anomaly** — deleting a row destroys an unrelated fact (last student drops → course vanishes)
 Tags: database normalization anomalies
+<!--ID: 1782128729779-->
 END
 
 START
@@ -37,6 +39,7 @@ Every column holds a single **atomic value**, with **no repeating groups**.
 - No `product_1`, `product_2`, `product_3` columns
 - It's the precondition for reasoning about functional dependencies (2NF/3NF)
 Tags: database normalization 1nf
+<!--ID: 1782128729782-->
 END
 
 START
@@ -49,6 +52,7 @@ Back:
 - e.g. key `(student_id, course_id)`: `course_title` depends only on `course_id` → violation
 - Fix: move it to a table keyed by the part it depends on
 Tags: database normalization 2nf
+<!--ID: 1782128729784-->
 END
 
 START
@@ -61,6 +65,7 @@ Back:
 - Fix: pull `dept_name` into a `departments(dept_id, dept_name)` table
 - Mnemonic: depend on *the key, the whole key, and nothing but the key*
 Tags: database normalization 3nf
+<!--ID: 1782128729786-->
 END
 
 START
@@ -73,6 +78,7 @@ Back:
 - Only bites with **multiple overlapping candidate keys** (e.g. `teacher → subject` while key is `(student, subject)`)
 - BCNF is informally "3.5NF"
 Tags: database normalization bcnf
+<!--ID: 1782128729793-->
 END
 
 START
@@ -85,6 +91,7 @@ Back:
 - Buys **read speed** with **write complexity** — copies can drift, must be kept in sync
 - Default in OLAP/analytics (star schemas, wide tables)
 Tags: database normalization denormalization performance
+<!--ID: 1782128729796-->
 END
 
 START
@@ -96,4 +103,5 @@ Back:
 
 Most real schemas stop at 3NF/BCNF; awareness is enough.
 Tags: database normalization 4nf 5nf
+<!--ID: 1782128729799-->
 END

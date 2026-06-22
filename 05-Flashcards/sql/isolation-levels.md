@@ -12,6 +12,7 @@ Back: An **isolation level** is defined by **which read anomalies it still permi
 - Each level is a promise: "these anomalies can't happen to you; those still can"
 - Higher level = fewer anomalies allowed, more cost
 Tags: sql concurrency isolation
+<!--ID: 1782128730550-->
 END
 
 START
@@ -23,6 +24,7 @@ Back:
 - **REPEATABLE READ** — also stops **non-repeatable reads**
 - **SERIALIZABLE** — also stops **phantoms** (and serialization anomalies)
 Tags: sql concurrency isolation
+<!--ID: 1782128730552-->
 END
 
 START
@@ -33,6 +35,7 @@ Back: Cleaner reads bought with more cost:
 - **Lower** — less contention, but anomalies leak into application code
 - `READ COMMITTED` is the common default: cheap, kills dirty reads
 Tags: sql concurrency isolation
+<!--ID: 1782128730554-->
 END
 
 START
@@ -43,6 +46,7 @@ Back: Default `Isolation.DEFAULT` → the DB default = **READ COMMITTED** in Pos
 - Does **not** stop two transactions reading the same committed row and racing to overwrite
 - `@Transactional` gives a transaction boundary, not a row lock
 Tags: sql spring concurrency isolation
+<!--ID: 1782128730556-->
 END
 
 START
@@ -53,6 +57,7 @@ Back: It gives stronger guarantees than the spec's minimum (built on MVCC snapsh
 - **REPEATABLE READ blocks phantoms too** — a level earlier than the spec requires
 - Only three distinct behaviors really exist
 Tags: sql postgresql concurrency isolation
+<!--ID: 1782128730558-->
 END
 
 START
@@ -62,6 +67,7 @@ Back: **Snapshot isolation** — one snapshot taken at the transaction's first s
 - Non-repeatable reads **and** phantoms both vanish
 - A lost update aborts the loser with `could not serialize access due to concurrent update`
 Tags: sql postgresql concurrency isolation
+<!--ID: 1782128730560-->
 END
 
 START
@@ -71,4 +77,5 @@ Back: **Serializable Snapshot Isolation (SSI)** — also catches the **serializa
 - A committed result no one-at-a-time ordering could produce
 - Monitors read/write dependencies and aborts a transaction in a dangerous cycle
 Tags: sql postgresql concurrency isolation
+<!--ID: 1782128730563-->
 END

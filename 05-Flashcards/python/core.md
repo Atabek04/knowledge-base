@@ -13,6 +13,7 @@ Back:
 
 Works on any iterable (tuple, set, dict keys, generator) and always hands back a `list`.
 Tags: python sorted
+<!--ID: 1782128730441-->
 END
 
 START
@@ -24,6 +25,7 @@ Back:
 
 So `x = nums.sort()` sets `x` to `None`.
 Tags: python sorted
+<!--ID: 1782128730443-->
 END
 
 START
@@ -35,6 +37,7 @@ Back: A function applied to **every element before comparison** — Python sorts
 sorted(words, key=len)   # sort by length, keep the words
 ```
 Tags: python sorted key
+<!--ID: 1782128730446-->
 END
 
 START
@@ -47,6 +50,7 @@ sorted(pairs, key=lambda x: x[1], reverse=True)
 - `key=lambda x: x[1]` → sort by the count
 - `reverse=True` → descending
 Tags: python sorted key lambda
+<!--ID: 1782128730448-->
 END
 
 START
@@ -59,6 +63,7 @@ sorted(people, key=lambda p: (p[0], p[1]))
 ```
 Mix directions by negating a numeric field: `(p[0], -p[1])`.
 Tags: python sorted key tuple
+<!--ID: 1782128730450-->
 END
 
 START
@@ -74,6 +79,7 @@ for item in pairs:
     result.append(item[0])
 ```
 Tags: python comprehension
+<!--ID: 1782128730452-->
 END
 
 START
@@ -84,6 +90,7 @@ Back: `[expression for item in iterable if condition]`
 - **for** loop in the middle
 - **if** filter last (optional)
 Tags: python comprehension
+<!--ID: 1782128730454-->
 END
 
 START
@@ -93,6 +100,7 @@ Back: No — it's ordinary **tuple unpacking** applied once per element.
 
 Each element is a tuple; `k, v = element` runs on every iteration. Same mechanic as `x, y = (1, "a")`.
 Tags: python forloop unpacking
+<!--ID: 1782128730456-->
 END
 
 START
@@ -102,6 +110,7 @@ Back: `ValueError: too many values to unpack` — unpacking is **strict** about 
 
 Relax it with a catch-all: `for first, *rest in rows:`
 Tags: python forloop unpacking
+<!--ID: 1782128730458-->
 END
 
 START
@@ -113,6 +122,7 @@ Back: An **(index, value) tuple** — `enumerate` pairs each item with its runni
 for i, char in enumerate("abc"):   # 0 a → 1 b → 2 c
 ```
 Tags: python enumerate
+<!--ID: 1782128730460-->
 END
 
 START
@@ -124,6 +134,7 @@ Back: Pass the `start` argument:
 for line_no, line in enumerate(lines, start=1):
 ```
 Tags: python enumerate
+<!--ID: 1782128730462-->
 END
 
 START
@@ -133,6 +144,7 @@ Back: No — it returns a **lazy iterator** that computes each `(index, value)` 
 
 Wrap in `list()` only if you need all pairs at once.
 Tags: python enumerate
+<!--ID: 1782128730465-->
 END
 
 START
@@ -145,6 +157,7 @@ counts = Counter("aab")   # Counter({'a': 2, 'b': 1})
 counts["z"] += 1          # works, no setup
 ```
 Tags: python counter collections
+<!--ID: 1782128730467-->
 END
 
 START
@@ -154,6 +167,7 @@ Back: **Distinct keys**, not total occurrences — `Counter("aab")` has `len` 2.
 
 This is exactly what a sliding window checks to know how many distinct characters it holds.
 Tags: python counter collections
+<!--ID: 1782128730469-->
 END
 
 START
@@ -167,6 +181,7 @@ if window[ch] == 0:
     window.pop(ch)
 ```
 Tags: python counter collections
+<!--ID: 1782128730473-->
 END
 
 START
@@ -178,6 +193,7 @@ Back: The top-n **(item, count) tuples**, sorted by count descending.
 Counter("aab").most_common(1)   # [('a', 2)]
 ```
 Tags: python counter collections
+<!--ID: 1782128730475-->
 END
 
 START
@@ -190,6 +206,7 @@ groups = defaultdict(list)
 groups["a"].append("apple")   # [] created on the fly
 ```
 Tags: python defaultdict collections
+<!--ID: 1782128730477-->
 END
 
 START
@@ -200,6 +217,7 @@ Back: A **zero-arg callable** (the factory itself), not a value:
 - `defaultdict(list)` → starts as `[]`
 - `defaultdict(lambda: "N/A")` → custom default
 Tags: python defaultdict collections
+<!--ID: 1782128730480-->
 END
 
 START
@@ -209,6 +227,7 @@ Back: It **inserts the default** — even `if d[key]:` silently grows the dict.
 
 Use `key in d` for pure membership checks.
 Tags: python defaultdict collections
+<!--ID: 1782128730481-->
 END
 
 START
@@ -220,6 +239,7 @@ Back:
 
 Both live in `collections`; for pure counting prefer Counter.
 Tags: python counter defaultdict collections
+<!--ID: 1782128730483-->
 END
 
 START
@@ -232,6 +252,7 @@ Back:
 
 (Opposite of Java, where `map.get()` returns null silently.)
 Tags: python dict
+<!--ID: 1782128730486-->
 END
 
 START
@@ -241,6 +262,7 @@ Back: When the key **must exist** — a missing key is a bug, and the immediate 
 
 `get` there hides the bug: you read `None` and crash later with a worse message.
 Tags: python dict
+<!--ID: 1782128730488-->
 END
 
 START
@@ -250,6 +272,7 @@ Back: **Returns the removed value** — pop is read-and-delete in one call.
 
 Both raise `KeyError` on a missing key (unless pop gets a default).
 Tags: python dict pop
+<!--ID: 1782128730490-->
 END
 
 START
@@ -261,6 +284,7 @@ d.pop(key, None)
 ```
 The second argument replaces the `KeyError` with a fallback — no `if key in d:` guard needed.
 Tags: python dict pop
+<!--ID: 1782128730492-->
 END
 
 START
@@ -274,6 +298,7 @@ d["c"] = 3
 view   # already contains ('c', 3)
 ```
 Tags: python dict views
+<!--ID: 1782128730494-->
 END
 
 START
@@ -286,6 +311,7 @@ for key, value in d.items():
 ```
 (Looping the dict directly gives keys only.)
 Tags: python dict views
+<!--ID: 1782128730496-->
 END
 
 START
@@ -300,6 +326,7 @@ for key in list(d.keys()):
 ```
 `list()` detaches a real list from the view.
 Tags: python dict views
+<!--ID: 1782128730498-->
 END
 
 START
@@ -309,6 +336,7 @@ Back: A tuple is **immutable** — after creation: no item assignment, no append
 
 Everything else (indexing, slicing, iteration) works the same.
 Tags: python tuple
+<!--ID: 1782128730500-->
 END
 
 START
@@ -319,6 +347,7 @@ Back: Dict keys must be **hashable** — the hash must stay constant.
 - tuple: **immutable → hash never changes → hashable**
 - list: mutation would change the hash → `TypeError: unhashable type`
 Tags: python tuple dict
+<!--ID: 1782128730502-->
 END
 
 START
@@ -328,6 +357,7 @@ Back: Each constructor accepts the other:
 - `list((1, 2))` → `[1, 2]` — mutable copy
 - `tuple([1, 2])` → `(1, 2)` — frozen, hashable
 Tags: python tuple
+<!--ID: 1782128730505-->
 END
 
 START
@@ -339,6 +369,7 @@ Back:
 ```
 `key: value` pair before the `for`, curly braces around it.
 Tags: python dict comprehension
+<!--ID: 1782128730507-->
 END
 
 START
@@ -348,6 +379,7 @@ Back: No — it always builds a **new dict** (like `sorted()` vs `list.sort()`).
 
 To "transform in place", rebind: `prices = {k: v*2 for k, v in prices.items()}`
 Tags: python dict comprehension
+<!--ID: 1782128730509-->
 END
 
 START
@@ -355,6 +387,7 @@ Coding Questions
 In a dict comprehension that inverts `{name: price}` to `{price: name}`, what happens when two names share a price?
 Back: **Duplicate keys silently overwrite** — only the *last* one survives. No error, no warning.
 Tags: python dict comprehension
+<!--ID: 1782128730511-->
 END
 
 START
@@ -364,6 +397,7 @@ Back:
 - `append(x)` — adds to the **end**, **O(1)** amortized (spare capacity lives there)
 - `insert(i, x)` — places at index `i`, **O(n)**: shifts every element after `i` one slot right
 Tags: python list
+<!--ID: 1782128730513-->
 END
 
 START
@@ -376,6 +410,7 @@ Fixes:
 - `append` + one final `.reverse()`
 - `collections.deque` — `appendleft` is O(1)
 Tags: python list performance
+<!--ID: 1782128730515-->
 END
 
 START
@@ -387,6 +422,7 @@ Back:
 
 End-insertion is the cheap, index-free default in **every** language — not a Python quirk.
 Tags: python list java cpp
+<!--ID: 1782128730517-->
 END
 
 START
@@ -398,6 +434,7 @@ Back:
 
 Same shift problem as `insert(0, x)`.
 Tags: python list
+<!--ID: 1782128730519-->
 END
 
 START
@@ -410,6 +447,7 @@ Back:
 
 `stop` is **always exclusive** — the sequence ends one step before it.
 Tags: python range
+<!--ID: 1782128730521-->
 END
 
 START
@@ -423,6 +461,7 @@ range(len(nums) - 1, -1, -1)
 - stop = `-1`, exclusive → 0 included
 - step = `-1`, walk backward
 Tags: python range
+<!--ID: 1782128730523-->
 END
 
 START
@@ -432,6 +471,7 @@ Back: **Silently empty** — with a negative step, start must be *greater* than 
 
 (Only `step=0` raises `ValueError`.)
 Tags: python range
+<!--ID: 1782128730526-->
 END
 
 START
@@ -441,6 +481,7 @@ Back: So `range(len(nums))` yields **exactly the valid indexes** — length and 
 
 Same convention as slicing: `nums[0:3]` is 3 elements.
 Tags: python range
+<!--ID: 1782128730528-->
 END
 
 START
@@ -450,6 +491,7 @@ Back:
 - **Values only** → `reversed(nums)` — no index math, no off-by-ones
 - **Index needed** (write to `arr[i]`, compare `nums[i]` with `nums[i+1]`) → `range` with negative step
 Tags: python reversed range
+<!--ID: 1782128730530-->
 END
 
 START
@@ -460,4 +502,5 @@ Back:
 - `nums[::-1]` — **new reversed list**, full copy
 - `nums.reverse()` — reverses **in place**, returns `None`
 Tags: python reversed list
+<!--ID: 1782128730532-->
 END

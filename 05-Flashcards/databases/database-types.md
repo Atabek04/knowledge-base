@@ -15,6 +15,7 @@ Back:
 - NoSQL: schema-on-read, horizontal scale, often eventual consistency → huge volume / flexible shape
 - It's a trade, not a ranking
 Tags: database relational nosql
+<!--ID: 1782128729757-->
 END
 
 START
@@ -27,6 +28,7 @@ When you need **multi-record transactions** or **strong integrity**, and relatio
 - ACID makes multi-table changes atomic
 - Default until a specific NFR forces you off it
 Tags: database relational
+<!--ID: 1782128729761-->
 END
 
 START
@@ -39,6 +41,7 @@ Stores **self-describing documents** (JSON/BSON) queried by their **nested conte
 - Flexible schema; great locality
 - Cost: duplication across documents, weak cross-document joins
 Tags: database nosql document
+<!--ID: 1782128729763-->
 END
 
 START
@@ -51,6 +54,7 @@ A distributed **hash map**: unique key → **opaque value** (Redis, DynamoDB).
 - Therefore O(1) lookup, trivially shardable
 - Best for caching, sessions, counters — when you always know the exact key
 Tags: database nosql key-value caching
+<!--ID: 1782128729766-->
 END
 
 START
@@ -61,6 +65,7 @@ Back:
 
 ⚠️ Different from columnar **OLAP** (ClickHouse): both store by column, but OLAP targets **analytical scans**, wide-column targets high-volume OLTP-style writes.
 Tags: database nosql column-family
+<!--ID: 1782128729769-->
 END
 
 START
@@ -72,6 +77,7 @@ Back:
 - Nodes = entities, edges = typed relationships carrying data
 - Best for social graphs, recommendations, fraud rings, permissions
 Tags: database nosql graph
+<!--ID: 1782128729771-->
 END
 
 START
@@ -86,4 +92,5 @@ Match the store's **model + guarantees** to your **non-functional requirements**
 
 Model around **access patterns**; polyglot persistence is normal; don't add a store until an NFR forces it.
 Tags: database selection nfr
+<!--ID: 1782128729774-->
 END

@@ -12,6 +12,7 @@ Back: A **dirty read** is reading another transaction's **uncommitted** ("dirty"
 - You act on a value that was never durably real
 - If the writer rolls back, your decision rested on a value that never existed
 Tags: sql concurrency anomaly
+<!--ID: 1782128730535-->
 END
 
 START
@@ -22,6 +23,7 @@ Back: Two transactions both **read → decide → write** the same row concurren
 - Both write based on it
 - **Last writer wins** — the later COMMIT overwrites the earlier, silently erasing it
 Tags: sql concurrency anomaly
+<!--ID: 1782128730537-->
 END
 
 START
@@ -31,6 +33,7 @@ Back: A **lost update** is when one committed write is silently overwritten by a
 - The earlier update "is lost" — clobbered with no error, no warning
 - With no locking, the default is **last writer wins**
 Tags: sql concurrency anomaly
+<!--ID: 1782128730539-->
 END
 
 START
@@ -41,6 +44,7 @@ Back: Same shape of bug, different layer:
 - **Lost update** — transactions + a table row, defined by SQL isolation levels
 - Both are kinds of **race condition** — but don't call a clobbered SQL row a "data race"
 Tags: sql concurrency anomaly
+<!--ID: 1782128730541-->
 END
 
 START
@@ -49,6 +53,7 @@ What is a non-repeatable read?
 Back: A **non-repeatable read** — re-reading the same row inside one transaction returns a different value, because another transaction committed an `UPDATE`/`DELETE` to it in between.
 - The read could not be *repeated* with the same result mid-transaction
 Tags: sql concurrency anomaly
+<!--ID: 1782128730543-->
 END
 
 START
@@ -57,6 +62,7 @@ What is a phantom read?
 Back: A **phantom read** — re-running a query returns a different **set** of rows, because another transaction `INSERT`ed or `DELETE`d rows matching the `WHERE`.
 - New rows "appear like ghosts" between two identical queries
 Tags: sql concurrency anomaly
+<!--ID: 1782128730546-->
 END
 
 START
@@ -67,4 +73,5 @@ Back: The distinction is *what* changed:
 - **Phantom read** — the **set of rows** matching your predicate grew or shrank (INSERT/DELETE)
 - Non-repeatable = a held row's value; phantom = which rows qualify
 Tags: sql concurrency anomaly
+<!--ID: 1782128730548-->
 END

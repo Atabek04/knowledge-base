@@ -15,6 +15,7 @@ Back:
 - The foggy, can't-start feeling = adenosine load building up
 - The longer you're awake, the more it accumulates
 Tags: self-mastery caffeine neuroscience
+<!--ID: 1782128729441-->
 END
 
 START
@@ -26,6 +27,7 @@ Back:
 - It fits adenosine receptors without activating them → **competitive inhibitor**
 - Blocks the "slow down" signal → your baseline state is unmasked
 Tags: self-mastery caffeine neuroscience
+<!--ID: 1782128729444-->
 END
 
 START
@@ -37,6 +39,7 @@ Back:
 - Result: sudden fatigue worse than before the coffee
 - Half-life = ~5–6 hours → 3pm coffee still 50% active at 8–9pm
 Tags: self-mastery caffeine neuroscience
+<!--ID: 1782128729447-->
 END
 
 START
@@ -48,6 +51,7 @@ Back:
 - Also **builds tolerance faster**
 - Wait 90 min → caffeine hits partially-cleared receptors → stronger, cleaner effect
 Tags: self-mastery caffeine timing
+<!--ID: 1782128729450-->
 END
 
 ---
@@ -62,6 +66,7 @@ Back:
 - The smell, warmth, and act of making coffee → brain shifts toward alert, focused state **before caffeine is absorbed**
 - This is classical conditioning (Pavlov): neutral stimulus → meaningful state → stimulus alone produces state
 Tags: self-mastery caffeine habits conditioning
+<!--ID: 1782128729453-->
 END
 
 START
@@ -72,6 +77,7 @@ Back:
 - The expectation and ritual itself triggered the nervous system shift
 - Proves: the **cue carries real neurological weight** independent of the molecule
 Tags: self-mastery caffeine conditioning
+<!--ID: 1782128729457-->
 END
 
 START
@@ -83,6 +89,7 @@ Back:
 - Each casual use weakens the conditioned association
 - Rule: IF study time → THEN coffee ritual → the ritual signals the session
 Tags: self-mastery caffeine habits
+<!--ID: 1782128729461-->
 END
 
 ---
@@ -97,6 +104,7 @@ Back:
 - It's not sleep debt — it's a direct consequence of physical stillness
 - Coffee partially compensates by blocking receptors, but doesn't fix the root cause
 Tags: self-mastery caffeine movement focus
+<!--ID: 1782128729464-->
 END
 
 START
@@ -107,6 +115,7 @@ Back:
 - Produces measurable improvements in cognitive performance
 - Brief movement before a study session reduces adenosine load — often more efficiently than a second coffee
 Tags: self-mastery movement focus neuroscience
+<!--ID: 1782128729467-->
 END
 
 START
@@ -119,6 +128,7 @@ Back:
 
 IF foggy before study block → THEN move first, then drink caffeine
 Tags: self-mastery caffeine movement focus
+<!--ID: 1782128729470-->
 END
 
 ---
@@ -134,6 +144,7 @@ Back:
 - The dose-response curve is **not linear past 200mg**
 - Beyond 200mg: cortisol spikes, anxiety rises, cognitive benefit plateaus
 Tags: self-mastery caffeine dosing
+<!--ID: 1782128729473-->
 END
 
 START
@@ -145,6 +156,7 @@ Back:
 - Without caffeine: all those extra receptors get flooded → **withdrawal fog worse than before**
 - Heavy users drink coffee to feel normal, not to feel good
 Tags: self-mastery caffeine tolerance dependency
+<!--ID: 1782128729476-->
 END
 
 START
@@ -157,6 +169,7 @@ Back:
 
 Violating rule 3 leads to tolerance → dependency loop
 Tags: self-mastery caffeine timing sleep
+<!--ID: 1782128729480-->
 END
 
 START
@@ -168,6 +181,7 @@ Back:
 - Chronic cycle: sleep deprivation **amplifies** caffeine need and **degrades** its effectiveness
 - Breaking it: taper dose, enforce 2pm cutoff, prioritize sleep for 1 week
 Tags: self-mastery caffeine sleep
+<!--ID: 1782128729483-->
 END
 
 ---
@@ -183,6 +197,7 @@ Back:
 - Promotes **alpha-wave activity** — associated with relaxed alertness ("calm focus")
 - Works synergistically with caffeine to sustain focus without overstimulation
 Tags: self-mastery caffeine tea l-theanine
+<!--ID: 1782128729486-->
 END
 
 START
@@ -194,6 +209,7 @@ Back:
 - One of the most replicated findings in cognitive nutrition research
 - The ratio in natural tea (~2:1 caffeine:theanine) is close to the studied ratio
 Tags: self-mastery caffeine l-theanine research
+<!--ID: 1782128729489-->
 END
 
 START
@@ -207,6 +223,7 @@ Back:
 Green tea: ~30–50mg caffeine + ~20–30mg L-theanine per cup
 Black tea: ~40–70mg caffeine + ~15–25mg L-theanine per cup
 Tags: self-mastery caffeine tea l-theanine study
+<!--ID: 1782128729493-->
 END
 
 START
@@ -218,6 +235,7 @@ Back:
 - Together: alert without wired, focus sustained over longer window
 - L-theanine **raises the floor** and **smooths the descent** of the caffeine curve
 Tags: self-mastery caffeine l-theanine focus
+<!--ID: 1782128729497-->
 END
 
 ---
@@ -233,6 +251,7 @@ Back:
 - Worked examples **eliminate the search** → all cognitive resources go to schema-building
 - Sweller & Cooper (1985): ~**6x faster** learning with fewer errors vs. unguided problem-solving
 Tags: self-mastery study-techniques cognitive-load worked-examples
+<!--ID: 1782128729499-->
 END
 
 START
@@ -244,6 +263,7 @@ Back:
 - The active interrogation is what builds the schema — not the reading itself
 - Questions to ask: *Why this step? What principle? Could it be done differently?*
 Tags: self-mastery study-techniques worked-examples
+<!--ID: 1782128729503-->
 END
 
 START
@@ -254,6 +274,7 @@ Back:
 - **Conditional fit:** LeetCode — only for *new patterns*; switch to problem-first once pattern is recognized
 - **Low fit:** Creative architecture, open-ended design, any domain where you're already intermediate+
 Tags: self-mastery study-techniques worked-examples
+<!--ID: 1782128729506-->
 END
 
 START
@@ -264,6 +285,7 @@ Back:
 - That is the expertise threshold — your schema already contains the structure
 - Continuing with worked examples past this point triggers the **Expertise Reversal Effect**
 Tags: self-mastery study-techniques worked-examples expertise-reversal
+<!--ID: 1782128729509-->
 END
 
 ---
@@ -279,6 +301,7 @@ Back:
 - They also **prevent the active processing** that builds deeper understanding
 - The scaffold for the novice becomes a cage for the expert
 Tags: self-mastery study-techniques expertise-reversal cognitive-load
+<!--ID: 1782128729512-->
 END
 
 START
@@ -292,6 +315,7 @@ Back:
 
 Signal to advance: *can you predict the next step before reading it?*
 Tags: self-mastery study-techniques expertise-reversal worked-examples
+<!--ID: 1782128729515-->
 END
 
 START
@@ -303,6 +327,7 @@ Back:
 - Retrieval failure (struggling to recall) is the mechanism that builds fluency
 - Fix: stop watching, start solving cold → the discomfort is the learning signal
 Tags: self-mastery study-techniques expertise-reversal leetcode
+<!--ID: 1782128729517-->
 END
 
 ---
@@ -320,6 +345,7 @@ Back:
 
 Each fade forces the learner to generate missing steps → activates schema rather than just reading it
 Tags: self-mastery study-techniques faded-examples cognitive-load
+<!--ID: 1782128729520-->
 END
 
 START
@@ -331,6 +357,7 @@ Back:
 - Full worked example → too easy for intermediate → no growth
 - Unguided problem-solving → too hard → wasted search effort
 Tags: self-mastery study-techniques faded-examples research
+<!--ID: 1782128729523-->
 END
 
 START
@@ -343,4 +370,5 @@ Back:
 
 Each stage removes one more scaffold. Stop when you can solve cold consistently.
 Tags: self-mastery study-techniques faded-examples leetcode
+<!--ID: 1782128729526-->
 END

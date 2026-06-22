@@ -15,6 +15,7 @@ Back:
 - **Interface** = pure contract; each strategy is fully independent, can extend anything
 - Use abstract class only when strategies share genuine non-trivial implementation (rare) — even then, prefer a utility
 Tags: design-patterns behavioral strategy java
+<!--ID: 1782128729813-->
 END
 
 START
@@ -25,6 +26,7 @@ Back:
 - Example: `SortAndFilterStrategy` — now you can't use sort-only or filter-only without duplication
 - **Rule:** one strategy = one algorithm; behaviors that vary independently get their own strategy family
 Tags: design-patterns behavioral strategy
+<!--ID: 1782128729815-->
 END
 
 START
@@ -35,4 +37,5 @@ Back:
 - **Composition** — resolved at **runtime**; the composed field holds an interface reference, any implementation can fill it
 - This is why Strategy, Decorator, and State all use composition — they need runtime-swappable behavior
 Tags: design-patterns behavioral strategy
+<!--ID: 1782128729818-->
 END

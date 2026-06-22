@@ -15,6 +15,7 @@ Back:
 
 These are **separate systems** that can decouple — a person can compulsively want something they no longer enjoy.
 Tags: self-mastery discipline neuroscience
+<!--ID: 1782128729309-->
 END
 
 START
@@ -25,6 +26,7 @@ Craving (wanting) and pleasure (liking) are different neural circuits.
 
 The wanting circuit fires in response to **cues**, not rational evaluation of enjoyment. Addressing one system does not address the other. The craving has already fired before the judgment lands.
 Tags: self-mastery discipline neuroscience
+<!--ID: 1782128729313-->
 END
 
 START
@@ -35,6 +37,7 @@ Ibn al-Qayyim (*Ighathat al-Lahfan*) describes how **shahwa** (desire-pull) and 
 
 The nafs ammārah learns to *want* without needing to *receive* — the pull is trained, the satisfaction is not. What neuroscience calls incentive sensitization, Ibn al-Qayyim calls the trained nafs.
 Tags: self-mastery discipline islamic
+<!--ID: 1782128729315-->
 END
 
 ---
@@ -52,6 +55,7 @@ Back:
 
 Self-control fails when the impulsive system dominates — which happens when the deliberative system is **weakened**, not when knowledge disappears.
 Tags: self-mastery discipline neuroscience
+<!--ID: 1782128729318-->
 END
 
 START
@@ -64,6 +68,7 @@ In addictive disorders, the inhibition circuitry becomes neurobiologically compr
 
 The disconnect is structural, not informational. This is why "just decide to stop" fails for severe addiction.
 Tags: self-mastery discipline neuroscience
+<!--ID: 1782128729320-->
 END
 
 ---
@@ -79,6 +84,7 @@ Back:
 3. **Tawbah becomes impossible** — a robot that malfunctions doesn't repent, it gets repaired
 4. **The structure of jazā' collapses** — reward and punishment presuppose culpable choice
 Tags: self-mastery discipline islamic
+<!--ID: 1782128729324-->
 END
 
 START
@@ -93,6 +99,7 @@ Allah created the nafs ammārah, the shahwa, and the pull of the immediate. The 
 
 The difficulty is built into the design. A test with no difficulty tests nothing.
 Tags: self-mastery discipline islamic
+<!--ID: 1782128729327-->
 END
 
 ---
@@ -108,6 +115,7 @@ Back:
 
 Kufr occurs by kawnī permission — yet Allah does not love kufr (Q. 39:7). **Accountability attaches to the sharī'ī will, not the kawnī permission.**
 Tags: self-mastery discipline islamic aqeedah
+<!--ID: 1782128729330-->
 END
 
 START
@@ -118,6 +126,7 @@ Back:
 
 Why worse? The denier of qadar maintains a coherent framework of accountability. The one who weaponizes qadar has used a true premise (Allah's sovereignty) to neutralize the entire purpose of revelation.
 Tags: self-mastery discipline islamic aqeedah
+<!--ID: 1782128729332-->
 END
 
 START
@@ -128,6 +137,7 @@ Back:
 
 You never accept qadar from someone who wrongs *you*. You invoke it only toward Allah — exposing it as self-serving rationalization, not theology.
 Tags: self-mastery discipline islamic
+<!--ID: 1782128729335-->
 END
 
 ---
@@ -144,6 +154,7 @@ Back:
 
 Da'f al-nafs (weakness of will) is **not** on this list.
 Tags: self-mastery discipline islamic
+<!--ID: 1782128729337-->
 END
 
 START
@@ -155,6 +166,7 @@ Back:
 
 Q. 2:286 ("Allah does not burden beyond capacity") addresses 'ajz haqīqī — not the difficulty of resisting temptation.
 Tags: self-mastery discipline islamic
+<!--ID: 1782128729340-->
 END
 
 START
@@ -167,6 +179,7 @@ Ibn al-Qayyim devotes major sections of *Madarij al-Sālikīn* to refuting it. D
 
 Contrast with **muhāsaba** (honest acknowledgment of weakness + repentance) — which is virtuous and the foundation of the spiritual path.
 Tags: self-mastery discipline islamic
+<!--ID: 1782128729343-->
 END
 
 ---
@@ -186,6 +199,7 @@ Back:
 
 Qur'anic proof: Allah commands "وَلَا تَكُن مِّنَ الْغَافِلِين" (7:205) but never commands against forgetting — because you cannot be commanded against what you cannot control.
 Tags: self-mastery islamic discipline
+<!--ID: 1782128729345-->
 END
 
 START
@@ -200,6 +214,7 @@ The Sunni position (Ibn al-Qayyim, Ibn Taymiyyah): what separates is the **light
 
 Ibn al-Qayyim (Ighathat al-Lahfan): "العلم نور يقذفه الله في القلب، والمعصية تطفئ ذلك النور."
 Tags: self-mastery islamic aqeedah
+<!--ID: 1782128729348-->
 END
 
 START
@@ -214,6 +229,7 @@ Ghaflah is the **spiritual mechanism** by which present bias becomes possible fo
 
 The fix in both frameworks: **dhikr** (Islamic) and **commitment devices** (behavioral) both work by restoring felt weight before temptation arrives, not during it.
 Tags: self-mastery islamic neuroscience
+<!--ID: 1782128729350-->
 END
 
 ---
@@ -236,6 +252,7 @@ If any one is absent, the voluntary action does not occur. Most people who fail 
 
 Adding more information does not fix an irāda deficit.
 Tags: self-mastery islamic discipline
+<!--ID: 1782128729353-->
 END
 
 START
@@ -250,6 +267,7 @@ Back:
 
 **The solution:** Move the akhirah from 'ilm al-yaqīn toward 'ayn al-yaqīn through tafakkur al-mawt, Qur'anic reflection on Jannah/Jahannam, suhba, and consistent dhikr.
 Tags: self-mastery islamic discipline
+<!--ID: 1782128729355-->
 END
 
 START
@@ -264,6 +282,7 @@ A person can have 'ilm (data in the head) without 'aql (bound comprehension). Th
 
 The question is not "do you know?" — it is "**has this knowledge become binding upon your heart?**"
 Tags: self-mastery islamic
+<!--ID: 1782128729358-->
 END
 
 ---
@@ -284,6 +303,7 @@ Back:
 
 Counter to both despair ("my nafs is too strong to change") and passivity ("everything is from Allah anyway").
 Tags: self-mastery islamic aqeedah
+<!--ID: 1782128729361-->
 END
 
 ---
@@ -300,6 +320,7 @@ At the moment of craving the wanting circuit has already fired and willpower is 
 
 Knowing was never the missing piece — **design** is.
 Tags: self-mastery discipline
+<!--ID: 1782128729364-->
 END
 
 START
@@ -313,6 +334,7 @@ Back:
 5. **Raise the felt weight of the akhirah** — fix the irāda deficit, not the 'ilm (dhikr, tafakkur al-mawt, suhba)
 6. **When it fires anyway** — immediate tawbah, immediate redirect; no extended guilt
 Tags: self-mastery discipline islamic
+<!--ID: 1782128729367-->
 END
 
 START
@@ -325,6 +347,7 @@ If the cue never fires, the wanting circuit never activates — so there is no u
 
 Block the path *before* you reach it, not after.
 Tags: self-mastery discipline islamic
+<!--ID: 1782128729369-->
 END
 
 START
@@ -335,6 +358,7 @@ The heart cannot be emptied, only refilled (Ibn al-Qayyim). Remove the routine w
 
 A **dull** substitute gets rejected by the loop. If the habit delivered strong stimulation, a weak replacement won't satisfy the same need — so match the substitute to the *diagnosed* reward (boredom→dhikr/study, stress→salāh/movement, connection→good company, avoidance→shrink the task).
 Tags: self-mastery discipline islamic
+<!--ID: 1782128729372-->
 END
 
 START
@@ -345,4 +369,5 @@ The wired loop fades over **weeks** of non-use, not instantly — so it will fir
 
 Extended guilt is itself a **cue** that feeds the escape loop — the shaytan wins twice when the second loss is made worse than the first. The fix: fast tawbah, fast redirect, no self-punishment.
 Tags: self-mastery discipline islamic
+<!--ID: 1782128729375-->
 END

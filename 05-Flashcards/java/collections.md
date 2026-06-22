@@ -15,6 +15,7 @@ List<String> b = List.of("x");      // immutable
 // both typed List<String> — indistinguishable
 ```
 Tags: java collections
+<!--ID: 1782128729973-->
 END
 
 START
@@ -25,6 +26,7 @@ Back:
 - **`LinkedList`** — doubly-linked nodes; fast insert/remove at ends
 - **`Vector`** — legacy, synchronized `ArrayList`
 Tags: java collections
+<!--ID: 1782128729976-->
 END
 
 START
@@ -37,6 +39,7 @@ list.add("b"); // ❌ UnsupportedOperationException — runtime, not compile
 ```
 Java enforces read-only at **runtime**, not in the type.
 Tags: java collections
+<!--ID: 1782128729978-->
 END
 
 START
@@ -51,6 +54,7 @@ var view = Collections.unmodifiableList(backing);
 backing.add("b");      // view becomes [a, b]
 ```
 Tags: java collections
+<!--ID: 1782128729980-->
 END
 
 START
@@ -61,6 +65,7 @@ Back: It's **type vs runtime**:
 - **Kotlin** — read-only `List` omits `add`/`remove` from the type, so misuse is a **compile error**
 > Java: "the type allows it, the object might refuse." Kotlin: "the type doesn't even offer it."
 Tags: java collections
+<!--ID: 1782128729982-->
 END
 
 START
@@ -74,4 +79,5 @@ System.out.println(snapshot); // unchanged
 ```
 Same trap exists in Kotlin's read-only `List` — read-only hides mutators but doesn't detach the object.
 Tags: java collections
+<!--ID: 1782128729985-->
 END

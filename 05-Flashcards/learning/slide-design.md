@@ -14,6 +14,7 @@ Back:
 
 These are not independent: dual channel explains *where* info goes, limited capacity explains *why* overload fails, active processing explains *what* the learner must do.
 Tags: pedagogy mayer multimedia
+<!--ID: 1782128730337-->
 END
 
 START
@@ -28,6 +29,7 @@ Back:
 
 Fix: graphic + spoken narration. Let the visual channel carry images, not text duplicates.
 Tags: pedagogy mayer multimedia slide-design
+<!--ID: 1782128730339-->
 END
 
 START
@@ -42,6 +44,7 @@ On-screen text uses the visual channel for both image and text → competition f
 
 One of the largest effect sizes in the 2025 meta-analysis.
 Tags: pedagogy mayer multimedia slide-design
+<!--ID: 1782128730342-->
 END
 
 START
@@ -54,6 +57,7 @@ Back:
 
 Every decorative element that doesn't explain content costs cognitive capacity and teaches nothing.
 Tags: pedagogy mayer multimedia slide-design
+<!--ID: 1782128730345-->
 END
 
 START
@@ -70,6 +74,7 @@ Back:
 - Title = complete sentence stating the main claim (the assertion)
 - Body = one piece of visual evidence that proves the assertion
 Tags: pedagogy assertion-evidence slide-design
+<!--ID: 1782128730347-->
 END
 
 START
@@ -86,6 +91,7 @@ N=110 engineering students, same content:
 
 Creating AES slides also deepened content understanding in the presenter — forcing the assertion clarifies your own thinking.
 Tags: pedagogy assertion-evidence slide-design
+<!--ID: 1782128730350-->
 END
 
 START
@@ -103,6 +109,7 @@ If it can't be proven wrong, it names a subject. It doesn't make a claim.
 
 Length target: 8–12 words, grammatically complete sentence.
 Tags: pedagogy assertion-evidence slide-design
+<!--ID: 1782128730352-->
 END
 
 START
@@ -120,6 +127,7 @@ Fix: three separate artifacts:
 2. **Speaker notes** — your full script
 3. **Handout** — a real document with prose and context
 Tags: pedagogy presentation-zen slide-design
+<!--ID: 1782128730355-->
 END
 
 START
@@ -132,6 +140,7 @@ Back:
 
 The aesthetic foundation is Japanese Zen: *wabi-sabi* (beauty in simplicity), *ma* (meaningful empty space).
 Tags: pedagogy presentation-zen slide-design
+<!--ID: 1782128730358-->
 END
 
 START
@@ -145,6 +154,7 @@ Back:
 
 The systems are **independent but interconnected** — a word can activate an image (referential processing); an image can activate a label.
 Tags: pedagogy dual-coding paivio
+<!--ID: 1782128730360-->
 END
 
 START
@@ -160,6 +170,7 @@ Dual-channel: two routes → redundant retrieval → far more durable.
 
 This is why concrete words (which trigger imagery) are remembered far better than abstract words.
 Tags: pedagogy dual-coding paivio
+<!--ID: 1782128730363-->
 END
 
 START
@@ -174,4 +185,5 @@ Both inputs use the same verbal channel. You get **no second retrieval route** �
 
 True dual coding: spoken narration (verbal) + semantically matched diagram (imagery).
 Tags: pedagogy dual-coding mayer slide-design
+<!--ID: 1782128730365-->
 END

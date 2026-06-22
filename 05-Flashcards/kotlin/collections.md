@@ -310,6 +310,7 @@ items.add("b") // ❌ compile error — List has no add()
 ```
 Read-only is a **narrower type**, not a defensive copy — it costs nothing.
 Tags: kotlin collections
+<!--ID: 1782128730087-->
 END
 
 START
@@ -319,6 +320,7 @@ Back: It's a **type-level** guard caught at compile time:
 - **Java** — `java.util.List` interface declares `add()`, so a record accessor's return type still carries mutators. `acc.transactions().add("X")` compiles, fails only at runtime (if immutable)
 - **Kotlin** — `List` omits `add()` entirely, so `acc.transactions.add("X")` **won't compile**
 Tags: kotlin collections
+<!--ID: 1782128730090-->
 END
 
 START
@@ -333,6 +335,7 @@ println(readOnly) // [a, b]
 ```
 A `List` reference promises only that **you** can't mutate through it. For true immutability, copy or use `kotlinx.collections.immutable`.
 Tags: kotlin collections
+<!--ID: 1782128730092-->
 END
 
 START
@@ -347,4 +350,5 @@ println(readOnly)  // [a] — unaffected
 ```
 For a never-mutable type use `kotlinx.collections.immutable` (`toImmutableList()`).
 Tags: kotlin collections
+<!--ID: 1782128730095-->
 END

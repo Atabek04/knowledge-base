@@ -14,6 +14,7 @@ Back:
 
 All three converge on the same instructional behaviors — that convergence is what makes the principles strong.
 Tags: pedagogy rosenshine
+<!--ID: 1782128730367-->
 END
 
 START
@@ -29,6 +30,7 @@ Back:
 
 → teach small → question all → practice together → verify → repeat
 Tags: pedagogy rosenshine
+<!--ID: 1782128730370-->
 END
 
 START
@@ -42,6 +44,7 @@ If success rate is near 100% → material is too easy; advance or add complexity
 
 It is a **calibration signal** for scaffold quality, not a performance target.
 Tags: pedagogy rosenshine
+<!--ID: 1782128730372-->
 END
 
 START
@@ -55,6 +58,7 @@ Two changes:
 
 The verb change matters for lesson planning: verbs force you to specify observable, measurable behaviors.
 Tags: pedagogy bloom
+<!--ID: 1782128730374-->
 END
 
 START
@@ -72,6 +76,7 @@ The verb signals the cognitive level and determines what kind of evidence is nee
 
 Wrong verbs produce wrong assessments.
 Tags: pedagogy bloom
+<!--ID: 1782128730377-->
 END
 
 START
@@ -85,6 +90,7 @@ Back:
 **Why order matters:** designing assessment before activities forces alignment.
 Traditional design (content → activities → maybe a test) produces disconnected lessons where activities don't trace to outcomes.
 Tags: pedagogy backward-design
+<!--ID: 1782128730380-->
 END
 
 START
@@ -100,6 +106,7 @@ Teaching that selects content first, then activities, then (sometimes) a test.
 
 Backward Design prevents this by forcing the teacher to define *what understanding looks like* before choosing *what to do*.
 Tags: pedagogy backward-design
+<!--ID: 1782128730382-->
 END
 
 START
@@ -115,6 +122,7 @@ Back:
 
 Decision rule: >85% correct → move on. <30% correct → reteach before discussion.
 Tags: pedagogy peer-instruction mazur
+<!--ID: 1782128730384-->
 END
 
 START
@@ -130,6 +138,7 @@ A student who just understood has:
 
 This is why peer discussion in ConcepTests produces explanations the instructor cannot replicate.
 Tags: pedagogy peer-instruction
+<!--ID: 1782128730386-->
 END
 
 START
@@ -146,6 +155,7 @@ Same quiz can be:
 
 Formative = assessment *for* learning. Summative = assessment *of* learning.
 Tags: pedagogy formative-assessment wiliam
+<!--ID: 1782128730388-->
 END
 
 START
@@ -160,6 +170,7 @@ Back:
 
 Strategy 3 is often misapplied: grades and scores are not formative feedback unless they specify a next action.
 Tags: pedagogy formative-assessment wiliam
+<!--ID: 1782128730390-->
 END
 
 START
@@ -175,6 +186,7 @@ Requirements:
 
 The diagnostic precision of wrong answers is what makes it a hinge question, not just a check question.
 Tags: pedagogy formative-assessment hinge-questions
+<!--ID: 1782128730393-->
 END
 
 START
@@ -190,6 +202,7 @@ Back:
 
 Use the type that fits the current moment — don't cycle through all six sequentially.
 Tags: pedagogy socratic-questioning
+<!--ID: 1782128730395-->
 END
 
 START
@@ -204,6 +217,7 @@ The Think step (1–3 min, silent) forces **every** student to process before ex
 
 Skipping it turns TPS into a discussion where one student answers and others wait passively — no different from unstructured Q&A.
 Tags: pedagogy think-pair-share
+<!--ID: 1782128730397-->
 END
 
 START
@@ -217,6 +231,7 @@ Back:
 
 All four produce worse short-term performance and dramatically better long-term retention.
 Tags: pedagogy desirable-difficulties bjork
+<!--ID: 1782128730399-->
 END
 
 START
@@ -229,6 +244,7 @@ Back:
 
 Without understanding the paradox, students self-sabotage by switching to comfortable, ineffective methods.
 Tags: pedagogy desirable-difficulties bjork metacognition
+<!--ID: 1782128730401-->
 END
 
 START
@@ -245,4 +261,5 @@ Desirable Difficulties say: use that freed capacity for effortful retrieval and 
 
 They are complementary: reduce extraneous → use freed working memory for desirable difficulty operations.
 Tags: pedagogy desirable-difficulties clt
+<!--ID: 1782128730403-->
 END

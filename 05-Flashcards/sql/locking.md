@@ -12,6 +12,7 @@ Back: A **locking read** — it takes the same row-level write lock an `UPDATE` 
 - Held until **COMMIT or ROLLBACK** — not at statement end, not when the row is updated
 - Spanning read + write as one unit closes the read-then-write race
 Tags: sql postgresql locking
+<!--ID: 1782128730565-->
 END
 
 START
@@ -21,6 +22,7 @@ Back: **Row-level** — it locks only the specific rows the query returned.
 - Two requests claiming different rows never collide
 - Contention occurs only when two target the **same** row
 Tags: sql postgresql locking
+<!--ID: 1782128730568-->
 END
 
 START
@@ -30,6 +32,7 @@ Back: It runs **EvalPlanQual** — re-fetches the **latest committed** version o
 - If the row no longer matches, it is dropped from the result
 - This re-check is why blocking FOR UPDATE never double-claims
 Tags: sql postgresql locking
+<!--ID: 1782128730570-->
 END
 
 START
@@ -40,6 +43,7 @@ Back:
 - **REPEATABLE READ / SERIALIZABLE** — aborts with `could not serialize access`, transaction must retry
 - Same safety guarantee, different failure style: re-check vs error-and-retry
 Tags: sql postgresql locking
+<!--ID: 1782128730572-->
 END
 
 START
@@ -49,6 +53,7 @@ Back: They differ in **when** they handle the conflict:
 - **Pessimistic** — assume a clash, **lock first** (`FOR UPDATE`); others wait
 - **Optimistic** — assume no clash, take **no lock**; verify a version at write time, reject and retry if it moved
 Tags: sql concurrency locking
+<!--ID: 1782128730574-->
 END
 
 START
@@ -58,6 +63,7 @@ Back: By how often writers actually collide:
 - **High contention** → **pessimistic** — blocking up front beats constant retries
 - **Low contention** → **optimistic** — skip the lock; the rare retry is cheaper than locking everyone
 Tags: sql concurrency locking
+<!--ID: 1782128730577-->
 END
 
 START
@@ -68,6 +74,7 @@ Back:
 - **NOWAIT** — **error immediately** (`55P03 lock_not_available`)
 - **SKIP LOCKED** — **skip** the locked row and return the rest
 Tags: sql postgresql locking
+<!--ID: 1782128730579-->
 END
 
 START
@@ -78,6 +85,7 @@ Back: Both avoid waiting, but differently:
 - **SKIP LOCKED** — silently omits locked rows, returning a smaller result set (no error)
 - SKIP LOCKED deliberately returns an **incomplete** view
 Tags: sql postgresql locking
+<!--ID: 1782128730582-->
 END
 
 START
@@ -88,6 +96,7 @@ Back: It turns a table into a **competing-consumers** work queue:
 - **No blocking, no double-claim, full parallelism**
 - Used for job queues, order processing, seat reservation, outbox, pool checkout
 Tags: sql postgresql locking pattern
+<!--ID: 1782128730584-->
 END
 
 START
@@ -97,6 +106,7 @@ Back: By default, rows from **every** table contributing to the result are locke
 - A join silently locks the other tables too → accidental contention
 - Use `FOR UPDATE OF <table>` to lock only the named table(s)
 Tags: sql postgresql locking
+<!--ID: 1782128730586-->
 END
 
 START
@@ -107,4 +117,5 @@ Back: The lock step runs **beneath** LIMIT/OFFSET in the plan:
 - Without **ORDER BY**, which rows get locked is unpredictable
 - Plain `LIMIT 1 FOR UPDATE` funnels all workers onto the same row → add **SKIP LOCKED** to spread them
 Tags: sql postgresql locking
+<!--ID: 1782128730588-->
 END

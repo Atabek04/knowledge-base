@@ -467,6 +467,7 @@ typealias PaymentStrategy = (Order) -> Unit
 - **NOT** a new type — you cannot overload on `Foo` vs its alias `Bar`
 - **NOT** a value class — use `@JvmInline value class` for actual type safety
 Tags: kotlin basics
+<!--ID: 1782128730080-->
 END
 
 START
@@ -484,6 +485,7 @@ run(greet)  // "Hi, Atabek"
 ```
 - A function that accepts/returns another function = **higher-order function**
 Tags: kotlin basics
+<!--ID: 1782128730082-->
 END
 
 START
@@ -494,4 +496,5 @@ Back:
 - **Python** — functions are objects; pass directly; `lambda` for inline anonymous fns
 - **Java** — no true first-class fns; uses `@FunctionalInterface` + lambdas as syntactic sugar for anonymous class instances; common types: `Function<A,B>`, `Runnable`, `Consumer<T>`
 Tags: kotlin basics
+<!--ID: 1782128730085-->
 END

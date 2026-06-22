@@ -17,6 +17,7 @@ Short-term advantage of re-reading **reverses completely** at the week delay.
 
 The more retrieval attempts during study, the better long-term retention — regardless of how it feels during practice.
 Tags: pedagogy retrieval-practice testing-effect
+<!--ID: 1782128730097-->
 END
 
 START
@@ -31,6 +32,7 @@ The illusion arises because fluent recognition *feels* like knowledge.
 
 Retrieval practice breaks the illusion: if you can't produce it unprompted, you don't know it.
 Tags: pedagogy retrieval-practice desirable-difficulties
+<!--ID: 1782128730099-->
 END
 
 START
@@ -46,6 +48,7 @@ Before re-reading a topic:
 
 Forces active retrieval before passive review. Prevents re-reading from masking unknown gaps with familiarity.
 Tags: pedagogy retrieval-practice study-method
+<!--ID: 1782128730101-->
 END
 
 START
@@ -58,6 +61,7 @@ During **interleaved practice:** you must first **identify** the problem type, *
 
 This forced strategy identification is harder but builds **discrimination ability** — knowing which tool to reach for, not just how to use a tool you've already identified.
 Tags: pedagogy interleaving contextual-interference
+<!--ID: 1782128730104-->
 END
 
 START
@@ -74,6 +78,7 @@ Interleaving forces retrieval each time → feels harder → feels less effectiv
 
 The feeling of difficulty is the mechanism, not a side effect.
 Tags: pedagogy interleaving desirable-difficulties
+<!--ID: 1782128730106-->
 END
 
 START
@@ -88,6 +93,7 @@ Pure beginners need schema before they can benefit from discrimination pressure.
 
 Rule: short blocked acquisition → interleaved consolidation.
 Tags: pedagogy interleaving blocked-practice
+<!--ID: 1782128730109-->
 END
 
 START
@@ -105,6 +111,7 @@ This forces pattern *recognition* (which pattern applies here?) not just pattern
 
 Recognition is the skill tested in real interviews.
 Tags: pedagogy interleaving dsa leetcode
+<!--ID: 1782128730111-->
 END
 
 START
@@ -119,6 +126,7 @@ But: "Why does X work this way and not another way?"
 
 Forces the learner to connect a new fact to their existing schema — creating multiple retrieval pathways rather than an isolated node.
 Tags: pedagogy elaborative-interrogation study-method
+<!--ID: 1782128730113-->
 END
 
 START
@@ -134,6 +142,7 @@ Implication: learners with richer schemas get **more** out of this technique —
 
 Beginners need more guided elaboration; experts can self-interrogate more effectively.
 Tags: pedagogy elaborative-interrogation
+<!--ID: 1782128730115-->
 END
 
 START
@@ -147,6 +156,7 @@ Back:
 
 The cycle repeats until you can explain without any jargon you cannot unpack.
 Tags: pedagogy feynman-technique study-method
+<!--ID: 1782128730118-->
 END
 
 START
@@ -161,6 +171,7 @@ Jargon masks the gap — fluent use of terminology gives the appearance of under
 
 The Feynman Technique forces decomposition until you hit primitives you genuinely understand.
 Tags: pedagogy feynman-technique metacognition
+<!--ID: 1782128730120-->
 END
 
 START
@@ -179,6 +190,7 @@ Active control of your own cognitive processes:
 - *Monitoring:* "Do I actually understand this or just recognize it?"
 - *Evaluation:* "Could I reproduce this? Where did I go wrong?"
 Tags: pedagogy metacognition flavell
+<!--ID: 1782128730123-->
 END
 
 START
@@ -193,6 +205,7 @@ Those at the 12th percentile believed they were performing at the 62nd percentil
 
 **Critical finding:** training in the skill simultaneously improved both performance AND metacognitive accuracy — you break the trap by practicing more deliberately, not by trying to think more clearly in the abstract.
 Tags: pedagogy metacognition dunning-kruger
+<!--ID: 1782128730125-->
 END
 
 START
@@ -207,6 +220,7 @@ The material is still in working memory, so retrieval feels effortless. This is 
 
 Better: use spaced intervals (next day, 3 days, 1 week) so retrieval is genuinely effortful.
 Tags: pedagogy metacognition retrieval-practice
+<!--ID: 1782128730127-->
 END
 
 START
@@ -221,6 +235,7 @@ Back:
 
 Most people plateau at naive practice and call it "10,000 hours of experience."
 Tags: pedagogy deliberate-practice ericsson
+<!--ID: 1782128730130-->
 END
 
 START
@@ -239,6 +254,7 @@ Primarily the richness of mental representations of:
 
 You cannot build these by re-doing problems you already know how to solve.
 Tags: pedagogy deliberate-practice ericsson
+<!--ID: 1782128730132-->
 END
 
 START
@@ -258,6 +274,7 @@ A 2014 meta-analysis found deliberate practice accounts for:
 
 Significant, but genetics, starting age, and domain structure also matter. Quality, not quantity, is the lever.
 Tags: pedagogy deliberate-practice ericsson
+<!--ID: 1782128730135-->
 END
 
 START
@@ -271,4 +288,5 @@ Back:
 
 Without all four: it's purposeful practice at best, naive practice at worst.
 Tags: pedagogy deliberate-practice ericsson
+<!--ID: 1782128730137-->
 END

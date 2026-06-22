@@ -12,6 +12,7 @@ Back:
 - **Data Owner** — **accountable** for a data domain: sets rules, approves access, answers for correctness/compliance (senior business role). The owner **decides**.
 - **Data Steward** — **responsible** for day-to-day: enforces rules, fixes quality issues, maintains definitions (hands-on role). The steward **does**.
 Tags: data-governance roles ownership
+<!--ID: 1782128729732-->
 END
 
 START
@@ -22,6 +23,7 @@ The person with **authority** to set policy (owner) rarely has the **time/proxim
 
 Naming both makes accountability unambiguous: when data is wrong, a named owner answers for it and a named steward fixes it — no diffuse "the system" no one owns.
 Tags: data-governance roles
+<!--ID: 1782128729735-->
 END
 
 START
@@ -32,6 +34,7 @@ Back:
 
 Each system keeps its own copy → "Acme Corp" vs "ACME Corporation"; an update in one app never reaches the others → the same entity **fragments into conflicting records**.
 Tags: data-governance master-data mdm
+<!--ID: 1782128729737-->
 END
 
 START
@@ -48,6 +51,7 @@ How:
 
 It's "one fact, one place" raised from one DB (normalization) to the enterprise.
 Tags: data-governance mdm golden-record
+<!--ID: 1782128729741-->
 END
 
 START
@@ -59,6 +63,7 @@ Back:
 - **Consistency** — does it agree with itself across systems? (CRM == billing)
 - **Timeliness** — is it current enough for its use? (within a freshness threshold)
 Tags: data-governance data-quality
+<!--ID: 1782128729744-->
 END
 
 START
@@ -69,6 +74,7 @@ Back:
 
 A dimension only becomes useful — monitorable by a steward, alertable by a system — once it has a **threshold + measurement**, making "good data" auditable.
 Tags: data-governance data-quality requirements
+<!--ID: 1782128729746-->
 END
 
 START
@@ -81,6 +87,7 @@ Back:
 
 Each specifies a trigger, an action, and an owner (e.g. orders → keep 7 yrs → archive 3 → hard-delete).
 Tags: data-governance retention lifecycle
+<!--ID: 1782128729748-->
 END
 
 START
@@ -93,6 +100,7 @@ Back:
 
 Also: document **soft vs hard delete** per class (audit vs true erasure).
 Tags: data-governance retention compliance
+<!--ID: 1782128729750-->
 END
 
 START
@@ -103,6 +111,7 @@ Back:
 
 Needs per event: **case ID** (which case), **activity** (what), **timestamp** (when). From many traces it rebuilds the real flow graph.
 Tags: data-governance process-mining analytics
+<!--ID: 1782128729752-->
 END
 
 START
@@ -117,4 +126,5 @@ Documentation shows how people *think* work flows; mining shows reality:
 
 It replaces interviews-and-guessing with **evidence from the log**.
 Tags: data-governance process-mining conformance
+<!--ID: 1782128729755-->
 END

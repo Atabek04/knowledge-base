@@ -9,6 +9,7 @@ Back: **Unlimited, free analysis and tactics volume** with no paywall.
 - Stockfish runs locally in your browser → depth/volume uncapped
 - Every feature (analysis, puzzles, studies, stats) is free forever
 Tags: chess tools
+<!--ID: 1782128729707-->
 END
 
 START
@@ -17,6 +18,7 @@ How does Lichess's "Learn from your mistakes" weight an error?
 Back: By **winning-chance change in context** — a +1 swing is only a mistake when the position was still balanced.
 - Also cross-checks Stockfish against a masters database (a master move won't be flagged)
 Tags: chess tools
+<!--ID: 1782128729710-->
 END
 
 START
@@ -25,6 +27,7 @@ What is the limit of Lichess analysis, and which tool covers that gap?
 Back: It tells you a move was a mistake but **won't explain *why* in plain language**.
 - For the "why," use **Chess.com Game Review** (Coach explanations / Lessons)
 Tags: chess tools
+<!--ID: 1782128729713-->
 END
 
 START
@@ -35,6 +38,7 @@ Back:
 - **Streak** → deep *calculation* (progressively harder, solve deep)
 You need both: Storm builds the reflex, Streak builds the depth.
 Tags: chess tools tactics
+<!--ID: 1782128729716-->
 END
 
 START
@@ -43,6 +47,7 @@ What is Chess.com Game Review best at compared to Lichess?
 Back: **Plain-language "why"** — Lessons, Bots, and Coach explanations tell you the *reason* a move was bad.
 - Reach for it when you can't explain your own mistakes
 Tags: chess tools
+<!--ID: 1782128729718-->
 END
 
 START
@@ -50,6 +55,7 @@ Coding Questions
 On Chess.com Game Review, why retry each flagged mistake yourself?
 Back: Re-finding the better move **converts a passive correction into active recall**.
 Tags: chess tools
+<!--ID: 1782128729721-->
 END
 
 START
@@ -60,6 +66,7 @@ Back:
 - **Diamond (~$12–20/mo):** unlimited Game Reviews, Insights, Coach explanations
 Only pay if you'll use unlimited reviews — else Lichess covers the engine side free.
 Tags: chess tools
+<!--ID: 1782128729724-->
 END
 
 START
@@ -69,6 +76,7 @@ Back: **Memorizing openings** (and patterns) for long-term retention.
 - Spaced repetition surfaces each line **just as you're about to forget it**
 - Reviews hard lines more often than mastered ones — "you just need to show up"
 Tags: chess tools spaced-repetition
+<!--ID: 1782128729727-->
 END
 
 START
@@ -77,4 +85,5 @@ What's the honest caveat about spaced-repetition apps for chess?
 Back: The **general SR science is strong; the chess-app-specific proof is testimonial**, not a controlled study.
 - Don't conflate "SR works in general" with "this app is proven to raise rating"
 Tags: chess tools spaced-repetition
+<!--ID: 1782128729730-->
 END

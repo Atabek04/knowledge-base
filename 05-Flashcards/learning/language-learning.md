@@ -13,6 +13,7 @@ Back:
 - Only *noticed* input becomes intake — conscious attention to form is a prerequisite
 - Frequent but unnoticed input is not acquired regardless of exposure volume
 Tags: language-learning acquisition noticing
+<!--ID: 1782128730217-->
 END
 
 START
@@ -23,6 +24,7 @@ Back:
 2. **Hypothesis-testing** — output is an experiment; interlocutor feedback confirms or disconfirms a form
 3. **Metalinguistic/reflective** — discussing *how* to say something consolidates grammatical knowledge
 Tags: language-learning acquisition output swain
+<!--ID: 1782128730220-->
 END
 
 START
@@ -34,6 +36,7 @@ Back:
 - Key insight: input maximizes exposure quantity; output forces precision
 - Fix: tasks requiring grammatical accuracy learners cannot avoid
 Tags: language-learning acquisition output immersion
+<!--ID: 1782128730223-->
 END
 
 START
@@ -45,6 +48,7 @@ Back:
 - Passive input requires the learner to already notice errors; interaction *creates* the noticing moment
 - Meta-analysis d ≈ 0.6–0.8 vs. comprehensible input alone (Mackey & Goo, 2007)
 Tags: language-learning acquisition interaction long
+<!--ID: 1782128730226-->
 END
 
 START
@@ -56,6 +60,7 @@ Back:
 - 95% (1 unknown per 20 words) is the floor for basic comprehension — below acquisition threshold
 - This is why graded readers are engineered to hit specific vocabulary bands
 Tags: language-learning vocabulary nation coverage
+<!--ID: 1782128730228-->
 END
 
 START
@@ -67,6 +72,7 @@ Back:
 - Newspapers → **8,000–9,000**
 - Academic texts → **8,000–10,000** (+ Academic Word List)
 Tags: language-learning vocabulary nation coverage
+<!--ID: 1782128730231-->
 END
 
 START
@@ -78,6 +84,7 @@ Back:
 - The cycle: deliberate study raises coverage → extensive reading becomes possible → incidental acquisition kicks in
 - <mark>Pitfall:</mark> learners who only read never close core-band gaps; learners who only study cards never embed words in natural context
 Tags: language-learning vocabulary acquisition deliberate incidental
+<!--ID: 1782128730233-->
 END
 
 START
@@ -90,6 +97,7 @@ Back:
 - Example: Spanish *caballo* (horse) → keyword "eye" → image: horse with giant eye
 - Works via [[dual coding]]: creates both phonological and visual retrieval routes
 Tags: language-learning vocabulary mnemonics keyword
+<!--ID: 1782128730235-->
 END
 
 START
@@ -102,6 +110,7 @@ Back:
 - Tinkham (1993, 1997): semantic-set learners showed significantly lower retention than unrelated-word-list learners
 - Exception: **thematic clusters** (beach: sand, wave, towel) are neutral/positive — words play different roles in the same scene
 Tags: language-learning vocabulary interference semantic-sets
+<!--ID: 1782128730237-->
 END
 
 START
@@ -114,6 +123,7 @@ Back:
 - Two unknowns → ambiguous SRS feedback (failed for the wrong reason)
 - Inverts traditional study: start from meaning-in-context, don't arrive at it later
 Tags: language-learning vocabulary anki sentence-mining
+<!--ID: 1782128730239-->
 END
 
 START
@@ -126,6 +136,7 @@ Back:
 - **SRS (Anki/SM-2):** allocates review time *inversely to recall strength* — maximum efficiency per minute
 - Critical: SRS maintains vocabulary, it does not teach it — create cards *after* you understand the word in context
 Tags: language-learning vocabulary anki spaced-repetition
+<!--ID: 1782128730242-->
 END
 
 START
@@ -138,6 +149,7 @@ Back:
 - Effective from **B1+** — below that, insufficient phonological knowledge makes native-speed tracking overwhelming
 - Best with *familiar* audio (already comprehended); unfamiliar audio shifts attention away from prosody
 Tags: language-learning pronunciation fluency shadowing
+<!--ID: 1782128730244-->
 END
 
 START
@@ -152,6 +164,7 @@ Back:
 - Heuristic: *structured study for what to notice; immersion-style input for how much exposure*
 - Krashen's counter: explicit learning stays "monitored" (conscious), doesn't convert to automatic — still debated
 Tags: language-learning immersion structured-study acquisition
+<!--ID: 1782128730247-->
 END
 
 START
@@ -166,6 +179,7 @@ Back:
 - **Key distinction:** output + feedback = acquisition; output *without feedback* = practicing errors
 - Low-stakes speaking with corrective feedback (italki tutors) benefits acquisition at any level
 Tags: language-learning speaking output silent-period
+<!--ID: 1782128730249-->
 END
 
 START
@@ -178,6 +192,7 @@ Back:
 - Analogy: keyword = caching a lookup result; morphological knowledge = owning the hash function
 - Caveat: false cognates and semantic drift (terrible ≠ terrific despite shared *terr-*) — verify in context
 Tags: language-learning vocabulary morphology etymology mnemonics
+<!--ID: 1782128730252-->
 END
 
 START
@@ -191,4 +206,5 @@ Back:
 - **C1+** → Authentic input across domains | 8,000+
 - Monitoring: >2–3 unknown words/page → drop a level
 Tags: language-learning input laddering sequencing
+<!--ID: 1782128730254-->
 END

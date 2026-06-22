@@ -15,6 +15,7 @@ A **domain entity** is defined by a **continuous identity**, not by its attribut
 - `equals()`/`hashCode()` are based on the identifier, not mutable fields
 - A `User` whose email and name change is still the **same** user
 Tags: ddd domain-model entity
+<!--ID: 1782128729622-->
 END
 
 START
@@ -26,6 +27,7 @@ An entity models a thing you need to **track across time**, so its state changes
 - `Order`: `PLACED → PAID → SHIPPED → DELIVERED` — same order, different state
 - The **identity** is the thread of continuity tying those states into one object
 Tags: ddd domain-model entity
+<!--ID: 1782128729625-->
 END
 
 START
@@ -38,6 +40,7 @@ A **value object** has **no identity** — it is defined entirely by its attribu
 - Examples: `Money`, `DateRange`, `Address`
 - Contrast with an entity, where equality is by identity
 Tags: ddd domain-model value-object
+<!--ID: 1782128729627-->
 END
 
 START
@@ -50,6 +53,7 @@ If value objects were mutable and shared, changing one place would **silently ch
 - To "change" a value you create a **new** object (Java `record` / `final` fields)
 - No lifecycle, no row to own → interchangeable
 Tags: ddd domain-model value-object immutability
+<!--ID: 1782128729630-->
 END
 
 START
@@ -61,6 +65,7 @@ An **aggregate** is a cluster of entities + value objects treated as **one unit 
 - The **consistency boundary** = the invariant enforced inside it (e.g. "total = sum of lines")
 - Inside the boundary: changes are checked **atomically, in one place**
 Tags: ddd domain-model aggregate invariants
+<!--ID: 1782128729633-->
 END
 
 START
@@ -73,6 +78,7 @@ Across aggregates, you accept **eventual consistency** — coordinate with domai
 
 This keeps locks small and avoids cross-boundary contention (the trade-off behind the outbox pattern).
 Tags: ddd domain-model aggregate consistency
+<!--ID: 1782128729636-->
 END
 
 START
@@ -85,6 +91,7 @@ The **aggregate root** is the one entity that is the aggregate's **only entry po
 - `order.changeLineQuantity(lineId, 3)` — not `orderLine.setQuantity(3)`
 - The root mediates every change so it can **enforce invariants**
 Tags: ddd domain-model aggregate-root
+<!--ID: 1782128729638-->
 END
 
 START
@@ -96,6 +103,7 @@ If outside code could mutate an internal member directly, the aggregate's invari
 - Routing through the root gives exactly **one gatekeeper** for validity
 - Same principle as encapsulation: hide internals, expose intent-revealing methods
 Tags: ddd domain-model aggregate-root invariants
+<!--ID: 1782128729641-->
 END
 
 START
@@ -109,6 +117,7 @@ They describe the same business but answer different questions:
 
 A domain model expresses **intent**; a data model serves **persistence**.
 Tags: ddd domain-model data-model
+<!--ID: 1782128729643-->
 END
 
 START
@@ -121,4 +130,5 @@ The **mismatch** between the domain model's shape and the data model's shape.
 - A value object often has **no table** — embedded as columns
 - This gap is what ORMs (Hibernate) exist to **bridge**
 Tags: ddd domain-model data-model orm
+<!--ID: 1782128729646-->
 END

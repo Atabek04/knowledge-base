@@ -17,6 +17,7 @@ Both rated significantly higher than passive video watching, chat-only, or camer
 
 Both work because they force **active commitment** — breakout rooms require participation in small groups; polls require individual responses before seeing others' answers.
 Tags: pedagogy online-teaching engagement
+<!--ID: 1782128730256-->
 END
 
 START
@@ -29,6 +30,7 @@ Additionally: mandatory camera adds **self-view burden** — continuous self-mon
 
 The peer cascade effect is the right lever: norm-setting in session 1 → a few students on camera → triggers cascade (β = .73) — no mandate needed.
 Tags: pedagogy online-teaching engagement camera
+<!--ID: 1782128730259-->
 END
 
 START
@@ -46,6 +48,7 @@ Key requirements:
 - Optimal size ~5
 - Always debrief: groups report back to main room
 Tags: pedagogy online-teaching zpd breakout-rooms
+<!--ID: 1782128730261-->
 END
 
 START
@@ -60,6 +63,7 @@ Embedded polls, questions, and typed responses can push engagement well past 15 
 
 But sessions that run continuously without any interaction point will lose the room around the 15-minute mark regardless of content quality.
 Tags: pedagogy online-teaching attention
+<!--ID: 1782128730263-->
 END
 
 START
@@ -75,6 +79,7 @@ Demonstrated through:
 
 Proximity is the physical mechanism: moving closer to a disruptive student stops behavior **without verbal confrontation** and without breaking instructional flow.
 Tags: pedagogy offline-teaching proximity classroom-management
+<!--ID: 1782128730266-->
 END
 
 START
@@ -92,6 +97,7 @@ Moving to the front with cold or critical interaction accelerates disengagement 
 
 Rule: proximity is only a positive lever when paired with warm, supportive engagement quality.
 Tags: pedagogy offline-teaching proximity
+<!--ID: 1782128730268-->
 END
 
 START
@@ -106,6 +112,7 @@ Pause is the sharpest version: sudden silence draws attention faster than any vo
 
 The instinct under stress (raise volume, increase pace) produces the opposite of the intended effect.
 Tags: pedagogy offline-teaching voice-modulation
+<!--ID: 1782128730271-->
 END
 
 START
@@ -119,6 +126,7 @@ Back:
 
 All four add load that teaches nothing.
 Tags: pedagogy online-teaching cognitive-load zoom-fatigue
+<!--ID: 1782128730273-->
 END
 
 START
@@ -135,6 +143,7 @@ Disabling self-view removes the self-monitoring task entirely → full capacity 
 
 Teach students to do this in session 1. Or build it into class setup instructions.
 Tags: pedagogy online-teaching cognitive-load self-view
+<!--ID: 1782128730276-->
 END
 
 START
@@ -149,4 +158,5 @@ Without physical presence, accountability and attention management must be **des
 
 Key difference: offline you *feel* attention loss and respond in real time. Online you must *predict* it in advance and pre-schedule the interventions.
 Tags: pedagogy online-teaching offline-teaching
+<!--ID: 1782128730278-->
 END

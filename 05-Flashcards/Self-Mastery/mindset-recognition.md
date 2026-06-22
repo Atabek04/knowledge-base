@@ -12,6 +12,7 @@ What is Sociometer Theory and who proposed it?
 Back:
 Mark Leary (1995) — self-esteem is not a measure of how good you feel about yourself. It is a **real-time psychological gauge** tracking your perceived standing in the eyes of others.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729378-->
 END
 
 START
@@ -22,6 +23,7 @@ When the sociometer **drops** — through rejection, exclusion, or being ignored
 
 Recognition, fame, and projecting strength are all attempts to keep the gauge charged.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729381-->
 END
 
 START
@@ -32,6 +34,7 @@ Self-esteem tracks **social inclusion and exclusion** more reliably than actual 
 
 Threats to belonging triggered behavioral responses comparable to physical threats.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729384-->
 END
 
 START
@@ -44,6 +47,7 @@ The problem is **direction**: pointed at creation's opinion (unstable, shifting)
 
 Ibn al-Qayyim: the heart enslaved to people's approval can never rest — it chases something that never stays still.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729387-->
 END
 
 START
@@ -54,6 +58,7 @@ Pause and ask: **whose approval is this meter currently tracking?**
 
 Not to suppress the desire — but to identify the direction. Then deliberately reorient: the action, the intention, the audience.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729391-->
 END
 
 ---
@@ -68,6 +73,7 @@ A structural dependency on external outcomes — approval, performance, how othe
 
 Every interaction becomes a test. Every recognition dose satisfies briefly, then the gauge empties again.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729394-->
 END
 
 START
@@ -82,6 +88,7 @@ People with **high contingent self-worth** in domains like others' approval show
 
 Getting more of what they chased made outcomes **worse**, not better.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729396-->
 END
 
 START
@@ -92,6 +99,7 @@ Because the dependency is **structural**, not a quantity problem. The system nee
 
 More recognition feeds the dependency; it doesn't remove it.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729399-->
 END
 
 START
@@ -102,6 +110,7 @@ The hadith: *"The son of Adam will not be satisfied even if he had a valley full
 
 The **nafs al-ammara** always escalates its demands. No created thing can fill what only Allah's recognition can fill. Islam named this centuries before Crocker & Park (2004).
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729402-->
 END
 
 START
@@ -112,6 +121,7 @@ After a recognition moment (compliment, win, someone impressed) — **how long d
 
 Short duration = high contingency. The fix is not more achievement — it's relocating the source of worth to something stable.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729404-->
 END
 
 ---
@@ -126,6 +136,7 @@ The gradual **reorientation of the self** — actions, speech, appearance, even 
 
 Ibn al-Qayyim calls it ***shirk al-khafi*** (hidden association) in *Madarij al-Salikin*: placing creation's opinion alongside Allah's in a position it was never meant to occupy.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729407-->
 END
 
 START
@@ -138,6 +149,7 @@ Back:
 
 Most people live in grade 2 or 3 without recognizing it as riya.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729410-->
 END
 
 START
@@ -148,6 +160,7 @@ Ask: **"Would I do this exactly the same if no one ever found out?"**
 
 If the answer is no — the action has riya embedded in it.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729413-->
 END
 
 START
@@ -158,6 +171,7 @@ Back:
 
 Identified as the most psychologically costly form of motivation: high effort, high anxiety, low satisfaction.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729416-->
 END
 
 START
@@ -168,6 +182,7 @@ Back:
 
 Ikhlas is practiced deed by deed — not a feeling you wait for.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729418-->
 END
 
 START
@@ -180,6 +195,7 @@ Back:
 
 Recite before actions where recognition-seeking may be present.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729421-->
 END
 
 ---
@@ -192,6 +208,7 @@ What is Terror Management Theory and who proposed it?
 Back:
 Greenberg, Solomon & Pyszczynski (1986) — humans are uniquely aware of their mortality, which creates **baseline existential terror** that the mind manages unconsciously through **symbolic immortality**: believing that fame, legacy, or cultural impact allows you to persist after death.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729425-->
 END
 
 START
@@ -202,6 +219,7 @@ The belief that **being known and remembered** allows a person to persist beyond
 
 It's why fame-seeking feels categorically different from ordinary approval: approval satisfies the sociometer; fame promises you won't be **erased from existence**.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729428-->
 END
 
 START
@@ -212,6 +230,7 @@ Subjects showed significantly **increased desire for fame, status, and cultural 
 
 The effect replicated across cultures. Fame-seeking spikes precisely when death anxiety activates — even subconsciously.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729430-->
 END
 
 START
@@ -222,6 +241,7 @@ TMT correctly identifies the terror — mortality — but prescribes only **secu
 
 These delay the terror; they don't dissolve it. Every person who achieved fame still died. Every legacy eventually fades.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729433-->
 END
 
 START
@@ -232,6 +252,7 @@ The **akhira** dissolves the need for symbolic immortality. If the next life is 
 
 Ibn al-Qayyim: genuine belief in the akhira frees the heart from the slavery of reputation — the only audience that matters outlasts all human memory.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729435-->
 END
 
 START
@@ -244,4 +265,5 @@ The honest answer is almost always: *significance beyond death.*
 
 That fear has a real answer — not a better personal brand. It is stronger **iman** in what comes after.
 Tags: self-mastery mindset recognition
+<!--ID: 1782128729438-->
 END

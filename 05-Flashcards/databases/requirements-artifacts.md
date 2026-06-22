@@ -15,6 +15,7 @@ For any field it answers: *what is this exactly, and what rules govern it?*
 
 It bridges the **business glossary** and the **physical schema**.
 Tags: data-modeling data-dictionary requirements
+<!--ID: 1782128729802-->
 END
 
 START
@@ -26,6 +27,7 @@ Back:
 - Does `customer` include unregistered guests? Is `revenue` gross or net? Is a date UTC or local?
 - A shared, agreed definition removes the ambiguity **before** code is written
 Tags: data-modeling data-dictionary
+<!--ID: 1782128729804-->
 END
 
 START
@@ -36,6 +38,7 @@ A grid mapping **entities** (rows) against **processes/actors** (columns); each 
 
 It cross-checks the **process model** against the **data model** — every entity should have a clear lifecycle owned by some process.
 Tags: data-modeling crud-matrix requirements
+<!--ID: 1782128729808-->
 END
 
 START
@@ -47,4 +50,5 @@ Back:
 - **Read everywhere, created by no one** → an **unowned entity** (needs a data owner)
 - **One process touching every entity** → a possible **god process**
 Tags: data-modeling crud-matrix analysis
+<!--ID: 1782128729810-->
 END

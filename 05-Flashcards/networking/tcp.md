@@ -10,6 +10,7 @@ Back:
 Flow: your app → kernel send buffer → network → peer's receive buffer → peer app.
 If peer reads slow → peer buffer fills → TCP flow control signals stop → your send buffer fills → `write()` stalls.
 Tags: networking tcp os
+<!--ID: 1782128730437-->
 END
 
 START
@@ -21,4 +22,5 @@ Slow client → buffer fills → `write()` blocks → server thread stuck → LL
 
 Fix: async I/O — suspends the coroutine instead of the thread, so other requests keep running while waiting for buffer space.
 Tags: networking tcp sse
+<!--ID: 1782128730439-->
 END

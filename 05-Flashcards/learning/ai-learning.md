@@ -13,6 +13,7 @@ Back: They treat AI as a **collaborator**, not an assistant.
 - Top users: a **thinking partner** they argue with, hand hard open-ended problems to, and push back against
 - The differentiator is the user's **stance**, not the model
 Tags: learning ai-learning
+<!--ID: 1782128730139-->
 END
 
 START
@@ -23,6 +24,7 @@ Back:
 - **Collaborator** → open hard problems ("here's my half-formed plan, poke holes in it"), building understanding together
 The shift is from **extracting answers** to **building understanding**.
 Tags: learning ai-learning
+<!--ID: 1782128730142-->
 END
 
 START
@@ -33,6 +35,7 @@ Back: How much **rich, specific context** they provide.
 - Elite users front-load personal context → output only useful to them
 - **Context is the part the human supplies and the model cannot**
 Tags: learning ai-learning
+<!--ID: 1782128730144-->
 END
 
 START
@@ -43,6 +46,7 @@ Back:
 - **Professional goals** — what you're trying to achieve and why
 - **Stream-of-consciousness thinking** — your raw, unfiltered reasoning, not a cleaned-up question
 Tags: learning ai-learning
+<!--ID: 1782128730147-->
 END
 
 START
@@ -53,6 +57,7 @@ Back:
 - Using AI for **inquiry and probing** → skill **growth**
 The brain weakens any capacity a tool does the work for.
 Tags: learning ai-learning
+<!--ID: 1782128730149-->
 END
 
 START
@@ -63,6 +68,7 @@ Back:
 - **MIT**: ChatGPT use eroded critical-thinking engagement during writing
 - Students on an **unguarded** AI tutor scored **17% worse** once access was removed (crutch, not scaffold)
 Tags: learning ai-learning
+<!--ID: 1782128730152-->
 END
 
 START
@@ -72,6 +78,7 @@ Back: Use AI for **inquiry, not bypass** — keep the higher-order thinking your
 - A study where students delegated only **lower-order** work to AI showed **greater** critical-thinking gains over 12 weeks
 - "Write this for me" → atrophy; "quiz me, challenge my answer" → growth
 Tags: learning ai-learning
+<!--ID: 1782128730154-->
 END
 
 START
@@ -82,6 +89,7 @@ Back: Place friction deliberately:
 - **Skill-building thinking** → add friction, keep it for yourself
 "Be lazy where impact is capped; be obsessed where impact compounds."
 Tags: learning ai-learning
+<!--ID: 1782128730157-->
 END
 
 START
@@ -93,6 +101,7 @@ Back: A spotter doesn't lift the weight for you — it lets you push harder and 
 - Have it **challenge assumptions** and force you to defend answers
 The discomfort is the point — learning strengthens at the edge of ability.
 Tags: learning ai-learning
+<!--ID: 1782128730159-->
 END
 
 START
@@ -102,6 +111,7 @@ Back: Technology becomes **invisible but omnipresent** — quietly enabling **de
 - Not screens everywhere; a tutor-like experience cheap enough to give everyone
 - Solves what one-to-one tutoring never could: best outcomes, but affordable for all
 Tags: learning ai-learning
+<!--ID: 1782128730162-->
 END
 
 START
@@ -112,6 +122,7 @@ Back: They become **makers of tools**, not just consumers of edtech:
 - Assessments tuned to their class
 - Lesson plans and concept visualizations
 Tags: learning ai-learning
+<!--ID: 1782128730165-->
 END
 
 START
@@ -122,6 +133,7 @@ Back: Like **spreadsheet proficiency** was for the previous 40 years — a basel
 - An AI agent lets anyone **delegate multi-step work to software that reads, decides, and acts** — without being a programmer
 - You orchestrate the model, not build it
 Tags: learning ai-learning
+<!--ID: 1782128730167-->
 END
 
 START
@@ -131,6 +143,7 @@ Back: It **rises**, not falls.
 - When everyone can produce mediocre work instantly, the remaining edge is **quality and judgment**
 - "Learn to build with AI" and "get genuinely skilled" become the same instruction
 Tags: learning ai-learning
+<!--ID: 1782128730169-->
 END
 
 START
@@ -140,6 +153,7 @@ Back: By doing **reps** — many small, hands-on experiments, not by reading abo
 - The capability frontier moves every few weeks, so fixed mental models go stale
 - **Intuition for the limits is itself the skill** — knowing when to trust output and when to step in
 Tags: learning ai-learning
+<!--ID: 1782128730171-->
 END
 
 START
@@ -149,4 +163,5 @@ Back: They teach **trust *and* distrust** — both are the point.
 - They surface failure modes: stochastic output, confident wrong answers, degradation on large/complex context
 - Push a problem past where you expect it to fail to find the real edge
 Tags: learning ai-learning
+<!--ID: 1782128730174-->
 END

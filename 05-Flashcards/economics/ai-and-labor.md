@@ -13,6 +13,7 @@ Back: Wealth is a **claim on other people's time and labor** — the right to di
 - Almost everything you consume is the end of a long **chain of human work**
 - Money lets you pull on that chain
 Tags: economics ai labor
+<!--ID: 1782128729849-->
 END
 
 START
@@ -22,6 +23,7 @@ Back: Because if wealth is **stored labor**, then anything that changes the **co
 - When machines supply labor cheaply, a claim on *human* labor loses its obvious value
 - Every wage/inequality prediction is a consequence of this definition
 Tags: economics ai labor
+<!--ID: 1782128729851-->
 END
 
 START
@@ -31,6 +33,7 @@ Back: A wage equals the **marginal productivity** of labor.
 - If AGI does the same task at **near-zero marginal cost**, the market value of a human hour falls toward that floor
 - So as AGI labor approaches zero cost, human wages decline toward zero
 Tags: economics ai labor
+<!--ID: 1782128729854-->
 END
 
 START
@@ -40,6 +43,7 @@ Back: It **converges toward zero**.
 - Total output keeps growing, but a shrinking slice flows to people who work
 - The surplus accrues to whoever **owns the machines**
 Tags: economics ai labor
+<!--ID: 1782128729857-->
 END
 
 START
@@ -50,6 +54,7 @@ Back: It is the conclusion of a **model**, not an observation.
 - Critics (e.g. the compute-cost argument) reject that assumption
 - As of 2026 it is **not** an observed reality
 Tags: economics ai labor
+<!--ID: 1782128729860-->
 END
 
 START
@@ -59,6 +64,7 @@ Back: AGI lets firms **produce more, cheaper** — but if wages collapse, **fewe
 - Cheap supply is useless without demand
 - The market loop (paychecks → purchases) breaks when the wage link breaks
 Tags: economics ai labor
+<!--ID: 1782128729863-->
 END
 
 START
@@ -68,6 +74,7 @@ Back: The scarce input becomes **compute** (and the energy feeding it), not inte
 - Human work is then valued at **what it would cost to replace it with compute**
 - Expensive-to-automate tasks keep value; trivially automated ones track the falling cost of chips
 Tags: economics ai labor
+<!--ID: 1782128729866-->
 END
 
 START
@@ -76,6 +83,7 @@ What reframing does "work is priced at its compute-replacement cost" produce?
 Back: The question shifts from *"**Can** AI do my job?"* to *"**Is it worth the compute** to do my job?"*
 - This leads directly to the bottleneck argument
 Tags: economics ai labor
+<!--ID: 1782128729868-->
 END
 
 START
@@ -84,6 +92,7 @@ What is Restrepo's **counter-intuitive** claim about which jobs AGI will automat
 Back: Most jobs **won't** be automated — not because AI can't, but because they **aren't worth spending scarce compute on**.
 - Survival comes from **neglect**, not human superiority
 Tags: economics ai labor
+<!--ID: 1782128729870-->
 END
 
 START
@@ -92,6 +101,7 @@ Distinguish **bottleneck** work from **supplementary** work (Restrepo).
 Back: **Bottleneck** work gates future growth — energy, infrastructure, science, defense, existential-risk reduction → gets the compute.
 - **Supplementary** work is everything else — arts, hospitality, support, much research → survives un-automated
 Tags: economics ai labor
+<!--ID: 1782128729874-->
 END
 
 START
@@ -100,6 +110,7 @@ What is the **"sting in the tail"** of jobs surviving by neglect?
 Back: Survival is not victory — *"your job is safe"* means *"your job isn't worth taking,"* not *"you're irreplaceable."*
 - Wages still **decouple from GDP**; humans keep working while labor's share shrinks
 Tags: economics ai labor
+<!--ID: 1782128729877-->
 END
 
 START
@@ -109,6 +120,7 @@ Back: With the **owners of what stays scarce**: AI models, compute, energy, and 
 - Goods get cheap but wages collapse, so income stops mattering
 - Workers lose their bargaining chip (labor); owners control access to essentials
 Tags: economics ai labor
+<!--ID: 1782128729880-->
 END
 
 START
@@ -118,6 +130,7 @@ Back: As **positioning** for the AGI divide — securing a spot on the owning si
 - Bets on **energy and space** (solar, land, raw materials)
 - Massive capital to **own frontier AI infrastructure**
 Tags: economics ai labor
+<!--ID: 1782128729883-->
 END
 
 START
@@ -127,6 +140,7 @@ Back: **Cheap:** anything reproducible — goods/services fall toward material c
 - **Expensive:** what robots can't print — **land**, fixed-supply raw materials, marginal energy
 - Scarcity (and value) **migrates** from labor to these assets
 Tags: economics ai labor
+<!--ID: 1782128729885-->
 END
 
 START
@@ -136,6 +150,7 @@ Back: From **withholding work** (the strike) to **withholding consumption and de
 - Strikes only work while production needs humans
 - If robots produce, the only chip left is refusing to **buy**
 Tags: economics ai labor
+<!--ID: 1782128729888-->
 END
 
 START
@@ -145,6 +160,7 @@ Back: Strikes are **coordinated and concentrated**; consumption is **diffuse and
 - Organizing millions to *not buy* is far harder than a workforce to *not work*
 - This is why **policy**, not bargaining, dominates post-labor proposals
 Tags: economics ai labor
+<!--ID: 1782128729892-->
 END
 
 START
@@ -153,6 +169,7 @@ As of 2026, through which **channel** does AI's labor-market damage show up — 
 Back: It shows up in **employment (hiring)**, not in **wages**.
 - Adjustment = fewer people hired, not pay cuts for those still working
 Tags: economics ai labor
+<!--ID: 1782128729894-->
 END
 
 START
@@ -162,6 +179,7 @@ Back: Since generative AI took off, workers **aged 22–25** in the most AI-expo
 - Older and less-exposed workers stayed flat or grew
 - Entry-level workers are the **canaries** — first to feel it
 Tags: economics ai labor
+<!--ID: 1782128729897-->
 END
 
 START
@@ -170,6 +188,7 @@ What is the **caveat** on the 2026 entry-level employment findings?
 Back: The signal is **early and contested** — *"first inning,"* not settled.
 - Anthropic found **no** systematic rise in unemployment for highly exposed workers, only tentative youth hiring slowdown
 Tags: economics ai labor
+<!--ID: 1782128729899-->
 END
 
 START
@@ -178,6 +197,7 @@ Why are **entry-level** roles the most AI-exposed (not senior ones)?
 Back: Entry-level work is mostly **codified knowledge** — the "book-learning" and routine implementation that LLMs absorbed and reproduce cheaply.
 - Seniors trade in **tacit knowledge**: judgment, context, relationships — not written down to learn from
 Tags: economics ai labor
+<!--ID: 1782128729902-->
 END
 
 START
@@ -186,6 +206,7 @@ What **pipeline trap** does automating entry-level work create?
 Back: If juniors can't get hired to do implementation, they never build the **tacit experience** that makes seniors valuable.
 - Automating the bottom rung may **starve the pipeline** that produces senior talent
 Tags: economics ai labor
+<!--ID: 1782128729904-->
 END
 
 START
@@ -195,6 +216,7 @@ Back: **Automate** — AI does the task instead of the human → role **shrinks*
 - **Augment** — AI helps the human do it faster → role often **grows**
 - Job losses concentrate where AI **substitutes**, stay muted where it **complements**
 Tags: economics ai labor
+<!--ID: 1782128729908-->
 END
 
 START
@@ -204,6 +226,7 @@ Back: It weights **automated** uses **fully** and **augmenting** uses at **half*
 - Real displacement comes from **substitution**, not assistance
 - High theoretical capability displaces no one until used to **replace**, not assist
 Tags: economics ai labor
+<!--ID: 1782128729911-->
 END
 
 START
@@ -213,6 +236,7 @@ Back: **Physical** tasks (short-to-medium term), **strategic** thinking, and **s
 - AI is strongest at **implementation**
 - ~30% of workers (cooks, mechanics, bartenders) show near-zero AI exposure for these reasons
 Tags: economics ai labor
+<!--ID: 1782128729913-->
 END
 
 START
@@ -221,6 +245,7 @@ Why is the human "physical, strategic, social" advantage **not permanent**?
 Back: They are advantages of **timing and cost**, not monopolies.
 - The physical edge depends on robotics staying **expensive** — which may not last ("short-to-medium term")
 Tags: economics ai labor
+<!--ID: 1782128729915-->
 END
 
 START
@@ -229,6 +254,7 @@ Contrast a career **ladder** with a career **lattice**.
 Back: **Ladder:** one profession, linear rungs, climb for decades.
 - **Lattice:** move **sideways** between professions as demand shifts, not just upward
 Tags: economics ai labor
+<!--ID: 1782128729918-->
 END
 
 START
@@ -238,6 +264,7 @@ Back: AI lowers the cost of switching fields by acting as a **personalized tutor
 - Bottleneck shifts from **credentials** to **adaptability**
 - Strategy: bet on **learning velocity**, not a single specialization
 Tags: economics ai labor
+<!--ID: 1782128729921-->
 END
 
 START
@@ -246,6 +273,7 @@ What problem does **UBI** answer in a post-labor economy?
 Back: If wages collapse but goods still need buyers, UBI puts income in people's hands to **sustain demand**.
 - Redistribute AGI's productivity gains as a **regular, unconditional payment**
 Tags: economics ai labor
+<!--ID: 1782128729923-->
 END
 
 START
@@ -256,6 +284,7 @@ Back: - **UBI** — cash to all, no strings
 - **Negative income tax** — top up incomes below a floor
 - **Wage-free / cooperative** — distribute near-zero-cost goods at little/no charge
 Tags: economics ai labor
+<!--ID: 1782128729926-->
 END
 
 START
@@ -264,6 +293,7 @@ Why is UBI framed as **economics, not charity** — and what does it *not* fix?
 Back: It keeps **aggregate demand** alive so the productive machine has a reason to run.
 - Open gap: UBI sustains **consumption** but does nothing about the **power** concentrated in whoever owns the AGI
 Tags: economics ai labor
+<!--ID: 1782128729928-->
 END
 
 START
@@ -273,6 +303,7 @@ Back: Journalism that builds a **predetermined narrative through omission and su
 - Implies *"AI is taking jobs"* without asserting it → can't be fact-checked
 - A Deutsche Bank analyst mocked one piece's *"vibes-to-substance ratio"* as *"undeniably high"*
 Tags: economics ai labor
+<!--ID: 1782128729931-->
 END
 
 START
@@ -282,6 +313,7 @@ Back: - **Omits** the publicly stated reason for a layoff
 - **Suggestive placement** — puts AI quotes next to layoff news to imply causation
 - **Appeals to biased authorities** — quotes AI CEOs who profit from sounding world-altering
 Tags: economics ai labor
+<!--ID: 1782128729934-->
 END
 
 START
@@ -291,6 +323,7 @@ Back: A **pandemic hiring bubble correcting** — not AI automation.
 - Firms over-hired for pandemic digital demand; cuts reverse that, plus margin pressure and bloat
 - IBM CEO **Krishna** attributed the wave to over-hiring, not AI
 Tags: economics ai labor
+<!--ID: 1782128729936-->
 END
 
 START
@@ -300,6 +333,7 @@ Back: Amazon's cuts began in **2022–2023, before generative AI was deployable 
 - A cause can't post-date its effect
 - Caveat: the **2025 wave** shifts toward strategic restructuring, some genuinely AI-related; "AI" is also a convenient cover story
 Tags: economics ai labor
+<!--ID: 1782128729939-->
 END
 
 START
@@ -309,6 +343,7 @@ Back: It is **marketing, not forecasting** — they're the most conflicted sourc
 - Hype justifies **high valuations** and massive compute spend, and deflects scrutiny of sustainability
 - Newport's analogy: a Pfizer exec touting a pill that *cures psoriasis but turns half the population into zombies* — as a selling point
 Tags: economics ai labor
+<!--ID: 1782128729942-->
 END
 
 START
@@ -318,6 +353,7 @@ Back: Pace is set by **adoption (diffusion + adaptation)**, not by the speed of 
 - Stages: invention → product → **diffusion → adaptation**
 - Electricity and the internet took **decades**; even now <7% adopt advanced reasoning models — a **behavioral**, not capability, limit
 Tags: economics ai labor
+<!--ID: 1782128729944-->
 END
 
 START
@@ -327,6 +363,7 @@ Back: GPU supply, data-center capacity, and grid power are **hard physical ceili
 - **Slows** mass automation (tempers doom)
 - **Forces prioritization** — scarce compute goes to high-value bottleneck work, leaving much labor untouched
 Tags: economics ai labor
+<!--ID: 1782128729946-->
 END
 
 START
@@ -336,6 +373,7 @@ Back: AI is a **general-purpose technology** (like electricity/internet), so its
 - Inevitability framing lets companies off the hook for *how* they deploy AI
 - "Normal" framing → use **regulation and labor negotiation**, not panic
 Tags: economics ai labor
+<!--ID: 1782128729949-->
 END
 
 START
@@ -345,4 +383,5 @@ Back: - Labor market is in a **"low hire, low fire" freeze**, not a spiral (unem
 - **NY Fed:** *"little indication of a distinct AI-driven decline in labor demand"* — high-exposure postings diverged **before** ChatGPT; entry-level vs senior move **in parallel**
 - This **tempers** the Stanford "canaries" reading
 Tags: economics ai labor
+<!--ID: 1782128729951-->
 END

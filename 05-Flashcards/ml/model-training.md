@@ -91,6 +91,7 @@ Back: Complex outputs require **hierarchical understanding** — each step depen
 - Early layers learn concrete patterns (words, syntax); later layers learn abstract ones (intent, tone)
 - These divisions emerge automatically from backpropagation — nobody programs them
 Tags: ml deep-learning
+<!--ID: 1782128730405-->
 END
 
 START
@@ -102,6 +103,7 @@ Back: An **embedding** maps each token to a high-dimensional vector (hundreds–
 - Famous example: `king - man + woman ≈ queen`
 - Context changes the vector: `"bank"` near `"river"` ≠ `"bank"` near `"money"` — attention refines it per layer
 Tags: ml nlp embeddings
+<!--ID: 1782128730408-->
 END
 
 START
@@ -113,6 +115,7 @@ Back: **Attention** lets each token directly reference any other token regardles
 - High-score tokens contribute more to updating the current token's embedding
 - Example: `"it"` in "The animal was tired" → high score to `"animal"`, low to `"street"`
 Tags: ml nlp attention transformer
+<!--ID: 1782128730410-->
 END
 
 START
@@ -124,6 +127,7 @@ Back: Introduced the **Transformer** — replaced RNNs entirely with pure attent
 - Each layer = self-attention + feed-forward network, stacked N times
 - All major LLMs (GPT, Claude, Gemini, Llama) are Transformers
 Tags: ml nlp transformer
+<!--ID: 1782128730412-->
 END
 
 START
@@ -135,6 +139,7 @@ Back: A **token** is a subword unit — the smallest piece of text an LLM proces
 - GPT-4 uses ~100k tokens covering English, code, multiple languages efficiently
 - Example: `"unbelievable"` → `["un", "believ", "able"]` — 3 tokens
 Tags: ml nlp tokenization
+<!--ID: 1782128730418-->
 END
 
 START
@@ -148,6 +153,7 @@ Back: **Byte Pair Encoding (BPE)** builds vocabulary by iteratively merging the 
 - Common words → single tokens; rare words → split into pieces
 - Trained on the model's own corpus → each model tokenizes differently
 Tags: ml nlp tokenization
+<!--ID: 1782128730420-->
 END
 
 START
@@ -158,6 +164,7 @@ Back: Each model **trains its own tokenizer** on its own corpus using BPE — th
 - GPT-4: ~100k tokens · Llama 3: ~32k tokens
 - Affects: API cost (charged per token), context window usage, generation speed
 Tags: ml nlp tokenization
+<!--ID: 1782128730423-->
 END
 
 START
@@ -168,6 +175,7 @@ Back: **Next-token prediction** — given all tokens before the blank, predict t
 - Nobody labels it manually; the text itself provides the targets
 - After training, weights are frozen — no training happens during inference
 Tags: ml training nlp
+<!--ID: 1782128730425-->
 END
 
 START
@@ -178,6 +186,7 @@ Back: **Softmax** converts raw model scores (logits) into a probability distribu
 - Higher raw score → disproportionately higher probability (amplifies differences)
 - Required before cross-entropy loss can be computed
 Tags: ml training
+<!--ID: 1782128730428-->
 END
 
 START
@@ -189,6 +198,7 @@ Back: **Cross-entropy loss** measures how much probability the model assigned to
 - Low probability for correct token → high loss (bad)
 - Same gradient descent underneath as regression — just a different loss formula
 Tags: ml training nlp
+<!--ID: 1782128730430-->
 END
 
 START
@@ -200,6 +210,7 @@ Back: **Backpropagation** computes gradients for every weight in a neural networ
 - Goes backward because you must know how later layers contributed before computing earlier layers' gradients
 - Same math as gradient descent — just applied through many layers via chain rule
 Tags: ml training deep-learning
+<!--ID: 1782128730432-->
 END
 
 START
@@ -212,4 +223,5 @@ Back: **Perplexity** (PPL) = `e^(average cross-entropy loss)` — measures how m
 - Perfect: PPL = 1
 - Lower = better: model is more confident in the right answer
 Tags: ml nlp
+<!--ID: 1782128730434-->
 END

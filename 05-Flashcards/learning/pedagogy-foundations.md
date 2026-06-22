@@ -15,6 +15,7 @@ Working memory capacity is **fixed** — intrinsic + extraneous share the same p
 
 Extraneous load directly steals capacity from actual learning without adding anything.
 Tags: pedagogy clt cognitive-load
+<!--ID: 1782128730280-->
 END
 
 START
@@ -28,6 +29,7 @@ After 2010: total load = intrinsic + extraneous
 
 Germane processing is now understood as working memory being *redirected* from extraneous to intrinsic work — a beneficial side-effect of reducing extraneous load, not a separate bucket to fill.
 Tags: pedagogy clt cognitive-load
+<!--ID: 1782128730283-->
 END
 
 START
@@ -40,6 +42,7 @@ Back:
 
 Rule: anything that mutually refers must be spatially co-located.
 Tags: pedagogy clt slide-design
+<!--ID: 1782128730286-->
 END
 
 START
@@ -52,6 +55,7 @@ Back:
 
 Fix: fade from worked examples to problem-solving as competence grows.
 Tags: pedagogy clt
+<!--ID: 1782128730288-->
 END
 
 START
@@ -66,6 +70,7 @@ The **distance between what a learner can do alone** and what they can do **with
 
 Instruction must operate precisely inside the ZPD, then fade support as competence grows.
 Tags: pedagogy zpd vygotsky
+<!--ID: 1782128730291-->
 END
 
 START
@@ -79,6 +84,7 @@ Remove the support → performance collapses.
 
 Fading = gradually removing supports as the learner internalizes the capability.
 Tags: pedagogy zpd scaffolding
+<!--ID: 1782128730293-->
 END
 
 START
@@ -92,6 +98,7 @@ A prerequisite is that lower wall. Without it:
 - New content has no schema to attach to
 - The ZPD literally has no lower boundary → instruction cannot operate inside it
 Tags: pedagogy zpd prerequisites
+<!--ID: 1782128730295-->
 END
 
 START
@@ -107,6 +114,7 @@ High filter causes:
 - Performance anxiety
 - A feedback loop that raises the filter further
 Tags: pedagogy affective-filter krashen
+<!--ID: 1782128730298-->
 END
 
 START
@@ -125,6 +133,7 @@ Back:
 - Low-stakes private practice
 - Clear framing and pre-taught vocabulary
 Tags: pedagogy affective-filter krashen
+<!--ID: 1782128730301-->
 END
 
 START
@@ -139,6 +148,7 @@ McLaughlin (1987), Lightbown & Spada (2006), Liu (2015) all note this.
 
 Use it as a **design heuristic**, not a neurological claim.
 Tags: pedagogy affective-filter krashen
+<!--ID: 1782128730304-->
 END
 
 START
@@ -153,6 +163,7 @@ Implication: before presenting new content, you must either:
 
 Without this, new material arrives with nothing to hook into → stored as isolated rote facts or lost.
 Tags: pedagogy advance-organizers ausubel
+<!--ID: 1782128730306-->
 END
 
 START
@@ -167,6 +178,7 @@ Back:
 - Explicitly maps similarities AND differences to prevent false transfer
 - Example: before stacks — "like an array, but you can only access one end"
 Tags: pedagogy advance-organizers ausubel
+<!--ID: 1782128730308-->
 END
 
 START
@@ -179,6 +191,7 @@ Back:
 
 Without #3, revisitation is just repetition. The connection is what produces deepening.
 Tags: pedagogy spiral-curriculum bruner
+<!--ID: 1782128730311-->
 END
 
 START
@@ -194,6 +207,7 @@ Back:
 Rule of thumb: **pure prerequisite leaf with no further conceptual growth** → linear.
 **Many dependents + high conceptual richness** → spiral.
 Tags: pedagogy spiral-curriculum curriculum-design
+<!--ID: 1782128730313-->
 END
 
 START
@@ -208,6 +222,7 @@ The relation is directed and transitive:
 
 Teaching B without A does not produce slow learning — it produces **genuine learning failure** because no schema exists to anchor the new concept.
 Tags: pedagogy prerequisite-mapping
+<!--ID: 1782128730316-->
 END
 
 START
@@ -224,4 +239,5 @@ Spiral decides the re-encounter schedule within the valid orderings.
 
 They are not competing — they are nested.
 Tags: pedagogy prerequisite-mapping spiral-curriculum
+<!--ID: 1782128730319-->
 END

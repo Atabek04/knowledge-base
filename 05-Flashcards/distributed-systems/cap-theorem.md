@@ -13,6 +13,7 @@ Back:
 - **A — Availability**: every request gets a non-error response
 - **P — Partition tolerance**: the system keeps working when the network drops messages between nodes
 Tags: distributed-systems cap
+<!--ID: 1782128729820-->
 END
 
 START
@@ -25,6 +26,7 @@ So the actual choice is narrower: **when a partition occurs, sacrifice C or A?**
 - Keep C → reject/block on the cut-off side (**CP**)
 - Keep A → answer with possibly-stale data (**AP**)
 Tags: distributed-systems cap
+<!--ID: 1782128729824-->
 END
 
 START
@@ -36,6 +38,7 @@ Back:
 
 Neither is "better": payments must be CP; a catalog can be AP.
 Tags: distributed-systems cap cp ap
+<!--ID: 1782128729827-->
 END
 
 START
@@ -46,6 +49,7 @@ PACELC: *if **P**artition then **C** or **A**, **E**lse **L**atency or **C**onsi
 
 It captures that even with **no partition**, a system still trades **latency vs consistency** — CAP only describes the partition case.
 Tags: distributed-systems cap pacelc
+<!--ID: 1782128729830-->
 END
 
 START
@@ -56,6 +60,7 @@ Back:
 
 It's the model an **AP** system adopts after choosing availability under partition. Replicas accept writes locally, then propagate and resolve conflicts (LWW, vector clocks, CRDTs).
 Tags: distributed-systems eventual-consistency cap
+<!--ID: 1782128729832-->
 END
 
 START
@@ -66,4 +71,5 @@ Back:
 
 **Wrong** when staleness corrupts a decision — payments, inventory reservations, balances (use strong consistency).
 Tags: distributed-systems eventual-consistency
+<!--ID: 1782128729834-->
 END

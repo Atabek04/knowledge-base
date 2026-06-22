@@ -17,6 +17,7 @@ You ship things but don't know *how* you shipped them → impostor syndrome with
 Built confidence = understanding every line before it's committed.
 Borrowed confidence = output you can't explain.
 Tags: learning confidence ai-tools
+<!--ID: 1782128730322-->
 END
 
 START
@@ -33,6 +34,7 @@ Rule: your understanding must precede the commit.
 
 The test: could you reproduce this without the AI? If no — you don't own it yet.
 Tags: learning confidence ai-tools
+<!--ID: 1782128730325-->
 END
 
 START
@@ -47,6 +49,7 @@ Starting small breaks the loop by generating **evidence** ("I can do this") befo
 
 Confidence is rebuilt through proof, not through intention.
 Tags: learning confidence skill-building
+<!--ID: 1782128730327-->
 END
 
 START
@@ -61,6 +64,7 @@ The goal of the first win is not mastery — it's proving momentum is possible.
 
 Example: REST API → JWT → OAuth2. Not REST API → distributed systems.
 Tags: learning confidence skill-building
+<!--ID: 1782128730330-->
 END
 
 START
@@ -73,6 +77,7 @@ Back:
 
 The compounding is not just knowledge — it's **reduced activation energy**. "Just one lesson" is easy to start. A 5-hour session after a week off is hard to start.
 Tags: learning practice consistency
+<!--ID: 1782128730332-->
 END
 
 START
@@ -87,4 +92,5 @@ Motivation follows action, not the other way around. The act of starting — eve
 
 Waiting to feel ready is waiting indefinitely.
 Tags: learning practice consistency motivation
+<!--ID: 1782128730334-->
 END

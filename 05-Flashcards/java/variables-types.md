@@ -14,6 +14,7 @@ Back:
 - **Local variables** — declared inside a method, destroyed when method returns
 - **Parameters** — passed into a method at call time, scoped to method body
 Tags: java variables
+<!--ID: 1782128730036-->
 END
 
 START
@@ -27,6 +28,7 @@ Back:
 | Local variable | **Stack** — inside the method's stack frame |
 | Parameter | **Stack** — same stack frame as local variables |
 Tags: java variables jvm
+<!--ID: 1782128730039-->
 END
 
 START
@@ -36,6 +38,7 @@ Back:
 - **Instance & static fields** — auto-initialized (`0`, `null`, `false`)
 - **Local variables & parameters** — NOT initialized by default; compiler forces explicit assignment before use
 Tags: java variables
+<!--ID: 1782128730041-->
 END
 
 START
@@ -45,6 +48,7 @@ Back:
 - **Primitive** — stores the actual value directly (`int age = 25` → variable contains `25`)
 - **Reference** — stores a memory address pointing to the object on the heap (`String name = new String("John")` → variable contains `0x7a8f9b2`)
 Tags: java variables types
+<!--ID: 1782128730044-->
 END
 
 START
@@ -59,6 +63,7 @@ String s2 = s1; // s2 points to same object
 
 Modifying the object through `s1` is visible through `s2`.
 Tags: java variables references
+<!--ID: 1782128730046-->
 END
 
 START
@@ -70,6 +75,7 @@ Back: **Performance.**
 
 But primitives **can't be used in generics or collections** (`List<int>` is illegal) — so wrappers exist for those cases.
 Tags: java types
+<!--ID: 1782128730049-->
 END
 
 START
@@ -83,6 +89,7 @@ list.add(5);           // autoboxing: int → Integer
 int value = list.get(0); // unboxing: Integer → int
 ```
 Tags: java types autoboxing
+<!--ID: 1782128730051-->
 END
 
 START
@@ -92,6 +99,7 @@ Back: Each autobox creates a **new heap object** — adds allocation overhead an
 
 In tight loops or high-frequency code, repeated autoboxing can degrade performance significantly.
 Tags: java types autoboxing
+<!--ID: 1782128730054-->
 END
 
 START
@@ -106,6 +114,7 @@ Dog dog = new Dog();
 Animal animal = dog; // implicit upcast
 ```
 Tags: java casting types
+<!--ID: 1782128730057-->
 END
 
 START
@@ -122,6 +131,7 @@ Dog dog = (Dog) animal; // 💥 ClassCastException — it's a Cat
 
 Rule: the variable type doesn't matter — what matters is the **actual object in memory**.
 Tags: java casting types
+<!--ID: 1782128730059-->
 END
 
 START
@@ -136,6 +146,7 @@ if (animal instanceof Dog) {
 }
 ```
 Tags: java casting types
+<!--ID: 1782128730062-->
 END
 
 START
@@ -147,6 +158,7 @@ Back:
 - **Loop scope** — variable declared in a loop; only accessible inside the loop
 - **Bracket scope** — variable inside `{}` block; only accessible within those braces
 Tags: java variables scope
+<!--ID: 1782128730064-->
 END
 
 START
@@ -156,6 +168,7 @@ Back: **Naming convention:**
 - **Primitives** start with lowercase: `int`, `double`, `boolean`, `char`, `long`, `float`, `byte`, `short`
 - **Object/wrapper types** start with uppercase: `Integer`, `Double`, `Boolean`, `Character`, `String`
 Tags: java types naming
+<!--ID: 1782128730067-->
 END
 
 START
@@ -168,6 +181,7 @@ Back:
   - Instance variable → **heap** (part of the enclosing object)
   - Static variable → **metaspace**
 Tags: java memory heap stack
+<!--ID: 1782128730070-->
 END
 
 START
@@ -180,6 +194,7 @@ Back:
 
 Only the variable `list` is on the stack. All objects are always on the heap.
 Tags: java memory heap stack
+<!--ID: 1782128730072-->
 END
 
 START
@@ -189,6 +204,7 @@ Back: You copy the **reference** (4 or 8 bytes), not the object itself.
 
 The reference has a fixed size regardless of how large the object is — so the cost is always the same.
 Tags: java memory references
+<!--ID: 1782128730075-->
 END
 
 START
@@ -233,4 +249,5 @@ install("windows");                 // "windows" is the ARGUMENT
 
 Common mistake: saying "pass a parameter" — you pass an *argument*, you declare a *parameter*.
 Tags: java fundamentals methods
+<!--ID: 1782128730078-->
 END

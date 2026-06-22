@@ -86,6 +86,7 @@ It returns `true` only for the *same instance in memory*, not for two objects wi
 new Point(1,2).equals(new Point(1,2)); // false — different objects
 ```
 Tags: java classes equals-hashcode
+<!--ID: 1782128729953-->
 END
 
 START
@@ -93,6 +94,7 @@ Coding Questions
 By default, do two distinct objects with identical fields share a `hashCode()`?
 Back: **No.** The inherited `Object.hashCode()` is identity-based (typically derived from the memory address), so distinct instances almost always get **different** hash codes — even with identical fields.
 Tags: java classes equals-hashcode
+<!--ID: 1782128729956-->
 END
 
 START
@@ -105,6 +107,7 @@ Back: When the class is a **value object** — equality should depend on *conten
 
 Keep the identity default for objects unique by identity (a `Thread`, a DB connection).
 Tags: java classes equals-hashcode
+<!--ID: 1782128729959-->
 END
 
 START
@@ -120,6 +123,7 @@ Back: For non-null `x, y, z`:
 
 (Equivalence relation + consistent + non-null.)
 Tags: java classes equals-hashcode
+<!--ID: 1782128729961-->
 END
 
 START
@@ -129,6 +133,7 @@ Back: **If two objects are equal, their hash codes must be equal.**
 
 The reverse does NOT hold — equal hash codes do *not* imply equal objects (just a bucket collision).
 Tags: java classes equals-hashcode
+<!--ID: 1782128729963-->
 END
 
 START
@@ -144,6 +149,7 @@ m.put(new Point(1,2), "x");
 m.get(new Point(1,2)); // null ❌
 ```
 Tags: java classes equals-hashcode
+<!--ID: 1782128729965-->
 END
 
 START
@@ -166,6 +172,7 @@ if (obj instanceof String s) {
 
 The binding variable is only in scope where the check is provably true.
 Tags: java pattern-matching oop
+<!--ID: 1782128729968-->
 END
 
 START
@@ -181,4 +188,5 @@ if (!(obj instanceof String s)) return;
 System.out.println(s.length()); // s in scope here
 ```
 Tags: java pattern-matching oop
+<!--ID: 1782128729970-->
 END
