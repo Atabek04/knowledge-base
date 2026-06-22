@@ -58,6 +58,8 @@ Different from chat-style prompting: coding agents have a **loop** (observe → 
 - Verifying agent output (trust but verify)
 - Detecting hallucinated APIs, files, methods
 - When to use plans vs. just execute
+- [[AI confidently reports software vulnerabilities that do not exist burying maintainers in slop|AI slop — confident fake vuln reports flooded curl until it killed its bounty]]
+- [[Telling an LLM to reason harder can rationalize a wrong answer instead of correcting it|CoT and pros-cons can rationalize a wrong answer, not fix it]]
 
 ## Anti-Patterns
 
@@ -73,6 +75,8 @@ Different from chat-style prompting: coding agents have a **loop** (observe → 
 - [[AI-assisted learners score about two letter grades lower with debugging the most degraded skill|AI-assisted learners score two grades lower — debugging hit worst]]
 - [[Experienced developers were measured 19 percent slower with AI while believing they were faster|Devs measured 19% slower with AI yet felt 20% faster]]
 - [[AI-native juniors miss the foundational knowledge that came from struggling through problems manually|AI-native juniors miss the foundations the struggle used to build]]
+- [[Automation bias makes people accept a machine's recommendation without verifying it|Automation bias — people accept a machine's answer without checking it]]
+- [[You cannot review what you cannot understand so AI oversight collapses into rubber-stamping|Can't review what you can't understand — oversight becomes rubber-stamping]]
 
 ## The Developer's Evolving Role
 
@@ -81,6 +85,8 @@ Different from chat-style prompting: coding agents have a **loop** (observe → 
 - [[The software engineer's role is shifting from writing code to specifying reviewing and orchestrating it|Role shifts from writing code to specifying, reviewing, orchestrating]]
 - [[The Expert Generalist gains value as AI writes more code because fundamentals decomposition and judgment compound|Expert Generalist — fundamentals + judgment compound as AI writes more]]
 - [[AI-generated code is harder to review because it looks clean even when the logic is wrong|AI code is harder to review — clean-looking even when logic is wrong]]
+- [[The 70 percent problem means AI delivers the first 70 percent fast but the last 30 percent needs expertise|The 70% problem — AI nails the first 70%, the last 30% needs expertise]]
+- [[Verification becomes the scarce engineering skill as AI makes generating code cheap|Verification is the moat — generation is cheap, judging it correct is scarce]]
 
 ## Read more
 
