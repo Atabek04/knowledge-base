@@ -1,4 +1,4 @@
-TARGET DECK: Tech-KB::English Vocab::IT Terms
+TARGET DECK: English::Tech Terms
 
 START
 A_English_Translate
@@ -148,6 +148,7 @@ Russian: зависнуть; заблокироваться; встать
 Example: When the TCP send buffer is full, the server's `write()` call **stalls** — the thread hangs until the client reads some data and frees space.
 Note: Literal: a vehicle engine stalls when it stops due to insufficient power. In computing: a thread/coroutine stalls when it's blocked waiting for I/O, a lock, or a full buffer — it's alive but not making progress.
 Tags: networking programming
+<!--ID: 1782109667657-->
 END
 
 START
@@ -158,6 +159,7 @@ Russian: опустошить буфер; вычитать данные из б�
 Example: The client must **drain** the TCP receive buffer fast enough, or the server's send buffer fills up and `write()` blocks.
 Note: Literal: to drain = to empty liquid from a container. In networking: the client "drains" the buffer by reading bytes out — exactly like water flowing out of a sink. The opposite of pile up.
 Tags: networking programming
+<!--ID: 1782109667659-->
 END
 
 START
@@ -179,3 +181,49 @@ Russian: затереть, перезаписать (с потерей данн�
 Example: In a lost update, the second writer **clobbers** the first commit with a value computed from stale data.
 Note: From the general "hit hard" sense. In IT: one write blindly overwrites another, destroying it (e.g. lost update anomaly).
 Tags: concurrency transactions
+<!--ID: 1782109667661-->
+END
+
+START
+A_English_Translate
+In ML/signals, to repeatedly swing above and below a target value without settling on it
+English: oscillate
+Russian: осциллировать, колебаться (вокруг значения)
+Example: With too high a learning rate the model **oscillates**, bouncing above and below the correct answer instead of settling.
+Note: Everyday English sense (wavering between opinions) lives in the General deck.
+Tags: verb ml
+<!--ID: 1774839911104-->
+END
+
+START
+A_English_Translate
+In ML/algorithms, to steadily approach a stable final value, such as a loss reaching its minimum
+English: converge
+Russian: сходиться (к минимуму/решению)
+Example: Each overshoot is ~60% of the previous, so training **converges** but wastes iterations.
+Note: Everyday English sense (people or ideas coming together) lives in the General deck.
+Tags: verb ml
+<!--ID: 1774839911107-->
+END
+
+START
+A_English_Translate
+In security, money demanded by attackers to restore access to data or systems they have encrypted or seized
+English: ransom
+Russian: выкуп (за данные/доступ)
+Example: The malware held the company's data as **ransom**, demanding $1 million to restore access.
+Note: Everyday English sense (money for a kidnapped person) lives in the General deck. The malware that does this is "ransomware".
+Tags: noun security
+<!--ID: 1780311501926-->
+END
+
+START
+A_English_Translate
+In networking, to accumulate in a buffer faster than the receiver consumes it, until space runs out
+English: to pile up
+Russian: накапливаться (в буфере быстрее, чем обрабатывается)
+Example: If the client reads slowly, tokens **pile up** in the TCP send buffer until there is no room left.
+Note: Everyday English sense (dishes/work piling up) lives in the General deck.
+Tags: phrasal-verb networking
+<!--ID: 1782109667664-->
+END

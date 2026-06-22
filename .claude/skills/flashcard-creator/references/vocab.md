@@ -116,6 +116,13 @@ TARGET DECK: Tech-KB::English Vocab::{Category}
 ### Russian
 - Translation matching the specific definition given
 - If no clean 1:1 translation exists, give closest + brief note
+- **Translate as a native speaker, not a dictionary.** Write the word a Russian person
+  actually says in daily life — not the literal/calque form or the first hit a machine
+  translator returns. Pick the most commonly practiced term; if a textbook-correct word
+  exists but nobody uses it, drop it or demote it to second place.
+  - ✓ `газированная вода, газировка` for *seltzer water*
+  - ✗ `сельтерская вода` — technically a translation, but almost no one says it
+  - Litmus test: would a native speaker use this word out loud, or only see it in a manual?
 
 ### Example
 - Prefer the original sentence the user sent
@@ -129,6 +136,40 @@ TARGET DECK: Tech-KB::English Vocab::{Category}
   - Context shift: "In general English means 'to provide.' In cloud/IT: to allocate and configure resources automatically."
   - Register/formality: "Formal written English. Casual alternative: 'set up.'"
 - Skip if it would just restate the definition.
+- **Never reference the user's own mistake.** If they sent the phrase with an error, silently
+  fix it in Example/English and write the Note as the positive rule only — don't quote the
+  wrong version or say "not X".
+  - ✓ `You advocate FOR something. Always takes the article: "a big advocate for".`
+  - ✗ `Needs the article — "a big advocate for", not "big advocate for".`
+
+---
+
+## Dual-context words (general + technical)
+
+Some words carry a **distinct meaning in a technical/domain context** AND a **different
+everyday-English meaning** (e.g. `oscillate`, `converge`, `pile up`, `ransom`). Never stuff
+both senses into one card — a card mixing two contexts tests neither cleanly and the
+example can only show one.
+
+**Make two separate cards:**
+
+| Card | File | Deck | Frame definition + example in... |
+|------|------|------|----------------------------------|
+| Technical | `vocab/tech-terms.md` | `English::Tech Terms` | the technical/domain context (ML, networking, security…) |
+| General | `vocab/general.md` | `English::General` | everyday English |
+
+Rules:
+- Each card's **Definition and Example must match its own context** — don't cross-contaminate.
+- The `Note` may briefly point to the *other* sense ("Everyday English: …" / "In IT: …") so
+  the learner sees the link, but the card is tested on its own context only.
+- Tag the technical card with its domain (`ml`, `networking`, `security`); the general card
+  gets only its part of speech (`verb`, `noun`, `phrasal-verb`).
+- **Why:** clean per-context retrieval, and the tech deck stays a focused study unit instead
+  of being diluted with everyday senses.
+
+A word belongs in `General` only (single card) when its example/usage is everyday and it has
+no distinct technical sense — domain flavor in the *example* alone (e.g. economics, finance)
+doesn't make it a tech term.
 
 ---
 
