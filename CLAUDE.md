@@ -40,36 +40,9 @@ Default: explain and move on. Don't quiz after every section.
 - **Revisit core concepts with increasing depth (spiral)** — same concept, deeper layer each pass
 - **Always signal deferred topics** — when skipping something complex, say: *"We'll come back to X after Y — for now just know that..."*
 
-### Grounding Rules — Teach Only Verified, Accurate Content
+### Grounding & Teaching Rules — moved to the `teach` skill
 
-> **TEMP — relocate later.** These rules belong in the `teach` skill's `SKILL.md` (currently on the other PC device, not yet in this repo). They live here only until that skill is copied into `.claude/skills/` and committed. When it is, move this whole subsection into the skill and leave a one-line pointer here.
-
-**Goal:** never teach hallucinated, stale, or made-up content. Ground before you teach; admit what you don't know. Based on [Anthropic's "Reduce hallucinations"](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations) guidance.
-
-**Tiered grounding — decide before each new topic, don't blind-search everything:**
-
-- **Web-research-first (mandatory)** when *starting a new subject or topic*, and for any **volatile or specific** claim: dates, statistics, "latest/current", versions, prices, named studies/people, recent events, anything post knowledge-cutoff. Search the internet first, teach from what you found.
-- **Vault-first (RAG)** when the subject already has a MOC or notes — those are the primary source of truth. Teach from the vault; web-fill only the gaps.
-- **Training-data is acceptable** only for *stable, foundational, well-attested* concepts (e.g. supply & demand, the NPV formula, Porter's Five Forces). Even then, if a specific figure or claim is attached, verify it.
-
-**Anti-hallucination guardrails (always on while teaching):**
-
-1. **Allow "I don't know."** If unsure or a source is missing, say *"I'm not certain — let me verify"* and search, or state the limit. Never fill gaps with invention.
-2. **Cite volatile claims.** Attach the source (or link) to any statistic, date, or named fact. No source → don't assert it as fact.
-3. **Separate fact from interpretation.** Mark opinion/framing as such; keep it distinct from sourced fact.
-4. **Self-verify before sending.** Re-scan the explanation for any claim you can't back; cut or flag it.
-5. **Flag confidence** when it's genuinely uncertain — "high confidence" vs "I think, verify before relying on it."
-6. **Restrict to grounded sources** for the volatile parts — answer from the vault + fetched material, not free recall.
-
-**Hybrid learning loop (default teaching method).** The book is the source of truth; you are the interpreter over it, never the source. Evidence-backed: structure + on-demand personalization + spaced retrieval beat any one alone.
-
-- **Book = structure.** Follow the canonical text's order and completeness so no load-bearing concept is skipped. Teach grounded in the book the learner provides; do not free-recall a syllabus.
-- **MOC = roadmap.** Walk the subject's MOC bullet by bullet in prerequisite order; track the stop point in its "Teaching Progress" marker.
-- **AI = personalization.** Your value is on-demand Q&A on the exact gap, Socratic depth, and analogies to what the learner already knows — not re-delivering the book.
-- **Flashcards = retrieval.** After a concept lands, trigger `flashcard-creator` for spaced recall (single biggest retention driver).
-- **Notes = encoding.** Have the learner rewrite each concept as an atomic note in their own words.
-- Full loop: **Book → MOC → AI (personalize + Socratic gaps) → flashcards → atomic notes.**
-- If no book is supplied, say so and ground in the vault + web per the tiered policy above; flag that structure is AI-generated, not from a vetted text.
+> Grounding (tiered web-first / vault-first / verify), the hybrid learning loop (Book → MOC → AI → flashcards → atomic notes), the persist-before-advance note gate, and the linking discipline now live in the `teach` skill: `~/.claude/skills/teach/SKILL.md`. Invoke `/teach` (or "teach me X") to load the full procedure.
 
 ## Writing Style
 
@@ -259,6 +232,7 @@ All flashcard rules — syntax, deck hierarchy, question quality, vocab cards, A
 - Tech cards → `05-Flashcards/{topic}/{subtopic}.md`, deck `Tech-KB::{Category}::{Topic}`
 - Vocab cards (user sends a sentence + asks what a word means) → `05-Flashcards/vocab/{category}.md`, deck `Tech-KB::English Vocab::{Category}`
 - [Remove IDs](scripts/remove-flashcard-ids.sh) — strip all `<!--ID: ...-->` before re-syncing with Anki
+- [Sync without Obsidian](scripts/anki_sync.py) — run `python scripts/anki_sync.py` to push all flashcard changes to Anki directly from the terminal, no Obsidian UI needed. Use this when Obsidian isn't open or when batch-syncing after editing many files at once.
 
 ## Tech Stack Context
 
