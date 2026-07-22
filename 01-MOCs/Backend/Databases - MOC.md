@@ -55,13 +55,17 @@
 - [ ] Entity lifecycle and states
 
 ### Connection Pooling
-- [ ] HikariCP configuration
-- [ ] Pool sizing
-- [ ] Connection validation
-- [ ] Leak detection
+- [[Connection pooling reuses connections at application level to reduce overhead|Connection pooling — borrow, use, return to avoid handshake overhead]]
+- [[HikariCP maximumPoolSize caps the total number of live database connections|maximumPoolSize — hard ceiling on live DB connections]]
+- [[HikariCP minimumIdle sets the floor for idle connections held in reserve|minimumIdle — floor for idle connections (default = fixed pool)]]
+- [[HikariCP connectionTimeout is the max wait before throwing an exception|connectionTimeout — fail-fast threshold when pool is exhausted]]
+- [[HikariCP maxLifetime recycles connections before the database closes them|maxLifetime — recycle connections before the DB times them out]]
+- [[HikariCP idleTimeout evicts connections that sit idle beyond the threshold|idleTimeout — shrinks elastic pool back to minimumIdle after a spike]]
+- [[HikariCP keepaliveTime pings idle connections to prevent server-side timeout|keepaliveTime — pings idle connections so firewalls don't drop them]]
+- [[HikariCP leakDetectionThreshold warns when a connection is held too long|leakDetectionThreshold — logs stack trace when a connection is leaked]]
 
 ### Schema Migration
-- [ ] Flyway — versioned migrations (`V001__*.sql`)
+- [[Flyway clean drops and re-applies migrations while repair only realigns checksums|Flyway clean (drop + re-apply) vs repair (realign checksums)]]
 - [ ] Liquibase — changelog-based migrations
 - [ ] Migration best practices (forward-only, idempotent)
 

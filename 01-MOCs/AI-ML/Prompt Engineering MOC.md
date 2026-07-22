@@ -3,6 +3,8 @@ created: 2026-05-14
 tags: [moc]
 ---
 
+**Roadmap:** [Prompt Engineering](https://roadmap.sh/prompt-engineering)
+
 Designing inputs to LLMs to get reliable, accurate, and useful outputs.
 
 Prompting is the interface to the model — the same model gives wildly different results depending on instruction clarity, context placement, examples, and output format.
@@ -35,6 +37,11 @@ Prompting is the interface to the model — the same model gives wildly differen
 - Vague instructions, unstated assumptions
 - Burying the actual task under context
 - Asking for reasoning *after* the answer
+
+## Adversarial Prompting
+
+- [[Jailbreaking crafts prompts that bypass an LLM's safety guardrails|Jailbreaking — instruction-following turned against the rules]]
+- [[Jailbreak defense layers because input and output filters run outside the model|Jailbreak defense — out-of-model filters survive the bypass]]
 
 ## Read more
 

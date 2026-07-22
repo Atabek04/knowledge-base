@@ -22,6 +22,7 @@ Covers the protocol, browser API, message format, reconnection mechanics, and AI
 - [[HTTP response flushing sends buffered bytes immediately instead of waiting to accumulate|Flushing sends buffered bytes immediately]]
 - [[Nginx buffers proxied responses by default and X-Accel-Buffering disables this for SSE|Nginx buffers proxies; X-Accel-Buffering: no for SSE]]
 - [[Spring SseEmitter and Flux ServerSentEvent hold response open like FastAPI StreamingResponse|Spring SseEmitter (MVC) and Flux (WebFlux) for SSE]]
+- [[Spring flushes SSE response headers only on the first send, so an idle stream never opens|Headers flush only on first send — idle stream never opens; send an initial comment]]
 
 ### Event Message Format
 - [[SSE event has four optional fields - data, event, id, retry|SSE event fields: data, event, id, retry]]
@@ -32,6 +33,7 @@ Covers the protocol, browser API, message format, reconnection mechanics, and AI
 
 ### Reconnection and Resilience
 - [[Browser auto-reconnects SSE after disconnect using Last-Event-ID header|Browser auto-reconnects via Last-Event-ID]]
+- [[SSE heartbeat proves the socket is still writable, not that the client is still watching|Heartbeat proves the socket is writable, not that someone's watching]]
 
 ### AI Agent Streaming
 - [[AI agents use SSE to stream LLM tokens to browser as they are generated|AI agents stream LLM tokens over SSE]]

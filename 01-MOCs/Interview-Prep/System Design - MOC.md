@@ -64,6 +64,7 @@
 - [ ] **Graph** — nodes + edges for relationship traversal → social networks, fraud detection
 
 ### Capacity Planning
+- [[Server capacity is bounded by whichever resource saturates first, not just RAM|Server capacity — bounded by first resource to saturate, not just RAM]]
 - [ ] Traffic estimation
 - [ ] Storage estimation
 - [ ] Bandwidth estimation
@@ -73,6 +74,8 @@
 ### Scaling Strategies
 
 #### Database Scaling
+- [[The database is the hardest tier to scale because every app server shares one writer|DB is hardest tier to scale — all servers share one writer]]
+- [[A connection storm from new instances can exhaust the database connection limit|Connection storm — too many instances exhaust the DB connection limit]]
 - [ ] Vertical scaling
 - [ ] Read replicas
 - [ ] Sharding strategies
@@ -83,9 +86,11 @@
 
 #### Application Scaling
 - [ ] Stateless services
-- [ ] Horizontal scaling
+- [[Horizontal scaling multiplies stateless app servers but not the shared database|Horizontal scaling — clones stateless app servers, not the shared DB]]
 - [ ] Load balancing
-- [ ] Auto-scaling
+- [[Auto-scaling is reactive so it always trails a sudden traffic spike|Auto-scaling is reactive — always trails a sudden spike]]
+- [[A newly launched instance needs warm-up before it can serve traffic|New instance needs warm-up before serving — alive is not ready]]
+- [[Pre-warming and spare headroom absorb bursts that reactive scaling cannot|Pre-warm + headroom absorb bursts reactive scaling cannot]]
 
 ### High Availability
 - [ ] Redundancy
@@ -99,7 +104,7 @@
 - [ ] Cache-aside pattern
 - [ ] Write-through, write-behind
 - [ ] Cache invalidation
-- [ ] Cache stampede prevention
+- [[A cold cache sends every request to the database, causing a thundering herd|Cold cache sends every request to the DB — thundering herd]]
 - [ ] CDN caching
 - [ ] Hot key problem — single key overwhelms one shard, mitigation strategies
 - [ ] TTL jitter — randomizing expiry to prevent synchronized stampede
@@ -127,7 +132,7 @@
 - [ ] Bulkhead pattern — isolating failures so one service can't sink the platform
 - [ ] Timeout strategies — fail fast vs wait, cascading timeout risk
 - [ ] Retry storms — exponential backoff + jitter to avoid thundering herd
-- [ ] Load shedding — controlled degradation under extreme load
+- [[Load shedding drops excess requests to keep the core service alive|Load shedding — drop excess to keep the core alive]]
 - [ ] Backpressure — upstream flow control when consumers lag producers
 
 ### Trade-Offs

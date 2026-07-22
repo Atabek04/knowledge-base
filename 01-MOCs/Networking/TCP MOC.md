@@ -18,6 +18,7 @@ Transmission Control Protocol — reliable, ordered, and error-checked data deli
 - [[FIN terminates TCP connections through graceful shutdown handshake|FIN gracefully terminates the connection]]
 - [[Either side can initiate TCP connection termination with FIN|Either side can initiate FIN termination]]
 - [[HTTP Keep-Alive prevents FIN signal to reuse TCP connection|Keep-Alive suppresses FIN to reuse the connection]]
+- [[A vanished TCP peer only surfaces on the next write or read, not immediately|Vanished peer surfaces only on next write/read, not right away]]
 
 ## Data Transmission
 

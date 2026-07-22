@@ -119,3 +119,49 @@ Back: The lock step runs **beneath** LIMIT/OFFSET in the plan:
 Tags: sql postgresql locking
 <!--ID: 1782128730588-->
 END
+
+START
+Coding Questions
+Why must you never make an external HTTP call inside a @Transactional method?
+Back: A `@Transactional` method holds its **DB connection and row locks** from open until the method returns.
+- An HTTP call inside makes lock duration = your write + **the other service's latency** (which you don't control)
+- Slow/hung dependency → locks pile up, connections stay checked out, **pool drains**, whole service freezes
+- Rule: read + call external **before** opening the transaction; wrap only local writes
+Tags: sql spring transactions locking
+END
+
+START
+Coding Questions
+What is the correct ordering to avoid holding a lock during an external call?
+Back: **read → external call (no tx) → open tx → write → commit.**
+- The external latency runs on your thread with **zero DB resources held**
+- The transaction opens and commits in milliseconds around the write only
+Tags: sql spring transactions locking
+END
+
+START
+Coding Questions
+Why does splitting the external call and the write into the same bean break the @Transactional fix?
+Back: **Self-invocation bypasses the Spring proxy.**
+- `@Transactional` is applied by a proxy wrapping the bean; a `this.method()` call skips it → annotation silently ignored, no transaction starts
+- Fix: put the write method in a **separate bean**, or use a `TransactionTemplate`
+Tags: sql spring transactions locking
+END
+
+START
+Coding Questions
+When does a JPA @Lock(PESSIMISTIC_WRITE) release its lock, and how?
+Back: **Automatically at transaction end** — `COMMIT` or `ROLLBACK`.
+- No separate query, no unlock statement; the lock's lifetime *is* the transaction's
+- `@Lock` only appends `FOR UPDATE` to the generated `SELECT` — that's its whole mechanism
+Tags: sql spring jpa locking
+END
+
+START
+Coding Questions
+Why does @Lock(PESSIMISTIC_WRITE) do nothing without an open @Transactional?
+Back: The lock's release point **is** the transaction boundary — with no transaction, there's nothing for it to live inside.
+- No active tx → Hibernate throws, or applies `FOR UPDATE` to an auto-commit statement that releases instantly → no protection
+- Corollary: a long transaction = a long-held lock; you control release by tx duration, not a call
+Tags: sql spring jpa locking
+END

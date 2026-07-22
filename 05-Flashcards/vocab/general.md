@@ -192,3 +192,53 @@ Note: Distinct from "talk down to someone" (speak condescendingly directly to th
 Tags: phrasal-verb informal
 <!--ID: 1782128730596-->
 END
+
+START
+A_English_Translate
+To focus on small, trivial faults or details in a way that feels excessive or petty
+English: to nitpick / nitpicky / a nitpick
+Russian: придираться к мелочам; мелкая придирка
+Example: The code review was full of **nitpicks** about variable names — nothing about actual logic.
+Note: Mildly negative — implies the criticism is petty, not constructive. Used as verb ("stop nitpicking"), noun ("just a nitpick"), or adjective ("he's so nitpicky"). Very common in code reviews, writing, and design feedback.
+Tags: verb noun adjective informal
+END
+
+START
+A_English_Translate
+Something so extreme, shocking, or painful (in scale, price, effort, or intensity) that it is almost hard to bear
+English: makes my eyes water / eye-watering
+Russian: от этого слёзы на глаза наворачиваются; просто поражает (о чём-то крайнем или шокирующем)
+Example: The contractor's quote **made my eyes water** — €80,000 just for the foundation.
+Note: Figurative only (literal = onions/smoke irritating eyes). Works for price, pain, statistics, punishment — anything extreme. Adjective form "eye-watering" is very common: "an **eye-watering** fine / workload / drop in temperature". British English, but widely understood.
+Tags: idiom figurative
+END
+
+START
+A_English_Translate
+Certain to succeed or produce the desired result; guaranteed to work
+English: surefire
+Russian: верный, надёжный, беспроигрышный
+Example: Staying consistent with practice is a **surefire** way to improve your skills.
+Note: Adjective, always before a noun. Origin: 1833, from "sure to fire" — a gun that reliably discharges. Figurative sense: something that won't misfire. See also: Maven Surefire plugin (tests that are "sure to fire").
+Tags: adjective
+END
+
+START
+A_English_Translate
+To produce or manufacture something official, especially coins or money; figuratively, to create or coin something new
+English: to mint
+Russian: чеканить (монеты); создавать, выпускать
+Example: The government **mints** new coins every year to replace worn-out ones.
+Note: Literal: a "mint" is the factory that stamps coins, so to mint = to stamp/produce currency. Figurative: to mint a phrase, a new word, freshly minted graduates. The IT/crypto sense (mint a token) lives in the Tech Terms deck.
+Tags: verb
+END
+
+START
+A_English_Translate
+The single most important or decisive point of a problem, on which everything else hinges
+English: the crux
+Russian: суть, ключевой момент, самое главное
+Example: The **crux** of the matter is that only the server holds the secret key.
+Note: From Latin "crux" = cross, i.e. the crossing point where things resolve. Often "the crux of the matter / the argument / the problem". Points at the one thing that decides everything.
+Tags: noun
+END

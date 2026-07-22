@@ -13,6 +13,12 @@ tags: [moc, postgresql, database, oltp]
 - [ ] JSONB queries and indexing
 - [ ] Full-text search
 - [ ] Partitioning
+
+### Connection Model
+
+- [[PostgreSQL spawns a dedicated OS process for each client connection|Process-per-connection — each client gets its own forked OS process]]
+- [[PostgreSQL max_connections sets the server-side ceiling on simultaneous connections|max_connections — server ceiling (default 100), distinct from pool size]]
+- [[Too many PostgreSQL connections cause CPU thrashing through excessive context switching|Too many connections → context-switch thrashing, not a RAM problem]]
 - [ ] Connection pooling (PgBouncer)
 
 ## Transactions & Concurrency

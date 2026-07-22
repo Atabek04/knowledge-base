@@ -3,6 +3,8 @@ created: 2026-05-14
 tags: [moc]
 ---
 
+**Roadmaps:** [AI Engineer](https://roadmap.sh/ai-engineer) · [AI Agents](https://roadmap.sh/ai-agents)
+
 Building software **powered by** LLMs — apps, agents, RAG pipelines, MCP servers, multimodal systems.
 
 Different from [[Agentic Engineering MOC]], which is about *using* AI tools to write code. This MOC is about *producing* AI-powered products: you are the developer, the LLM is a runtime dependency.
@@ -136,6 +138,8 @@ Distinct from ML Engineering — AI Engineers consume pre-trained models via API
 
 - AI safety and ethics
 - Prompt injection attacks
+- [[Jailbreaking crafts prompts that bypass an LLM's safety guardrails|Jailbreaking — prompts that bypass safety guardrails]]
+- [[Jailbreak defense layers because input and output filters run outside the model|Jailbreak defense — layer filters outside the model]]
 - Adversarial testing
 - Bias and fairness
 - Content moderation APIs

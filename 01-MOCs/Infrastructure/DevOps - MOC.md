@@ -63,7 +63,13 @@
 - [ ] Labels and selectors
 - [ ] Resource limits
 - [ ] Horizontal Pod Autoscaler (HPA)
-- [ ] Liveness and readiness probes
+- [[Kubernetes probes let the kubelet check container health the app reports|K8s probes — app reports health, kubelet calls it and reacts]]
+- [[A failing liveness probe makes the kubelet restart the container|Liveness fail — kubelet restarts the container]]
+- [[A failing readiness probe removes the pod from Service endpoints|Readiness fail — pod pulled from Service load balancer, no restart]]
+- [[Liveness probes must stay shallow while readiness probes can check dependencies|Liveness shallow, readiness deep — depth follows the reaction]]
+- [[Kubernetes probes run via httpGet, tcpSocket, exec, or gRPC|Probe mechanisms — httpGet for apps, tcp/exec for infra]]
+- [[A startup probe delays liveness and readiness checks until a slow app finishes booting|Startup probe — guards slow boot from premature liveness restarts]]
+- [[Spring Boot Actuator exposes ready-made liveness and readiness probe groups|Actuator probe groups — liveness/readiness wired for free]]
 - [ ] Ingress
 - [ ] kubectl commands
 - [ ] Minikube / kind for local development

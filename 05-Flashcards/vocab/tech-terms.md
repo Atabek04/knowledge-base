@@ -227,3 +227,33 @@ Note: Everyday English sense (dishes/work piling up) lives in the General deck.
 Tags: phrasal-verb networking
 <!--ID: 1782109667664-->
 END
+
+START
+A_English_Translate
+The Maven build plugin that runs unit tests during the `test` phase; named because it is meant to be "sure to fire" — reliably execute every test without misfiring
+English: Maven Surefire Plugin
+Russian: плагин Maven для запуска юнит-тестов
+Example: If a test throws an unexpected exception, the **Maven Surefire Plugin** marks the build as failed and prints the stack trace.
+Note: Name comes from the adjective "surefire" (certain to succeed, from 1833 "a gun that fires reliably"). The plugin's job: never miss a test, always fire them all. Everyday English sense lives in the General deck.
+Tags: noun maven java build-tool
+END
+
+START
+A_English_Translate
+A fatal error that occurs when a process has used up all available memory and cannot allocate more
+English: OOM — Out of Memory
+Russian: нехватка памяти; ошибка нехватки памяти
+Example: The service crashed with an **OOM** error after loading the entire dataset into a list.
+Note: In Java: `java.lang.OutOfMemoryError`. Not JVM-specific — OS, Docker, and Kubernetes can also kill a process for the same reason.
+Tags: noun abbreviation java
+END
+
+START
+A_English_Translate
+In security/crypto, to generate and issue a fresh signed token, key, or coin
+English: to mint (a token)
+Russian: выпустить, сгенерировать (токен, ключ)
+Example: The auth server **mints** a JWT after login, signing it with its private key.
+Note: From "mint coins". Key point for JWT with asymmetric signing (RS256/ES256): minting requires the **private** key — the public key only verifies. So a client that holds only the public key **cannot** mint a token the server will accept; forging one means faking a signature it can't produce. Everyday English sense lives in the General deck.
+Tags: verb security jwt crypto
+END

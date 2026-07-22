@@ -42,6 +42,7 @@ Concepts for understanding network communication patterns, protocols, and real-t
 ## HTTP Protocol
 
 - [[HTTP Keep-Alive reuses TCP connections across multiple requests|HTTP Keep-Alive reuses TCP across requests]]
+- [[Time to First Byte measures server responsiveness as the delay before the first response byte arrives|TTFB measures server responsiveness — delay before the first response byte]]
 
 ## WebSocket Protocol
 

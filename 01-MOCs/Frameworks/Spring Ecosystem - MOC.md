@@ -95,6 +95,10 @@
 - [ ] Refresh token rotation
 - [ ] mTLS for service-to-service auth
 
+### Scheduling & Background Jobs
+- [[Spring @Scheduled runs a method on a fixed interval or cron expression|@Scheduled — run a method on an interval or cron, once per instance]]
+- [[ShedLock runs a scheduled task on exactly one node by holding a named lock in a shared store|ShedLock — one named lock in a shared store so a job runs on exactly one pod]]
+
 ### Spring Cloud (Microservices)
 - [ ] Spring Cloud Config
 - [ ] Spring Cloud Gateway

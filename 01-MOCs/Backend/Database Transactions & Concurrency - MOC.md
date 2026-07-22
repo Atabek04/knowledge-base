@@ -34,6 +34,8 @@ tags: [moc, database, concurrency, transactions, isolation]
 - [[SELECT FOR UPDATE SKIP LOCKED turns a table into a competing-consumers work queue|FOR UPDATE SKIP LOCKED — table becomes a competing-consumers queue]]
 - [[FOR UPDATE locks rows from every joined table unless you restrict it with OF|FOR UPDATE OF — a join locks every table unless you name one]]
 - [[FOR UPDATE locks rows beneath LIMIT and OFFSET in the query plan|FOR UPDATE + LIMIT — locks under the limit; OFFSET rows lock too]]
+- [[External HTTP calls inside a transaction hold the row lock while you wait on another service|Never call external services inside @Transactional — lock held for their latency]]
+- [[A JPA @Lock pessimistic lock releases automatically at transaction end, never by a separate query|@Lock release — automatic at commit/rollback, no unlock query]]
 - [ ] Deadlock detection and prevention
 - [ ] Advisory locks — application-defined locks not tied to rows
 - [ ] MVCC — readers and writers never block via row versioning

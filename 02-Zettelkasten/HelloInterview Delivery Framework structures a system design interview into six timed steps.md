@@ -12,14 +12,14 @@ System design interviews are open-ended and easy to derail — you can burn 20 m
 
 ### The Six Steps (45-min interview)
 
-| # | Step | Time | What you produce |
-|---|------|------|------------------|
-| 1 | **Requirements** | ~5 min | Top 3 functional ("users can…") + non-functional (scale, latency, availability). Estimate capacity **only** if it changes the design. |
-| 2 | **Core Entities** | ~2 min | 3–5 domain nouns (User, Tweet, Follow). |
-| 3 | **API / Interface** | ~5 min | 4–6 endpoints, REST by default. Current user from the auth token, never the request body. |
-| 4 | **Data Flow** *(optional)* | ~5 min | Only for data-processing systems: Fetch → Parse → Store. |
-| 5 | **High-Level Design** | ~10–15 min | Boxes + arrows. Walk through each API endpoint and show what state changes. |
-| 6 | **Deep Dives** | ~10 min | Satisfy the non-functional requirements; find and kill bottlenecks (caching, sharding, fanout). |
+| #   | Step                       | Time       | What you produce                                                                                                                      |
+| --- | -------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | **Requirements**           | ~5 min     | Top 3 functional ("users can…") + non-functional (scale, latency, availability). Estimate capacity **only** if it changes the design. |
+| 2   | **Core Entities**          | ~2 min     | 3–5 domain nouns (User, Tweet, Follow).                                                                                               |
+| 3   | **API / Interface**        | ~5 min     | 4–6 endpoints, REST by default. Current user from the auth token, never the request body.                                             |
+| 4   | **Data Flow** *(optional)* | ~5 min     | Only for data-processing systems: Fetch → Parse → Store.                                                                              |
+| 5   | **High-Level Design**      | ~10–15 min | Boxes + arrows. Walk through each API endpoint and show what state changes.                                                           |
+| 6   | **Deep Dives**             | ~10 min    | Satisfy the non-functional requirements; find and kill bottlenecks (caching, sharding, fanout).                                       |
 
 ---
 

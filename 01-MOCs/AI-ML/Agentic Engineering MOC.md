@@ -3,6 +3,8 @@ created: 2026-05-14
 tags: [moc]
 ---
 
+**Roadmaps:** [Vibe Coding](https://roadmap.sh/vibe-coding) · [Claude Code](https://roadmap.sh/claude-code)
+
 Using autonomous LLM agents to write, refactor, and ship code — the **consumer** side of AI in software engineering.
 
 Distinct from [[AI Engineering MOC]], which is about *building* AI-powered products. Here the LLM is your collaborator, not your product.

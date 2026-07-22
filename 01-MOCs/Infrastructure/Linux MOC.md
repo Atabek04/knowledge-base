@@ -51,6 +51,10 @@ Operating system fundamentals, Linux kernel architecture, Unix/Linux history, an
 
 - [[Linux root filesystem uses a hierarchical tree structure with standardized directories for different purposes|Root filesystem: standardized directory tree (FHS)]]
 
+### Task Scheduling
+
+- [[Cron runs commands on a schedule defined by a five-field time expression|Cron — a daemon that matches wall-clock time against five-field job lines]]
+
 ## Part 3.5 — Command-Line Tools & Shell Scripting
 
 ### Command-Line Utilities
