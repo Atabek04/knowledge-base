@@ -21,7 +21,7 @@
 - [ ] Instance types — general purpose, compute/memory/storage optimized
 - [ ] On-demand vs Reserved vs Spot pricing
 - [ ] AMIs (Amazon Machine Images) — snapshots for replication
-- [ ] Security groups — stateful firewall at instance level
+- [[Default AWS security group blocks all inbound but allows all outbound traffic|Security groups — default SG: deny inbound, allow outbound]]
 - [ ] Auto Scaling Groups — horizontal scaling + health replacement
 
 #### Lambda (Serverless)
