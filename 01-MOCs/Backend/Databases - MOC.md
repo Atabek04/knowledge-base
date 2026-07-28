@@ -187,3 +187,4 @@
 - [[ClickHouse - MOC]] — OLAP DBMS
 - [[Spring Ecosystem - MOC]]
 - [[Architecture - MOC]]
+- [[DDIA - MOC]] — reading index for Designing Data-Intensive Applications

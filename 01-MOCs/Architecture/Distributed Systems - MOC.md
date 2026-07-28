@@ -116,3 +116,4 @@
 - [[Microservices Patterns - MOC]]
 - [[Architecture - MOC]]
 - [[Databases - MOC]]
+- [[DDIA - MOC]]
