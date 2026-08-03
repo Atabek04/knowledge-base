@@ -105,7 +105,9 @@
 - [ ] Write-through, write-behind
 - [ ] Cache invalidation
 - [[A cold cache sends every request to the database, causing a thundering herd|Cold cache sends every request to the DB — thundering herd]]
-- [ ] CDN caching
+- [ ] Cache stampede prevention
+- [[Reverse proxy hides the origin server's IP by relaying client requests to backend servers|CDN caching — reverse proxy caches origin responses at the edge]]
+- [[Forward proxy hides the client's identity by relaying requests to the destination server|Forward proxy — client-side counterpart to a CDN's reverse proxy]]
 - [ ] Hot key problem — single key overwhelms one shard, mitigation strategies
 - [ ] TTL jitter — randomizing expiry to prevent synchronized stampede
 - [ ] Multi-level caching — L1 local + L2 Redis + CDN layers

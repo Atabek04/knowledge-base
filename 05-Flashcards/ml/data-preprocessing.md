@@ -20,23 +20,46 @@ END
 
 START
 Coding Questions
-What does `random_state` do and why does the number itself not matter?
-Back: `random_state` is a **seed** for the random number generator — same seed always produces the same result.
-- Without it, Python picks a new random seed each run
-- The actual number (1, 42, 123) is arbitrary — only consistency matters
+In `train_test_split(..., random_state=42)`, what does `random_state` do?
+Back: It sets the **seed** for the shuffle that decides which rows go to train vs test → same seed = **same split every run** (reproducible).
+- **Without it** → falls back to NumPy's global random number generator (RNG) — one generator shared across the whole `numpy` module — seeded from the system clock → a **different split each run**
 Tags: ml preprocessing
 <!--ID: 1774613880837-->
 END
 
 START
 Coding Questions
+Besides splitting data, what other ML operations involve randomness that `random_state` controls?
+Back: Any step that relies on a random draw — a fixed seed makes each one reproducible.
+- **Shuffling** rows before a train/test split
+- **Initializing weights** in a model
+- **Sampling** rows (e.g. bootstrapping, random subsets in a Random Forest)
+Tags: ml preprocessing
+<!--ID: 1782414785983-->
+END
+
+START
+Coding Questions
 The model works fine without a fixed `random_state` — so why does it matter?
-Back: It matters for **the developer, not the model**. Without a fixed seed, you can't tell if a change in results came from your code or just a different data split. You get 85% accuracy, your colleague gets 82% on the same code — is there a bug? You can't tell. A fixed seed gives you three things:
-- **Debugging** — if there's a problem, you can reproduce it exactly
-- **Fair comparison** — you compare model versions on identical data splits
-- **Sharing code** — others can run your code and get your exact results
+Back: It matters for **the developer, not the model** — accuracy is fine either way.
+- The problem: a different split each run changes your score, so you can't tell if a result came from your code or just a new split
+    - e.g. you get 85%, colleague gets 82% on the same code — is it a bug? Can't tell
+- A fixed seed buys three things:
+    - **Debugging** — reproduce a problem exactly
+    - **Fair comparison** — compare model versions on identical splits
+    - **Sharing code** — others get your exact results
 Tags: ml preprocessing
 <!--ID: 1774617459212-->
+END
+
+START
+Coding Questions
+Does the same model give the same accuracy no matter how the data is split?
+Back: No — a different split puts different rows in train vs test, so the model trains and is tested on different data → the measured score shifts (e.g. 85% vs 82%).
+- The *true* performance is roughly stable; any single split's score just wobbles around it
+- That wobble is why you fix the seed — to lock one split and get a reproducible number
+Tags: ml preprocessing
+<!--ID: 1782455818476-->
 END
 
 START
@@ -158,16 +181,22 @@ Back: They inject **noise, not signal** — the model memorizes row-level artifa
 - **Mostly-empty columns** — non-empty rows aren't random, creating spurious correlations
 - **Irrelevant columns** — no causal relationship with target, just statistical accidents
 Tags: ml preprocessing
+<!--ID: 1782414568378-->
 END
 
 START
 Coding Questions
 What is a dummy variable and what is the dummy variable trap?
 Back:
-- **Dummy variable** — binary (0/1) column created by one-hot encoding
-- **Dummy variable trap** — keeping all dummy columns causes **multicollinearity** (one column perfectly predictable from others)
-- Example: if Emb_C=0 and Emb_Q=0, you already know Emb_S=1
-- Fix: `OneHotEncoder(drop='first')` to drop one column
+- **Dummy variable** — binary (0/1) column created by one-hot encoding a category
+    - e.g. `Color` (Red/Green/Blue) → 3 columns: `is_Red`, `is_Green`, `is_Blue`
+- **Dummy variable trap** — keeping **all** dummy columns makes one column perfectly predictable from the others (**multicollinearity**)
+    - e.g. if `is_Red=0` and `is_Green=0`, then `is_Blue` *must* be 1 — the last column adds no new info, it's redundant
+- Why it's a problem (why it's a "trap"):
+    - redundant column → model can't assign unique weights (infinite weight combos give same prediction)
+    - breaks linear models (matrix not invertible) and inflates coefficients, hurting interpretability
+- Fix: drop one dummy column → `OneHotEncoder(drop='first')`
+    - the dropped category becomes the baseline; no info lost
 Tags: ml preprocessing
 <!--ID: 1774613880850-->
 END
@@ -187,9 +216,15 @@ START
 Coding Questions
 What is oscillation in gradient descent and what causes it?
 Back: The model **oscillates** — bouncing above and below the correct answer (like pushing a swing too hard).
-- Caused by large gradients making weight changes too big
-- Each overshoot is ~60% of previous; converges but wastes iterations
-- With even larger learning rate, oscillations can **diverge**
+- Caused by **large gradients** (big number from the loss derivative `2·error·x`)
+    - large gradient → weight changes too big → overshoot
+- Gradient grows with **large error** OR **large feature `x`**
+    - big unscaled features inflate the gradient
+- **Converge** — overshoots **shrink** each step (~60% of previous)
+    - bounces past the answer but reaches it eventually; just wastes iterations
+- **Diverge** — with too large a learning rate, overshoots **grow** each step
+    - bounces get bigger → loss → ∞ → never finds the answer
+- Key: it's the **trend of bounce size** (shrinking vs growing), not bouncing itself, that decides the outcome
 Tags: ml preprocessing
 <!--ID: 1774613880853-->
 END
@@ -237,15 +272,34 @@ Back:
 - Use **normalization** when data has no significant outliers and you want a bounded range
 - Use **standardization** when data has **outliers** — it won't let one extreme value crush all other values into a narrow band
 Tags: ml preprocessing
+<!--ID: 1782414568427-->
 END
 
 START
 Coding Questions
-Why must feature scaling happen after the train-test split?
-Back: To prevent **data leakage**.
-- Fit scaler on training data only, then transform both sets
-- If you scale before splitting, the scaler uses test data statistics — in production you won't have future data
-- Correct order: split → fit(X_train) → transform(X_train) → transform(X_test)
+Why is feature scaling done after the train-test split, not before?
+Back: To prevent **data leakage** — the model must never see test data, not even indirectly.
+- `fit` is the step that **learns** — for any transformer (scaler, imputer, encoder) it captures parameters from whatever data it's given (here: mean/std or min/max)
+    - scale *before* splitting → those stats are learned from **test rows too**
+    - so test info bleeds into the scaler → into training → over-optimistic scores that won't hold in production
+- Fix: fit on training data only, then transform both sets
+    - split → fit(X<sub>train</sub>) → transform(X<sub>train</sub>) → transform(X<sub>test</sub>)
 Tags: ml preprocessing
 <!--ID: 1774613880857-->
+END
+
+START
+Coding Questions
+What is a transformer in scikit-learn, and what are its main categories?
+Back: An object that reshapes data through the **`fit`/`transform`** API — `fit(X_train)` learns parameters, `transform(X)` applies them. (A *predictor* uses `predict` instead.)
+- **Imputation** — fill missing values
+    - `SimpleImputer`, `KNNImputer`
+- **Scaling** — rescale feature ranges
+    - `StandardScaler`, `MinMaxScaler`
+- **Encoding** — categories → numbers
+    - `OneHotEncoder`, `OrdinalEncoder`
+- **Dimensionality reduction** — fewer features
+    - `PCA`
+Tags: ml preprocessing
+<!--ID: 1782417347427-->
 END

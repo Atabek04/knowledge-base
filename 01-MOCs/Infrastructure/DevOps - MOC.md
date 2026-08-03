@@ -83,6 +83,9 @@
 - [ ] Upgrading and rollback
 
 ### CI/CD
+- [[CI test pipeline splits unit and integration tests into parallel jobs to minimize feedback time|CI test pipeline — parallel unit + integration jobs cut feedback time]]
+- [[Spring ApplicationContext cache determines how many times the JVM boots Spring during a test suite|Spring context cache — one JVM boot shared across all integration tests]]
+- [[Testcontainers singleton pattern starts containers once per JVM by using a static initializer|Testcontainers singleton — static init starts containers once per JVM]]
 - [ ] GitHub Actions workflows
 - [ ] Build and test stages
 - [ ] Docker image building
@@ -93,7 +96,10 @@
 
 ### Load Balancing
 - [ ] NGINX basics
-- [ ] Reverse proxy configuration
+- [[Reverse proxy hides the origin server's IP by relaying client requests to backend servers|Reverse proxy — hides origin IP, caches, and shields the server]]
+- [[Forward proxy hides the client's identity by relaying requests to the destination server|Forward proxy — hides the client's IP from the destination]]
+- [[Firewall filters incoming connections by rule before they reach a server|Firewall — gatekeeper rule filter, not a proxy]]
+- [[VPN encrypts and tunnels traffic through a forward proxy to hide the client's IP and location|VPN — encrypted, system-wide forward proxy]]
 - [ ] Load balancing algorithms
 - [ ] Health checks
 - [ ] SSL termination

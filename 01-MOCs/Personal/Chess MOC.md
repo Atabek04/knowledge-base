@@ -3,13 +3,6 @@ created: 2026-06-17
 tags: [moc]
 aliases: [Chess]
 ---
-
-How to get good at chess — a single prerequisite-ordered roadmap synthesized from nine Udemy courses, deduped and resequenced into one learning path from board setup to ~1600 ELO.
-
-Teaching Progress: *not started — begin at Phase 1*
-
-> Roadmap only. Bullets are teaching topics, not atomic notes yet. As each is taught and lands, it becomes a `[[atomic note]]` linked here + a flashcard. Walk it top to bottom; don't skip forward.
-
 ### Source courses
 
 - **Beginner→1600 ELO** (Complete Guide, 31 sec / 433 lec) — the spine; covers every phase broadly.

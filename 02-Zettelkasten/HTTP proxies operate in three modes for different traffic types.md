@@ -42,3 +42,5 @@ WebSocket leverages modes 1 and 2: the upgrade request goes through **HTTP mode*
 - [[WebSocket piggybacking works, because initial request is valid]]
 - [[WebSocket upgrades HTTP connection to enable bidirectional communication]]
 - [[WebSocket MOC]]
+- [[Forward proxy hides the client's identity by relaying requests to the destination server]]
+- [[Reverse proxy hides the origin server's IP by relaying client requests to backend servers]]

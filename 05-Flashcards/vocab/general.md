@@ -242,3 +242,23 @@ Example: The **crux** of the matter is that only the server holds the secret key
 Note: From Latin "crux" = cross, i.e. the crossing point where things resolve. Often "the crux of the matter / the argument / the problem". Points at the one thing that decides everything.
 Tags: noun
 END
+
+START
+A_English_Translate
+Having a very strong, sharp smell or taste
+English: pungent
+Russian: острый, едкий (о запахе или вкусе)
+Example: A **pungent** smell is very strong.
+Note: Often used for sharp, biting odors or flavors — garlic, vinegar, smoke.
+Tags: adjective
+END
+
+START
+A_English_Translate
+Having its cost partly paid by another party, so the price actually charged is artificially lowered
+English: subsidised
+Russian: субсидированный, дотированный
+Example: On why AI seems cheaper than the workers it replaced — the answer is simple: it was never cheap, it was **subsidised** (investors are covering the real cost, not charging users for it).
+Note: British spelling; US spelling is "subsidized." Refers to a hidden cost being covered by someone else (investors, government) rather than the true cost disappearing.
+Tags: adjective economics
+END

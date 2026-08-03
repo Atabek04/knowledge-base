@@ -75,6 +75,53 @@ forcing a guess.
 **Structure the answer to be scannable.** Never a wall of text on one line. Use line
 breaks between distinct ideas, bullet lists for steps/comparisons, bold for key terms.
 
+**Write for a confused reader — clarity over brevity, but never bloat.** A card answer is a
+micro-lesson, not a label. Apply the same teaching standard as an atomic note:
+- **Hierarchy carries the meaning — use nesting, not run-on lines.** The reader scans the
+  shape before the words, so let indentation do the teaching:
+    - **Same-level bullet** = a *separate, parallel* point (another reason, another item).
+    - **Sub-bullet** = it *explains or elaborates the bullet above it* (a cause's consequence,
+      an example, a gloss). When one idea explains another, demote it a level.
+    - **Max 3 levels deep.** Beyond that the card is trying to teach too much — split it.
+- **But don't over-fragment.** Very short bullet + a single sub-bullet under it is often
+  better as **one line**. Only break out a sub-level when the child is a genuinely distinct
+  idea worth its own line; if it fits in a clause, keep it inline. Judge by reading length:
+  a 3-line answer that *could* be 1 line wastes the reader's eye as much as a wall of text.
+    - ✗ chain on one line: `Caused by large gradients → weight changes too big → overshoot`
+    - ✓ split when each step is its own idea: `**large gradients**` / sub: `→ weight too big → overshoot`
+    - ✓ keep inline when trivial: `seeded from the system clock → a different split each run`
+- **Disambiguate look-alike terms explicitly.** When two concepts are easily confused
+  (converge vs diverge, normalize vs standardize), contrast them as parallel bullets and add
+  a one-line "Key:" that states the *distinguishing axis*, not just the two definitions.
+- **Order logically:** definition → cause → mechanism → consequence/edge case. The reader
+  should follow top-to-bottom without back-references.
+
+**Expand every abbreviation on first use (strict).** The first time an acronym appears, write
+it out and put the short form in brackets — `random number generator (RNG)`, not bare `RNG`.
+Same rule as introducing a concept: check it's been spelled out before; if not, spell it out.
+For a *simple* concept the expansion alone is enough (no further explanation needed).
+
+**Never introduce a concept you don't explain (strict).** The moment a card's answer uses a
+term, mechanism, or named thing the learner may not already hold (`global RNG`, `seed`,
+`multicollinearity`), you MUST resolve it before the card ships — no bare jargon, ever.
+
+Cards must be **self-contained**: Anki has no clickable card-to-card link during review, so a
+learner cannot "jump to the other card." Never write a "See also: <other card>" pointer and
+call the concept explained — it isn't, the reader can't follow it. Resolve every unexplained
+term *inside the card itself*. Use the **2-3-word test** to decide how:
+- **Can you explain it in a brief parenthetical (~2-5 words / one clause)?** → gloss it inline
+  and move on. e.g. `random number generator (RNG)`, `multicollinearity (one column redundant)`.
+- **Does it need more than that?** → DO NOT cram the explanation in — that bloats the card and
+  smuggles in a second concept. Instead **make a separate granular card** that owns it (search
+  the `05-Flashcards/` tree first with `grep` to avoid duplicates), and on *this* card keep
+  only the shortest gloss that lets the sentence stand. One card teaches one thing.
+
+This is the anti-bloat rule: when in doubt between "add three more sub-bullets explaining X"
+and "spin X into its own card," spin it out. A long answer is a smell that two concepts shared
+one card. The litmus test mirrors the atomic-note rule — a learner reading top-to-bottom must
+never hit a term whose meaning lives nowhere in that same answer, *and* the answer must never
+grow so long that it's really teaching two things.
+
 Three failure modes are common enough to keep in mind on every batch (the protocols and
 the full reasoning are in `references/question-rules.md`):
 

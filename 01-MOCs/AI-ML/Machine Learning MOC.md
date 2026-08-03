@@ -154,6 +154,7 @@ Essential techniques for preparing raw data for machine learning.
 - [[42 is not a special seed it is just a convention from pop culture|Why 42: pop-culture convention, not special]]
 - [[Missing data must be handled because most ML algorithms cannot compute with NaN|Handling missing data: algorithms can't use NaN]]
 - [[SimpleImputer replaces missing values using fit and transform pattern|SimpleImputer: fit-transform to fill NaN]]
+- [[Transformers are scikit-learn objects that reshape data through a fit-transform API|Transformers: fit-transform objects (imputers, scalers, encoders)]]
 - [[Categorical data must be encoded into numbers because ML algorithms only compute with numbers|Encoding categoricals: text → numbers]]
 - [[One-hot encoding creates a binary column for each category|One-hot encoding: a binary column per category]]
 - [[Label encoding assigns an integer to each category|Label encoding: an integer per category]]
