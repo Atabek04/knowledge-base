@@ -270,16 +270,6 @@ END
 
 START
 A_English_Translate
-Having a very strong, sharp smell or taste
-English: pungent
-Russian: острый, едкий (о запахе или вкусе)
-Example: A **pungent** smell is very strong.
-Note: Often used for sharp, biting odors or flavors — garlic, vinegar, smoke.
-Tags: adjective
-END
-
-START
-A_English_Translate
 Having its cost partly paid by another party, so the price actually charged is artificially lowered
 English: subsidised
 Russian: субсидированный, дотированный
