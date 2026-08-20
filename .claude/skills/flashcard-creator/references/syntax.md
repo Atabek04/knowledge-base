@@ -24,7 +24,14 @@ Fields: Front, Back → Cards: Front `{{Front}}`, Back `{{Back}}`
 
 ## Deck Hierarchy
 
-All technical decks live under the `Tech-KB::` root, including English Vocab.
+There are two independent deck roots, and they never mix:
+
+- **`Tech-KB::`** — knowledge decks. Cards test what a thing *does*, how it works, why it
+  behaves that way. Everything below this line except the English Vocab section.
+- **`English::`** — vocabulary decks. Cards test what a **word means**, nothing else.
+
+The split is by *what the card asks*, not by subject matter. A card about a technical word
+is still a vocabulary card if it asks for the word's meaning — see "English Vocab" below.
 
 ### Machine Learning
 
@@ -116,13 +123,25 @@ Tech-KB::Behavioral::Negotiation
 
 ### English Vocab
 
+All English cards sit under the `English::` root — exactly two decks, split by the
+**context the word is used in**:
+
 ```
-Tech-KB::English Vocab::Idioms
-Tech-KB::English Vocab::Phrasal Verbs
-Tech-KB::English Vocab::Advanced
-Tech-KB::English Vocab::IT Terms
-Tech-KB::English Vocab::Collocations
+English::General      → 05-Flashcards/vocab/general.md
+English::Tech Terms   → 05-Flashcards/vocab/tech-terms.md
 ```
+
+**`English::Tech Terms` is a vocabulary deck, not a knowledge deck.** It holds words the
+learner met in a technical context, and it asks one thing: *what does this word mean here?*
+It never asks what a tool does, how a protocol works, or why a pattern exists — those are
+`Tech-KB::` cards, driven by atomic notes.
+
+- ✓ `to provision` — "to allocate and configure infrastructure so it's ready to serve traffic"
+- ✗ `idempotent` framed as "why should PUT be idempotent?" — that's a REST concept card, `Tech-KB::Backend::REST`
+
+Idioms, phrasal verbs and collocations are **not** separate decks — they all live in
+`English::General` and are distinguished by their `Tags:` line. See `vocab.md` for the
+field format and the dual-context rule.
 
 ### Self-Mastery
 

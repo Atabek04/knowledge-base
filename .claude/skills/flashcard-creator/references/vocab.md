@@ -79,23 +79,29 @@ END
 
 ## File Location & Deck
 
-All vocab cards go under the `Tech-KB::English Vocab` deck root, split into category files:
+All vocab cards go under the `English` deck root, split by **context**, not by
+part-of-speech or word class. There are exactly two files:
 
 ```
 05-Flashcards/vocab/
-├── idioms.md          → TARGET DECK: Tech-KB::English Vocab::Idioms
-├── phrasal-verbs.md   → TARGET DECK: Tech-KB::English Vocab::Phrasal Verbs
-├── advanced.md        → TARGET DECK: Tech-KB::English Vocab::Advanced
-├── it-terms.md        → TARGET DECK: Tech-KB::English Vocab::IT Terms
-└── collocations.md    → TARGET DECK: Tech-KB::English Vocab::Collocations
+├── general.md      → TARGET DECK: English::General
+└── tech-terms.md   → TARGET DECK: English::Tech Terms
 ```
 
-Files and folders are created on-demand. Pick the best-fitting category for the word.
+**Pick the file by context, not by word type.** Idioms, phrasal verbs, collocations and
+advanced vocabulary all live in `general.md` — they are everyday English and are
+distinguished by their `Tags:` line (`idiom`, `phrasal-verb`, `collocation`), not by a
+separate file or deck. A word only goes to `tech-terms.md` when it carries a **distinct
+meaning inside a technical/domain context** (see "Dual-context words" below).
 
-Each file needs a header:
+Do **not** create new vocab files or deck paths. Two files, two decks — that's the whole
+structure. Adding `idioms.md` or an `English Vocab::` deck root fragments the review queue
+and orphans cards in Anki.
+
+Each file's header is already in place:
 
 ```markdown
-TARGET DECK: Tech-KB::English Vocab::{Category}
+TARGET DECK: English::General
 ```
 
 ---
@@ -130,15 +136,41 @@ TARGET DECK: Tech-KB::English Vocab::{Category}
 - Bold the target word: `Remote work felt like a **one-way street**.`
 
 ### Note
-- **Optional — omit if nothing useful to add.** Most cards won't need this.
-- Good uses:
-  - Literal vs figurative: "Literally: a road with one-direction traffic. Here used figuratively: a situation with no going back."
-  - Context shift: "In general English means 'to provide.' In cloud/IT: to allocate and configure resources automatically."
-  - Register/formality: "Formal written English. Casual alternative: 'set up.'"
-- Skip if it would just restate the definition.
-- **Never reference the user's own mistake.** If they sent the phrase with an error, silently
-  fix it in Example/English and write the Note as the positive rule only — don't quote the
-  wrong version or say "not X".
+
+**The default is no Note at all.** Most cards should ship without this field. Everything on
+a card is something the learner has to carry in their head on every single review — a Note
+that isn't pulling weight is pure cost.
+
+A Note is admissible for exactly two reasons:
+
+1. **A mnemonic hook** — something that makes the word *re-derivable* rather than merely
+   memorized. `crux` = Latin for *cross*, so the crux is the crossing point where everything
+   resolves. The learner who forgets the meaning can rebuild it from the hook.
+2. **A clarification or distinction that changes how the word is used** — the thing that
+   would otherwise cause a mistake in real usage:
+   - Literal vs figurative: "Literally a road with one-direction traffic; here figurative — a situation with no going back."
+   - Context shift: "General English: 'to supply.' In cloud/IT: automated resource allocation."
+   - Register: "Formal written English. Casual alternative: 'set up.'"
+
+If what you're about to write isn't one of those two, **delete the field**. Encyclopedic
+background, contrast words, etymology-as-decoration and usage trivia all read as useful and
+are not — they inflate a one-word card into a paragraph the learner must re-read forever.
+
+Concretely, do not write:
+
+- **A restatement of the definition** in different words.
+- **A contrast or opposite word** just because one exists. `de jure` is genuinely interesting
+  next to `de facto` and still doesn't belong — it's a second word smuggled onto a card that
+  tests one. If it's worth learning, it gets its own card.
+- **Spelling or form mechanics the Example already displays** — "written as two words, no
+  hyphen" is dead weight when the Example shows the word written correctly.
+- **Etymology that only decorates.** "Latin for 'of fact'" explains nothing the definition
+  didn't. Keep an origin only when it functions as the hook in case 1.
+- **Extra senses of the word.** Those are separate cards, not a footnote.
+
+One hard rule when a Note *is* justified: **never reference the user's own mistake.** If they
+sent the phrase with an error, silently fix it in Example/English and write the Note as the
+positive rule only — don't quote the wrong version or say "not X".
   - ✓ `You advocate FOR something. Always takes the article: "a big advocate for".`
   - ✗ `Needs the article — "a big advocate for", not "big advocate for".`
 
@@ -175,55 +207,70 @@ doesn't make it a tech term.
 
 ## Example Cards
 
+Everything below is a real card from the vault, annotated with the rule it demonstrates.
+
+#### `general.md` — everyday English, tagged by word class
+
 ```markdown
-TARGET DECK: Tech-KB::English Vocab::Idioms
+TARGET DECK: English::General
 
 START
 A_English_Translate
-A situation where only one outcome or direction is possible
-English: one-way street (figurative)
-Russian: Односторонняя улица; безальтернативная ситуация
-Example: For years after the pandemic, remote work felt like a **one-way street**.
-Note: Literally a street allowing travel in one direction only. Figuratively: something with no alternative or return.
-Tags: idiom figurative
-<!--ID: 1770704985806-->
+Existing or accepted as the real thing in practice, even though it was never officially declared or made official
+English: de facto
+Russian: фактический, по факту, на деле (хотя официально не закреплённый)
+Example: If the course slips badly, $20 becomes the **de facto** price and $29 loses credibility when it finally arrives.
+Tags: adjective adverb latin
 END
 
 START
 A_English_Translate
-To be reducible to the essential point
+To be reducible to the essential point once everything inessential is stripped away
 English: to boil down to
-Russian: Сводиться к (чему-то)
+Russian: сводиться к (чему-то)
 Example: The whole debate **boils down to** whether we prioritize latency or throughput.
 Tags: phrasal-verb
-<!--ID: 1770704985808-->
 END
 ```
+
+What these two show:
+
+- **The Definition never contains the target word** — "de facto" appears nowhere in its
+  own front field, so recall is real production, not pattern-matching.
+- **Neither card has a `Note`, and that is the normal case.** `de facto` invites one —
+  etymology, the `de jure` contrast, the no-hyphen spelling — and every candidate failed the
+  test: the definition already carries the meaning, the Example already shows the spelling,
+  and `de jure` is a second word that belongs on its own card. Four lines is the whole card.
+- **Word class lives in `Tags:`, not in a separate file.** `phrasal-verb` is a tag, not a
+  deck.
+- **The user's own sentence is the Example**, kept verbatim with the target bolded — the
+  word is recalled in the context they actually met it in.
+
+#### `tech-terms.md` — a distinct meaning inside a domain
 
 ```markdown
-TARGET DECK: Tech-KB::English Vocab::IT Terms
+TARGET DECK: English::Tech Terms
 
 START
 A_English_Translate
-To allocate and configure resources so they are ready for use
+To allocate and configure infrastructure automatically so it is ready to serve traffic
 English: to provision
-Russian: Выделять и настраивать ресурсы
+Russian: разворачивать, поднимать (сервер, окружение)
 Example: The platform automatically **provisions** a new VM when traffic spikes.
-Note: General English means "to supply." In IT: automated resource allocation and setup.
+Note: Everyday English means "to supply with what's needed" — provisioning a ship for a voyage. In IT the sense narrows to automated resource allocation and setup.
 Tags: cloud infrastructure
-<!--ID: 1770704985809-->
-END
-
-START
-A_English_Translate
-An operation that produces the same result no matter how many times it runs
-English: idempotent
-Russian: Идемпотентный
-Example: PUT requests should be **idempotent** — sending the same update twice won't create duplicates.
-Tags: api rest
-<!--ID: 1770704985811-->
 END
 ```
+
+What this one shows:
+
+- **The domain sense gets its own card** — the definition and example are framed entirely
+  inside cloud infrastructure, never split across two contexts.
+- **The `Note` points at the everyday sense** so the learner sees the link, but the card is
+  still tested on one meaning only.
+- **The Russian is what an engineer actually says** (`разворачивать`), not the dictionary
+  calque (`обеспечивать`).
+- **Tags name the domain** (`cloud`, `infrastructure`) rather than the part of speech.
 
 ---
 

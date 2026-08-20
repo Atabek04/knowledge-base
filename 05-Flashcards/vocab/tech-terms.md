@@ -236,6 +236,7 @@ Russian: плагин Maven для запуска юнит-тестов
 Example: If a test throws an unexpected exception, the **Maven Surefire Plugin** marks the build as failed and prints the stack trace.
 Note: Name comes from the adjective "surefire" (certain to succeed, from 1833 "a gun that fires reliably"). The plugin's job: never miss a test, always fire them all. Everyday English sense lives in the General deck.
 Tags: noun maven java build-tool
+<!--ID: 1787201883027-->
 END
 
 START
@@ -246,6 +247,7 @@ Russian: нехватка памяти; ошибка нехватки памят
 Example: The service crashed with an **OOM** error after loading the entire dataset into a list.
 Note: In Java: `java.lang.OutOfMemoryError`. Not JVM-specific — OS, Docker, and Kubernetes can also kill a process for the same reason.
 Tags: noun abbreviation java
+<!--ID: 1787201883029-->
 END
 
 START
@@ -256,4 +258,5 @@ Russian: выпустить, сгенерировать (токен, ключ)
 Example: The auth server **mints** a JWT after login, signing it with its private key.
 Note: From "mint coins". Key point for JWT with asymmetric signing (RS256/ES256): minting requires the **private** key — the public key only verifies. So a client that holds only the public key **cannot** mint a token the server will accept; forging one means faking a signature it can't produce. Everyday English sense lives in the General deck.
 Tags: verb security jwt crypto
+<!--ID: 1787201883031-->
 END

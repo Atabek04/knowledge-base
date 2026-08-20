@@ -201,6 +201,7 @@ Russian: придираться к мелочам; мелкая придирка
 Example: The code review was full of **nitpicks** about variable names — nothing about actual logic.
 Note: Mildly negative — implies the criticism is petty, not constructive. Used as verb ("stop nitpicking"), noun ("just a nitpick"), or adjective ("he's so nitpicky"). Very common in code reviews, writing, and design feedback.
 Tags: verb noun adjective informal
+<!--ID: 1787201883014-->
 END
 
 START
@@ -211,6 +212,7 @@ Russian: от этого слёзы на глаза наворачиваются
 Example: The contractor's quote **made my eyes water** — €80,000 just for the foundation.
 Note: Figurative only (literal = onions/smoke irritating eyes). Works for price, pain, statistics, punishment — anything extreme. Adjective form "eye-watering" is very common: "an **eye-watering** fine / workload / drop in temperature". British English, but widely understood.
 Tags: idiom figurative
+<!--ID: 1787201883016-->
 END
 
 START
@@ -221,6 +223,7 @@ Russian: верный, надёжный, беспроигрышный
 Example: Staying consistent with practice is a **surefire** way to improve your skills.
 Note: Adjective, always before a noun. Origin: 1833, from "sure to fire" — a gun that reliably discharges. Figurative sense: something that won't misfire. See also: Maven Surefire plugin (tests that are "sure to fire").
 Tags: adjective
+<!--ID: 1787201883018-->
 END
 
 START
@@ -231,6 +234,7 @@ Russian: чеканить (монеты); создавать, выпускать
 Example: The government **mints** new coins every year to replace worn-out ones.
 Note: Literal: a "mint" is the factory that stamps coins, so to mint = to stamp/produce currency. Figurative: to mint a phrase, a new word, freshly minted graduates. The IT/crypto sense (mint a token) lives in the Tech Terms deck.
 Tags: verb
+<!--ID: 1787201883021-->
 END
 
 START
@@ -241,6 +245,27 @@ Russian: суть, ключевой момент, самое главное
 Example: The **crux** of the matter is that only the server holds the secret key.
 Note: From Latin "crux" = cross, i.e. the crossing point where things resolve. Often "the crux of the matter / the argument / the problem". Points at the one thing that decides everything.
 Tags: noun
+<!--ID: 1787201883023-->
+END
+
+START
+A_English_Translate
+Existing or accepted as the real thing in practice, even though it was never officially declared or made official
+English: de facto
+Russian: фактический, по факту, на деле (хотя официально не закреплённый)
+Example: If the course slips badly, $20 becomes the **de facto** price and $29 loses credibility when it finally arrives.
+Tags: adjective adverb latin
+<!--ID: 1787201883025-->
+END
+
+START
+A_English_Translate
+Having a very strong, sharp smell or taste
+English: pungent
+Russian: острый, едкий (о запахе или вкусе)
+Example: The kitchen filled with the **pungent** smell of burnt garlic.
+Tags: adjective
+<!--ID: 1781846227180-->
 END
 
 START

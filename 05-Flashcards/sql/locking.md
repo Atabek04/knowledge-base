@@ -128,6 +128,7 @@ Back: A `@Transactional` method holds its **DB connection and row locks** from o
 - Slow/hung dependency → locks pile up, connections stay checked out, **pool drains**, whole service freezes
 - Rule: read + call external **before** opening the transaction; wrap only local writes
 Tags: sql spring transactions locking
+<!--ID: 1787201882973-->
 END
 
 START
@@ -137,6 +138,7 @@ Back: **read → external call (no tx) → open tx → write → commit.**
 - The external latency runs on your thread with **zero DB resources held**
 - The transaction opens and commits in milliseconds around the write only
 Tags: sql spring transactions locking
+<!--ID: 1787201882975-->
 END
 
 START
@@ -146,6 +148,7 @@ Back: **Self-invocation bypasses the Spring proxy.**
 - `@Transactional` is applied by a proxy wrapping the bean; a `this.method()` call skips it → annotation silently ignored, no transaction starts
 - Fix: put the write method in a **separate bean**, or use a `TransactionTemplate`
 Tags: sql spring transactions locking
+<!--ID: 1787201882977-->
 END
 
 START
@@ -155,6 +158,7 @@ Back: **Automatically at transaction end** — `COMMIT` or `ROLLBACK`.
 - No separate query, no unlock statement; the lock's lifetime *is* the transaction's
 - `@Lock` only appends `FOR UPDATE` to the generated `SELECT` — that's its whole mechanism
 Tags: sql spring jpa locking
+<!--ID: 1787201882979-->
 END
 
 START
@@ -164,4 +168,5 @@ Back: The lock's release point **is** the transaction boundary — with no trans
 - No active tx → Hibernate throws, or applies `FOR UPDATE` to an auto-commit statement that releases instantly → no protection
 - Corollary: a long transaction = a long-held lock; you control release by tx duration, not a call
 Tags: sql spring jpa locking
+<!--ID: 1787201882981-->
 END

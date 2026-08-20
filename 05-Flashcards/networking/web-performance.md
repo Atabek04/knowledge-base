@@ -9,6 +9,7 @@ The elapsed time from issuing a request to the arrival of the **first byte** of 
 
 It captures everything before the server can start streaming: redirects, cache/worker, DNS, TCP, TLS, and server processing. It is the canonical measure of server responsiveness — not full download or render time.
 Tags: networking http performance
+<!--ID: 1787201882941-->
 END
 
 START
@@ -19,6 +20,7 @@ Redirects → cache/service worker → DNS lookup → TCP connect → TLS handsh
 
 Server processing (routing, auth, DB queries, rendering) is usually the dominant and most actionable slice.
 Tags: networking http performance
+<!--ID: 1787201882943-->
 END
 
 START
@@ -29,6 +31,7 @@ It isolates the server from the frontend. A high TTFB points at the backend (slo
 
 It also gates every downstream metric — nothing renders before the first byte arrives, so TTFB sets the floor for FCP and Core Web Vitals.
 Tags: networking http performance
+<!--ID: 1787201882945-->
 END
 
 START
@@ -39,6 +42,7 @@ The bottleneck is the **response body** (download size or render), not the serve
 
 Conversely, a slow TTFB on a warm connection (DNS/TCP/TLS already paid) isolates the cause to server processing. Always ask which phase dominates before optimizing.
 Tags: networking http performance
+<!--ID: 1787201882946-->
 END
 
 START
@@ -49,4 +53,5 @@ Good ≤ 0.8s, poor > 1.8s (web pages).
 
 Backend API SLOs are usually far tighter — tens of milliseconds.
 Tags: networking http performance
+<!--ID: 1787201882948-->
 END

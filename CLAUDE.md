@@ -64,10 +64,13 @@ Limit to 4-5 colors maximum to avoid visual clutter.
 <mark style="background: #FFF3A3A6;">highlighted text</mark>
 ```
 
-**Bold inside highlights** — Obsidian does NOT render `**bold**` inside `<mark>` tags in edit mode (CM6 limitation, not a bug). Use `font-weight: bold` inline instead:
+**Bold inside highlights** — `**markdown bold**` never renders inside a `<mark>...</mark>` HTML block in this vault's editor; it shows as literal asterisks. Use a raw `<b>` tag instead — real HTML, not markdown syntax, so it isn't subject to that limitation:
 ```html
-<mark style="background: #FFF3A3A6; font-weight: bold;">bold highlighted text</mark>
+<mark style="background: #FFF3A3A6;">Plain highlighted text, <b>and this part bold</b>, all in one mark.</mark>
 ```
+Never use `font-weight: bold` on the `<mark>` style either — combined with anything nested it produces inverted/broken results. One `<mark>`, plain `background` only, `<b>` for whatever needs to be bold.
+
+**"==" (double equals) breaks Dataview rendering.** The Dataview plugin misparses a literal `==` anywhere in note text — even inside backticks or parentheses — as its inline-field syntax, producing a visible parse-error block instead of your text. Avoid the literal characters `==` entirely: say "reference identity" / "double-equals" / "the equality operator" instead of writing the symbol.
 
 **Color system (optimized for dark theme):**
 
@@ -76,6 +79,18 @@ Limit to 4-5 colors maximum to avoid visual clutter.
 - **Cyan/Blue** → Important connections, insights, linking ideas
 - **Pink/Red** → Warnings, common mistakes, critical edge cases
 - **Purple** → Questions for further study, unresolved items
+
+**Established hex values — reuse these exact codes, don't invent new ones:**
+
+| Color | Hex | Use |
+|---|---|---|
+| Yellow | `#FFF3A3A6` | Key concepts, definitions |
+| Cyan | `#ABF7F7A6` | Connections, insights (link-heavy) |
+| Light blue | `#ADCCFFA6` | Connections, insights (alt) |
+| Pink | `#FFB8EBA6` | Warnings, edge cases (alt) |
+| Red/pink | `#FF9E9EA6` / `#FF5582A6` | Warnings, critical mistakes |
+
+All use `A6` alpha (~65% opacity) — this is load-bearing, not cosmetic. `<mark>` renders with black text by default; a lower alpha (e.g. `4D`) or a more saturated base color drops contrast enough that the text becomes hard to read, especially on a dark theme. **Never invent a new hex value** — pick from the table above, or if a genuinely new shade is needed, derive it the same way: a light pastel base at `A6` alpha.
 
 **Rules:**
 - Highlight **after** writing, not during initial capture
@@ -118,6 +133,13 @@ Once the reader sees why the name fits, they can re-derive the concept from the 
 Applies to **live explaining too**, not just notes — when explaining a keyword/clause/command (`FOR UPDATE`, `SKIP LOCKED`), lean on its own words to make the behavior intuitive and memorable.
 
 ### Search Before Creating, Build Prerequisites First
+
+**Final linking pass is mandatory before a note is done.** Before considering any note finished, re-scan your own draft for every named sub-concept, keyword, or mechanism it mentions in passing (a term, a keyword, a related pattern) — not just the prerequisites it structurally depends on. For each one, search the vault:
+- **Note exists** → replace the inline explanation with a gloss-and-link (below) using an alias, and add the full title to `### Read more`. Never leave the same explanation duplicated in two notes when one could just link the other.
+- **No note exists, and the mention is more than a passing word** (it would earn its own atomic note if you stopped to write one) → create it first, prerequisite-first, then link it in. Don't let a real sub-concept stay a paragraph forever just because it was convenient to explain inline the first time.
+- **No note exists, and it's a true one-clause aside** → a short gloss with no link is fine; don't force a link that doesn't exist yet, but don't over-explain it either.
+
+This pass is what turns isolated notes into an actual Zettelkasten graph — skipping it produces technically-correct notes that don't connect to anything.
 
 **Before writing any atomic note, search the vault** (`grep -rli "<concept>" /mnt/d/obsidian/Knowledge-Base/`) — never start writing blind. The search serves two distinct purposes, and you must act on both:
 
@@ -230,7 +252,7 @@ All flashcard rules — syntax, deck hierarchy, question quality, vocab cards, A
 **Mandatory, proactive:** after **every** atomic note is created and mapped to a MOC, immediately create its flashcards — don't wait to be asked. Likewise, when a new `[[]]` linked note is added to a MOC chapter that already has a flashcard file, add its cards to that file right away. Notes and cards stay in lockstep.
 
 - Tech cards → `05-Flashcards/{topic}/{subtopic}.md`, deck `Tech-KB::{Category}::{Topic}`
-- Vocab cards (user sends a sentence + asks what a word means) → `05-Flashcards/vocab/{category}.md`, deck `Tech-KB::English Vocab::{Category}`
+- Vocab cards (user sends a sentence + asks what a word means) → `05-Flashcards/vocab/general.md` (deck `English::General`) or `05-Flashcards/vocab/tech-terms.md` (deck `English::Tech Terms`) — two files only, split by context
 - [Remove IDs](scripts/remove-flashcard-ids.sh) — strip all `<!--ID: ...-->` before re-syncing with Anki
 - [Sync without Obsidian](scripts/anki_sync.py) — run `python scripts/anki_sync.py` to push all flashcard changes to Anki directly from the terminal, no Obsidian UI needed. Use this when Obsidian isn't open or when batch-syncing after editing many files at once.
 
