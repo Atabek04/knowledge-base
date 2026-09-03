@@ -4,6 +4,17 @@ Paper source. This MOC tracks reading progress only; finished atomic notes live 
 
 ---
 
+## Sources
+
+| What | Where | Used for |
+|------|-------|----------|
+| The book, on paper | physical copy | **The read.** This is the only source that counts as reading. |
+| PDF | `Assets/Books/Designing-Data-Intensive-Applications.pdf` | Search and exact quotes only — never the read-through. |
+| Third-party chapter notes | [github.com/ps06756/Designing-Data-Intensive-Applications](https://github.com/ps06756/Designing-Data-Intensive-Applications) | Cross-check **after** the interview. Opening it before turns retrieval into recognition and the whole loop is wasted. |
+| Schedule + pacing | `Ribaat/06-Planning/Topics/DDIA - Reading Plan.md` | Which chapter, which month. Ribaat holds the *schedule* only, no DDIA content. |
+
+---
+
 ## Workflow
 
 - **While reading** — margin symbols only: `?` (don't get it), `!` (counterintuitive / trade-off), `→X` (links to something I already know). No prose in margins.
