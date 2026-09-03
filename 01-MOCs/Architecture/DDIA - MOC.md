@@ -7,9 +7,14 @@ Paper source. This MOC tracks reading progress only; finished atomic notes live 
 ## Workflow
 
 - **While reading** — margin symbols only: `?` (don't get it), `!` (counterintuitive / trade-off), `→X` (links to something I already know). No prose in margins.
-- **End of session** — dump every margin mark into `00-Inbox/DDIA Ch{N} — {title}.md` as bullets with page refs. `?` items go under `### Open questions`.
-- **End of chapter** — resolve the `?` list, then atomize within that chapter's note budget, route each note to its topic MOC, and generate flashcards.
+- **End of session** — write **questions only** into `00-Inbox/DDIA Ch{N} — {title}.md`, with page refs. No summary, no recall prose: the book and the notes repo already state it better than I would.
+- **End of chapter — the interview.** Hand the questions file to the agent. It answers them first, then quizzes me on the chapter **closed book, before I open the notes repo or re-read**. An interview run after re-reading measures recognition, not memory.
+- **Cards from the interview misses only** — never a card pass over the whole chapter.
+- **Atomize what held up**, within the chapter's note budget, routed to its topic MOC.
 - **Delete the inbox file** once atomized — no parallel truth.
+
+> The `/teach` skill runs the interview — Socratic, one concept at a time, persisting each concept before advancing.
+> Cross-check afterwards against [ps06756/Designing-Data-Intensive-Applications](https://github.com/ps06756/Designing-Data-Intensive-Applications) — after the interview, never before.
 
 ---
 
