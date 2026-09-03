@@ -53,7 +53,7 @@ run(greet)  # "Hi, Atabek"
 
 ### Java
 
-Java has no true first-class functions. The workaround is **functional interfaces** — interfaces with exactly one abstract method (`@FunctionalInterface`). A lambda is syntactic sugar for an anonymous class implementing that interface.
+Java has no true first-class functions. The workaround is [[A Java functional interface has exactly one abstract method — default and static methods don't count toward that limit|functional interfaces]] — interfaces with exactly one abstract method — filled in by [[A Java lambda is an anonymous object implementing a functional interface's single abstract method, not a value of a function type|a lambda]], an anonymous object implementing that one method.
 
 ```java
 Function<String, String> greet = name -> "Hi, " + name;
@@ -65,8 +65,6 @@ static String run(Function<String, String> fn) {
 run(greet);  // "Hi, Atabek"
 ```
 
-<mark style="background: pink">**Common pitfall:**</mark> Java lambdas are not functions — they are objects. `Function<A, B>` is a type; the lambda `name -> ...` creates an instance of it. This matters when reasoning about identity (`==`) and serialization.
-
 ---
 
 ### Read more
@@ -74,3 +72,5 @@ run(greet);  // "Hi, Atabek"
 - [[Strategy pattern in Python uses a first-class function as the strategy]]
 - [[Strategy pattern in Java is an interface implemented by interchangeable algorithm classes]]
 - [[Kotlin typealias creates a readable alias for an existing type without creating a new class]]
+- [[A Java functional interface has exactly one abstract method — default and static methods don't count toward that limit]]
+- [[A Java lambda is an anonymous object implementing a functional interface's single abstract method, not a value of a function type]]

@@ -45,7 +45,9 @@ tags: [moc, java]
 - [[The equals contract requires reflexive, symmetric, transitive, and consistent|The equals() contract: 5 clauses]]
 - [[Equal objects must return equal hash codes|hashCode contract: equal objects, equal hashes]]
 - [ ] Encapsulation, Inheritance, Polymorphism
-- [ ] Abstract classes vs Interfaces
+- [[Java interfaces define a contract with no state, while abstract classes can hold state and partial implementation|Abstract classes vs Interfaces — contract-only vs shared state + partial implementation]]
+- [[Java interface default methods carry a body so existing implementers don't break when the interface gains a new method|Interface default methods — add a method without breaking existing implementers]]
+- [[Java interface static methods belong to the interface's own namespace, not to any implementing class|Interface static methods — belong to the interface, not to implementers]]
 - [ ] Composition over inheritance
 - [ ] `final`, `static`, `abstract` keywords
 - [ ] Nested vs inner vs anonymous vs local classes
@@ -124,8 +126,9 @@ tags: [moc, java]
 - [[Comparable defines a type's natural ordering through compareTo()|Comparable: natural ordering via compareTo()]]
 - [[Comparator defines interchangeable orderings external to a class|Comparator: external, swappable orderings]]
 - [[Stream.sorted() orders a stream by natural ordering or a Comparator|Stream.sorted() orders by Comparable or Comparator]]
-- [ ] Lambda expressions
-- [ ] Functional interfaces (Function, Predicate, Consumer, Supplier)
+- [[A Java lambda is an anonymous object implementing a functional interface's single abstract method, not a value of a function type|Lambda — an anonymous object implementing one functional interface method]]
+- [[A Java functional interface has exactly one abstract method — default and static methods don't count toward that limit|Functional interface — exactly one abstract method; default/static don't count]]
+- [[A Java lambda closure captures references to variables from its enclosing scope, which must be final or effectively final|Closure — captures enclosing-scope variables, which must be final or effectively final]]
 - [ ] Method references
 - [ ] Stream API (intermediate vs terminal operations)
 - [ ] Optional (proper usage, anti-patterns)
@@ -136,9 +139,19 @@ tags: [moc, java]
 
 ## Concurrency
 
+### Prerequisites
+
+- [[A Java functional interface has exactly one abstract method — default and static methods don't count toward that limit|Functional interface — exactly one abstract method; default/static don't count]]
+- [[A Java lambda is an anonymous object implementing a functional interface's single abstract method, not a value of a function type|Lambda — an anonymous object implementing one functional interface method]]
+- [[A Java lambda closure captures references to variables from its enclosing scope, which must be final or effectively final|Closure — captures enclosing-scope variables, which must be final or effectively final]]
+- [[Each Java thread has its own call stack, so a local variable is never directly visible to another thread|Per-thread stacks — why a local variable is invisible across threads]]
+
 ### Threading Basics
 
-- [ ] Thread creation (Thread class, Runnable, Callable)
+<!-- Teaching Progress: Executor & ThreadPoolTaskExecutor track — landed Thread/Runnable + start() vs run(). Next: why raw threads don't scale → Executor. -->
+
+- [[Thread.start() launches a new OS thread asynchronously, while calling run() directly executes synchronously on the caller's thread|Thread + Runnable — start() spins up a new thread, run() just blocks like any method]]
+- [ ] Callable — a Runnable that returns a value and can throw
 - [ ] Thread lifecycle and states
 - [ ] Thread priorities
 - [ ] Daemon vs user threads
@@ -203,12 +216,13 @@ tags: [moc, java]
 
 ### Thread Safety Patterns
 
+- [[Each Java thread has its own call stack, so a local variable is never directly visible to another thread|Per-thread stacks — why a local variable is invisible across threads]]
+- [[A plain shared variable's write is not guaranteed to be visible to another thread without synchronization|Visibility — a write isn't guaranteed visible to another thread without synchronization]]
 - [[Java ThreadLocal stores per-thread values to isolate state in concurrent environments|ThreadLocal: per-thread isolated state]]
 - [ ] Immutability
 - [ ] Thread confinement
 - [ ] Safe publication
 - [ ] Happens-before relationship
-- [ ] Memory visibility
 
 ### Virtual Threads
 
