@@ -7,6 +7,29 @@ Tags: grammar
 
 START
 English Card
+How is the present continuous formed?
+Back: **am / is / are + -ing**
+- **I** am *(I'm)*
+- **he / she / it** is *(he's)*
+- **we / you / they** are *(we're)*
+- The auxiliary carries the person and the tense; **-ing never changes**
+Tags: grammar present-continuous
+<!--ID: 1788632245154-->
+END
+
+START
+English Card
+When do you use the present continuous? *(three uses)*
+Back: **1 — Now.** Started and unfinished, whether or not it is happening as you speak.
+- **2 — A period around now**: *today · this week · this year*
+- **3 — A change in progress**: getting, becoming, changing, improving, starting, rising, falling, growing
+- All three share one idea: **something is in the middle of happening**. The present simple states what is permanent or habitual instead
+Tags: grammar present-continuous
+<!--ID: 1788632245164-->
+END
+
+START
+English Card
 What does *I am doing* mean, and must the action be happening as you speak?
 Back: **I started it and I have not finished — I am in the middle of it.**
 - It does **not** have to be happening at the moment of speaking
@@ -54,6 +77,28 @@ Explanation: A **change that has started to happen** → present continuous.
 - Verbs that behave this way: **getting, becoming, changing, improving, starting, beginning, increasing, rising, falling, growing**
 Tags: grammar present-continuous
 <!--ID: 1788632093625-->
+END
+
+START
+English Grammar
+'Where's Mark?' 'He {1:'s having} (have) a shower.'
+Explanation: *have* here is an **action**, not a state, so it takes the continuous.
+- *He has a shower* would mean the bathroom contains one, or that he showers habitually
+- Action *have* — a shower, lunch, a break, a good time — behaves like any other verb
+- State *have* — meaning **own** — never takes the continuous: *I have a car*, never *I'm having a car*
+Tags: grammar present-continuous
+<!--ID: 1788632245171-->
+END
+
+START
+English Grammar
+Is your English {1:getting} better?
+Explanation: A change in progress → continuous, and questions keep that form.
+- *Does your English get better?* asks about a habit, which makes no sense of a change
+- Question order is **auxiliary + subject + -ing**: *is your English getting*, *are you enjoying it*
+- The auxiliary moves; the **-ing form never does**
+Tags: grammar present-continuous
+<!--ID: 1788632245176-->
 END
 
 START
