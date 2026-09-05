@@ -16,5 +16,5 @@ Source: [Derwing & Munro, *Language Learning* (1995)](https://onlinelibrary.wile
 
 ### Read more
 - [[IELTS penalises the effect of an accent on intelligibility not the accent itself]]
-- [[Consonant cluster epenthesis is the one segmental fix worth study time for a Turkic first language]]
+- [[Final obstruent devoicing is the one segmental fix worth study time for a Russian first language]]
 - [[Speaking band 7 pronunciation is defined only as sitting between band 6 and band 8]]

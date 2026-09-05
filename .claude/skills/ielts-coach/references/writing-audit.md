@@ -125,6 +125,52 @@ a lapse. Report the dominant category by name.
 
 For this user the dominant category is very likely articles. See `l1-priors.md`.
 
+#### Range is half the criterion — audit it as an inventory, not an impression
+
+The criterion is *Range* **and** *Accuracy*, and a perfectly accurate essay built from six
+sentence patterns is capped by the range half. Band 7 wants *"a variety of complex
+structures"*; band 8 wants *"a wide range of structures"*. Neither is measurable by feel, so
+**take an inventory**: go through the essay and tick which of these actually appear, with the
+sentence number where each does.
+
+- Relative clauses — defining, non-defining, and *which* referring to a whole clause
+- Adverbial subordination — *although*, *while*, *whereas*, *since*, *unless*
+- Conditionals — real, unreal, and mixed
+- Participle clauses — *Having risen sharply, the figure...*, *...leaving many unemployed*
+- Passive voice, especially agentless, and passive reporting (*it is widely argued that*)
+- Cleft sentences — *What drives this is...*, *It is X that...*
+- Nominalisation — *the introduction of the policy* rather than *the policy was introduced*
+- Noun complement clauses — *the fact that*, *the extent to which*, *the claim that*
+- Comparative and degree structures — *far more likely*, *twice as many*, *the higher the...*
+- Modal stacking and hedging — *may well have*, *would be unlikely to*
+- Fronting and inversion — *Only when...*, *Not only... but also*
+- Perfect and perfect-continuous aspect, especially in Task 1 trend description
+
+Report the inventory as a plain list of **present** versus **absent**, and then name two or
+three absent structures the essay's own content had an obvious slot for. That last part is
+what makes it actionable: *"paragraph 3 contrasts two groups across four sentences and never
+once uses whereas or a comparative — that slot was free"* is a usable instruction; *"widen
+your range"* is not.
+
+Absent-but-unused is a finding. Absent-and-attempted-badly is a different finding and
+belongs under Accuracy — never merge them, because the fixes are opposites: one needs new
+structures introduced, the other needs an existing one drilled until it is safe.
+
+#### Naming the grammar to study
+
+Close the criterion by converting both halves into study targets, and be specific enough that
+the user can find them in a grammar book:
+
+- **From Accuracy** — the dominant error category, named as a grammar topic rather than as a
+  symptom. *"Articles: generic reference and zero article with uncountables"*, not *"article
+  mistakes"*.
+- **From Range** — the highest-value absent structure, chosen by how often the essay had a
+  slot for it, not by how impressive it sounds.
+
+Two topics per audit, never more. Point at the specific units in *Cambridge Grammar for
+IELTS* or *Advanced Grammar in Use* if the user asks where to read; the coach's job is to
+name the topic, not to teach the unit inline.
+
 ## Output format
 
 Use this structure. It stays scannable and keeps the evidence next to every claim.
@@ -147,6 +193,16 @@ Error-free sentences: 14 of 22.
 Dominant error category: articles (7 of 8 flagged sentences).
 > [quote] — missing definite article before a specific referent
 > [quote] — generic plural taking "the"
+
+Range inventory
+Present: relative clauses (s3, s11) · although/whereas (s7) · agentless passive (s14)
+Absent: conditionals · participle clauses · cleft · nominalisation · fronting
+Slots left free: s9–s12 contrast two groups with no comparative structure; s5 states a cause
+in two sentences where a participle clause would join them.
+
+Grammar to study
+- Accuracy: articles — generic reference, and zero article with uncountables
+- Range: participle clauses
 
 ## The one thing to fix next
 [a single named habit, with the reason it was chosen]

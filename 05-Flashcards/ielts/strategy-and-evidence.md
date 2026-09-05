@@ -12,7 +12,7 @@ Back: **Writing**, and the margin is large.
 - Academic mean by skill: L 6.40 · R 6.31 · S 5.99 · **W 5.93** — the only skill under 6.0
 - Lowest of the four for **33 of 40** first-language groups
 - **Native English speakers average 6.49 in Writing** (vs 7.40 Reading)
-- Kazakh L1: W 5.79 · Uzbek L1: W 5.79 — Reading is the strongest skill for both
+- Russian L1: L 6.70 · R 6.91 · **W 6.02** · S 6.46 — Reading strongest, Writing weakest
 Tags: ielts strategy
 <!--ID: 1788608936443-->
 END

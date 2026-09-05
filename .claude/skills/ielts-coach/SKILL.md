@@ -16,7 +16,7 @@ argument-hint: "[audit | log | drill | speak] + the essay, answers, or transcrip
 # IELTS Coach
 
 The user is preparing for IELTS Academic, target **overall 8.0**, computer-delivered,
-Astana, February 2027. Kazakh/Uzbek first language. ~6 hours a week.
+Astana, February 2027. Russian first language. ~6 hours a week.
 
 The strategy the whole plan rests on: overall band is the mean of four sections, so 8.0
 needs the four to **sum to 31**, not four 8s. The route is **L 8.5 · R 8.5 · S 7.5 · W 7.0**.
@@ -121,7 +121,7 @@ something between sessions, it goes in the log.
 
 ## The user's first language shapes the priors
 
-Kazakh/Uzbek L1 makes certain errors far more likely, and knowing them changes where to
+Russian L1 makes certain errors far more likely, and knowing them changes where to
 look first rather than what to conclude. Read `references/l1-priors.md` before an audit or
 a transcript review. Use it to prioritise the search — never to assert an error you have
 not actually found in the text.

@@ -1,8 +1,12 @@
-# First-language priors: Kazakh / Uzbek
+# First-language priors: Russian
 
 These are search priorities, not conclusions. They tell you where to look first in an essay
 or transcript. Never assert an error you have not actually located in the user's text — a
 prior that becomes an assumption is how a coach starts inventing faults.
+
+For calibration: Russian-L1 Academic means are L 6.70 · R 6.91 · W 6.02 · S 6.46, overall
+6.59. Reading is the strongest skill and Writing the weakest — the same shape as the global
+data, and the reason this plan drives L/R to their ceiling rather than fighting Writing.
 
 ## Articles — the dominant category, by a distance
 
@@ -10,8 +14,8 @@ In NUCLE (1,397 annotated learner essays, 27 error types) determiners and articl
 **single largest category: 14.8% of all annotated errors**, rising to 19.9% in the blind
 test set. That corpus is dominated by article-less first languages, so the finding is about
 the *absence of an article system* rather than any one language. Tested directly: given the
-same English article task, L1-German learners rarely misused articles while L1-Russian
-learners fluctuated.
+same English article task, L1-German learners rarely misused articles while **L1-Russian
+learners fluctuated** — this prior is evidenced on Russian specifically, not inferred.
 
 Why it matters disproportionately here is arithmetic, not severity. Article slips are
 **distributional** — roughly one opportunity per noun phrase, several per sentence — so they
@@ -39,37 +43,56 @@ Articles also touch Coherence and Cohesion, not only grammar: the official crite
 feature. So a definite article used to point back at something already introduced is doing
 cohesion work, and getting it wrong costs twice.
 
+## Present-tense copula omission
+
+Russian has no present-tense *to be*, so it is the one word most likely to be dropped
+outright: *He student*, *This very important*, *The main reason unemployment*. Rarer in
+careful writing than in Speaking, but it is a hard error when it appears — check every
+subject-complement clause in a transcript.
+
+## Perfect aspect
+
+Russian marks aspect on the verb itself and has no structural equivalent of the perfect, so
+*have done* is either avoided altogether or used where a past simple belongs. Two things to
+look for: a Task 2 body paragraph that never leaves the past simple, and *since 1990, the
+number increased*. Task 1 trend description is where this surfaces most.
+
 ## Prepositions and countability
 
-Sitting right behind articles, same L1 cause, same distributional shape. Worth naming in an
-audit when the count is high, but articles come first.
+Sitting right behind articles, same distributional shape — Russian case endings map onto
+English prepositions unevenly, so *depend from*, *in the same time*, *discuss about*. Worth
+naming in an audit when the count is high, but articles come first.
 
-## Speaking: consonant cluster epenthesis
+## Word order
 
-Turkic languages prefer consonant-vowel syllable structure, so English clusters get a vowel
-inserted to break them — *sport* → *siport*, *strong* → *sitrong*. Documented for both Uzbek
-and Turkish learners of English.
+Russian word order is free because case marks the roles; English word order is doing the
+grammatical work. Fronted or inverted constituents that read as marked-for-emphasis in
+English are often just transferred Russian order. Flag only when it actually obscures the
+subject — otherwise it costs nothing.
 
-This is the costliest sound-level habit because it does not merely alter a phoneme, it
-**adds a syllable** — the word's stress pattern changes, and disrupted rhythm is penalised
-directly in the descriptors.
+## Speaking: final obstruent devoicing
+
+Russian devoices final consonants, so *bed* → *bet*, *bag* → *back*, *prove* → *proof*. It
+is the one segmental habit here that creates real minimal-pair confusion, which is the test
+for whether a sound is worth study time at all.
 
 You cannot detect this in a transcript. Raise it only when the user reports it, asks about
 pronunciation priorities, or is planning speaking practice.
 
-## Speaking: word stress placement
+## Speaking: intonation range
 
-Turkic stress defaults to the final syllable; English stress is lexically fixed and
-variable. Misplaced stress is a major driver of listener effort, and stress is named
-directly in the descriptors. The fix is procedural: learn stress *with* each new word rather
-than after it.
+Russian statement intonation uses a narrower pitch range and a sharper terminal fall than
+English, which reads to an examiner as flat, abrupt, or unengaged across long turns. This is
+prosodic, so it sits directly in the band 8 Pronunciation bullets — and it is a higher-yield
+target than any individual sound.
 
 ## What to deprioritise
 
-Missing phonemes — /θ/, /ð/, /ʒ/, and the *ship*/*sheep* vowel-length contrast — come last,
-and only where they produce a real minimal-pair confusion. **Consistently substituting these
-is compatible with band 8**, because they do not cost intelligibility, and the band 8
-descriptor states that accent has minimal effect on intelligibility.
+Missing phonemes — /θ/, /ð/, /w/ realised as /v/, and the *ship*/*sheep* vowel-length
+contrast — come last, and only where they produce a real minimal-pair confusion.
+**Consistently substituting these is compatible with band 8**, because they do not cost
+intelligibility, and the band 8 descriptor states that accent has minimal effect on
+intelligibility.
 
 If the user proposes spending study time on accent reduction, say why it is a poor trade:
 every band-8 Pronunciation bullet is prosodic — sustained rhythm, flexible stress and
@@ -81,6 +104,5 @@ IELTS is entirely spontaneous speech.
 ## The relevant vault notes
 
 `[[Articles are the largest error category for writers whose first language has no article system]]` ·
-`[[Consonant cluster epenthesis is the one segmental fix worth study time for a Turkic first language]]` ·
 `[[Prosodic pronunciation training transfers to spontaneous speech while segmental training does not]]` ·
 `[[Band 8 grammar means the majority of sentences are error-free while band 7 needs only frequent ones]]`

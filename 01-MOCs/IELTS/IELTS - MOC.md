@@ -3,7 +3,7 @@ created: 2026-09-04
 tags: [moc, ielts]
 ---
 
-IELTS Academic, target band 8.0, sitting February 2027 in Astana. Everything here is written for that one target and that one profile — a Kazakh/Uzbek first language, roughly six hours a week, and a starting level that is unmeasured until the diagnostic in week 1.
+IELTS Academic, target band 8.0, sitting February 2027 in Astana. Everything here is written for that one target and that one profile — a Russian first language, roughly six hours a week, and a starting level that is unmeasured until the diagnostic in week 1.
 
 The map below runs in the order the work actually happens: understand how the score is built, then what each section penalises, then how to prepare and how to trust your own feedback, then the evidence about where the ceiling is, then the logistics.
 
@@ -64,7 +64,7 @@ Speaking is rated on average performance across all three parts, and the criteri
 - [[Speaking band 7 pronunciation is defined only as sitting between band 6 and band 8|There is no band 7 pronunciation descriptor — you train the band 8 list]]
 - [[IELTS penalises the effect of an accent on intelligibility not the accent itself|Accent is not penalised; listener effort is]]
 - [[Prosodic pronunciation training transfers to spontaneous speech while segmental training does not|Prosody transfers to spontaneous speech; segmental drilling does not]]
-- [[Consonant cluster epenthesis is the one segmental fix worth study time for a Turkic first language|Cluster epenthesis adds a syllable and wrecks stress — the one sound fix worth doing]]
+- [[Final obstruent devoicing is the one segmental fix worth study time for a Russian first language|Final devoicing turns bed into bet — the one sound fix worth doing]]
 - [[Speaking topic prediction lists are a coverage map rather than a leak|Forecast lists are a coverage map, never a script bank]]
 - [[IELTS Speaking stays face-to-face with a live examiner in both computer-delivered and paper formats|Speaking is face-to-face in both formats; video-call scores differ negligibly]]
 

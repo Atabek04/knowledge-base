@@ -10,7 +10,7 @@ Writing is the lowest of the four skills for 33 of the 40 first-language groups 
 
 The number that calibrates the difficulty: <mark style="background: #FFF3A3A6;">first-language English speakers average 6.49 in Writing</mark>. Writing 8 is therefore not gated on English proficiency — it is gated on compliance with a rubric that most fluent speakers also fail.
 
-For the relevant L1s: Kazakh speakers average L 6.24 / R 6.44 / W 5.79 / S 6.08; Uzbek speakers L 5.95 / R 6.33 / W 5.79 / S 5.82. <mark style="background: #ADCCFFA6;">In both, Reading is the strongest skill and Writing the weakest</mark> — which is the same shape as the global data and points to the same strategy.
+For the relevant L1: Russian speakers average L 6.70 / R 6.91 / W 6.02 / S 6.46, overall 6.59. <mark style="background: #ADCCFFA6;">Reading is the strongest skill and Writing the weakest</mark> — the same shape as the global data, pointing to the same strategy.
 
 IELTS does **not** publish per-skill band distributions, so any figure for "what percentage get Writing 8" is unsourced.
 

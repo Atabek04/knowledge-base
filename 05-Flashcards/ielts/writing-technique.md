@@ -84,7 +84,7 @@ END
 
 START
 English Card
-Why do articles matter so much for a Turkic or Slavic L1 writer at the 7→8 boundary?
+Why do articles matter so much for a Russian L1 writer at the 7→8 boundary?
 Back: They are the **largest single learner error category** — 14.8% of all annotated errors in NUCLE (19.9% in the blind set).
 - L1-German learners rarely misuse articles; L1-Russian learners fluctuate — the contrast is the article system itself
 - The damage is **distributional**: ~1 opportunity per noun phrase, so slips contaminate sentences even when syntax is perfect

@@ -30,22 +30,22 @@ END
 
 START
 English Card
-For a Turkic L1 speaker, what pronunciation work actually pays, and what doesn't?
+For a Russian L1 speaker, what pronunciation work actually pays, and what doesn't?
 Back: **Prosody pays; accent reduction does not.**
 - Derwing & Munro: global/prosodic instruction improved spontaneous speech; segmental instruction only improved **read-aloud** and didn't transfer
 - IELTS is entirely spontaneous, and every band-8 Pronunciation bullet is prosodic
-- Order: chunking + sentence stress + weak forms → word stress on your own vocabulary → **cluster epenthesis** (*sport* → *siport*) → /θ ð ʒ/ last
+- Order: chunking + sentence stress + weak forms → widen the pitch range → **final devoicing** (*bed* → *bet*) → /θ ð w/ last
 Tags: ielts speaking
 <!--ID: 1788608936322-->
 END
 
 START
 English Card
-Why is consonant-cluster epenthesis the one segmental error worth drilling?
-Back: Because it **adds a syllable**, it doesn't just change a sound.
-- Turkic languages prefer CV structure → *strong* becomes *sitrong*
-- The added syllable changes the word's stress pattern, and disrupted rhythm is penalised directly in the descriptors
-- Second L1 transfer worth fixing: Turkic stress defaults to **final** syllable; English stress is lexically fixed — learn stress *with* each word
+Why is final obstruent devoicing the one segmental error worth drilling?
+Back: Because it produces a **real minimal pair**, not an accented version of the word.
+- Russian devoices word-final obstruents → *bed* becomes *bet*, *prove* becomes *proof*
+- The listener cannot recover which word was said — that, not distance from the native sound, is the test for whether a segment is worth study time
+- Second L1 transfer worth fixing: Russian uses a **narrower pitch range** and a sharper final fall → reads as flat or abrupt across a long turn
 Tags: ielts speaking
 <!--ID: 1788608936347-->
 END

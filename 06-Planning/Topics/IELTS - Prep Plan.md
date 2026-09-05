@@ -37,6 +37,8 @@ That end-state decomposes into an arithmetic condition, not four conditions. The
 
 | Track | Work to be done | Rate |
 |---|---|---|
+| Grammar | Murphy, 117 of its 145 units, in book order minus a declared skip list | **7 units/week**, Oct–Jan |
+| Anki | Collocations in Use, 18 units chosen for IELTS yield — production prompts, not definitions | 1 unit/week + 15 min review **daily** |
 | Listening | Close the raw-mark gap from the diagnostic; error-category drilling | ~1 full section + 1 review per week |
 | Reading | Same, concentrated on the one or two failing question types | ~1 full passage set + 1 review per week |
 | Writing | **8–12 essays marked externally and rewritten** | 1 marked-and-rewritten essay per fortnight |
@@ -44,6 +46,125 @@ That end-state decomposes into an arithmetic condition, not four conditions. The
 | Review | Error log, descriptor re-reads, mock post-mortems | ~1 h per week, non-negotiable |
 
 The marked-essay count is the rate that actually binds. Below about six the pattern is unreadable; above twelve it repeats ([[A marked essay only changes a score when it is rewritten after the feedback|why]]). Twelve essays across 22 weeks is one per fortnight with two spare slots — that is the schedule's backbone, and everything else flexes around it.
+
+The Anki row sits outside the 6 hours. Fifteen minutes daily is dead time — commute, queue, after fajr — and it is the only track that runs seven days a week.
+
+---
+
+## The grammar track
+
+This track exists because of one declared fact: <mark style="background: #FF5582A6;">the working tense inventory is Present Simple, Present Continuous and Past Simple.</mark> That is the plan's binding constraint, not vocabulary and not test technique.
+
+Band 7 Grammatical Range and Accuracy asks for *a variety of complex structures*; band 8 asks for *a wide range*. Three tenses cannot produce either at any vocabulary level, and no amount of practice testing manufactures a structure the writer does not have. Vocabulary without structure has nowhere to sit — which is why grammar runs first and vocabulary runs alongside it rather than before it.
+
+#### The arithmetic, because it decides the shape
+
+*English Grammar in Use* fifth edition is **145 units**. October to January is about 17.5 study weeks. Cover to cover at four units a week covers 70 of them — under half the book, ending somewhere in the middle of relative clauses with the exam six weeks away. <mark style="background: #FF9E9EA6;">"Read Murphy cover to cover" is not a schedule that fits in this calendar, and stating it as one is how a track silently fails in December.</mark>
+
+So the book is cut to **117 units at 7 a week** (~60 min), which finishes in January with the tail as slack.
+
+**The 28 units that are skipped, and why**
+
+| Units | What | Why it goes |
+|---|---|---|
+| 1–5 | Present simple, present continuous, past simple | Already the working inventory. Do the exercises only if the diagnostic flagged an error here |
+| 49–52 | Questions, auxiliary verbs, question tags | Speaking-only, and already functional. Nothing in Writing tests them |
+| 77–78 | Names with and without *the* | Proper-noun article rules; near-zero yield in an essay |
+| 121–128 | Prepositions of time and place (*at/on/in*) | Mostly known, and the errors they produce are cheap. Units 129–136 — noun/adjective/verb + preposition — are the ones that actually cost marks, and those stay |
+| 137–145 | Phrasal verbs | Informal register, wrong for Task 2. Speaking-only, and below every other track in priority |
+
+#### Month by month
+
+**October — units 6–37 (32 units).** Tense and aspect first, because it is the largest hole. Present perfect and present perfect continuous (7–12), perfect versus past (13–16), past perfect (15–16), *used to* (18), the whole future block (19–25), then modals (26–37).
+
+By 31 October the perfect is available in writing. That is what Task 1 trend description needs and what three tenses cannot do.
+
+**November — units 38–48 and 53–71 (30 units).** Conditionals and *wish* (38–41) — the highest-value complex structure for Task 2 argument. Then the passive including reporting passives *it is said that…* (42–46), reported speech (47–48), the long *-ing and to…* block (53–68), and countable/uncountable nouns (69–71).
+
+Unit 68, *-ing clauses*, is the participle clause the essay audit keeps naming as absent. Mark it.
+
+**December — units 72–76, 79–97, 98–104 (31 units).** The article block (72–76) — the largest single error category for a Russian-L1 writer, and the one the audit checks first. Then singular/plural and noun + noun (79–81), pronouns and determiners (82–91), **relative clauses (92–96)**, *-ing* and *-ed* clauses (97), adjectives and adverbs (98–104).
+
+December is the densest month of the track and the one most likely to be lost to the year's close. It carries articles and relative clauses — the two blocks with the highest yield in the whole book.
+
+**January — units 105–120 and 129–136 (24 units), then the Study Guide.** Comparatives and word order (105–112), conjunctions *although / in spite of / unless / as long as* (113–120), and the preposition-collocation units (129–136).
+
+Then sit **Murphy's own Study Guide (p. 326)**. It maps wrong answers to unit numbers — redo only what it flags. This is the pass that turns recognition back into a check.
+
+**February — nothing new.** Reviews only.
+
+<mark style="background: #ADCCFFA6;">Nine units are dropped if the month runs short, never seven a week turned into three.</mark> A month at half rate quietly moves the whole schedule; a declared cut does not.
+
+**Reference only, at any point.** Advanced Grammar in Use and Swan get opened when an essay audit names a topic — never read in sequence. *Cambridge Grammar for IELTS* is not owned and is not required; Murphy plus the marked-essay loop covers the same ground, and the essay loop is what supplies the under-time production the Hopkins book would have.
+
+<mark style="background: #ADCCFFA6;">A grammar unit is finished when the structure appears in your own essay unprompted, not when the exercises are ticked.</mark> Recognition and production are different skills, and only the second is scored ([[Band 8 grammar means the majority of sentences are error-free while band 7 needs only frequent ones|why it is production that counts]]).
+
+---
+
+## The daily Anki loop
+
+Fifteen minutes a day, every day, from W2. It carries vocabulary and collocation; it does **not** carry grammar.
+
+<mark style="background: #FF5582A6;">A card whose front is a word and whose back is a definition builds recognition and nothing else.</mark> Recognition is far cheaper to acquire than production and does not convert into it — which is the mechanism behind the familiar profile of a large passive vocabulary stuck at band 6.5. The card has to ask for output.
+
+```
+✗  Front: What does "pose a threat" mean?
+✓  Front: pollution · pose · threat — write the sentence
+   Back:  Pollution poses a serious threat to public health.
+          [verb + noun collocation; "pose" takes threat / risk / challenge / problem]
+```
+
+**One unit per week, made after doing that unit's exercises** — never generated from a wordlist that has not been worked through. Seventeen study weeks means **18 units of the book's 60**, so which 18 is the whole decision.
+
+*English Collocations in Use Intermediate* is organised by topic, and most of its topics are conversational (Music, Ways of walking, Taste and smell). Those are not the units that score. The selection below is ordered by what a Task 2 essay and a Part 3 answer actually need.
+
+**October — the machinery of academic sentences**
+- 32 · Academic writing 1 — *key factor, challenge a theory, carry out research*
+- 33 · Academic writing 2 — *make reference to, argue convincingly, research suggests*
+- 6 · Intensifying adverbs — *highly unlikely, strongly object*. Fixes the *very/really* habit that caps Lexical Resource
+- 7 · Everyday verbs 1 — *make a mistake, do damage*. The delexical verbs that produce *make a crime*
+
+**November — argument and quantity**
+- 8 · Everyday verbs 2 · 9 · Everyday verbs 3
+- 53 · Cause and effect — *adverse effects, have a major impact*. The single most reusable Task 2 unit
+- 46 · Number and frequency — *significant number, come to a total of*. Task 1 lives here
+- 48 · Change — *make an adjustment, break a habit*. The other half of Task 1
+
+**December — the recurring Task 2 topics**
+- 28 · Study and learning · 30 · Work · 31 · Business · 37 · Money
+
+**January — the rest of the topic rotation**
+- 39 · Global problems · 34 · Laws and punishments · 26 · Health and illness · 13 · Weather · 56 · Beliefs and opinions
+
+**February — nothing new. Reviews only**, and the taper drops new cards entirely.
+
+Units 1–5 (*What is a collocation*, dictionary use, register) are read once in the first week and never carded — they are method, not material.
+
+Deck: `English::IELTS::Collocations`. Cards are built with the `flashcard-creator` skill and synced with `scripts/anki_sync.py`.
+
+<mark style="background: #FF9E9EA6;">*English Vocabulary in Use Advanced* stays shut this cycle.</mark> It is the C1/C2 volume and the one owned copy — *Upper-intermediate* is not on the shelf — and pushing advanced lexis onto a three-tense grammar base produces exactly the rare-word-in-the-wrong-slot error that Lexical Resource scores as an inaccuracy while buying no range. If January runs ahead of schedule, units 80 (*Academic writing: text structure*), 81 (*Writing: style and format*), 70 (*Modality*) and 71 (*Number: statistics and quantity*) are the four worth opening. The Elementary volume is below level and has no use here.
+
+Grammar stays out of Anki deliberately. A structure is learned by writing sentences that get marked, not by recalling its rule.
+
+---
+
+## The book map
+
+| Book | When | How |
+|---|---|---|
+| **English Grammar in Use** (Murphy, 5th ed) — *owned* | Oct–Jan | 117 of 145 units, 7/week, book order minus the skip list |
+| **English Collocations in Use — Intermediate** — *owned* | Oct–Jan | 18 selected units, 1/week → Anki, daily review |
+| **Cambridge IELTS 20 & 21** | W1 → exam | Diagnostic, then all timed L/R work. The only correct raw→band tables |
+| **The Official Cambridge Guide to IELTS** | W10–W17 | Question-type technique, read by section not in sequence |
+| **Cambridge IELTS 19, 18, 17** | W14 → exam | Extra timed sets once 20/21 is spent |
+| **Advanced Grammar in Use**, **Practical English Usage** (Swan) | Any time | Reference only. Opened when an audit names a topic |
+| **English Vocabulary in Use Advanced** — *owned* | Jan, only if ahead | Units 80, 81, 70, 71. Otherwise shut — see the Anki section |
+
+Owned and unused: *English Vocabulary in Use Elementary* (below level), *Collocations in Use Advanced* (after the Intermediate volume is finished, which will not happen before February).
+
+Still to buy: only **Cambridge IELTS 20 and 21**. Everything the grammar and vocabulary tracks need is already on the shelf.
+
+Not on the list, deliberately: **English Idioms in Use** — idiomatic language misfires in Task 2 register and reads as memorised, so studying it costs marks. **Phrasal Verbs in Use** — Speaking only, and below every other track in priority. **Inside Reading** and other AWL courses — good EAP books, but they teach academic vocabulary in context rather than IELTS question types, and Collocations in Use covers the vocabulary need at a fraction of the hours. **Barron's, Kaplan, Magoosh, any "band 8 phrases" collection** — non-Cambridge conversion tables mislead, and memorised phrasing is detectable.
 
 ---
 
@@ -103,6 +224,8 @@ This track does not branch on the score, because at any starting point between 6
 2. **One concrete example per body paragraph, decided in the plan.** This is the literal band 7→8 Task Response wording ([[Band 7 Task Response is capped by over-generalisation rather than by missing parts of the question|why]]).
 3. **Halve the sentence-initial connectors.** Carry cohesion with reference instead ([[Task 2 coherence is scored on paragraph progression not on the density of linking words|why]]).
 
+**Every essay carries one grammar target from the current Murphy unit.** Decide it before writing, not after — *this essay will use two participle clauses* — and check it in the audit. This is the only mechanism that converts a ticked exercise into a scored structure, and it is why the grammar track is inside the Writing loop rather than beside it. The audit reports the range inventory alongside the error count, so an absent structure is visible as a finding rather than as a vague sense that the essay reads flat.
+
 **If diagnostic Writing < 6.5** — add the second weekly hour here by taking it from whichever of Listening or Reading is already ≥ 8.0, and shorten the marking cadence to one essay every 10 days for W2–W10.
 
 ### Speaking
@@ -127,10 +250,10 @@ Reviewing everything at once is why recorded practice usually stalls.
 | Phase | Weeks | Shape | Hours/week |
 |---|---|---|---|
 | **0 — Book and diagnose** | W1 | Book the sitting, sit the full diagnostic, produce the error log | 6 |
-| **1 — Technique** | W2–W9 | Branch work above. L/R by error category; Writing marking loop starts W2; Speaking targets rotate | 6 |
-| **2 — Production** | W10–W17 | Same loop, but every L/R session is now timed and full-length. Writing cadence unchanged | 6 |
-| **3 — Rehearsal** | W18–W21 | Two full four-section mocks under exam conditions (W18, W21), each followed by a full post-mortem. CD interface rehearsal | 6 |
-| **4 — Taper** | W22–W23 | No new material. Re-read the four descriptor pages, re-read your own error log, one light section per day. Sleep | 3 |
+| **1 — Structure** | W2–W9 | Murphy 4 units/week. L/R by error category; Writing marking loop starts W2; Speaking targets rotate. Anki daily from W2 | 6 + 15 min/day |
+| **2 — Production** | W10–W17 | Grammar for IELTS replaces Murphy through W13. Every L/R session now timed and full-length. Writing cadence unchanged | 6 + 15 min/day |
+| **3 — Rehearsal** | W18–W21 | Two full four-section mocks under exam conditions (W18, W21), each followed by a full post-mortem. CD interface rehearsal | 6 + 15 min/day |
+| **4 — Taper** | W22–W23 | No new material and no new cards — reviews only. Re-read the four descriptor pages and your own error log, one light section per day. Sleep | 3 |
 
 **Checkpoint W10 — the go/no-go.** Re-test Listening and Reading. If both are ≥ 8.0 the plan is on track. If either is below 7.5, move an hour into it from Writing for W11–W17 and accept Writing at 7.0.
 
@@ -146,6 +269,8 @@ Reviewing everything at once is why recorded practice usually stalls.
 | Writing stalls at 6.5 | Three consecutive markers agree at 6.5 by W14 | Accept it. Re-target L 9.0 / R 9.0 / S 7.5 / W 6.5 = 32.0 → 8.0. Do not spend W15–W21 on Writing |
 | AI feedback misleads upward or downward | Any single AI band used as a decision input | Anchor the model to your own marked scripts and ask comparatively only ([[Anchor an LLM to your own marked scripts because its absolute scale drifts with every model version|why]]) |
 | Diagnostic is far below the self-estimate | Overall below 6.5 in W1 | Do not re-plan for 8.0 in five months at 6 h/week. Re-scope the target or move the sitting |
+| The grammar base is thinner than the target assumes | Declared inventory is three tenses; W1 Writing comes back below 6.0 | This is the likeliest re-scope trigger in the whole plan. Grammar takes W2–W13 either way, but a sub-6.0 diagnostic means the February sitting is a calibration run and the real attempt moves later ([[A real sitting is the only trustworthy band measurement available before the exam|why that is not a wasted fee]]) |
+| Anki becomes the whole study session | Cards reviewed daily, no essay written for a fortnight | Reviewing is the comfortable track and it is the one with the least effect on Writing. Cap it at 15 min and never let it displace the marked-essay slot |
 | February sitting fills up | Dates unavailable when booking in W1 | Book whatever February date exists immediately; the exact date matters far less than unlocking Premium in W1 |
 
 **The retake question.** Sitting twice is normal strategy, not a failure plan, and a real sitting is the only calibrated Writing mark that exists ([[A real sitting is the only trustworthy band measurement available before the exam|why]]). A sitting costs 110,250₸ and a One Skill Retake 69,500₸; there is no waiting period between full attempts. If the budget allows a second sitting, an earlier one used as a diagnostic is worth more than any course. If it does not, February is the only shot and W18 is where the plan gets honest.
