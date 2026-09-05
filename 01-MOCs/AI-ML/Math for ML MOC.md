@@ -11,6 +11,20 @@ Based on Mathematical Foundations of Machine Learning course by Jon Krohn.
 
 Mathematical framework for representing and manipulating data in high-dimensional spaces.
 
+### Systems of Linear Equations
+
+- [[An equation is linear when every variable stands alone to the first power and is multiplied only by a constant|Linear equation — variable alone, first power, times a constant]]
+- [[Each family of nonlinear equation breaks exactly one criterion of linearity|Nonlinear families — each breaks one criterion of linearity]]
+- [[Subscript notation lets one formula describe any number of unknowns|Subscripts — one formula for any number of unknowns]]
+- [[The number of variables sets the dimension and each equation draws a shape one dimension lower|Variables set the dimension, each equation drops one]]
+- [[A linear system has zero, one, or infinitely many solutions and never any other count|Solution counts — zero, one, or infinitely many, never other]]
+- [[Elimination replaces an equation, so solving a system means rewriting it|Elimination is rewriting — each step trades one system for another]]
+- [[Deriving an equation prevents losing a solution but not gaining one|Derivation blocks losing a solution, never gaining one]]
+- [[A rewrite is safe exactly when the move that produced it can be undone|Reversibility — a move you can undo changes no answers]]
+- [[The three row operations are legal precisely because each one can be undone|Three row operations — swap, scale, add, each reversible]]
+- [[Two systems are equivalent when they have the same solution set|Equivalence — same solution set licenses every rewrite]]
+- [[Solving a linear system means finding where the shapes its equations draw intersect|Solving — find where all the equations' shapes intersect]]
+
 ### Data Structures for ML
 
 - Scalar: single numerical value representing a quantity
@@ -182,6 +196,7 @@ Foundational concepts for algorithmic and logical thinking.
 ## Related MOCs
 
 - [[Machine Learning MOC]] — parent hub for all machine learning topics
+- [[Math Foundations MOC]] — number systems, fractions and notation underneath all of this
 
 ## Practice
 
