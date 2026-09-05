@@ -173,12 +173,34 @@ Math::Probability
 ```
 English::General
 English::Tech Terms
+English::Grammar::01 - Present
+English::Grammar::02 - Past
+English::Grammar::03 - Present Perfect
+English::Grammar::04 - Future
+English::Grammar::05 - Modals
+English::Grammar::06 - Conditionals and Wish
+English::Grammar::07 - Passive
+English::Grammar::08 - Reported Speech
+English::Grammar::09 - Questions and Auxiliaries
+English::Grammar::10 - Verb Patterns
+English::Grammar::11 - Articles and Nouns
+English::Grammar::12 - Pronouns and Determiners
+English::Grammar::13 - Relative Clauses
+English::Grammar::14 - Adjectives and Adverbs
+English::Grammar::15 - Conjunctions
+English::Grammar::16 - Prepositions
+English::Grammar::17 - Phrasal Verbs
 English::IELTS::Band Descriptors
 English::IELTS::Listening and Reading
 English::IELTS::Speaking Technique
 English::IELTS::Strategy and Evidence
 English::IELTS::Writing Technique
 ```
+
+Grammar sub-decks are numbered because they run in prerequisite order — tenses before
+modals before conditionals — and they follow Murphy's own sequence. Files live at
+`05-Flashcards/english/grammar/{nn}-{topic}.md`, one per deck. The topics are grammar
+topics, not book chapters, so they survive finishing the book.
 
 `English::IELTS::` holds **exam technique only** — band descriptors, section strategy, the
 mechanics that score or lose marks.

@@ -1,6 +1,6 @@
-TARGET DECK: English::Grammar
+TARGET DECK: English::Grammar::01 - Present
 Tags: grammar
-**Chapter:** Grammar — Murphy, English Grammar in Use
+**Chapter:** Present — Murphy, English Grammar in Use, Units 1–4
 **Related:** [[IELTS - MOC]]
 
 ---
@@ -109,4 +109,90 @@ Explanation: *start* is a change verb, and the change is under way → continuou
 - The giveaway is the contrast with **at first** — a change is being described, so the continuous is forced
 Tags: grammar present-continuous
 <!--ID: 1788632093633-->
+END
+
+START
+English Card
+How is the present simple formed, and which forms change spelling?
+Back: **I / we / you / they + base form** · **he / she / it + -s**
+- *I work* but *he works* · *you go* but *it goes*
+- **-es** after ch, sh, s, x, o: *my sister teaches*, *he goes*, *she watches*
+- Irregular: *I have* but *he **has***
+- Only the third person singular changes — every other person is the bare verb
+Tags: grammar present-simple
+<!--ID: 1788632465964-->
+END
+
+START
+English Card
+When do you use the present simple? *(three uses)*
+Back: **1 — Things in general**, true whether or not anyone is doing them now.
+- **2 — Repeated actions**: *I usually go away at weekends*
+- **3 — How often** something happens: *every morning · very often · two or three times a year*
+- All three describe what is **generally true**, not what is in the middle of happening
+Tags: grammar present-simple
+<!--ID: 1788632465967-->
+END
+
+START
+English Card
+Alex is asleep in bed. Why can you still say *He drives a bus*?
+Back: Because the present simple states **what is generally true**, not what is happening now.
+- *He drives a bus* — his job, true while he sleeps
+- *He is driving a bus* — happening now, and right now false
+- This is the whole simple/continuous split: **permanent or repeated** against **in the middle of happening**
+Tags: grammar present-simple present-continuous
+<!--ID: 1788632465968-->
+END
+
+START
+English Grammar
+The earth {1:goes} (go) round the sun.
+Explanation: A general truth → present simple.
+- *is going* would make a permanent fact sound like a temporary event
+- Same pattern: *Nurses look after patients* · *The cafe opens at 7.30*
+Tags: grammar present-simple
+<!--ID: 1788632465969-->
+END
+
+START
+English Grammar
+What {1:does} this word mean?
+Explanation: Questions need **do / does + subject + base verb**.
+- *What means this word?* is the classic error — English will not move the main verb into the question
+- The **-s moves to the auxiliary**: *does this word mean*, never *does this word means*
+- Russian forms questions by intonation and word order alone, with no auxiliary to borrow
+Tags: grammar present-simple questions
+<!--ID: 1788632465970-->
+END
+
+START
+English Grammar
+Rice {1:doesn't grow} (grow, negative) in cold climates.
+Explanation: Negatives need **don't / doesn't + base verb**.
+- *Rice doesn't grows* is the same slip as the question: the auxiliary already carries the -s
+- *I/we/you/they* take **don't**; *he/she/it* takes **doesn't**
+Tags: grammar present-simple
+<!--ID: 1788632465971-->
+END
+
+START
+English Grammar
+'What {1:do} you do?' 'I work in a shop.'
+Explanation: The first *do* is the **auxiliary**, the second is the **main verb** — the question is about your job.
+- Both are needed: the auxiliary builds the question, the main verb carries the meaning
+- Negative version: *He **doesn't do** anything to help*
+Tags: grammar present-simple questions
+<!--ID: 1788632465972-->
+END
+
+START
+English Grammar
+I {1:promise} (promise) I won't be late.
+Explanation: Saying it **is** doing it, so the present simple, not the continuous.
+- *I'm promising* describes an act in progress; *I promise* performs it
+- Same class: *I apologise · I advise · I insist · I agree · I refuse · I suggest*
+- Test: could you replace it with "hereby"? Then it is this kind of verb
+Tags: grammar present-simple
+<!--ID: 1788632465973-->
 END
