@@ -13,6 +13,8 @@ Mathematical framework for representing and manipulating data in high-dimensiona
 
 ### Systems of Linear Equations
 
+> **Teaching progress — 2026-09-05:** Lay §1.1 done through equivalence and reversibility. Next: the augmented matrix and echelon form.
+
 - [[An equation is linear when every variable stands alone to the first power and is multiplied only by a constant|Linear equation — variable alone, first power, times a constant]]
 - [[Each family of nonlinear equation breaks exactly one criterion of linearity|Nonlinear families — each breaks one criterion of linearity]]
 - [[Subscript notation lets one formula describe any number of unknowns|Subscripts — one formula for any number of unknowns]]
