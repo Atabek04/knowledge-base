@@ -1,4 +1,4 @@
-TARGET DECK: Tech-KB::IELTS::Writing Technique
+TARGET DECK: IELTS::Writing Technique
 Tags: ielts writing
 **Chapter:** Writing Technique
 **Related:** [[IELTS - MOC]]
@@ -13,6 +13,7 @@ Back: **~20 minutes Task 1, ~40 minutes Task 2** — because Task 2 contributes 
 - Short answers aren't docked a fixed amount — they give **too little evidence** of the language features higher bands need
 - Over-running on Task 1 is the common and expensive failure: it buys no marks and steals Task 2 planning time
 Tags: ielts writing
+<!--ID: 1788608936683-->
 END
 
 START
@@ -23,6 +24,7 @@ Back: It is an **information-transfer task** tied narrowly to the visual's factu
 - The marks concentrate in the fourth TA bullet: **comparing or contrasting** by highlighting trends, changes and differences — "rather than mechanical description reporting detail"
 - It is a comparison task wearing a description task's clothing
 Tags: ielts writing
+<!--ID: 1788608936706-->
 END
 
 START
@@ -33,6 +35,7 @@ Back: **The grouping axis** — what are the two or three groups, and are they g
 - Multiple charts get one body section each, but the **overview must carry features of both**
 - Diagnostic: past ~200–215 words you are reporting, not grouping
 Tags: ielts writing
+<!--ID: 1788608936727-->
 END
 
 START
@@ -43,6 +46,7 @@ Back: **Highlight** = name the feature and make it prominent. **Illustrate** = a
 - Working shape: ~2 key features per chart, each with 1–2 figures, ~6–10 numbers total, **all in the body**
 - Both extremes are punished: no data ≈ band 5, all data ≈ band 5–6
 Tags: ielts writing
+<!--ID: 1788608936748-->
 END
 
 START
@@ -53,6 +57,7 @@ Back: **No — it needs an overview, and they are not the same thing.**
 - The descriptor never asks for one; it asks for an overview, and the *absence* of one caps Task Achievement at **band 5**
 - Folklore to discard: "the overview must be exactly two sentences" and "numbers are banned from the overview" — neither is in any descriptor
 Tags: ielts writing
+<!--ID: 1788608936772-->
 END
 
 START
@@ -63,6 +68,7 @@ Back: By **density and communicative effect** — the guide uses that same phras
 - So **repeating one error type is worse** than several different one-off slips — it reads as an absent rule, not a lapse
 - Corollary: deleting a weak sentence you can't fix is legitimate; it lowers density and costs nothing
 Tags: ielts writing
+<!--ID: 1788608936795-->
 END
 
 START
@@ -73,6 +79,7 @@ Back: **Opinion missing · opinion only in the conclusion · views reported rath
 - Band 7 needs a clear position *throughout* — state it in the intro, echo it in each topic sentence, restate at the end
 - Restating "some people argue" without extending it is the band-7 ceiling: supporting ideas that lack focus
 Tags: ielts writing
+<!--ID: 1788608936818-->
 END
 
 START
@@ -83,6 +90,7 @@ Back: They are the **largest single learner error category** — 14.8% of all an
 - The damage is **distributional**: ~1 opportunity per noun phrase, so slips contaminate sentences even when syntax is perfect
 - Band 8 needs the *majority* of sentences error-free — a 1-in-3 slip rate makes that impossible
 Tags: ielts writing
+<!--ID: 1788608936840-->
 END
 
 START
@@ -92,6 +100,7 @@ Back: **Reference and substitution** — the official criteria bullet nobody dri
 - Self-test: delete every sentence-initial connector. If the argument still reads in order, the cohesion was structural
 - Band 7 already tolerates under- and over-use of connectors, so adding more cannot move you up
 Tags: ielts writing
+<!--ID: 1788608936862-->
 END
 
 START
@@ -102,6 +111,7 @@ Back: A thesaurus swap keeps the **denotation** and destroys the **collocation**
 - Nesselhauf: collocation is where advanced learners still fail, independently of vocabulary size
 - Paraphrase the **whole phrase in context**, not the noun. A word you've read but never used stays out
 Tags: ielts writing
+<!--ID: 1788608936885-->
 END
 
 START
@@ -112,6 +122,7 @@ Back: **Never use "I" · always write 300+ words · use the passive · never use
 - 250 is a minimum, not a target; length raises error density (~270–280 is the consensus)
 - Each rule substitutes a **surface feature** for a criterion
 Tags: ielts writing
+<!--ID: 1788608936908-->
 END
 
 START
@@ -122,4 +133,5 @@ Back: TR + CC are **half the mark** and both are settled before the prose starts
 - The example is the 7→8 item: deciding it mid-paragraph under time pressure is exactly what produces over-generalisation
 - Sources disagree on minutes (3–5 / 5+ / 10) but agree on contents
 Tags: ielts writing
+<!--ID: 1788608936933-->
 END

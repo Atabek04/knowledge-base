@@ -1,4 +1,4 @@
-TARGET DECK: Tech-KB::IELTS::Strategy and Evidence
+TARGET DECK: IELTS::Strategy and Evidence
 Tags: ielts strategy
 **Chapter:** Strategy and Evidence
 **Related:** [[IELTS - MOC]]
@@ -14,6 +14,7 @@ Back: **Writing**, and the margin is large.
 - **Native English speakers average 6.49 in Writing** (vs 7.40 Reading)
 - Kazakh L1: W 5.79 · Uzbek L1: W 5.79 — Reading is the strongest skill for both
 Tags: ielts strategy
+<!--ID: 1788608936443-->
 END
 
 START
@@ -25,6 +26,7 @@ Back: Writing's group-mean spread is **half** that of every other section.
 - Compressed variance with a hard upper bound is what a ceiling looks like in aggregate data
 - Honest caveat: group means can't separate "hard to train" from "marked conservatively"
 Tags: ielts strategy
+<!--ID: 1788608936466-->
 END
 
 START
@@ -35,6 +37,7 @@ Back: **No — retired and refuted.** It was an IELTS partner statement, later w
 - Gains shrink sharply as the starting band rises, worst of all in Writing
 - There is **no evidenced hour figure** for 7.0→7.5 or 7.5→8.0 in any section — every number you see is folklore
 Tags: ielts strategy
+<!--ID: 1788608936490-->
 END
 
 START
@@ -45,6 +48,7 @@ Back: Because band 7 **already** awards the things a template supplies.
 - What remains is a central topic per paragraph, extended non-generalised ideas, precise lexis — none of which a template provides
 - A band 9 score report reads: *coherent and cohesive without necessarily any obvious linking words*
 Tags: ielts strategy
+<!--ID: 1788608936514-->
 END
 
 START
@@ -55,6 +59,7 @@ Back: **It under-scores you.** The error is regression toward the mean, not infl
 - Weak scripts over-scored, strong scripts under-scored; the model stops short of 8.0 where official grades reach it
 - So an LLM will tend to call a 7.5 a 7 — the bias points the wrong way for exactly this target
 Tags: ielts strategy
+<!--ID: 1788608936538-->
 END
 
 START
@@ -66,6 +71,7 @@ Back: Ask for **located, named evidence**. Never ask for a score.
 - Anchor it to **your own marked scripts** (zero-shot agreement 0.306 → 0.531 with six anchors) and ask comparatively
 - Never push back on a verdict — casual disagreement flips LLM judgements reliably
 Tags: ielts strategy
+<!--ID: 1788608936565-->
 END
 
 START
@@ -76,6 +82,7 @@ Back: The signal isn't in the transcript.
 - Writing "[pause 2s]" into the transcript changes **nothing** — effect sizes cross zero
 - A good-looking *holistic* speaking score is dominated by grammar/vocab/coherence, not evidence pronunciation was assessed
 Tags: ielts strategy
+<!--ID: 1788608936589-->
 END
 
 START
@@ -85,6 +92,7 @@ Back: It unlocks on **booking**, not on payment — ~40 full scored tests, per-s
 - So the order is **book → diagnose → prepare**, not the reverse
 - This matters more since **IELTS Progress Check closed in June 2024**: there is no longer any route, free or paid, to human-examiner band scores outside a real sitting
 Tags: ielts strategy
+<!--ID: 1788608936614-->
 END
 
 START
@@ -95,6 +103,7 @@ Back: **Logging wrong answers by error category**, then attacking the categories
 - Both fixes were invisible to raw-score tracking
 - The mock is the measuring instrument; the training happens in the review
 Tags: ielts strategy
+<!--ID: 1788608936637-->
 END
 
 START
@@ -105,4 +114,5 @@ Back: **8–12 marked essays, each rewritten after the feedback**, across ~5 mon
 - Use **two different markers**: one vendor's own reviewers report the same script scored 8.5 and 6.5 by different teachers
 - Below ~6 essays the pattern is unreadable; above ~12 it repeats
 Tags: ielts strategy
+<!--ID: 1788608936661-->
 END

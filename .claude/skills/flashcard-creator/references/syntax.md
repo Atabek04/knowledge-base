@@ -24,11 +24,14 @@ Fields: Front, Back → Cards: Front `{{Front}}`, Back `{{Back}}`
 
 ## Deck Hierarchy
 
-There are two independent deck roots, and they never mix:
+The deck roots are independent, and they never mix:
 
-- **`Tech-KB::`** — knowledge decks. Cards test what a thing *does*, how it works, why it
-  behaves that way. Everything below this line except the English Vocab section.
-- **`English::`** — vocabulary decks. Cards test what a **word means**, nothing else.
+- **`Tech-KB::`** — technical knowledge. Cards test what a thing *does*, how it works, why
+  it behaves that way.
+- **`English::`** — vocabulary. Cards test what a **word means**, nothing else.
+- **`Math::`** — mathematics, studied as a subject in its own right.
+- **`IELTS::`** — exam preparation.
+- **`Self-Mastery::`** — habits, discipline, study technique.
 
 The split is by *what the card asks*, not by subject matter. A card about a technical word
 is still a vocabulary card if it asks for the word's meaning — see "English Vocab" below.
@@ -47,11 +50,27 @@ Tech-KB::Machine Learning::Dimensionality Reduction
 Tech-KB::Machine Learning::Model Selection
 ```
 
-### Math for ML
+### Math
+
+Math is its own root, not under `Tech-KB::` — it is a subject studied for itself, not a
+technology.
 
 ```
-Tech-KB::Math for ML::Calculus
-Tech-KB::Math for ML::Probability
+Math::Linear Algebra
+Math::Calculus
+Math::Probability
+```
+
+### IELTS
+
+Also its own root — exam preparation, not technical knowledge.
+
+```
+IELTS::Band Descriptors
+IELTS::Listening and Reading
+IELTS::Speaking Technique
+IELTS::Strategy and Evidence
+IELTS::Writing Technique
 ```
 
 ### Software Engineering

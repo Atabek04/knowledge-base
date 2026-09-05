@@ -1,4 +1,4 @@
-TARGET DECK: Tech-KB::IELTS::Listening and Reading
+TARGET DECK: IELTS::Listening and Reading
 Tags: ielts listening reading
 **Chapter:** Listening and Reading
 **Related:** [[IELTS - MOC]]
@@ -13,6 +13,7 @@ Back: **Band 7 = 30/40 · Band 8 = 35/40** — the same anchors for both papers.
 - **Official caveat: the marks needed vary slightly by test version** — which is why Cambridge prints a table inside each test. Plan for **36**, not exactly 35
 - General Training Reading is scaled harder: band 7 = 34, band 8 = 37
 Tags: ielts listening reading
+<!--ID: 1788608936108-->
 END
 
 START
@@ -23,6 +24,7 @@ Back: **The right-sounding answer is said first, then cancelled.**
 - The value **after** the marker is the answer
 - In MCQ all three options are spoken, out of order: the **word-matched** option is the trap, the **paraphrased** one is the key
 Tags: ielts listening reading
+<!--ID: 1788608936130-->
 END
 
 START
@@ -34,6 +36,7 @@ Back: **Over the word limit** and **giving two answers when one was asked** — 
 - "TWO WORDS AND/OR A NUMBER" is asymmetrical — words plural, number singular
 - UK and US spellings both accepted, but spelling and grammar errors do lose marks
 Tags: ielts listening reading
+<!--ID: 1788608936150-->
 END
 
 START
@@ -44,6 +47,7 @@ Back: **False requires a contradiction. Partial coverage is Not Given** — abse
 - Default when uncertain: **Not Given**, and move on
 - Yes/No/Not Given tests the writer's *views*; writing TRUE where YES is required is marked wrong
 Tags: ielts listening reading
+<!--ID: 1788608936171-->
 END
 
 START
@@ -55,6 +59,7 @@ Back: The task tests **distinguishing main ideas from supporting ones** — and 
 - **Do this type last**, once the other questions have taught you the passage
 - No penalty for wrong answers — never leave a blank
 Tags: ielts listening reading
+<!--ID: 1788608936192-->
 END
 
 START
@@ -65,6 +70,7 @@ Back: **Its answers do not follow passage order** — and it's the only common t
 - Academic prose gives **surnames only** — "Robert Smith" appears as "Smith"
 - Contrast: matching sentence endings *does* follow text order; its trap is an ending that fits the grammar and not the meaning
 Tags: ielts listening reading
+<!--ID: 1788608936213-->
 END
 
 START
@@ -76,6 +82,7 @@ Back: **The ritual is not; expeditious reading is.**
 - So the evidenced skill is **locate fast, then read carefully** — not read fast throughout
 - "Read the questions first" is supported; "read **all** the questions first" is not
 Tags: ielts listening reading
+<!--ID: 1788608936235-->
 END
 
 START
@@ -86,4 +93,5 @@ Back: **Listening loses the 10-minute transfer time** — only ~2 minutes to che
 - Reading gains: split screen, colour highlighting, on-screen notes, free navigation, auto-save, adjustable font, flashing timer at 10 and 5 minutes
 - Reading has no transfer time in **either** format; results arrive in days rather than ~13
 Tags: ielts listening reading
+<!--ID: 1788608936257-->
 END

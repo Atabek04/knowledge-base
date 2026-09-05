@@ -1,4 +1,4 @@
-TARGET DECK: Tech-KB::IELTS::Speaking Technique
+TARGET DECK: IELTS::Speaking Technique
 Tags: ielts speaking
 **Chapter:** Speaking Technique
 **Related:** [[IELTS - MOC]]
@@ -13,6 +13,7 @@ Back: IDP names the mechanism: memorised delivery loses natural emphasis and emo
 - The detection cue is a **profile**: Part 2 markedly stronger than Parts 1 and 3
 - The line is preparing **ideas** (invisible) vs preparing **sentences** (detected)
 Tags: ielts speaking
+<!--ID: 1788608936279-->
 END
 
 START
@@ -24,6 +25,7 @@ Back: **Take the first example you think of and can describe in English** — in
 - The card and notes stay in view; bullets are a **guide, not a checklist**
 - Being cut off at 2:00 is a good sign
 Tags: ielts speaking
+<!--ID: 1788608936300-->
 END
 
 START
@@ -34,6 +36,7 @@ Back: **Prosody pays; accent reduction does not.**
 - IELTS is entirely spontaneous, and every band-8 Pronunciation bullet is prosodic
 - Order: chunking + sentence stress + weak forms → word stress on your own vocabulary → **cluster epenthesis** (*sport* → *siport*) → /θ ð ʒ/ last
 Tags: ielts speaking
+<!--ID: 1788608936322-->
 END
 
 START
@@ -44,6 +47,7 @@ Back: Because it **adds a syllable**, it doesn't just change a sound.
 - The added syllable changes the word's stress pattern, and disrupted rhythm is penalised directly in the descriptors
 - Second L1 transfer worth fixing: Turkic stress defaults to **final** syllable; English stress is lexically fixed — learn stress *with* each word
 Tags: ielts speaking
+<!--ID: 1788608936347-->
 END
 
 START
@@ -55,6 +59,7 @@ Back: **Flexibility and qualification, not more structure.** Band 7 candidates a
 - Working length ~30–60 s; giving Part 1-sized answers here drags the fluency average
 - Watch articles — abstraction concentrates generic noun phrases
 Tags: ielts speaking
+<!--ID: 1788608936372-->
 END
 
 START
@@ -66,6 +71,7 @@ Back: **As a coverage map, yes. As scripts, no.**
 - Use them to check no theme is unrehearsed; one memorised script per card manufactures the exact profile examiners catch
 - Perishable — a list older than ~2 months describes a cycle that has turned over
 Tags: ielts speaking
+<!--ID: 1788608936397-->
 END
 
 START
@@ -76,4 +82,5 @@ Back: **No.** Speaking is a live conversation with a certified examiner in both 
 - IELTS-commissioned research: video slightly harder, difference **negligibly small** (n=99, one city)
 - The real finding is behavioural: **63% asked for clarification on video vs 27% face-to-face**
 Tags: ielts speaking
+<!--ID: 1788608936419-->
 END

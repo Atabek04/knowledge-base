@@ -1,4 +1,4 @@
-TARGET DECK: Tech-KB::IELTS::Band Descriptors
+TARGET DECK: IELTS::Band Descriptors
 Tags: ielts band-descriptors
 **Chapter:** Band Descriptors
 **Related:** [[IELTS - MOC]]
@@ -12,6 +12,7 @@ Back: The **arithmetic mean of the four section bands**, rounded to the nearest 
 - An average of 7.75 is reported as **8.0**
 - So an overall 8.0 needs the four bands to **sum to 31.0**, not four 8s
 Tags: ielts band-descriptors
+<!--ID: 1788608935756-->
 END
 
 START
@@ -22,6 +23,7 @@ Back: Because a weak section can be **carried** by the other three.
 - Listening and Reading are objectively marked and trainable by technique; Writing is the hardest to move
 - So the cheapest route to 31 is pushing L and R to the ceiling, not rescuing Writing
 Tags: ielts band-descriptors
+<!--ID: 1788608935825-->
 END
 
 START
@@ -32,6 +34,7 @@ Back: A candidate must **fully fit the positive features** of a band to be award
 - The lowest bullet you fail sets the criterion
 - So band 8 is limited by your **worst recurring habit**, not raised by your best sentence
 Tags: ielts band-descriptors
+<!--ID: 1788608935862-->
 END
 
 START
@@ -41,6 +44,7 @@ Back: **Frequent** error-free sentences (7) versus **the majority** of sentences
 - Band 8 also wants a *wide* range of structures and only "very occasional" errors
 - It is a **subtraction** problem: remove recurring errors, don't add harder structures
 Tags: ielts band-descriptors
+<!--ID: 1788608935893-->
 END
 
 START
@@ -51,6 +55,7 @@ Back: It **forgives** occasional inaccuracies in word choice and collocation. It
 - "Skilfully uses uncommon lexical items" is about **fit**, not rarity
 - A rare word in the wrong slot reads as an inaccuracy and buys no range
 Tags: ielts band-descriptors
+<!--ID: 1788608935917-->
 END
 
 START
@@ -61,6 +66,7 @@ Back: Usually the **paragraph**, not the connectives.
 - The same band already tolerates **under- or over-use** of cohesive devices
 - So a paragraph with two competing topics fails outright, and adding "Moreover" fixes nothing
 Tags: ielts band-descriptors
+<!--ID: 1788608935947-->
 END
 
 START
@@ -71,6 +77,7 @@ Back: The tendency to **over-generalise**, with supporting ideas that lack focus
 - Band 8 = "well-developed response with relevant, extended and supported ideas"
 - This is why **template essays plateau at 7** — templates fix coverage, not development
 Tags: ielts band-descriptors
+<!--ID: 1788608935971-->
 END
 
 START
@@ -81,6 +88,7 @@ Back: It is capped at **band 5** — the descriptor reads "recounts detail mecha
 - Band 7 requires a **clear** overview of main trends, differences or stages
 - That is a quarter of the Task 1 mark, lost regardless of how good the English is
 Tags: ielts band-descriptors
+<!--ID: 1788608935995-->
 END
 
 START
@@ -91,6 +99,7 @@ Back: By **density and communicative effect** — not by raw count.
 - So **repeating one error type** is worse than several different one-off slips
 - And deleting a weak sentence you can't fix is legitimate: it lowers density
 Tags: ielts band-descriptors
+<!--ID: 1788608936018-->
 END
 
 START
@@ -100,6 +109,7 @@ Back: Only by reference to its neighbours — "all the positive features of band
 - There is nothing to study *at* band 7; you train the **band 8** feature set
 - The band 8 bullets are all **prosodic**: sustained rhythm, flexible stress and intonation over long utterances
 Tags: ielts band-descriptors
+<!--ID: 1788608936042-->
 END
 
 START
@@ -110,6 +120,7 @@ Back: **No** — only its **effect on intelligibility** is.
 - Band 9: accent has *no* effect
 - What costs marks is listener effort: broken words and absent stress-timing, not sounding foreign
 Tags: ielts band-descriptors
+<!--ID: 1788608936065-->
 END
 
 START
@@ -120,4 +131,5 @@ Back: **Content-related** hesitation — pausing to decide *what* to say. Not pa
 - So the diagnostic is **positional**: a pause at a clause boundary reads as thinking, mid-clause reads as searching
 - Self-correction appears in the band 8 line, so correcting yourself is fine — doing it repeatedly is not
 Tags: ielts band-descriptors
+<!--ID: 1788608936087-->
 END
