@@ -139,6 +139,8 @@ Never use `font-weight: bold` on the `<mark>` style either — combined with any
 | Yellow | `#FFF3A3A6` | <b>Definition</b> — what a thing *is* | "Could this be a glossary entry?" |
 | Cyan | `#ABF7F7A6` | <b>Mechanism or insight</b> — *how* or *why* it works | "Does this explain the machinery?" |
 | Blue | `#ADCCFFA6` | <b>Rule</b> — what you must always or never do | "Is this an instruction I follow at the desk?" |
+| Green | `#BBFABBA6` | <b>Worked example or concrete case</b> — the claim made specific | "Is this an instance rather than a principle?" |
+| Pink | `#FFB8EBA6` | <b>Edge case</b> — where the normal rule stops applying | "Is this an exception to something already stated?" |
 | Salmon | `#FF9E9EA6` | <b>Caution or scope limit</b> — this proves less than it seems, applies only here | "Am I warning against over-reading something?" |
 | Red-pink | `#FF5582A6` | <b>Trap</b> — the mistake that silently produces a wrong answer | "Would a careful person still fall into this?" |
 
@@ -150,9 +152,14 @@ Worked examples of the distinction, all from the same note:
 - Salmon — "Everything below argues one thing only: no solution can disappear"
 - Red-pink — "Dividing by a variable quietly assumes it is not zero, and that assumption throws away the very solution it excluded"
 
-<mark style="background: #ADCCFFA6;">Never use green, orange, purple, pink or grey.</mark> They exist in the Highlightr palette but carry no meaning in this vault, and an unassigned colour is worse than no highlight — the reader stops trusting that colour means anything.
+<mark style="background: #ADCCFFA6;">Never use orange, purple or grey.</mark> They exist in the Highlightr palette but carry no meaning in this vault, and an unassigned colour is worse than no highlight — the reader stops trusting that colour means anything.
 
-Salmon vs red-pink is the one pair worth getting right: <b>salmon limits a claim, red-pink names a mistake.</b>
+Two pairs are worth getting right, because each pair looks similar and means something different:
+
+- <b>Salmon vs red-pink</b> — salmon <i>limits a claim</i>, red-pink <i>names a mistake</i>.
+- <b>Pink vs red-pink</b> — pink marks an <i>exception the reader should know</i>, red-pink marks an <i>error the reader would otherwise make</i>.
+
+Seven colours is the ceiling. Do not add an eighth.
 
 **Light theme is handled in CSS, not in the note.** The `A6` values wash out on a light background, so `.obsidian/snippets/highlights.css` remaps each one to a saturated opaque equivalent under `.theme-light`. Keep writing the `A6` hex codes from the table — never hand-pick a "lighter" or "stronger" colour for light mode.
 
