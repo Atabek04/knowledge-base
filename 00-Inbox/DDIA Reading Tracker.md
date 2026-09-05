@@ -15,9 +15,9 @@ PDF in vault: [[Designing Data-Intensive Applications - Martin Kleppmann.pdf]] (
 
 The printed page numbers and the PDF's physical page count do **not** match, because of cover + front-matter pages.
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">Body (Chapters 1–12, Glossary, Index): PDF page = book page + 22</mark>
+<mark style="background: #ADCCFFA6;">Body (Chapters 1–12, Glossary, Index): <b>PDF page = book page + 22</b></mark>
 
-<mark style="background: #ABF7A9A6;">Front matter (roman numerals, e.g. Preface): PDF page = roman number + 2</mark>
+<mark style="background: #ADCCFFA6;">Front matter (roman numerals, e.g. Preface): <b>PDF page = roman number + 2</b></mark>
 
 | To find… | Do this | Example |
 |---|---|---|
