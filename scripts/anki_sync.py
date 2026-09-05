@@ -100,6 +100,19 @@ def model_fields(model):
     return _fields_cache[model]
 
 
+_cloze_cache = {}
+
+def model_is_cloze(model):
+    """Ask Anki rather than guessing from the name: a cloze note type need not
+    have 'cloze' in its title (e.g. 'English Grammar'), and one that does may
+    not actually be cloze."""
+    if model not in _cloze_cache:
+        tpls = anki("modelTemplates", modelName=model)
+        _cloze_cache[model] = any("{{cloze:" in side
+                                  for t in tpls.values() for side in t.values())
+    return _cloze_cache[model]
+
+
 # ── Markdown → HTML (showdown-compatible, validated against live collection) ──
 
 def _preprocess(text):
@@ -221,7 +234,7 @@ def collect_file(path, media_queue, errors):
         except Exception as e:
             errors.append(f"{rel}: parse failed — {e}")
             continue
-        cloze = "cloze" in model.lower()
+        cloze = model_is_cloze(model)
         html = {f: localize_media(md_to_html(v, cloze=cloze), path.parent, media_queue)
                 for f, v in fields.items()}
         notes.append({

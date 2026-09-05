@@ -143,12 +143,32 @@ Before syncing a batch, run the fast pre-sync gate in `references/quality-checkl
 it catches the top failure modes (enumeration traps, leaked hints, interference, orphans)
 that quietly waste review time for months.
 
-## Vocabulary cards
+## English cards
 
-When the user sends a sentence and asks what a word means, the card tests **production
-recall**: they read an English definition and must produce the word. Different note type
-(`A_English_Translate`), different fields, different deck. Read `references/vocab.md` and
-follow its format — don't improvise vocab cards from the tech-card format.
+Three note types, picked by what the card asks. Full field lists and examples in
+`references/syntax.md`.
+
+| Card asks | Note type | Deck |
+|---|---|---|
+| A word's meaning, or any question and answer | `English Card` | `English::General` · `English::Tech Terms` |
+| Produce a grammatical form in a real sentence | `English Grammar` (cloze) | `English::Grammar` |
+| Produce the word from an English definition | `A_English_Translate` | see `references/vocab.md` |
+
+`English Card` has five optional fields — `Example`, `Collocations`, `Synonyms`, `Forms`,
+`Pattern` — that vanish when empty, so it also serves as a plain two-field card. Fill only
+what earns its place; `Synonyms` must say how each one *differs*, never just list them.
+
+**The recall target is one thing, and the rest is scenery.** On a grammar card the cloze is
+the test and `Explanation` is a reminder the learner is never graded on — it renders dimmer
+and smaller to make that obvious. Same logic on a vocab card: you recall the meaning, and
+the collocations and forms are there to be re-read, not recited. <mark style="background: #FF5582A6;">A card that quietly asks the
+learner to recall four fields is four cards wearing one coat, and none of them get learned.</mark>
+
+**Never card a grammar rule before learning it.** Read the unit, write the note, then card
+it. Cards test knowledge; they do not deliver it.
+
+Exam technique belongs in `English::IELTS::`; a word or rule met during IELTS practice does
+not — it goes to the general English decks, because it outlives the exam.
 
 ## Syncing to Anki
 

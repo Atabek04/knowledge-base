@@ -5,6 +5,8 @@ Note types, deck hierarchy, file header, and the START/END block format.
 ## Contents
 
 - Note type: Coding Questions
+- Note type: English Card
+- Note type: English Grammar
 - Deck hierarchy (by subject)
 - File header
 - START/END block format (one-liner + multi-line)
@@ -18,7 +20,91 @@ Fields: `Front`, `Back`
 **Anki setup:** Tools → Manage Note Types → Add → Blank → Name: `Coding Questions` →
 Fields: Front, Back → Cards: Front `{{Front}}`, Back `{{Back}}`
 
-(Vocabulary cards use a different note type, `A_English_Translate` — see `vocab.md`.)
+Used by every `Tech-KB::`, `Math::` and `Self-Mastery::` card. **Not** for `English::` —
+those have their own two note types below.
+
+---
+
+## Note Type: English Card
+
+Fields: `Front`, `Back`, `Example`, `Collocations`, `Synonyms`, `Forms`, `Pattern`
+
+Everything after `Back` is optional and disappears from the rendered card when left empty,
+so the same note type carries a full vocabulary entry and a bare question-and-answer card.
+
+Vocabulary entry:
+
+```
+START
+English Card
+dwindle
+Back: To **shrink steadily over time** until little is left.
+- Always gradual — a sudden drop is *plummet*
+- Intransitive: a thing dwindles, you cannot dwindle it
+Example: Attendance **dwindled** from 400 to barely 30 over the decade.
+Forms: dwindle · dwindled · dwindling
+Pattern: dwindle **to** sth
+dwindle **away**
+Collocations: dwindling **resources** · dwindling **supply** · dwindle **to** nothing
+Synonyms: **diminish** — neutral, size or importance
+**wane** — influence, interest, power; not physical stock
+Tags: vocab
+END
+```
+
+Bare question and answer — identical to a Coding Questions card, just a different type:
+
+```
+START
+English Card
+How do you decide singular vs plural on a Listening gap-fill before the audio plays?
+Back: **From the printed stem's own grammar.**
+- "the ___ **are** stored in" forces plural
+- `car(s)` scores **zero**
+Tags: ielts listening
+END
+```
+
+### Filling the optional fields
+
+- **`Synonyms`** — never a bare list. Each entry states *how it differs*, because a
+  thesaurus swap preserves the meaning and destroys the collocation. `wane` alone teaches
+  nothing; `wane — influence and interest, not physical stock` teaches the boundary.
+- **`Pattern`** — the grammatical frame the word demands: `depend **on** sth`,
+  `it is worth **doing**`. One per line; the template renders newlines, so no `<br>`.
+- **`Forms`** — the word family, `·`-separated. This is where Listening gap-fill marks live.
+- **`Example`** — the sentence the word was actually met in, not an invented one.
+- **`Collocations`** — `·`-separated, with the partner word bolded.
+
+---
+
+## Note Type: English Grammar
+
+Cloze. Fields: `Text`, `Explanation`
+
+```
+START
+English Grammar
+I {1:have lived} here since 2019.
+Explanation: Unfinished time period → present perfect.
+- "I **lived** here in 2019" — finished time, past simple
+- *since* + point in time · *for* + duration
+- Russian collapses both onto *жил*, so the contrast is learned, not felt
+Tags: grammar
+END
+```
+
+<mark style="background: #ADCCFFA6;">The cloze is the test. `Explanation` is a reminder, and the learner is never graded on
+recalling it.</mark> It renders smaller and dimmer for exactly that reason, so keep it to
+the contrast and the trap — if it grows into a second thing to memorise, the card is doing
+two jobs and the recall target blurs.
+
+Use `{1:...}` / `{c1:...}` for the gap; the sync script converts it and detects the cloze
+type by inspecting the template, not by the note type's name.
+
+**Never card a rule you have not yet learned.** Read the unit, write the note, then card
+it — a card tests knowledge, it does not deliver it. For a rule statement itself, use
+`English Card`; `English Grammar` is for producing a form in a real sentence.
 
 ---
 
