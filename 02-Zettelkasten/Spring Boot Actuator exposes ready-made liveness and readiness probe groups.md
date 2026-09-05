@@ -35,7 +35,7 @@ Actuator wires the right indicators into each group automatically, honoring [[Li
 - <mark style="background: #FFF3A3A6;">**Liveness group** stays shallow</mark> — it only reflects whether the Spring application context is live. No DataSource, no Redis.
 - <mark style="background: #ADCCFFA6;">**Readiness group** is deep</mark> — it folds in your `DataSource`, Redis, Kafka, etc. health indicators.
 
-So a database outage flips **readiness** to `DOWN` (pod drains traffic) without touching **liveness** (no restart) — <mark style="background: #FF5582A6; font-weight: bold;">exactly the split that avoids restart-loops</mark>, with no manual endpoint coding.
+So a database outage flips **readiness** to `DOWN` (pod drains traffic) without touching **liveness** (no restart) — <mark style="background: #FF5582A6;">exactly the split that avoids restart-loops</mark>, with no manual endpoint coding.
 
 ---
 

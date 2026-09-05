@@ -8,7 +8,7 @@ The name is the mnemonic: picture a fixed frame sliding across the data — what
 
 ### Trigger — when to reach for it
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">Recognition signals</mark> in the problem statement:
+<mark style="background: #FFF3A3A6;">Recognition signals</mark> in the problem statement:
 
 - Linear structure: **array or string**, and you need a **contiguous** subarray/substring (not a subsequence)
 - Asks for the **longest / shortest / max-sum / min / count** of windows meeting a constraint

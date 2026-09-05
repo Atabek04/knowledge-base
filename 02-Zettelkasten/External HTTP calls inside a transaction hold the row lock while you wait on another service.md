@@ -6,7 +6,7 @@ aliases: [external call in transaction, HTTP inside transactional, lock held dur
 
 A `@Transactional` method holds its database connection — and any row locks it took — from the moment the transaction opens until the method returns. Usually that window is a few milliseconds of local writes. But the instant you put an **external HTTP call** inside that window, the lock duration becomes *your DB work + someone else's network latency*, which you don't control.
 
-This is why a common system-wide invariant is: <mark style="background: #FFF3A3A6; font-weight: bold;">read and call external services *before* opening the write transaction — never make an outbound HTTP call inside `@Transactional`.</mark> The transaction wraps only the local writes; everything slow and foreign stays outside it.
+This is why a common system-wide invariant is: <mark style="background: #FFF3A3A6;">read and call external services *before* opening the write transaction — never make an outbound HTTP call inside `@Transactional`.</mark> The transaction wraps only the local writes; everything slow and foreign stays outside it.
 
 ---
 
@@ -51,7 +51,7 @@ class BookingService(
 
 While `.block()` waits on the other service, this transaction keeps its DB connection checked out of the pool **and** holds the [[SELECT FOR UPDATE holds a row lock until the transaction ends, closing the read-then-write race|FOR UPDATE row lock]] the whole time. If the external service is slow — or hangs to its timeout — every other request that needs that row queues behind you, and every request that needs *a connection at all* competes for a pool that's draining.
 
-<mark style="background: #FF9E9EA6; font-weight: bold;">Under load this is how one slow dependency freezes the whole service: locks pile up, connections stay checked out, and the pool empties</mark> — the same [[A connection storm from new instances can exhaust the database connection limit|connection exhaustion]] failure, this time caused by holding connections too long instead of opening too many.
+<mark style="background: #FF9E9EA6;">Under load this is how one slow dependency freezes the whole service: locks pile up, connections stay checked out, and the pool empties</mark> — the same [[A connection storm from new instances can exhaust the database connection limit|connection exhaustion]] failure, this time caused by holding connections too long instead of opening too many.
 
 ---
 

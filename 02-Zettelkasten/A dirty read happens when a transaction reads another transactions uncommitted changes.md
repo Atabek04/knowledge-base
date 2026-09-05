@@ -12,7 +12,7 @@ That is a **dirty read**: reading "dirty" (uncommitted) data.
 
 ### Why "dirty" means uncommitted
 
-A value a transaction has written but not yet committed is <mark style="background: #FFF3A3A6; font-weight: bold;">dirty</mark> — provisional, not durable, still capable of vanishing on rollback. Reading it means trusting a number that has no guarantee of ever becoming real.
+A value a transaction has written but not yet committed is <mark style="background: #FFF3A3A6;">dirty</mark> — provisional, not durable, still capable of vanishing on rollback. Reading it means trusting a number that has no guarantee of ever becoming real.
 
 ```SQL
 T1: UPDATE account SET balance=500 WHERE id=1;   -- not committed yet

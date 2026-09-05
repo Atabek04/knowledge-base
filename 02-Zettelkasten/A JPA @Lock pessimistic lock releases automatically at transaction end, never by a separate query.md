@@ -6,7 +6,7 @@ aliases: [Lock releases at transaction end, pessimistic lock release, when does 
 
 When you put `@Lock(LockModeType.PESSIMISTIC_WRITE)` on a Spring Data repository method, a natural question is: how do you *let go* of the lock afterward? Is there an unlock call, a second query?
 
-No. <mark style="background: #FFF3A3A6; font-weight: bold;">The lock releases automatically when the transaction ends — at `COMMIT` or `ROLLBACK` — and there is no separate query, no unlock statement.</mark> The lock's lifetime *is* the transaction's lifetime.
+No. <mark style="background: #FFF3A3A6;">The lock releases automatically when the transaction ends — at `COMMIT` or `ROLLBACK` — and there is no separate query, no unlock statement.</mark> The lock's lifetime *is* the transaction's lifetime.
 
 ---
 
@@ -27,9 +27,9 @@ Releasing isn't a second SQL statement you issue — it's the [[SELECT FOR UPDAT
 
 #### It does nothing without an open transaction
 
-Because the release point *is* the transaction boundary, <mark style="background: #FF9E9EA6; font-weight: bold;">`@Lock` is meaningless without an open `@Transactional`</mark> — there's no transaction for the lock to live inside. Call the method with no active transaction and the pessimistic lock has nothing to hold to (Hibernate throws, or the `FOR UPDATE` is applied to an auto-commit statement that releases instantly — either way you get no protection).
+Because the release point *is* the transaction boundary, <mark style="background: #FF9E9EA6;">`@Lock` is meaningless without an open `@Transactional`</mark> — there's no transaction for the lock to live inside. Call the method with no active transaction and the pessimistic lock has nothing to hold to (Hibernate throws, or the `FOR UPDATE` is applied to an auto-commit statement that releases instantly — either way you get no protection).
 
-This is also why <mark style="background: #ADCCFFA6; font-weight: bold;">a long `@Transactional` = a long-held lock.</mark> You don't control the release with a call; you control it by how long the transaction stays open — which is exactly why you keep slow work (like [[External HTTP calls inside a transaction hold the row lock while you wait on another service|external HTTP calls]]) *out* of the transaction.
+This is also why <mark style="background: #ADCCFFA6;">a long `@Transactional` = a long-held lock.</mark> You don't control the release with a call; you control it by how long the transaction stays open — which is exactly why you keep slow work (like [[External HTTP calls inside a transaction hold the row lock while you wait on another service|external HTTP calls]]) *out* of the transaction.
 
 ---
 

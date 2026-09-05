@@ -12,7 +12,7 @@ This is the **read-then-write race** — the anomaly it produces is a [[A lost u
 
 ### The name tells you what it does
 
-`SELECT ... FOR UPDATE` is a <mark style="background: #FFF3A3A6; font-weight: bold;">locking read</mark> — a read taken *for* a coming *update*.
+`SELECT ... FOR UPDATE` is a <mark style="background: #FFF3A3A6;">locking read</mark> — a read taken *for* a coming *update*.
 
 A plain `SELECT` just reads. Adding `FOR UPDATE` signals write-intent: "I'm reading these rows because I'm about to change them, so lock them now as if I already had." It acquires the **same row lock a real `UPDATE` would**, but at read time — before you've written anything.
 
@@ -30,7 +30,7 @@ Two requests claiming two *different* free seats in the same window never collid
 
 ### The lock is held until the transaction ends
 
-The lock is released on <mark style="background: #FFF3A3A6; font-weight: bold;">`COMMIT` or `ROLLBACK`</mark> — not when the row is updated, not at the end of the `SELECT` statement.
+The lock is released on <mark style="background: #FFF3A3A6;">`COMMIT` or `ROLLBACK`</mark> — not when the row is updated, not at the end of the `SELECT` statement.
 
 This is the crucial part. If the lock dropped right after the `SELECT`, a competitor could read the still-unchanged row during the gap before your `UPDATE` — the race returns. Holding it for the whole transaction means your read and your write are protected as one unit:
 

@@ -6,7 +6,7 @@ aliases: [Five Whys, 5 Whys, root cause analysis]
 
 A fix that addresses the *symptom* leaves the real fault alive to strike again — you restart the crashed service, but it crashes again tomorrow because you never found *why* it ran out of memory. The Five Whys is a questioning technique that drills past the symptom to the underlying cause you can actually eliminate.
 
-It was developed by <mark style="background: #FFF3A3A6;">Sakichi Toyoda at Toyota</mark> and became a core tool of the Toyota Production System and Kaizen (continuous improvement). The idea: <mark style="background: #FFF3A3A6; font-weight: bold;">ask "why?" about the symptom, then "why?" about that answer, and keep going until you reach something systemic you can fix.</mark>
+It was developed by <mark style="background: #FFF3A3A6;">Sakichi Toyoda at Toyota</mark> and became a core tool of the Toyota Production System and Kaizen (continuous improvement). The idea: <mark style="background: #FFF3A3A6;">ask "why?" about the symptom, then "why?" about that answer, and keep going until you reach something systemic you can fix.</mark>
 
 ---
 
@@ -35,7 +35,7 @@ Stop when you hit something you can fix at a systemic level — that might be th
 
 ### Limitation: one linear path
 
-The Five Whys follows a single chain, so it can miss a problem with <mark style="background: #FF5582A6; font-weight: bold;">multiple independent causes</mark>, and a careless analyst can steer the chain toward a predetermined conclusion. Pair it with [[Differential debugging asks what changed since the system last worked|differential debugging]] to first pin down *what changed*, then use the Five Whys to ask *why that change was allowed to break things*.
+The Five Whys follows a single chain, so it can miss a problem with <mark style="background: #FF5582A6;">multiple independent causes</mark>, and a careless analyst can steer the chain toward a predetermined conclusion. Pair it with [[Differential debugging asks what changed since the system last worked|differential debugging]] to first pin down *what changed*, then use the Five Whys to ask *why that change was allowed to break things*.
 
 ---
 

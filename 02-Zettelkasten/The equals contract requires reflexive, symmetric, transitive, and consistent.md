@@ -4,7 +4,7 @@ tags: [java, oop]
 aliases: [equals contract, equals rules]
 ---
 
-When you override `equals()` to compare by value, you must obey the <mark style="background: #FFF3A3A6; font-weight: bold;">general contract</mark> defined in `Object.equals()`. Break a clause and collections, sets, and any code relying on equality behave unpredictably.
+When you override `equals()` to compare by value, you must obey the <mark style="background: #FFF3A3A6;">general contract</mark> defined in `Object.equals()`. Break a clause and collections, sets, and any code relying on equality behave unpredictably.
 
 The contract has five clauses. Mnemonic: an equality relation must be an *equivalence relation* (reflexive, symmetric, transitive) plus *consistent* and *non-null*.
 
@@ -26,7 +26,7 @@ For non-null references `x`, `y`, `z`:
 
 ### Where it usually breaks: symmetry
 
-Mixing types or comparing across a subclass commonly violates <mark style="background: #FF5582A6; font-weight: bold;">symmetry</mark>:
+Mixing types or comparing across a subclass commonly violates <mark style="background: #FF5582A6;">symmetry</mark>:
 
 ```java
 class CaseInsensitiveString {
@@ -73,7 +73,7 @@ There is <mark style="background: #FF5582A6;">no way</mark> to extend an instant
 }
 ```
 
-<mark style="background: #FF5582A6; font-weight: bold;">Override `hashCode()` too</mark> — see [[Equal objects must return equal hash codes]].
+<mark style="background: #FF5582A6;">Override `hashCode()` too</mark> — see [[Equal objects must return equal hash codes]].
 
 ---
 

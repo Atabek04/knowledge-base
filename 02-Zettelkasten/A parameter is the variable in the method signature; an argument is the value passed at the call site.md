@@ -6,9 +6,9 @@ tags: [java, fundamentals]
 
 Every method call involves two distinct roles that share the same value but live at different points in the code.
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">Parameter</mark> — the named variable declared in the method signature. It's the **slot** that receives a value.
+<mark style="background: #FFF3A3A6;">Parameter</mark> — the named variable declared in the method signature. It's the **slot** that receives a value.
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">Argument</mark> — the actual value (or expression) you pass when calling the method. It's what **fills** the slot.
+<mark style="background: #FFF3A3A6;">Argument</mark> — the actual value (or expression) you pass when calling the method. It's what **fills** the slot.
 
 ```java
 // "platform" is the PARAMETER — declared in the signature

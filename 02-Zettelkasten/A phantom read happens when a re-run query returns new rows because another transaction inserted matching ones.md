@@ -22,7 +22,7 @@ Ali's transaction (`T1`) asked the same question twice and got `5` then `6`. No 
 
 ### Why "phantom"
 
-The extra rows <mark style="background: #FFF3A3A6; font-weight: bold;">appear and disappear like ghosts</mark> between two identical queries — present the second time though absent the first, with nothing you did to summon them. That ghostly entrance into a predicate's result set is the phantom.
+The extra rows <mark style="background: #FFF3A3A6;">appear and disappear like ghosts</mark> between two identical queries — present the second time though absent the first, with nothing you did to summon them. That ghostly entrance into a predicate's result set is the phantom.
 
 This is the boundary with a [[A non-repeatable read happens when a row you re-read has changed because another transaction committed an update|non-repeatable read]]: that one is an existing row changing *value*; a phantom is the *set of qualifying rows* changing size.
 

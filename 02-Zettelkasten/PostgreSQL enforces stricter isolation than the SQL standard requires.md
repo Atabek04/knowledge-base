@@ -12,7 +12,7 @@ Knowing where PostgreSQL is stricter than the table matters — code written to 
 
 ### Only three levels really exist
 
-PostgreSQL accepts all four level names but provides three distinct behaviors. <mark style="background: #FFF3A3A6; font-weight: bold;">`READ UNCOMMITTED` behaves exactly like `READ COMMITTED`</mark> — dirty reads are impossible at *any* level, since a transaction only ever sees committed row versions.
+PostgreSQL accepts all four level names but provides three distinct behaviors. <mark style="background: #FFF3A3A6;">`READ UNCOMMITTED` behaves exactly like `READ COMMITTED`</mark> — dirty reads are impossible at *any* level, since a transaction only ever sees committed row versions.
 
 ---
 
@@ -28,7 +28,7 @@ This is the big divergence. PostgreSQL's `REPEATABLE READ` takes <mark style="ba
 
 ### SERIALIZABLE adds Serializable Snapshot Isolation
 
-On top of snapshot isolation, `SERIALIZABLE` uses <mark style="background: #FFF3A3A6; font-weight: bold;">SSI</mark> to also catch the **serialization anomaly** — concurrent transactions committing a result no one-at-a-time ordering could produce (such as write skew). It monitors read/write dependencies and aborts a transaction in any dangerous cycle.
+On top of snapshot isolation, `SERIALIZABLE` uses <mark style="background: #FFF3A3A6;">SSI</mark> to also catch the **serialization anomaly** — concurrent transactions committing a result no one-at-a-time ordering could produce (such as write skew). It monitors read/write dependencies and aborts a transaction in any dangerous cycle.
 
 ---
 

@@ -6,7 +6,7 @@ aliases: [differential debugging, what changed]
 
 "It worked yesterday." That sentence is a gift, not a complaint — it tells you the code, config, and environment were once correct, so something *changed* between then and now. Differential debugging makes that change the prime suspect instead of treating the whole system as equally guilty.
 
-The core question: <mark style="background: #FFF3A3A6; font-weight: bold;">what is different between the last-known-good state and now?</mark>
+The core question: <mark style="background: #FFF3A3A6;">what is different between the last-known-good state and now?</mark>
 
 ---
 
@@ -27,7 +27,7 @@ The fault is almost certainly downstream of one of these, which is a far smaller
 
 #### Check the boring changes first
 
-The dramatic explanation (a deep concurrency bug) is rarely the cause when something *suddenly* breaks. <mark style="background: #FF5582A6; font-weight: bold;">Suspect the boring, recent change first</mark> — yesterday's deploy, an expired certificate, a dependency that auto-updated, a config edit. These cause most "it worked yesterday" failures.
+The dramatic explanation (a deep concurrency bug) is rarely the cause when something *suddenly* breaks. <mark style="background: #FF5582A6;">Suspect the boring, recent change first</mark> — yesterday's deploy, an expired certificate, a dependency that auto-updated, a config edit. These cause most "it worked yesterday" failures.
 
 ---
 

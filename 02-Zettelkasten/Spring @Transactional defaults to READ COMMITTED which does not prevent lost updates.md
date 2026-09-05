@@ -20,7 +20,7 @@ Two threads can each run the same `@Transactional` method, each in its own valid
 
 ### The default isolation is READ COMMITTED
 
-`@Transactional` without an explicit `isolation` uses <mark style="background: #FFF3A3A6; font-weight: bold;">`Isolation.DEFAULT`</mark> — defer to the database default. For PostgreSQL that is `READ COMMITTED`.
+`@Transactional` without an explicit `isolation` uses <mark style="background: #FFF3A3A6;">`Isolation.DEFAULT`</mark> — defer to the database default. For PostgreSQL that is `READ COMMITTED`.
 
 ```java
 @Transactional   // isolation = DEFAULT → PostgreSQL READ COMMITTED

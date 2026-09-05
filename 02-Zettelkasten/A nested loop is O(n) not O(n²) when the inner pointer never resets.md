@@ -2,7 +2,7 @@
 aliases: [monotone pointer, amortized O(n), nested loop complexity]
 ---
 
-The rule "nested loop = O(n²)" is a shortcut that only holds when the inner loop **resets** on every outer iteration. When the inner pointer is <mark style="background: #FFF3A3A6; font-weight: bold;">monotone</mark> — meaning it only moves in one direction across the entire function and never resets — the total inner work is bounded by `n`, not `n × n`.
+The rule "nested loop = O(n²)" is a shortcut that only holds when the inner loop **resets** on every outer iteration. When the inner pointer is <mark style="background: #FFF3A3A6;">monotone</mark> — meaning it only moves in one direction across the entire function and never resets — the total inner work is bounded by `n`, not `n × n`.
 
 ### The amortized argument
 
@@ -45,7 +45,7 @@ The inner pointer has no monotonicity guarantee — that's what makes it quadrat
 
 ### The one rule
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">A nested loop is O(n) when the inner pointer is monotone across the entire function.</mark>
+<mark style="background: #FFF3A3A6;">A nested loop is O(n) when the inner pointer is monotone across the entire function.</mark>
 The bound comes from how far the pointer can travel end-to-end, not per outer step.
 
 ---

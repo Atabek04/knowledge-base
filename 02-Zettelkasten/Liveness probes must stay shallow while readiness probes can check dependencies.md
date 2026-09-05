@@ -4,7 +4,7 @@ tags: [orchestration/kubernetes]
 aliases: [shallow liveness deep readiness, probe depth]
 ---
 
-Liveness and readiness probes use the *same* delivery [[Kubernetes probes run via httpGet, tcpSocket, exec, or gRPC|mechanisms]] — `httpGet`, `tcpSocket`, `exec`, `grpc`. So the real difference between them is **not how they are called**. It is <mark style="background: #FFF3A3A6; font-weight: bold;">what your code checks inside the endpoint</mark>.
+Liveness and readiness probes use the *same* delivery [[Kubernetes probes run via httpGet, tcpSocket, exec, or gRPC|mechanisms]] — `httpGet`, `tcpSocket`, `exec`, `grpc`. So the real difference between them is **not how they are called**. It is <mark style="background: #FFF3A3A6;">what your code checks inside the endpoint</mark>.
 
 The rule:
 
@@ -24,7 +24,7 @@ The two probes trigger opposite kubelet reactions, and that dictates what they m
 - [[A failing liveness probe makes the kubelet restart the container|Liveness failure → restart]]. Restarting is destructive. If liveness checked the database and the DB blipped, every pod would restart in a loop — and restarting fixes nothing about a down database. So liveness must depend on **nothing external**.
 - [[A failing readiness probe removes the pod from Service endpoints|Readiness failure → drain traffic]]. Pulling a pod out of rotation is cheap and reversible. So readiness is the *right* place to check dependencies: a struggling pod stops receiving traffic until its dependencies recover, then rejoins.
 
-<mark style="background: #FF5582A6; font-weight: bold;">Putting a dependency check in liveness is the classic mistake</mark> — it converts a recoverable outage into a cluster-wide restart storm.
+<mark style="background: #FF5582A6;">Putting a dependency check in liveness is the classic mistake</mark> — it converts a recoverable outage into a cluster-wide restart storm.
 
 ---
 

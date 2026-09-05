@@ -9,7 +9,7 @@ aliases: []
 
 ### Trigger — when to reach for it
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">Recognition signals</mark> in the problem statement:
+<mark style="background: #FFF3A3A6;">Recognition signals</mark> in the problem statement:
 
 - {{data shape — e.g. array/string, contiguous}}
 - {{keywords — e.g. "longest", "size K", "at most K distinct"}}

@@ -21,13 +21,13 @@ T1: UPDATE account SET balance=100-30 WHERE id=1;  -- writes 70
 T2: UPDATE account SET balance=100-50 WHERE id=1;  -- writes 50
 ```
 
-Both read `100`. Ali's withdrawal of 30 should leave 70, then Umar's 50 should leave 20. Instead Umar's write (based on the stale `100`) lands last and stores `50`. <mark style="background: #FFB8EBA6; font-weight: bold;">Ali's update is lost</mark> — overwritten as if it never happened.
+Both read `100`. Ali's withdrawal of 30 should leave 70, then Umar's 50 should leave 20. Instead Umar's write (based on the stale `100`) lands last and stores `50`. <mark style="background: #FFB8EBA6;">Ali's update is lost</mark> — overwritten as if it never happened.
 
 The name is literal: an update that did commit gets *lost* because a second writer clobbered it with a value computed from data read *before* the first update existed.
 
 #### Related but distinct: data race
 
-You might reach for the term "data race" here — close, but it names a different layer. A <mark style="background: #FFF3A3A6; font-weight: bold;">data race</mark> is the threads-and-memory version: two threads hit the same memory location unsynchronized, at least one writing, defined by a language memory model (Go, the JMM, C++). A <mark style="background: #FFF3A3A6; font-weight: bold;">lost update</mark> is the transaction-and-row version, defined by SQL isolation levels.
+You might reach for the term "data race" here — close, but it names a different layer. A <mark style="background: #FFF3A3A6;">data race</mark> is the threads-and-memory version: two threads hit the same memory location unsynchronized, at least one writing, defined by a language memory model (Go, the JMM, C++). A <mark style="background: #FFF3A3A6;">lost update</mark> is the transaction-and-row version, defined by SQL isolation levels.
 
 Both are kinds of <mark style="background: #ABF7F7A6;">race condition</mark> — same shape of bug, different layer. Don't call a clobbered SQL row a "data race"; the rows are a lost update, the two app threads racing in memory would be the data race.
 

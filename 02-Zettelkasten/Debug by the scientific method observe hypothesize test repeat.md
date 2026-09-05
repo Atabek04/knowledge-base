@@ -6,7 +6,7 @@ aliases: [scientific method debugging, hypothesis-driven debugging]
 
 The slowest way to debug is to change things at random — "try this, try that" — because you alter the system without knowing whether the change matters. Treating a bug as a science experiment makes every step measurable: each test rules a cause in or out, so the search space only ever shrinks.
 
-The method is the same one from school science class: <mark style="background: #FFF3A3A6; font-weight: bold;">observe → hypothesize → predict → test → repeat.</mark>
+The method is the same one from school science class: <mark style="background: #FFF3A3A6;">observe → hypothesize → predict → test → repeat.</mark>
 
 ---
 
@@ -26,7 +26,7 @@ A useful hypothesis is one a single test can *disprove*:
 
 > "The `NullPointerException` happens because `user` is null when the cache misses."
 
-That predicts something concrete — a null `user` on a cache miss — which a log line or breakpoint can confirm or kill in one run. <mark style="background: #FF5582A6; font-weight: bold;">"Something's wrong with the cache" is not a hypothesis</mark> — nothing can refute it, so it can't guide a test.
+That predicts something concrete — a null `user` on a cache miss — which a log line or breakpoint can confirm or kill in one run. <mark style="background: #FF5582A6;">"Something's wrong with the cache" is not a hypothesis</mark> — nothing can refute it, so it can't guide a test.
 
 ---
 

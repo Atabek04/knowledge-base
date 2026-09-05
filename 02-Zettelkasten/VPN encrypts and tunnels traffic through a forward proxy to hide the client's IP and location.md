@@ -11,7 +11,7 @@ A VPN routes all of a device's traffic through a remote server before it reaches
 
 ### A VPN is a forward proxy, plus encryption
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">The relaying mechanic is exactly a [[Forward proxy hides the client's identity by relaying requests to the destination server|forward proxy]]</mark> — it acts on behalf of the client toward the internet. A VPN adds two things a plain forward proxy doesn't guarantee:
+<mark style="background: #FFF3A3A6;">The relaying mechanic is exactly a [[Forward proxy hides the client's identity by relaying requests to the destination server|forward proxy]]</mark> — it acts on behalf of the client toward the internet. A VPN adds two things a plain forward proxy doesn't guarantee:
 
 #### System-wide tunneling
 

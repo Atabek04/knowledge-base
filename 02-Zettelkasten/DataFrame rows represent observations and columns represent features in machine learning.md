@@ -13,7 +13,7 @@ In machine learning, a DataFrame organizes data as a **2D table** where structur
 
 ## Structure Mapping
 
-**Columns = <mark style="background: #FFB86CA6;">Features</mark>** (variables, attributes, predictors)
+**Columns = <mark style="background: #FFF3A3A6;">Features</mark>** (variables, attributes, predictors)
 Each column represents one measurable property or characteristic.
 
 **Rows = <mark style="background: #BBFABBA6;">Observations</mark>** (samples, instances, examples)
@@ -21,7 +21,7 @@ Each row represents one complete data point or record.
 
 ## Data Type Rule
 
-**<mark style="background: #CACFD9A6;">Each column must have one consistent data type</mark>** (int, float, string, datetime, etc.).
+**<mark style="background: #ADCCFFA6;">Each column must have one consistent data type</mark>** (int, float, string, datetime, etc.).
 
 Mixed types in a single column are technically allowed (stored as `object` dtype) but break ML algorithms and hurt performance.
 
@@ -29,7 +29,7 @@ Mixed types in a single column are technically allowed (stored as `object` dtype
 
 This structure feeds directly into ML algorithms:
 - **X** (features): <mark style="background: #ABF7F7A6;">All columns except target</mark>
-- **y** (target): <mark style="background: #D2B3FFA6;">One column to predict</mark>
+- **y** (target): <mark style="background: #FFF3A3A6;">One column to predict</mark>
 
 ---
 

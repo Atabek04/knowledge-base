@@ -12,7 +12,7 @@ The default is to wait, but two keywords override it. Picking the right one is t
 
 ### Default — block and wait
 
-With no keyword, a locking read that hits a locked row <mark style="background: #FFF3A3A6; font-weight: bold;">blocks until the lock is released</mark>, then proceeds (re-checking the row first — see [[A blocking FOR UPDATE re-checks the WHERE clause against the updated row when the lock is released|EvalPlanQual]]).
+With no keyword, a locking read that hits a locked row <mark style="background: #FFF3A3A6;">blocks until the lock is released</mark>, then proceeds (re-checking the row first — see [[A blocking FOR UPDATE re-checks the WHERE clause against the updated row when the lock is released|EvalPlanQual]]).
 
 Right when you *must* process that specific row and waiting is acceptable — transferring money to account #42, not "some account."
 

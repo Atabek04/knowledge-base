@@ -18,7 +18,7 @@ For **predictable** events (Pride, Black Friday, a product launch, a scheduled b
 - **Warm pools** — keep idle, already-booted instances on standby so activation is instant, skipping warm-up.
 - **Pre-load caches** so instances start warm, avoiding the [[A cold cache sends every request to the database, causing a thundering herd|cold-cache thundering herd]].
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">Pre-warming replaces "react after overload" with "already provisioned before the wave."</mark>
+<mark style="background: #FFF3A3A6;">Pre-warming replaces "react after overload" with "already provisioned before the wave."</mark>
 
 ---
 
@@ -26,13 +26,13 @@ For **predictable** events (Pride, Black Friday, a product launch, a scheduled b
 
 For **unpredictable** bursts, keep every tier running at moderate utilization (say 40–60%), not 90%. That spare margin is **headroom** — it absorbs a sudden jump instantly, buying the minutes that reactive scaling needs to add real capacity.
 
-<mark style="background: #FF9E9EA6; font-weight: bold;">A system pinned at 90% utilization has no buffer — the smallest spike tips it over before autoscaling can react.</mark> Headroom trades some idle cost for survivability.
+<mark style="background: #FF9E9EA6;">A system pinned at 90% utilization has no buffer — the smallest spike tips it over before autoscaling can react.</mark> Headroom trades some idle cost for survivability.
 
 ---
 
 #### The trade-off
 
-Both cost money — you pay for capacity you're not fully using. That's the deliberate exchange: <mark style="background: #ADCCFFA6; font-weight: bold;">spend on idle headroom to buy resilience against bursts.</mark> When even pre-warming and headroom aren't enough, the last line of defense is to shed load — [[Load shedding drops excess requests to keep the core service alive]].
+Both cost money — you pay for capacity you're not fully using. That's the deliberate exchange: <mark style="background: #ADCCFFA6;">spend on idle headroom to buy resilience against bursts.</mark> When even pre-warming and headroom aren't enough, the last line of defense is to shed load — [[Load shedding drops excess requests to keep the core service alive]].
 
 ---
 

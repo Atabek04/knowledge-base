@@ -6,7 +6,7 @@ aliases: [ShedLock, SchedulerLock, lockAtMostFor, lockAtLeastFor, distributed sc
 
 A [[Spring @Scheduled runs a method on a fixed interval or cron expression#Runs once per instance — not once per system|@Scheduled method fires inside every running instance]]. On one server that's correct; behind a load balancer with 3 pods it's a bug — at 02:00 all three schedulers fire `reconcileSlots()` at once, so the same night's slots get generated three times and every user gets three "hold expired" emails. Spring has no idea its siblings exist.
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">ShedLock</mark> fixes this. Before a task runs, it tries to acquire a **named lock in a store all pods share** (a Postgres row, a Redis key, a Mongo doc). Exactly one pod wins the lock and runs; the rest see it taken and <mark style="background: #FFB8EBA6;">skip their turn entirely</mark>. The job executes *at most once* per scheduled tick across the whole cluster.
+<mark style="background: #FFF3A3A6;">ShedLock</mark> fixes this. Before a task runs, it tries to acquire a **named lock in a store all pods share** (a Postgres row, a Redis key, a Mongo doc). Exactly one pod wins the lock and runs; the rest see it taken and <mark style="background: #FFB8EBA6;">skip their turn entirely</mark>. The job executes *at most once* per scheduled tick across the whole cluster.
 
 The name says the scope: it *sheds* redundant *locks* — it sheds the duplicate executions.
 

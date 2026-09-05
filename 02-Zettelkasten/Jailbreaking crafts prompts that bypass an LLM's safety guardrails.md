@@ -2,7 +2,7 @@
 aliases: [jailbreak, jailbreaking, LLM jailbreak]
 ---
 
-LLM providers train and instruct models to refuse harmful requests — these refusals are the model's <mark style="background: #FFF3A3A6; font-weight: bold;">safety guardrails</mark>. Jailbreaking is the craft of writing a prompt that gets the model to ignore those guardrails and emit output it was trained to withhold.
+LLM providers train and instruct models to refuse harmful requests — these refusals are the model's <mark style="background: #FFF3A3A6;">safety guardrails</mark>. Jailbreaking is the craft of writing a prompt that gets the model to ignore those guardrails and emit output it was trained to withhold.
 
 The name fits literally: the model is confined by its safety rules, and the attacker is breaking it out of that jail.
 

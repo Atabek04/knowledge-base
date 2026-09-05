@@ -66,7 +66,7 @@ So `repair` only fixes the *mismatch error*; it never applies your schema change
 | The schema itself (DDL) | `clean` + `migrate` |
 | Only text, schema already right | `repair` |
 
-<mark style="background: #FF5582A6; font-weight: bold;">Pre-launch only.</mark> Editing applied migration files is safe only before the app ships and while every environment can be wiped. `clean` destroys all data — running it against a live DB is a disaster.
+<mark style="background: #FF5582A6;">Pre-launch only.</mark> Editing applied migration files is safe only before the app ships and while every environment can be wiped. `clean` destroys all data — running it against a live DB is a disaster.
 
 <mark style="background: #FF5582A6;">After launch, migrations are forward-only</mark>: never touch an applied file — add a new `V{next}__change.sql` for every schema change instead.
 

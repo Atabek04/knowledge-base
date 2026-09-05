@@ -6,7 +6,7 @@ aliases: [read the error literally]
 
 When something breaks, the instinct is to immediately guess at the cause — "oh, it's probably the cache again." But the error message and stack trace have usually already told you the file, the line, and the exact failure. Theorizing before reading them means chasing a story instead of the evidence sitting in front of you.
 
-The discipline is simple: <mark style="background: #FFF3A3A6; font-weight: bold;">read the error message literally, top to bottom, before forming any theory.</mark>
+The discipline is simple: <mark style="background: #FFF3A3A6;">read the error message literally, top to bottom, before forming any theory.</mark>
 
 ---
 
@@ -25,7 +25,7 @@ Most "mysterious" bugs stop being mysterious the moment you actually read all fo
 
 #### Read the whole cause chain, not just the top line
 
-Java and Spring wrap exceptions as they bubble up. The top of the trace is frequently a generic wrapper (`ServletException`, `BeanCreationException`); the real fault is at the bottom, after the last <mark style="background: #FF5582A6; font-weight: bold;">`Caused by:`</mark>. Reading only the first line points you at the symptom, not the cause.
+Java and Spring wrap exceptions as they bubble up. The top of the trace is frequently a generic wrapper (`ServletException`, `BeanCreationException`); the real fault is at the bottom, after the last <mark style="background: #FF5582A6;">`Caused by:`</mark>. Reading only the first line points you at the symptom, not the cause.
 
 ```
 org.springframework.web.util.NestedServletException: Request failed

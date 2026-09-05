@@ -4,9 +4,9 @@ tags: [orchestration/kubernetes]
 aliases: [startup probe]
 ---
 
-Some apps boot slowly — a JVM warming up, a large cache loading, migrations running. During that window the app isn't dead, it's just not up yet. A [[A failing liveness probe makes the kubelet restart the container|liveness probe]] that fires too early would see failures and <mark style="background: #FF5582A6; font-weight: bold;">restart the container before it ever finishes starting</mark>, looping forever.
+Some apps boot slowly — a JVM warming up, a large cache loading, migrations running. During that window the app isn't dead, it's just not up yet. A [[A failing liveness probe makes the kubelet restart the container|liveness probe]] that fires too early would see failures and <mark style="background: #FF5582A6;">restart the container before it ever finishes starting</mark>, looping forever.
 
-The **startup probe** exists to break that loop. Its job: <mark style="background: #FFF3A3A6; font-weight: bold;">tell the kubelet "the app has finished booting" — and until it succeeds, liveness and readiness probes are held back entirely.</mark>
+The **startup probe** exists to break that loop. Its job: <mark style="background: #FFF3A3A6;">tell the kubelet "the app has finished booting" — and until it succeeds, liveness and readiness probes are held back entirely.</mark>
 
 ---
 

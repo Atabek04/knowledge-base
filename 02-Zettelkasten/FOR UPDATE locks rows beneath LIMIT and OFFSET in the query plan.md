@@ -30,7 +30,7 @@ SELECT ... FROM job OFFSET 10 LIMIT 5 FOR UPDATE;   -- locks ~15 rows, returns 5
 
 Because the lock step sits under `LIMIT`, a blocking `LIMIT 1 FOR UPDATE` pulls the first matching row, tries to lock it, and **blocks there** if another session holds it — it does *not* move on to the free rows behind it. Ten workers all pile onto row 1.
 
-This is exactly why the [[SELECT FOR UPDATE SKIP LOCKED turns a table into a competing-consumers work queue|queue idiom needs `SKIP LOCKED`]]: skipped rows don't count toward the `LIMIT`, so each worker walks past the busy rows and locks the next *free* one. <mark style="background: #FFF3A3A6; font-weight: bold;">`LIMIT` alone funnels; `LIMIT` + `SKIP LOCKED` spreads.</mark>
+This is exactly why the [[SELECT FOR UPDATE SKIP LOCKED turns a table into a competing-consumers work queue|queue idiom needs `SKIP LOCKED`]]: skipped rows don't count toward the `LIMIT`, so each worker walks past the busy rows and locks the next *free* one. <mark style="background: #FFF3A3A6;">`LIMIT` alone funnels; `LIMIT` + `SKIP LOCKED` spreads.</mark>
 
 ---
 

@@ -6,7 +6,7 @@ aliases: [bisection, binary search debugging, halving the search space]
 
 When a fault is hiding *somewhere* in a large space — 1000 lines, 200 commits, a ten-stage data pipeline — checking each point one at a time is O(n) and brutal. Bisection cuts that to O(log n) by halving the space on every test instead of stepping through it.
 
-The name says the method: <mark style="background: #FFF3A3A6; font-weight: bold;">**bi-section** — cut the suspect range in two, decide which half holds the fault, discard the other half, repeat.</mark>
+The name says the method: <mark style="background: #FFF3A3A6;">**bi-section** — cut the suspect range in two, decide which half holds the fault, discard the other half, repeat.</mark>
 
 ---
 

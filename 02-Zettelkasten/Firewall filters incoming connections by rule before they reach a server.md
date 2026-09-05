@@ -11,7 +11,7 @@ A firewall inspects incoming (and sometimes outgoing) network connections agains
 
 ### Rule example
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">"Only allow traffic from these IP ranges"</mark> or "block port 22 from outside" are typical firewall rules.
+<mark style="background: #FFF3A3A6;">"Only allow traffic from these IP ranges"</mark> or "block port 22 from outside" are typical firewall rules.
 
 #### Where it fits with a reverse proxy
 

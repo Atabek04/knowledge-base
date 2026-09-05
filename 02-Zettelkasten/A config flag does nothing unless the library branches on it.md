@@ -4,7 +4,7 @@ tags: [debugging/heuristic, libraries]
 aliases: [no-op config flag, flag the library ignores, verify the flag in the source]
 ---
 
-A config flag is a promise *your* code makes. It only comes true if the library actually branches on the value you pass. If the library reaches the same behavior through a different path, your flag is <mark style="background: #FF5582A6; font-weight: bold;">a no-op that looks like a control</mark> — and you'll waste days "disabling" something that was never wired off.
+A config flag is a promise *your* code makes. It only comes true if the library actually branches on the value you pass. If the library reaches the same behavior through a different path, your flag is <mark style="background: #FF5582A6;">a no-op that looks like a control</mark> — and you'll waste days "disabling" something that was never wired off.
 
 The trap: `ocspEnabled=false` only skipped adding an *extra* OCSP verifier. The library's `VerifierFlags(AUTH)` preset already performed OCSP through a *different* member (`VALIDITY_WITH_STATUS → PKIXUtil.withOCSP()`). The flag touched a path that wasn't the one doing the work.
 

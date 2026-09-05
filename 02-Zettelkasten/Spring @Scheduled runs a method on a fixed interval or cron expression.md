@@ -4,7 +4,7 @@ tags: [spring, scheduling, cron, backend]
 aliases: [Scheduled annotation, EnableScheduling, fixedRate, fixedDelay, Spring scheduling]
 ---
 
-Background work on a clock — send reminder emails, expire unpaid bookings, refresh a cache — shouldn't need an external Unix [[Cron runs commands on a schedule defined by a five-field time expression|cron]] daemon shelling out to your app. Spring brings the scheduler *inside* the application: annotate a method with <mark style="background: #FFF3A3A6; font-weight: bold;">@Scheduled</mark> and the container calls it automatically on the schedule you declare.
+Background work on a clock — send reminder emails, expire unpaid bookings, refresh a cache — shouldn't need an external Unix [[Cron runs commands on a schedule defined by a five-field time expression|cron]] daemon shelling out to your app. Spring brings the scheduler *inside* the application: annotate a method with <mark style="background: #FFF3A3A6;">@Scheduled</mark> and the container calls it automatically on the schedule you declare.
 
 You must switch the feature on once with <mark style="background: #ABF7F7A6;">`@EnableScheduling`</mark> on a `@Configuration` class — otherwise the annotations are silently ignored.
 

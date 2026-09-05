@@ -6,7 +6,7 @@ aliases: [auto-scaling, autoscaling, reactive scaling]
 
 **Auto-scaling** watches a metric (CPU %, request count, queue depth) and adds instances when it crosses a threshold, removes them when it drops. It's marketed as "handles any traffic automatically" — which quietly hides a timing problem.
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">Auto-scaling is reactive: it can only respond *after* the metric has already crossed the line. By definition it starts scaling once you're already overloaded.</mark>
+<mark style="background: #FFF3A3A6;">Auto-scaling is reactive: it can only respond *after* the metric has already crossed the line. By definition it starts scaling once you're already overloaded.</mark>
 
 ---
 
@@ -18,7 +18,7 @@ aliases: [auto-scaling, autoscaling, reactive scaling]
 4. New instances launch and [[A newly launched instance needs warm-up before it can serve traffic|warm up]] — another 1–5 min.
 5. Only *now* do they take traffic.
 
-<mark style="background: #FF9E9EA6; font-weight: bold;">That's several minutes of lag. A viral moment or a crowd hitting the app peaks in seconds — users have already errored out before new capacity arrives.</mark>
+<mark style="background: #FF9E9EA6;">That's several minutes of lag. A viral moment or a crowd hitting the app peaks in seconds — users have already errored out before new capacity arrives.</mark>
 
 ---
 
