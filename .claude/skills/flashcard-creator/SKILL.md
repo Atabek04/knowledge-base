@@ -164,6 +164,12 @@ and smaller to make that obvious. Same logic on a vocab card: you recall the mea
 the collocations and forms are there to be re-read, not recited. <mark style="background: #FF5582A6;">A card that quietly asks the
 learner to recall four fields is four cards wearing one coat, and none of them get learned.</mark>
 
+**A cloze gap must have exactly one right answer.** If two forms fit, the card grades the
+learner on guessing your intent, and marking a correct sentence wrong is worse than having
+no card. Pick a sentence where the grammar forces one form, or put the lemma in brackets
+after the gap — `{1:have known} (know)`. If a second form is genuinely correct there, that
+goes in `Explanation` as a teaching point, never left ambiguous in the gap.
+
 **Never card a grammar rule before learning it.** Read the unit, write the note, then card
 it. Cards test knowledge; they do not deliver it.
 

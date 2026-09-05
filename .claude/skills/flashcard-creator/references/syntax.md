@@ -85,14 +85,35 @@ Cloze. Fields: `Text`, `Explanation`
 ```
 START
 English Grammar
-I {1:have lived} here since 2019.
+I {1:have known} (know) her since 2019.
 Explanation: Unfinished time period → present perfect.
-- "I **lived** here in 2019" — finished time, past simple
-- *since* + point in time · *for* + duration
-- Russian collapses both onto *жил*, so the contrast is learned, not felt
+- *know* is stative, so there is no continuous: "have been knowing" is wrong
+- "I **knew** her in 2019" — finished time, past simple
+- Russian uses the present *знаю*, which is why "I know her since 2019" feels right
 Tags: grammar
 END
 ```
+
+### The gap must have exactly one right answer
+
+<mark style="background: #FF5582A6;">If two correct answers fit the gap, the card is broken — it grades the learner on guessing
+which one you had in mind.</mark> Marking a correct sentence wrong is worse than no card at
+all, because it teaches distrust of the deck.
+
+`I {1:have lived} here since 2019` is exactly this failure: *have been living* is equally
+correct. Three ways to close it, in order of preference:
+
+1. **Choose a sentence where only one form works.** *know* is stative, so the continuous is
+   simply ungrammatical and the gap is forced. Best option — the constraint is the grammar
+   itself, and learning it is the point.
+2. **Put the lemma in brackets after the gap** — `{1:have known} (know)`. Murphy's own
+   exercise convention, and it fixes the word while leaving the form to be produced.
+3. **Name the constraint in brackets** when several forms remain — `(know — not continuous)`.
+   Use last; a bracket that gives away the answer defeats the card.
+
+When a second form genuinely is correct in that sentence, say so in `Explanation` and state
+what changes the choice. That is a teaching point, not a defect — but it belongs in the
+explanation, never in the gap.
 
 <mark style="background: #ADCCFFA6;">The cloze is the test. `Explanation` is a reminder, and the learner is never graded on
 recalling it.</mark> It renders smaller and dimmer for exactly that reason, so keep it to
