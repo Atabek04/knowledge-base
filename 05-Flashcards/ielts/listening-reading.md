@@ -1,4 +1,4 @@
-TARGET DECK: IELTS::Listening and Reading
+TARGET DECK: English::IELTS::Listening and Reading
 Tags: ielts listening reading
 **Chapter:** Listening and Reading
 **Related:** [[IELTS - MOC]]
@@ -104,6 +104,7 @@ Back: **The options.** Yanagawa & Green (2008) compared four preview conditions:
 - A stem tells you what to listen for and where you are; an option is only useful at the moment of choosing
 - Caveat: that study was a general MC listening test, **not IELTS** — and Part 3 options are long and finely differentiated, so pay for the options there
 Tags: ielts listening
+<!--ID: 1788626244286-->
 END
 
 START
@@ -114,6 +115,7 @@ Back: **One mark plus every mark that passes while you hunt for it.** Field's th
 - Recovery: abandon instantly, re-anchor on whatever question the audio is now answering, leave the gap blank, guess it after the recording stops
 - **Questions follow recording order** (official) — so your position is always recoverable from content
 Tags: ielts listening
+<!--ID: 1788626244290-->
 END
 
 START
@@ -125,6 +127,7 @@ Back: Predict the **slot**, never the **word**.
 - Field recorded candidates building whole interpretations on a misheard word — *breed* for *beach*, *machines* for *meshing*
 - A prediction is a filter for attention, not a hypothesis to be confirmed
 Tags: ielts listening
+<!--ID: 1788626244291-->
 END
 
 START
@@ -135,6 +138,7 @@ Back: Because **reading during the audio is paid for with audio you do not hear.
 - Mark **one or two keywords per question**, not the question — a glance is cheap, a re-read is not
 - Keyword matching also locates an answer without verifying you heard it correctly
 Tags: ielts listening
+<!--ID: 1788626244292-->
 END
 
 START
@@ -146,6 +150,7 @@ Back: **What the speakers jointly settle on** — not what any individual said.
 - Tactic: capture the words carrying the answer during the audio, do the matching to the option box **after** it stops
 - The speakers × topics grid is folklore — no official or first-tier source, never validated
 Tags: ielts listening
+<!--ID: 1788626244293-->
 END
 
 START
@@ -156,6 +161,7 @@ Back: **The redundancy is stripped out.** Field: a real lecture "relies quite he
 - One preview block for all ten questions and **no mid-part pause** (unlike Parts 1–3)
 - Read the note-completion form as the talk's **outline**, not as ten isolated gaps — it is the structure the speaker will not give you
 Tags: ielts listening
+<!--ID: 1788626244294-->
 END
 
 START
@@ -167,6 +173,7 @@ Back: **From the printed stem's own grammar.**
 - `car(s)` scores **zero** — the hedge produces a string that is on nobody's answer key
 - Compound nouns stay unmarked: *student support*, never *students' support*
 Tags: ielts listening
+<!--ID: 1788626244295-->
 END
 
 START
@@ -177,4 +184,49 @@ Back: **No published list is derived from actual answer keys** — Cambridge rel
 - Drill with **audio on the front, typed spelling on the back** — Cover-Copy-Compare in digital form
 - Ehri's orthographic mapping: a word learned as sound alone or shape alone is not learned; the two must be bound
 Tags: ielts listening
+<!--ID: 1788626244296-->
+END
+START
+Coding Questions
+Spell it: a person who does not eat meat. (Cambridge 20 Test 1 Q4)
+Back: **vegetarian**
+- The mistyped syllable `-tar-` is **unstressed and reduces to schwa** — a, e, i, o, u all sound identical there
+- So replaying the audio can never resolve it; the spelling has to be in memory
+- Same trap: *separate*, *definitely*, *comfortable*, *temperature*
+Tags: ielts spelling
+<!--ID: 1788626244297-->
+END
+
+START
+Coding Questions
+Which two letter names do you confuse under exam pressure, and what do they sound like?
+Back: **E /iː/ and U /juː/** — the error that turned *Audley* into `Audluy`.
+- The other classic collisions in dictation: **B/P, D/T, S/X, J/G, M/N, K/Q, V/W**
+- UK **/zed/** vs US **/zee/** for Z
+- Drill: type each letter the instant it is spoken, never wait for the sequence to end
+Tags: ielts spelling
+<!--ID: 1788626244298-->
+END
+
+START
+Coding Questions
+How do you tell 13 from 30 in dictated numbers?
+Back: **By stress, not by vowel.**
+- thir-**TEEN** — stress on the final syllable
+- **THIR**-ty — stress on the first syllable
+- In American speech the `-ty` often reduces to a flap /ɾi/, which removes the /t/ cue entirely
+- Applies to all of 14/40 through 19/90
+Tags: ielts spelling numbers
+<!--ID: 1788626244299-->
+END
+
+START
+Coding Questions
+In a dictated phone or reference number, what do "oh" and "double" mean?
+Back: **"oh" = zero**, and **"double X" = XX**.
+- "double four" → `44`; "K-E-double-L-Y" → `KELLY`
+- "triple" also occurs
+- Write digits, not words — digits cannot be misspelled and count as one item against the word limit
+Tags: ielts spelling numbers
+<!--ID: 1788626244300-->
 END

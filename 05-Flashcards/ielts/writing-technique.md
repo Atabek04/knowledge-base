@@ -1,4 +1,4 @@
-TARGET DECK: IELTS::Writing Technique
+TARGET DECK: English::IELTS::Writing Technique
 Tags: ielts writing
 **Chapter:** Writing Technique
 **Related:** [[IELTS - MOC]]

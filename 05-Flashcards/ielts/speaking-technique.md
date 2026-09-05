@@ -1,4 +1,4 @@
-TARGET DECK: IELTS::Speaking Technique
+TARGET DECK: English::IELTS::Speaking Technique
 Tags: ielts speaking
 **Chapter:** Speaking Technique
 **Related:** [[IELTS - MOC]]

@@ -1,4 +1,4 @@
-TARGET DECK: IELTS::Strategy and Evidence
+TARGET DECK: English::IELTS::Strategy and Evidence
 Tags: ielts strategy
 **Chapter:** Strategy and Evidence
 **Related:** [[IELTS - MOC]]

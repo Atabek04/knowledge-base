@@ -28,9 +28,9 @@ The deck roots are independent, and they never mix:
 
 - **`Tech-KB::`** — technical knowledge. Cards test what a thing *does*, how it works, why
   it behaves that way.
-- **`English::`** — vocabulary. Cards test what a **word means**, nothing else.
+- **`English::`** — the English language. Vocabulary, grammar, and exam preparation under
+  `English::IELTS::`.
 - **`Math::`** — mathematics, studied as a subject in its own right.
-- **`IELTS::`** — exam preparation.
 - **`Self-Mastery::`** — habits, discipline, study technique.
 
 The split is by *what the card asks*, not by subject matter. A card about a technical word
@@ -61,17 +61,25 @@ Math::Calculus
 Math::Probability
 ```
 
-### IELTS
-
-Also its own root — exam preparation, not technical knowledge.
+### English
 
 ```
-IELTS::Band Descriptors
-IELTS::Listening and Reading
-IELTS::Speaking Technique
-IELTS::Strategy and Evidence
-IELTS::Writing Technique
+English::General
+English::Tech Terms
+English::IELTS::Band Descriptors
+English::IELTS::Listening and Reading
+English::IELTS::Speaking Technique
+English::IELTS::Strategy and Evidence
+English::IELTS::Writing Technique
 ```
+
+`English::IELTS::` holds **exam technique only** — band descriptors, section strategy, the
+mechanics that score or lose marks.
+
+A **word** met during IELTS practice does not go there. A word is a word regardless of where
+you met it, so it goes to `English::General` (or `English::Tech Terms`) and outlives the exam.
+The one thing that stays in the IELTS tree is spelling drilled for the Listening answer sheet,
+because that exists only for the test.
 
 ### Software Engineering
 
