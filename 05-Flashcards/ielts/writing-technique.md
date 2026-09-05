@@ -6,7 +6,7 @@ Tags: ielts writing
 ---
 
 START
-Coding Questions
+English Card
 How should the 60 minutes of the Writing test be split, and why?
 Back: **~20 minutes Task 1, ~40 minutes Task 2** — because Task 2 contributes **twice as much** to the Writing band.
 - Minimums: 150 words (T1), 250 (T2); no upper limit and no length penalty
@@ -17,7 +17,7 @@ Tags: ielts writing
 END
 
 START
-Coding Questions
+English Card
 What is Academic Task 1 actually testing, and what is off-task?
 Back: It is an **information-transfer task** tied narrowly to the visual's factual content — **not** speculative explanation outside the data.
 - "This rise was probably caused by industrialisation" earns nothing
@@ -28,7 +28,7 @@ Tags: ielts writing
 END
 
 START
-Coding Questions
+English Card
 What is the first decision in any Task 1 answer, before writing a sentence?
 Back: **The grouping axis** — what are the two or three groups, and are they grouped by shared behaviour, category, or period?
 - Line graphs group lines that move alike; bar charts by trend or category, **never left-to-right**; tables use row/column extremes as the spine
@@ -39,7 +39,7 @@ Tags: ielts writing
 END
 
 START
-Coding Questions
+English Card
 What is the difference between "highlights" (band 7) and "illustrates" (band 8) in Task 1?
 Back: **Highlight** = name the feature and make it prominent. **Illustrate** = attach the evidence that proves it, then extend with a comparison.
 - Band 7 carries the qualifier "*but could be more fully extended*"; band 8 drops it and adds "**all** requirements sufficiently"
@@ -50,7 +50,7 @@ Tags: ielts writing
 END
 
 START
-Coding Questions
+English Card
 Does Task 1 need a conclusion?
 Back: **No — it needs an overview, and they are not the same thing.**
 - A conclusion restates points already made: wasted words in a 150-word report
@@ -61,7 +61,7 @@ Tags: ielts writing
 END
 
 START
-Coding Questions
+English Card
 How are errors weighted in IELTS Writing?
 Back: By **density and communicative effect** — the guide uses that same phrase for spelling, word formation and grammar.
 - Density, not total: a long essay with 8 errors isn't ranked against a short one with 5 by raw count
@@ -72,7 +72,7 @@ Tags: ielts writing
 END
 
 START
-Coding Questions
+English Card
 What are the three ways a "discuss both views and give your own opinion" essay fails?
 Back: **Opinion missing · opinion only in the conclusion · views reported rather than discussed.**
 - Two instructions = two parts of the task; dropping either fails "addresses all parts" (a band **7** requirement)
@@ -83,7 +83,7 @@ Tags: ielts writing
 END
 
 START
-Coding Questions
+English Card
 Why do articles matter so much for a Turkic or Slavic L1 writer at the 7→8 boundary?
 Back: They are the **largest single learner error category** — 14.8% of all annotated errors in NUCLE (19.9% in the blind set).
 - L1-German learners rarely misuse articles; L1-Russian learners fluctuate — the contrast is the article system itself
@@ -94,7 +94,7 @@ Tags: ielts writing
 END
 
 START
-Coding Questions
+English Card
 What actually carries cohesion at band 8, if not linking words?
 Back: **Reference and substitution** — the official criteria bullet nobody drills: pronouns, definite articles, *this shift*, *such policies*, varied repetition of key nouns.
 - Self-test: delete every sentence-initial connector. If the argument still reads in order, the cohesion was structural
@@ -104,7 +104,7 @@ Tags: ielts writing
 END
 
 START
-Coding Questions
+English Card
 Why does swapping in a rarer synonym usually lower Lexical Resource?
 Back: A thesaurus swap keeps the **denotation** and destroys the **collocation** — *make a crime*, *do a decision*, *strong rain*.
 - That scores as an inaccuracy in word choice/collocation, already a band-7 listed fault
@@ -115,7 +115,7 @@ Tags: ielts writing
 END
 
 START
-Coding Questions
+English Card
 Which four IELTS writing "rules" are folklore?
 Back: **Never use "I" · always write 300+ words · use the passive · never use contractions.** None appears in any descriptor.
 - The Task 2 rubric itself invites examples from *your own* experience — and "this essay will argue" produces the no-clear-position fault
@@ -126,7 +126,7 @@ Tags: ielts writing
 END
 
 START
-Coding Questions
+English Card
 What goes in a Task 2 plan, and why does planning pay?
 Back: TR + CC are **half the mark** and both are settled before the prose starts.
 - Contents: question type (how many tasks owed) · the position as **one sentence, verbatim thesis** · two chosen ideas · **one specific example per idea, decided now** · 2–3 sure vocabulary items

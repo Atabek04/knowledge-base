@@ -6,7 +6,7 @@ Tags: ielts strategy
 ---
 
 START
-Coding Questions
+English Card
 What do the official statistics say about which IELTS section is the ceiling?
 Back: **Writing**, and the margin is large.
 - Academic mean by skill: L 6.40 · R 6.31 · S 5.99 · **W 5.93** — the only skill under 6.0
@@ -18,7 +18,7 @@ Tags: ielts strategy
 END
 
 START
-Coding Questions
+English Card
 What does the *variance* in the official data show about the Writing ceiling?
 Back: Writing's group-mean spread is **half** that of every other section.
 - Writing range 5.54–**6.64** (SD 0.24); Reading range 5.92–**8.15** (SD 0.45)
@@ -30,7 +30,7 @@ Tags: ielts strategy
 END
 
 START
-Coding Questions
+English Card
 Is the "200 hours per band" figure real?
 Back: **No — retired and refuted.** It was an IELTS partner statement, later withdrawn.
 - Green (2005), 15,380 repeat candidates: the **initial score** predicted gain better than course length did
@@ -41,7 +41,7 @@ Tags: ielts strategy
 END
 
 START
-Coding Questions
+English Card
 Why does the template that gets a writer to band 7 then stop working?
 Back: Because band 7 **already** awards the things a template supplies.
 - Band 7 gives you coverage, a clear position, and cohesive devices — and explicitly tolerates their over-use
@@ -52,7 +52,7 @@ Tags: ielts strategy
 END
 
 START
-Coding Questions
+English Card
 Which direction does LLM band scoring get wrong for a candidate near band 8?
 Back: **It under-scores you.** The error is regression toward the mean, not inflation.
 - Koraishi (2024): mean bias **zero**, but limits of agreement **±1.3 bands** on a single essay
@@ -63,7 +63,7 @@ Tags: ielts strategy
 END
 
 START
-Coding Questions
+English Card
 What should you ask an LLM about an essay, and what should you never ask?
 Back: Ask for **located, named evidence**. Never ask for a score.
 - Good: "quote the sentence that fails the Band 7 descriptor and name the clause it fails"
@@ -75,7 +75,7 @@ Tags: ielts strategy
 END
 
 START
-Coding Questions
+English Card
 Why can't a text-based LLM score IELTS pronunciation?
 Back: The signal isn't in the transcript.
 - Transcript-only pronunciation assessment: accuracy **0.404** (0.728 with engineered acoustic features)
@@ -86,7 +86,7 @@ Tags: ielts strategy
 END
 
 START
-Coding Questions
+English Card
 Why is IELTS Ready Premium the reason to book the test early?
 Back: It unlocks on **booking**, not on payment — ~40 full scored tests, per-skill courses, AI feedback, open until 7 days after the test date.
 - So the order is **book → diagnose → prepare**, not the reverse
@@ -96,7 +96,7 @@ Tags: ielts strategy
 END
 
 START
-Coding Questions
+English Card
 What is the review method that separates candidates who reach the 8s?
 Back: **Logging wrong answers by error category**, then attacking the categories — not tracking the score.
 - One 7.0→8.0 account: Reading loss was almost all False-vs-Not-Given; Listening loss was almost all word form (*travel* / *travelling*)
@@ -107,7 +107,7 @@ Tags: ielts strategy
 END
 
 START
-Coding Questions
+English Card
 How many marked essays actually move a Writing band, and what is the unit of work?
 Back: **8–12 marked essays, each rewritten after the feedback**, across ~5 months.
 - The unit is **essay + rewrite** — an unrewritten marked essay changes nothing

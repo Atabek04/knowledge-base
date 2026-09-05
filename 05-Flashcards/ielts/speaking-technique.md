@@ -6,7 +6,7 @@ Tags: ielts speaking
 ---
 
 START
-Coding Questions
+English Card
 Why are memorised speaking answers penalised, and how are they detected?
 Back: IDP names the mechanism: memorised delivery loses natural emphasis and emotion, which **damages Pronunciation — 25% of the band**.
 - Examiners are trained to spot it and respond by **raising question difficulty** until they see your real level
@@ -17,7 +17,7 @@ Tags: ielts speaking
 END
 
 START
-Coding Questions
+English Card
 What is the official method for the Part 2 preparation minute?
 Back: **Take the first example you think of and can describe in English** — inventing something means running out of things to say.
 - Ask about an unclear word at the **start** of the minute, not the end
@@ -29,7 +29,7 @@ Tags: ielts speaking
 END
 
 START
-Coding Questions
+English Card
 For a Turkic L1 speaker, what pronunciation work actually pays, and what doesn't?
 Back: **Prosody pays; accent reduction does not.**
 - Derwing & Munro: global/prosodic instruction improved spontaneous speech; segmental instruction only improved **read-aloud** and didn't transfer
@@ -40,7 +40,7 @@ Tags: ielts speaking
 END
 
 START
-Coding Questions
+English Card
 Why is consonant-cluster epenthesis the one segmental error worth drilling?
 Back: Because it **adds a syllable**, it doesn't just change a sound.
 - Turkic languages prefer CV structure → *strong* becomes *sitrong*
@@ -51,7 +51,7 @@ Tags: ielts speaking
 END
 
 START
-Coding Questions
+English Card
 What separates a band 7 Part 3 answer from a band 8 one?
 Back: **Flexibility and qualification, not more structure.** Band 7 candidates already concede and counter.
 - Band 8 moves between simple and complex forms **without forcing complexity into every sentence**
@@ -63,7 +63,7 @@ Tags: ielts speaking
 END
 
 START
-Coding Questions
+English Card
 Are IELTS "speaking topic forecasts" worth using?
 Back: **As a coverage map, yes. As scripts, no.**
 - Not leaks — IELTS publishes no topics; anything "guaranteed" is guesswork
@@ -75,7 +75,7 @@ Tags: ielts speaking
 END
 
 START
-Coding Questions
+English Card
 Does taking the computer-delivered test change the Speaking exam?
 Back: **No.** Speaking is a live conversation with a certified examiner in both formats, with the same questions; it may fall on a different day.
 - Video-Call Speaking is offered at many centres, officially identical in content, timing and scoring

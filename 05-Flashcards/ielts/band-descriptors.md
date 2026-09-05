@@ -6,7 +6,7 @@ Tags: ielts band-descriptors
 ---
 
 START
-Coding Questions
+English Card
 How is the IELTS **overall band** calculated, and how does it round?
 Back: The **arithmetic mean of the four section bands**, rounded to the nearest half band — rounding **up** at both .25 and .75.
 - An average of 7.75 is reported as **8.0**
@@ -16,7 +16,7 @@ Tags: ielts band-descriptors
 END
 
 START
-Coding Questions
+English Card
 Why does the rounding rule change which section you should study first?
 Back: Because a weak section can be **carried** by the other three.
 - L 9 + R 8.5 + S 7.5 + **W 6.5** = 31.5 → overall **8.0**
@@ -27,7 +27,7 @@ Tags: ielts band-descriptors
 END
 
 START
-Coding Questions
+English Card
 What is the **full fit rule** in the IELTS band descriptors?
 Back: A candidate must **fully fit the positive features** of a band to be awarded it — it is a floor, not an average.
 - Two band-8 bullets plus one band-6 bullet does **not** average to 7
@@ -38,7 +38,7 @@ Tags: ielts band-descriptors
 END
 
 START
-Coding Questions
+English Card
 What separates band 7 from band 8 in **Grammatical Range and Accuracy**?
 Back: **Frequent** error-free sentences (7) versus **the majority** of sentences error-free (8).
 - Band 8 also wants a *wide* range of structures and only "very occasional" errors
@@ -48,7 +48,7 @@ Tags: ielts band-descriptors
 END
 
 START
-Coding Questions
+English Card
 What does the band 8 **Lexical Resource** descriptor forgive, and what does it not?
 Back: It **forgives** occasional inaccuracies in word choice and collocation. It does **not** forgive a narrow range.
 - Band 8 = wide range used fluently and flexibly for **precise meanings**
@@ -59,7 +59,7 @@ Tags: ielts band-descriptors
 END
 
 START
-Coding Questions
+English Card
 Which **Coherence and Cohesion** bullet actually caps a band 7 essay?
 Back: Usually the **paragraph**, not the connectives.
 - Band 7 requires "a central topic within each paragraph"
@@ -70,7 +70,7 @@ Tags: ielts band-descriptors
 END
 
 START
-Coding Questions
+English Card
 Which band 7 **Task Response** bullet blocks the move to band 8?
 Back: The tendency to **over-generalise**, with supporting ideas that lack focus.
 - Coverage and a clear position are already band-7 features
@@ -81,7 +81,7 @@ Tags: ielts band-descriptors
 END
 
 START
-Coding Questions
+English Card
 What happens to Academic Task 1 Task Achievement if there is **no overview**?
 Back: It is capped at **band 5** — the descriptor reads "recounts detail mechanically with no clear overview".
 - Band 6 is the first band requiring an overview at all
@@ -92,7 +92,7 @@ Tags: ielts band-descriptors
 END
 
 START
-Coding Questions
+English Card
 How does the official guide say **errors** are assessed in IELTS Writing?
 Back: By **density and communicative effect** — not by raw count.
 - The same wording is used for spelling, word formation and grammar
@@ -103,7 +103,7 @@ Tags: ielts band-descriptors
 END
 
 START
-Coding Questions
+English Card
 How is **band 7 Pronunciation** defined in the Speaking descriptors?
 Back: Only by reference to its neighbours — "all the positive features of band 6, and some, but not all, of the positive features of band 8".
 - There is nothing to study *at* band 7; you train the **band 8** feature set
@@ -113,7 +113,7 @@ Tags: ielts band-descriptors
 END
 
 START
-Coding Questions
+English Card
 Is an L1 accent penalised in IELTS Speaking?
 Back: **No** — only its **effect on intelligibility** is.
 - Band 8: "accent has minimal effect on intelligibility", easily understood throughout
@@ -124,7 +124,7 @@ Tags: ielts band-descriptors
 END
 
 START
-Coding Questions
+English Card
 What kind of hesitation does band 8 Fluency and Coherence permit?
 Back: **Content-related** hesitation — pausing to decide *what* to say. Not pausing to find *words or grammar*.
 - Band 7's hesitation is "often mid-sentence", indicating problems accessing language

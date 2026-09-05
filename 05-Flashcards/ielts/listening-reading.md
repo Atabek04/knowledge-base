@@ -6,7 +6,7 @@ Tags: ielts listening reading
 ---
 
 START
-Coding Questions
+English Card
 What raw score out of 40 is needed for band 7 and band 8 in Listening and Academic Reading?
 Back: **Band 7 = 30/40 · Band 8 = 35/40** — the same anchors for both papers.
 - Half-bands (reproduced from Cambridge tables): 8.5 = 37, 7.5 = 32–34 (L) / 33–34 (R)
@@ -17,7 +17,7 @@ Tags: ielts listening reading
 END
 
 START
-Coding Questions
+English Card
 What is the dominant distractor mechanism in IELTS Listening?
 Back: **The right-sounding answer is said first, then cancelled.**
 - Markers: *sorry · actually · I meant · but · however* — and past tense against a present state ("this **was** the library")
@@ -28,7 +28,7 @@ Tags: ielts listening reading
 END
 
 START
-Coding Questions
+English Card
 Which Listening mistakes score zero despite correct comprehension?
 Back: **Over the word limit** and **giving two answers when one was asked** — the second scores nothing even if one answer is right.
 - **All words count, articles included**: "the bus" fails a ONE WORD rubric
@@ -40,7 +40,7 @@ Tags: ielts listening reading
 END
 
 START
-Coding Questions
+English Card
 When is the answer Not Given rather than False?
 Back: **False requires a contradiction. Partial coverage is Not Given** — absence is not opposition.
 - Four ways people wrongly pick False: over-inferring from a nearby sentence · using real-world knowledge · missing qualifiers (*all / some / may / always*) · keyword overlap
@@ -51,7 +51,7 @@ Tags: ielts listening reading
 END
 
 START
-Coding Questions
+English Card
 Why does keyword matching fail on matching headings, and when should you do them?
 Back: The task tests **distinguishing main ideas from supporting ones** — and IELTS states the distractor mechanism: a word from a wrong answer is planted in the text.
 - A heading matching **one sentence** is usually the trap; it must cover the paragraph's whole purpose
@@ -63,7 +63,7 @@ Tags: ielts listening reading
 END
 
 START
-Coding Questions
+English Card
 What makes matching features different from every other Reading type?
 Back: **Its answers do not follow passage order** — and it's the only common type where scanning genuinely works, because proper nouns have no synonyms.
 - Do **single-mention** names first, multi-mention names last
@@ -74,7 +74,7 @@ Tags: ielts listening reading
 END
 
 START
-Coding Questions
+English Card
 Is skim-then-scan an evidence-based reading strategy?
 Back: **The ritual is not; expeditious reading is.**
 - Skimming gives general meaning, scanning gives a location — neither produces the answer
@@ -86,7 +86,7 @@ Tags: ielts listening reading
 END
 
 START
-Coding Questions
+English Card
 What changes in Listening and Reading on the computer-delivered test?
 Back: **Listening loses the 10-minute transfer time** — only ~2 minutes to check. You type while the audio plays.
 - So word-limit, plural and spelling errors must be **avoided in real time**, not repaired afterwards — typing at audio speed is a trainable skill
@@ -97,7 +97,7 @@ Tags: ielts listening reading
 END
 
 START
-Coding Questions
+English Card
 When Listening preview time runs out, should you sacrifice the question stems or the answer options?
 Back: **The options.** Yanagawa & Green (2008) compared four preview conditions: full preview and **stem-only performed about the same**, and both beat options-only and no preview.
 - The benefit of previewing came almost entirely from the **stems**; options added only marginal value
@@ -108,7 +108,7 @@ Tags: ielts listening
 END
 
 START
-Coding Questions
+English Card
 What does a missed Listening answer actually cost?
 Back: **One mark plus every mark that passes while you hunt for it.** Field's think-aloud protocols recorded candidates who "go on listening for it long after it is past — thus missing the answers to subsequent items as well."
 - This is measured, not asserted — one of very few IELTS listening claims with real evidence
@@ -119,7 +119,7 @@ Tags: ielts listening
 END
 
 START
-Coding Questions
+English Card
 What is safe to predict before a Listening answer, and what is not?
 Back: Predict the **slot**, never the **word**.
 - Safe: information type (name/date/price), word class, singular vs plural, semantic field — all read off the printed page
@@ -131,7 +131,7 @@ Tags: ielts listening
 END
 
 START
-Coding Questions
+English Card
 Why can underlining keywords make your Listening score worse?
 Back: Because **reading during the audio is paid for with audio you do not hear.** Field: strategy training "quite often led to a dependence on the written text ... which reduced the amount of attention given to the spoken signal."
 - Preview in the pause is nearly free; the cost appears only when reading and listening **overlap**
@@ -142,7 +142,7 @@ Tags: ielts listening
 END
 
 START
-Coding Questions
+English Card
 What is the non-obvious thing Part 3 matching questions usually test?
 Back: **What the speakers jointly settle on** — not what any individual said.
 - Attribution (who said what) is the failure everyone prepares for; **agreement** is the one that dominates
@@ -154,7 +154,7 @@ Tags: ielts listening
 END
 
 START
-Coding Questions
+English Card
 How does IELTS Part 4 differ from a real lecture, and why does it matter?
 Back: **The redundancy is stripped out.** Field: a real lecture "relies quite heavily upon rephrasing and repetition ... Candidates hearing a short IELTS recording do not have the benefit of these features."
 - Nothing gets restated, so "wait, it will come round again" silently costs the mark
@@ -165,7 +165,7 @@ Tags: ielts listening
 END
 
 START
-Coding Questions
+English Card
 How do you decide singular vs plural on a Listening gap-fill before the audio plays?
 Back: **From the printed stem's own grammar.**
 - "the ___ **are** stored in" forces plural; "**one** ___" forces singular; "**some** forests" must be plural because *some forest* is ungrammatical
@@ -177,7 +177,7 @@ Tags: ielts listening
 END
 
 START
-Coding Questions
+English Card
 Why is a generic "commonly misspelled IELTS words" list a poor spelling remedy?
 Back: **No published list is derived from actual answer keys** — Cambridge releases no frequency data, so every list is a teacher's impression. And a generic list spends most of its time on words you already spell.
 - Better: transcribe a Part 1 recording in full, log **your own** misses tagged by error type (double letter / silent letter / ei-ie / homophone / form change)
@@ -187,7 +187,7 @@ Tags: ielts listening
 <!--ID: 1788626244296-->
 END
 START
-Coding Questions
+English Card
 Spell it: a person who does not eat meat. (Cambridge 20 Test 1 Q4)
 Back: **vegetarian**
 - The mistyped syllable `-tar-` is **unstressed and reduces to schwa** — a, e, i, o, u all sound identical there
@@ -198,7 +198,7 @@ Tags: ielts spelling
 END
 
 START
-Coding Questions
+English Card
 Which two letter names do you confuse under exam pressure, and what do they sound like?
 Back: **E /iː/ and U /juː/** — the error that turned *Audley* into `Audluy`.
 - The other classic collisions in dictation: **B/P, D/T, S/X, J/G, M/N, K/Q, V/W**
@@ -209,7 +209,7 @@ Tags: ielts spelling
 END
 
 START
-Coding Questions
+English Card
 How do you tell 13 from 30 in dictated numbers?
 Back: **By stress, not by vowel.**
 - thir-**TEEN** — stress on the final syllable
@@ -221,7 +221,7 @@ Tags: ielts spelling numbers
 END
 
 START
-Coding Questions
+English Card
 In a dictated phone or reference number, what do "oh" and "double" mean?
 Back: **"oh" = zero**, and **"double X" = XX**.
 - "double four" → `44`; "K-E-double-L-Y" → `KELLY`
