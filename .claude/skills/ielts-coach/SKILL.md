@@ -59,6 +59,10 @@ Route on what the user brings, not on them naming a mode.
 Read the relevant reference file before working. They carry the procedure and the output
 format; this page carries only the rules that hold across all four.
 
+`references/study-materials.md` is read alongside whichever mode is running: it holds the
+PDFs the user actually owns, the Murphy unit schedule with its skip list, and the 18
+selected Collocations units. Any study target you name comes from there.
+
 If the user asks "what should I do this week", read their log and the plan at
 `06-Planning/Topics/IELTS - Prep Plan.md` and answer from the branch that matches their
 current bands. Don't invent a schedule.
@@ -81,6 +85,11 @@ score computed from a transcript looks plausible only because grammar and vocabu
 dominate it. Say plainly that this needs a human or the user's own ear, then audit what
 the transcript genuinely holds: grammar, lexis, answer development, hesitation *markers*
 the user themselves noted.
+
+**Name a unit, not a topic.** Every study target you hand back is a book the user owns and a
+unit number in it — *Murphy 72–76*, *Collocations unit 53* — because "work on articles" is
+advice they already have. The tables are in `references/study-materials.md`. Never
+recommend a book that is not on that page's owned list.
 
 **Quote before you claim.** Every finding names the user's own sentence and the descriptor
 clause. A finding you can't anchor to a quoted span is a hunch — drop it. About 1 in 20

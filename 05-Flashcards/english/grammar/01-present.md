@@ -196,3 +196,69 @@ Explanation: Saying it **is** doing it, so the present simple, not the continuou
 Tags: grammar present-simple
 <!--ID: 1788632465973-->
 END
+
+START
+English Card
+Continuous or simple: what decides it when the situation is a *state of life* rather than an action?
+Back: **Temporary → continuous. Permanent → simple.**
+- *I'm living with some friends **until I find a place of my own*** — short term
+- *My parents **live** in London. They have lived there all their lives* — long term
+- Nothing about the verb changes; only how long the situation is expected to last
+- The clue is usually a time phrase: *until…*, *for now*, *this month* against *all their lives*, *most of the time*
+Tags: grammar present-simple present-continuous
+<!--ID: 1788632961959-->
+END
+
+START
+English Card
+Both are correct — what is the difference? *"The population is increasing very fast"* vs *"Every day the population increases by about 200,000."*
+Back: **Continuous = the trend, happening around now. Simple = the repeated fact.**
+- *is increasing* — a change under way, no fixed rate
+- *increases by 200,000 every day* — what happens each time, a general regularity
+- Same subject, same verb, both right; <mark style="background: #ABF7F7A6;">the tense chooses the **meaning**, not the grammar</mark>
+- Test: add *every day* and the simple becomes natural; add *right now* and the continuous does
+Tags: grammar present-simple present-continuous
+<!--ID: 1788632961964-->
+END
+
+START
+English Grammar
+Water {1:boils} (boil) at 100 degrees Celsius.
+Explanation: A scientific fact, always true → present simple.
+- *The water **is boiling**. Be careful.* — this kettle, now
+- The same verb splits on whether you mean the **law** or the **occasion**
+Tags: grammar present-simple present-continuous
+<!--ID: 1788632961967-->
+END
+
+START
+English Grammar
+I {1:'m living} (live) with some friends until I find a place of my own.
+Explanation: A temporary arrangement → present continuous.
+- *I live with some friends* would make it permanent, which *until I find a place* contradicts
+- **until…** is the giveaway: it puts an end date on the situation
+Tags: grammar present-continuous
+<!--ID: 1788632961970-->
+END
+
+START
+English Card
+What does *I'm always losing my keys* mean, and how does it differ from *I always lose my keys*?
+Back: **always + continuous = it happens too often, more than normal** — and the speaker is annoyed.
+- *I **always lose** my keys* — every time, stated as a plain fact
+- *I'm **always losing** them* — a complaint about how often it happens
+- Not a rule about frequency but about **attitude**: the continuous adds the exasperation
+Tags: grammar present-continuous
+<!--ID: 1788632961972-->
+END
+
+START
+English Grammar
+Paul is never satisfied. He {1:'s always complaining} (complain, with *always*).
+Explanation: *always* + continuous = **he complains too much**, said with irritation.
+- *He always complains* would be neutral reporting, which *never satisfied* rules out
+- Same pattern: *You're always looking at your phone. Don't you have anything else to do?*
+- Note the exception this creates: normally *always* pulls the simple — *I always go to work by car*, never *I'm always going*, unless you mean to complain
+Tags: grammar present-continuous
+<!--ID: 1788632961975-->
+END

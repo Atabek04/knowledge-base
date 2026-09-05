@@ -167,9 +167,16 @@ the user can find them in a grammar book:
 - **From Range** — the highest-value absent structure, chosen by how often the essay had a
   slot for it, not by how impressive it sounds.
 
-Two topics per audit, never more. Point at the specific units in *Cambridge Grammar for
-IELTS* or *Advanced Grammar in Use* if the user asks where to read; the coach's job is to
-name the topic, not to teach the unit inline.
+Two topics per audit, never more, and **each one carries the unit number** from
+`study-materials.md`:
+
+- *"Articles: generic reference and zero article with uncountables — Murphy 72–76, plus
+  69–71 for the countability half."*
+- *"Range: participle clauses — Murphy 68, and 97 for the -ed variant."*
+
+If the unit is ahead of where the user has reached, say so and give the number anyway. The
+coach's job is to name the unit, not to teach it inline — a rule explained in an audit is a
+rule that gets read once instead of practised.
 
 ## Output format
 
@@ -201,8 +208,8 @@ Slots left free: s9–s12 contrast two groups with no comparative structure; s5 
 in two sentences where a participle clause would join them.
 
 Grammar to study
-- Accuracy: articles — generic reference, and zero article with uncountables
-- Range: participle clauses
+- Accuracy: articles — generic reference, zero article with uncountables → Murphy 72–76, 69–71
+- Range: participle clauses → Murphy 68 (ahead of schedule — November)
 
 ## The one thing to fix next
 [a single named habit, with the reason it was chosen]
