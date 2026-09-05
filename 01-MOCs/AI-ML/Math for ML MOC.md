@@ -13,7 +13,7 @@ Mathematical framework for representing and manipulating data in high-dimensiona
 
 ### Systems of Linear Equations
 
-> **Teaching progress — 2026-09-05:** Lay §1.1 done through equivalence and reversibility. Next: the augmented matrix and echelon form.
+> **Teaching progress — 2026-09-05:** §1.1 theory only, notes written but not yet reviewed. Book examples and exercises untouched. Next: 2 × 90 min on Sun 06-09 — read the notes and question them, then work §1.1's examples, then the augmented matrix.
 
 - [[An equation is linear when every variable stands alone to the first power and is multiplied only by a constant|Linear equation — variable alone, first power, times a constant]]
 - [[Each family of nonlinear equation breaks exactly one criterion of linearity|Nonlinear families — each breaks one criterion of linearity]]
