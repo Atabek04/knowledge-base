@@ -95,3 +95,86 @@ Back: **Listening loses the 10-minute transfer time** — only ~2 minutes to che
 Tags: ielts listening reading
 <!--ID: 1788608936257-->
 END
+
+START
+Coding Questions
+When Listening preview time runs out, should you sacrifice the question stems or the answer options?
+Back: **The options.** Yanagawa & Green (2008) compared four preview conditions: full preview and **stem-only performed about the same**, and both beat options-only and no preview.
+- The benefit of previewing came almost entirely from the **stems**; options added only marginal value
+- A stem tells you what to listen for and where you are; an option is only useful at the moment of choosing
+- Caveat: that study was a general MC listening test, **not IELTS** — and Part 3 options are long and finely differentiated, so pay for the options there
+Tags: ielts listening
+END
+
+START
+Coding Questions
+What does a missed Listening answer actually cost?
+Back: **One mark plus every mark that passes while you hunt for it.** Field's think-aloud protocols recorded candidates who "go on listening for it long after it is past — thus missing the answers to subsequent items as well."
+- This is measured, not asserted — one of very few IELTS listening claims with real evidence
+- Recovery: abandon instantly, re-anchor on whatever question the audio is now answering, leave the gap blank, guess it after the recording stops
+- **Questions follow recording order** (official) — so your position is always recoverable from content
+Tags: ielts listening
+END
+
+START
+Coding Questions
+What is safe to predict before a Listening answer, and what is not?
+Back: Predict the **slot**, never the **word**.
+- Safe: information type (name/date/price), word class, singular vs plural, semantic field — all read off the printed page
+- Unsafe: the actual word. A predicted word stops being a hypothesis and becomes **the thing you hear**
+- Field recorded candidates building whole interpretations on a misheard word — *breed* for *beach*, *machines* for *meshing*
+- A prediction is a filter for attention, not a hypothesis to be confirmed
+Tags: ielts listening
+END
+
+START
+Coding Questions
+Why can underlining keywords make your Listening score worse?
+Back: Because **reading during the audio is paid for with audio you do not hear.** Field: strategy training "quite often led to a dependence on the written text ... which reduced the amount of attention given to the spoken signal."
+- Preview in the pause is nearly free; the cost appears only when reading and listening **overlap**
+- Mark **one or two keywords per question**, not the question — a glance is cheap, a re-read is not
+- Keyword matching also locates an answer without verifying you heard it correctly
+Tags: ielts listening
+END
+
+START
+Coding Questions
+What is the non-obvious thing Part 3 matching questions usually test?
+Back: **What the speakers jointly settle on** — not what any individual said.
+- Attribution (who said what) is the failure everyone prepares for; **agreement** is the one that dominates
+- A discussion floats a position, challenges it, then settles — so **"first mention wins" is the most expensive habit in Part 3**
+- Tactic: capture the words carrying the answer during the audio, do the matching to the option box **after** it stops
+- The speakers × topics grid is folklore — no official or first-tier source, never validated
+Tags: ielts listening
+END
+
+START
+Coding Questions
+How does IELTS Part 4 differ from a real lecture, and why does it matter?
+Back: **The redundancy is stripped out.** Field: a real lecture "relies quite heavily upon rephrasing and repetition ... Candidates hearing a short IELTS recording do not have the benefit of these features."
+- Nothing gets restated, so "wait, it will come round again" silently costs the mark
+- One preview block for all ten questions and **no mid-part pause** (unlike Parts 1–3)
+- Read the note-completion form as the talk's **outline**, not as ten isolated gaps — it is the structure the speaker will not give you
+Tags: ielts listening
+END
+
+START
+Coding Questions
+How do you decide singular vs plural on a Listening gap-fill before the audio plays?
+Back: **From the printed stem's own grammar.**
+- "the ___ **are** stored in" forces plural; "**one** ___" forces singular; "**some** forests" must be plural because *some forest* is ungrammatical
+- Connected speech eats the plural /s/, especially before a consonant — the **determiner and verb survive where the /s/ does not**
+- `car(s)` scores **zero** — the hedge produces a string that is on nobody's answer key
+- Compound nouns stay unmarked: *student support*, never *students' support*
+Tags: ielts listening
+END
+
+START
+Coding Questions
+Why is a generic "commonly misspelled IELTS words" list a poor spelling remedy?
+Back: **No published list is derived from actual answer keys** — Cambridge releases no frequency data, so every list is a teacher's impression. And a generic list spends most of its time on words you already spell.
+- Better: transcribe a Part 1 recording in full, log **your own** misses tagged by error type (double letter / silent letter / ei-ie / homophone / form change)
+- Drill with **audio on the front, typed spelling on the back** — Cover-Copy-Compare in digital form
+- Ehri's orthographic mapping: a word learned as sound alone or shape alone is not learned; the two must be bound
+Tags: ielts listening
+END

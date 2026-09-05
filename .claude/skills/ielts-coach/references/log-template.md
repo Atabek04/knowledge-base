@@ -62,4 +62,9 @@ that is the threshold for drilling it rather than noting it.
 ## Spelling list
 
 Personal misspellings harvested from Listening logs. Drill these, not a generic list.
+
+## Pre-mock checklist
+
+Written after each interview, read back before the next mock. At most five executable
+instructions — see `references/post-mock-interview.md`.
 ````

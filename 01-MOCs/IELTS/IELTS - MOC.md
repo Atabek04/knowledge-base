@@ -83,6 +83,21 @@ The two objectively-marked sections. These are the cheapest bands in the exam an
 - [[Locating the answer then reading carefully beats the skim-then-scan ritual|Locate fast then read carefully; the skim-first ritual is unsupported]]
 - [[Computer-delivered Listening removes the transfer time so typing accuracy becomes part of the score|No transfer time on computer — typing accuracy becomes a scoring variable]]
 
+### Listening technique, ranked by marks per hour
+
+Ordered by what a mark actually costs to recover, not by how much is written about it. The top three are mechanical — the word was heard correctly and the mark was lost anyway — and mechanical marks are the cheapest in the paper because the fix is a rule rather than a skill.
+
+Most of what circulates about Listening technique is practitioner heuristic with no evidence behind it. The exceptions are marked: cascade loss and the attention-switching cost come from Field's IELTS-commissioned protocol study, and the preview finding from a controlled comparison of preview conditions. Where a widely-repeated tip has no traceable source, the note says so rather than dropping it silently.
+
+- [[The question stem's grammar settles singular or plural before the audio does|Plural is decided by the printed stem, not by a /s/ you cannot hear]]
+- [[Dictation with immediate comparison is the spelling remediation that matches the Listening task|Spelling is fixed by audio-front dictation on your own error log, not by word lists]]
+- [[A missed Listening answer becomes a cascade when you keep listening for information already gone|A missed answer costs four marks unless you close it and re-anchor]]
+- [[Listening preview time helps mainly through the question stems while the answer options add little|Preview the stems first — the options add almost nothing when time is short]]
+- [[Predict the answer slot rather than the answer word because a predicted word gets confirmed instead of heard|Predict word class and number; predicting the word makes you hear it]]
+- [[Keyword training backfires when attention shifts from the audio to the question paper|One or two keywords per question — reading during the audio costs audio]]
+- [[Part 3 matching often tests what the speakers jointly settle on rather than what one speaker said|Part 3 asks what they agreed, so first mention is the distractor]]
+- [[Part 4 is a lecture with the redundancy stripped out so nothing gets restated|Part 4 never repeats itself and gives you one preview block for ten questions]]
+
 ---
 
 ## How to prepare

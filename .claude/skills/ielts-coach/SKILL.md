@@ -52,6 +52,7 @@ Route on what the user brings, not on them naming a mode.
 |---|---|---|
 | **audit** | A Task 1 or Task 2 answer to be checked | `references/writing-audit.md` |
 | **log** | Mock results, wrong answers, "I did a test" | `references/error-log.md` |
+| **interview** | Straight after a mock, before the answers are analysed | `references/post-mock-interview.md` |
 | **drill** | "practice X", or straight after a log run | `references/error-log.md` |
 | **speak** | Speaking practice, or a pasted transcript | `references/speaking-practice.md` |
 

@@ -111,10 +111,29 @@ Total avoided by the skip list: roughly **$1,400**.
 
 <mark style="background: #ADCCFFA6;">The exam fee is itself a purchase in this comparison.</mark> If marked practice clusters at 7.5+ by December, a second sitting is a better use of 110,250₸ than any course above — and a One Skill Retake, at 69,500₸ through the British Council, is cheaper still if only Writing lags. Deadlines and acceptance caveats are in [[IELTS - Exam Day]].
 
+## Listening: dictation, spelling and typing tools
+
+Verified September 2026. These exist to serve one loop — produce spelling errors, then re-drill your own, per [[Dictation with immediate comparison is the spelling remediation that matches the Listening task|the remediation note]]. <mark style="background: #ADCCFFA6;">A tool that does not either generate errors or re-drill logged ones earns no time.</mark>
+
+| Tool | Cost | What it drills | Verdict |
+|---|---|---|---|
+| [DailyDictation](https://dailydictation.com/exercises/ielts-listening) | Free; some lessons premium-gated, price not published | Type what you hear, auto-diff per word. Cambridge 3–21. Separate **Spelling Names** and **Numbers** decks | The engine — nothing else combines IELTS audio with automatic comparison |
+| [Anki](https://apps.ankiweb.net) + [HyperTTS](https://www.vocab.ai/hypertts) | Free (iOS app paid) | Audio-front, type-the-answer cards built **only from your own error log** | The only tool that guarantees a week-1 miss returns in week 5 |
+| [Monkeytype](https://monkeytype.com) | Free | Custom-text mode — paste your error list. Accuracy target, never speed | Worth it only if mock triage shows *mistyped* rather than *misspelled* |
+| [British Council CD familiarisation test](https://takeielts.britishcouncil.org/take-ielts/prepare/free-ielts-english-practice-tests/ielts-on-computer/familiarisation-test) | Free | The real interface — answer boxes, volume slider, review flags | Do it twice before test day. It is **untimed**, so time it yourself |
+| [IELTS Liz alphabet](https://ieltsliz.com/alphabet-practice-for-spelling/) · [city names](https://ieltsliz.com/spelling-practice-city-names/) · [addresses](https://ieltsliz.com/listening-practice-for-addresses/) | Free | Letter-by-letter spell-outs, a distinct sub-skill | One-off calibration in week 1, not a recurring slot |
+| [Lexinglo](https://lexinglo.com/lessons/ielts-listening) | Not stated | Cambridge 3–20, segmented player | Backup if DailyDictation's paywall blocks the tests you want |
+
+Explicitly not worth the budget: **Cambly** and **EnglishCentral** train speaking, not transcription, at real cost. **ESLFast** sits far below this level. **Listen & Write** duplicates DailyDictation with no IELTS audio and uncontrolled accents. **ELLLO** is excellent and free but fixes comprehension, which is the wrong problem. `dictationsdaily.com` is a dead domain.
+
+<mark style="background: #FF9E9EA6;">Practise with spellcheck disabled.</mark> The exam software offers no spelling assistance, and a browser that quietly fixes *vegeterian* trains you on a crutch that will not be there.
+
 ### Read more
 - [[IELTS - MOC]]
 - [[IELTS - Prep Plan]]
 - [[IELTS - Exam Day]]
+- [[Dictation with immediate comparison is the spelling remediation that matches the Listening task]]
+- [[Computer-delivered Listening removes the transfer time so typing accuracy becomes part of the score]]
 - [[Booking the test unlocks the best free IELTS resource so booking comes before diagnosing]]
 - [[A marked essay only changes a score when it is rewritten after the feedback]]
 - [[LLM essay scoring matches examiners on average but varies by over a band on any single essay]]
