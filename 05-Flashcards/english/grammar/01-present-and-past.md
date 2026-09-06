@@ -1,6 +1,6 @@
-TARGET DECK: English::Grammar::01 - Present
+TARGET DECK: English::Grammar::01 - Present and Past
 Tags: grammar
-**Chapter:** Present — Murphy, English Grammar in Use, Units 1–4
+**Chapter:** Present and Past — Murphy, English Grammar in Use, Units 1–6
 **Related:** [[IELTS - MOC]]
 
 ---
@@ -272,6 +272,7 @@ Back: Because the continuous is for **actions that have started and not finished
 - **Being**: belong, fit, contain, consist, seem
 - You do not *do* them, so they cannot be half-done
 Tags: grammar present-simple stative-verbs
+<!--ID: 1788668428761-->
 END
 
 START
@@ -282,6 +283,7 @@ Explanation: *want* is a state, so no continuous.
 - Same trap: *Do you **understand** what I mean?* · *Anna doesn't **seem** very happy right now*
 - <mark style="background: #FF5582A6;">"Right now" does not license the continuous.</mark> The verb's meaning decides, not the time
 Tags: grammar present-simple stative-verbs
+<!--ID: 1788668428765-->
 END
 
 START
@@ -293,6 +295,7 @@ Back: **Believe → simple. Consider → continuous.**
 - *Nicky **is thinking** of giving up her job* — she is considering it, a mental activity under way
 - The split is the same one as everywhere: **state or action**
 Tags: grammar present-simple present-continuous stative-verbs
+<!--ID: 1788668428766-->
 END
 
 START
@@ -302,6 +305,7 @@ Explanation: *think* = **consider** here, which is an activity in progress → c
 - *Nicky thinks of giving up her job* would report a settled opinion, not a decision being weighed
 - Contrast: *I **think** Mary is Canadian, but I'm not sure* — belief, so simple
 Tags: grammar present-continuous stative-verbs
+<!--ID: 1788668428768-->
 END
 
 START
@@ -311,6 +315,7 @@ Explanation: **see, hear, smell, taste** normally take the simple, even about th
 - *Are you seeing that man?* would mean you are dating him
 - Same: *The room **smells**. Let's open a window.* · *This soup **doesn't taste** very good.*
 Tags: grammar present-simple stative-verbs
+<!--ID: 1788668428770-->
 END
 
 START
@@ -321,6 +326,7 @@ Back: **Either tense works when describing how somebody looks or feels *now*.**
 - *How **do** you **feel** now?* **or** *How **are** you **feeling** now?*
 - But a habit still forces the simple: *I usually **feel** tired in the morning*, never *I'm usually feeling*
 Tags: grammar present-simple present-continuous stative-verbs
+<!--ID: 1788668428772-->
 END
 
 START
@@ -331,6 +337,7 @@ Back: **am/is/are being = how someone is behaving now**, not what they are gener
 - *He**'s** selfish* — his character, permanently
 - Only works for behaviour the person **controls**: *Sam **is** ill*, never *is being ill*; *Are you tired?*, never *are you being tired*
 Tags: grammar present-continuous
+<!--ID: 1788668428773-->
 END
 
 START
@@ -340,4 +347,90 @@ Explanation: Behaviour now, not character → *am/is/are being*.
 - *Why he **is** so selfish* would call it a permanent trait, which *he isn't usually like that* contradicts
 - The second sentence is the proof the continuous is needed: it explicitly denies the permanent reading
 Tags: grammar present-continuous
+<!--ID: 1788668428774-->
+END
+
+START
+English Card
+How do you form past simple questions and negatives?
+Back: **did / didn't + the infinitive** — the past marker moves onto *did*, so the main verb goes back to its base form.
+- *Did you **enjoy** it?*, never *did you enjoyed*
+- *I **didn't buy** anything*, never *I didn't bought*
+- This is why the irregular form disappears: *she **saw*** but *did she **see***
+Tags: grammar past-simple
+<!--ID: 1788668916295-->
+END
+
+START
+English Grammar
+How many people {1:did} they invite to the wedding?
+Explanation: Questions in the past simple need **did + base verb**.
+- *How many people invited they?* — English will not move the main verb, the way it will not in the present
+- The tense sits on *did*, so *invite* stays bare: never *did they invited*
+Tags: grammar past-simple questions
+<!--ID: 1788668916296-->
+END
+
+START
+English Grammar
+What {1:did} you do at the weekend?
+Explanation: *do* appears twice — first as the **auxiliary**, then as the **main verb**.
+- *What did you at the weekend?* drops the main verb and is the error Murphy flags
+- Negative version: *I **didn't do** anything*, never *I didn't anything*
+Tags: grammar past-simple questions
+<!--ID: 1788668916298-->
+END
+
+START
+English Card
+What is the past of *am / is / are*, and why does it not take *did*?
+Back: **was / were** — and *be* is its own auxiliary, so it never borrows *did*.
+- *I/he/she/it* **was** · *we/you/they* **were**
+- Questions invert instead: ***Was** the weather good?*, never *did it be good*
+- Both patterns can meet in one sentence: *Did you go out last night, or **were** you too tired?*
+Tags: grammar past-simple
+<!--ID: 1788668916300-->
+END
+
+START
+English Card
+What does *I was doing* mean, and what does it need to be anchored to?
+Back: **I was in the middle of it at a particular past time** — started before that time, not finished by it.
+- *At 10.30 they **were playing** tennis* — the game ran from 10 to 11.30
+- It almost always needs a stated time or event to sit inside: *at 10 o'clock last night*, *this time last year*, *when Karen arrived*
+- Without that anchor there is no "middle" for the action to be in
+Tags: grammar past-continuous
+<!--ID: 1788668916301-->
+END
+
+START
+English Grammar
+We {1:were walking} (walk) home when I met Dan.
+Explanation: The longer action, interrupted → past continuous; the interruption takes the simple.
+- *We **walked** home after the party* would mean the whole way, complete
+- The pattern is **continuous = background, simple = the event that cuts into it**
+- Same shape: *Matt phoned while we **were having** dinner* · *It **was raining** when I got up*
+Tags: grammar past-continuous past-simple
+<!--ID: 1788668916303-->
+END
+
+START
+English Card
+*When Karen arrived, we were having dinner* vs *When Karen arrived, we had dinner* — what changes?
+Back: **Continuous = already started before she arrived. Simple = started after.**
+- *we **were having** dinner* — she walked in on it
+- *we **had** dinner* — she arrived, and then dinner happened
+- Same conjunction, same two clauses; <mark style="background: #ABF7F7A6;">the tense alone decides the order of events</mark>
+Tags: grammar past-continuous past-simple
+<!--ID: 1788668916317-->
+END
+
+START
+English Grammar
+We were good friends. We {1:knew} (know) each other well.
+Explanation: *know* is a state verb, so it has no continuous — in the past exactly as in the present.
+- *We were knowing each other* is the past-tense version of *I'm knowing*
+- The whole Unit 4 list carries over: want, like, believe, understand, seem, belong
+Tags: grammar past-continuous stative-verbs
+<!--ID: 1788668916319-->
 END
