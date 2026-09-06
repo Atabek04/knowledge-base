@@ -262,3 +262,82 @@ Explanation: *always* + continuous = **he complains too much**, said with irrita
 Tags: grammar present-continuous
 <!--ID: 1788632961975-->
 END
+
+START
+English Card
+Why can you say *I'm waiting* but not *I'm knowing*?
+Back: Because the continuous is for **actions that have started and not finished**, and these verbs name a **state**, not an action — there is nothing in progress to be in the middle of.
+- **Wanting**: like, want, need, prefer
+- **Thinking**: know, realise, understand, recognise, believe, suppose, remember, mean
+- **Being**: belong, fit, contain, consist, seem
+- You do not *do* them, so they cannot be half-done
+Tags: grammar present-simple stative-verbs
+END
+
+START
+English Grammar
+I'm hungry. I {1:want} (want) something to eat.
+Explanation: *want* is a state, so no continuous.
+- *I'm wanting* is the classic error — the hunger is happening now, but wanting is still a state
+- Same trap: *Do you **understand** what I mean?* · *Anna doesn't **seem** very happy right now*
+- <mark style="background: #FF5582A6;">"Right now" does not license the continuous.</mark> The verb's meaning decides, not the time
+Tags: grammar present-simple stative-verbs
+END
+
+START
+English Card
+*think* takes both tenses. What decides which?
+Back: **Believe → simple. Consider → continuous.**
+- *I **think** Mary is Canadian* — my opinion, a state
+- *What **do** you **think** of my idea?* — asking for an opinion
+- *Nicky **is thinking** of giving up her job* — she is considering it, a mental activity under way
+- The split is the same one as everywhere: **state or action**
+Tags: grammar present-simple present-continuous stative-verbs
+END
+
+START
+English Grammar
+Nicky {1:is thinking} (think) of giving up her job.
+Explanation: *think* = **consider** here, which is an activity in progress → continuous.
+- *Nicky thinks of giving up her job* would report a settled opinion, not a decision being weighed
+- Contrast: *I **think** Mary is Canadian, but I'm not sure* — belief, so simple
+Tags: grammar present-continuous stative-verbs
+END
+
+START
+English Grammar
+Do you {1:see} (see) that man over there?
+Explanation: **see, hear, smell, taste** normally take the simple, even about this moment.
+- *Are you seeing that man?* would mean you are dating him
+- Same: *The room **smells**. Let's open a window.* · *This soup **doesn't taste** very good.*
+Tags: grammar present-simple stative-verbs
+END
+
+START
+English Card
+*look* and *feel* break the rule about sense verbs. How?
+Back: **Either tense works when describing how somebody looks or feels *now*.**
+- *You **look** well today* **or** *You**'re looking** well today*
+- *How **do** you **feel** now?* **or** *How **are** you **feeling** now?*
+- But a habit still forces the simple: *I usually **feel** tired in the morning*, never *I'm usually feeling*
+Tags: grammar present-simple present-continuous stative-verbs
+END
+
+START
+English Card
+What does *He's being selfish* mean, and how is it different from *He's selfish*?
+Back: **am/is/are being = how someone is behaving now**, not what they are generally.
+- *He**'s being** selfish* — behaving that way at the moment; he isn't usually like that
+- *He**'s** selfish* — his character, permanently
+- Only works for behaviour the person **controls**: *Sam **is** ill*, never *is being ill*; *Are you tired?*, never *are you being tired*
+Tags: grammar present-continuous
+END
+
+START
+English Grammar
+I can't understand why he {1:'s being} (be) so selfish. He isn't usually like that.
+Explanation: Behaviour now, not character → *am/is/are being*.
+- *Why he **is** so selfish* would call it a permanent trait, which *he isn't usually like that* contradicts
+- The second sentence is the proof the continuous is needed: it explicitly denies the permanent reading
+Tags: grammar present-continuous
+END

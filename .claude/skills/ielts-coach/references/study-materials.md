@@ -14,8 +14,9 @@ skill applies here too: point at a specific unit the user owns, never at "a gram
 ```
 
 You can read a unit directly when the user asks what one covers:
-`pdftotext -f <page> -l <page> -layout "<path>" -`. Murphy's unit *n* is roughly page
-`2n + 8` in the PDF; check rather than assume.
+`pdftotext -f <page> -l <page> -layout "<path>" -`. Murphy's unit *n* is PDF page
+**`2n + 12`** — verified exact at units 1, 3, 10, 42 and 72. Each unit is two facing pages:
+`2n + 12` is the explanation, `2n + 13` the exercises.
 
 Still to buy: **Cambridge IELTS 20 and 21** — needed for the diagnostic, and the only correct
 raw-score conversion tables. *Cambridge Grammar for IELTS* is **not** owned and is not
