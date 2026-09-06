@@ -3,9 +3,9 @@ created: 2026-09-04
 tags: [ielts, planning]
 ---
 
-September 2026 → February 2027. ~6 h/week. IELTS Academic, computer-delivered, Astana.
+September 2026 → February 2027. ~12 h/week — 1 h on each weekday, 3–4 h on each weekend day. IELTS Academic, computer-delivered, Astana.
 
-This plan is subordinate to higher-priority commitments and does not expand past 6 h/week. Where it competes with the interview-prep track in [[Interview-Prep-Master-Plan]], the interview track wins and this plan absorbs the loss by dropping practice volume, never by dropping the marked-essay loop.
+This plan is subordinate to higher-priority commitments and does not expand past 12 h/week. Where it competes with the interview-prep track in [[Interview-Prep-Master-Plan]], the interview track wins and this plan absorbs the loss by dropping practice volume, never by dropping the marked-essay loop.
 
 ---
 
@@ -85,7 +85,7 @@ Band 7 Grammatical Range and Accuracy asks for *a variety of complex structures*
 
 *English Grammar in Use* fifth edition is **145 units**. October to December is about 13 study weeks. Cover to cover at four units a week covers 52 of them — barely a third of the book, ending in the middle of the *-ing and to…* block with the exam eight weeks away. <mark style="background: #FF9E9EA6;">"Read Murphy cover to cover" is not a schedule that fits in this calendar, and stating it as one is how a track silently fails in December.</mark>
 
-So the book is cut to **126 units at 7 a week**, read in three weekday sittings of ~25 minutes rather than one hour-long block — spacing matters more here than total time. That finishes the track by **31 December**, which is what frees January for mocks.
+So the book is cut to **126 units at 10 a week**, read in three weekday sittings of ~35 minutes rather than one long block — spacing matters more here than total time. Thirteen weeks × 10 finishes the track by **31 December**, which is what frees January for mocks. Seven a week would run to mid-January and collide with the mock month, which is the whole thing the extra hours were meant to prevent.
 
 **The 19 units that are skipped, and why**
 
@@ -100,25 +100,21 @@ Prepositions of time and place (121–128) were on this list at the 6 h/week bud
 
 #### Month by month
 
-**October — units 6–37 (32 units).** Tense and aspect first, because it is the largest hole. Present perfect and present perfect continuous (7–12), perfect versus past (13–16), past perfect (15–16), *used to* (18), the whole future block (19–25), then modals (26–37).
+**October — units 6–48 (43 units).** Tense and aspect first, because it is the largest hole: present perfect and perfect continuous (7–12), perfect versus past (13–16), past perfect (15–16), *used to* (18), the future block (19–25), modals (26–37). Then straight into conditionals and *wish* (38–41) and the passive including reporting passives *it is said that…* (42–46) and reported speech (47–48).
 
-By 31 October the perfect is available in writing. That is what Task 1 trend description needs and what three tenses cannot do.
+By 31 October the perfect is available in writing — what Task 1 trend description needs and what three tenses cannot do — and so are conditionals, the highest-value complex structure for a Task 2 argument.
 
-**November — units 38–48 and 53–71 (30 units).** Conditionals and *wish* (38–41) — the highest-value complex structure for Task 2 argument. Then the passive including reporting passives *it is said that…* (42–46), reported speech (47–48), the long *-ing and to…* block (53–68), and countable/uncountable nouns (69–71).
+**November — units 53–97 (43 units).** The long *-ing and to…* block (53–68), countable and uncountable nouns and the **article block** (69–76), singular/plural and noun + noun (79–81), pronouns and determiners (82–91), **relative clauses (92–96)**, *-ing* and *-ed* clauses (97).
 
-Unit 68, *-ing clauses*, is the participle clause the essay audit keeps naming as absent. Mark it.
+Unit 68, *-ing clauses*, is the participle clause the essay audit keeps naming as absent. Mark it. And 69–76 is the month's real payload: articles are the largest single error category for a Russian-L1 writer and the first thing every audit checks.
 
-**December — units 72–76, 79–97, 98–104 (31 units).** The article block (72–76) — the largest single error category for a Russian-L1 writer, and the one the audit checks first. Then singular/plural and noun + noun (79–81), pronouns and determiners (82–91), **relative clauses (92–96)**, *-ing* and *-ed* clauses (97), adjectives and adverbs (98–104).
+**December — units 98–136 (39 units).** Adjectives and adverbs (98–104), comparatives and word order (105–112), conjunctions *although / in spite of / unless / as long as* (113–120), then the whole preposition block (121–136).
 
-December is the densest month of the track and the one most likely to be lost to the year's close. It carries articles and relative clauses — the two blocks with the highest yield in the whole book.
+Then sit **Murphy's own Study Guide (p. 326)** in the last week. It maps wrong answers back to unit numbers — redo only what it flags. This is the pass that turns recognition back into a check, and it is why the track ends in December rather than trailing into the mock month.
 
-**January — units 105–120 and 129–136 (24 units), then the Study Guide.** Comparatives and word order (105–112), conjunctions *although / in spite of / unless / as long as* (113–120), and the preposition-collocation units (129–136).
+**January and February — nothing new.** January is mocks; February is reviews only.
 
-Then sit **Murphy's own Study Guide (p. 326)**. It maps wrong answers to unit numbers — redo only what it flags. This is the pass that turns recognition back into a check.
-
-**February — nothing new.** Reviews only.
-
-<mark style="background: #ADCCFFA6;">Nine units are dropped if the month runs short, never seven a week turned into three.</mark> A month at half rate quietly moves the whole schedule; a declared cut does not.
+<mark style="background: #ADCCFFA6;">Units are dropped if a month runs short, never ten a week turned into five.</mark> A month at half rate quietly moves the whole schedule; a declared cut does not. The first cut is the preposition block (121–128), which was already outside the plan at the smaller budget.
 
 **Reference only, at any point.** Advanced Grammar in Use and Swan get opened when an essay audit names a topic — never read in sequence. *Cambridge Grammar for IELTS* is not owned and is not required; Murphy plus the marked-essay loop covers the same ground, and the essay loop is what supplies the under-time production the Hopkins book would have.
 
@@ -128,7 +124,7 @@ Then sit **Murphy's own Study Guide (p. 326)**. It maps wrong answers to unit nu
 
 ## The daily Anki loop
 
-Fifteen minutes a day, every day, from W2. It carries vocabulary and collocation; it does **not** carry grammar.
+Fifteen minutes a day, every day, from W2. It carries two decks in one sitting: **Murphy's grammar cards** — already built for all 145 units — and the collocations.
 
 <mark style="background: #FF5582A6;">A card whose front is a word and whose back is a definition builds recognition and nothing else.</mark> Recognition is far cheaper to acquire than production and does not convert into it — which is the mechanism behind the familiar profile of a large passive vocabulary stuck at band 6.5. The card has to ask for output.
 
@@ -169,7 +165,9 @@ Deck: `English::Collocations`, outside the IELTS tree — <mark style="backgroun
 
 <mark style="background: #FF9E9EA6;">*English Vocabulary in Use Advanced* stays shut this cycle.</mark> It is the C1/C2 volume and the one owned copy — *Upper-intermediate* is not on the shelf — and pushing advanced lexis onto a three-tense grammar base produces exactly the rare-word-in-the-wrong-slot error that Lexical Resource scores as an inaccuracy while buying no range. If January runs ahead of schedule, units 80 (*Academic writing: text structure*), 81 (*Writing: style and format*), 70 (*Modality*) and 71 (*Number: statistics and quantity*) are the four worth opening. The Elementary volume is below level and has no use here.
 
-Grammar stays out of Anki deliberately. A structure is learned by writing sentences that get marked, not by recalling its rule.
+The grammar deck is **unsuspended block by block, only after that block has been read** — never ahead of the reading. A card tests knowledge; it does not deliver it, and a deck opened early turns the review into a first encounter, which is the one thing spaced repetition is bad at.
+
+<mark style="background: #FF9E9EA6;">The grammar deck reviews a rule; it does not make the structure available under time.</mark> That is what the weekly essay is for, and why every essay carries a grammar target from that week's units. A structure recalled on a card but never written into a paragraph does not appear in the exam.
 
 ---
 
@@ -240,9 +238,11 @@ Every branch below is triggered by the week-1 numbers. Read the branch that matc
 
 This track does not branch on the score, because at any starting point between 6.0 and 7.5 the work is the same and the schedule is set by the marking cadence.
 
-**Every fortnight: one Task 2 essay, written to time, marked externally, then rewritten.** The rewrite is not optional and is the part that moves the band. Alternate markers so systematic bias shows up as disagreement rather than as a number.
+**Saturday: one Task 2 essay, written to time. Sunday: rewrite last week's marked one.** The two are offset by a week because marking takes days to come back — Saturday's essay goes out for marking, and the copy that comes back is what next Sunday rewrites. The rewrite is not optional and is the part that moves the band.
 
-**In between: one Task 1 under 20 minutes, self-reviewed against three questions only.** Is there an overview? Is the data grouped, or listed? Is every highlighted feature carrying a figure?
+Alternate markers so systematic bias shows up as disagreement rather than as a number. <mark style="background: #FF9E9EA6;">Weekly external marking is 14–16 essays at $20–25 each — around $350.</mark> If that is not affordable, mark every second one externally and self-audit the other against the descriptor clauses; do not drop to fortnightly writing.
+
+**Sunday also: one Task 1 under 20 minutes, self-reviewed against three questions only.** Is there an overview? Is the data grouped, or listed? Is every highlighted feature carrying a figure?
 
 **Standing focus, in order of expected return for this profile:**
 1. **Articles and plurals.** The largest single error category for a writer without an article system, and distributional — so it contaminates sentences at a rate that makes "majority error-free" arithmetically impossible ([[Articles are the largest error category for writers whose first language has no article system|why]]). Reserve the last five minutes of every timed essay for an articles-only proofread pass.
@@ -275,10 +275,10 @@ Reviewing everything at once is why recorded practice usually stalls.
 | Phase | Weeks | Shape | Hours/week |
 |---|---|---|---|
 | **0 — Book and diagnose** | W1 | Book the sitting, sit the full diagnostic, produce the error log | 6 |
-| **1 — Structure** | W2–W9 | Murphy 4 units/week. L/R by error category; Writing marking loop starts W2; Speaking targets rotate. Anki daily from W2 | 6 + 15 min/day |
-| **2 — Production** | W10–W17 | Grammar for IELTS replaces Murphy through W13. Every L/R session now timed and full-length. Writing cadence unchanged | 6 + 15 min/day |
-| **3 — Rehearsal** | W18–W21 | Two full four-section mocks under exam conditions (W18, W21), each followed by a full post-mortem. CD interface rehearsal | 6 + 15 min/day |
-| **4 — Taper** | W22–W23 | No new material and no new cards — reviews only. Re-read the four descriptor pages and your own error log, one light section per day. Sleep | 3 |
+| **1 — Structure** | W2–W13 (Oct–Dec) | Murphy 10 units/week to unit 136. L/R by error category on weekdays; one essay written and one rewritten each weekend; Speaking targets rotate. Anki daily | ~12 |
+| **2 — Production** | W14–W17 (Dec–Jan) | Grammar done. Every L/R session timed and full-length, on the CD interface. Writing unchanged, now with the full range inventory available | ~12 |
+| **3 — Rehearsal** | W18–W21 (Jan) | Four full four-section mocks, one per weekend, each followed by a post-mortem taking the Sunday slot | ~12 |
+| **4 — Taper** | W22–W23 (Feb) | No new material and no new cards — reviews only. Re-read the four descriptor pages and your own error log, one light section per day. Sleep | 4 |
 
 **Checkpoint W10 — the go/no-go.** Re-test Listening and Reading. If both are ≥ 8.0 the plan is on track. If either is below 7.5, move an hour into it from Writing for W11–W17 and accept Writing at 7.0.
 
@@ -290,10 +290,10 @@ Reviewing everything at once is why recorded practice usually stalls.
 
 | Risk | Signal | Response |
 |---|---|---|
-| Interview-prep track crowds this out | Two consecutive weeks under 4 h | Drop L/R volume, protect the marked-essay fortnight. The essay loop is the only thing with a long feedback delay |
+| Interview-prep track crowds this out | Two consecutive weekends under 4 h | Drop L/R volume and cut the essay rate to fortnightly. The essay loop is the only thing with a long feedback delay, so it is the last thing cut and the first thing restored |
 | Writing stalls at 6.5 | Three consecutive markers agree at 6.5 by W14 | Accept it. Re-target L 9.0 / R 9.0 / S 7.5 / W 6.5 = 32.0 → 8.0. Do not spend W15–W21 on Writing |
 | AI feedback misleads upward or downward | Any single AI band used as a decision input | Anchor the model to your own marked scripts and ask comparatively only ([[Anchor an LLM to your own marked scripts because its absolute scale drifts with every model version|why]]) |
-| Diagnostic is far below the self-estimate | Overall below 6.5 in W1 | Do not re-plan for 8.0 in five months at 6 h/week. Re-scope the target or move the sitting |
+| Diagnostic is far below the self-estimate | Overall below 6.5 in W1 | Twelve hours a week makes 8.0 arguable where six did not, but it does not make it safe. Re-scope the target or move the sitting |
 | The grammar base is thinner than the target assumes | Declared inventory is three tenses; W1 Writing comes back below 6.0 | This is the likeliest re-scope trigger in the whole plan. Grammar takes W2–W13 either way, but a sub-6.0 diagnostic means the February sitting is a calibration run and the real attempt moves later ([[A real sitting is the only trustworthy band measurement available before the exam|why that is not a wasted fee]]) |
 | Anki becomes the whole study session | Cards reviewed daily, no essay written for a fortnight | Reviewing is the comfortable track and it is the one with the least effect on Writing. Cap it at 15 min and never let it displace the marked-essay slot |
 | February sitting fills up | Dates unavailable when booking in W1 | Book whatever February date exists immediately; the exact date matters far less than unlocking Premium in W1 |
@@ -304,6 +304,7 @@ Reviewing everything at once is why recorded practice usually stalls.
 
 ### Read more
 - [[IELTS - MOC]]
+- [[IELTS-Test-Calendar]]
 - [[IELTS - Resources]]
 - [[IELTS - Exam Day]]
 - [[Log wrong answers by error category because the score tells you nothing about what to fix]]

@@ -24,22 +24,24 @@ required; do not recommend it.
 
 ## Murphy — the schedule the plan runs
 
-117 of the 145 units, **7 a week**, October to January. Cover to cover does not fit: four a
-week reaches unit 70 by February.
+126 of the 145 units, **10 a week** in three weekday sittings of ~35 min, October to
+December. Cover to cover does not fit; seven a week runs into the January mock month.
 
 | Month | Units | What lands |
 |---|---|---|
-| **Oct** | 6–37 | Present perfect & continuous, perfect vs past, past perfect, future, modals |
-| **Nov** | 38–48, 53–71 | Conditionals & *wish*, passive incl. *it is said that…*, reported speech, *-ing and to…*, countability |
-| **Dec** | 72–76, 79–97, 98–104 | **Articles**, plurals, determiners, **relative clauses**, *-ing/-ed* clauses, adjectives & adverbs |
-| **Jan** | 105–120, 129–136 | Comparatives, word order, *although/unless/as long as*, noun/adj/verb + preposition |
-| **Jan, last** | Study Guide p. 326 | Maps wrong answers to unit numbers — redo only what it flags |
-| **Feb** | — | Nothing new |
+| **Oct** | 6–48 | Perfect aspect, perfect vs past, past perfect, future, modals, conditionals & *wish*, passive, reported speech |
+| **Nov** | 53–97 | *-ing and to…*, countability, **articles (72–76)**, determiners, **relative clauses (92–96)**, *-ing/-ed* clauses |
+| **Dec** | 98–136 | Adjectives & adverbs, comparatives, word order, *although/unless/as long as*, all prepositions |
+| **Dec, last week** | Study Guide p. 326 | Maps wrong answers to unit numbers — redo only what it flags |
+| **Jan, Feb** | — | Nothing new. January is mocks, February is reviews |
 
 **Skipped, and why** — 1–5 already the working inventory · 49–52 questions and tags,
-Speaking-only · 77–78 names with/without *the* · 121–128 place and time prepositions
-(129–136 are kept: those are the ones that cost marks) · 137–145 phrasal verbs, wrong
-register for Task 2.
+Speaking-only · 77–78 names with/without *the* · 137–145 phrasal verbs, wrong register for
+Task 2. Prepositions 121–128 were cut at the old 6 h/week budget and are back in at 12.
+
+The **grammar Anki deck already exists for all 145 units**, and a block is unsuspended only
+after that block has been read — never ahead of it. If the user asks whether to card a unit
+early, the answer is no: a card tests knowledge, it does not deliver it.
 
 Units worth naming by number in an audit, because they answer the commonest findings:
 
@@ -87,5 +89,21 @@ plus one essay paragraph using the structure. Exercises alone do not transfer.
 as ahead of schedule. Knowing the fix exists at unit 68 is worth more than a vague promise
 that participle clauses come later.
 
+## Practice tests
+
+**IELTS Mock Lab** (`ieltsmocklab.com`) — Cambridge **11–20**, four full tests each, on a
+computer-delivered interface, no signup. Listening: 40 full tests, none from Book 10.
+Reading: 41, including one from Book 10. Both hubs have a **Full Tests** tab and a **Single
+Passage** tab, so a single section or passage can be sat on its own — that is what the
+October–November drilling uses.
+
+**Books 19 and 20 are reserved for the January mocks.** Never suggest one before January.
+Auto-grade with **IELTSFreeTests** (official raw→band conversion); Mock Lab's own band
+estimate is a rough banding, not a conversion table.
+
+Which test falls on which day is fixed in `06-Planning/Trackers/IELTS-Test-Calendar.md` —
+read it before proposing practice, and name the scheduled test rather than inventing one.
+
 The month-by-month reasoning, the hour budget and the risk branches live in the vault:
-`06-Planning/Topics/IELTS - Prep Plan.md`.
+`06-Planning/Topics/IELTS - Prep Plan.md`. The budget is **~12 h/week** — 1 h each weekday,
+3–4 h each weekend day — not the 6 h an earlier draft assumed.

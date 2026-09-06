@@ -7,7 +7,7 @@ IELTS Academic, target band 8.0, sitting February 2027 in Astana. Everything her
 
 The map below runs in the order the work actually happens: understand how the score is built, then what each section penalises, then how to prepare and how to trust your own feedback, then the evidence about where the ceiling is, then the logistics.
 
-Three companion files carry the operational detail — [[IELTS - Prep Plan]] (week by week, conditional on the diagnostic), [[IELTS - Resources]] (what to use, what to buy, what to skip) and [[IELTS - Exam Day]] (booking, format, results, retakes).
+Four companion files carry the operational detail — [[IELTS - Prep Plan]] (week by week, conditional on the diagnostic), [[IELTS-Test-Calendar]] (which test on which day, from which book), [[IELTS - Resources]] (what to use, what to buy, what to skip) and [[IELTS - Exam Day]] (booking, format, results, retakes).
 
 ---
 
