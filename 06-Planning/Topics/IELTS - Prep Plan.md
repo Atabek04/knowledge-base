@@ -33,21 +33,45 @@ That end-state decomposes into an arithmetic condition, not four conditions. The
 
 ## Deriving the weekly rate
 
-22 working weeks (W1 = Mon 7 Sept 2026; W23 = exam week, ~8 Feb 2027) × 6 h = **~132 hours total**.
+*Budget revised 2026-09-06 from 6 h/week to ~12. The old figure was an assumption carried from the first draft; the real availability is 1 h on each of five weekdays plus 3–4 h on each weekend day.*
 
-| Track | Work to be done | Rate |
+22 working weeks (W1 = Mon 7 Sept 2026; W23 = exam week, ~8 Feb 2027) × ~12 h = **~260 hours total**.
+
+| Track | Work to be done | Rate | When |
+|---|---|---|---|
+| Grammar | Murphy, 126 of its 145 units | 7 units/week | Weekdays, 3 × ~25 min |
+| Anki | Murphy's own decks + 18 Collocations units — production prompts, not definitions | 15 min **daily** | Dead time, outside the blocks |
+| Listening | Error-category drilling, then timed full tests | 3 sections/week → 2 full tests/week | Weekdays + Sunday |
+| Reading | Same, concentrated on the failing question types | 2 passages/week → 2 full tests/week | Weekdays + Sunday |
+| Writing | **12–16 essays marked and rewritten** | 1 written + 1 rewritten per week | Saturday and Sunday |
+| Speaking | Recorded practice, one rotating target | 2 × 20 min weekend + 10 min on 3 weekdays | Saturday, plus walking |
+| Review | Error log, descriptor re-reads, mock post-mortems | ~1.5 h/week, non-negotiable | Attached to each test |
+
+#### The week
+
+| Day | ~1 h | |
 |---|---|---|
-| Grammar | Murphy, 117 of its 145 units, in book order minus a declared skip list | **7 units/week**, Oct–Jan |
-| Anki | Collocations in Use, 18 units chosen for IELTS yield — production prompts, not definitions | 1 unit/week + 15 min review **daily** |
-| Listening | Close the raw-mark gap from the diagnostic; error-category drilling | ~1 full section + 1 review per week |
-| Reading | Same, concentrated on the one or two failing question types | ~1 full passage set + 1 review per week |
-| Writing | **8–12 essays marked externally and rewritten** | 1 marked-and-rewritten essay per fortnight |
-| Speaking | Recorded practice with a rotating single target | 3 × 20 min per week |
-| Review | Error log, descriptor re-reads, mock post-mortems | ~1 h per week, non-negotiable |
+| **Mon** | Murphy 2 units (25) | Listening section + tag (35) |
+| **Tue** | Reading passage + tag (60) | |
+| **Wed** | Murphy 3 units (30) | Listening section (30) |
+| **Thu** | Reading passage + tag (60) | |
+| **Fri** | Murphy 2 units (25) | Listening section + tag (35) |
+| **Sat** | 3–4 h | Task 2 under time → self-audit → Collocations unit + carding → Speaking 2 × 20 |
+| **Sun** | 3–4 h | Task 1 (20 min) → **rewrite** last week's marked essay → one full timed L or R test on the CD interface → post-mortem |
 
-The marked-essay count is the rate that actually binds. Below about six the pattern is unreadable; above twelve it repeats ([[A marked essay only changes a score when it is rewritten after the feedback|why]]). Twelve essays across 22 weeks is one per fortnight with two spare slots — that is the schedule's backbone, and everything else flexes around it.
+Anki sits outside all of it: 15 minutes of dead time — commute, queue, after fajr — seven days a week, grammar and collocations in one sitting. <mark style="background: #ADCCFFA6;">The deck for a Murphy block is unsuspended only after that block has been read.</mark> A card tests knowledge; it does not deliver it.
 
-The Anki row sits outside the 6 hours. Fifteen minutes daily is dead time — commute, queue, after fajr — and it is the only track that runs seven days a week.
+**One Saturday a month is a full four-section mock** instead of the normal Saturday, with the post-mortem taking Sunday's slot.
+
+#### What the extra hours buy
+
+The marked-essay count is what binds. Below about six the pattern is unreadable; above twelve it starts to repeat ([[A marked essay only changes a score when it is rewritten after the feedback|why]]). At 6 h/week the plan could afford ten; at twelve it affords **one written and one rewritten every week — 14 or so**, which is the top of the useful range rather than the bottom.
+
+That is the whole difference. <mark style="background: #FFF3A3A6;">Writing 7.5 becomes a target rather than a hope</mark>, and the route gains a half-band of slack it did not have. Listening and Reading were always going to reach 8.5 on technique; they were never the reason for the extra hours.
+
+Two second-order effects: the Murphy skip list shrinks — prepositions 121–128 come back in, taking the schedule to 126 units — and the grammar track finishes in **December** instead of January, leaving January entirely for mocks.
+
+<mark style="background: #FF9E9EA6;">The cost is real and it is weekend capacity.</mark> October to December also carries Mutqin v2, Paper A, Quran at 10 lines/day and the maths block, and [[Interview-Prep-Master-Plan|the interview track]] outranks this one whenever they collide. Six to eight weekend hours a week is the single largest claim any track makes on the calendar. If two consecutive weekends fall below four hours, the honest response is to cut the essay rate back to fortnightly rather than to keep the number and miss it.
 
 ---
 
@@ -59,19 +83,20 @@ Band 7 Grammatical Range and Accuracy asks for *a variety of complex structures*
 
 #### The arithmetic, because it decides the shape
 
-*English Grammar in Use* fifth edition is **145 units**. October to January is about 17.5 study weeks. Cover to cover at four units a week covers 70 of them — under half the book, ending somewhere in the middle of relative clauses with the exam six weeks away. <mark style="background: #FF9E9EA6;">"Read Murphy cover to cover" is not a schedule that fits in this calendar, and stating it as one is how a track silently fails in December.</mark>
+*English Grammar in Use* fifth edition is **145 units**. October to December is about 13 study weeks. Cover to cover at four units a week covers 52 of them — barely a third of the book, ending in the middle of the *-ing and to…* block with the exam eight weeks away. <mark style="background: #FF9E9EA6;">"Read Murphy cover to cover" is not a schedule that fits in this calendar, and stating it as one is how a track silently fails in December.</mark>
 
-So the book is cut to **117 units at 7 a week** (~60 min), which finishes in January with the tail as slack.
+So the book is cut to **126 units at 7 a week**, read in three weekday sittings of ~25 minutes rather than one hour-long block — spacing matters more here than total time. That finishes the track by **31 December**, which is what frees January for mocks.
 
-**The 28 units that are skipped, and why**
+**The 19 units that are skipped, and why**
 
 | Units | What | Why it goes |
 |---|---|---|
 | 1–5 | Present simple, present continuous, past simple | Already the working inventory. Do the exercises only if the diagnostic flagged an error here |
 | 49–52 | Questions, auxiliary verbs, question tags | Speaking-only, and already functional. Nothing in Writing tests them |
 | 77–78 | Names with and without *the* | Proper-noun article rules; near-zero yield in an essay |
-| 121–128 | Prepositions of time and place (*at/on/in*) | Mostly known, and the errors they produce are cheap. Units 129–136 — noun/adjective/verb + preposition — are the ones that actually cost marks, and those stay |
 | 137–145 | Phrasal verbs | Informal register, wrong for Task 2. Speaking-only, and below every other track in priority |
+
+Prepositions of time and place (121–128) were on this list at the 6 h/week budget and come back in at 12. They are cheap errors individually and distributional in aggregate, which is exactly the kind of thing extra hours should buy.
 
 #### Month by month
 
@@ -140,7 +165,7 @@ Fifteen minutes a day, every day, from W2. It carries vocabulary and collocation
 
 Units 1–5 (*What is a collocation*, dictionary use, register) are read once in the first week and never carded — they are method, not material.
 
-Deck: `English::IELTS::Collocations`. Cards are built with the `flashcard-creator` skill and synced with `scripts/anki_sync.py`.
+Deck: `English::Collocations`, outside the IELTS tree — <mark style="background: #ADCCFFA6;">`English::IELTS::` holds exam technique only, and a collocation is vocabulary that outlives the exam.</mark> Cards are built with the `flashcard-creator` skill and synced with `scripts/anki_sync.py`.
 
 <mark style="background: #FF9E9EA6;">*English Vocabulary in Use Advanced* stays shut this cycle.</mark> It is the C1/C2 volume and the one owned copy — *Upper-intermediate* is not on the shelf — and pushing advanced lexis onto a three-tense grammar base produces exactly the rare-word-in-the-wrong-slot error that Lexical Resource scores as an inaccuracy while buying no range. If January runs ahead of schedule, units 80 (*Academic writing: text structure*), 81 (*Writing: style and format*), 70 (*Modality*) and 71 (*Number: statistics and quantity*) are the four worth opening. The Elementary volume is below level and has no use here.
 
