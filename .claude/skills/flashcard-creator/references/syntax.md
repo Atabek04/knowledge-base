@@ -173,7 +173,15 @@ Math::Probability
 ```
 English::General
 English::Tech Terms
-English::Collocations
+English::Collocations::01 - Grammatical Aspects
+English::Collocations::02 - Special Aspects
+English::Collocations::03 - Travel and Environment
+English::Collocations::04 - People and Relationships
+English::Collocations::05 - Leisure and Lifestyle
+English::Collocations::06 - Work and Study
+English::Collocations::07 - Society and Institutions
+English::Collocations::08 - Basic Concepts
+English::Collocations::09 - Functions
 English::Grammar::01 - Present
 English::Grammar::02 - Past
 English::Grammar::03 - Present Perfect
@@ -202,6 +210,11 @@ Grammar sub-decks are numbered because they run in prerequisite order — tenses
 modals before conditionals — and they follow Murphy's own sequence. Files live at
 `05-Flashcards/english/grammar/{nn}-{topic}.md`, one per deck. The topics are grammar
 topics, not book chapters, so they survive finishing the book.
+
+Collocation sub-decks follow the sections of *English Collocations in Use Intermediate*,
+files at `05-Flashcards/english/collocations/{nn}-{topic}.md`. Units 1–5 are method and are
+never carded. Card-writing rules for both books live in `murphy-cards.md` and
+`collocation-cards.md`.
 
 `English::IELTS::` holds **exam technique only** — band descriptors, section strategy, the
 mechanics that score or lose marks.
