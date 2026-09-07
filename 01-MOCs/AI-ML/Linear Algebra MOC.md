@@ -19,7 +19,7 @@ correct closed-book, one problem of a different surface form, and the note writt
 
 ## Chapter 1 — Linear Equations in Linear Algebra
 
-- [ ] §1.1 Systems of Linear Equations
+- [~] §1.1 Systems of Linear Equations — theory read and 11 notes written 2026-09-05, exercises still owed. Notes and the live progress marker are in [[Math for ML MOC]]
 - [ ] §1.2 Row Reduction and Echelon Forms
 - [ ] §1.3 Vector Equations
 - [ ] §1.4 The Matrix Equation Ax = b
@@ -100,10 +100,13 @@ trimmed to §3.1 and §3.2. Sections 1.6, 1.10, 2.4 through 2.7, 5.4 through 5.8
 
 ## Teaching Progress
 
-- **Last taught:** nothing yet. Track opened 2026-09-04
-- **Next:** placement probe, twelve minutes, then §1.1 Systems of Linear Equations
-- **Blocked on:** nothing
-- **Open loop:** none
+<mark style="background: #ABF7F7A6;">The live, dated marker lives in [[Math for ML MOC]] under its Linear Algebra section, one per
+section, where it was already being kept.</mark> Two markers drift apart, so this file does not
+carry a second one. This section records only what the roadmap needs.
+
+- **Roadmap opened:** 2026-09-04
+- **Chapter 1 status:** §1.1 part-worked, §1.2 next
+- **Open loop:** the placement probe was designed but never sat; §1.1 was closed without it
 
 ---
 

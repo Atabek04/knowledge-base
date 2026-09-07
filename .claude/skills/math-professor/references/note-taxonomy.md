@@ -434,6 +434,20 @@ only once the note exists.
 
 ---
 
+## 4b. Notation
+
+Maths is MathJax, never ASCII in a code fence. `$inline$` and `$$block$$` render natively.
+Align a system on its operators and equals sign so a missing term leaves a visible gap; that
+gap is what makes the augmented matrix obvious later. Use `\mathbb{R}` inside maths and a
+plain ℝ in prose.
+
+<mark style="background: #FF5582A6;">In flashcards `$...$` does not render.</mark> The sync
+script runs card text through Markdown, which strips the backslashes, and Anki does not read
+`$`. Wrap card maths in a raw `<div>` block, which Markdown passes through untouched. Full
+rules are in `CLAUDE.md`.
+
+---
+
 ## 5. Figures
 
 Figures are matplotlib PNGs written into `Assets/` by a script that lives beside the note.
