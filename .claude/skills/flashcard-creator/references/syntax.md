@@ -96,6 +96,16 @@ Tech-KB::DSA::Dynamic Programming
 (… one per NeetCode/Grokking pattern)
 ```
 
+### Architecture
+
+```
+Tech-KB::Architecture::Reliability
+Tech-KB::Architecture::Scalability & Performance
+Tech-KB::Architecture::Maintainability
+Tech-KB::Architecture::Data Pipelines
+Tech-KB::Architecture::Domain-Driven Design
+```
+
 ### System Design
 
 ```
