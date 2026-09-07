@@ -5,61 +5,14 @@ tags: [moc]
 
 Mathematical foundations essential for understanding machine learning algorithms.
 Covers linear algebra for data representation, calculus for optimization, probability for uncertainty, and discrete math for algorithmic thinking.
-Based on Mathematical Foundations of Machine Learning course by Jon Krohn.
+Linear algebra has moved to its own MOC and is taught from Lay. The calculus, probability and discrete sections below are still an outline of Jon Krohn's Mathematical Foundations of Machine Learning course, not a note index.
 
 ## Linear Algebra
 
-Mathematical framework for representing and manipulating data in high-dimensional spaces.
+Worked from Lay, 5th edition, section by section, with the `math-professor` skill. The
+roadmap, the chapter checkboxes and the teaching-progress marker live in its own MOC.
 
-### Data Structures for ML
-
-- Scalar: single numerical value representing a quantity
-- Vector: one-dimensional array of scalars with both magnitude and direction
-- Matrix: two-dimensional array of scalars arranged in rows and columns
-- Tensor: n-dimensional generalization of matrices for higher-order data
-- Norm: measure of vector magnitude or size in vector space
-- Basis vectors: fundamental vectors that span a vector space
-- Orthogonal vectors: vectors that are perpendicular with zero dot product
-- Orthonormal vectors: orthogonal vectors with unit magnitude
-
-### Tensor Operations
-
-- Transposition: flipping matrix dimensions from rows×columns to columns×rows
-- Element-wise arithmetic: adding or multiplying matrices element by element
-- Hadamard product: element-wise multiplication of two matrices
-- Dot product: scalar resulting from multiplying vector components and summing
-- Linear systems: solving Ax = b equations using matrix operations
-- Matrix-vector multiplication: transforming vectors by linear transformation
-
-### Matrix Properties
-
-- Frobenius norm: measure of matrix size using all elements
-- Matrix multiplication: non-commutative operation combining two matrices
-- Symmetric matrix: square matrix equal to its transpose
-- Identity matrix: diagonal matrix with ones producing no transformation
-- Matrix inversion: finding inverse matrix when solving Ax = b equations
-- Diagonal matrix: matrix with values only on main diagonal
-- Orthogonal matrix: square matrix with orthonormal columns
-
-### Eigendecomposition
-
-- Linear transformation: mapping vectors from one space to another
-- Affine transformation: linear transformation plus translation
-- Eigenvector: vector unchanged in direction under linear transformation
-- Eigenvalue: scalar multiplier of eigenvector under transformation
-- Determinant: scalar value describing volume change under transformation
-- Eigenvalue decomposition: expressing matrix as product of eigenvector and eigenvalue matrices
-- Diagonalization: transforming matrix into diagonal form using eigendecomposition
-- Applications: simplifying computations, understanding geometric meaning
-
-### Matrix Operations for ML
-
-- Singular Value Decomposition (SVD): decomposing matrix into three components for dimensionality reduction
-- Data compression: reducing storage using SVD for low-rank approximation
-- Pseudoinverse: computing Moore-Penrose inverse for non-square matrices
-- Regression: using matrix operations to solve least-squares problems
-- Trace operator: sum of diagonal elements with applications in optimization
-- Principal Component Analysis (PCA): finding principal vectors explaining data variance
+- [[Linear Algebra MOC|Linear Algebra — the Lay track, Ch 1, 2, 3, 5, 6, 7]]
 
 ## Calculus
 
@@ -185,7 +138,7 @@ Foundational concepts for algorithmic and logical thinking.
 
 ## Practice
 
-- [[Math for ML|04-Flashcards/Math for ML]] — spaced repetition cards for mathematical foundations
+Spaced-repetition cards live under `05-Flashcards/math/`, deck root `Tech-KB::Math for ML`. Files: `calculus.md`, `probability.md`, and `linear-algebra.md` once Block 1 opens.
 
 ## External Resources
 
