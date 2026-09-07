@@ -6,7 +6,7 @@ aliases: [rubber duck debugging, rubber ducking]
 
 You stare at code you're *sure* is correct, the bug invisible. Then a colleague walks over, you start explaining it line by line — and halfway through a sentence you stop and say "oh." You found it yourself; they said nothing. Rubber duck debugging turns that into a deliberate technique: explain the code, out loud, to an inanimate listener.
 
-The name comes from *The Pragmatic Programmer*, where a developer carried a <mark style="background: #FFF3A3A6;">rubber duck</mark> and forced himself to explain his code to it line by line. <mark style="background: #FFF3A3A6; font-weight: bold;">The duck never answers — the value is entirely in the act of explaining.</mark>
+The name comes from *The Pragmatic Programmer*, where a developer carried a <mark style="background: #FFF3A3A6;">rubber duck</mark> and forced himself to explain his code to it line by line. <mark style="background: #FFF3A3A6;">The duck never answers — the value is entirely in the act of explaining.</mark>
 
 ---
 

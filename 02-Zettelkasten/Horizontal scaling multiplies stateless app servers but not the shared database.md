@@ -8,7 +8,7 @@ aliases: [horizontal scaling, scale out, scaling out]
 
 The word "horizontal" is the hook — you grow *sideways*, adding boxes in a row, rather than *upward* into a single giant box.
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">It works cleanly only for stateless tiers — where any server can handle any request.</mark>
+<mark style="background: #FFF3A3A6;">It works cleanly only for stateless tiers — where any server can handle any request.</mark>
 
 ---
 
@@ -22,7 +22,7 @@ A [[Stateless vs Stateful Services|stateless]] app server keeps no per-user data
 
 Adding app servers does **not** add database capacity. All N servers point at the same [[The database is the hardest tier to scale because every app server shares one writer|shared database]]. So:
 
-<mark style="background: #FF9E9EA6; font-weight: bold;">You scale the tier that was never the bottleneck, and pile even more pressure on the tier that was.</mark>
+<mark style="background: #FF9E9EA6;">You scale the tier that was never the bottleneck, and pile even more pressure on the tier that was.</mark>
 
 More app servers → more concurrent DB connections, more queries per second → the database saturates *faster*, not slower. See [[A connection storm from new instances can exhaust the database connection limit]].
 

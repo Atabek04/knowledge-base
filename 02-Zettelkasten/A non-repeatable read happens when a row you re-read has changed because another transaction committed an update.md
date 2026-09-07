@@ -16,7 +16,7 @@ T2: UPDATE account SET balance=300 WHERE id=1; COMMIT;
 T1: SELECT balance FROM account WHERE id=1;   -- reads 300  ← not repeatable
 ```
 
-Ali's transaction (`T1`) never changed the row, yet saw `100` then `300`. The name is literal: the read could not be <mark style="background: #FFF3A3A6; font-weight: bold;">repeated</mark> with the same result inside one transaction, because Umar (`T2`) committed an update to that existing row in the gap.
+Ali's transaction (`T1`) never changed the row, yet saw `100` then `300`. The name is literal: the read could not be <mark style="background: #FFF3A3A6;">repeated</mark> with the same result inside one transaction, because Umar (`T2`) committed an update to that existing row in the gap.
 
 ---
 

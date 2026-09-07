@@ -276,5 +276,5 @@ Russian: субсидированный, дотированный
 Example: On why AI seems cheaper than the workers it replaced — the answer is simple: it was never cheap, it was **subsidised** (investors are covering the real cost, not charging users for it).
 Note: British spelling; US spelling is "subsidized." Refers to a hidden cost being covered by someone else (investors, government) rather than the true cost disappearing.
 Tags: adjective economics
-<!--ID: 1788436392672-->
+<!--ID: 1788608938314-->
 END

@@ -54,6 +54,66 @@ Even single-sentence paragraphs are acceptable.
 
 This mirrors the atomic note philosophy: one concept per unit.
 
+### Math Notation
+
+Write maths as **MathJax**, never as ASCII in a code fence.
+
+**In notes** — `$inline$` and `$$block$$`. Obsidian renders both natively, no plugin.
+
+```latex
+$$\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$$                      matrix
+$$\left[\begin{array}{cc|c} 1 & 1 & 3 \\ 1 & -1 & 1 \end{array}\right]$$   augmented
+$$\begin{array}{rrrrrrr}                                              system, columns aligned
+2x_1 &-& x_2 &+& 1.5x_3 &=& 8 \\
+ x_1 & &     &-& 4x_3   &=& -7
+\end{array}$$
+```
+
+Align a system on its operators and `=` so missing terms leave a visible gap — that gap is what makes an augmented matrix obvious later. Use `\mathbb{R}` inside maths, plain `ℝ` in prose.
+
+**In flashcards** — `$...$` does NOT work: `anki_sync.py` runs the text through Markdown, which strips the backslashes, and Anki does not read `$`. Wrap the maths in a raw `<div>` block, which Markdown passes through untouched:
+
+```html
+<div>
+\[ \left[\begin{array}{cc|c} 1 & 1 & 3 \\ 1 & -1 & 1 \end{array}\right] \]
+</div>
+```
+
+Anki's own MathJax reads `\(inline\)` and `\[block\]` — but only inside that `<div>`.
+
+**Never put `$maths$` inside an inline HTML tag** — `<mark>`, `<b>` and `<i>` all break it. Live Preview does not process math inside inline HTML, so the phrase shows raw `$x_1 - x_2 = 1$` while editing (Reading view is fine).
+
+```html
+✗  <b>$e_2$ itself is gone</b>
+✓  $e_2$ itself <b>is gone</b>
+```
+
+Rearrange the sentence so the formula sits in plain prose and the tag wraps only words. For `<b>` and `<i>` that is always possible; for `<mark>` see below.
+
+The fix is **not** to shrink the highlight around the formula — `<mark>is gone.</mark>` highlights a fragment that means nothing on its own and just looks broken. **Rewrite the sentence** so the highlighted clause is a complete, math-free statement, and leave the formula in the plain prose before it:
+
+```html
+The second equation, $x_1 - x_2 = 1$, is no longer there. <mark style="background: #ABF7F7A6;">It was replaced, and every step from here on solves the replacement, never the original.</mark>
+```
+
+#### What may be highlighted — the flashcard test
+
+<b>A highlight covers a claim, never a fragment and never a piece of rhetoric.</b>
+
+The test, applied to every `<mark>` before it ships: <b>could the highlighted words be the answer side of a flashcard, on their own, months from now?</b> If not, delete the highlight — do not shrink it, do not reword it.
+
+Fails the test, delete on sight:
+- <b>Rhetoric and transitions</b> — "It holds, and it could not have done otherwise", "This is the key insight", "Note carefully that", "That half is genuinely safe". These carry emphasis, not content.
+- <b>Fragments</b> — `<mark>is gone.</mark>`, `<mark>vanished.</mark>` Meaningless alone; they just change the font mid-sentence.
+- <b>Sentences whose meaning depends on the previous one</b> — anything opening with "It", "This", "That" pointing backwards.
+
+Passes:
+- A definition — "Denominator names how many equal parts the whole was cut into"
+- A rule or test — "Constant × variable is allowed; variable × variable is not"
+- A trap — "Dividing by a variable quietly assumes it is not zero"
+
+<mark style="background: #FF9E9EA6;">Two or three highlights in a long note is normal.</mark> If most paragraphs have one, none of them is doing any work — the eye stops distinguishing them and the whole note reads as shouted.
+
 ### Text Highlighting
 
 Use the Highlightr plugin for strategic emphasis.
@@ -72,23 +132,36 @@ Never use `font-weight: bold` on the `<mark>` style either — combined with any
 
 **"==" (double equals) breaks Dataview rendering.** The Dataview plugin misparses a literal `==` anywhere in note text — even inside backticks or parentheses — as its inline-field syntax, producing a visible parse-error block instead of your text. Avoid the literal characters `==` entirely: say "reference identity" / "double-equals" / "the equality operator" instead of writing the symbol.
 
-**Color system (optimized for dark theme):**
+**Color system — five colours, one meaning each.** The vault renders in **light theme**; the CSS snippet handles the light-mode remap (see below).
 
-- **Yellow** → Key concepts, definitions, core principles
-- **Green** → Examples, practical applications, code snippets
-- **Cyan/Blue** → Important connections, insights, linking ideas
-- **Pink/Red** → Warnings, common mistakes, critical edge cases
-- **Purple** → Questions for further study, unresolved items
+| Colour | Hex | Means | Ask yourself |
+|---|---|---|---|
+| Yellow | `#FFF3A3A6` | <b>Definition</b> — what a thing *is* | "Could this be a glossary entry?" |
+| Cyan | `#ABF7F7A6` | <b>Mechanism or insight</b> — *how* or *why* it works | "Does this explain the machinery?" |
+| Blue | `#ADCCFFA6` | <b>Rule</b> — what you must always or never do | "Is this an instruction I follow at the desk?" |
+| Green | `#BBFABBA6` | <b>Worked example or concrete case</b> — the claim made specific | "Is this an instance rather than a principle?" |
+| Pink | `#FFB8EBA6` | <b>Edge case</b> — where the normal rule stops applying | "Is this an exception to something already stated?" |
+| Salmon | `#FF9E9EA6` | <b>Caution or scope limit</b> — this proves less than it seems, applies only here | "Am I warning against over-reading something?" |
+| Red-pink | `#FF5582A6` | <b>Trap</b> — the mistake that silently produces a wrong answer | "Would a careful person still fall into this?" |
 
-**Established hex values — reuse these exact codes, don't invent new ones:**
+Worked examples of the distinction, all from the same note:
 
-| Color | Hex | Use |
-|---|---|---|
-| Yellow | `#FFF3A3A6` | Key concepts, definitions |
-| Cyan | `#ABF7F7A6` | Connections, insights (link-heavy) |
-| Light blue | `#ADCCFFA6` | Connections, insights (alt) |
-| Pink | `#FFB8EBA6` | Warnings, edge cases (alt) |
-| Red/pink | `#FF9E9EA6` / `#FF5582A6` | Warnings, critical mistakes |
+- Yellow — "A rewrite can go wrong in two opposite directions: losing a solution the original had, or gaining one it rejected"
+- Cyan — "Because every legal move preserves the solution set, a chain of them does too"
+- Blue — "Dividing both sides by a variable is never a legal move on a system"
+- Salmon — "Everything below argues one thing only: no solution can disappear"
+- Red-pink — "Dividing by a variable quietly assumes it is not zero, and that assumption throws away the very solution it excluded"
+
+<mark style="background: #ADCCFFA6;">Never use orange, purple or grey.</mark> They exist in the Highlightr palette but carry no meaning in this vault, and an unassigned colour is worse than no highlight — the reader stops trusting that colour means anything.
+
+Two pairs are worth getting right, because each pair looks similar and means something different:
+
+- <b>Salmon vs red-pink</b> — salmon <i>limits a claim</i>, red-pink <i>names a mistake</i>.
+- <b>Pink vs red-pink</b> — pink marks an <i>exception the reader should know</i>, red-pink marks an <i>error the reader would otherwise make</i>.
+
+Seven colours is the ceiling. Do not add an eighth.
+
+**Light theme is handled in CSS, not in the note.** The `A6` values wash out on a light background, so `.obsidian/snippets/highlights.css` remaps each one to a saturated opaque equivalent under `.theme-light`. Keep writing the `A6` hex codes from the table — never hand-pick a "lighter" or "stronger" colour for light mode.
 
 All use `A6` alpha (~65% opacity) — this is load-bearing, not cosmetic. `<mark>` renders with black text by default; a lower alpha (e.g. `4D`) or a more saturated base color drops contrast enough that the text becomes hard to read, especially on a dark theme. **Never invent a new hex value** — pick from the table above, or if a genuinely new shade is needed, derive it the same way: a light pastel base at `A6` alpha.
 
@@ -96,6 +169,7 @@ All use `A6` alpha (~65% opacity) — this is load-bearing, not cosmetic. `<mark
 - Highlight **after** writing, not during initial capture
 - Use sparingly — over-highlighting defeats the purpose
 - Be consistent — same color always means same thing
+- One colour per claim — never two `<mark>` styles in a single sentence
 
 ### Aliases
 

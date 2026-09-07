@@ -5,14 +5,80 @@ tags: [moc]
 
 Mathematical foundations essential for understanding machine learning algorithms.
 Covers linear algebra for data representation, calculus for optimization, probability for uncertainty, and discrete math for algorithmic thinking.
-Linear algebra has moved to its own MOC and is taught from Lay. The calculus, probability and discrete sections below are still an outline of Jon Krohn's Mathematical Foundations of Machine Learning course, not a note index.
+Linear algebra is taught from Lay. The worked notes live below; the full chapter roadmap and its checkbox spine live in the child MOC. The calculus, probability and discrete sections are still an outline of Jon Krohn's course, not a note index.
 
 ## Linear Algebra
 
-Worked from Lay, 5th edition, section by section, with the `math-professor` skill. The
-roadmap, the chapter checkboxes and the teaching-progress marker live in its own MOC.
+Worked from Lay, 5th edition, section by section, with the `math-professor` skill.
+Teaching progress is tracked here, per section; the chapter roadmap lives in the child MOC.
 
-- [[Linear Algebra MOC|Linear Algebra — the Lay track, Ch 1, 2, 3, 5, 6, 7]]
+- [[Linear Algebra MOC|Linear Algebra — the full Lay roadmap, Ch 1, 2, 3, 5, 6, 7]]
+
+### Systems of Linear Equations
+
+> **Teaching progress — 2026-09-05:** §1.1 theory only, notes written but not yet reviewed. Book examples and exercises untouched. Next: 2 × 90 min on Sun 06-09 — read the notes and question them, then work §1.1's examples, then the augmented matrix.
+
+- [[An equation is linear when every variable stands alone to the first power and is multiplied only by a constant|Linear equation — variable alone, first power, times a constant]]
+- [[Each family of nonlinear equation breaks exactly one criterion of linearity|Nonlinear families — each breaks one criterion of linearity]]
+- [[Subscript notation lets one formula describe any number of unknowns|Subscripts — one formula for any number of unknowns]]
+- [[The number of variables sets the dimension and each equation draws a shape one dimension lower|Variables set the dimension, each equation drops one]]
+- [[A linear system has zero, one, or infinitely many solutions and never any other count|Solution counts — zero, one, or infinitely many, never other]]
+- [[Elimination replaces an equation, so solving a system means rewriting it|Elimination is rewriting — each step trades one system for another]]
+- [[Deriving an equation prevents losing a solution but not gaining one|Derivation blocks losing a solution, never gaining one]]
+- [[A rewrite is safe exactly when the move that produced it can be undone|Reversibility — a move you can undo changes no answers]]
+- [[The three row operations are legal precisely because each one can be undone|Three row operations — swap, scale, add, each reversible]]
+- [[Two systems are equivalent when they have the same solution set|Equivalence — same solution set licenses every rewrite]]
+- [[Solving a linear system means finding where the shapes its equations draw intersect|Solving — find where all the equations' shapes intersect]]
+
+### Data Structures for ML
+
+- Scalar: single numerical value representing a quantity
+- Vector: one-dimensional array of scalars with both magnitude and direction
+- Matrix: two-dimensional array of scalars arranged in rows and columns
+- Tensor: n-dimensional generalization of matrices for higher-order data
+- Norm: measure of vector magnitude or size in vector space
+- Basis vectors: fundamental vectors that span a vector space
+- Orthogonal vectors: vectors that are perpendicular with zero dot product
+- Orthonormal vectors: orthogonal vectors with unit magnitude
+
+### Tensor Operations
+
+- Transposition: flipping matrix dimensions from rows×columns to columns×rows
+- Element-wise arithmetic: adding or multiplying matrices element by element
+- Hadamard product: element-wise multiplication of two matrices
+- Dot product: scalar resulting from multiplying vector components and summing
+- Linear systems: solving Ax = b equations using matrix operations
+- Matrix-vector multiplication: transforming vectors by linear transformation
+
+### Matrix Properties
+
+- Frobenius norm: measure of matrix size using all elements
+- Matrix multiplication: non-commutative operation combining two matrices
+- Symmetric matrix: square matrix equal to its transpose
+- Identity matrix: diagonal matrix with ones producing no transformation
+- Matrix inversion: finding inverse matrix when solving Ax = b equations
+- Diagonal matrix: matrix with values only on main diagonal
+- Orthogonal matrix: square matrix with orthonormal columns
+
+### Eigendecomposition
+
+- Linear transformation: mapping vectors from one space to another
+- Affine transformation: linear transformation plus translation
+- Eigenvector: vector unchanged in direction under linear transformation
+- Eigenvalue: scalar multiplier of eigenvector under transformation
+- Determinant: scalar value describing volume change under transformation
+- Eigenvalue decomposition: expressing matrix as product of eigenvector and eigenvalue matrices
+- Diagonalization: transforming matrix into diagonal form using eigendecomposition
+- Applications: simplifying computations, understanding geometric meaning
+
+### Matrix Operations for ML
+
+- Singular Value Decomposition (SVD): decomposing matrix into three components for dimensionality reduction
+- Data compression: reducing storage using SVD for low-rank approximation
+- Pseudoinverse: computing Moore-Penrose inverse for non-square matrices
+- Regression: using matrix operations to solve least-squares problems
+- Trace operator: sum of diagonal elements with applications in optimization
+- Principal Component Analysis (PCA): finding principal vectors explaining data variance
 
 ## Calculus
 
@@ -135,6 +201,7 @@ Foundational concepts for algorithmic and logical thinking.
 ## Related MOCs
 
 - [[Machine Learning MOC]] — parent hub for all machine learning topics
+- [[Math Foundations MOC]] — number systems, fractions and notation underneath all of this
 
 ## Practice
 

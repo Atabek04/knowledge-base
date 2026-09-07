@@ -17,7 +17,7 @@ Every [[Kubernetes probes let the kubelet check container health the app reports
 
 #### Why infra pods use `tcpSocket` or `exec`, not `httpGet`
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">Stateful infrastructure usually speaks no HTTP health protocol</mark>, so it cannot answer an `httpGet`. It is probed by opening its port or by running its own CLI tool:
+<mark style="background: #FFF3A3A6;">Stateful infrastructure usually speaks no HTTP health protocol</mark>, so it cannot answer an `httpGet`. It is probed by opening its port or by running its own CLI tool:
 
 ```yaml
 # Postgres — readiness via its CLI

@@ -2,11 +2,11 @@
 aliases: [jailbreak defense, jailbreak prevention, LLM defense in depth]
 ---
 
-If [[Jailbreaking crafts prompts that bypass an LLM's safety guardrails|a jailbreak bypasses the model's guardrails]], how do you stop it? The trap is thinking the model's own refusal is the wall. It isn't — jailbreaks defeat that wall by design. The answer is <mark style="background: #FFF3A3A6; font-weight: bold;">defense in depth</mark>: stack independent layers so beating one does not mean a full break.
+If [[Jailbreaking crafts prompts that bypass an LLM's safety guardrails|a jailbreak bypasses the model's guardrails]], how do you stop it? The trap is thinking the model's own refusal is the wall. It isn't — jailbreaks defeat that wall by design. The answer is <mark style="background: #FFF3A3A6;">defense in depth</mark>: stack independent layers so beating one does not mean a full break.
 
 ### The key insight
 
-A jailbreak bends the *model's behavior* — it talks the model out of refusing. It cannot bend a <mark style="background: #81C7D4A6; font-weight: bold;">separate classifier running outside the model</mark>. So the strongest defenses sit *around* the model, not inside it: a jailbroken model still hands its input and output to filters it has no control over.
+A jailbreak bends the *model's behavior* — it talks the model out of refusing. It cannot bend a <mark style="background: #81C7D4A6;">separate classifier running outside the model</mark>. So the strongest defenses sit *around* the model, not inside it: a jailbroken model still hands its input and output to filters it has no control over.
 
 Split the layers by where they live:
 

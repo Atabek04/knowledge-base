@@ -143,12 +143,76 @@ Before syncing a batch, run the fast pre-sync gate in `references/quality-checkl
 it catches the top failure modes (enumeration traps, leaked hints, interference, orphans)
 that quietly waste review time for months.
 
-## Vocabulary cards
+## English cards
 
-When the user sends a sentence and asks what a word means, the card tests **production
-recall**: they read an English definition and must produce the word. Different note type
-(`A_English_Translate`), different fields, different deck. Read `references/vocab.md` and
-follow its format — don't improvise vocab cards from the tech-card format.
+Three note types, picked by what the card asks. Full field lists and examples in
+`references/syntax.md`.
+
+| Card asks | Note type | Deck |
+|---|---|---|
+| A word's meaning, or any question and answer | `English Card` | `English::General` · `English::Tech Terms` |
+| Produce a grammatical form in a real sentence | `English Grammar` (cloze) | `English::Grammar` |
+| Produce the word from an English definition | `A_English_Translate` | see `references/vocab.md` |
+
+`English Card` has five optional fields — `Example`, `Collocations`, `Synonyms`, `Forms`,
+`Pattern` — that vanish when empty, so it also serves as a plain two-field card. Fill only
+what earns its place; `Synonyms` must say how each one *differs*, never just list them.
+
+**The recall target is one thing, and the rest is scenery.** On a grammar card the cloze is
+the test and `Explanation` is a reminder the learner is never graded on — it renders dimmer
+and smaller to make that obvious. Same logic on a vocab card: you recall the meaning, and
+the collocations and forms are there to be re-read, not recited. <mark style="background: #FF5582A6;">A card that quietly asks the
+learner to recall four fields is four cards wearing one coat, and none of them get learned.</mark>
+
+**A cloze gap must have exactly one right answer.** If two forms fit, the card grades the
+learner on guessing your intent, and marking a correct sentence wrong is worse than having
+no card. Pick a sentence where the grammar forces one form, or put the lemma in brackets
+after the gap — `{1:have known} (know)`. If a second form is genuinely correct there, that
+goes in `Explanation` as a teaching point, never left ambiguous in the gap.
+
+**Never card a grammar rule before learning it.** Read the unit, write the note, then card
+it. Cards test knowledge; they do not deliver it.
+
+### Writing grammar cards that actually change what you produce
+
+Grammar is not knowledge, it is a **choice made under time pressure**. Two or three forms
+are always available and one is right. So the card must rehearse the choice — a learner who
+can recite "present continuous is for unfinished actions" and still writes *I try to work*
+has been tested on the wrong thing.
+
+**Name the competing form on every card.** <mark style="background: #FF5582A6;">A card that shows only the correct answer leaves the wrong
+one untouched, and the wrong one is what turns up in the essay.</mark> The explanation says what
+the rival form would have meant: *"I try to work is the present simple, which states a habit,
+not this moment."* That contrast is the teaching; the gap is only the prompt.
+
+**One card per decision, not per example.** A unit prints five sentences for one rule because
+a book teaches by repetition. Cards do not — five sentences testing one choice are four
+duplicates costing review time forever. Card the decision once, in whichever sentence shows
+it most sharply, and list the rest inside the explanation.
+
+**Cover every lettered block, and check the form block last.** Blocks A–E each add a distinct
+use or restriction, so each earns at least one card. The **form** block is the one that gets
+skipped — it looks too obvious to test, and it is the thing that breaks under exam pressure.
+
+**Prefer the sentence the book flags with *(not …)*.** Those parentheses are the author naming
+the error real learners make. They are pre-identified decision points and they make the best
+gaps in the unit.
+
+**State the count when a card holds a list.** *"When do you use the present simple? (three
+uses)"* — the number tells the learner when to stop retrieving, which is what makes a
+multi-part answer recallable at all. Above three or four items, split the card.
+
+**Give the first-language contrast when it explains the error, in Russian.** *"Russian has one
+present tense — я стараюсь covers both, which is why the simple form feels correct here."*
+This turns an arbitrary-seeming rule into a predictable interference, and a learner who knows
+*why* a wrong form feels right can catch it in their own writing.
+
+**A grammar point that is an exception gets its own card.** Performative verbs (*I promise*,
+*I apologise*), action-versus-state *have*, verbs that resist the continuous — these look like
+footnotes in the book and are pure trap in the exam.
+
+Exam technique belongs in `English::IELTS::`; a word or rule met during IELTS practice does
+not — it goes to the general English decks, because it outlives the exam.
 
 ## Syncing to Anki
 

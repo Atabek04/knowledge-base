@@ -6,7 +6,7 @@ aliases: [thundering herd, cache stampede, cold cache, dogpile]
 
 A cache exists to shield the database: most reads hit the cache, only misses fall through. That protection depends on the cache being **warm** — full of the data people are asking for. When the cache is empty or its entries all expire at once, that shield vanishes.
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">A cold cache means every request misses and falls straight through to the database at the same time — a thundering herd that can crush the very database the cache was meant to protect.</mark>
+<mark style="background: #FFF3A3A6;">A cold cache means every request misses and falls straight through to the database at the same time — a thundering herd that can crush the very database the cache was meant to protect.</mark>
 
 The name is the picture: a **herd** of requests all **thundering** at the database in one instant.
 
@@ -21,7 +21,7 @@ The name is the picture: a **herd** of requests all **thundering** at the databa
 
 #### Why it's a feedback loop, not a blip
 
-The herd overloads the database → queries slow down → the cache takes longer to repopulate → the cache stays cold longer → more requests miss. <mark style="background: #FF9E9EA6; font-weight: bold;">The stampede feeds itself; without intervention it doesn't self-heal, it collapses.</mark> This is the same [[Server capacity is bounded by whichever resource saturates first, not just RAM|saturation feedback loop]] seen in most "server crashed" stories.
+The herd overloads the database → queries slow down → the cache takes longer to repopulate → the cache stays cold longer → more requests miss. <mark style="background: #FF9E9EA6;">The stampede feeds itself; without intervention it doesn't self-heal, it collapses.</mark> This is the same [[Server capacity is bounded by whichever resource saturates first, not just RAM|saturation feedback loop]] seen in most "server crashed" stories.
 
 ---
 

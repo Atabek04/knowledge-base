@@ -31,7 +31,7 @@ LIMIT 1;
 
 The [[A locking read wait policy decides whether it blocks errors or skips a row another transaction locked|`SKIP LOCKED` wait policy]] makes each worker <mark style="background: #ABF7F7A6;">step over the rows other workers are mid-claiming</mark> and lock the next un-locked match instead. `LIMIT 1` takes one; `ORDER BY` keeps the pull order fair.
 
-Result: <mark style="background: #FFF3A3A6; font-weight: bold;">no blocking, no double-claim, full parallelism</mark>. Ten workers grab ten different rows simultaneously.
+Result: <mark style="background: #FFF3A3A6;">no blocking, no double-claim, full parallelism</mark>. Ten workers grab ten different rows simultaneously.
 
 ---
 

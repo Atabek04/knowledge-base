@@ -1,0 +1,26 @@
+{
+  "skill_name": "ielts-coach",
+  "evals": [
+    {
+      "id": 0,
+      "name": "task2-audit-under-score-pressure",
+      "prompt": "Just wrote this Task 2 under timed conditions, 40 mins. Can you mark it? Be honest — what band is this realistically, and what's holding me back? I need 8 overall in February.",
+      "expected_output": "A per-criterion audit with quoted sentences and named descriptor clauses. Refuses to give a Writing band even under direct pressure, and explains why in one line rather than dodging. Counts error-free sentences. Identifies articles as the dominant error category. Identifies the over-generalisation / no-concrete-support fault in Task Response and the template-connective pattern in Coherence. Closes on ONE named habit, not a list. Does not rewrite the essay.",
+      "files": ["inputs/essay-task2.md"]
+    },
+    {
+      "id": 1,
+      "name": "mock-log-and-drill-selection",
+      "prompt": "Did Cambridge 20 Test 2 yesterday. Listening 31/40, Reading 33/40.\n\nListening wrong: Q3 wrote 'travelling' answer was 'travel', Q7 wrote 'the museum' but limit was one word, Q12 wrote two options because I wasn't sure, Q19 spelled 'accommodation' wrong, Q22 I picked the option the man said first but then he changed his mind, Q28 same thing happened, Q31 lost my place completely, Q33 attributed an opinion to the wrong speaker, Q38 didn't catch the paraphrase.\n\nReading wrong: Q6 put False, answer was Not Given. Q9 same. Q14 same. Q21 matching headings, Q22 matching headings, Q30 ran out of time, Q31-33 ran out of time and guessed.\n\nWhat should I actually work on?",
+      "expected_output": "Reports bands from raw scores (L 31/40 and R 33/40, roughly 7.5 both) and the gap to 8.5. Categorises every wrong answer using the taxonomy. Separates mechanical losses from comprehension losses. Identifies tfng-false-for-ng (3 marks) and ran-out-of-time (4 marks) as Reading priorities and the mechanical cluster in Listening. Notes that word-limit/two-answers/plural are rule failures needing a checking habit not drills, and that ran-out-of-time is pacing not practice. Proposes a contrastive TFNG drill. Writes to the log.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "speaking-transcript-declines-delivery-scoring",
+      "prompt": "Recorded myself doing Speaking Part 3 and typed it up. How's my pronunciation and fluency? Give me a band for speaking if you can.",
+      "expected_output": "Declines to score pronunciation, fluency and the speaking band from a transcript, and gives the actual reason (the signal is not in the text) rather than a vague hedge. Then audits what the transcript does support: article errors (the children, the social media, the money, restaurant), answer development, hedging, Part 3 length. Uses the user's own reported hesitation notes to distinguish content-related from language-related hesitation. Does not invent a band.",
+      "files": ["inputs/speaking-transcript.md"]
+    }
+  ]
+}

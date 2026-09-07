@@ -9,7 +9,7 @@ Sits **in front of the client**, relaying the client's requests to the destinati
 
 Hides the **client's** IP/location from the server — the server only ever sees the proxy.
 Tags: networking proxy
-<!--ID: 1788436392656-->
+<!--ID: 1788608937980-->
 END
 
 START
@@ -20,7 +20,7 @@ Sits **in front of the server**, relaying client requests to the real origin (or
 
 Hides the **origin server's** IP from the client — the client only ever sees the proxy (e.g. Cloudflare).
 Tags: networking proxy
-<!--ID: 1788436392659-->
+<!--ID: 1788608938024-->
 END
 
 START
@@ -34,7 +34,7 @@ Back:
 
 Same relaying mechanic, opposite side of the connection.
 Tags: networking proxy
-<!--ID: 1788436392661-->
+<!--ID: 1788608938083-->
 END
 
 START
@@ -47,7 +47,7 @@ If it leaks (stale DNS record, misconfigured subdomain), an attacker can bypass 
 
 Real defense: origin's **firewall** accepts connections only from the reverse proxy's known IP ranges — a leaked IP alone isn't enough to get through.
 Tags: networking proxy security
-<!--ID: 1788436392663-->
+<!--ID: 1788608938131-->
 END
 
 START
@@ -62,7 +62,7 @@ The origin server attaches freshness metadata to its response:
 While fresh → serve the cached copy directly, no origin contact.
 Once stale → re-fetch, or revalidate via `ETag` (cheaper than a full re-download).
 Tags: networking proxy caching
-<!--ID: 1788436392666-->
+<!--ID: 1788608938196-->
 END
 
 START
@@ -73,7 +73,7 @@ Inspects incoming (or outgoing) connections against rules — **IP ranges, ports
 
 Key difference: a firewall never forwards or transforms traffic like a proxy does — it only decides **yes or no**.
 Tags: networking security
-<!--ID: 1788436392668-->
+<!--ID: 1788608938238-->
 END
 
 START
@@ -86,5 +86,5 @@ Adds two things a plain forward proxy doesn't guarantee:
 - **System-wide tunneling** — routes all of the device's traffic, not just one app's
 - **Encryption** — traffic between client and VPN server is encrypted, hiding it from the local ISP/network
 Tags: networking proxy security
-<!--ID: 1788436392670-->
+<!--ID: 1788608938276-->
 END

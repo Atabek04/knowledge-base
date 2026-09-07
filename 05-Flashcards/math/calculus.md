@@ -1,4 +1,4 @@
-TARGET DECK: Tech-KB::Math for ML::Calculus
+TARGET DECK: Math::Calculus
 Tags: math calculus
 **Chapter:** Derivatives, Slope, Tangent Lines
 **Related:** [[Math for ML MOC]]

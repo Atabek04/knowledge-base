@@ -29,17 +29,17 @@ The Presentation Layer is busy with **presenting data** to:
 
 ##### Main functions:
 
-1. <mark style="background: #D2B3FFA6;">Translation (Encoding)</mark>:
+1. <mark style="background: #FFF3A3A6;">Translation (Encoding)</mark>:
 	converts data between **different formats** (text :luc_arrow_left_right: binary) 
 	**character encoding** conversions (ASCII :luc_arrow_left_right: EBCDIC)
 
-2. <mark style="background: #D2B3FFA6;">Encryption / Decryption</mark>:
+2. <mark style="background: #FFF3A3A6;">Encryption / Decryption</mark>:
 	secures data (**SSL/TSL** happens here conceptually)
 
-3. <mark style="background: #D2B3FFA6;">Compression / Decompression</mark>:
+3. <mark style="background: #FFF3A3A6;">Compression / Decompression</mark>:
 	done for efficient transmission
 
-4. <mark style="background: #D2B3FFA6;">Data formatting</mark>:
+4. <mark style="background: #FFF3A3A6;">Data formatting</mark>:
 	structures data (JSON, XML, images as JPG/PNG)
 
 > <mark style="background: #FF5582A6;">Note</mark>: :luc_pencil: 
@@ -77,7 +77,7 @@ It can persist across multiple connection.
 
 3. <mark style="background: #ABF7F7A6;">Dialog Control</mark>
 	- **Who can transmit when**
-	- <mark style="background: #D2B3FFA6;">Modes</mark> :
+	- <mark style="background: #FFF3A3A6;">Modes</mark> :
 		- **<mark style="background: #BBFABBA6;">Simplex</mark>**
 			- **One direction only** (rare)
 			- Example: keyboard :luc_arrow_right: computer
@@ -142,7 +142,7 @@ Transport Layer prepares data for transfer
 			- Web server (app: port 443)
 			- Email server (app: port 25)
 	- <mark style="background: #ADCCFFA6;">Transport Layer itself only deals with ports. </mark>
-	- <mark style="background: #D2B3FFA6;"> The IP addresses get added later when the segment moves down to the Network Layer (Layer 3)</mark>
+	- <mark style="background: #ABF7F7A6;">The IP addresses get added later when the segment moves down to the Network Layer (Layer 3)</mark>
 
 ###### Session vs End-to-End connection
 
@@ -198,7 +198,7 @@ See also: [[Packet is Segment with IP address]]
 #### Layer 2: <mark style="background: #FFF3A3A6;">Data Link</mark>
 
 - Data Link Layer receives Packets from Network Layer.
-- <mark style="background: #D2B3FFA6;">Wraps those Packets with MAC **Header** and **Trailer**</mark>
+- <mark style="background: #ABF7F7A6;">Wraps those Packets with MAC <b>Header</b> and <b>Trailer</b></mark>
 	- Now that wrapped data is called **Frame**
 
 Additional MAC address is added

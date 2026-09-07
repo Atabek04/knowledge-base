@@ -4,7 +4,7 @@ tags: [linux, scheduling, cron, automation]
 aliases: [cron, crontab, cron expression, cron job]
 ---
 
-Almost every system needs work that runs *on a clock* rather than in response to a user: rotate logs at midnight, email a report every Monday, purge stale sessions each hour. On Unix systems this is the job of <mark style="background: #FFF3A3A6; font-weight: bold;">cron</mark> — a background daemon that wakes up every minute, checks a table of scheduled jobs, and runs whichever ones are due.
+Almost every system needs work that runs *on a clock* rather than in response to a user: rotate logs at midnight, email a report every Monday, purge stale sessions each hour. On Unix systems this is the job of <mark style="background: #FFF3A3A6;">cron</mark> — a background daemon that wakes up every minute, checks a table of scheduled jobs, and runs whichever ones are due.
 
 The name comes from *chronos* (Greek for "time") — cron is the system's timekeeper.
 

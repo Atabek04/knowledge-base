@@ -6,7 +6,7 @@ aliases: [warm-up, cold start, instance warm-up, warm-up lag]
 
 A common assumption behind auto-scaling: "the new server is ready the moment it launches." It isn't. Between "instance created" and "instance can actually serve requests" there's a **warm-up** gap of anywhere from tens of seconds to several minutes.
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">A freshly launched instance is alive but not ready — it must boot and warm up before its first useful response.</mark> This is the same distinction Kubernetes encodes with [[A failing readiness probe removes the pod from Service endpoints|readiness probes]]: alive ≠ ready.
+<mark style="background: #FFF3A3A6;">A freshly launched instance is alive but not ready — it must boot and warm up before its first useful response.</mark> This is the same distinction Kubernetes encodes with [[A failing readiness probe removes the pod from Service endpoints|readiness probes]]: alive ≠ ready.
 
 ---
 
@@ -21,7 +21,7 @@ A common assumption behind auto-scaling: "the new server is ready the moment it 
 
 #### Why warm-up defeats reactive scaling
 
-The whole point of [[Auto-scaling is reactive so it always trails a sudden traffic spike|auto-scaling]] is to add capacity fast. Warm-up is the reason it can't be fast enough for a burst: <mark style="background: #FF9E9EA6; font-weight: bold;">the spike peaks in seconds, but a new instance takes minutes to become useful — and its first minutes actively make things worse (cold cache, connection setup) before they get better.</mark>
+The whole point of [[Auto-scaling is reactive so it always trails a sudden traffic spike|auto-scaling]] is to add capacity fast. Warm-up is the reason it can't be fast enough for a burst: <mark style="background: #FF9E9EA6;">the spike peaks in seconds, but a new instance takes minutes to become useful — and its first minutes actively make things worse (cold cache, connection setup) before they get better.</mark>
 
 ---
 

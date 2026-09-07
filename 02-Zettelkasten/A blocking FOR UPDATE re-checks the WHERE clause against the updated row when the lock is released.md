@@ -12,7 +12,7 @@ PostgreSQL does not blindly hand back the row that matched when the query first 
 
 ### Block, then re-check on wake
 
-Under `READ COMMITTED`, a freed locking read re-fetches the **latest committed version** of the row and <mark style="background: #FFF3A3A6; font-weight: bold;">re-runs the query's `WHERE` against it</mark>. If the row no longer matches, it is dropped from the result.
+Under `READ COMMITTED`, a freed locking read re-fetches the **latest committed version** of the row and <mark style="background: #FFF3A3A6;">re-runs the query's `WHERE` against it</mark>. If the row no longer matches, it is dropped from the result.
 
 Two transactions compete for the same free seat — `T1` (Ali) and `T2` (Umar). Top-to-bottom is time order:
 
@@ -30,7 +30,7 @@ Umar waited for row 7, then correctly got **nothing** — not a stale claim on a
 
 ### The mechanism has a name: EvalPlanQual
 
-PostgreSQL calls this re-evaluation <mark style="background: #ABF7F7A6; font-weight: bold;">EvalPlanQual</mark> (EPQ) — it re-evaluates the plan's qualifiers against the freshly-updated row before deciding to lock and return it.
+PostgreSQL calls this re-evaluation <mark style="background: #ABF7F7A6;">EvalPlanQual</mark> (EPQ) — it re-evaluates the plan's qualifiers against the freshly-updated row before deciding to lock and return it.
 
 Reading the name backwards explains it: *evaluate* the *plan*'s *qual*ifiers, again, on the new row version.
 

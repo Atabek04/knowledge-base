@@ -6,7 +6,7 @@ aliases: [default equals, default hashCode, identity equality]
 
 Every Java class inherits `equals()` and `hashCode()` from `java.lang.Object`. Knowing what they do *before* you touch them tells you whether you even need to override them.
 
-By default, both methods are <mark style="background: #FFF3A3A6; font-weight: bold;">identity-based</mark> — they answer "is this the *same object in memory*?", not "do these two objects *mean* the same thing?".
+By default, both methods are <mark style="background: #FFF3A3A6;">identity-based</mark> — they answer "is this the *same object in memory*?", not "do these two objects *mean* the same thing?".
 
 ---
 
@@ -54,13 +54,13 @@ Keep the inherited behavior when each instance is genuinely <mark style="backgro
 
 ### When you must rewrite
 
-Override both when the class is a <mark style="background: #BBFABBA6; font-weight: bold;">value object</mark> — equality should depend on *contents*, not identity:
+Override both when the class is a <mark style="background: #BBFABBA6;">value object</mark> — equality should depend on *contents*, not identity:
 
 - Used as a `HashMap` key or stored in a `HashSet`
 - Money, `Point`, `Range`, DTOs, value types
 - Anything you'd compare with "do these hold the same data?"
 
-<mark style="background: #FF5582A6; font-weight: bold;">Never override one without the other.</mark> They are a pair — see [[Equal objects must return equal hash codes]].
+<mark style="background: #FF5582A6;">Never override one without the other.</mark> They are a pair — see [[Equal objects must return equal hash codes]].
 
 Or skip the boilerplate entirely: [[Java records auto-generate accessor, equals, hashCode, and toString from their components]].
 

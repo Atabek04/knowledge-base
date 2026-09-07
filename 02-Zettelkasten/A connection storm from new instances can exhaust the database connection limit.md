@@ -6,7 +6,7 @@ aliases: [connection storm, connection exhaustion, DB connection limit]
 
 Scaling out to fight overload can *cause* an outage in a way that surprises people. You add app servers to spread the load — and the database dies anyway, refusing everyone including healthy traffic. The reason is connections.
 
-A database accepts only a **bounded number of concurrent connections** (Postgres defaults ~100). Each app server opens its own [[Connection pooling manages multiple pre-established connections|connection pool]]. <mark style="background: #FFF3A3A6; font-weight: bold;">When many instances launch at once, their pools collectively demand far more connections than the database allows — a connection storm — and the database starts rejecting new connections.</mark>
+A database accepts only a **bounded number of concurrent connections** (Postgres defaults ~100). Each app server opens its own [[Connection pooling manages multiple pre-established connections|connection pool]]. <mark style="background: #FFF3A3A6;">When many instances launch at once, their pools collectively demand far more connections than the database allows — a connection storm — and the database starts rejecting new connections.</mark>
 
 ---
 
@@ -14,7 +14,7 @@ A database accepts only a **bounded number of concurrent connections** (Postgres
 
 Say each instance opens a pool of 20 connections, and the DB cap is 100.
 
-<mark style="background: #FF9E9EA6; font-weight: bold;">5 instances × 20 = 100 → cap reached. The 6th instance's connections are refused. Auto-scaling to 20 instances doesn't add capacity — it locks everyone out.</mark>
+<mark style="background: #FF9E9EA6;">5 instances × 20 = 100 → cap reached. The 6th instance's connections are refused. Auto-scaling to 20 instances doesn't add capacity — it locks everyone out.</mark>
 
 Worse, a rejected connection isn't free: the DB spends CPU refusing them, and each connection it *does* accept costs memory and a backend process — so more connections can slow the DB even below the hard cap.
 
@@ -30,7 +30,7 @@ Worse, a rejected connection isn't free: the DB spends CPU refusing them, and ea
 
 Put a **connection pooler** (PgBouncer, RDS Proxy) *between* the app servers and the database. App servers connect to the pooler; the pooler multiplexes thousands of client connections onto a small, fixed set of real DB connections.
 
-<mark style="background: #ADCCFFA6; font-weight: bold;">Now the number of app servers is decoupled from the number of DB connections — you can scale out without a storm.</mark>
+<mark style="background: #ADCCFFA6;">Now the number of app servers is decoupled from the number of DB connections — you can scale out without a storm.</mark>
 
 ---
 

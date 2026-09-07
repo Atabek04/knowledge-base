@@ -1,24 +1,39 @@
-/* ── Reading view ─────────────────────────────────────── */
-.markdown-rendered mark {
-  color: #1a1a1a !important;
-}
-
-/* ── Live Preview — CM6 inline HTML widgets ───────────── */
+/* Mark text is always near-black — the pastel backgrounds assume dark text. */
+.markdown-rendered mark,
 .cm-s-obsidian .cm-html-embed mark,
 .cm-s-obsidian .cm-htmlView mark,
-.cm-line mark {
-  color: #1a1a1a !important;
-}
-
-/* ── Source mode ──────────────────────────────────────── */
+.cm-line mark,
 .cm-s-obsidian mark {
   color: #1a1a1a !important;
 }
 
-/* ── Inherit on nested elements (bold, italic inside mark) */
 mark strong,
 mark em,
 mark b,
 mark i {
   color: inherit !important;
+}
+
+/* ── Light theme ───────────────────────────────────────────
+   The inline A6 (~65%) pastels were picked against a dark
+   background. On a light page they wash out to roughly the
+   page colour, so the highlight stops reading as a highlight.
+   Remap each palette value to a saturated, fully opaque
+   equivalent. Notes keep their original hex codes.          */
+
+.theme-light mark[style*="FFF3A3"] { background: #FFE066 !important; }  /* yellow */
+.theme-light mark[style*="ABF7F7"] { background: #6FE3E3 !important; }  /* cyan   */
+.theme-light mark[style*="ADCCFF"] { background: #8FB8FF !important; }  /* blue   */
+.theme-light mark[style*="FFB8EB"] { background: #FF93DC !important; }  /* pink   */
+.theme-light mark[style*="FF9E9E"] { background: #FF8080 !important; }  /* red    */
+.theme-light mark[style*="FF5582"] { background: #FF6188 !important; }  /* red-pink */
+.theme-light mark[style*="BBFABB"] { background: #8CEE8C !important; }  /* green  */
+.theme-light mark[style*="FFB86C"] { background: #FFB347 !important; }  /* orange */
+.theme-light mark[style*="D2B3FF"] { background: #C49BFF !important; }  /* purple */
+.theme-light mark[style*="CACFD9"] { background: #C0C7D4 !important; }  /* grey   */
+
+/* Padding and rounding so the block reads as a deliberate mark. */
+.theme-light mark {
+  padding: 0.05em 0.2em;
+  border-radius: 3px;
 }

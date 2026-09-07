@@ -7,7 +7,7 @@ Its default rules are asymmetric — inbound and outbound behave differently out
 
 ### Default inbound: deny external, allow same-group
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">Only one inbound rule exists by default: allow all traffic from other resources attached to this same security group.</mark>
+<mark style="background: #FFF3A3A6;">Only one inbound rule exists by default: allow all traffic from other resources attached to this same security group.</mark>
 Source is the security group's own ID, not a CIDR range.
 
 Anything from outside — your laptop, the internet, another SG — is dropped.
@@ -15,7 +15,7 @@ Two EC2 instances sharing the default SG can freely talk to each other on any po
 
 ### Default outbound: allow everything
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">Outbound has two default rules: allow all IPv4 (0.0.0.0/0) and all IPv6 (::/0) traffic, any port, any protocol.</mark>
+<mark style="background: #FFF3A3A6;">Outbound has two default rules: allow all IPv4 (0.0.0.0/0) and all IPv6 (::/0) traffic, any port, any protocol.</mark>
 Instance can freely reach the internet — package updates, API calls — with zero configuration.
 
 This is why the common assumption "AWS blocks everything by default" is half-true: it's inbound-only.

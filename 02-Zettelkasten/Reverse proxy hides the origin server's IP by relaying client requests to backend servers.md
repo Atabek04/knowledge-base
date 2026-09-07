@@ -11,7 +11,7 @@ A reverse proxy sits **in front of the server**, between the internet and the or
 
 ### Acts on behalf of the server
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">A reverse proxy represents the server to the outside world</mark> — the client sees the proxy's identity, never the origin's real IP address.
+<mark style="background: #FFF3A3A6;">A reverse proxy represents the server to the outside world</mark> — the client sees the proxy's identity, never the origin's real IP address.
 
 #### Why hiding the origin IP matters
 

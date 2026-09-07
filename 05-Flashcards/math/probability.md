@@ -1,4 +1,4 @@
-TARGET DECK: Tech-KB::Math for ML::Probability
+TARGET DECK: Math::Probability
 Tags: math probability
 **Chapter:** Mean, Median
 **Related:** [[Math for ML MOC]]

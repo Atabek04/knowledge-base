@@ -17,7 +17,7 @@ sorted(words, key=len)        # ['kiwi', 'apple', 'banana']
 
 ### Why a lambda
 
-`len` is a named function you can pass by name. When the mapping has no built-in name — "the second element", "the count field" — you write it inline with <mark style="background: #BBFABBA6; font-weight: bold;">lambda</mark>, an anonymous one-expression function.
+`len` is a named function you can pass by name. When the mapping has no built-in name — "the second element", "the count field" — you write it inline with <mark style="background: #BBFABBA6;">lambda</mark>, an anonymous one-expression function.
 
 ```python
 pairs = [("a", 3), ("b", 1), ("c", 2)]
@@ -59,7 +59,7 @@ The same idea works for class instances — point `key` at the attribute.
 sorted(users, key=lambda u: u.age)
 ```
 
-<mark style="background: #D2B3FFA6;">For repeated sorts on the same field</mark>, `operator.itemgetter(1)` and `operator.attrgetter("age")` are faster, C-level replacements for these lambdas.
+<mark style="background: #ADCCFFA6;">For repeated sorts on the same field</mark>, `operator.itemgetter(1)` and `operator.attrgetter("age")` are faster, C-level replacements for these lambdas.
 
 ---
 

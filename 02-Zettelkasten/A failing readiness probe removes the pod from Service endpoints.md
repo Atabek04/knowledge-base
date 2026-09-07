@@ -4,9 +4,9 @@ tags: [orchestration/kubernetes]
 aliases: [readiness probe, readyz]
 ---
 
-A **readiness probe** answers a different question from liveness: not "is it alive?" but <mark style="background: #FFF3A3A6; font-weight: bold;">"can it actually serve traffic right now?"</mark> An app can be perfectly alive yet not ready — still warming a cache, still opening its connection pool, or temporarily cut off from a dependency.
+A **readiness probe** answers a different question from liveness: not "is it alive?" but <mark style="background: #FFF3A3A6;">"can it actually serve traffic right now?"</mark> An app can be perfectly alive yet not ready — still warming a cache, still opening its connection pool, or temporarily cut off from a dependency.
 
-When a readiness probe fails, the [[Kubernetes probes let the kubelet check container health the app reports|kubelet]] does **not** restart the container. Instead it <mark style="background: #ADCCFFA6; font-weight: bold;">removes the pod from the Service's endpoints</mark>, so the Service load balancer stops routing requests to it. The pod keeps running; it just receives no traffic until it reports ready again.
+When a readiness probe fails, the [[Kubernetes probes let the kubelet check container health the app reports|kubelet]] does **not** restart the container. Instead it <mark style="background: #ADCCFFA6;">removes the pod from the Service's endpoints</mark>, so the Service load balancer stops routing requests to it. The pod keeps running; it just receives no traffic until it reports ready again.
 
 A Kubernetes **Service** load-balances across the set of healthy pod IPs (its *endpoints*); readiness is what decides membership in that set.
 

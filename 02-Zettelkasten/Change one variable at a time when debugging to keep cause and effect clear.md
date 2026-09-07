@@ -6,7 +6,7 @@ aliases: [change one variable at a time, isolate variables]
 
 When a bug is stubborn, the temptation is to change several things at once and re-run — bump a timeout, add a null check, tweak a config — hoping the bug disappears. It often does. But now you have a worse problem: you don't know *which* change fixed it, or whether one change introduced a new bug that simply masks the old one.
 
-The rule borrowed from controlled experiments: <mark style="background: #FFF3A3A6; font-weight: bold;">change exactly one variable per test and hold everything else constant.</mark>
+The rule borrowed from controlled experiments: <mark style="background: #FFF3A3A6;">change exactly one variable per test and hold everything else constant.</mark>
 
 ---
 
@@ -18,7 +18,7 @@ Say you change A and B together and the bug is gone. What do you actually know?
 - maybe B fixed it and A did nothing
 - maybe neither fixed it and B introduced a *different* bug that hides the symptom
 
-<mark style="background: #FF5582A6; font-weight: bold;">All three look identical from the outside.</mark> The changes are *confounded* — their effects can't be told apart. One change at a time keeps a clean line from cause to effect.
+<mark style="background: #FF5582A6;">All three look identical from the outside.</mark> The changes are *confounded* — their effects can't be told apart. One change at a time keeps a clean line from cause to effect.
 
 ---
 

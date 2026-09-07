@@ -11,7 +11,7 @@ A forward proxy sits **in front of the client**, between the client and the wide
 
 ### Acts on behalf of the client
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">A forward proxy represents the client to the outside world</mark> — the destination server sees the proxy's identity (IP address), not the client's.
+<mark style="background: #FFF3A3A6;">A forward proxy represents the client to the outside world</mark> — the destination server sees the proxy's identity (IP address), not the client's.
 
 #### What it hides
 

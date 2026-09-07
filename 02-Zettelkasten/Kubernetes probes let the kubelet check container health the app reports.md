@@ -6,7 +6,7 @@ aliases: [probes, health probe, kubelet probe]
 
 Kubernetes does not magically know whether your container is healthy. Health is something your **application** must report, and the **kubelet** (the node agent running on every worker) is the one that periodically asks.
 
-This split is the whole mental model: <mark style="background: #FFF3A3A6; font-weight: bold;">the app owns the health logic, the kubelet only calls it and reacts to the answer.</mark>
+This split is the whole mental model: <mark style="background: #FFF3A3A6;">the app owns the health logic, the kubelet only calls it and reacts to the answer.</mark>
 
 A **probe** is a diagnostic the kubelet runs against a container on a schedule. The container exposes an endpoint or command; the kubelet hits it and reads success/failure.
 

@@ -34,7 +34,7 @@ WHERE s.status = 'OPEN'
 FOR UPDATE OF s;       -- lock only slot rows; resource is just read
 ```
 
-The name is the mnemonic: lock the rows <mark style="background: #FFF3A3A6; font-weight: bold;">**OF** these named tables</mark>, leave the others untouched.
+The name is the mnemonic: lock the rows <mark style="background: #FFF3A3A6;">**OF** these named tables</mark>, leave the others untouched.
 
 <mark style="background: #ABF7F7A6;">Rule of thumb: on any `FOR UPDATE` that joins, always add `OF` for the table you actually intend to claim</mark> — otherwise you lock more than you think.
 

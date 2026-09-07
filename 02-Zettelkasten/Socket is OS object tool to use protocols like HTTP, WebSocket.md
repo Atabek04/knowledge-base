@@ -14,7 +14,7 @@ Socket is just a **software construct**.
 
 **<mark style="background: #BBFABBA6;">Protocols</mark>** such as `HTTP`, `TCP`, `IP` are just **<mark style="background: #BBFABBA6;">rules for communication</mark>**
 
-Now **<mark style="background: #FFB86CA6;">Socket</mark>** in the other hand, **<mark style="background: #FFB86CA6;">tool to use those protocols</mark>**.
+Now **<mark style="background: #FFF3A3A6;">Socket</mark>** in the other hand, **<mark style="background: #FFF3A3A6;">tool to use those protocols</mark>**.
 	It's **OS provided programming interface**
 	It's a **system-level interface** to access TCP/UDP
 
@@ -65,7 +65,7 @@ This standard defines:
  
 Your app source code cannot directly access kernel networking code
 
-**<mark style="background: #CACFD9A6;">Socket is the bridge</mark>**
+**<mark style="background: #ABF7F7A6;">Socket is the bridge</mark>**
 
 ```
 Your Java Code (user space)

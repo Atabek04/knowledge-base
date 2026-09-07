@@ -6,7 +6,7 @@ aliases: [server capacity, capacity limit, resource saturation]
 
 When people say a server "crashed under load," the mental model is often "it ran out of RAM." That's usually wrong. A server has *many* resources, and it dies the moment **any one** of them hits its ceiling — whichever one gets there first.
 
-<mark style="background: #FFF3A3A6; font-weight: bold;">Capacity is set by the first resource to saturate, not by a single number like memory.</mark> The saturating resource is called the **bottleneck**, and until you fix *that* one, adding any other resource does nothing.
+<mark style="background: #FFF3A3A6;">Capacity is set by the first resource to saturate, not by a single number like memory.</mark> The saturating resource is called the **bottleneck**, and until you fix *that* one, adding any other resource does nothing.
 
 ---
 
@@ -19,7 +19,7 @@ When people say a server "crashed under load," the mental model is often "it ran
 - **File descriptors / sockets** — every open connection consumes one; the OS caps them.
 - **Thread pool / event loop** — a bounded worker pool; when all workers are busy, new requests queue and time out.
 
-<mark style="background: #FF9E9EA6; font-weight: bold;">Whichever hits its limit first is the bottleneck — the rest sit idle while the server still falls over.</mark>
+<mark style="background: #FF9E9EA6;">Whichever hits its limit first is the bottleneck — the rest sit idle while the server still falls over.</mark>
 
 ---
 
@@ -27,7 +27,7 @@ When people say a server "crashed under load," the mental model is often "it ran
 
 If your bottleneck is DB connections or CPU, doubling RAM leaves you at the exact same throughput ceiling — you've paid for headroom on a resource that was never the constraint.
 
-<mark style="background: #ADCCFFA6; font-weight: bold;">Find the saturating resource first, then scale that.</mark> This is why [[The database is the hardest tier to scale because every app server shares one writer|the database]] is so often the culprit: it's the resource that scales *least* easily when everything else scales freely.
+<mark style="background: #ADCCFFA6;">Find the saturating resource first, then scale that.</mark> This is why [[The database is the hardest tier to scale because every app server shares one writer|the database]] is so often the culprit: it's the resource that scales *least* easily when everything else scales freely.
 
 ---
 
