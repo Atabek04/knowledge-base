@@ -1,7 +1,7 @@
 {
   "baseFontSize": 19,
-  "cssTheme": "AnuPpuccin",
-  "theme": "moonstone",
+  "cssTheme": "Things",
+  "theme": "obsidian",
   "enabledCssSnippets": [
     "highlights",
     "callouts"
