@@ -54,6 +54,23 @@ Even single-sentence paragraphs are acceptable.
 
 This mirrors the atomic note philosophy: one concept per unit.
 
+#### No scaffolding sentences
+
+<mark style="background: #FF5582A6;">Never announce what the note is about to do. Just do it.</mark> A sentence that describes the structure of the following sentences carries no information — the reader learns nothing from it that reading on would not give them faster.
+
+Delete on sight, in notes and in chat:
+
+- <b>Announcements</b> — "Two words carry the explanation, and both are worth pinning down first", "There are three things to cover here", "Before we go further, some background"
+- <b>Stitching</b> — "Now the two connect", "With that in place", "Having seen X, we turn to Y", "This brings us to"
+- <b>Self-commentary</b> — "It is worth noting", "Importantly", "The key insight is", "Note carefully that"
+- <b>Restating the heading</b> as the first line under it
+
+The structure is already visible: a `####` heading says a new point starts, a paragraph break says a new idea starts, and a definition placed before its use says it is a prerequisite. <mark style="background: #ADCCFFA6;">Order the material so the reader never needs to be told what order it is in.</mark>
+
+Two terms introduced back to back need no bridge — put each in its own paragraph, then state the claim that uses both. The sequence <i>is</i> the argument.
+
+The test: delete the sentence. If nothing is lost but a transition, it should have been deleted. This applies with equal force to chat replies, which stay short and say what was done, never what is about to be done.
+
 ### Math Notation
 
 Write maths as **MathJax**, never as ASCII in a code fence.
@@ -117,7 +134,7 @@ Passes:
 ### Text Highlighting
 
 Use the Highlightr plugin for strategic emphasis.
-Limit to 4-5 colors maximum to avoid visual clutter.
+Exactly four colours, one meaning each — see the table below.
 
 **Syntax** (inline-style):
 ```html
@@ -134,32 +151,25 @@ Never use `font-weight: bold` on the `<mark>` style either — combined with any
 
 **Color system — five colours, one meaning each.** The vault renders in **light theme**; the CSS snippet handles the light-mode remap (see below).
 
-| Colour | Hex | Means | Ask yourself |
-|---|---|---|---|
-| Yellow | `#FFF3A3A6` | <b>Definition</b> — what a thing *is* | "Could this be a glossary entry?" |
-| Cyan | `#ABF7F7A6` | <b>Mechanism or insight</b> — *how* or *why* it works | "Does this explain the machinery?" |
-| Blue | `#ADCCFFA6` | <b>Rule</b> — what you must always or never do | "Is this an instruction I follow at the desk?" |
-| Green | `#BBFABBA6` | <b>Worked example or concrete case</b> — the claim made specific | "Is this an instance rather than a principle?" |
-| Pink | `#FFB8EBA6` | <b>Edge case</b> — where the normal rule stops applying | "Is this an exception to something already stated?" |
-| Salmon | `#FF9E9EA6` | <b>Caution or scope limit</b> — this proves less than it seems, applies only here | "Am I warning against over-reading something?" |
-| Red-pink | `#FF5582A6` | <b>Trap</b> — the mistake that silently produces a wrong answer | "Would a careful person still fall into this?" |
+| Colour | Hex | Highlightr name | Means | Ask yourself |
+|---|---|---|---|---|
+| Yellow | `#FFF3A3A6` | Definition | <b>Definition</b> — what a thing *is* | "Could this be a glossary entry?" |
+| Cyan | `#ABF7F7A6` | Mechanism | <b>Mechanism or insight</b> — *how* or *why* it works | "Does this explain the machinery?" |
+| Blue | `#ADCCFFA6` | Rule | <b>Rule</b> — what you must always or never do | "Is this an instruction I follow at the desk?" |
+| Red | `#FF5582A6` | Warning | <b>Warning</b> — a trap, an exception, or a limit on the claim | "Would a careful person get this wrong, or over-read it?" |
 
 Worked examples of the distinction, all from the same note:
 
 - Yellow — "A rewrite can go wrong in two opposite directions: losing a solution the original had, or gaining one it rejected"
 - Cyan — "Because every legal move preserves the solution set, a chain of them does too"
 - Blue — "Dividing both sides by a variable is never a legal move on a system"
-- Salmon — "Everything below argues one thing only: no solution can disappear"
-- Red-pink — "Dividing by a variable quietly assumes it is not zero, and that assumption throws away the very solution it excluded"
+- Red — "Dividing by a variable quietly assumes it is not zero, and that assumption throws away the very solution it excluded"
 
-<mark style="background: #ADCCFFA6;">Never use orange, purple or grey.</mark> They exist in the Highlightr palette but carry no meaning in this vault, and an unassigned colour is worse than no highlight — the reader stops trusting that colour means anything.
+<mark style="background: #FF5582A6;">Four colours is the whole palette. Never add a fifth.</mark> Every other shade in the Highlightr picker — green, pink, salmon, orange, purple, grey — carries no meaning in this vault, and an unassigned colour is worse than no highlight, because the reader stops trusting that colour means anything.
 
-Two pairs are worth getting right, because each pair looks similar and means something different:
+<b>Red is one colour doing three jobs</b>, deliberately: a trap the reader would fall into, an exception where the rule stops applying, and a limit on how far a claim reaches. All three say <i>stop and pay attention</i>, and splitting them into separate shades made the palette impossible to use at the keyboard without helping the reader at all.
 
-- <b>Salmon vs red-pink</b> — salmon <i>limits a claim</i>, red-pink <i>names a mistake</i>.
-- <b>Pink vs red-pink</b> — pink marks an <i>exception the reader should know</i>, red-pink marks an <i>error the reader would otherwise make</i>.
-
-Seven colours is the ceiling. Do not add an eighth.
+<b>There is no colour for a worked example.</b> An example is already recognisable as an example — it has numbers in it. Highlighting it marks the instance instead of the principle, which is backwards: highlight the claim the example demonstrates, and leave the example plain.
 
 **Light theme is handled in CSS, not in the note.** The `A6` values wash out on a light background, so `.obsidian/snippets/highlights.css` remaps each one to a saturated opaque equivalent under `.theme-light`. Keep writing the `A6` hex codes from the table — never hand-pick a "lighter" or "stronger" colour for light mode.
 
@@ -170,6 +180,52 @@ All use `A6` alpha (~65% opacity) — this is load-bearing, not cosmetic. `<mark
 - Use sparingly — over-highlighting defeats the purpose
 - Be consistent — same color always means same thing
 - One colour per claim — never two `<mark>` styles in a single sentence
+
+### Definition and Theorem Boxes
+
+A formal definition or a named theorem gets a boxed callout, the way a textbook sets one off from the running prose:
+
+```markdown
+> [!definition] Row equivalent
+> Two matrices are **row equivalent** if some sequence of elementary row operations transforms one into the other.
+
+> [!theorem] Row equivalence preserves the solution set
+> If the augmented matrices of two linear systems are row equivalent, then the two systems have the same solution set.
+```
+
+Both types are defined in `.obsidian/snippets/callouts.css` and tinted from the highlight palette — yellow for `definition`, blue for `theorem`. Never invent a third callout type.
+
+<mark style="background: #ADCCFFA6;">Use a box only for a statement worth quoting exactly: the formal wording of a definition, or a theorem's claim. Everything else — motivation, worked examples, the argument for why it holds — stays in ordinary prose below the box.</mark>
+
+<mark style="background: #FF5582A6;">A boxed statement is never also highlighted.</mark> The box already carries the emphasis, and a `<mark>` inside it fights with the tint. Highlight the restatement in prose instead, where the flashcard test applies as usual.
+
+One or two boxes in a note is the ceiling. A note that boxes everything has boxed nothing.
+
+---
+
+### Visuals in Notes
+
+Some concepts are spatial, and prose describing a shape is strictly worse than the shape. <mark style="background: #ADCCFFA6;">When a concept is defined by geometry, structure, or flow, the note gets a picture — hyperplanes, tree rotations, packet handshakes, memory layouts, architecture diagrams.</mark>
+
+Add one only when it carries information the text cannot. A picture that merely repeats a sentence is clutter; a picture that shows a relationship the sentence can only describe is the point of the whole note.
+
+Skip it for anything that is not spatial — a definition, a rule, a comparison of two behaviours. Most notes need no image.
+
+<b>Prefer drawing it over downloading it.</b> A hand-authored SVG saved into `assets/` renders crisply, scales, needs no licence check, and can be edited later to match the note. Reach for the internet only when the thing genuinely cannot be drawn — a real screenshot, a photograph, a specific published figure.
+
+<b>When downloading is the right call:</b>
+- Search, then pick for <i>pedagogy</i>, not prettiness: correct labels, minimal decoration, legible at note width.
+- Prefer sources whose licence permits reuse (Wikimedia Commons, an author's own docs) and skip stock-photo watermarks.
+- Download to `assets/`, never hotlink a URL — an embedded remote image breaks the moment the host does.
+- Say what is being downloaded (filename, source, size) before fetching it.
+
+<b>Filenames</b> — `assets/descriptive_snake_case.svg`, naming the concept, not the note: `hyperplane_one_dimension_lower.svg`, `tcp_three_way_handshake.png`. One asset may serve several notes.
+
+<b>Placement</b> — immediately after the paragraph or table it illustrates, inside the `###` section that owns the idea, never at the top of the note and never stranded at the bottom. The reader should meet the picture at the moment the text has made them want it.
+
+<b>Sizing</b> — always pass an explicit width: `![[name.svg|620]]`. Bare `![[name.svg]]` renders at the file's natural size and will overflow or shrink unpredictably. Use ~600–650 for a full-width diagram, ~350–450 for something narrow beside prose.
+
+---
 
 ### Aliases
 
@@ -288,7 +344,15 @@ This is the structural complement to *gloss-and-link* (below): gloss-and-link ke
 - **Nothing after the closing `]]`** — no `—`, no description, no parenthetical. The alias carries the full meaning. Any text after `]]` is a rule violation.
 - This is the one place besides inline links where aliases are used; "Read more" sections still use full titles
 - Pending topics with no note yet stay as plain `- [ ]` text (no link); replace the checkbox with `- [[Full title|alias]]` once the note exists
-- **Never nest atomic note links as sub-bullets** — always flat at section level. If grouping is needed, add a `###` sub-heading (only when the section has 6+ items — see heading rule above).
+- **Nest at most one level, and only to unpack the bullet directly above.** A sub-bullet means "read this to understand the note above it" — reading order, nothing else. Two levels of nesting is never allowed, and a sub-bullet never carries its own sub-bullets. If grouping is needed instead, add a `###` sub-heading (only when the section has 6+ items — see heading rule above).
+
+**Nest, or give it its own MOC?** The deciding question is *how many roadmaps need this note*, not *how important it is*.
+
+- **Nest it** — the note exists to unpack its parent in *this* roadmap, and a reader hitting it out of that order would learn nothing. It supports one bullet, here.
+- **Put it in a foundations MOC** — the note is a prerequisite several subjects reach for (notation, number systems, fractions). It has no single parent, so nesting it under one is a lie about where it belongs.
+- **Give it its own MOC** — only when roughly 6+ notes form a subject with its own reading order. Fewer than that is a `##` section, not a MOC.
+
+<mark style="background: #FF5582A6;">"This note is used by other notes too" is not an argument against nesting.</mark> MOC membership is not exclusive — the same note may be nested in one MOC and listed flat in another, and it should be, whenever both roadmaps genuinely pass through it. What decides nesting is whether it has *one* parent in *this* roadmap.
 
 **When to link:**
 - One note directly explains, depends on, or extends another
@@ -330,6 +394,7 @@ All flashcard rules — syntax, deck hierarchy, question quality, vocab cards, A
 - Tech cards → `05-Flashcards/{topic}/{subtopic}.md`, deck `Tech-KB::{Category}::{Topic}`
 - Vocab cards (user sends a sentence + asks what a word means) → `05-Flashcards/vocab/general.md` (deck `English::General`) or `05-Flashcards/vocab/tech-terms.md` (deck `English::Tech Terms`) — two files only, split by context
 - [Remove IDs](scripts/remove-flashcard-ids.sh) — strip all `<!--ID: ...-->` before re-syncing with Anki
+- **Sync automatically, never ask.** After editing any flashcard file, run `python scripts/anki_sync.py` without confirming first. If Anki isn't running, open it (`open -a Anki`), wait for it, then sync.
 - [Sync without Obsidian](scripts/anki_sync.py) — run `python scripts/anki_sync.py` to push all flashcard changes to Anki directly from the terminal, no Obsidian UI needed. Use this when Obsidian isn't open or when batch-syncing after editing many files at once.
 
 ## Tech Stack Context

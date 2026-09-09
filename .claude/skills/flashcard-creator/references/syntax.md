@@ -27,10 +27,13 @@ those have their own two note types below.
 
 ## Note Type: English Card
 
-Fields: `Front`, `Back`, `Example`, `Collocations`, `Synonyms`, `Forms`, `Pattern`
+Fields: `Front`, `Back`, `Russian`, `Example`, `Collocations`, `Synonyms`, `Forms`, `Pattern`
 
 Everything after `Back` is optional and disappears from the rendered card when left empty,
 so the same note type carries a full vocabulary entry and a bare question-and-answer card.
+
+`Russian` renders directly under the meaning, above the example — it is part of the answer,
+not a detail row. Fill it on vocabulary cards; leave it empty on question-and-answer cards.
 
 Vocabulary entry:
 
@@ -41,6 +44,7 @@ dwindle
 Back: To **shrink steadily over time** until little is left.
 - Always gradual — a sudden drop is *plummet*
 - Intransitive: a thing dwindles, you cannot dwindle it
+Russian: сокращаться, убывать (постепенно)
 Example: Attendance **dwindled** from 400 to barely 30 over the decade.
 Forms: dwindle · dwindled · dwindling
 Pattern: dwindle **to** sth

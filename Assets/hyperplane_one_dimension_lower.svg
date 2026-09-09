@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 310" width="720" height="310" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8a94a3"/>
+    </marker>
+  </defs>
+  <style>
+    .ttl  { font-size: 14.5px; font-weight: 600; fill: #1f2430; }
+    .cap  { font-size: 12.5px; fill: #5b6472; }
+    .tick { font-size: 11px; fill: #6b7482; }
+    .var  { font-size: 12px; font-style: italic; fill: #47505f; }
+    .ax   { stroke: #8a94a3; stroke-width: 1.4; }
+    .hid  { stroke: #b6bec9; stroke-width: 1.2; stroke-dasharray: 4 3; }
+    .sh   { stroke: #1a73c7; stroke-width: 2.4; }
+    .pt   { fill: #d13a5e; }
+  </style>
+
+  <!-- ══ panel 1 : 2 variables ══ -->
+  <rect x="14" y="34" width="212" height="196" fill="#f2f5f9" stroke="#ccd4e0" rx="7"/>
+  <text class="ttl" x="14" y="24">2 variables → the plane</text>
+
+  <line class="ax" x1="44" y1="200" x2="208" y2="200" marker-end="url(#ah)"/>
+  <line class="ax" x1="44" y1="200" x2="44" y2="52" marker-end="url(#ah)"/>
+  <text class="var" x="200" y="218">x₁</text>
+  <text class="var" x="26" y="56">x₂</text>
+
+  <line class="sh" x1="56" y1="188" x2="196" y2="70"/>
+  <circle class="pt" cx="126" cy="129" r="3.6"/>
+  <text class="tick" x="132" y="148">a point on it</text>
+  <text class="cap" x="60" y="86" fill="#1a73c7" font-weight="600">line (1-D)</text>
+
+  <text class="cap" x="14" y="252">One equation, e.g. <tspan font-style="italic">x₁ + x₂ = 6</tspan></text>
+  <text class="cap" x="14" y="270">Pick x₁ freely → x₂ is forced.</text>
+  <text class="cap" x="14" y="288"><tspan font-weight="600">1 free choice</tspan> → a 1-D line.</text>
+
+  <!-- ══ panel 2 : 3 variables ══ -->
+  <rect x="254" y="34" width="212" height="196" fill="#f2f5f9" stroke="#ccd4e0" rx="7"/>
+  <text class="ttl" x="254" y="24">3 variables → space</text>
+
+  <!-- axes: x3 up, x2 right, x1 toward viewer (down-left) -->
+  <line class="ax" x1="330" y1="176" x2="330" y2="56" marker-end="url(#ah)"/>
+  <line class="ax" x1="330" y1="176" x2="452" y2="176" marker-end="url(#ah)"/>
+  <line class="ax" x1="330" y1="176" x2="272" y2="216" marker-end="url(#ah)"/>
+  <text class="var" x="318" y="52">x₃</text>
+  <text class="var" x="452" y="192">x₂</text>
+  <text class="var" x="262" y="228">x₁</text>
+
+  <!-- triangle through the three intercepts of x1+x2+x3 = 6 -->
+  <polygon points="330,78 428,150 288,196" fill="#1a73c7" fill-opacity="0.22" stroke="#1a73c7" stroke-width="2.2" stroke-linejoin="round"/>
+  <line class="hid" x1="330" y1="176" x2="330" y2="78"/>
+  <line class="hid" x1="330" y1="176" x2="428" y2="150"/>
+  <line class="hid" x1="330" y1="176" x2="288" y2="196"/>
+
+  <circle class="pt" cx="330" cy="78" r="3.4"/><text class="tick" x="338" y="74">(0,0,6)</text>
+  <circle class="pt" cx="428" cy="150" r="3.4"/><text class="tick" x="458" y="166" text-anchor="end">(0,6,0)</text>
+  <circle class="pt" cx="288" cy="196" r="3.4"/><text class="tick" x="288" y="212">(6,0,0)</text>
+  <text class="cap" x="352" y="168" fill="#1a73c7" font-weight="600" text-anchor="middle">plane (2-D)</text>
+
+  <text class="cap" x="254" y="252">One equation: <tspan font-style="italic">x₁ + x₂ + x₃ = 6</tspan></text>
+  <text class="cap" x="254" y="270">Pick x₁ and x₂ freely → x₃ is forced.</text>
+  <text class="cap" x="254" y="288"><tspan font-weight="600">2 free choices</tspan> → a 2-D plane.</text>
+
+  <!-- ══ panel 3 : n variables ══ -->
+  <rect x="494" y="34" width="212" height="196" fill="#f2f5f9" stroke="#ccd4e0" rx="7"/>
+  <text class="ttl" x="494" y="24">n variables → n-D space</text>
+
+  <!-- tesseract-style projection: nothing here is drawable, and that is the point -->
+  <g stroke="#b6bec9" stroke-width="1.3" fill="none">
+    <rect x="524" y="72" width="104" height="104"/>
+    <rect x="558" y="102" width="60" height="60"/>
+    <line x1="524" y1="72" x2="558" y2="102"/>
+    <line x1="628" y1="72" x2="618" y2="102"/>
+    <line x1="524" y1="176" x2="558" y2="162"/>
+    <line x1="628" y1="176" x2="618" y2="162"/>
+  </g>
+  <polygon points="512,150 648,104 662,132 526,182" fill="#1a73c7" fill-opacity="0.20" stroke="#1a73c7" stroke-width="2.2" stroke-dasharray="7 4" stroke-linejoin="round"/>
+  <text class="cap" x="560" y="200" fill="#1a73c7" font-weight="600" text-anchor="middle">hyperplane (n−1)-D</text>
+
+  <text class="cap" x="494" y="252">One equation: <tspan font-style="italic">a₁x₁ + … + aₙxₙ = b</tspan></text>
+  <text class="cap" x="494" y="270">Pick n−1 of them freely → the last is forced.</text>
+  <text class="cap" x="494" y="288"><tspan font-weight="600">n−1 free choices</tspan> → an (n−1)-D slice.</text>
+</svg>

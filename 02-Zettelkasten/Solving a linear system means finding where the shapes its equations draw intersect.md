@@ -4,7 +4,7 @@ tags: [math, linear-algebra, geometry, solution-set]
 aliases: [solving as intersection, geometric meaning of solving]
 ---
 
-A solution must satisfy every equation in the system <b>at once</b> — that "at once" is the entire content of the word <i>system</i>. Satisfying one equation and failing another is not a partial success; it is not a solution.
+A <mark style="background: #FFF3A3A6;">solution must satisfy every equation in the system <b>at once</b></mark> — that "at once" is the entire content of the word <i>system</i>. Satisfying one equation and failing another is not a partial success; it is not a solution.
 
 Read geometrically, that requirement has an immediate meaning.
 
@@ -18,7 +18,13 @@ So a point solving the whole system must lie on <b>every</b> shape simultaneousl
 
 <mark style="background: #FFF3A3A6;">Solving a system = finding the intersection of all the shapes its equations draw.</mark>
 
-The three possible outcomes fall straight out of this. The shapes meet at one point, or in a whole line or plane of points, or nowhere at all — which is why [[A linear system has zero, one, or infinitely many solutions and never any other count|only three solution counts are possible]]. The geometry does not permit a fourth arrangement.
+There are only three ways shapes can meet:
+
+1. At <b>one point</b> — one solution
+2. Along a whole <b>line or plane</b> of points — infinitely many solutions
+3. <b>Nowhere</b> — no solution
+
+That is why [[A linear system has zero, one, or infinitely many solutions and never any other count|only three solution counts are possible]]. The geometry permits no fourth arrangement.
 
 ---
 

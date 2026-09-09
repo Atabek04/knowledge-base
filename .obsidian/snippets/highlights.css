@@ -21,16 +21,22 @@ mark i {
    Remap each palette value to a saturated, fully opaque
    equivalent. Notes keep their original hex codes.          */
 
-.theme-light mark[style*="FFF3A3"] { background: #FFE066 !important; }  /* yellow */
-.theme-light mark[style*="ABF7F7"] { background: #6FE3E3 !important; }  /* cyan   */
-.theme-light mark[style*="ADCCFF"] { background: #8FB8FF !important; }  /* blue   */
-.theme-light mark[style*="FFB8EB"] { background: #FF93DC !important; }  /* pink   */
-.theme-light mark[style*="FF9E9E"] { background: #FF8080 !important; }  /* red    */
-.theme-light mark[style*="FF5582"] { background: #FF6188 !important; }  /* red-pink */
-.theme-light mark[style*="BBFABB"] { background: #8CEE8C !important; }  /* green  */
-.theme-light mark[style*="FFB86C"] { background: #FFB347 !important; }  /* orange */
-.theme-light mark[style*="D2B3FF"] { background: #C49BFF !important; }  /* purple */
-.theme-light mark[style*="CACFD9"] { background: #C0C7D4 !important; }  /* grey   */
+/* The palette — four colours, one meaning each. */
+.theme-light mark[style*="FFF3A3"] { background: #FFE066 !important; }  /* Definition */
+.theme-light mark[style*="ABF7F7"] { background: #6FE3E3 !important; }  /* Mechanism  */
+.theme-light mark[style*="ADCCFF"] { background: #8FB8FF !important; }  /* Rule       */
+.theme-light mark[style*="FF5582"] { background: #FF6188 !important; }  /* Warning    */
+
+/* ── Legacy, delete after migration ────────────────────────
+   Pink and salmon were folded into Warning; green (worked
+   example) was dropped entirely. Marks still carrying those
+   hexes render in their new meaning's colour so nothing looks
+   broken mid-migration. Remove these three lines once every
+   note has been converted.                                  */
+
+.theme-light mark[style*="FFB8EB"] { background: #FF6188 !important; }  /* was pink   */
+.theme-light mark[style*="FF9E9E"] { background: #FF6188 !important; }  /* was salmon */
+.theme-light mark[style*="BBFABB"] { background: #8CEE8C !important; }  /* was green  */
 
 /* Padding and rounding so the block reads as a deliberate mark. */
 .theme-light mark {

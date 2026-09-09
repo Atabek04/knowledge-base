@@ -51,7 +51,7 @@ Substitute $(2, 1)$ into all three and every equation holds. Substitute anything
 
 Equivalence is a property to be <i>established</i>, not observed. Looking at A and C side by side tells you nothing; you would have to solve both to compare their solution sets, which defeats the purpose.
 
-What supplies it is the route between them. A system reached by [[The three row operations are legal precisely because each one can be undone|the three row operations]] is equivalent to the one it came from, because [[A rewrite is safe exactly when the move that produced it can be undone|each of those moves can be undone]] — and a move that can be undone can neither lose nor gain a solution.
+What supplies it is the route between them. The moves in question are [[The three row operations are legal precisely because each one can be undone|the three row operations]], and [[A rewrite is safe exactly when the move that produced it can be undone|each of them can be undone]]. <mark style="background: #ABF7F7A6;">A system reached by those three moves is equivalent to the one it came from, because a move that can be undone can neither lose nor gain a solution.</mark>
 
 <mark style="background: #ADCCFFA6;">Establish equivalence from the moves you made, never from how the final system looks.</mark>
 
@@ -61,7 +61,7 @@ What supplies it is the route between them. A system reached by [[The three row 
 
 <mark style="background: #ABF7F7A6;">Because every legal move preserves the solution set, a chain of them does too.</mark> So you may keep [[Elimination replaces an equation, so solving a system means rewriting it|rewriting a system]] into simpler forms and read the answer off the final form knowing it is the answer to the original.
 
-Equivalence is what makes the messy original and the clean final form the same question. Without it, solving would be a sequence of unjustified rewrites; with it, every intermediate system is a legitimate stand-in for the one you were asked about.
+Equivalence is what makes the messy original and the clean final form the same question. <mark style="background: #ADCCFFA6;">Without equivalence, solving is just a sequence of unjustified rewrites; with it, every intermediate system is a legitimate stand-in for the one you were asked about.</mark>
 
 This is also why the answer never needs checking against the original system — the guarantee was established by the moves themselves, before any arithmetic happened.
 
@@ -71,7 +71,9 @@ This is also why the answer never needs checking against the original system —
 
 - [[A rewrite is safe exactly when the move that produced it can be undone]]
 - [[The three row operations are legal precisely because each one can be undone]]
+- [[Row equivalent matrices are linked by the route between them, since a matrix has no solution set to compare]]
 - [[Elimination replaces an equation, so solving a system means rewriting it]]
+- [[Elimination clears one variable per column going down, then clears back up until each row names one variable]]
 - [[Deriving an equation prevents losing a solution but not gaining one]]
 - [[A linear system has zero, one, or infinitely many solutions and never any other count]]
 - [[Math for ML MOC]]

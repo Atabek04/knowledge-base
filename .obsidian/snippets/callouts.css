@@ -1,0 +1,29 @@
+/* Textbook-style boxes for definitions and theorems.
+   Colours match the four-colour highlight palette: yellow = definition,
+   blue = rule/theorem. Usage:  > [!definition] Row equivalent            */
+
+.callout[data-callout="definition"] {
+  --callout-color: 214, 178, 0;
+  --callout-icon: lucide-book-marked;
+}
+
+.callout[data-callout="theorem"] {
+  --callout-color: 60, 120, 216;
+  --callout-icon: lucide-shield-check;
+}
+
+.callout[data-callout="definition"],
+.callout[data-callout="theorem"] {
+  border: 1px solid rgba(var(--callout-color), 0.55);
+  border-radius: 6px;
+  padding: 0.75em 1em;
+}
+
+.theme-light .callout[data-callout="definition"] { background: #FFF8D6; }
+.theme-light .callout[data-callout="theorem"]    { background: #EDF3FF; }
+
+/* A definition box states one thing — keep it from growing into a section. */
+.callout[data-callout="definition"] .callout-content p:last-child,
+.callout[data-callout="theorem"] .callout-content p:last-child {
+  margin-bottom: 0;
+}

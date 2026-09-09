@@ -31,10 +31,13 @@ Coefficients carry two indices: <mark style="background: #FFF3A3A6;">`aᵢⱼ` i
 
 This is the same two-index addressing as `grid[i][j]` in code, and the mental model transfers directly: a matrix is a 2-D array, and `aᵢⱼ` is an element access.
 
+The same row-then-column order fixes how [[A matrix records a linear system's numbers, with column position replacing the variable names|a matrix's size is written]], as $m \times n$ — rows first there too.
+
 ---
 
 ### Read more
 
 - [[The number of variables sets the dimension and each equation draws a shape one dimension lower]]
 - [[An equation is linear when every variable stands alone to the first power and is multiplied only by a constant]]
+- [[A matrix records a linear system's numbers, with column position replacing the variable names]]
 - [[Math for ML MOC]]

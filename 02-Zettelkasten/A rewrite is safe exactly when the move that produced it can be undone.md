@@ -102,4 +102,5 @@ In the running example, $(2, 1)$ can be trusted against the original pair becaus
 - [[The three row operations are legal precisely because each one can be undone]]
 - [[Two systems are equivalent when they have the same solution set]]
 - [[Elimination replaces an equation, so solving a system means rewriting it]]
+- [[Row equivalent matrices are linked by the route between them, since a matrix has no solution set to compare]]
 - [[Math for ML MOC]]

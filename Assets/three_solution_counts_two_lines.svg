@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 292" width="720" height="292" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <defs>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8a94a3"/>
+    </marker>
+  </defs>
+  <style>
+    .ttl { font-size: 14.5px; font-weight: 600; fill: #1f2430; }
+    .cap { font-size: 12.5px; fill: #5b6472; }
+    .eq  { font-size: 12.5px; font-style: italic; fill: #47505f; }
+    .var { font-size: 11.5px; font-style: italic; fill: #8a94a3; }
+    .ax  { stroke: #8a94a3; stroke-width: 1.3; }
+    .l1  { stroke: #1a73c7; stroke-width: 2.6; fill: none; }
+    .l2  { stroke: #d13a5e; stroke-width: 2.6; fill: none; }
+  </style>
+
+  <!-- ── one solution ── -->
+  <rect x="14" y="40" width="212" height="174" fill="#f2f5f9" stroke="#ccd4e0" rx="7"/>
+  <text class="ttl" x="14" y="30">Cross once → one solution</text>
+  <line class="ax" x1="42" y1="196" x2="196" y2="196" marker-end="url(#a2)"/>
+  <line class="ax" x1="48" y1="202" x2="48" y2="70" marker-end="url(#a2)"/>
+  <text class="var" x="188" y="210">x₁</text>
+  <text class="var" x="32" y="72">x₂</text>
+  <line class="l1" x1="48" y1="130" x2="114" y2="196"/>
+  <line class="l2" x1="70" y1="196" x2="180" y2="86"/>
+  <circle cx="92" cy="174" r="4.2" fill="#1f2430"/>
+  <text class="cap" x="102" y="170" font-weight="600" fill="#1f2430">(2, 1)</text>
+  <text class="eq" x="14" y="236"><tspan fill="#1a73c7">x₁ + x₂ = 3</tspan>   <tspan fill="#d13a5e">x₁ − x₂ = 1</tspan></text>
+  <text class="cap" x="14" y="256">Two different lines, one crossing point.</text>
+  <text class="cap" x="14" y="274"><tspan font-weight="600">consistent</tspan> — exactly one solution</text>
+
+  <!-- ── no solution ── -->
+  <rect x="254" y="40" width="212" height="174" fill="#f2f5f9" stroke="#ccd4e0" rx="7"/>
+  <text class="ttl" x="254" y="30">Parallel → no solution</text>
+  <line class="ax" x1="282" y1="196" x2="436" y2="196" marker-end="url(#a2)"/>
+  <line class="ax" x1="288" y1="202" x2="288" y2="70" marker-end="url(#a2)"/>
+  <text class="var" x="428" y="210">x₁</text>
+  <text class="var" x="272" y="72">x₂</text>
+  <line class="l1" x1="288" y1="130" x2="354" y2="196"/>
+  <line class="l2" x1="288" y1="86" x2="398" y2="196"/>
+  <text class="eq" x="254" y="236"><tspan fill="#1a73c7">x₁ + x₂ = 3</tspan>   <tspan fill="#d13a5e">x₁ + x₂ = 5</tspan></text>
+  <text class="cap" x="254" y="256">Same slope, never meet — the sum</text>
+  <text class="cap" x="254" y="274">cannot be 3 and 5. <tspan font-weight="600">inconsistent</tspan></text>
+
+  <!-- ── infinitely many ── -->
+  <rect x="494" y="40" width="212" height="174" fill="#f2f5f9" stroke="#ccd4e0" rx="7"/>
+  <text class="ttl" x="494" y="30">Same line → infinitely many</text>
+  <line class="ax" x1="522" y1="196" x2="676" y2="196" marker-end="url(#a2)"/>
+  <line class="ax" x1="528" y1="202" x2="528" y2="70" marker-end="url(#a2)"/>
+  <text class="var" x="668" y="210">x₁</text>
+  <text class="var" x="512" y="72">x₂</text>
+  <line class="l1" x1="528" y1="130" x2="594" y2="196" stroke-width="6"/>
+  <line class="l2" x1="528" y1="130" x2="594" y2="196" stroke-dasharray="7 6"/>
+  <circle cx="539" cy="141" r="3.4" fill="#1f2430"/>
+  <circle cx="561" cy="163" r="3.4" fill="#1f2430"/>
+  <circle cx="583" cy="185" r="3.4" fill="#1f2430"/>
+  <text class="eq" x="494" y="236"><tspan fill="#1a73c7">x₁ + x₂ = 3</tspan>   <tspan fill="#d13a5e">2x₁ + 2x₂ = 6</tspan></text>
+  <text class="cap" x="494" y="256">One line drawn twice — every point</text>
+  <text class="cap" x="494" y="274">on it solves both. <tspan font-weight="600">consistent</tspan></text>
+</svg>

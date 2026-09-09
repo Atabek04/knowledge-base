@@ -145,18 +145,18 @@ that quietly waste review time for months.
 
 ## English cards
 
-Three note types, picked by what the card asks. Full field lists and examples in
-`references/syntax.md`.
+Two note types, picked by what the card asks. Full field lists and examples in
+`references/syntax.md`; vocabulary specifics in `references/vocab.md`.
 
 | Card asks | Note type | Deck |
 |---|---|---|
 | A word's meaning, or any question and answer | `English Card` | `English::General` · `English::Tech Terms` |
 | Produce a grammatical form in a real sentence | `English Grammar` (cloze) | `English::Grammar` |
-| Produce the word from an English definition | `A_English_Translate` | see `references/vocab.md` |
 
-`English Card` has five optional fields — `Example`, `Collocations`, `Synonyms`, `Forms`,
-`Pattern` — that vanish when empty, so it also serves as a plain two-field card. Fill only
-what earns its place; `Synonyms` must say how each one *differs*, never just list them.
+`English Card` has six optional fields — `Russian`, `Example`, `Collocations`, `Synonyms`,
+`Forms`, `Pattern` — that vanish when empty, so it also serves as a plain two-field card.
+Fill only what earns its place; `Synonyms` must say how each one *differs*, never just list
+them. `Russian` belongs on vocabulary cards and stays empty on question-and-answer ones.
 
 **The recall target is one thing, and the rest is scenery.** On a grammar card the cloze is
 the test and `Explanation` is a reminder the learner is never graded on — it renders dimmer

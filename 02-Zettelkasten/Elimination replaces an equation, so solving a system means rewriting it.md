@@ -44,7 +44,9 @@ $$\{e_1,\ e_2\} \;\longrightarrow\; \{e_1,\ e_3\} \;\longrightarrow\; \cdots \;\
 
 Every arrow discards a system and keeps going. That is what "rewriting, repeatedly" means, and it is why the vocabulary of <b>equivalent systems</b> exists at all — there would be nothing to name if solving never produced a second system.
 
-The same procedure appears later performed on rows of a matrix rather than on written-out equations. The rows are the equations, and the moves are these moves.
+The same procedure appears later performed on rows of [[A matrix records a linear system's numbers, with column position replacing the variable names|a matrix]] rather than on written-out equations. The rows are the equations, and the moves are these moves.
+
+Which rewrite to perform first, and when to stop, is [[Elimination clears one variable per column going down, then clears back up until each row names one variable|the algorithm]].
 
 ---
 
@@ -60,4 +62,6 @@ That guarantee is the subject of [[Two systems are equivalent when they have the
 
 - [[Two systems are equivalent when they have the same solution set]]
 - [[A rewrite is safe exactly when the move that produced it can be undone]]
+- [[Elimination clears one variable per column going down, then clears back up until each row names one variable]]
+- [[A matrix records a linear system's numbers, with column position replacing the variable names]]
 - [[Math for ML MOC]]

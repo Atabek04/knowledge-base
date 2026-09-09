@@ -24,6 +24,8 @@ Seen as two lines in a plane, the three cases are exactly the three ways two lin
 | Parallel and distinct | none | <b>inconsistent</b> |
 | The same line | infinitely many | <b>consistent</b> |
 
+![[three_solution_counts_two_lines.svg|650]]
+
 #### No solution — contradictory constraints
 
 $$\begin{array}{rrrrr}
@@ -52,6 +54,8 @@ Two equations were written, but only one constraint exists. This is why counting
 
 The name is apt: an inconsistent system is one whose equations contradict each other. Consistency is a question about the equations agreeing, asked before any question about what the answer is.
 
+Asked deliberately rather than in passing, that becomes the first of [[Existence and uniqueness are the only two questions a linear system has to answer|the two questions that decide any system]], and elimination answers it outright whenever it produces [[A row reading zero equals a nonzero number proves the system is inconsistent|a row saying zero equals something nonzero]].
+
 ---
 
 ### A solution is one point, a solution set is all of them
@@ -68,6 +72,8 @@ These two are separate objects and the words are not interchangeable.
 ### Read more
 
 - [[Two systems are equivalent when they have the same solution set]]
+- [[Existence and uniqueness are the only two questions a linear system has to answer]]
+- [[A row reading zero equals a nonzero number proves the system is inconsistent]]
 - [[Solving a linear system means finding where the shapes its equations draw intersect]]
 - [[The number of variables sets the dimension and each equation draws a shape one dimension lower]]
 - [[Math for ML MOC]]

@@ -16,19 +16,25 @@ Teaching progress is tracked here, per section; the chapter roadmap lives in the
 
 ### Systems of Linear Equations
 
-> **Teaching progress — 2026-09-05:** §1.1 theory only, notes written but not yet reviewed. Book examples and exercises untouched. Next: 2 × 90 min on Sun 06-09 — read the notes and question them, then work §1.1's examples, then the augmented matrix.
+> **Teaching progress — 2026-09-09:** §1.1 read to p. 26, all 16 notes written and carded. Next: work the Practice Problems on p. 26, then §1.1's exercises, then §1.2 echelon form.
 
 - [[An equation is linear when every variable stands alone to the first power and is multiplied only by a constant|Linear equation — variable alone, first power, times a constant]]
-- [[Each family of nonlinear equation breaks exactly one criterion of linearity|Nonlinear families — each breaks one criterion of linearity]]
-- [[Subscript notation lets one formula describe any number of unknowns|Subscripts — one formula for any number of unknowns]]
+    - [[Each family of nonlinear equation breaks exactly one criterion of linearity|Nonlinear families — each breaks one criterion of linearity]]
+    - [[Subscript notation lets one formula describe any number of unknowns|Subscripts — one formula for any number of unknowns]]
 - [[The number of variables sets the dimension and each equation draws a shape one dimension lower|Variables set the dimension, each equation drops one]]
-- [[A linear system has zero, one, or infinitely many solutions and never any other count|Solution counts — zero, one, or infinitely many, never other]]
-- [[Elimination replaces an equation, so solving a system means rewriting it|Elimination is rewriting — each step trades one system for another]]
-- [[Deriving an equation prevents losing a solution but not gaining one|Derivation blocks losing a solution, never gaining one]]
-- [[A rewrite is safe exactly when the move that produced it can be undone|Reversibility — a move you can undo changes no answers]]
-- [[The three row operations are legal precisely because each one can be undone|Three row operations — swap, scale, add, each reversible]]
-- [[Two systems are equivalent when they have the same solution set|Equivalence — same solution set licenses every rewrite]]
 - [[Solving a linear system means finding where the shapes its equations draw intersect|Solving — find where all the equations' shapes intersect]]
+    - [[A linear system has zero, one, or infinitely many solutions and never any other count|Solution counts — zero, one, or infinitely many, never other]]
+- [[Elimination replaces an equation, so solving a system means rewriting it|Elimination is rewriting — each step trades one system for another]]
+    - [[Deriving an equation prevents losing a solution but not gaining one|Derivation blocks losing a solution, never gaining one]]
+- [[A rewrite is safe exactly when the move that produced it can be undone|Reversibility — a move you can undo changes no answers]]
+    - [[The three row operations are legal precisely because each one can be undone|Three row operations — swap, scale, add, each reversible]]
+- [[Two systems are equivalent when they have the same solution set|Equivalence — same solution set licenses every rewrite]]
+- [[A matrix records a linear system's numbers, with column position replacing the variable names|Matrix notation — position replaces the variable names]]
+    - [[Row equivalent matrices are linked by the route between them, since a matrix has no solution set to compare|Row equivalent — matrices linked by the moves, not the look]]
+- [[Elimination clears one variable per column going down, then clears back up until each row names one variable|The algorithm — clear down the columns, then back up]]
+    - [[Elimination runs in floating point on a computer, so every stored number is an approximation|Floating point — the machine's arithmetic is approximate, the theory is not]]
+- [[Existence and uniqueness are the only two questions a linear system has to answer|Existence and uniqueness — the two questions that decide everything]]
+    - [[A row reading zero equals a nonzero number proves the system is inconsistent|The 0 = nonzero row — instant proof of no solution]]
 
 ### Data Structures for ML
 

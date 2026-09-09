@@ -3,6 +3,7 @@
   "cssTheme": "AnuPpuccin",
   "theme": "moonstone",
   "enabledCssSnippets": [
-    "highlights"
+    "highlights",
+    "callouts"
   ]
 }

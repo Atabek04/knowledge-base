@@ -1,8 +1,7 @@
 # Vocabulary Flashcard Rules
 
-For when the user sends a sentence and asks what a word or phrase means. These cards test
-**production recall** — the user reads an English definition and must produce the word. A
-different note type and deck from technical cards; don't reuse the tech-card format here.
+For when the user sends a sentence and asks what a word or phrase means. These cards use the
+`English Card` note type — the word on the front, its meaning and usage on the back.
 
 ## Prerequisites
 
@@ -16,18 +15,8 @@ different note type and deck from technical cards; don't reuse the tech-card for
 }
 ```
 
-3. Create note type `A_English_Translate` in Anki:
-   - Tools → Manage Note Types → Add → Blank
-   - Name: `A_English_Translate` (case-sensitive)
-   - **Fields button** — add in this order:
-     1. `Definition` — English definition sentence (card front)
-     2. `English` — the target English word or phrase
-     3. `Russian` — Russian translation
-     4. `Example` — sentence showing usage in context
-     5. `Note` — optional context-specific clarification
-   - **Cards button:**
-     - Front template: `{{Definition}}`
-     - Back template: `{{English}}<br>{{Russian}}<br><br>{{Example}}<br><br><i>{{Note}}</i>`
+3. Create note type `English Card` in Anki — fields and templates are specified in
+   `syntax.md`.
 
 ### Obsidian Setup (One-time)
 
@@ -45,35 +34,27 @@ User sends a sentence and asks what a word/phrase means.
 
 ---
 
-## How It Works
-
-The card tests **production recall**: user reads a definition and must recall the English
-word.
-
-```
-Front (Definition):  "A situation where only one outcome or direction is possible"
-Back (English):      "one-way street (figurative)"
-Back (Russian):      "Одностороннее движение; безальтернативная ситуация"
-Back (Example):      "For years after the pandemic, remote work felt like a one-way street."
-Back (Note):         "Literally: a street allowing travel in one direction only. Figuratively: something with no alternative or no turning back."
-```
-
----
-
 ## Card Format
 
 ```markdown
 START
-A_English_Translate
-{concise English definition as a sentence}
-English: {the target word or phrase}
-Russian: {Russian translation}
-Example: {original sentence from user, or a refined version}
-Note: {context-specific meaning, literal vs figurative, register — only if useful}
-Tags: {tags}
+English Card
+{the target word or phrase}
+Back: {the meaning, bolding the core of it}
+- {a distinction or restriction worth carrying}
+Russian: {Russian translation matching this sense}
+Example: {original sentence from user, target word bolded}
+Forms: {word family, · separated}
+Pattern: {grammatical frame the word demands}
+Collocations: {· separated, partner word bolded}
+Synonyms: {each one stating how it differs}
+Tags: vocab {part of speech or domain}
 <!--ID: 1770704985804-->
 END
 ```
+
+Only `Front` (the bare word line) and `Back` are required. Every other field disappears from
+the rendered card when empty — fill only what earns its place.
 
 ---
 
@@ -108,55 +89,44 @@ TARGET DECK: English::General
 
 ## Field Rules
 
-### Definition (front of card)
-- A concise English sentence explaining the meaning
-- The user reads this and tries to recall the word — so **never include the target word**
-- Write it like a dictionary entry but natural, not robotic
-- One definition per card — if a word has multiple distinct meanings, make separate cards
-
-### English
-- The exact word or phrase the user asked about
+### Front — the bare word line
+- The exact word or phrase the user asked about, on its own line right after the note type
 - If figurative usage, mark it: `one-way street (figurative)`
 - Phrasal verbs in infinitive form: `to boil down to`
 
+### Back
+- The meaning as a sentence, with the **core of the definition bolded**
+- Below it, bullets only for a distinction or restriction that changes how the word is used:
+  a boundary against a near-synonym, a transitivity constraint, a literal-vs-figurative split
+- One sense per card — if a word has multiple distinct meanings, make separate cards
+
 ### Russian
-- Translation matching the specific definition given
-- If no clean 1:1 translation exists, give closest + brief note
-- **Translate as a native speaker, not a dictionary.** Write the word a Russian person
-  actually says in daily life — not the literal/calque form or the first hit a machine
-  translator returns. Pick the most commonly practiced term; if a textbook-correct word
-  exists but nobody uses it, drop it or demote it to second place.
+- The translation matching **this card's sense only** — not the word's whole range
+- If no clean 1:1 exists, give the closest plus a short parenthetical
+- **Translate as a native speaker, not a dictionary.** Write what a Russian person actually
+  says out loud — not the calque or the first machine-translation hit. If a textbook-correct
+  word exists but nobody uses it, drop it or demote it to second place.
   - ✓ `газированная вода, газировка` for *seltzer water*
   - ✗ `сельтерская вода` — technically a translation, but almost no one says it
-  - Litmus test: would a native speaker use this word out loud, or only see it in a manual?
+- Renders directly under the meaning, above the example
 
 ### Example
 - Prefer the original sentence the user sent
 - Refine only if the original is too long or unclear
 - Bold the target word: `Remote work felt like a **one-way street**.`
 
-### Note
+### Forms / Pattern / Collocations / Synonyms
+See `syntax.md` for the mechanics. The one rule worth repeating: **`Synonyms` is never a
+bare list.** Each entry states how it differs, because a thesaurus swap preserves the meaning
+and destroys the collocation. `wane` alone teaches nothing; `wane — influence and interest,
+not physical stock` teaches the boundary.
 
-**The default is no Note at all.** Most cards should ship without this field. Everything on
-a card is something the learner has to carry in their head on every single review — a Note
-that isn't pulling weight is pure cost.
+### What not to put on the card
 
-A Note is admissible for exactly two reasons:
+**The default is less.** Everything on a card is something the learner carries on every
+single review — a line that isn't pulling weight is pure cost.
 
-1. **A mnemonic hook** — something that makes the word *re-derivable* rather than merely
-   memorized. `crux` = Latin for *cross*, so the crux is the crossing point where everything
-   resolves. The learner who forgets the meaning can rebuild it from the hook.
-2. **A clarification or distinction that changes how the word is used** — the thing that
-   would otherwise cause a mistake in real usage:
-   - Literal vs figurative: "Literally a road with one-direction traffic; here figurative — a situation with no going back."
-   - Context shift: "General English: 'to supply.' In cloud/IT: automated resource allocation."
-   - Register: "Formal written English. Casual alternative: 'set up.'"
-
-If what you're about to write isn't one of those two, **delete the field**. Encyclopedic
-background, contrast words, etymology-as-decoration and usage trivia all read as useful and
-are not — they inflate a one-word card into a paragraph the learner must re-read forever.
-
-Concretely, do not write:
+Do not write:
 
 - **A restatement of the definition** in different words.
 - **A contrast or opposite word** just because one exists. `de jure` is genuinely interesting
@@ -165,12 +135,14 @@ Concretely, do not write:
 - **Spelling or form mechanics the Example already displays** — "written as two words, no
   hyphen" is dead weight when the Example shows the word written correctly.
 - **Etymology that only decorates.** "Latin for 'of fact'" explains nothing the definition
-  didn't. Keep an origin only when it functions as the hook in case 1.
+  didn't. Keep an origin only when it works as a *mnemonic hook* — something that makes the
+  word re-derivable rather than merely memorized (`crux` = Latin for *cross*, so the crux is
+  the crossing point where everything resolves).
 - **Extra senses of the word.** Those are separate cards, not a footnote.
 
-One hard rule when a Note *is* justified: **never reference the user's own mistake.** If they
-sent the phrase with an error, silently fix it in Example/English and write the Note as the
-positive rule only — don't quote the wrong version or say "not X".
+One hard rule: **never reference the user's own mistake.** If they sent the phrase with an
+error, silently fix it in Example/Front and write the rule positively — don't quote the wrong
+version or say "not X".
   - ✓ `You advocate FOR something. Always takes the article: "a big advocate for".`
   - ✗ `Needs the article — "a big advocate for", not "big advocate for".`
 
@@ -191,8 +163,8 @@ example can only show one.
 | General | `vocab/general.md` | `English::General` | everyday English |
 
 Rules:
-- Each card's **Definition and Example must match its own context** — don't cross-contaminate.
-- The `Note` may briefly point to the *other* sense ("Everyday English: …" / "In IT: …") so
+- Each card's **Back and Example must match its own context** — don't cross-contaminate.
+- The `Back` may briefly point to the *other* sense ("Everyday English: …" / "In IT: …") so
   the learner sees the link, but the card is tested on its own context only.
 - Tag the technical card with its domain (`ml`, `networking`, `security`); the general card
   gets only its part of speech (`verb`, `noun`, `phrasal-verb`).
@@ -207,42 +179,43 @@ doesn't make it a tech term.
 
 ## Example Cards
 
-Everything below is a real card from the vault, annotated with the rule it demonstrates.
-
 #### `general.md` — everyday English, tagged by word class
 
 ```markdown
 TARGET DECK: English::General
 
 START
-A_English_Translate
-Existing or accepted as the real thing in practice, even though it was never officially declared or made official
-English: de facto
-Russian: фактический, по факту, на деле (хотя официально не закреплённый)
-Example: If the course slips badly, $20 becomes the **de facto** price and $29 loses credibility when it finally arrives.
-Tags: adjective adverb latin
+English Card
+trail
+Back: A **series of marks or things left behind** along a path, showing where something passed.
+- The whole sequence, not one mark — a single footprint is not a trail
+- Figuratively: any ordered residue a process leaves behind
+Russian: след, цепочка следов; тропа
+Example: Solving a linear system produces a **trail** of systems, each replacing the last, and the answer is read off the final one.
+Forms: trail · trailed · trailing
+Pattern: a trail **of** sth
+leave **a trail**
+Collocations: **paper** trail · **hiking** trail · trail of **destruction** · **blaze a** trail
+Synonyms: **track** — the physical marks themselves, often one set of prints
+**wake** — what follows behind a moving thing, water or metaphor; never a route you walk
+Tags: vocab noun
 END
 
 START
-A_English_Translate
-To be reducible to the essential point once everything inessential is stripped away
-English: to boil down to
+English Card
+to boil down to
+Back: To be **reducible to the essential point** once everything inessential is stripped away.
 Russian: сводиться к (чему-то)
 Example: The whole debate **boils down to** whether we prioritize latency or throughput.
-Tags: phrasal-verb
+Tags: vocab phrasal-verb
 END
 ```
 
 What these two show:
 
-- **The Definition never contains the target word** — "de facto" appears nowhere in its
-  own front field, so recall is real production, not pattern-matching.
-- **Neither card has a `Note`, and that is the normal case.** `de facto` invites one —
-  etymology, the `de jure` contrast, the no-hyphen spelling — and every candidate failed the
-  test: the definition already carries the meaning, the Example already shows the spelling,
-  and `de jure` is a second word that belongs on its own card. Four lines is the whole card.
-- **Word class lives in `Tags:`, not in a separate file.** `phrasal-verb` is a tag, not a
-  deck.
+- **The second card is four lines, and that is a normal card.** Fill the optional fields only
+  when the word actually has a family, a frame, or a confusable neighbour worth the space.
+- **Word class lives in `Tags:`, not in a separate file.** `phrasal-verb` is a tag, not a deck.
 - **The user's own sentence is the Example**, kept verbatim with the target bolded — the
   word is recalled in the context they actually met it in.
 
@@ -252,13 +225,14 @@ What these two show:
 TARGET DECK: English::Tech Terms
 
 START
-A_English_Translate
-To allocate and configure infrastructure automatically so it is ready to serve traffic
-English: to provision
+English Card
+to provision
+Back: To **allocate and configure infrastructure automatically** so it is ready to serve traffic.
+- Everyday English means "to supply with what's needed" — provisioning a ship for a voyage; in IT the sense narrows to automated resource allocation
 Russian: разворачивать, поднимать (сервер, окружение)
 Example: The platform automatically **provisions** a new VM when traffic spikes.
-Note: Everyday English means "to supply with what's needed" — provisioning a ship for a voyage. In IT the sense narrows to automated resource allocation and setup.
-Tags: cloud infrastructure
+Collocations: **provision a** server · **auto-**provisioning
+Tags: vocab cloud infrastructure
 END
 ```
 
@@ -266,7 +240,7 @@ What this one shows:
 
 - **The domain sense gets its own card** — the definition and example are framed entirely
   inside cloud infrastructure, never split across two contexts.
-- **The `Note` points at the everyday sense** so the learner sees the link, but the card is
+- **A bullet points at the everyday sense** so the learner sees the link, but the card is
   still tested on one meaning only.
 - **The Russian is what an engineer actually says** (`разворачивать`), not the dictionary
   calque (`обеспечивать`).
@@ -287,7 +261,6 @@ What this one shows:
 
 - One word/phrase per card
 - Blank line between `END` and next `START`
-- Never include the target word in the Definition field
-- Note field is optional — omit entirely if nothing useful to add
+- Only `Front` and `Back` are required — omit any optional field with nothing to say
 - Tags: lowercase, space-separated
 - Check the file before adding to avoid duplicates
