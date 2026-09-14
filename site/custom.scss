@@ -1,0 +1,106 @@
+@use "./variables.scss" as *;
+
+// ── Highlight palette ──────────────────────────────────────
+// Notes carry inline <mark style="background: #XXXXXXA6"> in four colours
+// (yellow definition, cyan mechanism, blue rule, red warning). The A6 pastels
+// were picked against a dark background; on the light theme they wash out,
+// so remap them to saturated opaque equivalents. Mirrors
+// .obsidian/snippets/highlights.css.
+mark {
+  color: #1a1a1a !important;
+  padding: 0.05em 0.2em;
+  border-radius: 3px;
+
+  b,
+  i,
+  strong,
+  em {
+    color: inherit !important;
+  }
+}
+
+:root:not([saved-theme="dark"]) {
+  mark[style*="FFF3A3"] { background: #ffe066 !important; } // definition
+  mark[style*="ABF7F7"] { background: #6fe3e3 !important; } // mechanism
+  mark[style*="ADCCFF"] { background: #8fb8ff !important; } // rule
+  mark[style*="FF5582"] { background: #ff6188 !important; } // warning
+  // legacy shades folded into the palette
+  mark[style*="FFB8EB"] { background: #ff6188 !important; }
+  mark[style*="FF9E9E"] { background: #ff6188 !important; }
+  mark[style*="BBFABB"] { background: #8cee8c !important; }
+}
+
+// ── Definition and theorem boxes ───────────────────────────
+// Mirrors .obsidian/snippets/callouts.css. Icons are lucide book-marked and
+// shield-check, URL-encoded as Quartz requires.
+.callout {
+  &[data-callout="definition"] {
+    --color: #b89600;
+    --border: #d6b20088;
+    --bg: #fff8d6;
+    --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 2v8l3-3 3 3V2'/%3E%3Cpath d='M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20'/%3E%3C/svg%3E");
+  }
+
+  &[data-callout="theorem"] {
+    --color: #3c78d8;
+    --border: #3c78d888;
+    --bg: #edf3ff;
+    --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
+  }
+}
+
+[saved-theme="dark"] .callout {
+  &[data-callout="definition"] { --bg: #2e2a12; }
+  &[data-callout="theorem"] { --bg: #16233a; }
+}
+
+// ── Landing page: subject cards ────────────────────────────
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.subject-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 10px;
+  background: var(--light);
+  text-decoration: none;
+  color: var(--darkgray);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+
+  &:hover {
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+  }
+
+  .subject-name {
+    display: block;
+    font-family: var(--headerFont);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 0.25rem;
+  }
+
+  .subject-blurb {
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--gray);
+  }
+}
+
+// ── Reading comfort ────────────────────────────────────────
+// MOC checkboxes are roadmap markers, not tasks: keep them quiet.
+.article-content input[type="checkbox"] {
+  opacity: 0.55;
+}
+
+// Wider text column: atomic notes are prose, tables get room.
+.page > #quartz-body .center {
+  max-width: 48rem;
+}

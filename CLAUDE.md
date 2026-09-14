@@ -54,6 +54,39 @@ Even single-sentence paragraphs are acceptable.
 
 This mirrors the atomic note philosophy: one concept per unit.
 
+#### Never use an em dash
+
+<mark style="background: #FF5582A6;">The em dash character is banned everywhere: notes, MOCs, flashcards, commit messages, and chat replies.</mark> No exceptions, and no en dash standing in for it either.
+
+Every job an em dash does has a better replacement:
+
+| Instead of | Write |
+|---|---|
+| an aside set off mid-sentence | commas, or parentheses |
+| a pause before an explanation | a colon |
+| joining two clauses | a full stop, or a semicolon |
+| a label before a description (`**Losing** — the new equation...`) | a colon (`**Losing**: the new equation...`) |
+
+This applies to MOC aliases too, which used the em dash as a separator historically. New aliases use a colon.
+
+#### Chat renders none of the vault's markup
+
+<mark style="background: #FF5582A6;">Before writing a sentence, decide where it lands: a vault file, or the chat window. Everything Obsidian renders, the chat prints raw.</mark>
+
+| Vault-only syntax | What the chat shows |
+|---|---|
+| `<mark style="...">claim</mark>` | the tag itself, wrapped around the words |
+| `[[Note title\|alias]]` | literal brackets and a pipe |
+| `$x_1$`, `$$...$$` | dollar signs and backslashes |
+| `> [!definition]`, `![[image.svg\|620]]` | a quote block, a broken embed |
+
+Two ways to answer in chat, and no third:
+
+- <b>Explaining</b>: plain prose. Name the colour in words ("cyan, since it explains the mechanism") instead of writing the tag, and name a linked note by its title instead of bracketing it.
+- <b>Handing over text to paste</b>: put the full vault markup inside a fenced code block, where the chat shows it verbatim and the user can copy it whole.
+
+This is one rule, not four. A new piece of Obsidian syntax is covered by it the day it is added.
+
 #### No scaffolding sentences
 
 <mark style="background: #FF5582A6;">Never announce what the note is about to do. Just do it.</mark> A sentence that describes the structure of the following sentences carries no information — the reader learns nothing from it that reading on would not give them faster.
@@ -70,6 +103,41 @@ The structure is already visible: a `####` heading says a new point starts, a pa
 Two terms introduced back to back need no bridge — put each in its own paragraph, then state the claim that uses both. The sequence <i>is</i> the argument.
 
 The test: delete the sentence. If nothing is lost but a transition, it should have been deleted. This applies with equal force to chat replies, which stay short and say what was done, never what is about to be done.
+
+### Writing Headings
+
+Headings are read twice: once in the flow of the note, and once as a bare list in Obsidian's **Outline** pane. <mark style="background: #ADCCFFA6;">A heading must still say what its section contains when it is stripped of every surrounding sentence.</mark> That is the test to apply, since the Outline is how a note gets navigated.
+
+The hierarchy itself (`###` for a section, `####` for a point inside it, never `#` or `##`) is fixed under [Content Rules](#content-rules). What follows is how to word one.
+
+<b>Concise: one line, no full sentence.</b> A heading is a label, not a claim, and the claim it labels is the first paragraph underneath. Aim for two to six words, and never wrap onto a second line in the Outline pane.
+
+<b>Informative: name the specific content, not its function.</b> A heading that would fit in any note is doing no work.
+
+| ❌ Generic | ✓ Specific |
+|---|---|
+| Overview, Details, More, Notes | The set-inclusion guarantee |
+| The principle, in plain words | Why it holds |
+| Another example | Gaining inside a linear system |
+| Summary | The two tests compared |
+
+<b>Parallel: sibling headings share a grammatical shape.</b> Two `###` sections covering two halves of one idea must be worded to mirror each other, so the contrast is visible in the Outline with no note text around it.
+
+```
+✓  ### Why derivation cannot lose a solution
+   ### Why derivation can still gain a solution
+
+✗  ### Derivation rules out losing
+   ### Gaining is not exotic, it happens in linear systems too
+```
+
+<b>Distinct: no two headings in a note repeat each other</b>, and none of them restates the filename.
+
+<b>Front-load the distinguishing word.</b> The Outline pane truncates, and the eye scans first words, so `Gaining inside a linear system` beats `Inside a linear system, gaining`.
+
+<b>Never open a section with a heading-shaped sentence.</b> Restating the heading in the first line is the scaffolding fault above, in its most common form.
+
+---
 
 ### Math Notation
 
@@ -242,6 +310,21 @@ Titles must be **complete statements**, not topic labels.
 ✓ Good: "WebSocket provides full-duplex communication over TCP"
 
 Test: Does the title teach something alone, or just name a thing?
+
+#### No math notation in a title
+
+<mark style="background: #FF5582A6;">A note title is a filename, and a filename never contains MathJax, LaTeX, or symbol soup.</mark> `$`, `\`, `^`, `_`, `{}` and friends are not rendered in the file explorer, the graph view, the quick switcher, or a `[[link]]`; they show as raw characters, and some of them break Obsidian's link parsing outright.
+
+State the mathematics in words:
+
+❌ `$a = b$ and $c = d$ implies $a - c = b - d$`
+✓ `Two true equations can be added or subtracted side by side and stay true`
+
+❌ `Row reduction preserves $\text{Null}(A)$`
+✓ `Row reduction leaves the null space unchanged`
+
+The formula itself belongs in the body, inside `$...$`, where Obsidian renders it. Same rule for headings: `###` and `####` are navigation labels, so keep them wordy and symbol-free.
+
 ### Explanation Style
 
 When explaining code or concepts, **always use the actual class/method/annotation name** — not vague descriptions.
@@ -397,6 +480,14 @@ All flashcard rules — syntax, deck hierarchy, question quality, vocab cards, A
 - **Sync automatically, never ask.** After editing any flashcard file, run `python scripts/anki_sync.py` without confirming first. If Anki isn't running, open it (`open -a Anki`), wait for it, then sync.
 - [Sync without Obsidian](scripts/anki_sync.py) — run `python scripts/anki_sync.py` to push all flashcard changes to Anki directly from the terminal, no Obsidian UI needed. Use this when Obsidian isn't open or when batch-syncing after editing many files at once.
 
+## Public Wiki
+
+`01-MOCs`, `02-Zettelkasten`, `Incidents` and `Assets` are published with Quartz to `https://atabek04.github.io` on every push to `main` (`.github/workflows/publish.yml`). Config lives in `site/` (see `site/README.md`); preview with `.\scripts\site-preview.ps1`.
+
+- **Frontmatter must parse as YAML** or the whole build fails: quote aliases starting with `@`, `!`, `*`, `&` (`aliases: ["@PreAuthorize", ...]`).
+- A note that must stay private gets `draft: true`; a folder gets a line in `ignorePatterns`.
+- `00-Inbox/` is gitignored, so it can never be published.
+
 ## Tech Stack Context
 
 - Languages: Java, Kotlin, Python
@@ -407,7 +498,6 @@ All flashcard rules — syntax, deck hierarchy, question quality, vocab cards, A
 
 - **Methodology + trackers (this vault):** `06-Planning/Interview-Prep-Master-Plan.md` (track end-states) · `06-Planning/Trackers/` (per-course tick lists — Grokking Patterns/SD, Decode, Behavioral, Design Patterns).
 - **Month→week schedule + applications (Ribaat vault):** `06-Planning/Job-Search/Interview-Prep-Execution.md` (the executable plan) · `Tracker-Kanban.md` + `Application-Log.md` (pipeline tracking).
-- **LeetCode solve-log (Obsidian Base, replaces Notion):** `06-Planning/Trackers/LeetCode Tracker.base` over the `LeetCode-Log/` folder — one note per problem (status Solved/Cheated/Not started, topic, solve-count). Folder-based filter: "New" creates notes in-folder; see `LeetCode-Log/README.md`.
 
 ## Islamic Filter for Western Content
 

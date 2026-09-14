@@ -1,6 +1,6 @@
 TARGET DECK: Tech-KB::DSA::Two Pointers
 Tags: dsa two-pointers
-**Related:** [[LeetCode - MOC]]
+**Related:** [[Coding Interview Patterns - MOC]]
 
 ---
 

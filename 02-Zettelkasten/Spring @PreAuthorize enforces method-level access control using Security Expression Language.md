@@ -1,5 +1,5 @@
 ---
-aliases: [@PreAuthorize, method security Spring]
+aliases: ["@PreAuthorize", method security Spring]
 tags: [spring, security, keycloak]
 created: 2026-06-23
 ---

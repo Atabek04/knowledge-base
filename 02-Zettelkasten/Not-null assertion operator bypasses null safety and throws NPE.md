@@ -1,5 +1,5 @@
 ---
-aliases: [not-null assertion, double bang, !!, non-null assertion]
+aliases: [not-null assertion, double bang, "!!", non-null assertion]
 ---
 
 The `!!` operator asserts that a value is not null and bypasses Kotlin's null safety system.

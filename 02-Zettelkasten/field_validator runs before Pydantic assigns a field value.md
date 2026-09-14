@@ -1,6 +1,6 @@
 ---
 created: 2026-04-30
-aliases: [@field_validator, pydantic validator, mode before]
+aliases: ["@field_validator", pydantic validator, mode before]
 tags:
   - python/pydantic
 ---

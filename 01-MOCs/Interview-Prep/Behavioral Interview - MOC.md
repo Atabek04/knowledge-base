@@ -125,5 +125,4 @@ Your numbers (from [[Remote-Job-Prep]]): floor **$2,000/mo**, ask **$4,500-6,000
 - [[Behavioral-Interview - Tracker]]
 - [[System Design - MOC]]
 - [[Design Patterns - MOC]]
-- [[LeetCode - MOC]]
 - [[Java-Kotlin-Roadmap]]

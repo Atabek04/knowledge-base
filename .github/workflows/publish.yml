@@ -1,0 +1,80 @@
+# Builds the public wiki with Quartz and pushes the static output to the
+# public repo Atabek04/Atabek04.github.io (GitHub Pages).
+#
+# This vault repo stays private. Only the rendered HTML leaves it, and only
+# for the folders not listed under ignorePatterns in site/quartz.config.yaml.
+#
+# One-time setup:
+#   1. Create the public repo Atabek04/Atabek04.github.io.
+#      Settings -> Pages -> Source: "Deploy from a branch", branch "main", folder "/ (root)".
+#   2. ssh-keygen -t ed25519 -C "kb-pages-deploy" -f kb-pages -N ""
+#      - kb-pages.pub  -> Atabek04.github.io: Settings -> Deploy keys (allow write)
+#      - kb-pages      -> this repo:          Settings -> Secrets -> Actions -> PAGES_DEPLOY_KEY
+name: Publish wiki
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "01-MOCs/**"
+      - "02-Zettelkasten/**"
+      - "Incidents/**"
+      - "Assets/**"
+      - "site/**"
+      - ".github/workflows/publish.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: publish-wiki
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history so Quartz can read created/modified dates from git
+
+      - name: Checkout Quartz
+        uses: actions/checkout@v4
+        with:
+          repository: jackyzha0/quartz
+          ref: v5
+          path: quartz
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Cache Quartz dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            quartz/node_modules
+            quartz/.quartz
+          key: quartz-${{ runner.os }}-${{ hashFiles('quartz/package-lock.json', 'site/quartz.config.yaml') }}
+
+      - name: Overlay site config
+        run: |
+          cp site/quartz.config.yaml site/quartz.ts quartz/
+          cp site/custom.scss quartz/quartz/styles/custom.scss
+          cp site/index.md index.md
+
+      - name: Build
+        working-directory: quartz
+        run: |
+          npm ci
+          npx quartz plugin install --from-config
+          npx quartz build -d ..
+
+      - name: Deploy to Atabek04.github.io
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.PAGES_DEPLOY_KEY }}
+          external_repository: Atabek04/Atabek04.github.io
+          publish_branch: main
+          publish_dir: quartz/public
+          force_orphan: true
+          commit_message: "publish: ${{ github.sha }}"

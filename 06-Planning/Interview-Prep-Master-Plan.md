@@ -16,7 +16,7 @@
 
 | Track | MOC | Tracker | Flashcards |
 |---|---|---|---|
-| DSA / LeetCode | [[LeetCode - MOC]] · [[Coding Interview Patterns - MOC]] | [[Decode-Coding-Interview-Java - Tracker]] · `LeetCode Tracker.base` | `05-Flashcards/dsa/` |
+| DSA | [[Coding Interview Patterns - MOC]] | [[Decode-Coding-Interview-Java - Tracker]] | `05-Flashcards/dsa/` |
 | System Design | [[System Design - MOC]] | modules embedded in MOC | `05-Flashcards/system-design/` |
 | Design Patterns | [[Design Patterns - MOC]] | patterns embedded in MOC | `05-Flashcards/design-patterns/` |
 | Behavioral | [[Behavioral Interview - MOC]] | [[Behavioral-Interview - Tracker]] | `05-Flashcards/behavioral/` |
@@ -66,8 +66,7 @@ Starting ~June 2026 → **interview-ready by ~late October / early November 2026
 
 **Verdict on the Dec 2026 target:**
 - ✅ **Achievable** as a *quality-first* path: ready ~Oct/Nov, applying Nov, offers landing Dec–Feb. This matches your "flexible / quality-first" choice.
-- ⚠️ **Tight as a firm hard deadline.** A *guaranteed* signed offer by 31 Dec 2026 would require either more hours (~22h/week) or cutting scope (see below). The original `LeetCode - MOC` timeline (150 problems by **April 2027**) is *slower* than this plan and contradicts a Dec offer — that conflict is now resolved by the compressed 18h/week schedule below.
-
+- ⚠️ **Tight as a firm hard deadline.** A *guaranteed* signed offer by 31 Dec 2026 would require either more hours (~22h/week) or cutting scope (see below).
 **If the date must harden to Dec 2026, cut in this order:**
 1. Design Patterns Tier 2 (the 15 non-core GoF) → understand-only, skip implementing. Saves ~8h.
 2. NeetCode hard problems (the ~10%) → skip until after first offer. Saves ~15h.
@@ -139,7 +138,6 @@ Per track, the "ATTEMPT" step is non-negotiable — it creates the cognitive str
 ### Read more
 
 - [[Remote-Job-Prep]]
-- [[LeetCode - MOC]]
 - [[System Design - MOC]]
 - [[Design Patterns - MOC]]
 - [[Behavioral Interview - MOC]]

@@ -1,6 +1,6 @@
 TARGET DECK: Tech-KB::DSA::Sliding Window
 Tags: dsa sliding-window
-**Related:** [[LeetCode - MOC]]
+**Related:** [[Coding Interview Patterns - MOC]]
 
 ---
 

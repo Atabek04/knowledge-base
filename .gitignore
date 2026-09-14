@@ -24,3 +24,6 @@ Thumbs.db
 # Skill eval scratch and generated artefacts — never source
 .claude/skills/*-workspace/
 __pycache__/
+
+# Inbox: drafts stay local, never published
+00-Inbox/

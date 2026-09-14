@@ -1,6 +1,6 @@
 ---
 created: 2026-04-30
-aliases: [@classmethod, cls vs self, class method]
+aliases: ["@classmethod", cls vs self, class method]
 tags:
   - python/oop
 ---

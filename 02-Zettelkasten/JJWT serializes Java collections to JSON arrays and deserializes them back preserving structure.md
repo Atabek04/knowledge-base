@@ -55,6 +55,6 @@ That's why `claims["iin"]` works — bracket access = `Map.get(key)`. Returns `O
 
 ### Read more
 
-- [[Kotlin star projection List<*> means element type is unknown at compile time]]
-- [[Kotlin safe cast as? returns null instead of throwing ClassCastException]]
+- [[Kotlin star projection means element type is unknown at compile time]]
+- [[Kotlin safe cast operator returns null instead of throwing ClassCastException]]
 - [[Databases - MOC]]

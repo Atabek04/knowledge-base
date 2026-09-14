@@ -1,4 +1,6 @@
 ---
+tags: [moc, software-engineering, principles]
+---
 
 ## Encapsulation & API Boundaries
 
