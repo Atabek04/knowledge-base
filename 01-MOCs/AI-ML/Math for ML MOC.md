@@ -25,6 +25,7 @@ Teaching progress is tracked here, per section; the chapter roadmap lives in the
 - [[Solving a linear system means finding where the shapes its equations draw intersect|Solving — find where all the equations' shapes intersect]]
     - [[A linear system has zero, one, or infinitely many solutions and never any other count|Solution counts — zero, one, or infinitely many, never other]]
 - [[Elimination replaces an equation, so solving a system means rewriting it|Elimination is rewriting — each step trades one system for another]]
+    - [[Two true equations can be added or subtracted side by side and stay true|Equals combined with equals: what licenses every elimination step]]
     - [[Deriving an equation prevents losing a solution but not gaining one|Derivation blocks losing a solution, never gaining one]]
 - [[A rewrite is safe exactly when the move that produced it can be undone|Reversibility — a move you can undo changes no answers]]
     - [[The three row operations are legal precisely because each one can be undone|Three row operations — swap, scale, add, each reversible]]

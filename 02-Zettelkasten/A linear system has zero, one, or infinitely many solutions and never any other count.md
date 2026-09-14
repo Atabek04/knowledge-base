@@ -10,7 +10,7 @@ The textbook phrase is <b>solution set</b>, plural — and the plural is deliber
 
 ---
 
-### Only three outcomes are possible
+### The three outcomes
 
 <mark style="background: #FF5582A6;">A linear system has zero, exactly one, or infinitely many solutions. No other count can occur.</mark>
 
@@ -26,7 +26,7 @@ Seen as two lines in a plane, the three cases are exactly the three ways two lin
 
 ![[three_solution_counts_two_lines.svg|650]]
 
-#### No solution — contradictory constraints
+#### No solution: contradictory constraints
 
 $$\begin{array}{rrrrr}
 x_1 &+& x_2 &=& 3 \\
@@ -35,7 +35,7 @@ x_1 &+& x_2 &=& 5
 
 The same quantity cannot equal two different numbers. The lines are parallel and never meet, and no assignment of `x₁` and `x₂` can satisfy both.
 
-#### Infinitely many — a redundant constraint
+#### Infinitely many: a redundant constraint
 
 $$\begin{array}{rrrrr}
  x_1 &+&  x_2 &=& 3 \\
@@ -48,7 +48,7 @@ Two equations were written, but only one constraint exists. This is why counting
 
 ---
 
-### Consistent is the word to keep
+### Consistent and inconsistent
 
 <mark style="background: #FFF3A3A6;">A system is <b>consistent</b> when it has at least one solution</mark> — one or infinitely many — and <b>inconsistent</b> when it has none.
 
@@ -58,7 +58,7 @@ Asked deliberately rather than in passing, that becomes the first of [[Existence
 
 ---
 
-### A solution is one point, a solution set is all of them
+### Solution versus solution set
 
 These two are separate objects and the words are not interchangeable.
 

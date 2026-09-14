@@ -22,7 +22,7 @@ The organising principle is [[A rewrite is safe exactly when the move that produ
 
 That closure is what lets a whole chain of rewrites inherit the guarantee: undo the last move, then the one before it, and you arrive back at the system you were given.
 
-#### Swap — exchange two whole equations
+#### Swap: exchange two equations
 
 <mark style="background: #FFF3A3A6;">Swap moves entire equations up or down the list; it never moves terms across the equals sign.</mark> The equations themselves are untouched — only their order on the page changes.
 
@@ -40,7 +40,7 @@ Undo: swap them back.
 
 <mark style="background: #FF5582A6;">Moving a term from one side of an equals sign to the other is not a row operation at all.</mark> It rewrites a single equation internally, which the three moves never do.
 
-#### Scale — multiply one equation by a nonzero number
+#### Scale: multiply by a nonzero number
 
 Every term on both sides is multiplied by the same $c$. Row 1 below is scaled by $3$:
 
@@ -54,7 +54,7 @@ x_1 &+& x_2 &=& 3
 
 Undo: scale by $1/3$ — which is division, and division is just scaling by a reciprocal. That is why the list names only one of the two.
 
-#### Add — add a multiple of one equation to another
+#### Add: a multiple of another equation
 
 The equation being used as the source stays exactly as it was; only the target row changes. Here $-2 \times R_1$ is added to $R_2$:
 
@@ -74,7 +74,7 @@ Undo: add $+2 \times R_1$ back to $R_2$.
 
 ---
 
-### Why "nonzero" is doing real work
+### Why nonzero matters
 
 <mark style="background: #FF5582A6;">Scaling by zero has no undo, because there is no $1/0$ to scale back by.</mark>
 
@@ -94,7 +94,7 @@ One solution has become infinitely many. The word "nonzero" in the second move i
 
 ---
 
-### Why division is absent from the list
+### Why division is absent
 
 Dividing an equation by a nonzero constant is already covered: it is scaling by $1/c$.
 
@@ -104,7 +104,7 @@ What is <i>not</i> on the list is dividing by a <b>variable</b>, and its absence
 
 ---
 
-### The same three moves on a matrix
+### The same moves on a matrix
 
 Performed on the rows of a [[A matrix records a linear system's numbers, with column position replacing the variable names|matrix]] rather than on written-out equations, these are called the <b>elementary row operations</b>. Nothing changes but the notation: a row is an equation with the variable names stripped out, and the three moves are these three moves, legal for the same reason.
 

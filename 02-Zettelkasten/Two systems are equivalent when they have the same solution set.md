@@ -8,7 +8,7 @@ Solving a linear system produces a trail of systems, each replacing the last, an
 
 ---
 
-### The definition
+### Equivalence defined
 
 Two systems are <mark style="background: #FFF3A3A6;">equivalent when they have the same solution set</mark> — the same points satisfy both.
 
@@ -18,7 +18,7 @@ Note what is <i>not</i> required. They need not look alike, share coefficients, 
 
 ---
 
-### A worked example
+### Three systems compared
 
 Start with system <b>A</b>:
 
@@ -47,7 +47,7 @@ Substitute $(2, 1)$ into all three and every equation holds. Substitute anything
 
 ---
 
-### What makes two systems equivalent in practice
+### Equivalence in practice
 
 Equivalence is a property to be <i>established</i>, not observed. Looking at A and C side by side tells you nothing; you would have to solve both to compare their solution sets, which defeats the purpose.
 
@@ -57,7 +57,7 @@ What supplies it is the route between them. The moves in question are [[The thre
 
 ---
 
-### Why this is the licence for the whole method
+### The licence for the method
 
 <mark style="background: #ABF7F7A6;">Because every legal move preserves the solution set, a chain of them does too.</mark> So you may keep [[Elimination replaces an equation, so solving a system means rewriting it|rewriting a system]] into simpler forms and read the answer off the final form knowing it is the answer to the original.
 

@@ -20,7 +20,7 @@ Every step below is one of [[The three row operations are legal precisely becaus
 
 ---
 
-### The target: one distinct leading variable per row
+### Where elimination stops
 
 Read a row from left to right and stop at the first coefficient that is not zero. <mark style="background: #FFF3A3A6;">That number is the row's <b>leading coefficient</b>, and the variable it multiplies is the row's <b>leading variable</b>.</mark>
 
@@ -31,7 +31,7 @@ $$\begin{array}{rcl}
 
 Zeros before the first nonzero entry are skipped — a variable absent from a row can never be that row's leading variable.
 
-#### Every row must lead with a different variable
+#### Distinct leading variables
 
 <mark style="background: #ADCCFFA6;">The goal of elimination is to reach a system where each row leads with a different variable, and the leading variable moves further right as you go down.</mark>
 
@@ -49,11 +49,11 @@ Each row therefore ends up carrying a variable no other row is competing for, an
 
 ---
 
-### Going down — clear each column below the diagonal
+### Going down the columns
 
 <mark style="background: #ADCCFFA6;">Work column by column from the left: keep the leading variable in one equation, and use it to remove that variable from every equation below.</mark>
 
-#### Column 1 — use $x_1$ in equation 1 to clear $x_1$ from equation 3
+#### Clearing column 1
 
 Add $-5$ times equation 1 to equation 3:
 
@@ -67,7 +67,7 @@ $$\begin{array}{rrrrrrr}
 
 Equation 2 needed nothing — it already had no $x_1$ term.
 
-#### When the leading position holds a zero, swap
+#### Swapping past a zero
 
 The system above happened to open with an $x_1$ term. One that does not has nothing to eliminate with:
 
@@ -83,7 +83,7 @@ Equation 1 cannot clear $x_1$ from anything, because it has no $x_1$.
 
 This is the only place the algorithm needs the swap, and it is why a list of two operations would not be enough.
 
-#### Scale equation 2 so its leading coefficient is 1
+#### Scaling the leading coefficient
 
 Multiply equation 2 by $\tfrac12$:
 
@@ -97,7 +97,7 @@ $$\begin{array}{rrrrrrr}
 
 <mark style="background: #ABF7F7A6;">Scaling to a leading 1 is optional for correctness and worth doing anyway, because a coefficient of 1 makes every later multiplier a whole number instead of a fraction.</mark>
 
-#### Column 2 — use $x_2$ in equation 2 to clear $x_2$ from equation 3
+#### Clearing column 2
 
 Add $-10$ times equation 2 to equation 3, then scale the result by $\tfrac{1}{30}$:
 
@@ -119,13 +119,13 @@ At this halfway point [[Existence and uniqueness are the only two questions a li
 
 ---
 
-### Going back up — clear each column above the diagonal
+### Going back up the columns
 
 The system could be finished from here by substituting $x_3 = -1$ into the row above, then both values into the row above that. Continuing with row operations instead keeps the work mechanical, and mechanical is what survives at 500 variables.
 
 <mark style="background: #ADCCFFA6;">Work from the bottom row upward, using each solved variable to clear its column above.</mark>
 
-#### Use $x_3$ to clear the $x_3$ terms in equations 2 and 1
+#### Clearing column 3 upward
 
 Add $4$ times equation 3 to equation 2, and $-1$ times equation 3 to equation 1:
 
@@ -137,7 +137,7 @@ $$\begin{array}{rrrrrrr}
 \qquad
 \left[\begin{array}{ccc|c} 1 & -2 & 0 & 1 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & -1 \end{array}\right]$$
 
-#### Use $x_2$ to clear the $x_2$ term in equation 1
+#### Clearing column 2 upward
 
 Add $2$ times equation 2 to equation 1:
 
@@ -149,17 +149,17 @@ $$\begin{array}{rrrrrrr}
 \qquad
 \left[\begin{array}{ccc|c} 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & -1 \end{array}\right]$$
 
-<mark style="background: #ABF7F7A6;">The algorithm stops when every row names exactly one variable, because at that point the answer is not computed from the system — it is read off it.</mark>
+<mark style="background: #ABF7F7A6;">The algorithm stops when every row names exactly one variable, because at that point no arithmetic is left: each row states its variable's value outright.</mark>
 
 The solution is $(1, 0, -1)$.
 
-#### Why upward before downward would be wasted work
+#### Why not go upward first
 
 Clearing $x_3$ from the upper rows first is cheaper than clearing $x_2$ first, because once the $x_3$ column is clean no later step has any $x_3$ arithmetic left to carry. Ordering the passes this way is not required for correctness, only for effort.
 
 ---
 
-### Checking the answer checks arithmetic, not the method
+### What checking actually verifies
 
 Substituting $(1, 0, -1)$ into the <i>original</i> system:
 

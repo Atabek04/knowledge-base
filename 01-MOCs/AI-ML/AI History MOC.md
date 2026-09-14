@@ -17,6 +17,14 @@ Concepts you need before the Perceptron makes sense. Missing atomic notes to cre
 
 ---
 
+### 0. McCulloch-Pitts Neuron (1943)
+
+The cybernetics era. The first mathematical model of a neuron, before anything could learn.
+
+- [ ] Cybernetics framed the 1940s to 1960s as the study of control and communication in animals and machines
+- [ ] McCulloch and Pitts built the first mathematical model of a neuron as a threshold unit
+- [ ] Networks of McCulloch-Pitts neurons can compute any logical function
+
 ### 1. Perceptron (1958)
 
 The first trainable artificial neuron. A single-layer linear classifier invented by Frank Rosenblatt.
@@ -25,6 +33,14 @@ The first trainable artificial neuron. A single-layer linear classifier invented
 - Perceptron learning rule updates weights when a prediction is wrong
 - Perceptron cannot solve XOR because XOR is not linearly separable
 - The XOR problem triggered the first AI winter
+- [ ] Minsky and Papert's Perceptrons proved the single-layer limits and cut neural network funding
+
+### 1b. Backpropagation and Self-Organisation (1974вЂ“1980)
+
+Two breakthroughs made during the first winter and ignored at the time.
+
+- [ ] Werbos discovered backpropagation in 1974, a decade before anyone used it
+- [ ] Fukushima's Cognitron learned visual features by self-organisation and prefigured CNNs
 
 ### 2. Multi-Layer Perceptron (1986)
 
@@ -34,6 +50,8 @@ Stacking perceptrons with hidden layers + backpropagation solved XOR and launche
 - Backpropagation trains MLPs by propagating error gradients backward
 - Universal approximation theorem says an MLP can approximate any continuous function
 - Non-linear activation functions are what make hidden layers useful
+- [ ] Parallel Distributed Processing reframed cognition as computation spread across many simple units
+- [ ] Elman networks feed the hidden state back as input so the network can learn sequence structure
 
 ### 3. LeNet-5 (1998)
 
@@ -43,6 +61,13 @@ Yann LeCun's convolutional network for handwritten digit recognition. Introduced
 - Weight sharing in convolutions drastically reduces parameters
 - Local receptive fields encode the prior that nearby pixels are related
 - LeNet-5 worked in production on bank checks long before deep learning was mainstream
+- [ ] The second AI winter came from hardware and data limits, not a theoretical wall
+
+### 3b. Deep Belief Networks (2006)
+
+Hinton's restart. Layer-wise pretraining made deep models trainable and gave the field its name.
+
+- [ ] Deep Belief Networks used greedy layer-wise pretraining to make deep models trainable
 
 ### 4. AlexNet (2012)
 
@@ -52,11 +77,13 @@ The ImageNet winner that started the deep learning revolution. Same ideas as LeN
 - ReLU activation made deep networks trainable by avoiding vanishing gradients
 - Dropout regularization prevents overfitting by randomly disabling neurons
 - GPU training made large-scale deep networks practical for the first time
+- [ ] ResNet's skip connections let networks go hundreds of layers deep
 
 ### 5. ChatGPT (2022)
 
 Transformer + scale + RLHF. The jump from perception to language and reasoning.
 
+- [ ] Attention is All You Need introduced the Transformer in 2017
 - Transformer architecture replaced recurrence with self-attention
 - Self-attention lets every token directly attend to every other token
 - Scaling laws show that bigger models and more data predictably improve performance
@@ -106,6 +133,13 @@ What changed when o1, o3, and DeepSeek-R1 appeared — technically and philosoph
 - [[GRPO trains reasoning models by comparing outcome rewards across sampled response groups|GRPO: compare rewards across sampled groups]]
 - [[Thinking tokens create a bounded scratchpad that separates deliberation from final output|Thinking tokens: bounded deliberation scratchpad]]
 - [[Inference-time compute scaling trades token cost for accuracy on hard reasoning tasks|Inference-time compute: tokens for accuracy]]
+
+### 9. Reflections on the Pattern
+
+What the three cycles of hype and winter say about where the field is now.
+
+- [ ] AGI hype risks a third AI winter if expectations outrun results
+- [ ] Neural networks and biological brains differ in goals, learning signals, and structure
 
 ---
 

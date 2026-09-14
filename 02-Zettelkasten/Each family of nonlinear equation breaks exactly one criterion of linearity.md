@@ -25,7 +25,7 @@ A root is a fractional power and a denominator is a negative power, so <mark sty
 
 ---
 
-### Degree and exponential are not the same thing
+### Degree versus exponential
 
 These two get conflated constantly, and the distinction is simply <b>which position the variable occupies</b>.
 
@@ -38,7 +38,7 @@ Both are nonlinear, and they are not interchangeable descriptions of the same gr
 
 ---
 
-### Why the boundary is worth this much care
+### Why the boundary matters
 
 Nonlinear equations are not harder versions of linear ones; they are a different problem with no general solution method. Linear systems have a procedure that always terminates with a complete answer.
 

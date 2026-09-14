@@ -10,7 +10,7 @@ Read geometrically, that requirement has an immediate meaning.
 
 ---
 
-### Every equation is a shape, and the solution lies on all of them
+### Each equation is a shape
 
 Each equation draws a shape — [[The number of variables sets the dimension and each equation draws a shape one dimension lower|a line in 2-D, a plane in 3-D, a hyperplane in general]]. A point satisfies an equation exactly when it lies on that equation's shape.
 

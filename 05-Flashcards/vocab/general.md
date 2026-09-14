@@ -321,3 +321,51 @@ Synonyms: **random** — no pattern at all; arbitrary implies a chooser who simp
 Tags: vocab adjective
 <!--ID: 1788671819516-->
 END
+
+START
+English Card
+read sth off sth
+Back: To **take a value straight from something by looking at it**, with no calculation or extra work in between.
+- The information is already displayed; you only have to see it
+- Contrast with *work out* or *compute*, which need steps
+Russian: считывать, снимать показания (с прибора, со шкалы)
+Example: Elimination stops when every row names one variable, because at that point the answer is not computed from the system, it is **read off** it.
+Forms: read off · read sth off · read sth off sth
+Pattern: read the answer **off** the final form
+read a value **off** a dial / a gauge / a graph
+Collocations: read **the answer** off · read **a measurement** off · read **straight** off the page
+Synonyms: **take from** — neutral, loses the "no work needed" sense
+**compute** — the opposite: the value has to be produced, not seen
+Tags: vocab phrasal-verb measurement
+<!--ID: 1788938855168-->
+END
+
+START
+English Card
+to be up for (an award)
+Back: To be **a candidate being considered** for an award, role, or position.
+- Casual, everyday register — the most common way to say this in speech
+Russian: претендовать на, быть в числе претендентов на
+Example: I could even **be up for** an Oscar.
+Pattern: be up **for** sth
+Collocations: **up for** an award · **up for** a promotion · **up for** the job
+Synonyms: **be a contender for** — implies active competitive standing among rivals, not just candidacy
+**be nominated for** — official selection has already happened; up for is looser, before or without that step
+Tags: vocab phrase idiom
+<!--ID: 1789099175776-->
+END
+
+START
+English Card
+to be a contender for
+Back: To be a **serious competitor with real standing** in a contest or race for something.
+- Implies rivals and active competition, not just eligibility
+Russian: претендовать на, быть реальным претендентом на
+Example: I could even **be a contender for** an Oscar.
+Pattern: be a contender **for** sth
+Collocations: a **strong** contender · a **serious** contender · **top** contender
+Synonyms: **be up for** — casual, plain candidacy, no competitive framing
+**be in the running for** — similar competitive sense, slightly more formal
+Tags: vocab phrase idiom
+<!--ID: 1789099175783-->
+END

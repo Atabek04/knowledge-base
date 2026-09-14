@@ -10,7 +10,7 @@ It is not new. It is a name for what elimination has been doing all along, watch
 
 ---
 
-### Watch a single elimination step
+### A single elimination step
 
 Take the familiar pair:
 
@@ -36,7 +36,7 @@ Dividing by 2 gives $x_2 = 1$, substituting back gives $x_1 = 2$ — and the equ
 
 ---
 
-### Why the word "rewriting" is the right one
+### Why "rewriting" is the right word
 
 Solving is not a single transformation applied to one fixed system. It is a <b>sequence of systems</b>, each replacing the last, ending at one whose answer can be read off directly:
 
@@ -50,7 +50,7 @@ Which rewrite to perform first, and when to stop, is [[Elimination clears one va
 
 ---
 
-### Which raises a question the method has to answer
+### Does rewriting change the answers
 
 The answer $(2, 1)$ came out of a system that is <b>not</b> the one that was asked. <mark style="background: #FF9E9EA6;">Reading an answer off equations you were never given is only safe if something guarantees the two systems have the same answers.</mark>
 

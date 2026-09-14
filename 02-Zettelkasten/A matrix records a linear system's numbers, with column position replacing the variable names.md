@@ -8,7 +8,7 @@ Writing a system out in full means writing `x₁`, `x₂`, `x₃` on every line,
 
 ---
 
-### A matrix is a rectangular array of numbers
+### Matrix as a rectangular array
 
 <mark style="background: #FFF3A3A6;">A <b>matrix</b> is a rectangular array of numbers.</mark> Nothing more is required of it — no meaning is built into the definition.
 
@@ -32,7 +32,7 @@ That is also why the alignment above matters. A gap in the written system — th
 
 Two matrices come out of one system, and they differ by exactly one column.
 
-#### Coefficient matrix — the left-hand sides only
+#### Coefficient matrix: left-hand sides only
 
 $$\begin{bmatrix} 1 & -2 & 1 \\ 0 & 2 & -8 \\ 5 & 0 & -5 \end{bmatrix}$$
 
@@ -40,7 +40,7 @@ $$\begin{bmatrix} 1 & -2 & 1 \\ 0 & 2 & -8 \\ 5 & 0 & -5 \end{bmatrix}$$
 
 The second row opens with $0$ because the second equation carries no $x_1$ term — written in full it is $0 \cdot x_1 + 2x_2 - 8x_3 = 8$. <mark style="background: #FF5582A6;">A variable absent from an equation is not a missing entry; it is a coefficient of zero, and it must be written.</mark> Leaving the position empty shifts every later number into the wrong column.
 
-#### Augmented matrix — with the constants attached
+#### Augmented matrix: constants attached
 
 $$\left[\begin{array}{ccc|c} 1 & -2 & 1 & 0 \\ 0 & 2 & -8 & 8 \\ 5 & 0 & -5 & 10 \end{array}\right]$$
 
@@ -52,7 +52,7 @@ The name says what happened: the coefficient matrix was <i>augmented</i> — enl
 
 ---
 
-### Size is written m × n, rows first
+### Size, rows before columns
 
 <mark style="background: #FFF3A3A6;">The <b>size</b> of a matrix is its number of rows and columns, written $m \times n$ for $m$ rows and $n$ columns.</mark>
 
@@ -64,7 +64,7 @@ The same row-then-column order governs [[Subscript notation lets one formula des
 
 ---
 
-### What the numbers mean once the names are gone
+### Meaning without variable names
 
 A row is an equation; a column is a variable. That correspondence is the whole content of the notation, and it is what lets [[The three row operations are legal precisely because each one can be undone|the three row operations]] be performed on rows of numbers rather than on written-out equations — under the name <b>elementary row operations</b>, doing the same thing for the same reason.
 

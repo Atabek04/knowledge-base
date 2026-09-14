@@ -1,4 +1,4 @@
-TARGET DECK: Math::Linear Algebra
+﻿TARGET DECK: Math::Linear Algebra
 Tags: math linear-algebra
 **Chapter:** Systems of Linear Equations (Lay §1.1)
 **Related:** [[Math for ML MOC]]
@@ -1276,4 +1276,32 @@ Back: A number is stored as `±.d₁…d_p × 10ʳ` — a **fixed budget of sign
 **What it changes about the theory:** *nothing*. Reversibility, equivalence and the three solution counts are statements about exact arithmetic. Floating point is a property of the machine, not the algorithm.
 Tags: math linear-algebra floating-point
 <!--ID: 1788930941340-->
+END
+
+START
+Coding Questions
+What rule licenses combining two equations of a system into a new one, and what exactly does it claim?
+Back: **Equals combined with equals give equals.**
+
+<div>\[ \text{if } a = b \text{ and } c = d, \text{ then } a - c = b - d \text{ and } a + c = b + d \]</div>
+
+Two separate *true* statements go in, a third true statement comes out. Nothing is assumed about the letters, only that each pair was equal to start with.
+
+**The picture:** two balanced scales. Take the contents of the second off the first, pan for pan. Equal amounts left both sides, so the balance holds.
+
+**Scaling is the same rule:** if `a = b` then `ka = kb`, for a constant `k`.
+Tags: math linear-algebra equals-combined
+<!--ID: 1788936498373-->
+END
+
+START
+Coding Questions
+When you scale an equation by a factor `k`, why must `k` be a constant and never a variable?
+Back: **A variable might be zero.**
+
+Multiplying through by a variable that turns out to be `0` flattens the equation to `0 = 0`, which is still true but true of *everything*, so the system now accepts every point on the remaining line.
+
+That is **gaining** solutions, and it needs no squaring or exotic algebra: one careless multiplication does it inside a plain linear system.
+Tags: math linear-algebra equals-combined
+<!--ID: 1788936498417-->
 END

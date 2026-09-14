@@ -15,7 +15,7 @@ Three equations in two unknowns is therefore three lines in one plane — not th
 
 ---
 
-### One equation always drops exactly one dimension
+### Each equation drops one dimension
 
 | Variables | Space | One equation draws |
 |---|---|---|
@@ -33,7 +33,7 @@ A <b>degree of freedom</b> (ru: степень свободы) is one choice you
 
 Fewer free choices means a smaller shape, and the loss is always exactly one.
 
-#### Why exactly one dimension is lost, step by step
+#### Why exactly one dimension
 
 Take three variables, so every point in the space is a triple $(x_1, x_2, x_3)$ — that triple *is* what "3-D" means here. All three coordinates are present at every point; none of them is the dimension count.
 
@@ -69,7 +69,7 @@ Both sheets above are hyperplanes of 3-D space: each is flat, each is 2-dimensio
 
 ---
 
-### Not being able to picture 4-D is fine
+### Picturing four dimensions
 
 <mark style="background: #FF9E9EA6;">Four dimensions and beyond cannot be visualised, and no amount of effort fixes that.</mark> This is not a gap in your intuition to be worked on; it is a limit of spatial imagination that everyone shares.
 

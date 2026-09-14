@@ -17,7 +17,7 @@ Read the bottom row back as an equation and it says $0x_1 + 0x_2 + 0x_3 = 15$, w
 
 ---
 
-### The verdict transfers back to the original system
+### The verdict transfers back
 
 The contradiction appeared in a system nobody was asked about — it was produced by several row operations.
 
@@ -27,7 +27,7 @@ It still settles the original, because [[Row equivalent matrices are linked by t
 
 ---
 
-### The all-zero row is the opposite case
+### The all-zero row
 
 A row of zeros with a zero constant, $0 = 0$, is harmless. It is true at every point.
 
@@ -42,7 +42,7 @@ A $0 = 0$ row means one equation was a combination of the others and contributed
 
 ---
 
-### It answers existence without answering anything else
+### Existence answered, uniqueness not
 
 Finding this row settles [[Existence and uniqueness are the only two questions a linear system has to answer|the existence question]] with a "no", at which point uniqueness stops being a question — there is nothing to be unique.
 

@@ -67,7 +67,7 @@ This is what licenses the whole method: a solution read off the final matrix is 
 
 Nothing is lost by that. The theorem is used in the direction that matters — you perform operations and want the answer to survive — and never in reverse.
 
-#### Two systems with the same solution set and no route between them
+#### Same solution set, no route
 
 Both of these are satisfied by exactly the points on the line $x_1 + x_2 = 1$:
 

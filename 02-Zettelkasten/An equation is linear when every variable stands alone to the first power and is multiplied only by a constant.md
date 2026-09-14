@@ -37,7 +37,7 @@ The word carries the definition: <b>degree 1 in two variables draws a straight l
 
 ---
 
-### Judge a power by what it sits on
+### What the power sits on
 
 The most common misreading is treating any root or exponent as disqualifying. Consider:
 
@@ -53,7 +53,7 @@ Every variable stands alone, to the first power, times a constant. Linear.
 
 ---
 
-### Constant times variable is fine — variable times variable is not
+### Which multiplications are allowed
 
 Criterion 1 is often compressed to "no multiplication", which is too strong and leads to rejecting perfectly linear equations.
 

@@ -10,7 +10,7 @@ So a stronger test is needed. It is a single question, and it is not the one mos
 
 ---
 
-### The test
+### The reversibility test
 
 <mark style="background: #FFF3A3A6;">Trust a rewritten system when the move that produced it can be undone. Distrust it when it cannot.</mark>
 
@@ -77,7 +77,7 @@ That is $e_2$, back exactly as it was.
 
 ---
 
-### Why undoing it settles the question
+### Why the undo is decisive
 
 If the move can be undone, the implication runs <b>both directions</b>:
 
@@ -88,7 +88,7 @@ The second bullet is exactly what derivation alone could not supply, and running
 
 <mark style="background: #ABF7F7A6;">Two systems that each imply the other must accept exactly the same points.</mark>
 
-#### The consequence for practice
+#### No checking against the original
 
 An answer read off the final system never needs checking against the original. <mark style="background: #ADCCFFA6;">Verify that each move was reversible, and the answer is guaranteed before any arithmetic is done.</mark>
 

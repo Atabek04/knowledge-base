@@ -15,7 +15,7 @@ A computer holds a number as a decimal of fixed length — $\pm .d_1 \ldots d_p 
 
 ---
 
-### Why elimination is where it shows
+### Why elimination shows it
 
 <mark style="background: #ABF7F7A6;">[[Elimination clears one variable per column going down, then clears back up until each row names one variable|Elimination]] is a long chain of multiplications and subtractions, and each link inherits the error of the ones before it.</mark> Nothing resets; the errors compound.
 
@@ -25,7 +25,7 @@ Production solvers therefore run the same algorithm with modifications for accur
 
 ---
 
-### What it changes about the theory
+### Effect on the theory
 
 Nothing. <mark style="background: #ADCCFFA6;">Every guarantee in the subject — reversibility, equivalence, the three solution counts — is a statement about exact arithmetic and stays exactly true.</mark>
 
