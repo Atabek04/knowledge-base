@@ -116,10 +116,12 @@ const scopedExplorer = `
   const hide = (el) => { el.style.display = "none"; el.setAttribute("data-scoped", "1") }
   const mark = (el, cls) => { el.classList.add(cls); el.setAttribute("data-scoped", "1") }
 
+  // returns true once the tree exists and has been handled
   const scope = () => {
     const ex = document.querySelector(".explorer")
     const ul = ex && ex.querySelector(".explorer-ul")
-    if (!ul) return
+    if (!ex) return true
+    if (!ul || !ul.querySelector("li .folder-container")) return false // tree not rendered yet
     CLEAN()
 
     const slug = document.body.dataset.slug || ""
@@ -133,10 +135,10 @@ const scopedExplorer = `
         mocHref = m[0] // path from 01-mocs/ on; the tree uses absolute hrefs
       }
     }
-    if (!folder) return
+    if (!folder) return true
 
     const target = ul.querySelector('.folder-container[data-folderpath="' + folder + '"]')
-    if (!target) return
+    if (!target) return true
     const targetLi = target.closest("li")
 
     // hide every branch that is not on the path to the target
@@ -168,9 +170,19 @@ const scopedExplorer = `
     crumb.className = "explorer-scope"
     crumb.innerHTML = '<a href="' + base + '/">\\u2190 All subjects</a>'
     ex.querySelector(".explorer-content").prepend(crumb)
+    return true
   }
 
-  const run = () => setTimeout(scope, 0)
+  // the explorer fills its tree after fetching the content index; poll until it is there
+  let attempt = 0
+  const tick = () => {
+    if (scope() || ++attempt > 50) return
+    setTimeout(tick, 100)
+  }
+  const run = () => {
+    attempt = 0
+    setTimeout(tick, 0)
+  }
   document.addEventListener("nav", run)
   run()
 })()
