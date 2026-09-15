@@ -1,5 +1,5 @@
 # Builds the public wiki with Quartz and deploys it to GitHub Pages from this
-# repo's own Actions run. Site: https://atabek04.github.io/kb
+# repo's own Actions run. Site: https://atabek04.github.io/knowledge-base
 #
 # Only the folders not listed under ignorePatterns in site/quartz.config.yaml
 # are rendered. One-time setup: Settings -> Pages -> Source: "GitHub Actions".

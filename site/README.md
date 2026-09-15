@@ -1,6 +1,6 @@
 # Public wiki (Quartz)
 
-The vault is published as a static site with [Quartz 5](https://quartz.jzhao.xyz) at `https://atabek04.github.io/kb` (the path is the repo name).
+The vault is published as a static site with [Quartz 5](https://quartz.jzhao.xyz) at `https://atabek04.github.io/knowledge-base` (the path is the repo name).
 
 | File | Role |
 |---|---|
