@@ -20,7 +20,9 @@ componentRegistry.setOptionOverrides("@quartz-community/explorer", {
   order: ["filter", "sort", "map"],
   filterFn: (node: TrieNode) => {
     const name = node.displayName.toLowerCase()
-    return name !== "02-zettelkasten" && name !== "tags" && name !== "tag index"
+    return (
+      name !== "02-zettelkasten" && name !== "tags" && name !== "tag index" && name !== "readme"
+    )
   },
   mapFn: (node: TrieNode) => {
     if (node.displayName === "01-MOCs") node.displayName = "Subjects"
@@ -30,6 +32,48 @@ componentRegistry.setOptionOverrides("@quartz-community/explorer", {
 })
 
 const config = await loadQuartzConfig()
+
+// ── Display math fences ────────────────────────────────────
+// Obsidian accepts `$$\begin{array}` and `\end{array}$$` on the fence line;
+// remark-math treats text after an opening `$$` as an ignored info string
+// and does not recognise a closing `$$` with content before it, so the block
+// swallows the rest of the note. Put every multi-line fence on its own line.
+config.plugins.transformers.push({
+  name: "DisplayMathFences",
+  textTransform: (_ctx: unknown, src: string) => {
+    const out: string[] = []
+    let inCode = false
+    let inMath = false
+    for (const line of src.split("\n")) {
+      if (/^\s*```/.test(line)) inCode = !inCode
+      if (inCode) {
+        out.push(line)
+        continue
+      }
+      const trimmed = line.trim()
+      if (!inMath) {
+        // `$$content` (no closing fence on the same line) opens a block
+        if (trimmed.startsWith("$$") && trimmed.length > 2 && !trimmed.slice(2).includes("$$")) {
+          out.push("$$", trimmed.slice(2))
+          inMath = true
+          continue
+        }
+        if (trimmed === "$$") inMath = true
+        out.push(line)
+        continue
+      }
+      // inside a block: `content$$` closes it
+      if (trimmed.endsWith("$$") && trimmed.length > 2) {
+        out.push(trimmed.slice(0, -2), "$$")
+        inMath = false
+        continue
+      }
+      if (trimmed === "$$") inMath = false
+      out.push(line)
+    }
+    return out.join("\n")
+  },
+})
 
 // ── SVG embeds ─────────────────────────────────────────────
 // Obsidian-flavored-markdown turns ![[diagram.svg|650]] into
