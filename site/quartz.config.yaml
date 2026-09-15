@@ -32,8 +32,11 @@ configuration:
     - .claude
     - .github
   theme:
+    # cdnCaching: false downloads the font files at build time into
+    # static/fonts, so the typography does not depend on Google Fonts
+    # being reachable from the reader's network.
     fontOrigin: googleFonts
-    cdnCaching: true
+    cdnCaching: false
     # "header" is the UI sans (sidebars, TOC, meta, footer); article headings are
     # set in the serif via custom.scss. Same trio as the System-Analyst wiki.
     typography:
@@ -185,11 +188,7 @@ plugins:
       priority: 30
       group: toolbar
   - source: "@quartz-community/reader-mode"
-    enabled: true
-    layout:
-      position: left
-      priority: 35
-      group: toolbar
+    enabled: false
   - source: "@quartz-community/spacer"
     enabled: true
     order: 25
@@ -202,8 +201,8 @@ plugins:
     options:
       title: Browse
       folderClickBehavior: link
-      folderDefaultState: collapsed
-      useSavedState: true
+      folderDefaultState: open
+      useSavedState: false
     layout:
       position: left
       priority: 50

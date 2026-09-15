@@ -98,5 +98,90 @@ config.plugins.transformers.push({
   ],
 })
 
+// ── Scoped explorer ────────────────────────────────────────
+// The full tree (14 categories, 60+ MOCs) is too tall to navigate. Once a
+// page is open, the sidebar shows only the current category: its folder row
+// as the root, its MOCs beneath, and an "All subjects" link above to go back
+// up. Atomic notes take the category of the first MOC that links to them.
+const scopedExplorer = `
+(() => {
+  const CLEAN = () => {
+    document.querySelectorAll("[data-scoped]").forEach((e) => {
+      e.style.display = ""
+      e.classList.remove("scoped-root", "scoped-active")
+      e.removeAttribute("data-scoped")
+    })
+    document.querySelector(".explorer-scope")?.remove()
+  }
+  const hide = (el) => { el.style.display = "none"; el.setAttribute("data-scoped", "1") }
+  const mark = (el, cls) => { el.classList.add(cls); el.setAttribute("data-scoped", "1") }
+
+  const scope = () => {
+    const ex = document.querySelector(".explorer")
+    const ul = ex && ex.querySelector(".explorer-ul")
+    if (!ul) return
+    CLEAN()
+
+    const slug = document.body.dataset.slug || ""
+    let folder = null, mocHref = null, m
+    if ((m = slug.match(/^01-mocs\\/([^/]+)\\//))) folder = "01-mocs/" + m[1] + "/index"
+    else if (slug.startsWith("incidents/")) folder = "incidents/index"
+    else if (slug.startsWith("02-zettelkasten/")) {
+      const a = document.querySelector('.backlinks a[href*="/01-mocs/"]')
+      if (a && (m = a.getAttribute("href").match(/01-mocs\\/([^/]+)\\/.*$/))) {
+        folder = "01-mocs/" + m[1] + "/index"
+        mocHref = m[0] // path from 01-mocs/ on; the tree uses absolute hrefs
+      }
+    }
+    if (!folder) return
+
+    const target = ul.querySelector('.folder-container[data-folderpath="' + folder + '"]')
+    if (!target) return
+    const targetLi = target.closest("li")
+
+    // hide every branch that is not on the path to the target
+    const onPath = new Set()
+    for (let el = targetLi; el && el !== ul; el = el.parentElement) if (el.tagName === "LI") onPath.add(el)
+    ul.querySelectorAll("li").forEach((li) => {
+      if (!onPath.has(li) && !targetLi.contains(li) && li.querySelector(".folder-container, a")) hide(li)
+    })
+    // the ancestor folder row (Subjects) gives way to the breadcrumb; its list loses its indent
+    for (let el = targetLi.parentElement; el && el !== ul; el = el.parentElement) {
+      if (el.tagName === "LI") {
+        const row = el.querySelector(":scope > .folder-container")
+        if (row) hide(row)
+        const outer = el.querySelector(":scope > .folder-outer")
+        if (outer) { outer.classList.add("open"); mark(outer, "scoped-root") }
+      }
+    }
+    const outer = targetLi.querySelector(":scope > .folder-outer")
+    if (outer) { outer.classList.add("open"); mark(outer, "scoped-open") }
+    mark(target, "scoped-active")
+
+    if (mocHref) {
+      const link = [...ul.querySelectorAll("a")].find((l) => l.getAttribute("href").endsWith(mocHref))
+      if (link) mark(link, "active")
+    }
+
+    const base = document.body.dataset.basepath || ""
+    const crumb = document.createElement("div")
+    crumb.className = "explorer-scope"
+    crumb.innerHTML = '<a href="' + base + '/">\\u2190 All subjects</a>'
+    ex.querySelector(".explorer-content").prepend(crumb)
+  }
+
+  const run = () => setTimeout(scope, 0)
+  document.addEventListener("nav", run)
+  run()
+})()
+`
+
+config.plugins.transformers.push({
+  name: "ScopedExplorer",
+  externalResources: () => ({
+    js: [{ loadTime: "afterDOMReady", contentType: "inline", script: scopedExplorer }],
+  }),
+})
+
 export default config
 export const layout = await loadQuartzLayout()
