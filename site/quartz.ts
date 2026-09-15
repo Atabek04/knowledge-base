@@ -35,16 +35,19 @@ const config = await loadQuartzConfig()
 // Obsidian-flavored-markdown turns ![[diagram.svg|650]] into
 // <object data="diagram.svg">, but crawl-links only rewrites <img src>, so the
 // bare filename 404s from any subfolder. Every SVG in the vault lives in
-// Assets/ (emitted as /assets/), so point the object there.
+// Assets/ (emitted as assets/), so point the object there with a path
+// relative to the page, which survives the /kb subpath on GitHub Pages.
 config.plugins.transformers.push({
   name: "SvgEmbedPath",
   htmlPlugins: () => [
-    () => (tree: Root) => {
+    () => (tree: Root, file: { data: { slug?: string } }) => {
+      const depth = (file.data.slug ?? "").split("/").length - 1
+      const up = "../".repeat(depth)
       visit(tree, "element", (node: Element) => {
         const data = node.properties?.data
         if (node.tagName !== "object" || typeof data !== "string") return
         if (data.endsWith(".svg") && !data.includes("/")) {
-          node.properties!.data = "/assets/" + data
+          node.properties!.data = up + "assets/" + data
         }
       })
     },

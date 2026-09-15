@@ -1,6 +1,6 @@
 # Public wiki (Quartz)
 
-The vault is published as a static site with [Quartz 5](https://quartz.jzhao.xyz) at `https://atabek04.github.io`.
+The vault is published as a static site with [Quartz 5](https://quartz.jzhao.xyz) at `https://atabek04.github.io/kb` (the path is the repo name).
 
 | File | Role |
 |---|---|
@@ -11,6 +11,6 @@ The vault is published as a static site with [Quartz 5](https://quartz.jzhao.xyz
 
 Published: `01-MOCs`, `02-Zettelkasten`, `Incidents`, `Assets` (minus `Assets/Books`). Everything else is ignored.
 
-- Deploy: `.github/workflows/publish.yml` builds on every push to `main` and pushes `public/` to the public repo `Atabek04/Atabek04.github.io`.
+- Deploy: `.github/workflows/publish.yml` builds on every push to `main` and deploys `public/` to GitHub Pages from this repo (Settings, Pages, Source: GitHub Actions).
 - Preview: `.\scripts\site-preview.ps1` (Node 22+), then open `http://localhost:8080`.
 - Frontmatter must be valid YAML: quote aliases that start with `@`, `!`, `*`, `&` or contain `: `. A build fails on the first bad file.

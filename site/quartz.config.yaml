@@ -9,7 +9,7 @@ configuration:
   enablePopovers: true
   analytics: null
   locale: en-US
-  baseUrl: atabek04.github.io
+  baseUrl: atabek04.github.io/kb
   ignorePatterns:
     # working folders, never published
     - 00-Inbox

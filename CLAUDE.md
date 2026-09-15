@@ -482,7 +482,7 @@ All flashcard rules — syntax, deck hierarchy, question quality, vocab cards, A
 
 ## Public Wiki
 
-`01-MOCs`, `02-Zettelkasten`, `Incidents` and `Assets` are published with Quartz to `https://atabek04.github.io` on every push to `main` (`.github/workflows/publish.yml`). Config lives in `site/` (see `site/README.md`); preview with `.\scripts\site-preview.ps1`.
+`01-MOCs`, `02-Zettelkasten`, `Incidents` and `Assets` are published with Quartz to `https://atabek04.github.io/kb` on every push to `main` (`.github/workflows/publish.yml`). Config lives in `site/` (see `site/README.md`); preview with `.\scripts\site-preview.ps1`.
 
 - **Frontmatter must parse as YAML** or the whole build fails: quote aliases starting with `@`, `!`, `*`, `&` (`aliases: ["@PreAuthorize", ...]`).
 - A note that must stay private gets `draft: true`; a folder gets a line in `ignorePatterns`.

@@ -1,15 +1,8 @@
-# Builds the public wiki with Quartz and pushes the static output to the
-# public repo Atabek04/Atabek04.github.io (GitHub Pages).
+# Builds the public wiki with Quartz and deploys it to GitHub Pages from this
+# repo's own Actions run. Site: https://atabek04.github.io/kb
 #
-# This vault repo stays private. Only the rendered HTML leaves it, and only
-# for the folders not listed under ignorePatterns in site/quartz.config.yaml.
-#
-# One-time setup:
-#   1. Create the public repo Atabek04/Atabek04.github.io.
-#      Settings -> Pages -> Source: "Deploy from a branch", branch "main", folder "/ (root)".
-#   2. ssh-keygen -t ed25519 -C "kb-pages-deploy" -f kb-pages -N ""
-#      - kb-pages.pub  -> Atabek04.github.io: Settings -> Deploy keys (allow write)
-#      - kb-pages      -> this repo:          Settings -> Secrets -> Actions -> PAGES_DEPLOY_KEY
+# Only the folders not listed under ignorePatterns in site/quartz.config.yaml
+# are rendered. One-time setup: Settings -> Pages -> Source: "GitHub Actions".
 name: Publish wiki
 
 on:
@@ -24,12 +17,17 @@ on:
       - ".github/workflows/publish.yml"
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 concurrency:
   group: publish-wiki
   cancel-in-progress: true
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout vault
@@ -69,12 +67,16 @@ jobs:
           npx quartz plugin install --from-config
           npx quartz build -d ..
 
-      - name: Deploy to Atabek04.github.io
-        uses: peaceiris/actions-gh-pages@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
-          deploy_key: ${{ secrets.PAGES_DEPLOY_KEY }}
-          external_repository: Atabek04/Atabek04.github.io
-          publish_branch: main
-          publish_dir: quartz/public
-          force_orphan: true
-          commit_message: "publish: ${{ github.sha }}"
+          path: quartz/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
