@@ -486,7 +486,15 @@ All flashcard rules — syntax, deck hierarchy, question quality, vocab cards, A
 
 - **Frontmatter must parse as YAML** or the whole build fails: quote aliases starting with `@`, `!`, `*`, `&` (`aliases: ["@PreAuthorize", ...]`).
 - A note that must stay private gets `draft: true`; a folder gets a line in `ignorePatterns`.
-- `00-Inbox/` is gitignored, so it can never be published.
+- `00-Inbox/` and `Assets/Books/` are gitignored, so they can never be published.
+
+### Incidents are public
+
+An incident in `Incidents/` describes the <b>mechanism</b>, never the system it happened in. Four sections, about 150 words: Symptom, Root cause, Where to look next time, Lessons (template: `Templates/Incident Report.md`).
+
+- <b>Never</b>: company, product, customer, colleague or project names; hostnames, IPs, repo names, ticket ids, commit hashes, table or column names, config values, internal class names.
+- <b>Always</b>: the class of component ("a ClickHouse view", "a systemd unit"); framework and library class names are fine (`OncePerRequestFilter`, `SseEmitter`).
+- No Impact or Timeline sections. If a lesson is reusable, it becomes an atomic note and the incident links it.
 
 ## Tech Stack Context
 

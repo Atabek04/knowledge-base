@@ -27,3 +27,6 @@ __pycache__/
 
 # Inbox: drafts stay local, never published
 00-Inbox/
+
+# Copyrighted PDFs stay local
+Assets/Books/

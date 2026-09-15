@@ -61,7 +61,8 @@ created: 2026-06-24
 - [[2026-06 IntelliJ update left a stale final class breaking Spring config|IntelliJ update → stale final .class broke Spring allopen config]]
 - [[2026-06 ClickHouse view type desync surfaced as a phantom 401|ClickHouse view type desync → unhandled 500 masked as empty-body 401]]
 - [[2026-06 OCSP flag was a no-op because Kalkan ran OCSP via a different verifier preset|OCSP flag no-op → Kalkan ran OCSP via a different verifier preset]]
-- [[2026-07 DiskFull crashed Celery worker so old-booking SMS send-code silently returned false success for 4 days|DiskFull crashed Celery → old-booking SMS silently false-succeeded 4 days]]
+- [[2026-07 DiskFull crashed a Celery worker so an SMS endpoint silently returned success for 4 days|DiskFull crash-looped a Celery worker: SMS endpoint reported success for 4 days]]
+- [[2026-07 SSE events endpoint hung in CONNECTING because an idle stream never flushed its headers|SSE stuck in CONNECTING: headers flush only on the first send]]
 
 ---
 
