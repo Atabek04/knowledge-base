@@ -156,4 +156,5 @@ Distinct from ML Engineering — AI Engineers consume pre-trained models via API
 
 - [[Prompt Engineering MOC]] — substrate underneath all LLM apps
 - [[Agentic Engineering MOC]] — using AI tools to code (the consumer side)
+- [[Claude Certifications MOC]] — exam-shaped view over API, MCP, agents
 - [[Machine Learning MOC]] — training models from scratch

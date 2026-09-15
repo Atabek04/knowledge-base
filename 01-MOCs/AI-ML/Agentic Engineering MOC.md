@@ -94,4 +94,5 @@ Different from chat-style prompting: coding agents have a **loop** (observe → 
 
 - [[Prompt Engineering MOC]] — the substrate
 - [[AI Engineering MOC]] — the producer side (building AI products)
+- [[Claude Certifications MOC]] — exam-shaped view over Claude Code and agents
 - [[Git worktree checks out multiple branches into separate folders sharing one .git]]
