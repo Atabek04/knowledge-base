@@ -42,4 +42,4 @@ Source: [HelloInterview — Delivery Framework](https://www.hellointerview.com/l
 
 Read more:
 - [[System Design - MOC]]
-- [[Interview-Prep-Master-Plan]]
+- Interview prep plan and trackers: Ribaat vault, `06-Planning/Job-Search/`

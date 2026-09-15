@@ -14,7 +14,6 @@ configuration:
     # working folders, never published
     - 00-Inbox
     - 05-Flashcards
-    - 06-Planning
     - Templates
     - scripts
     - emojis

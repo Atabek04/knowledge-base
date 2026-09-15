@@ -17,4 +17,4 @@ Source: [r/IELTS — 7.0 to 8.0 write-up](https://www.reddit.com/r/IELTS/comment
 ### Read more
 - [[Mastering the band descriptors moves a score more than adding practice-test volume]]
 - [[A marked essay only changes a score when it is rewritten after the feedback]]
-- [[IELTS - Prep Plan]]
+- IELTS prep plan, log and test calendar: Ribaat vault, `06-Planning/Topics/IELTS/`

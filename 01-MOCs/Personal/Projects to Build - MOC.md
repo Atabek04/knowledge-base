@@ -55,6 +55,6 @@ Existing tools or systems worth improving, or small utilities worth building.
 
 ## Related
 
-- [[Java-Kotlin-Roadmap]]
+- Java and Kotlin roadmap: Ribaat vault, `06-Planning/Topics/Java-Kotlin-Roadmap.md`
 - [[System Design - MOC]]
 - [[Architecture - MOC]]

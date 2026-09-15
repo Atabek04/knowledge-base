@@ -1,6 +1,6 @@
 # Log template
 
-Create `06-Planning/Trackers/IELTS-Log.md` from this if it doesn't exist. It is the coach's
+Create `../Ribaat/06-Planning/Topics/IELTS/IELTS-Log.md` (Ribaat vault) from this if it doesn't exist. It is the coach's
 only persistent state: everything that accumulates between sessions lives here, nothing in
 the skill.
 
@@ -15,7 +15,7 @@ tags: [ielts, tracker]
 ---
 
 Running log for IELTS Academic, target overall 8.0, February 2027.
-Route: L 8.5 · R 8.5 · S 7.5 · W 7.0 (sum 31.5). Plan: [[IELTS - Prep Plan]]
+Route: L 8.5 · R 8.5 · S 7.5 · W 7.0 (sum 31.5). Plan: `IELTS - Prep Plan.md` in the same folder
 
 ## Current bands
 

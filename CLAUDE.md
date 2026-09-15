@@ -504,8 +504,8 @@ An incident in `Incidents/` describes the <b>mechanism</b>, never the system it 
 
 ## Interview Prep
 
-- **Methodology + trackers (this vault):** `06-Planning/Interview-Prep-Master-Plan.md` (track end-states) · `06-Planning/Trackers/` (per-course tick lists — Grokking Patterns/SD, Decode, Behavioral, Design Patterns).
-- **Month→week schedule + applications (Ribaat vault):** `06-Planning/Job-Search/Interview-Prep-Execution.md` (the executable plan) · `Tracker-Kanban.md` + `Application-Log.md` (pipeline tracking).
+- This vault holds only the knowledge: MOCs, atomic notes, flashcards.
+- Plans, trackers and applications live in the Ribaat vault (`../Ribaat`): `06-Planning/Job-Search/Interview-Prep-Master-Plan.md` (track end-states), `06-Planning/Job-Search/Trackers/` (per-course tick lists), `Interview-Prep-Execution.md` (month to week schedule), `Tracker-Kanban.md` and `Application-Log.md` (pipeline). IELTS plan and log: `06-Planning/Topics/IELTS/`.
 
 ## Islamic Filter for Western Content
 

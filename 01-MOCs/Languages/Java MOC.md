@@ -292,4 +292,4 @@ tags: [moc, java]
 - [[Spring Ecosystem - MOC]]
 - [[Design Patterns - MOC]]
 - [[Testing - MOC]]
-- [[Java-Kotlin-Roadmap]]
+- Java and Kotlin roadmap: Ribaat vault, `06-Planning/Topics/Java-Kotlin-Roadmap.md`

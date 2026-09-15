@@ -50,7 +50,7 @@ Focus areas: **Backend**, **DevOps**, **System Design**.
 01-MOCs/            Navigation hubs for topics
 02-Zettelkasten/    Atomic permanent notes (core)
 05-Flashcards/      Spaced repetition cards (Obsidian → Anki)
-06-Planning/        Interview prep, trackers, schedules
+Incidents/          Short, public-safe post-mortems
 Assets/             Images and attachments
 scripts/            Maintenance scripts
 .claude/skills/     Operational workflow skills (flashcard-creator, note-validator)

@@ -1,4 +1,4 @@
-> Track 4 of the [[Interview-Prep-Master-Plan|Senior Backend interview-prep system]]
+> Track 4 of the Senior Backend interview-prep system (Interview-Prep-Master-Plan, Ribaat vault, `06-Planning/Job-Search/`)
 > The behavioral round is the **leveling round** — it decides senior vs mid, not just pass/fail. Most engineers underprepare here. Don't.
 
 ---
@@ -60,7 +60,7 @@ Every behavioral question probes one of these signals. Your 5-7 stories must cov
 
 ### The story bank (build 5-7)
 
-Each story lives as an atomic note in `02-Zettelkasten/` and is tracked in [[Behavioral-Interview - Tracker]].
+Each story lives as an atomic note in `02-Zettelkasten/` and is tracked in the Behavioral-Interview tracker (Ribaat vault, `06-Planning/Job-Search/Trackers/`).
 
 Recommended core set:
 1. **Biggest ownership win** — a project you drove end-to-end (covers ownership, technical decision, result).
@@ -115,14 +115,14 @@ Your numbers (from [[Remote-Job-Prep]]): floor **$2,000/mo**, ask **$4,500-6,000
 2. Tag the competencies it covers.
 3. Create flashcards in `05-Flashcards/behavioral/` — prompt → which story + key beats (recall the *structure*, not a script).
 4. Rehearse **out loud**, recorded, until you deliver in 2-3 min and can re-angle it.
-5. Mark progress in [[Behavioral-Interview - Tracker]].
+5. Mark progress in the Behavioral-Interview tracker (Ribaat vault).
 
 ---
 
 ### Read more
 
-- [[Interview-Prep-Master-Plan]]
-- [[Behavioral-Interview - Tracker]]
+- Interview prep plan and trackers: Ribaat vault, `06-Planning/Job-Search/`
+- Behavioral tracker: Ribaat vault, `06-Planning/Job-Search/Trackers/Behavioral-Interview - Tracker.md`
 - [[System Design - MOC]]
 - [[Design Patterns - MOC]]
-- [[Java-Kotlin-Roadmap]]
+- Java and Kotlin roadmap: Ribaat vault, `06-Planning/Topics/Java-Kotlin-Roadmap.md`

@@ -101,9 +101,9 @@ October–November drilling uses.
 Auto-grade with **IELTSFreeTests** (official raw→band conversion); Mock Lab's own band
 estimate is a rough banding, not a conversion table.
 
-Which test falls on which day is fixed in `06-Planning/Trackers/IELTS-Test-Calendar.md` —
+Which test falls on which day is fixed in `../Ribaat/06-Planning/Topics/IELTS/IELTS-Test-Calendar.md` —
 read it before proposing practice, and name the scheduled test rather than inventing one.
 
 The month-by-month reasoning, the hour budget and the risk branches live in the vault:
-`06-Planning/Topics/IELTS - Prep Plan.md`. The budget is **~12 h/week** — 1 h each weekday,
+`../Ribaat/06-Planning/Topics/IELTS/IELTS - Prep Plan.md` (Ribaat vault, sibling of this one). The budget is **~12 h/week** — 1 h each weekday,
 3–4 h each weekend day — not the 6 h an earlier draft assumed.

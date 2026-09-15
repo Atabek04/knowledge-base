@@ -174,4 +174,4 @@ A personal knowledge map covering study techniques, habits, discipline, time man
 
 ## Related
 
-- [[Java-Kotlin-Roadmap]]
+- Java and Kotlin roadmap: Ribaat vault, `06-Planning/Topics/Java-Kotlin-Roadmap.md`

@@ -64,7 +64,7 @@ PDFs the user actually owns, the Murphy unit schedule with its skip list, and th
 selected Collocations units. Any study target you name comes from there.
 
 If the user asks "what should I do this week", read their log and the plan at
-`06-Planning/Topics/IELTS - Prep Plan.md` and answer from the branch that matches their
+`../Ribaat/06-Planning/Topics/IELTS/IELTS - Prep Plan.md` (Ribaat vault, sibling of this one) and answer from the branch that matches their
 current bands. Don't invent a schedule.
 
 ## Rules that hold in every mode
@@ -109,7 +109,7 @@ calibrated to this writer.
 
 ## State lives in the vault
 
-The coach reads and writes one file: `06-Planning/Trackers/IELTS-Log.md`. It holds the
+The coach reads and writes one file: `../Ribaat/06-Planning/Topics/IELTS/IELTS-Log.md` (Ribaat vault). It holds the
 error log, the essay history, and the marked-script anchors. Create it from
 `references/log-template.md` if it doesn't exist yet.
 

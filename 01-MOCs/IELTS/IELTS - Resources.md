@@ -130,7 +130,7 @@ Explicitly not worth the budget: **Cambly** and **EnglishCentral** train speakin
 
 ### Read more
 - [[IELTS - MOC]]
-- [[IELTS - Prep Plan]]
+- IELTS prep plan, log and test calendar: Ribaat vault, `06-Planning/Topics/IELTS/`
 - [[IELTS - Exam Day]]
 - [[Dictation with immediate comparison is the spelling remediation that matches the Listening task]]
 - [[Computer-delivered Listening removes the transfer time so typing accuracy becomes part of the score]]

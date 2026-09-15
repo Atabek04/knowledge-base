@@ -576,12 +576,12 @@ After each module: draw the design from memory on paper (10 min) — no peeking.
 
 ---
 
-Sequencing + time budget + end-state (design 8 systems in 45 min): [[Interview-Prep-Master-Plan]]
+Sequencing + time budget + end-state (design 8 systems in 45 min): Interview-Prep-Master-Plan, Ribaat vault, `06-Planning/Job-Search/`
 
 ---
 
 ## Related
-- [[Interview-Prep-Master-Plan]]
+- Interview prep plan and trackers: Ribaat vault, `06-Planning/Job-Search/`
 - [[Architecture - MOC]]
 - [[Distributed Systems - MOC]]
 - [[Databases - MOC]]

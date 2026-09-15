@@ -17,4 +17,4 @@ Source: [British Council — IELTS Ready](https://takeielts.britishcouncil.org/p
 ### Read more
 - [[LLM essay scoring matches examiners on average but varies by over a band on any single essay]]
 - [[IELTS - Resources]]
-- [[IELTS - Prep Plan]]
+- IELTS prep plan, log and test calendar: Ribaat vault, `06-Planning/Topics/IELTS/`

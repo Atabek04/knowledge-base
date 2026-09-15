@@ -173,7 +173,7 @@ Seasonality is genuinely unknown — no official source publishes fill rates or 
 
 ### Read more
 - [[IELTS - MOC]]
-- [[IELTS - Prep Plan]]
+- IELTS prep plan, log and test calendar: Ribaat vault, `06-Planning/Topics/IELTS/`
 - [[IELTS - Resources]]
 - [[Booking the test unlocks the best free IELTS resource so booking comes before diagnosing]]
 - [[Computer-delivered Listening removes the transfer time so typing accuracy becomes part of the score]]

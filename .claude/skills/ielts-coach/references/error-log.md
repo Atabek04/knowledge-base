@@ -65,7 +65,7 @@ Then report:
   mechanical, and mechanical marks are the cheapest in the exam — they cost the same one
   mark each as a genuine listening failure.
 
-Append the entry to `06-Planning/Trackers/IELTS-Log.md`.
+Append the entry to `../Ribaat/06-Planning/Topics/IELTS/IELTS-Log.md` (Ribaat vault).
 
 ## Choosing the drill
 

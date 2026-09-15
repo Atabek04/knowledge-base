@@ -1,6 +1,6 @@
 > Learn patterns to write maintainable, flexible code
 >
-> **Hands-on practice:** `~/design-pattern-katas` (WSL git repo) — tests-first refactor katas, Java/Kotlin/Python. Tracker: [[Design-Patterns - Tracker]].
+> **Hands-on practice:** `~/design-pattern-katas` (WSL git repo) — tests-first refactor katas, Java/Kotlin/Python. Tracker: Ribaat vault, `06-Planning/Job-Search/Trackers/Design-Patterns - Tracker.md`.
 
 ---
 
@@ -102,13 +102,13 @@ No course for this track — it's learned by **implementing in Java**, not readi
 
 Module-by-module progress:
 
-- [[Design-Patterns - Tracker]] — `06-Planning/Trackers/` · sequenced implementation path (33 patterns)
+- Design-Patterns tracker: Ribaat vault, `06-Planning/Job-Search/Trackers/`, the sequenced implementation path
 
-Sequencing + time budget: [[Interview-Prep-Master-Plan]]
+Sequencing and time budget: Interview-Prep-Master-Plan, Ribaat vault, `06-Planning/Job-Search/`
 
 ---
 
 ## Related
-- [[Interview-Prep-Master-Plan]]
+- Interview prep plan and trackers: Ribaat vault, `06-Planning/Job-Search/`
 - [[Java MOC]]
 - [[Architecture - MOC]]
