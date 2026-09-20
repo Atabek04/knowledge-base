@@ -12,18 +12,16 @@ Sources merged: Booth *Craft of Research* (5th) · SOAS *Understanding Research 
 
 ## 1. What research is
 
-- Research = a written argument that something not previously known is now known, and that it was found out in a way others can check
-- Systematic inquiry vs. building; your role and your audience's role — Booth Intro (I.1–I.4); SOAS M1
-- Unsupervised research = you can pick a question worth asking, not only answer one someone gave you
-- Why papers read as clean logic when the work was messy — Medawar, *Is the scientific paper a fraud?*
-- Picking problems that matter — Hamming, *You and Your Research*
+- [[Research is a written argument that something not previously known is now known and can be checked|Research: a written, new, checkable claim; the artifact is never the contribution]]
+- [[A research writer casts the reader as entertained, helped, or educated and only the last two are research|Writer and reader roles: entertain, help, educate; "here is what I built" casts nobody]]
+- [[A gap is worth researching only if its answer settles a larger question the field already cares about|Unsupervised research: a gap passes only if it survives the "so what" test]]
+- [[A scientific paper reconstructs the argument for checking and never records the path of discovery|Medawar: the paper's form misrepresents the thinking, not the results; write for checking, not confession]]
+- [[An important problem is one that matters and on which you hold an attack|Hamming: important = matters AND you hold an attack, a route in, not a solution]]
 
 ## 2. Degree levels and what each defence tests
 
-- Bachelor project — can you build; graded on execution
-- Master's dissertation — can you *find out*; graded on contribution + method; "we built a system" fails
-- PhD — can you find out what the field did not know; publications are the gate
-- Kazakhstan specifics: ГОСО minimum vs. university rules; предзащита → защита; document check by the учебный отдел
+- [[Each degree defence tests a different ability, building, finding out, and finding out what the field did not know|Bachelor tests building, master's tests finding out, PhD tests novelty the field confirms in print]]
+- [[A Kazakhstan master's defence is gated by two rule layers and the stricter one binds|Kazakhstan: ГОСО is a floor, the university rule binds; предзащита is where publications are counted]]
 
 ## 3. Dissertation types — which one is yours
 
@@ -34,8 +32,9 @@ Sources merged: Booth *Craft of Research* (5th) · SOAS *Understanding Research 
 | Systematic review | synthesise all existing studies | a map of what is known |
 | Design science | build an artifact *to test an idea*, then evaluate it | knowledge from the evaluation — never the artifact |
 
+- [[A dissertation's type is fixed by what its contribution is, not by what the student did|Type is named by contribution (finding, framework, map, evaluation), never by activity; theoretical is the fallback]]
 - Bachelor trap = design science without the science: artifact built, evaluation skipped
-- Design science: artifact is the *treatment*, knowledge from evaluating it is the *contribution* — Hevner 7 guidelines; Wieringa ch 1–2
+- [[Design science builds an artifact to test an idea and the knowledge from evaluating it is the contribution|Design science: artifact is the treatment, evaluation knowledge is the contribution]]
 - Engineering cycle: problem investigation → treatment design → validation → implementation → evaluation — Wieringa ch 3–7
 - Empirical cycle inside design science — Wieringa ch 10–11; method road map ch 16
 - Yours = design science with empirical validation (within-subjects study on Mutqin)
@@ -100,6 +99,11 @@ Sources merged: Booth *Craft of Research* (5th) · SOAS *Understanding Research 
 - Предзащита May 2027 · защита June 2027
 
 ---
+
+## Teaching Progress
+
+- Done: §1, §2 complete; §3 types table, bachelor trap, design science
+- Next: §3 engineering cycle (Wieringa ch 3–7)
 
 ## Trackers
 
