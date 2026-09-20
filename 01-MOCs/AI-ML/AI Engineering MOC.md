@@ -37,6 +37,7 @@ Distinct from ML Engineering — AI Engineers consume pre-trained models via API
 - Pre-trained models
 - Self-hosted models (Ollama, LM Studio, Hugging Face)
 - Choosing the right model for the task
+- [[Jev is a System One model that returns typed decisions over a schema instead of generating text|Jev: typed decisions from a schema, not generated text]]
 
 ## Model Providers & APIs
 
