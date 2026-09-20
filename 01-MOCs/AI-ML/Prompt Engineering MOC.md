@@ -11,7 +11,10 @@ Prompting is the interface to the model — the same model gives wildly differen
 
 ## Fundamentals
 
-- *(empty — add notes as you learn)*
+- [ ] Three layers of leverage: prompt engineering (the words) → context engineering (what is in the window) → harness engineering (the loop, tools and checks around the model)
+- [[Small context windows made single prompts insufficient for multi-step tasks and forced the shift to context engineering|Why prompts stopped being enough: 4k windows could not hold a multi-step task's state]]
+- [[Context engineering curates everything in the window and not the wording of one message|Context engineering: choose what enters the window, prompt wording is one part]]
+- [[Harness engineering builds the loop and environment around a fixed model so long tasks finish reliably|Harness engineering: the loop and checks around the model, prompt and context become its parts]]
 
 ## Core Techniques
 
@@ -25,7 +28,7 @@ Prompting is the interface to the model — the same model gives wildly differen
 
 - Context window limits and what to put where
 - Cache-friendly prompt structure (static prefix, dynamic suffix)
-- Retrieval-augmented generation (RAG) basics
+- [[RAG retrieves the documents a question needs at query time so the model reads only those|RAG: retrieve the relevant slice per question, generate from it]]
 
 ## Evaluation
 

@@ -87,6 +87,22 @@ Teaching progress is tracked here, per section; the chapter roadmap lives in the
 - Trace operator: sum of diagonal elements with applications in optimization
 - Principal Component Analysis (PCA): finding principal vectors explaining data variance
 
+### Where it shows up in an LLM
+
+Each bullet pairs one linear-algebra idea with the exact place it runs inside a transformer. Fill in as the Lay track reaches the idea.
+
+- [ ] Token embedding is a lookup row in a matrix: token id selects one vector of d_model numbers
+- [ ] Vector arithmetic on embeddings: king minus man plus woman lands near queen, because meaning directions add
+- [ ] A linear layer is matrix times vector: the weights are the matrix, the forward pass is a chain of them
+- [ ] Dot product as similarity: attention scores are query dot key, big product means look here
+- [ ] Attention as one matrix product: QK^T gives the whole token-by-token score table at once
+- [ ] Softmax turns a score vector into a probability vector that sums to one
+- [ ] Rank and low-rank approximation: LoRA fine-tunes by adding a rank-r product to a frozen weight matrix
+- [ ] SVD and PCA compress and inspect activation spaces
+- [ ] Output head: final vector times vocabulary matrix gives one logit per next token
+- [ ] Norms and layer normalisation: rescaling a vector to unit size keeps activations stable
+- [ ] Gradient is a vector and backprop is chain-rule matrix products (bridge to the Calculus section)
+
 ## Calculus
 
 Mathematical tools for understanding change and optimization in continuous functions.

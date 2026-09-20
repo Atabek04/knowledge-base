@@ -54,6 +54,8 @@ Different from chat-style prompting: coding agents have a **loop** (observe → 
 - Code review with agents
 - Spec-driven / TDD with agents
 - Long-running tasks, background agents
+- [[Ralph runs a coding agent in a bash loop with a fresh context each pass and a PRD on disk as the only memory|Ralph loop: fresh agent per pass, PRD pass flags and progress log as memory, stop on COMPLETE]]
+    - [[Harness engineering builds the loop and environment around a fixed model so long tasks finish reliably|Why: compaction breaks long tasks, so the harness loops fresh windows over state on disk]]
 
 ## Evaluation & Reliability
 
