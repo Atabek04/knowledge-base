@@ -5,7 +5,9 @@ created: 2026-09-20
 
 Context engineering answered "what goes in the window on this call". It did not answer what happens when a task is too long for any single window. An agent given a feature to implement would work well for an hour, hit the window limit, compact its history into a summary, and continue from that summary. <mark style="background: #FF5582A6;">Compaction loses exactly the details a later step needs, so long tasks ended in code that was incomplete or subtly broken, however well each individual call was engineered.</mark>
 
-<mark style="background: #FFF3A3A6;">A harness is everything around the model that turns it into an agent: the loop that decides when to call it again, the tools it can run, the state that persists between calls, the checks that verify its output, and the rules for stopping.</mark> Agent = model + harness. Harness engineering, named as a discipline in early 2026, is the work of designing that environment rather than the prompt or the window.
+The fix came from outside the model. <mark style="background: #FFF3A3A6;">A harness is everything around the model that turns it into an agent: the loop that decides when to call it again, the tools it can run, the state that persists between calls, the checks that verify its output, and the rules for stopping.</mark> Agent = model + harness, and harness engineering is the work of designing that environment rather than the prompt or the window.
+
+The name comes from the stable, where a **harness** is the set of straps that connects a horse to the cart it pulls. The model is the horse: raw power that pulls nowhere on its own. The harness gives that power direction, catches it when it slips, as a safety harness does, and checks what it produced, as a test harness does. Mitchell Hashimoto named the discipline "harness engineering" on 5 February 2026.
 
 ---
 
@@ -37,4 +39,4 @@ Prompt engineering and context engineering are not replaced; <mark style="backgr
 - [[Tool calling lets a model fetch what it needs during a task instead of being handed everything upfront]]
 - [[AI Engineering MOC]]
 - [[Agentic Engineering MOC]]
-- Sources: [Addy Osmani, Agent Harness Engineering](https://addyosmani.com/blog/agent-harness-engineering/), [awesome-harness-engineering](https://github.com/ai-boost/awesome-harness-engineering)
+- Sources: [Mitchell Hashimoto, My AI Adoption Journey](https://mitchellh.com/writing/my-ai-adoption-journey), [Addy Osmani, Agent Harness Engineering](https://addyosmani.com/blog/agent-harness-engineering/), [awesome-harness-engineering](https://github.com/ai-boost/awesome-harness-engineering)

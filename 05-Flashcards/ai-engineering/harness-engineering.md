@@ -16,6 +16,15 @@ END
 
 START
 Coding Questions
+Why is it called a "harness", and who named harness engineering?
+Back:
+A horse harness connects the animal's strength to the cart and steers it. The model is the horse; the harness gives its power direction, catches it when it slips, and checks what it produced. Named by **Mitchell Hashimoto**, 5 February 2026.
+Tags: ai-engineering harness-engineering
+<!--ID: 1791017227125-->
+END
+
+START
+Coding Questions
 Why was context engineering not enough for long tasks, and what did harness engineering change?
 Back:
 Long tasks overflowed the window; **compaction** summarised history and lost the details later steps needed, giving incomplete or broken code. Harness engineering replaced one elastic window with a **loop**: each iteration starts a fresh window loaded with the same instructions plus state read from disk.
