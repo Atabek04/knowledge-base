@@ -148,3 +148,93 @@ Back: Machine-speed generation pours into human-speed review:
 Tags: agentic ai-coding
 <!--ID: 1782128729587-->
 END
+
+START
+Coding Questions
+What makes a team **AI-native** rather than merely AI-assisted (Liguori's frontier teams)?
+Back: An **AI-native** team reshapes its codebase, tools and process so the agent can learn on its own **what to build** and **whether it built it correctly**.
+- AI-assisted: human reviews and corrects every turn, so speed is capped by one person's review rate
+- AI-native: each habit removes a reason the agent would stop and wait for a person
+Tags: agentic ai-coding
+<!--ID: 1791030297898-->
+END
+
+START
+Coding Questions
+Frontier-team habit 1 (agent context): which **two questions** keep steering files honest?
+Back:
+- **On every agent mistake**: "What am I missing in my skills files?" Fix the gap once so it never repeats
+- **On every new model release**: "Do I still need this in my skills?" Stronger models no longer need many old "do not" rules
+Tags: agentic ai-coding
+<!--ID: 1791030297903-->
+END
+
+START
+Coding Questions
+Why must a steering file (`CLAUDE.md`, `AGENTS.md`) be **pruned**, not just grown?
+Back: Every line is read on **every task**, so a bloated file makes the agent follow the important lines **less reliably** (context rot applied to instructions).
+- Anthropic's test per line: would removing it cause mistakes? If not, cut it
+- HumanLayer keeps its root file under 60 lines
+Tags: agentic ai-coding
+<!--ID: 1791030297906-->
+END
+
+START
+Coding Questions
+Frontier-team habit 2: why is improving **error messages** agent work, with an example?
+Back: An error is the agent's **only clue** about what to try next.
+- `ERROR: TOO_MANY_RESULTS` → the agent guesses
+- "Found 847 expenses, narrow the date range or add a category filter" → the agent applies the fix
+Tags: agentic ai-coding
+<!--ID: 1791030297909-->
+END
+
+START
+Coding Questions
+Why did frontier teams move from Python/JavaScript toward TypeScript, Rust or Go for agent-written code?
+Back: A **strict compiler and type checker** give the agent precise feedback on every edit.
+- A loose language lets a wrong guess survive until runtime, where the agent cannot see it
+Tags: agentic ai-coding
+<!--ID: 1791030297913-->
+END
+
+START
+Coding Questions
+"Feed agents, don't **babysit** them": what must you hand the agent before a task?
+Back: **A check it can run that proves the task is done**: a test, build, linter or screenshot.
+- **Babysitting** = vibe-coding back-and-forth where the human checks every output
+- With a check, the agent self-corrects for hours and several can run in parallel worktrees
+Tags: agentic ai-coding
+<!--ID: 1791030297915-->
+END
+
+START
+Coding Questions
+Frontier-team habit 4 (make intent explicit): why write a spec before code, and when do you skip it?
+Back: **Cost of correction**: fixing a paragraph in a spec takes a minute; arguing with 2,000 lines that misread the requirement takes an afternoon.
+- Skip it when the diff fits in **one sentence**: the spec becomes overhead (Kiro turned a one-line bug fix into 4 user stories)
+- Trap: nothing forces the code to keep matching the spec once implementation starts
+Tags: agentic ai-coding
+<!--ID: 1791030297917-->
+END
+
+START
+Coding Questions
+What does **shift testing left** mean for agents, and what three properties must the loop have?
+Back: **Shifting left** = moving tests earlier on the timeline, from CI or a human reviewer to the agent's own machine while it writes.
+- **Fast**, **local**, **deterministic**: a 10-minute or flaky test teaches the agent nothing
+- Mock services let integration tests run without real dependencies
+Tags: agentic ai-coding
+<!--ID: 1791030297921-->
+END
+
+START
+Coding Questions
+How much should you trust the "4.5x median speedup" from Amazon's frontier teams?
+Back: Weakly.
+- Amazon's **own** figures, measured as deployment/commit velocity, **no control group**; agents inflate commit counts easily
+- Only teams that deliberately changed their process got there; about half stayed under 3x
+- The controlled METR trial found experienced devs **19% slower** with early-2025 tools
+Tags: agentic ai-coding
+<!--ID: 1791030297923-->
+END

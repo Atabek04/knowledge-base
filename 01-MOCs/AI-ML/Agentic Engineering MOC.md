@@ -52,6 +52,7 @@ Different from chat-style prompting: coding agents have a **loop** (observe → 
 
 - Plan mode vs execute mode
 - Code review with agents
+- [[AI-native teams get their speedup from habits that let agents work and self-correct without a human in the loop|Five habits of AI-native teams: context, tools, self-checks, specs, local tests]]
 - Spec-driven / TDD with agents
 - Long-running tasks, background agents
 - [[Ralph runs a coding agent in a bash loop with a fresh context each pass and a PRD on disk as the only memory|Ralph loop: fresh agent per pass, PRD pass flags and progress log as memory, stop on COMPLETE]]
