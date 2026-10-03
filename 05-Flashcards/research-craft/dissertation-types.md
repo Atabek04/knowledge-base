@@ -81,3 +81,50 @@ Back: Retreat **one type** to **theoretical**: defend the framework plus the pro
 Tags: research-craft dissertation-types
 <!--ID: 1789917885268-->
 END
+
+START
+Coding Questions
+Wieringa's engineering cycle: the five tasks, and which of them form the design cycle that research does?
+Back:
+1. **Problem investigation**
+2. **Treatment design**
+3. **Treatment validation**
+4. Treatment implementation
+5. Implementation evaluation
+
+Tasks 1–3 = the **design cycle** = research. 4–5 belong to **practice**, after hand-over.
+Tags: research-craft wieringa
+<!--ID: 1789938105408-->
+END
+
+START
+Coding Questions
+Wieringa: what distinguishes validation from evaluation? (Hint: not whether the artifact is released.)
+Back: **Who controls the context.**
+
+- **Validation**: researcher controls it (recruited sample, assigned conditions, fixed protocol); asks *would it work if implemented?*; buys causal isolation
+- **Evaluation**: real use after transfer, nobody assigns anything; asks *what happened?*; buys realism, loses the counterfactual
+Tags: research-craft wieringa
+<!--ID: 1789938105455-->
+END
+
+START
+Coding Questions
+Startup-style "idea validation" (do people actually have this problem?) maps to which Wieringa task, and why is it not validation?
+Back: **Problem investigation** (task 1).
+
+- Wieringa's **validation** asks whether the **treatment produces the effect**, and assumes the problem is already established
+Tags: research-craft wieringa
+<!--ID: 1789938105464-->
+END
+
+START
+Coding Questions
+An app is already public. A researcher recruits 30 users, assigns conditions, and runs a 4-week protocol on it. Validation or evaluation?
+Back: **Validation.** The study controls the context, so it is artificial regardless of the app being live.
+
+- Launch = **implementation**, not evaluation
+- Evaluation would observe natural adopters with no assignment
+Tags: research-craft wieringa
+<!--ID: 1789938105465-->
+END

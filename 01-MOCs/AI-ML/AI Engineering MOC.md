@@ -73,7 +73,7 @@ Distinct from ML Engineering — AI Engineers consume pre-trained models via API
 - Context isolation
 - [[Context engineering curates everything in the window and not the wording of one message|Context engineering: choose what enters the window, prompt wording is one part]]
     - [[Small context windows made single prompts insufficient for multi-step tasks and forced the shift to context engineering|Origin: 4k windows could not hold a multi-step task, so the effort moved to the window]]
-- [ ] Context rot: quality degrades as the window fills, so less but relevant beats more
+- [[Context rot degrades LLM output quality as input length grows, long before the window is full|Context rot: quality degrades as input grows, so less but relevant beats more]]
 - [[Tool calling lets a model fetch what it needs during a task instead of being handed everything upfront|Just-in-time loading: the model fetches context via tools when a step needs it]]
 - [ ] Sub-agent isolation: each worker gets a clean window and returns a summary
 

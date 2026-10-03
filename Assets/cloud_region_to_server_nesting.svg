@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <rect x="10" y="10" width="620" height="280" rx="10" fill="#EEF3FB" stroke="#5B7DB1" stroke-width="2"/>
+  <text x="26" y="34" font-weight="bold" fill="#2B4A7A">Region: eu-central-1 (Frankfurt)</text>
+
+  <g>
+    <rect x="26" y="48" width="188" height="226" rx="8" fill="#FFFFFF" stroke="#7A93BD" stroke-width="1.5"/>
+    <text x="40" y="70" font-weight="bold" fill="#2B4A7A">Availability Zone A</text>
+    <rect x="40" y="82" width="160" height="178" rx="6" fill="#F7F7F2" stroke="#999" stroke-dasharray="4 3"/>
+    <text x="52" y="102" fill="#333">Data center (ЦОД)</text>
+    <g fill="#DDE3EA" stroke="#667">
+      <rect x="54" y="114" width="36" height="132"/>
+      <rect x="102" y="114" width="36" height="132"/>
+      <rect x="150" y="114" width="36" height="132"/>
+    </g>
+    <g stroke="#667" stroke-width="1">
+      <line x1="54" y1="136" x2="90" y2="136"/><line x1="54" y1="158" x2="90" y2="158"/><line x1="54" y1="180" x2="90" y2="180"/><line x1="54" y1="202" x2="90" y2="202"/><line x1="54" y1="224" x2="90" y2="224"/>
+      <line x1="102" y1="136" x2="138" y2="136"/><line x1="102" y1="158" x2="138" y2="158"/><line x1="102" y1="180" x2="138" y2="180"/><line x1="102" y1="202" x2="138" y2="202"/><line x1="102" y1="224" x2="138" y2="224"/>
+      <line x1="150" y1="136" x2="186" y2="136"/><line x1="150" y1="158" x2="186" y2="158"/><line x1="150" y1="180" x2="186" y2="180"/><line x1="150" y1="202" x2="186" y2="202"/><line x1="150" y1="224" x2="186" y2="224"/>
+    </g>
+    <rect x="102" y="136" width="36" height="22" fill="#FFD966" stroke="#B8860B" stroke-width="1.5"/>
+  </g>
+
+  <g>
+    <rect x="226" y="48" width="188" height="226" rx="8" fill="#FFFFFF" stroke="#7A93BD" stroke-width="1.5"/>
+    <text x="240" y="70" font-weight="bold" fill="#2B4A7A">Availability Zone B</text>
+    <rect x="240" y="82" width="160" height="178" rx="6" fill="#F7F7F2" stroke="#999" stroke-dasharray="4 3"/>
+    <text x="252" y="102" fill="#333">Data center (ЦОД)</text>
+    <g fill="#DDE3EA" stroke="#667">
+      <rect x="254" y="114" width="36" height="132"/>
+      <rect x="302" y="114" width="36" height="132"/>
+      <rect x="350" y="114" width="36" height="132"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="426" y="48" width="188" height="226" rx="8" fill="#FFFFFF" stroke="#7A93BD" stroke-width="1.5"/>
+    <text x="440" y="70" font-weight="bold" fill="#2B4A7A">Availability Zone C</text>
+    <rect x="440" y="82" width="160" height="178" rx="6" fill="#F7F7F2" stroke="#999" stroke-dasharray="4 3"/>
+    <text x="452" y="102" fill="#333">Data center (ЦОД)</text>
+    <g fill="#DDE3EA" stroke="#667">
+      <rect x="454" y="114" width="36" height="132"/>
+      <rect x="502" y="114" width="36" height="132"/>
+      <rect x="550" y="114" width="36" height="132"/>
+    </g>
+  </g>
+
+  <text x="40" y="288" font-size="11" fill="#555">grey columns = racks of servers · yellow = the one physical server your EC2 instance runs on</text>
+</svg>

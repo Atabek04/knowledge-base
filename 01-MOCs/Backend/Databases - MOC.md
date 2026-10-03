@@ -140,6 +140,7 @@
 - [[Master data management enforces one trusted record for entities shared across systems|MDM: one golden record across systems]]
 - [[Data quality is measured along completeness accuracy consistency and timeliness|Data quality: completeness, accuracy, consistency, timeliness]]
 - [[Data governance documents the retention archival and deletion rules for each class of data|Data governance: retention, archival, deletion rules]]
+    - [[A breach can only leak data the system still stores, so deleting data is a security control|Store less, leak less: deletion as a security control]]
 - [[Process mining reconstructs the real process from event logs to compare against the documented one|Process mining: actual vs documented process from logs]]
 
 ### Schema Migrations

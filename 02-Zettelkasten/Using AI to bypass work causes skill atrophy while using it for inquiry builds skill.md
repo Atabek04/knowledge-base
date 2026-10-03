@@ -14,9 +14,9 @@ The brain follows a "use it or lose it" rule. If a tool does the cognitive work,
 
 This is well documented:
 
-- A 2025 *Lancet* study found doctors who leaned on AI for colonoscopy detection became <mark style="background: pink">measurably worse at spotting cancer themselves</mark> within months.
-- An MIT study found ChatGPT use eroded critical-thinking engagement during writing.
-- Students on an *unguarded* AI tutor scored 17% worse once access was removed — the tool had become a crutch, not a scaffold.
+- A 2025 *Lancet* study found doctors who leaned on AI for colonoscopy detection became <mark style="background: pink">measurably worse at spotting cancer themselves</mark> within months: [[Routine AI assistance erodes an expert's existing skill, not only a learner's skill formation|deskilling of experts]].
+- An MIT study found ChatGPT use eroded engagement and recall during writing, which it calls [[Writing unaided before turning to AI preserves the recall that starting with AI loses|cognitive debt]].
+- Students on an *unguarded* AI tutor scored 17% worse once access was removed, while a [[An AI tutor that gives hints instead of answers avoids the learning loss a plain chatbot causes|hint-only tutor]] avoided the loss.
 
 ---
 
@@ -41,7 +41,12 @@ How to apply it deliberately: [[Effective AI learning removes friction from busy
 - [[Effective AI learning removes friction from busywork and adds friction to thinking]]
 - [[Over-relying on AI coding tools without reading output erodes genuine programming confidence]]
 - [[Treating AI as a collaborator rather than an assistant separates top learners]]
+- Evidence:
+    - [[Routine AI assistance erodes an expert's existing skill, not only a learner's skill formation]]
+    - [[Writing unaided before turning to AI preserves the recall that starting with AI loses]]
+    - [[An AI tutor that gives hints instead of answers avoids the learning loss a plain chatbot causes]]
 - [[Learning Strategies MOC]]
+- [[Agentic Engineering MOC]]
 
 ### External Resources
 - [Lancet Gastroenterology study — AI made doctors less skilled at spotting cancer](https://www.reddit.com/r/ArtificialInteligence/comments/1o8mvzo/new_study_suggests_using_ai_made_doctors_less/)

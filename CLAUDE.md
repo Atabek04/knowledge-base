@@ -494,6 +494,7 @@ An incident in `Incidents/` describes the <b>mechanism</b>, never the system it 
 
 - <b>Never</b>: company, product, customer, colleague or project names; hostnames, IPs, repo names, ticket ids, commit hashes, table or column names, config values, internal class names.
 - <b>Always</b>: the class of component ("a ClickHouse view", "a systemd unit"); framework and library class names are fine (`OncePerRequestFilter`, `SseEmitter`).
+- <b>Exception</b>: a public third-party breach already in the press may name the company and link its source.
 - No Impact or Timeline sections. If a lesson is reusable, it becomes an atomic note and the incident links it.
 
 ## Tech Stack Context

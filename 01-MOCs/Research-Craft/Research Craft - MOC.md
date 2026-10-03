@@ -35,7 +35,7 @@ Sources merged: Booth *Craft of Research* (5th) · SOAS *Understanding Research 
 - [[A dissertation's type is fixed by what its contribution is, not by what the student did|Type is named by contribution (finding, framework, map, evaluation), never by activity; theoretical is the fallback]]
 - Bachelor trap = design science without the science: artifact built, evaluation skipped
 - [[Design science builds an artifact to test an idea and the knowledge from evaluating it is the contribution|Design science: artifact is the treatment, evaluation knowledge is the contribution]]
-- Engineering cycle: problem investigation → treatment design → validation → implementation → evaluation — Wieringa ch 3–7
+- [[Wieringa's engineering cycle separates validation before transfer from evaluation after it|Engineering cycle: research runs investigation → design → validation; validation is controlled context, evaluation is real use]]
 - Empirical cycle inside design science — Wieringa ch 10–11; method road map ch 16
 - Yours = design science with empirical validation (within-subjects study on Mutqin)
 
@@ -102,8 +102,8 @@ Sources merged: Booth *Craft of Research* (5th) · SOAS *Understanding Research 
 
 ## Teaching Progress
 
-- Done: §1, §2 complete; §3 types table, bachelor trap, design science
-- Next: §3 engineering cycle (Wieringa ch 3–7)
+- Done: §1, §2 complete; §3 types table, bachelor trap, design science, engineering cycle
+- Next: §3 empirical cycle inside design science (Wieringa ch 10–11)
 
 ## Trackers
 

@@ -16,6 +16,7 @@ Different from chat-style prompting: coding agents have a **loop** (observe → 
 - Agent loop — observe / think / act / repeat
 - Tool use — function calling, structured tool schemas
 - Context window management — what to include, when to compact
+- [[Context rot degrades LLM output quality as input length grows, long before the window is full|Context rot: long sessions degrade output, so compact or start fresh]]
 - Permission modes — interactive vs autonomous execution
 
 ## Coding Agents & IDEs
@@ -75,13 +76,29 @@ Different from chat-style prompting: coding agents have a **loop** (observe → 
 
 ## Skill & Cognition Effects
 
-*What heavy AI-assisted coding does to the developer's own skill — the measured evidence, not the hype.*
+*What heavy AI use does to the user's own skill and thinking: the measured evidence, not the hype.*
 
-- [[AI-assisted learners score about two letter grades lower with debugging the most degraded skill|AI-assisted learners score two grades lower — debugging hit worst]]
+### Measured effects on skill
+
+- [[AI-assisted learners score about two letter grades lower with debugging the most degraded skill|AI-assisted learners score two grades lower: debugging hit worst]]
 - [[Experienced developers were measured 19 percent slower with AI while believing they were faster|Devs measured 19% slower with AI yet felt 20% faster]]
+- [[Ten minutes of AI help makes people give up sooner on problems they then face alone|Ten minutes of AI help makes people quit sooner alone]]
+- [[Routine AI assistance erodes an expert's existing skill, not only a learner's skill formation|Deskilling: routine AI erodes experts' existing skill too]]
+- [[Heavy AI use correlates with weaker critical thinking but the causal arrow may run both ways|Heavy AI use tracks weaker thinking, causation unclear]]
+- [[Trusting AI more predicts less critical thinking while trusting yourself predicts more|Trust in AI cuts checking; self-confidence raises it]]
 - [[AI-native juniors miss the foundational knowledge that came from struggling through problems manually|AI-native juniors miss the foundations the struggle used to build]]
-- [[Automation bias makes people accept a machine's recommendation without verifying it|Automation bias — people accept a machine's answer without checking it]]
-- [[You cannot review what you cannot understand so AI oversight collapses into rubber-stamping|Can't review what you can't understand — oversight becomes rubber-stamping]]
+
+### Why oversight fails
+
+- [[Automation bias makes people accept a machine's recommendation without verifying it|Automation bias: people accept a machine's answer without checking it]]
+- [[You cannot review what you cannot understand so AI oversight collapses into rubber-stamping|Can't review what you can't understand: oversight becomes rubber-stamping]]
+
+### Using AI without losing skill
+
+- [[Using AI to bypass work causes skill atrophy while using it for inquiry builds skill|Inquiry builds skill, bypassing the work atrophies it]]
+- [[An AI tutor that gives hints instead of answers avoids the learning loss a plain chatbot causes|Hint-only AI tutors avoid the crutch effect]]
+- [[Writing unaided before turning to AI preserves the recall that starting with AI loses|Think first, then AI: order protects recall]]
+- [[Effective AI learning removes friction from busywork and adds friction to thinking|Remove friction from busywork, keep it on thinking]]
 
 ## The Developer's Evolving Role
 

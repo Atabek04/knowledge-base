@@ -32,6 +32,28 @@ Hand-coders build that judgment by failing and fixing; the AI group never paid t
 
 ---
 
+### How the AI group used it decided the score
+
+The researchers sorted the AI group by how each person interacted with the assistant. The averages split cleanly in two.
+
+#### Patterns that scored below 40%
+
+- **AI delegation**: let the AI write the code outright. Fastest to finish.
+- **Progressive AI reliance**: started with questions, then gradually handed over all the code writing.
+- **Iterative AI debugging**: pasted each error back to the AI instead of working out why it happened.
+
+#### Patterns that scored 65% or more
+
+- **Conceptual inquiry**: asked only conceptual questions and fixed every error themselves. The largest group, and the second fastest overall.
+- **Hybrid code-explanation**: asked for code together with an explanation of it.
+- **Generation-then-comprehension**: generated code, then asked follow-up questions until they understood it.
+
+<mark style="background: #ABF7F7A6;">Asking the AI only conceptual questions and resolving errors yourself kept quiz scores near the hand-coders' level while staying almost as fast as full delegation.</mark>
+
+<mark style="background: #FF5582A6;">Each pattern held only 2 to 7 people and the patterns were observed, not assigned, so they show a strong hint rather than a proven cause.</mark>
+
+---
+
 ### The honest caveat
 
 <mark style="background: pink">One small, short-horizon study</mark> — 52 people, a single library, measured immediately. It shows immediate skill *formation*, not whether the gap persists or whether deliberate review closes it.
@@ -45,6 +67,8 @@ Notably, the study is unflattering to Anthropic's own product, which cuts agains
 - [[Experienced developers were measured 19 percent slower with AI while believing they were faster]]
 - [[AI-native juniors miss the foundational knowledge that came from struggling through problems manually]]
 - [[Effective AI learning removes friction from busywork and adds friction to thinking]]
+- [[Ten minutes of AI help makes people give up sooner on problems they then face alone]]
+- [[Routine AI assistance erodes an expert's existing skill, not only a learner's skill formation]]
 - [[Agentic Engineering MOC]]
 
 ### External Resources

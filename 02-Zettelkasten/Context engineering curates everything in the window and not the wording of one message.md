@@ -37,7 +37,7 @@ The term spread in mid-2025 (Tobi Lütke, Andrej Karpathy) once agent builders n
 
 ### The trap of a big window
 
-<mark style="background: #FF5582A6;">Filling a large window is not context engineering; it is the absence of it.</mark> Attention degrades as the window fills (context rot), so a 200k window stuffed with everything performs worse than a 20k window holding what the step needs.
+<mark style="background: #FF5582A6;">Filling a large window is not context engineering; it is the absence of it.</mark> Attention degrades as the window fills ([[Context rot degrades LLM output quality as input length grows, long before the window is full|context rot]]), so a 200k window stuffed with everything performs worse than a 20k window holding what the step needs.
 
 ---
 
@@ -45,6 +45,7 @@ The term spread in mid-2025 (Tobi Lütke, Andrej Karpathy) once agent builders n
 
 - [[Small context windows made single prompts insufficient for multi-step tasks and forced the shift to context engineering]]
 - [[Tool calling lets a model fetch what it needs during a task instead of being handed everything upfront]]
+- [[Context rot degrades LLM output quality as input length grows, long before the window is full]]
 - [[RAG retrieves the documents a question needs at query time so the model reads only those]]
 - [[MCP is an open standard for plugging tools and data sources into any model]]
 - [[Rich personal context is the main differentiator between elite and average AI users]]

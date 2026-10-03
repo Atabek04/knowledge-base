@@ -10,6 +10,7 @@ This folder is published on the public wiki, so an incident describes the <b>mec
 
 - No company, product, customer, colleague or project names; no hostnames, IPs, repo names, ticket ids, commit hashes, table or column names, config values.
 - Name the class of component ("a ClickHouse view", "an OCSP verifier", "a systemd unit"). Framework and library class names are fine (`OncePerRequestFilter`, `SseEmitter`).
+- Exception: a public third-party breach already reported in the press may name the company and cite its source, since nothing private is disclosed.
 - Every incident promotes its reusable lesson into an atomic note under `02-Zettelkasten/` and links it from `### Lessons`. The incident is the story; the atomic note is the principle.
 
 ### Read more

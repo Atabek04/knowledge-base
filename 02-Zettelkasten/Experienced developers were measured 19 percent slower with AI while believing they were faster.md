@@ -44,6 +44,20 @@ The durable lesson is narrower and survives the caveats: your *perception* of AI
 
 ---
 
+### The 2026 rerun flipped the sign
+
+METR repeated the study from August 2025 with 57 developers (10 returning, 47 new), 143 repositories and more than 800 tasks, and published an update in February 2026.
+
+Returning developers were now about 18% faster with AI, and new developers about 4% faster. Both confidence intervals include zero.
+
+#### Selection bias pushes the estimate down
+
+Many invited developers declined because they no longer wanted to work without AI for half their tasks. The people most helped by AI were the most likely to opt out, so the measured speedup is probably too low.
+
+<mark style="background: #FF5582A6;">Neither the 2025 slowdown nor a speedup is established for current tools; METR itself now labels the original result historical.</mark>
+
+---
+
 ### Read more
 - [[AI-assisted learners score about two letter grades lower with debugging the most degraded skill]]
 - [[Heavy AI use correlates with weaker critical thinking but the causal arrow may run both ways]]
@@ -52,3 +66,4 @@ The durable lesson is narrower and survives the caveats: your *perception* of AI
 
 ### External Resources
 - [METR — Measuring the impact of early-2025 AI on experienced open-source developer productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)
+- [METR — We are changing our developer productivity experiment design (Feb 2026)](https://metr.org/blog/2026-02-24-uplift-update/)

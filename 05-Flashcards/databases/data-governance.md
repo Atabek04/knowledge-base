@@ -128,3 +128,35 @@ It replaces interviews-and-guessing with **evidence from the log**.
 Tags: data-governance process-mining conformance
 <!--ID: 1782128729755-->
 END
+
+START
+Coding Questions
+What bounds the worst case of a data breach, regardless of how the attacker got in?
+Back:
+The data the system **still stores** at that moment.
+
+A breach copies what is there: 15 years of kept order history leaks as 15 years. A shop that never stored card numbers (payment processor holds them, shop keeps a token) cannot leak them.
+Tags: data-governance security data-minimization
+<!--ID: 1791036193004-->
+END
+
+START
+Coding Questions
+What are the two halves of data minimization?
+Back:
+- **Don't collect**: take only the fields a purpose needs (e.g. a payment token, not the card number)
+- **Don't keep**: delete each field once its purpose ends (a retention period)
+Tags: data-governance security data-minimization
+<!--ID: 1791036193016-->
+END
+
+START
+Coding Questions
+Why does unneeded personal data pile up in companies, and what fixes it?
+Back:
+Deleting needs someone's sign-off; keeping needs nothing. So with no assigned retention period, every copy (old CRM exports, ex-employee passport scans, uncleaned mailboxes) lives forever by default.
+
+Fix: assign each data class a **retention period and an owner** when it is first stored, so deletion becomes the default and keeping is what needs a decision.
+Tags: data-governance security retention
+<!--ID: 1791036193020-->
+END

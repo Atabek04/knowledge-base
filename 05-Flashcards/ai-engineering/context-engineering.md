@@ -45,6 +45,34 @@ END
 
 START
 Coding Questions
+What is context rot?
+Back:
+The measurable drop in an LLM's output quality as input length grows, even far below the window limit. Chroma (2025) saw it in 18 frontier models; a 1M-token model already degraded at 50k tokens.
+Tags: ai-engineering context-engineering
+<!--ID: 1791019412314-->
+END
+
+START
+Coding Questions
+Why do distractors make context rot worse than length alone?
+Back:
+A distractor looks relevant but does not answer the question. Attention spreads over every token, so similar-looking passages compete with the right one for focus. Even one distractor lowers accuracy beyond what its extra tokens explain.
+Tags: ai-engineering context-engineering
+<!--ID: 1791019412348-->
+END
+
+START
+Coding Questions
+What is the governing rule for avoiding context rot, and which techniques apply it?
+Back:
+Give the model the smallest set of tokens that holds what the current step needs; relevance beats volume.
+Techniques: just-in-time loading via tools, compaction, fresh sessions per task, sub-agents with clean windows, external notes, pruning stale output and look-alike docs.
+Tags: ai-engineering context-engineering
+<!--ID: 1791019412372-->
+END
+
+START
+Coding Questions
 What is tool calling, mechanically?
 Back:
 The model emits a structured request naming a registered function and its arguments; the **harness** runs it and appends the result to the context for the next turn. The model never executes anything itself.

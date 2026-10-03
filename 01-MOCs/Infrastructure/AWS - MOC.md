@@ -15,6 +15,14 @@
 
 ## Topics
 
+### Global Infrastructure
+
+- [[A data center is a building that supplies servers with power, cooling, network and physical security|Data center (ЦОД): the building that powers, cools and connects servers]]
+- [ ] Regions and availability zones: why a region is split into separate data centers
+- [ ] AWS Outposts: AWS hardware installed in your own data center
+
+---
+
 ### Compute
 
 #### EC2 (Elastic Compute Cloud)

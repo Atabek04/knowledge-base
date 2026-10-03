@@ -151,6 +151,181 @@ END
 
 START
 Coding Questions
+In Anthropic's 2026 randomized controlled trial (52 engineers learning the Trio library), how did the AI group do on the mastery quiz?
+Back: **50%** for the AI group vs **67%** for hand-coders: about **two letter grades lower**.
+- The AI group was **not significantly faster**
+- The biggest gap was on **debugging** questions
+Tags: agentic ai-coding
+<!--ID: 1791019513235-->
+END
+
+START
+Coding Questions
+What is the **supervision paradox** in the Anthropic coding-skill trial?
+Back: The skill AI erodes fastest, **debugging**, is the skill you most need to catch AI's mistakes.
+- Reviewing machine-written code depends on knowing when and why code fails
+- Hand-coders build that by failing and fixing; delegators skip it
+Tags: agentic ai-coding
+<!--ID: 1791019513248-->
+END
+
+START
+Coding Questions
+Anthropic coding trial: which **three** interaction patterns scored **below 40%**?
+Back:
+- **AI delegation**: the AI writes the code outright (fastest to finish)
+- **Progressive AI reliance**: starts with questions, ends handing over all code
+- **Iterative AI debugging**: pastes each error back to the AI instead of understanding it
+Tags: agentic ai-coding
+<!--ID: 1791019513249-->
+END
+
+START
+Coding Questions
+Anthropic coding trial: which **three** interaction patterns scored **65% or more**?
+Back:
+- **Conceptual inquiry**: only conceptual questions, fixes every error yourself (also the 2nd fastest)
+- **Hybrid code-explanation**: code plus an explanation of it
+- **Generation-then-comprehension**: generate, then ask follow-ups until you understand
+
+Key: what separated the groups was **who resolved the errors and built the understanding**, not whether AI was used.
+Tags: agentic ai-coding
+<!--ID: 1791019513253-->
+END
+
+START
+Coding Questions
+METR 2025: how did experienced open-source developers' **felt** speed compare with their **measured** speed with AI?
+Back:
+- Predicted beforehand: **24% faster**
+- Believed afterwards: **20% faster**
+- Measured: **19% slower**
+
+Lesson: your **perception** of AI's speedup is unreliable, so measure it.
+Tags: agentic ai-coding
+<!--ID: 1791019513254-->
+END
+
+START
+Coding Questions
+What did METR's **2026 rerun** (57 developers, 800+ tasks) find, and why is it still inconclusive?
+Back: The sign **flipped**: returning devs ~**18% faster**, new devs ~**4% faster**, but both confidence intervals include zero.
+- **Selection bias**: many devs refused to work half their tasks without AI, so the most-helped people opted out and the speedup is likely underestimated
+- Neither a slowdown nor a speedup is established for current tools
+Tags: agentic ai-coding
+<!--ID: 1791019513257-->
+END
+
+START
+Coding Questions
+What did Liu et al. (2026, 1,222 people) find after people used an AI assistant and then lost it?
+Back: With AI they scored higher; without it they scored **lower than people who never had it** and **gave up sooner**.
+- The effect appeared after only **~10 minutes** of AI use
+- Tasks: maths reasoning and reading comprehension
+Tags: agentic ai-coding
+<!--ID: 1791019513258-->
+END
+
+START
+Coding Questions
+Why can ten minutes of AI help reduce **persistence**, when it is far too short to erase knowledge?
+Back: **Persistence** (how long you keep working on a hard problem before quitting) is a separate capacity from knowledge.
+- An assistant that answers instantly **conditions an expectation of instant answers**
+- So being stuck starts to feel like a reason to quit, not a normal stage of solving
+Tags: agentic ai-coding
+<!--ID: 1791019513259-->
+END
+
+START
+Coding Questions
+What is **deskilling**, and how does it differ from blocked skill formation?
+Back: **Deskilling** = losing a skill you **already had** because a tool regularly does that task for you.
+- **Blocked formation**: a **learner** never acquires the skill (Anthropic coding trial)
+- **Erosion / deskilling**: an **expert** loses part of an existing skill (Lancet colonoscopy study)
+Tags: agentic ai-coding
+<!--ID: 1791019513260-->
+END
+
+START
+Coding Questions
+Lancet 2025 colonoscopy study: what happened to experienced endoscopists after 3 months of routine AI use, and why?
+Back: Their **unassisted** adenoma detection rate (share of colonoscopies finding a precancerous growth) fell from about **28% to 22%**.
+- The AI flagged polyps, so the doctors **stopped practising their own visual search**
+- Caveat: observational before/after design, not randomized
+Tags: agentic ai-coding
+<!--ID: 1791019513261-->
+END
+
+START
+Coding Questions
+Microsoft/CMU survey (CHI 2025, 319 knowledge workers): which two kinds of confidence pull critical thinking in **opposite** directions?
+Back:
+- **Confidence in the AI** → **less** critical thinking
+- **Confidence in yourself** → **more** critical thinking (though reported as more effort)
+
+Why: self-confidence gives you a **standard to check the AI's answer against**; without it, accepting the output is the only option.
+Tags: agentic ai-coding
+<!--ID: 1791019513262-->
+END
+
+START
+Coding Questions
+According to the Microsoft/CMU survey, critical thinking with AI **moved** in which **three** ways?
+Back:
+- Gathering information → **verifying** it
+- Solving the problem → **integrating** the AI's response
+- Executing the task → **stewarding** it (overseeing and taking responsibility for work the AI executed)
+
+Trap: stewardship needs judgment, and judgment is built by the execution it removes.
+Tags: agentic ai-coding
+<!--ID: 1791019513263-->
+END
+
+START
+Coding Questions
+Bastani et al. (PNAS 2025, ~1,000 maths students): what did a plain chatbot vs a hint-only tutor do to **practice** and **exam** grades?
+Back:
+- **GPT Base** (plain ChatGPT): practice **+48%**, exam without AI **−17%** vs no-AI control
+- **GPT Tutor** (hints, no full solutions): practice **+127%**, exam roughly **at control level**
+
+The guardrail **avoided the loss**; it did not produce an exam gain.
+Tags: agentic ai-coding
+<!--ID: 1791019513264-->
+END
+
+START
+Coding Questions
+Why is a jump in practice scores with AI **not** evidence of learning?
+Back: A practice score taken with AI measures **the student plus the tool**; the exam measures **the student alone**.
+- The two can move in **opposite** directions (Bastani: +48% practice, −17% exam)
+- Rule: when learning, set the AI to **give hints and withhold full solutions** (Claude Learning mode, ChatGPT Study mode)
+Tags: agentic ai-coding
+<!--ID: 1791019513265-->
+END
+
+START
+Coding Questions
+What is **cognitive debt** (MIT "Your Brain on ChatGPT", 2025)?
+Back: **Cognitive debt** = the accumulated cost of letting a tool do the thinking: effort is **saved during the task** and **paid back later** as weaker memory, understanding and ownership.
+- Measured with EEG (electrical brain activity): ChatGPT writers showed the **weakest** neural connectivity, search users middle, brain-only the strongest
+- Most ChatGPT writers **could not quote** their own essay minutes later
+Tags: agentic ai-coding
+<!--ID: 1791019513266-->
+END
+
+START
+Coding Questions
+MIT EEG study: which **order** of writing and AI use preserved recall, and what is the desk rule?
+Back: **Unaided first, AI afterwards** beat AI first, then unaided: higher connectivity and better recall.
+- Thinking first builds the structure, so the AI edits work the brain **already owns**
+- Rule: write the draft, sketch the design or state your hypothesis **before** opening the AI
+- Caveat: preprint, 54 people, only 18 in the swap session
+Tags: agentic ai-coding
+<!--ID: 1791019513267-->
+END
+
+START
+Coding Questions
 What makes a team **AI-native** rather than merely AI-assisted (Liguori's frontier teams)?
 Back: An **AI-native** team reshapes its codebase, tools and process so the agent can learn on its own **what to build** and **whether it built it correctly**.
 - AI-assisted: human reviews and corrects every turn, so speed is capped by one person's review rate

@@ -290,3 +290,65 @@ Without all four: it's purposeful practice at best, naive practice at worst.
 Tags: pedagogy deliberate-practice ericsson
 <!--ID: 1782128730137-->
 END
+
+START
+Coding Questions
+In Deslauriers et al. (2019), how did students' feeling of learning compare with their actual learning?
+Back:
+They **rated the polished lecture higher**, but **scored higher after the active session**.
+
+The extra effort of active work felt like learning less. Satisfaction is not evidence of learning.
+Tags: pedagogy active-learning fluency-illusion
+<!--ID: 1791026282851-->
+END
+
+START
+Coding Questions
+Freeman et al. (2014): failure rate under lecture-only vs active learning?
+Back:
+**33.8%** lecture-only vs **21.8%** active learning (meta-analysis of 225 STEM studies).
+Tags: pedagogy active-learning
+<!--ID: 1791026282860-->
+END
+
+START
+Coding Questions
+Why is a perfect AI explanation not enough for learning?
+Back:
+It is a **polished lecture**: the learner only listens, so it creates a **fluency illusion** (feels understood, nothing was hard).
+
+Design rule: the learner must **produce something before** the AI explains.
+Tags: pedagogy ai-education fluency-illusion
+<!--ID: 1791026282861-->
+END
+
+START
+Coding Questions
+What does "teacher as orchestrator" mean in AI-supported learning?
+Back:
+The teacher **designs the learning path** and **acts on learner data**; the AI does the one-to-one explaining.
+
+Term from Dillenbourg (2013), classroom orchestration.
+Tags: pedagogy ai-education orchestration
+<!--ID: 1791027989982-->
+END
+
+START
+Coding Questions
+Why did Kestin et al.'s (2025) AI tutor work when plain ChatGPT often does not?
+Back:
+Instructors **authored** it: split problems into steps, scripted hints that never revealed the answer, vetted explanations.
+
+A plain chatbot has **no curriculum**: it cannot know what to teach first.
+Tags: pedagogy ai-education orchestration
+<!--ID: 1791027989987-->
+END
+
+START
+Coding Questions
+What did Holstein et al. (2018) find about teacher awareness of AI-tutor data?
+Back:
+Real-time awareness of who is stuck **improved learning**, most for **students who were behind**.
+Tags: pedagogy ai-education orchestration
+<!--ID: 1791027989989-->
+END

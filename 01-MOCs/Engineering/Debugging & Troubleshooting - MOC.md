@@ -63,6 +63,7 @@ created: 2026-06-24
 - [[2026-06 OCSP flag was a no-op because Kalkan ran OCSP via a different verifier preset|OCSP flag no-op → Kalkan ran OCSP via a different verifier preset]]
 - [[2026-07 DiskFull crashed a Celery worker so an SMS endpoint silently returned success for 4 days|DiskFull crash-looped a Celery worker: SMS endpoint reported success for 4 days]]
 - [[2026-07 SSE events endpoint hung in CONNECTING because an idle stream never flushed its headers|SSE stuck in CONNECTING: headers flush only on the first send]]
+- [[2026-09 Dodo Pizza breach leaked 15 years of customer data but no card numbers|Dodo Pizza breach: every stored field leaked, unstored cards did not]]
 
 ---
 
