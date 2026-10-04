@@ -238,3 +238,60 @@ Back:
 Tags: self-mastery mindset self-knowledge
 <!--ID: 1790710787903-->
 END
+
+---
+
+## Sinclair's Law
+
+START
+Coding Questions
+What is Sinclair's law, and who said it?
+Back:
+When a person's **income depends on not seeing a truth**, they resist seeing it.
+
+Upton Sinclair, *I, Candidate for Governor* (1935): "It is difficult to get a man to understand something, when his salary depends on his not understanding it."
+Tags: self-mastery mindset self-knowledge
+<!--ID: 1791129877288-->
+END
+
+START
+Coding Questions
+Why is salary blindness usually not lying?
+Back:
+A liar sees the truth and hides it. Here self-interest works **upstream of belief**: it decides which evidence feels convincing, so the conclusion arrives shaped and feels **honestly held**.
+Tags: self-mastery mindset self-knowledge
+<!--ID: 1791129877293-->
+END
+
+START
+Coding Questions
+Why does intelligence not protect against Sinclair's law?
+Back:
+A clever mind is better at **building arguments**, and it builds them for whichever side pays.
+Tags: self-mastery mindset self-knowledge
+<!--ID: 1791129877294-->
+END
+
+START
+Coding Questions
+Name two documented cases of income blocking a truth.
+Back:
+Any two, e.g.:
+- **Tobacco** firms denied smoking caused cancer while their own papers showed it.
+- **Sugar Research Foundation** paid Harvard scientists to blame fat for heart disease (JAMA Internal Medicine, 2016).
+- **Robert Kehoe**, industry-funded, defended leaded petrol for ~40 years.
+- **Rating agencies** paid by bond issuers rated junk mortgage bonds AAA (2008).
+Tags: self-mastery mindset self-knowledge
+<!--ID: 1791129877296-->
+END
+
+START
+Coding Questions
+What question applies Sinclair's law to any opinion, including your own?
+Back:
+**What does this person gain from holding it?** Discount the claim in proportion to the gain.
+
+On yourself: which beliefs would your job, status, or past choices make **costly to drop**? Test those hardest, since the bias is invisible from the inside.
+Tags: self-mastery mindset self-knowledge
+<!--ID: 1791129877297-->
+END

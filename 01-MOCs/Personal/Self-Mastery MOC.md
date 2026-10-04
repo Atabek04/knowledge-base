@@ -167,6 +167,7 @@ A personal knowledge map covering study techniques, habits, discipline, time man
     - [[Ibn al-Qayyim traces misguidance to shubuhat corrupting knowledge and shahawat corrupting the will|Shubuhat vs shahawat: corrupt knowledge vs corrupt will]]
 - [[Self-distancing through third-person reflection restores wise reasoning about your own problems|Self-distancing: third person restores wise reasoning]]
 - [[Al-Ghazali gives four ways to see your own faults because the nafs hides them from itself|Al-Ghazali's four ways to see your own faults]]
+- [[People cannot see a truth their income depends on not seeing|Sinclair's law: income blinds you to costly truths]]
 
 ---
 
