@@ -40,7 +40,7 @@
 
 ### Secret Management
 - [ ] Never store secrets in code or plain env vars in prod
-- [ ] HashiCorp Vault — secret engines, dynamic secrets
+- [[HashiCorp Vault - MOC|HashiCorp Vault: secrets engines, dynamic secrets, leases]]
 - [ ] Cloud secret stores (AWS Secrets Manager, Parameter Store)
 - [ ] Secret rotation
 

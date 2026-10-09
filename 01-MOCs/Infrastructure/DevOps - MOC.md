@@ -143,3 +143,4 @@
 - [[Architecture - MOC]]
 - [[AWS - MOC]]
 - [[Observability - MOC]]
+- [[HashiCorp Vault - MOC]]
