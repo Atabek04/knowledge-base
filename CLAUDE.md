@@ -380,6 +380,15 @@ Notes on education, learning science, motivation, gamification, AI tutoring or r
 - A paper the note needs but the bib lacks: confirm it exists (DOI resolves, abstract read), then append a BibTeX entry to the bib in the existing style, with the DOI and the line `% added for vault note: <note title>`. Never add one from memory.
 - Never edit or delete an existing entry; report a wrong one to the user instead.
 
+### Founder lens for education research
+
+Education work in this vault serves one goal: a platform that makes learning better, cheaper and available to everyone, Muslim learners first. Read every finding as a principal engineer and tech founder would: what problem does it solve, at what cost, and what breaks.
+
+- The atomic note stays general (see Content Rules). Its product consequence goes into `01-MOCs/Education/Education Problem-Solution Map.md`, never into the note.
+- After an education note is done, update the map: add evidence to an existing problem, or add a new problem with all seven fields (evidence, root cause, platform lever, AI's role, risk, access and cost, status).
+- A lever without evidence is labelled a hypothesis to test, never a feature to promise. A finding that kills a planned feature goes in too.
+- Research reports for education topics end with a "Product implications" section mapped to the same seven fields.
+
 ### Content Rules
 
 **NEVER:**
