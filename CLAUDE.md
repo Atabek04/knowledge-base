@@ -371,6 +371,15 @@ Concretely, when a dependency is missing:
 
 This is the structural complement to *gloss-and-link* (below): gloss-and-link keeps a note atomic by **not re-teaching** a neighbour's concept; search-before-creating guarantees that neighbour's note **actually exists to link to**, and is written **before** the note that leans on it.
 
+### Thesis bibliography
+
+Notes on education, learning science, motivation, gamification, AI tutoring or research methods cite from `~/master-thesis/references/bibliography.bib` first. Every paper there is one the owner must be able to discuss at the viva.
+
+- Cite it in the note's usual format, Author (Year), Venue, with the DOI link; the BibTeX key is not needed in the note.
+- An entry with author `VERIFY` or a `VERIFY` comment is unconfirmed: check it against the DOI before citing.
+- A paper the note needs but the bib lacks: confirm it exists (DOI resolves, abstract read), then append a BibTeX entry to the bib in the existing style, with the DOI and the line `% added for vault note: <note title>`. Never add one from memory.
+- Never edit or delete an existing entry; report a wrong one to the user instead.
+
 ### Content Rules
 
 **NEVER:**
