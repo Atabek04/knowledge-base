@@ -33,7 +33,7 @@ Every entry has the same seven fields. A lever with no evidence is a hypothesis 
 
 ## 3. AI makes cheating easy and erodes skill
 
-- **Evidence:** AI help without guardrails lowers unassisted performance (Bastani 2025); heavy use correlates with weaker critical thinking (Gerlich 2025, correlational).
+- **Evidence:** AI help without guardrails lowers unassisted performance (Bastani 2025); heavy use correlates with weaker critical thinking (Gerlich 2025, correlational); a theoretical model predicts population-level dependency is cheaper to prevent than reverse, and that lowering the use-to-dependency rate protects competence even when adoption is high (Solé et al. 2026, preprint, untested). Hypothesis to test: a feature that keeps learners in the "uses AI but still thinks" state measurably lowers dependency.
 - **Root cause:** homework can no longer prove a skill.
 - **Platform lever:** hint-only tutor, write-before-AI flow, oral or live follow-up checks.
 - **AI's role:** generate follow-up questions that a copied answer cannot survive.
@@ -43,9 +43,9 @@ Every entry has the same seven fields. A lever with no evidence is a hypothesis 
 
 ## 4. Learners quit before they finish
 
-- **Evidence:** average MOOC completion 6.5% (Jordan 2014).
+- **Evidence:** average MOOC completion 6.5% (Jordan 2014); present bias: people overestimate future self-control and pay for access they do not use (DellaVigna and Malmendier 2006); a real commitment device raised MOOC completion where reminders did not (Patterson 2018); paying more barely raises use and the effect fades (Arkes and Blumer 1985; Ashraf et al. 2010).
 - **Root cause:** no teacher, no peers, no visible progress.
-- **Platform lever:** short sessions, visible mastery, teacher in the loop, peer accountability.
+- **Platform lever:** short sessions, visible mastery, teacher in the loop, peer accountability; system-set schedule (cohort start date, weekly live session, exam date as the learner's "why"); never rely on price to drive usage.
 - **AI's role:** detect disengagement early and alert the teacher, not just the learner.
 - **Risk:** streaks and rewards can turn into dark patterns.
 - **Access and cost:** retention is what makes a low price sustainable.
@@ -110,6 +110,26 @@ Every entry has the same seven fields. A lever with no evidence is a hypothesis 
 - **Risk:** UDL has weak evidence; do not cite it as proof.
 - **Access and cost:** the same build serves everyone.
 - **Status:** build in from the start.
+
+## 11. Free courses exist, but self-learners get stuck and lose confidence
+
+- **Evidence:** average MOOC completion 6.5% (Jordan 2014); low-stakes retrieval quizzes cut students' test anxiety (Agarwal et al. 2014); retrieval beats rereading (Roediger and Karpicke 2006).
+- **Root cause:** a playlist has one pace for learners with different prior knowledge; nobody answers the question a classmate would have raised, so a learner stuck on one step stays stuck and cannot tell whether they are ready.
+- **Platform lever:** structured path with prerequisite checks, a quiz after each step, and a visible "ready" signal from mastery data.
+- **AI's role:** answer the in-the-moment question a live class would have answered, at the learner's level, hint-first.
+- **Risk:** quizzes that are too easy create false confidence; the fluency illusion makes learners feel ready when they are not.
+- **Access and cost:** free content plus a cheap AI layer; no teacher time per question.
+- **Status:** hypothesis to test: does quiz-gated progression raise completion and calibrated confidence against a plain playlist?
+
+## 12. Free learning earns no credential employers trust
+
+- **Evidence:** a degree pays partly as a signal (Spence 1973; sheepskin effect, Hungerford and Solon 1987); dropping degree requirements changed fewer than 1 in 700 hires (Sigelman et al. 2024); MOOC certificates beat no credential but lose to degrees (Rivas et al. 2020); sharing certificates raised employment 6%, most for weak-baseline learners (Athey and Palikot 2024, preprint).
+- **Root cause:** an employer cannot verify what a self-learner mastered, so free knowledge sends no signal.
+- **Platform lever:** borrow a signal employers already trust: prepare learners for recognised third-party exams (IELTS, cloud and Kubernetes certifications, IIBA business-analysis certificates, ACTFL-style language proficiency tests), with internal levels aligned to the same framework (CEFR for languages). An in-house certificate, backed by a proctored or oral exam and verifiable by link, comes second, once pass rates prove the platform's levels predict the external exam.
+- **AI's role:** run the oral follow-up check that makes the certificate hard to fake (see problem 3).
+- **Risk:** a completion badge anyone can earn signals nothing; the certificate is worth only as much as its exam.
+- **Access and cost:** strongest for learners without degrees, who gain most from a credible signal.
+- **Status:** hypothesis; credibility must be earned with employers before it can be sold. The key metric is the external pass rate of learners the platform marked as ready.
 
 ---
 

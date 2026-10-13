@@ -263,3 +263,167 @@ They are complementary: reduce extraneous → use freed working memory for desir
 Tags: pedagogy desirable-difficulties clt
 <!--ID: 1782128730403-->
 END
+
+START
+Coding Questions
+Norm-referenced (curve) vs criterion-referenced grading?
+Back:
+- **Norm-referenced:** grade by **rank** in the group (top 10% get A). Says how you compare, not what you know.
+- **Criterion-referenced:** grade against a **fixed standard** set in advance. Everyone who meets it gets the grade.
+Tags: pedagogy assessment
+<!--ID: 1791117163204-->
+END
+
+START
+Coding Questions
+Why does curve grading discourage students from helping each other?
+Back:
+A classmate's progress **lowers your rank**, so helping costs you. Learning becomes a competition.
+Tags: pedagogy assessment
+<!--ID: 1791117163237-->
+END
+
+START
+Coding Questions
+Bloom's (1968) argument against the normal curve in grading?
+Back:
+The normal curve describes **chance** outcomes. Teaching is **purposeful**, so if it works, most students should master the material and scores bunch near the top.
+Tags: pedagogy assessment mastery-learning
+<!--ID: 1791117163262-->
+END
+
+START
+Coding Questions
+What is the weak point of criterion-referenced grading?
+Back:
+It is only as honest as its **test**. If students pass without the skill (cheating, AI doing the task), everyone gets an A and the A means nothing.
+Tags: pedagogy assessment ai-education
+<!--ID: 1791117163289-->
+END
+
+START
+Coding Questions
+Why does an oral exam with follow-up questions resist AI-written work?
+Back:
+Each follow-up is built from the student's **last answer**, so a memorised or AI-written answer runs out after one or two probes.
+Tags: pedagogy assessment ai-education
+<!--ID: 1791117952276-->
+END
+
+START
+Coding Questions
+Three conditions before trusting an AI examiner's verdict?
+Back:
+1. **Agreement**: matches a human examiner
+2. **Identity**: the speaker is the student, no hidden AI whispering
+3. **Fairness**: an accent is not marked as a knowledge gap
+Tags: pedagogy assessment ai-education
+<!--ID: 1791117952280-->
+END
+
+START
+Coding Questions
+What is Bloom's 2 Sigma Problem (1984)?
+Back:
+One-to-one tutored students scored about **2σ** above a conventional class (average tutored student beat 98%).
+
+The **problem**: find group methods as effective, since a tutor per student is too expensive.
+Tags: pedagogy tutoring bloom
+<!--ID: 1791120776257-->
+END
+
+START
+Coding Questions
+How big is the tutoring effect in later evidence, versus Bloom's 2σ?
+Back:
+- VanLehn (2011): human tutoring about **0.79σ**
+- Nickow et al. (2024): about **0.29σ**
+
+Cite 2σ as the benchmark, never as the expected effect.
+Tags: pedagogy tutoring
+<!--ID: 1791120776260-->
+END
+
+START
+Coding Questions
+VanLehn (2011): how did step-based computer tutors compare with human tutors?
+Back:
+About **0.76σ** vs **0.79σ**: nearly equal. The cognitive part of tutoring can be automated.
+Tags: pedagogy tutoring ai-education
+<!--ID: 1791120776262-->
+END
+
+START
+Coding Questions
+What did Oreopoulos & Petronijevic (2023) find about low-touch automated coaching?
+Back:
+It changed students' **beliefs** but not their **grades or persistence**. The human contact may be the active ingredient.
+Tags: pedagogy coaching ai-education
+<!--ID: 1791120776264-->
+END
+
+START
+Coding Questions
+Human capital vs signaling: why does a degree pay?
+Back:
+- **Human capital:** it raises **skill**.
+- **Signaling** (Spence 1973): it is **costly to earn**, so it proves ability and persistence to an employer, whatever was learned.
+Tags: education credentials economics
+<!--ID: 1791910535542-->
+END
+
+START
+Coding Questions
+What is the sheepskin effect?
+Back:
+Earnings **jump in the year a diploma is completed**, beyond what one more year of study explains. The diploma itself carries value (Hungerford and Solon 1987).
+Tags: education credentials economics
+<!--ID: 1791910535565-->
+END
+
+START
+Coding Questions
+Did dropping degree requirements change who US firms hired (Sigelman et al. 2024)?
+Back:
+Barely: fewer than **1 in 700** hires in 2023. Employers still screen on the degree.
+Tags: education credentials
+<!--ID: 1791910535566-->
+END
+
+START
+Coding Questions
+Does a MOOC certificate substitute for a degree (Rivas et al. 2020)?
+Back:
+No. It beats **no credential** but loses to **every traditional degree**. A certificate complements, it does not substitute.
+Tags: education credentials
+<!--ID: 1791910535567-->
+END
+
+START
+Coding Questions
+What is present bias, and what did "Paying Not to Go to the Gym" (DellaVigna & Malmendier 2006) show?
+Back:
+**Present bias:** today's comfort outweighs tomorrow's goal, so the plan is always "tomorrow".
+
+Gym members on monthly contracts attended so rarely they would have paid less per visit: people **overestimate their future self-control**.
+Tags: behavioral-economics motivation
+<!--ID: 1791911110554-->
+END
+
+START
+Coding Questions
+Does paying for a course make people use it more?
+Back:
+Only weakly and briefly. Full-price ticket buyers attended more only in the **first half** of the season (Arkes & Blumer 1985); higher prices did not raise use in Zambia (Ashraf et al. 2010).
+Tags: behavioral-economics motivation
+<!--ID: 1791911110583-->
+END
+
+START
+Coding Questions
+What makes learners show up more than free access or the price paid?
+Back:
+A **commitment device** (system-set deadline, booked session), a **fixed schedule**, **people who expect you**, and a **reason with a date** attached.
+Tags: behavioral-economics motivation
+<!--ID: 1791911110586-->
+END

@@ -377,7 +377,7 @@ Notes on education, learning science, motivation, gamification, AI tutoring or r
 
 - Cite it in the note's usual format, Author (Year), Venue, with the DOI link; the BibTeX key is not needed in the note.
 - An entry with author `VERIFY` or a `VERIFY` comment is unconfirmed: check it against the DOI before citing.
-- A paper the note needs but the bib lacks: confirm it exists (DOI resolves, abstract read), then append a BibTeX entry to the bib in the existing style, with the DOI and the line `% added for vault note: <note title>`. Never add one from memory.
+- A paper the note needs but the bib lacks: confirm it exists (DOI resolves, abstract read), then append a BibTeX entry to the bib in the existing style, with the DOI and the line `% added for vault note: <note title>`, and add it to `references/README.md` under its cluster with a one-line "why it matters" in italics. Never add one from memory.
 - Never edit or delete an existing entry; report a wrong one to the user instead.
 
 ### Founder lens for education research

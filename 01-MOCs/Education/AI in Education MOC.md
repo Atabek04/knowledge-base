@@ -6,7 +6,7 @@ aliases: [AI in Education]
 
 What AI does to learning and teaching: when it tutors, when it becomes a crutch, and what is left for the human teacher and the school. Doubles as the roadmap for the thesis on AI-powered personalized learning, from tutoring-system architecture and learner models to the trials that test large language model tutors.
 
-Parent: none. Read in order; each section assumes the ones above. Teaching progress: discussion series, topic 5 (why attend university) next.
+Parent: none. Read in order; each section assumes the ones above. Teaching progress: discussion series done; section 2 (intelligent tutoring system anatomy) next.
 
 ---
 
@@ -17,7 +17,8 @@ Parent: none. Read in order; each section assumes the ones above. Teaching progr
 - [[An oral exam with live follow-up questions proves a skill that AI-written homework can no longer prove|3. Assessment: live follow-ups prove what homework can't]]
 	- [[Curve grading ranks students against each other while criterion grading measures them against a fixed standard|Curve grading ranks; criterion grading measures]]
 - [[One-to-one tutoring beats classroom teaching but Bloom's two sigma gain shrinks to under one sigma in later evidence|4. Mentorship: tutoring wins, but 2 sigma is really under 1]]
-- [ ] 5. Why attend university when knowledge is free
+- [[A degree pays partly as a signal of ability, so free knowledge alone does not replace it|5. University: a degree signals, free knowledge doesn't]]
+	- [[Present bias makes free learning easy to postpone, so commitment, schedules and peers make people show up|University as a gym: schedules and peers beat access]]
 
 ## 2. Intelligent tutoring system anatomy and evidence (Core)
 
@@ -103,6 +104,9 @@ Parent: none. Read in order; each section assumes the ones above. Teaching progr
 - [[Heavy AI use correlates with weaker critical thinking but the causal arrow may run both ways|Heavy AI use tracks weaker thinking, causation unclear]]
 - [[Trusting AI more predicts less critical thinking while trusting yourself predicts more|Trust in AI cuts checking; self-confidence raises it]]
 - [[Over-relying on AI coding tools without reading output erodes genuine programming confidence|Vibe-coding without reading output erodes confidence]]
+- [[Regular LLM use is not dependency until the coupling persists and replaces the user's own thinking|LLM dependency model: frequent use is not dependency]]
+    - [[A social reinforcement term makes LLM dependency easier to prevent than to reverse|LLM tipping point: hysteresis makes prevention cheaper than reversal]]
+    - [[Lowering the dependency rate raises competence without moving the LLM tipping point|Cognitive immunization: which lever moves what]]
 - [ ] Hallucination means a model produces fluent false content, and a tutor stating a false step teaches the error (Ji et al. 2023)
 - [ ] Sycophancy means a model shifts its answer to please the user, so a tutor may confirm a wrong belief (Sharma et al. 2023)
 - [ ] Metacognitive laziness means learners hand planning and monitoring to the AI, so the product improves while the skill stays flat (Fan et al. 2025)
