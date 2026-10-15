@@ -71,6 +71,14 @@
 - [ ] Branch protection and environments
 - [ ] Artifact management
 
+### Deployment Environments
+- [[An integration environment absorbs breakage so the QA environment can stay stable|Dev vs QA env: one is allowed to break, one must not]]
+- [[QA checks a build matches the spec while UAT checks it is the right thing for the business|QA vs UAT: built it right vs built the right thing]]
+- [[Staging mirrors production config, data and infrastructure so the deploy itself can be rehearsed|Staging: prod minus users, rehearses the deploy]]
+- [[Each deployment environment exists to keep one workload from corrupting another's results|Why many envs: each separates two clashing workloads]]
+- [[Staging always drifts from production so passing there gives false confidence|Staging drift: why some teams test in prod instead]]
+- [[Ephemeral preview environments give each pull request its own isolated copy instead of a shared queue|Preview envs: one throwaway env per PR, no shared queue]]
+
 ### Load Balancing
 - [ ] NGINX basics
 - [[Reverse proxy hides the origin server's IP by relaying client requests to backend servers|Reverse proxy — hides origin IP, caches, and shields the server]]

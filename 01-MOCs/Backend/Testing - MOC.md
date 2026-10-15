@@ -74,6 +74,7 @@
 - [ ] Test data builders
 - [ ] Test doubles — mock vs stub vs spy vs fake vs dummy
 - [ ] Property-based testing (jqwik)
+- [[QA checks a build matches the spec while UAT checks it is the right thing for the business|QA vs UAT: built it right vs built the right thing]]
 
 ---
 
