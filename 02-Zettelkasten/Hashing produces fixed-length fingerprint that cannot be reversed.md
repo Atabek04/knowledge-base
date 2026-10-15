@@ -1,14 +1,46 @@
 ---
 created: 2025-12-24
 tags: [cryptography/hash]
-sr-due:
-sr-interval:
-sr-ease:
+aliases: [Hashing, Hash function, Digest]
 ---
 
-> Hashing transforms input data of any size into a **fixed-length** output called a <mark style="background: #BBFABBA6;">digest</mark> or <mark style="background: #BBFABBA6;">fingerprint</mark>.
+> Hashing transforms input data of any size into a **fixed-length** output called a <mark style="background: #FFF3A3A6;">digest</mark> or <mark style="background: #FFF3A3A6;">fingerprint</mark>.
 >
-> The transformation is one-way — you cannot recover the original input from the hash.
+> The transformation is one-way: you cannot recover the original input from the hash.
+
+---
+
+### Why hashing is one-way
+
+#### No key exists
+
+<mark style="background: #FFF3A3A6;">A hash function is a public recipe with no key, so anyone who hashes the same input gets the same digest.</mark>
+SHA-256 of `hello` is the same value on the defender's server and on the attacker's laptop.
+
+That is the line between hashing and [[Encryption transforms data using key to ensure confidentiality|encryption]]: encryption is reversible by whoever holds the key, while hashing has no key and nothing to reverse with.
+
+#### Information is thrown away
+
+A toy hash makes the mechanism visible: "add up the digits".
+
+| Input | Toy hash |
+|---|---|
+| `16` | 7 |
+| `25` | 7 |
+| `1111111` | 7 |
+
+Given only `7`, there is no way to say which input produced it, because infinitely many inputs share it.
+
+<mark style="background: #ABF7F7A6;">A hash squeezes unlimited input into a fixed number of bits, so information is destroyed and no inverse function can exist.</mark>
+
+SHA-256 does the same squeeze into 32 bytes, with mixing so thorough that nobody can even construct *some* input matching a chosen digest. That is the preimage resistance below.
+
+#### Limit: one-way is not unguessable
+
+<mark style="background: #FF5582A6;">One-way only stops running the hash backwards; an attacker can still hash candidate inputs forwards and compare.</mark>
+When the inputs are few, that search is fast, so [[A hash is only as hard to reverse as its set of possible inputs is large|a hash protects only as well as its input space is large]].
+
+---
 
 ### Hash Algorithms
 
@@ -67,7 +99,10 @@ Use SHA-512 for long-term security (decades) or highly sensitive data.
 Even a single bit change in input produces a completely different hash output.
 This property is called the **avalanche effect**.
 
-## Links
+---
+
+### Read more
+- [[A hash is only as hard to reverse as its set of possible inputs is large]]
 - [[Birthday problem explains why collision resistance requires double the security bits]]
 - [[Checksum verifies integrity but signature on checksum verifies authenticity]]
 - [[Encryption transforms data using key to ensure confidentiality]]
