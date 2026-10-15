@@ -215,7 +215,13 @@ plugins:
         depth: 1
         scale: 1.1
         showTags: false
+      # expanded view: same neighbourhood as the sidebar graph, just bigger
       globalGraph:
+        depth: 1
+        scale: 2
+        linkDistance: 80
+        repelForce: 1
+        enableRadial: false
         showTags: false
     layout:
       position: right
