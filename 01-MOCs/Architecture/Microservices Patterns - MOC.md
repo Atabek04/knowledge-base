@@ -16,37 +16,13 @@
 
 ### Resilience Patterns
 
-#### Circuit Breaker
-- [ ] Closed, Open, Half-Open states
-- [ ] Failure thresholds
-- [ ] Timeout configuration
-- [ ] Resilience4j implementation
+Circuit breaker, retry, timeout, bulkhead and rate limiter live in their own roadmap: [[Resilience Patterns - MOC]].
 
-#### Retry
-- [ ] Retry strategies
-- [ ] Exponential backoff
-- [ ] Jitter
-- [ ] Idempotency requirements
-- [ ] Resilience4j Retry
-
-#### Bulkhead
-- [ ] Thread pool isolation
-- [ ] Semaphore isolation
-- [ ] Resource limits
-- [ ] Resilience4j Bulkhead
-
-#### Rate Limiting
+#### Rate Limiting Algorithms
 - [ ] Token bucket
 - [ ] Leaky bucket
 - [ ] Fixed window
 - [ ] Sliding window
-- [ ] Resilience4j RateLimiter
-
-#### Timeout
-- [ ] Connection timeout
-- [ ] Read timeout
-- [ ] Overall timeout
-- [ ] Timeout propagation
 
 ### Distributed Transaction Patterns
 
@@ -148,6 +124,7 @@
 ---
 
 ## Related
+- [[Resilience Patterns - MOC]]
 - [[Distributed Systems - MOC]]
 - [[Architecture - MOC]]
 - [[Observability - MOC]]
