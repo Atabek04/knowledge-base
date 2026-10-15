@@ -22,6 +22,17 @@ $sidebarLeftTablet: 17rem;
 $measure: 46rem; // about 75-80 characters of Source Serif 4 at 1.1rem
 $radius: 8px;
 
+// Fonts are vendored in site/fonts and copied to static/fonts at build time
+// (fontOrigin: local), so neither the build nor the reader touches Google.
+@font-face { font-family: "Source Serif 4"; font-style: normal; font-weight: 400; font-display: swap; src: url("static/fonts/source-serif-4-400.ttf") format("truetype"); }
+@font-face { font-family: "Source Serif 4"; font-style: normal; font-weight: 600; font-display: swap; src: url("static/fonts/source-serif-4-600.ttf") format("truetype"); }
+@font-face { font-family: "Source Serif 4"; font-style: italic; font-weight: 400; font-display: swap; src: url("static/fonts/source-serif-4-400-italic.ttf") format("truetype"); }
+@font-face { font-family: "Source Serif 4"; font-style: italic; font-weight: 600; font-display: swap; src: url("static/fonts/source-serif-4-600-italic.ttf") format("truetype"); }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 400; font-display: swap; src: url("static/fonts/manrope-400.ttf") format("truetype"); }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 700; font-display: swap; src: url("static/fonts/manrope-700.ttf") format("truetype"); }
+@font-face { font-family: "JetBrains Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("static/fonts/jetbrains-mono-400.ttf") format("truetype"); }
+@font-face { font-family: "JetBrains Mono"; font-style: normal; font-weight: 600; font-display: swap; src: url("static/fonts/jetbrains-mono-600.ttf") format("truetype"); }
+
 :root {
   --panel: color-mix(in srgb, var(--lightgray) 38%, var(--light));
 }
@@ -127,10 +138,217 @@ body {
 }
 
 // ---------------------------------------------------------------------------
+// Collapsible sidebars (desktop only). A panel icon in the sidebar's top row
+// hides it; while hidden, a small box with a chevron sits in that page corner
+// to bring it back. The article keeps its measure and re-centres.
+// ---------------------------------------------------------------------------
+// The hide button matches the theme toggle exactly: 20px glyph in a 32px
+// row, ink-coloured, no chrome.
+.sidebar-toggle {
+  display: none;
+  width: 18px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background: none;
+  color: var(--darkgray);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: color 0.15s ease;
+  & svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+  &:hover {
+    color: var(--dark);
+  }
+}
+
+// The reveal tab: a bookmark stuck to the page edge, a little below the top.
+.sidebar-reveal {
+  display: none;
+  position: fixed;
+  top: 4.5rem;
+  z-index: 5;
+  width: 2.1rem;
+  height: 3rem;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--darkgray);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px -2px rgba(20, 20, 19, 0.18);
+  transition: color 0.15s ease, background 0.15s ease, width 0.15s ease;
+  & svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  &.left {
+    left: 0;
+    border-left: 0;
+    border-radius: 0 9px 9px 0;
+  }
+  &.right {
+    right: 0;
+    border-right: 0;
+    border-radius: 9px 0 0 9px;
+  }
+  &:hover {
+    color: var(--dark);
+    background: var(--panel);
+    width: 2.4rem;
+  }
+}
+
+@media all and ($desktop) {
+  body:not([data-slug="index"]) {
+    & .sidebar-toggle {
+      display: flex;
+    }
+    // right: top corner of the column, above the table of contents
+    & .sidebar.right {
+      position: sticky;
+      & .sidebar-toggle {
+        position: absolute;
+        top: 0.7rem;
+        right: 0.9rem;
+      }
+    }
+  }
+
+  html[data-left="closed"] body:not([data-slug="index"]) {
+    & .page > #quartz-body {
+      grid-template-columns: 0 minmax(0, 1fr) $sidebarRight;
+      background: none;
+      & .sidebar.left {
+        display: none;
+      }
+    }
+    & .sidebar-reveal.left {
+      display: flex;
+    }
+  }
+  html[data-right="closed"] body:not([data-slug="index"]) {
+    & .page > #quartz-body {
+      grid-template-columns: $sidebarLeft minmax(0, 1fr) 0;
+      & .sidebar.right {
+        display: none;
+      }
+    }
+    & .sidebar-reveal.right {
+      display: flex;
+    }
+  }
+  html[data-left="closed"][data-right="closed"] body:not([data-slug="index"]) .page > #quartz-body {
+    grid-template-columns: 0 minmax(0, 1fr) 0;
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Sidebars (UI sans)
 // ---------------------------------------------------------------------------
 .sidebar {
   font-family: var(--headerFont);
+}
+
+// title row: site name, then three glyphs (search, theme, hide) drawn from
+// one icon family (Lucide, 1.75 stroke, 18px) so they read as a set. Quartz's
+// own search and sun/moon SVGs are hidden and redrawn as CSS masks in
+// currentColor, which also makes them theme-aware for free.
+$lucide-search: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7.5'/%3E%3Cpath d='m21 21-4.5-4.5'/%3E%3C/svg%3E");
+$lucide-sun: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41'/%3E%3C/svg%3E");
+$lucide-moon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z'/%3E%3C/svg%3E");
+
+%glyph-button {
+  width: 18px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--darkgray);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: color 0.15s ease;
+  &:hover {
+    color: var(--dark);
+  }
+}
+%glyph-mask {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: currentColor;
+  mask: center / contain no-repeat;
+  -webkit-mask: center / contain no-repeat;
+}
+
+.sidebar.left > .flex-component {
+  align-items: center;
+  gap: 0.85rem !important;
+  & > div {
+    display: flex;
+    align-items: center;
+    align-self: center !important;
+    line-height: 0;
+  }
+  & .page-title {
+    margin-right: 0.25rem;
+  }
+
+  // theme: sun on the light theme, moon on the dark one
+  & .darkmode {
+    @extend %glyph-button;
+    position: relative;
+    & svg {
+      display: none;
+    }
+    &::before {
+      @extend %glyph-mask;
+      mask-image: $lucide-sun;
+      -webkit-mask-image: $lucide-sun;
+    }
+  }
+
+  // search collapses to its glyph; the box opens on click or Ctrl/Cmd+K
+  & .search {
+    min-width: 0;
+    max-width: none;
+    flex: 0 0 auto;
+    // the overlay is a child of this row: undo the row's line-height: 0
+    & .search-container {
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+    & .search-button {
+      @extend %glyph-button;
+      & p,
+      & svg {
+        display: none;
+      }
+      &::before {
+        @extend %glyph-mask;
+        mask-image: $lucide-search;
+        -webkit-mask-image: $lucide-search;
+      }
+    }
+  }
+}
+[saved-theme="dark"] .sidebar.left > .flex-component .darkmode::before {
+  mask-image: $lucide-moon;
+  -webkit-mask-image: $lucide-moon;
 }
 
 .sidebar.left {
@@ -144,43 +362,120 @@ body {
       color: var(--dark);
     }
   }
-  & .search .search-button {
-    font-size: 0.9rem;
-    border-radius: $radius;
-    background: var(--light);
-    border: 1px solid var(--lightgray);
-  }
   & .explorer {
-    & button.explorer-title h2,
-    & button.title-button h2 {
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--gray);
+    // no "Browse" header on desktop: the tree is always open
+    & button.title-button.desktop-explorer {
+      display: none;
     }
     & .explorer-content {
-      margin-top: 0.6rem;
+      margin-top: 0.25rem;
     }
-    // scoped view: "All subjects" crumb above the current category
-    & .explorer-scope {
-      margin: 0 0 0.5rem;
-      & a {
-        font-size: 0.82rem;
-        font-weight: 500;
-        color: var(--gray);
-        &:hover {
-          color: var(--dark);
-        }
-      }
-    }
+    // scoped view: the current category is the heading, its MOCs the list
     & .folder-outer.scoped-root > ul {
       margin: 0;
       padding-left: 0;
       border-left: none;
     }
-    & .folder-container.scoped-active div > a {
-      font-size: 1.05rem;
+    & .folder-container.scoped-active {
+      margin: 0 0 0.5rem;
+      & .folder-icon {
+        display: none;
+      }
+      & div > a {
+        font-family: var(--bodyFont);
+        font-size: 1.35rem;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        line-height: 1.2;
+      }
+    }
+    & .folder-outer.scoped-open > ul {
+      margin: 0;
+      padding-left: 0;
+      border-left: none;
+    }
+
+    // MOC row: chevron, title, then (when open) the MOC's notes in its order
+    & li.moc-item {
+      position: relative;
+      & > a {
+        padding-left: 1.35rem;
+        margin-left: 0;
+      }
+      & > .moc-toggle {
+        position: absolute;
+        left: 0;
+        top: 0.2rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        padding: 0;
+        border: 0;
+        background: none;
+        color: var(--gray);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & svg {
+          transition: transform 0.15s ease;
+        }
+        &:hover {
+          color: var(--dark);
+        }
+      }
+      & > .moc-notes {
+        display: none;
+        margin: 0.15rem 0 0.6rem 0.6rem;
+        padding-left: 0.75rem;
+        border-left: 1px solid var(--lightgray);
+      }
+      &.open {
+        & > .moc-toggle svg {
+          transform: rotate(90deg);
+        }
+        & > .moc-notes {
+          display: block;
+        }
+      }
+    }
+    & .moc-notes {
+      & .moc-section {
+        margin: 0.55rem 0 0.15rem;
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: var(--gray);
+      }
+      & ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        & ul {
+          margin-left: 0.7rem;
+        }
+      }
+      & li {
+        margin: 0;
+      }
+      & a.note-link {
+        display: block;
+        font-size: 0.82rem;
+        font-weight: 400;
+        line-height: 1.35;
+        padding: 0.2rem 0.45rem;
+        margin: 0;
+        border-radius: 5px;
+        color: var(--darkgray);
+        &:hover {
+          color: var(--dark);
+          background: var(--highlight);
+        }
+        &.active {
+          color: var(--dark);
+          font-weight: 600;
+          background: var(--light);
+          box-shadow: 0 0 0 1px var(--lightgray);
+        }
+      }
     }
     & .folder-container {
       margin: 0.2rem 0;
@@ -296,6 +591,35 @@ body {
     background: var(--panel);
     border: 1px solid var(--lightgray);
     color: var(--darkgray);
+  }
+}
+
+// "Also known as" line: the note's aliases, set in the UI sans so they read
+// as names rather than as the first sentence of the note
+article p.aka {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.55rem;
+  margin: -0.5rem 0 1.75rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--lightgray);
+  border-radius: $radius;
+  background: var(--panel);
+  font-family: var(--headerFont);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--darkgray);
+  & .aka-label {
+    color: var(--gray);
+    margin-right: 0.2rem;
+  }
+  & .aka-sep {
+    color: var(--gray);
+  }
+  & .aka-name {
+    font-weight: 500;
+    color: var(--dark);
   }
 }
 
@@ -579,12 +903,10 @@ body[data-slug="index"] {
       & .page-title {
         display: none;
       }
+      // right-aligned glyph row: search, theme
       & .flex-component {
         flex-grow: 0;
         margin-left: auto;
-      }
-      & .search {
-        max-width: 15rem;
       }
     }
     & .center,
@@ -607,81 +929,69 @@ body[data-slug="index"] {
 }
 
 // ---------------------------------------------------------------------------
-// Landing page: subject cards
+// Landing page: the subject index, generated at build time. Two columns of
+// subjects separated by hairlines; under each, its maps of content with a
+// thin left rule, like a book's table of contents. Quartz tags these links as
+// .internal, so the article link rules (underline, zero padding) are reset.
 // ---------------------------------------------------------------------------
-.subject-grid {
+.subject-index {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  gap: 1.1rem;
-  margin: 2rem 0 3rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 3rem;
+  row-gap: 0;
+  margin: 2.5rem 0 3.5rem;
+  border-top: 1px solid var(--lightgray);
+  @media all and ($mobile) {
+    grid-template-columns: minmax(0, 1fr);
+    column-gap: 0;
+  }
 }
-.subject-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-  padding: 1.3rem 1.4rem 1.35rem;
-  border: 1px solid var(--lightgray);
-  border-radius: 14px;
-  background: var(--light);
-  box-shadow:
-    0 1px 2px rgba(20, 20, 19, 0.04),
-    0 6px 18px -12px rgba(20, 20, 19, 0.18);
-  text-decoration: none !important;
-  color: var(--darkgray);
-  transition:
-    transform 0.18s ease,
-    box-shadow 0.18s ease,
-    border-color 0.18s ease;
-
-  // arrow in the corner, revealed on hover
-  &::after {
-    content: "→";
-    position: absolute;
-    top: 1.1rem;
-    right: 1.2rem;
-    font-family: var(--headerFont);
-    font-size: 1rem;
-    color: var(--gray);
-    opacity: 0;
-    transform: translateX(-4px);
-    transition: opacity 0.18s ease, transform 0.18s ease;
-  }
+.subject {
+  padding: 1.1rem 0 1.3rem;
+  border-bottom: 1px solid var(--lightgray);
+}
+article .subject-name a,
+article .subject-name a.internal {
+  display: inline-block;
+  font-family: var(--bodyFont);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: var(--dark);
+  background: none;
+  padding: 0;
+  text-decoration: none;
   &:hover {
-    transform: translateY(-3px);
-    border-color: color-mix(in srgb, var(--dark) 35%, var(--lightgray));
-    box-shadow:
-      0 1px 2px rgba(20, 20, 19, 0.05),
-      0 14px 28px -14px rgba(20, 20, 19, 0.28);
-    &::after {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
   }
-
-  & .subject-name {
+}
+article .subject-mocs {
+  list-style: none;
+  margin: 0.55rem 0 0 0.15rem;
+  padding: 0 0 0 0.85rem;
+  border-left: 1px solid var(--lightgray);
+  & li {
+    margin: 0;
+    line-height: 1.35;
+  }
+  & a,
+  & a.internal {
     display: block;
+    padding: 0.22rem 0.5rem;
+    margin-left: -0.5rem;
+    border-radius: 5px;
     font-family: var(--bodyFont);
-    font-size: 1.3rem;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.015em;
-    color: var(--dark);
-    padding-right: 1.5rem;
-  }
-  & .subject-blurb {
-    display: block;
-    font-family: var(--headerFont);
-    font-size: 0.84rem;
-    line-height: 1.5;
-    color: var(--gray);
-  }
-}
-[saved-theme="dark"] .subject-card {
-  background: var(--panel);
-  box-shadow: none;
-  &:hover {
-    box-shadow: 0 14px 28px -14px rgba(0, 0, 0, 0.6);
+    font-size: 0.98rem;
+    color: var(--darkgray);
+    background: none;
+    text-decoration: none;
+    &:hover {
+      color: var(--dark);
+      background: var(--highlight);
+    }
   }
 }
 
@@ -708,6 +1018,100 @@ footer {
   & a {
     color: var(--gray);
     &:hover {
+      color: var(--dark);
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Keyboard shortcuts: a footer link and a quiet modal (opened with "?")
+// ---------------------------------------------------------------------------
+footer .kbd-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: var(--gray);
+  cursor: pointer;
+  &:hover {
+    color: var(--dark);
+  }
+  & svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+.kbd-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: color-mix(in srgb, var(--dark) 28%, transparent);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.12s ease, visibility 0.12s ease;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  & .kbd-card {
+    width: min(26rem, 100%);
+    padding: 1.5rem 1.75rem 1.6rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 12px;
+    background: var(--light);
+    box-shadow: 0 24px 60px -24px rgba(20, 20, 19, 0.45);
+    font-family: var(--headerFont);
+    & h2 {
+      margin: 0 0 1.1rem;
+      font-family: var(--bodyFont);
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      color: var(--dark);
+    }
+    & dl {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 1.25rem;
+      row-gap: 0.65rem;
+      align-items: center;
+      margin: 0;
+    }
+    & dt {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      justify-self: end;
+      & span {
+        font-size: 0.75rem;
+        color: var(--gray);
+      }
+    }
+    & dd {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--darkgray);
+    }
+    & kbd {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 1.6rem;
+      height: 1.6rem;
+      padding: 0 0.4rem;
+      border: 1px solid var(--lightgray);
+      border-bottom-width: 2px;
+      border-radius: 6px;
+      background: var(--panel);
+      font-family: var(--codeFont);
+      font-size: 0.78rem;
       color: var(--dark);
     }
   }

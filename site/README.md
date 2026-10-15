@@ -8,6 +8,8 @@ The vault is published as a static site with [Quartz 5](https://quartz.jzhao.xyz
 | `quartz.ts` | code-only overrides: explorer tree (hides `02-Zettelkasten`, renames `01-MOCs` to Subjects) and the SVG embed path fix |
 | `custom.scss` | highlight palette, definition/theorem callouts, landing-page cards |
 | `index.md` | landing page; copied to the vault root only during a build |
+| `fonts/` | Source Serif 4, Manrope, JetBrains Mono, vendored so builds never fetch from Google |
+| `favicon/` | `graph.svg` (source) and `icon.png` (rasterised, replaces Quartz's default) |
 
 Published: `01-MOCs`, `02-Zettelkasten`, `Incidents`, `Assets` (minus `Assets/Books`). Everything else is ignored.
 
