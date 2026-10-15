@@ -48,6 +48,7 @@ Prompting is the interface to the model — the same model gives wildly differen
 
 ## Read more
 
+- [[Prompt Engineering for LLMs MOC]]: book roadmap, Berryman and Ziegler
 - [[AI Engineering MOC]] — building AI-powered products
 - [[Agentic Engineering MOC]] — using AI tools to code
 - [[Machine Learning MOC]]

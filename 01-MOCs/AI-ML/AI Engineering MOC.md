@@ -158,6 +158,7 @@ The harness is everything wrapped around the model call: the loop, tools, permis
   - [[Hugging Face hosts community fine-tuned Whisper variants for domain-specific transcription]] — where to find better models
 - Text-to-speech
 - Video understanding
+- [[AI Video Production MOC|AI video production: code-rendered and generative pipelines]]
 
 ## Safety, Security, Ethics
 
