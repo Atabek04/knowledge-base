@@ -81,3 +81,4 @@ Evidence-based principles for designing instructional video that maximizes learn
 ## See Also
 
 - [[Learning Strategies MOC]] — Pedagogy, slide design, language acquisition, and active learning foundations
+- [[AI Video Production MOC|AI Video Production MOC: producing the video with code-rendered and generative AI]]
