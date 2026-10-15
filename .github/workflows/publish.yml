@@ -67,6 +67,7 @@ jobs:
         run: |
           npm ci
           npx quartz plugin install --from-config
+          node ../site/patch-graph.mjs
           npx quartz build -d ..
 
       - uses: actions/upload-pages-artifact@v3

@@ -41,6 +41,8 @@ New-Item -ItemType Directory -Force $preview | Out-Null
 Push-Location $quartz
 try {
     npx quartz plugin install --from-config
+    node (Join-Path $vault "site\patch-graph.mjs")
+    if ($LASTEXITCODE -ne 0) { throw "graph patch failed" }
     npx quartz build -d $vault -o $out
 } finally {
     Pop-Location
