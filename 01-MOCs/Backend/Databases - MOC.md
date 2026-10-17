@@ -9,7 +9,7 @@
 - [ ] PostgreSQL deep dive
 - [ ] Transactions & isolation
 - [ ] JPA / Hibernate
-- [ ] Redis (caching)
+- [ ] Redis
 - [ ] MongoDB basics
 
 ---
@@ -51,7 +51,7 @@
 - [ ] Cascading operations
 - [ ] JPQL and Criteria API
 - [ ] N+1 problem and solutions
-- [ ] Caching (first-level, second-level)
+- [ ] Persistence-context caching (first-level, second-level)
 - [ ] Entity lifecycle and states
 
 ### Connection Pooling
@@ -75,9 +75,8 @@
 - [ ] TTL and expiration
 - [ ] Pub/Sub
 - [ ] Transactions (MULTI/EXEC)
-- [ ] Caching strategies (write-through, write-behind, cache-aside)
-- [ ] Cache invalidation
 - [ ] Spring Data Redis
+- → [[System Design - MOC#Caching|Caching patterns: cache-aside, write-through, invalidation, stampedes]]
 
 ### MongoDB Basics
 - [ ] Documents and collections

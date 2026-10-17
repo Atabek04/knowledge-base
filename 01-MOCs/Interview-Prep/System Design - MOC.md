@@ -101,16 +101,73 @@
 - [ ] RTO and RPO
 
 ### Caching
-- [ ] Cache-aside pattern
-- [ ] Write-through, write-behind
-- [ ] Cache invalidation
-- [[A cold cache sends every request to the database, causing a thundering herd|Cold cache sends every request to the DB — thundering herd]]
-- [ ] Cache stampede prevention
-- [[Reverse proxy hides the origin server's IP by relaying client requests to backend servers|CDN caching — reverse proxy caches origin responses at the edge]]
-- [[Forward proxy hides the client's identity by relaying requests to the destination server|Forward proxy — client-side counterpart to a CDN's reverse proxy]]
-- [ ] Hot key problem — single key overwhelms one shard, mitigation strategies
-- [ ] TTL jitter — randomizing expiry to prevent synchronized stampede
-- [ ] Multi-level caching — L1 local + L2 Redis + CDN layers
+
+#### Why and when to cache
+- [ ] Signals to add a cache: read-heavy load, expensive queries, high DB CPU, tight latency target
+- [ ] Hit ratio drives the payoff: what a miss costs and how it is measured
+- [ ] Deciding what to cache: hot, rarely changing, tolerant of staleness
+
+#### Where the cache lives
+- [ ] Client-side cache: browser and mobile, HTTP Cache-Control, ETag
+- [[Reverse proxy hides the origin server's IP by relaying client requests to backend servers|CDN caching: reverse proxy caches origin responses at the edge]]
+- [[Forward proxy hides the client's identity by relaying requests to the destination server|Forward proxy: client-side counterpart to a CDN's reverse proxy]]
+- [ ] Multi-level caching: L1 local plus L2 Redis plus CDN, and how layers go stale
+
+#### Local versus distributed cache
+- [ ] Local in-memory cache (Caffeine, Guava, a HashMap): lives in the app's heap, no network hop
+- [ ] Local cache costs: heap pressure, GC pauses, lost on every restart or deploy
+- [ ] Distributed cache (Redis, Memcached): a separate shared store every instance reads
+- [ ] Distributed cache costs: network latency, serialization, one more system to run and fail
+- [ ] Single instance: a local cache is consistent and often all you need
+- [ ] Multiple instances (pods): each holds its own copy, so a write updates one pod and the rest serve stale data
+- [ ] Keeping local caches in sync: short TTLs, pub/sub invalidation broadcast, or a distributed cache instead
+- [ ] Replicated vs partitioned caches: every node holds all keys, or each node owns a slice
+- [ ] Embedded distributed caches (Hazelcast, Infinispan): nodes inside the app cluster sharing data
+- [ ] Autoscaling and cold pods: a new pod starts with an empty local cache
+- [ ] Choosing: data size, staleness tolerance, instance count, latency budget
+
+#### Read and write patterns
+- [ ] Cache-aside (lazy loading): app reads cache, falls back to DB, fills cache
+- [ ] Read-through: the cache library loads from the DB on a miss
+- [ ] Write-through: write cache and DB together, and the dual-write problem
+- [ ] Write-behind (write-back): write cache first, flush to DB later, risk of loss
+- [ ] Write-around: write DB only, cache fills on the next read
+- [ ] Choosing a pattern by read/write ratio and consistency need
+
+#### Eviction and expiry
+- [ ] LRU, LFU, FIFO: which keys go when memory is full
+- [ ] TTL: expiry as a staleness bound
+- [ ] TTL jitter: randomizing expiry so keys do not expire together
+
+#### Consistency and invalidation
+- [ ] Delete on write versus update on write, and why delete is safer
+- [ ] Race between a stale read and a concurrent write in cache-aside
+- [ ] Invalidation from change data capture (CDC) or events
+- [ ] Short TTLs and accepting eventual consistency
+
+#### Failure modes
+- [[A cold cache sends every request to the database, causing a thundering herd|Cold cache sends every request to the DB: thundering herd]]
+- [ ] Cache avalanche: many keys expiring at once flood the DB
+- [ ] Cache stampede (breakdown): one hot key expires, many requests rebuild it
+- [ ] Stampede fixes: request coalescing (single flight), locks, early refresh, serve stale
+- [ ] Cache penetration: keys missing from cache and DB, fixed with null caching or a Bloom filter
+- [ ] Hot key: one key overwhelms one shard, fixed by replication or a local fallback
+- [ ] Cache crash: circuit breaker, clustering, cache warming
+
+#### When caching becomes an anti-pattern
+- [ ] Bimodal behaviour: a system that is healthy only while the cache is warm
+- [ ] A backend sized for the hit ratio cannot survive a cold or flushed cache
+- [ ] Metastable failure: refilling the cache saturates the DB, so the system cannot recover alone
+- [ ] Complete caches over partial ones: materialized views or full replication remove the cold mode
+- [ ] Caching to hide a slow design instead of fixing the query, index or data model
+- [ ] Caching data that changes faster than it is read: low hit ratio, pure overhead
+- [ ] Testing the cold-cache path: load tests and game days with the cache empty
+
+#### Distributed cache design
+- [ ] Partitioning keys across nodes with consistent hashing
+- [ ] Replication and failover for cache nodes
+- [ ] Redis persistence (RDB, AOF) and when a cache should not persist
+- [ ] Memcached versus Redis: data structures, threading, persistence
 
 ### Async Processing
 - [ ] Message queues
