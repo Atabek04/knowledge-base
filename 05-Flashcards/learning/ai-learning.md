@@ -165,3 +165,30 @@ Back: They teach **trust *and* distrust** — both are the point.
 Tags: learning ai-learning
 <!--ID: 1782128730174-->
 END
+
+START
+Coding Questions
+In Solé et al.'s LLM dependency model, what separates a **coupled** user from a **dependent** one?
+Back: Not frequency of use. A dependent user's coupling is **persistent** and **substitutive**: the LLM replaces their own reasoning. A coupled user uses it regularly but can still do the work alone.
+Tags: learning ai-learning
+<!--ID: 1791907067866-->
+END
+
+START
+Coding Questions
+Why is LLM dependency easier to **prevent** than to **reverse** in Solé et al.'s model?
+Back: **Hysteresis.** Social reinforcement of autonomous use keeps non-use stable until adoption pressure crosses the invasion threshold, then the population flips. On the way back that reinforcement is missing, so pressure must fall to a lower recovery threshold, and competence recovers less than it lost.
+Tags: learning ai-learning
+<!--ID: 1791907067873-->
+END
+
+START
+Coding Questions
+Which levers in the LLM dependency model move the tipping point, and which only protect competence?
+Back:
+- **Move it:** lower adoption pressure (λ), raise the return-to-non-use rate (ρ)
+- **Protect competence only:** lower the dependency rate (μ), raise recovery (σ). Dependent share = μ/(μ+σ)
+- Trap: stronger reinforcement (κ) delays the flip but widens the hysteresis gap
+Tags: learning ai-learning
+<!--ID: 1791907067874-->
+END

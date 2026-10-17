@@ -6,7 +6,7 @@ aliases: [AI in Education]
 
 What AI does to learning and teaching: when it tutors, when it becomes a crutch, and what is left for the human teacher and the school. Doubles as the roadmap for the thesis on AI-powered personalized learning, from tutoring-system architecture and learner models to the trials that test large language model tutors.
 
-Parent: none. Read in order; each section assumes the ones above. Teaching progress: discussion series done; section 2 (intelligent tutoring system anatomy) next.
+Parent: none. Read in order; each section assumes the ones above. Teaching progress: discussion series done; section 2, bullet 2 (step-based vs answer-based tutors) next.
 
 ---
 
@@ -22,7 +22,7 @@ Parent: none. Read in order; each section assumes the ones above. Teaching progr
 
 ## 2. Intelligent tutoring system anatomy and evidence (Core)
 
-- [ ] An intelligent tutoring system has four parts: domain model, learner model, tutoring model, and interface (Woolf 2009)
+- [[An intelligent tutoring system has four parts, and the learner model is what lets it remember a student|ITS anatomy: domain, learner, tutoring, interface]]
 - [ ] Step-based tutors give feedback on each solution step, unlike answer-based tutors that only grade the final answer (VanLehn 2011)
 - [ ] Human tutoring and step-based tutoring reach about the same effect, while answer-based tutoring reaches less (VanLehn 2011)
 - [ ] Intelligent tutoring systems beat conventional instruction with a clearly positive median effect (Kulik and Fletcher 2016)

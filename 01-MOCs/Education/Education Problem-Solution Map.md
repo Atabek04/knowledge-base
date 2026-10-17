@@ -25,7 +25,7 @@ Every entry has the same seven fields. A lever with no evidence is a hypothesis 
 
 - **Evidence:** human tutoring 0.29 SD across 89 RCTs (Nickow 2023); Bloom's 2 sigma shrinks in modern evidence.
 - **Root cause:** a tutor's hour is expensive, and rural Kazakhstan has few tutors.
-- **Platform lever:** an AI tutor that gives step-level hints, never final answers.
+- **Platform lever:** an AI tutor that gives step-level hints, never final answers, backed by an explicit learner model so weaknesses persist across sessions (Woolf 2009 four-part ITS design; a chat box alone has none).
 - **AI's role:** Socratic dialogue, error diagnosis, explanation in the learner's language.
 - **Risk:** plain chatbots raise practice scores and lower exam scores (Bastani 2025); intelligent tutors show near-zero effect in K-12 maths (Steenbergen-Hu and Cooper).
 - **Access and cost:** marginal cost per learner is model inference, falling yearly.
