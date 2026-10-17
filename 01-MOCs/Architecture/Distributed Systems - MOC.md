@@ -53,7 +53,7 @@
 - [ ] Consumer rebalancing & partition assignment strategies
 - [[Kafka delivers messages at-least-once by default and exactly-once with atomic offset commits|Kafka: at-least-once default, exactly-once with atomic offsets]]
 - [ ] Kafka Streams basics
-- [ ] Schema Registry (Avro, Protobuf)
+- [[Distributed Systems - MOC#Data Encoding and Schema Evolution|Schema Registry: Avro and Protobuf with compatibility checks]]
 - [ ] Dead Letter Queue (DLQ) pattern
 - [ ] Compacted topics
 
@@ -69,17 +69,23 @@
 - [ ] Pulsar vs Kafka — when each fits
 
 ### Event-Driven Architecture
-- [ ] Events vs Commands vs Queries
-- [ ] Event sourcing basics
-- [ ] Event store
-- [ ] Eventual consistency patterns
-- [ ] Choreography vs Orchestration
+- [[Event-Driven Architecture - MOC|Event-Driven Architecture: events, event sourcing, CQRS, sagas]]
+
+### Data Encoding and Schema Evolution
+- [ ] Encoding (serialization): turning in-memory objects into bytes and back
+- [ ] Language-specific serialization (Java Serializable, pickle) is a trap
+- [ ] Text formats: JSON, XML, CSV and their ambiguities (numbers, binary data)
+- [ ] Protobuf and Thrift: field tags stored in every message
+- [ ] Avro: writer's schema vs reader's schema, no tags in the data
+- [ ] Backward vs forward compatibility
+- [ ] Rolling deploys: old and new code reading each other's data
+- [ ] Schema Registry and compatibility modes (backward, forward, full)
+- [ ] Choosing a format: JSON vs Protobuf vs Avro
 
 ### Service Communication
 - [ ] Synchronous vs Asynchronous
 - [ ] Request-Reply pattern
 - [ ] Publish-Subscribe pattern
-- [ ] Message formats (JSON, Protobuf, Avro)
 - [ ] API versioning in distributed systems
 
 ---

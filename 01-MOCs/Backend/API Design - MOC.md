@@ -66,7 +66,7 @@
 - [ ] Input validation
 
 ### gRPC
-- [ ] Protocol Buffers (protobuf)
+- [[Distributed Systems - MOC#Data Encoding and Schema Evolution|Protocol Buffers: binary, schema-based encoding]]
 - [ ] Service definitions
 - [ ] Unary vs streaming
 - [ ] gRPC vs REST tradeoffs
@@ -95,7 +95,7 @@
 - [ ] gRPC
 - [ ] GraphQL
 - [ ] Message queues
-- [ ] Event-driven architecture
+- [[Event-Driven Architecture - MOC|Event-driven architecture: services react to events]]
 
 ---
 

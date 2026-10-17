@@ -52,17 +52,9 @@ Circuit breaker, retry, timeout, bulkhead and rate limiter live in their own roa
 - [ ] Message deduplication
 - [ ] At-least-once + idempotency = exactly-once
 
-#### CQRS
-- [ ] Command Query Responsibility Segregation
-- [ ] Separate read/write models
-- [ ] Event sourcing with CQRS
-- [ ] When to use CQRS
-
-#### Event Sourcing
-- [ ] Events as source of truth
-- [ ] Event store
-- [ ] Rebuilding state
-- [ ] Snapshots
+#### CQRS and Event Sourcing
+- [[Event-Driven Architecture - MOC#CQRS|CQRS: separate write and read models]]
+- [[Event-Driven Architecture - MOC#Event Sourcing|Event sourcing: the event log is the source of truth]]
 
 ### Service Discovery
 - [ ] Client-side discovery
