@@ -11,6 +11,8 @@ Different from [[Agentic Engineering MOC]], which is about *using* AI tools to w
 
 Distinct from ML Engineering — AI Engineers consume pre-trained models via APIs and fine-tuning; ML Engineers train models from scratch.
 
+> **Teaching Progress:** Fundamentals, embedding lookup (first sub-bullet under Word embeddings), started 2026-10-17
+
 ## Fundamentals
 
 - What is an AI Engineer
