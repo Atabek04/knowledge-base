@@ -245,6 +245,39 @@ END
 
 START
 Coding Questions
+What is self-interest?
+Back:
+What benefits **you personally**: your money, status, comfort, or reputation.
+
+It is not wrong in itself. It becomes a problem when it quietly decides what you **believe** or **judge**.
+Tags: self-mastery mindset self-knowledge
+<!--ID: 1791130146800-->
+END
+
+START
+Coding Questions
+What is a conflict of interest?
+Back:
+A situation where a person's **self-interest** pulls against a **duty to judge fairly** for others.
+
+Example: a scientist paid by a tobacco firm is asked whether smoking is safe. The answer that keeps the funding and the honest answer may differ.
+Tags: self-mastery mindset self-knowledge
+<!--ID: 1791130146803-->
+END
+
+START
+Coding Questions
+Does a conflict of interest mean the person is lying?
+Back:
+**No.** It means their judgment is **at risk**, not that it has failed.
+
+The claim may still be true, but it needs checking by someone **without the stake**.
+Tags: self-mastery mindset self-knowledge
+<!--ID: 1791130146805-->
+END
+
+START
+Coding Questions
 What is Sinclair's law, and who said it?
 Back:
 When a person's **income depends on not seeing a truth**, they resist seeing it.

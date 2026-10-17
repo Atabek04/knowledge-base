@@ -14,6 +14,16 @@ Upton Sinclair, an American writer, put it in one line in *I, Candidate for Gove
 
 ---
 
+### Self-interest and conflict of interest
+
+<mark style="background: #FFF3A3A6;">Self-interest is whatever benefits you personally: money, status, comfort, reputation.</mark> It is not wrong in itself.
+
+<mark style="background: #FFF3A3A6;">A conflict of interest is a situation where a person's self-interest pulls against a duty to judge fairly for others.</mark> A scientist paid by a tobacco firm and asked whether smoking is safe is in one.
+
+A conflict of interest does not prove the person is wrong or lying. It means their judgment is at risk and needs checking by someone without the stake.
+
+---
+
 ### Why it is not lying
 
 A liar sees the truth and hides it. The person Sinclair describes never fully sees it.
