@@ -21,6 +21,7 @@ Thumbs.db
 # Claude Code — track skills, ignore local settings + runtime data
 .claude/*
 !.claude/skills/
+!.claude/math-professor/
 # Skill eval scratch and generated artefacts — never source
 .claude/skills/*-workspace/
 __pycache__/
