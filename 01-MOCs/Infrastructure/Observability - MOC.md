@@ -115,12 +115,16 @@
 
 ### Distributed Tracing
 
+> Teaching Progress: stopped after tail sampling (2026-10-18). Baggage opener asked, not answered: how does a service four hops down learn the customer's plan without a new API parameter? Resume there, then Tools.
+
 #### Concepts
-- [ ] Spans and traces
-- [ ] Trace context propagation
+- [[Distributed tracing follows one request across services by sharing a trace ID|Trace ID: one shared ID follows a request across services]]
+    - [[A span records one timed unit of work and its parent span ID builds the trace into a tree|Spans: parent IDs build a tree, overlap reveals parallel calls]]
+- [[Trace context propagates in the traceparent header across HTTP and in record headers across Kafka|Propagation: traceparent over HTTP, record headers over Kafka]]
 - [ ] Baggage propagation
-- [ ] Sampling strategies
-- [ ] Parent-child relationships
+- [[Metrics compute percentiles while traces explain why one request was slow|Metrics vs traces: percentiles detect, traces explain, exemplars link]]
+- [[Head sampling decides at the first service so it usually drops the rare failing trace|Head sampling: a blind coin flip drops rare failures]]
+    - [[Tail sampling decides after the trace finishes so it can keep every error and slow request|Tail sampling: decide after the end, keep errors and slow traces]]
 
 #### Tools
 - [ ] OpenTelemetry
@@ -132,8 +136,6 @@
 
 #### Tracing pitfalls and anti-patterns
 - [ ] Context lost across async code, thread pools and message queues
-- [ ] Head sampling drops the rare slow or failing trace; tail-based sampling
-- [ ] Span per method: noise and cost
 - [ ] Personal data in span attributes
 - [ ] Instrumenting only some services, leaving gaps in the trace
 

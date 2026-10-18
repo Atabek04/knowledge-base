@@ -51,3 +51,27 @@ Back: The part that decides the next teaching move: which task, which hint, when
 Tags: learning its
 <!--ID: 1791913206590-->
 END
+
+START
+Coding Questions
+What is tutoring **granularity** (VanLehn 2011)?
+Back: The size of the unit of student work a tutor responds to: the whole **answer**, each **step**, or parts of a step (**substep**).
+Tags: learning its
+<!--ID: 1792329293730-->
+END
+
+START
+Coding Questions
+Two students give the same wrong case ending for different reasons. Why can't an answer-based tutor tell them apart?
+Back: A final answer is the output of every step at once: it shows **that** some step failed, not **which** one. A step-based tutor asks for each step (which word is the preposition? which case?) and so locates the error.
+Tags: learning its
+<!--ID: 1792329293734-->
+END
+
+START
+Coding Questions
+What must the interface do for a tutor to be step-based?
+Back: Make the student **enter the steps**. A box that receives only the final answer stays answer-based, however smart the model behind it.
+Tags: learning its
+<!--ID: 1792329293736-->
+END
