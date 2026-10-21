@@ -21,6 +21,21 @@ tags: [moc, postgresql, database, oltp]
 - [[Too many PostgreSQL connections cause CPU thrashing through excessive context switching|Too many connections → context-switch thrashing, not a RAM problem]]
 - [ ] Connection pooling (PgBouncer)
 
+## Roles & Access Control
+
+- [ ] Roles: user and group are one concept, LOGIN makes a role a user
+- [ ] Group roles with NOLOGIN (readonly, readwrite, ddl) granted to per-person login roles
+- [ ] GRANT and REVOKE on database, schema, table; USAGE on schema is required first
+- [ ] Revoking the PUBLIC defaults on the public schema and database
+- [ ] Object ownership: one NOLOGIN owner role for all objects, migrations run as it
+- [ ] ALTER DEFAULT PRIVILEGES: grants for tables not created yet
+- [ ] Predefined roles: pg_read_all_data, pg_write_all_data, pg_monitor
+- [ ] Separate roles per app service, never the superuser
+- [ ] pg_hba.conf: who may connect from where, with which auth method (scram-sha-256)
+- [ ] Row-level security policies
+- [ ] Audit logging with pgAudit
+- [ ] Short-lived credentials from Vault's database engine instead of shared passwords
+
 ## Transactions & Concurrency
 
 General relational concepts — ACID, the anomalies, isolation levels, locking strategies — live in → [[Database Transactions & Concurrency - MOC]]. Listed here only where PostgreSQL behaves *specially*.

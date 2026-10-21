@@ -138,6 +138,13 @@ Since 2026-06 the CARE program renews your CKA when you pass or renew the CKS, e
 - [ ] Authorization: RBAC Roles, ClusterRoles and bindings
 - [ ] ServiceAccounts, projected tokens, automountServiceAccountToken
 - [ ] `kubectl auth can-i` and impersonation
+- [ ] Kubernetes has no User object: humans come from OIDC or certificates, permissions only through bindings
+- [ ] Bind RBAC to OIDC groups, never to individual users
+- [ ] Per-team access: one namespace per team, a RoleBinding to the built-in view, edit or admin ClusterRole
+- [ ] Aggregated ClusterRoles: extending view and edit for CRDs
+- [ ] EKS access entries and access policies: IAM principals mapped to RBAC groups, replacing aws-auth
+- [ ] Workload cloud access: EKS Pod Identity and IRSA link a ServiceAccount to an IAM role
+- [ ] Break-glass admin access and why cluster-admin is never a daily role
 - [ ] Admission control: mutating and validating webhooks
 - [ ] ValidatingAdmissionPolicy with CEL
 - [ ] Pod Security Standards and Pod Security Admission labels

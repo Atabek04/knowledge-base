@@ -158,6 +158,16 @@
 - [ ] IAM roles for services — EC2/Lambda assume roles (no hardcoded keys)
 - [ ] Policy types: identity-based, resource-based, permission boundaries
 - [ ] STS (Security Token Service) — temporary credentials
+- [ ] Policy evaluation logic: explicit deny beats any allow, default is implicit deny
+- [ ] IAM Identity Center: humans sign in via SSO and assume permission sets, no long-lived IAM users
+
+#### Organizations
+- [ ] Organizations: accounts grouped into OUs, one account per environment or team
+- [ ] Service Control Policies: a ceiling on what any principal in an account may do
+
+#### CloudTrail
+- [ ] CloudTrail: an audit log of every API call, who did what, when, from where
+- [ ] Organization trail shipped to a separate, locked log-archive account
 
 #### KMS (Key Management Service)
 - [ ] Managed encryption keys
