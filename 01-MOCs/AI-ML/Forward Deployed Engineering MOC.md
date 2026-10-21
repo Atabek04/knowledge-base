@@ -34,6 +34,7 @@ The role sits between three things this vault already covers: building AI produc
 - [ ] MCP servers connect a model to a customer's own systems
 - [ ] Enterprise constraints: security review, data access, and legacy systems shape the design
 - [ ] Production ownership: monitoring, on-call and rollback after go-live
+- [ ] Regulated deployments: GxP validation and audit-ready agent test documentation
 
 ## Working With Customers
 

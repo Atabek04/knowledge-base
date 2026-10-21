@@ -109,12 +109,21 @@ The harness is everything wrapped around the model call: the loop, tools, permis
 - RAG with dynamic filters
 - RAG vs fine-tuning
 - RAGFlow, manual implementation
+- [ ] Hybrid search: BM25 keyword scores fused with vector similarity catch exact terms embeddings miss
+- [ ] Reranking: a cross-encoder re-scores the top candidates, trading latency for precision
+- [ ] Query rewriting: expand or decompose the user question before retrieval
+- [ ] Grounding with citations: every claim points to the chunk it came from
+- [ ] Agentic RAG: the agent decides when, where and how often to retrieve
+- [ ] GraphRAG: retrieve over an entity graph for questions that span documents
+- [ ] Managed retrieval: Azure AI Search, Bedrock Knowledge Bases
 - [[LLM wiki pattern replaces vector RAG with a maintained markdown knowledge graph|LLM wiki pattern replaces vector RAG with markdown]]
 
 ## Fine-Tuning
 
 - When to fine-tune vs RAG vs prompt engineering
 - Training basics for AI engineers
+- [ ] LoRA and PEFT: train small adapter matrices instead of all weights
+- [ ] Dataset engineering: curating, synthesizing and cleaning fine-tuning data
 
 ## Tool Use & Function Calling
 
@@ -122,6 +131,8 @@ The harness is everything wrapped around the model call: the loop, tools, permis
 - Function calling schemas
 - Structured output enforcement
 - Constraining tool inputs/outputs
+- [ ] REST integration: JSON contracts, OAuth2 client credentials vs API keys for agent tools
+- [ ] Microsoft Graph: one API over M365 mail, files, Teams and users for enterprise agents
 
 ## Agents (as Product)
 
@@ -130,6 +141,19 @@ The harness is everything wrapped around the model call: the loop, tools, permis
 - Multi-agent systems
 - Agent SDKs: Claude Agent SDK, OpenAI AgentKit, Google ADK, Vertex AI Agent Builder
 - ReAct pattern, ReAct prompting
+
+## Agent Design
+
+- [ ] Workflows vs agents: fixed code paths first, autonomy only when the task needs it
+- [ ] Workflow patterns: prompt chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer
+- [ ] Agent state: what the graph carries between steps and who may mutate it
+- [ ] Short-term vs long-term memory: thread history vs facts persisted across sessions
+- [ ] Checkpointing: persist state per step so a run can resume, replay or branch
+- [ ] Human-in-the-loop: interrupt before sensitive actions and wait for approval
+- [ ] Fallback flows: retry, switch model or degrade gracefully when a step fails
+- [ ] Escalation paths: hand off to a human when confidence or permissions run out
+- [ ] Compounding errors: per-step accuracy multiplies, so long chains fail more often
+- [ ] A2A protocol: agents from different vendors discover and call each other
 
 ## MCP (Model Context Protocol)
 
@@ -142,8 +166,16 @@ The harness is everything wrapped around the model call: the loop, tools, permis
 
 ## Frameworks
 
+- [ ] LangGraph: agents as a state graph with checkpoints, the most requested framework
 - LangChain (and LangChain for multimodal)
 - LlamaIndex (and LlamaIndex for multimodal)
+- [ ] Semantic Kernel and Microsoft Agent Framework: the Azure-native agent stack
+- [ ] AutoGen: multi-agent conversations between role agents
+- [ ] CrewAI: role-based crews with tasks and delegation
+- [ ] OpenAI Agents SDK: handoffs, guardrails and tracing built in
+- [ ] Strands SDK: model-driven agents, AWS Bedrock native
+- [ ] Pydantic AI: type-safe agents with validated outputs
+- [ ] Choosing a framework: raw API first, adopt a framework only for what it removes
 - Haystack
 - transformers.js
 
@@ -162,10 +194,50 @@ The harness is everything wrapped around the model call: the loop, tools, permis
 - Video understanding
 - [[AI Video Production MOC|AI video production: code-rendered and generative pipelines]]
 
+## Evaluation
+
+- [ ] Evals replace demos: a fixed test set decides whether a change helped
+- [ ] Golden datasets: curated inputs with expected outputs, grown from production failures
+- [ ] LLM-as-judge: a model grades outputs against a rubric, itself needing calibration
+- [ ] RAG metrics: retrieval recall and precision, faithfulness, groundedness, answer relevance
+- [ ] Agent evals: task completion and trajectory, not just the final answer
+- [ ] Regression evals in CI: block a prompt or model change that lowers scores
+- [ ] Online evals: user feedback and sampled production traces scored continuously
+
+## LLMOps & Observability
+
+- [ ] Tracing: every LLM call, tool call and retrieval as spans of one run
+- [ ] Langfuse and LangSmith: trace, prompt-version and eval platforms
+- [ ] OpenTelemetry GenAI semantic conventions: vendor-neutral LLM spans
+- [ ] Cost and latency budgets: tokens per request, p95 latency, cost per task
+- [ ] Model routing and fallback: cheap model first, escalate or switch provider on failure
+- [ ] Semantic caching: reuse answers for near-identical prompts
+- [ ] Prompt versioning: prompts as deployable artifacts with rollback
+
+## Cloud AI Platforms
+
+- [ ] Azure AI Foundry: model catalog, Agent Service, hosted agents, memory and built-in evaluation
+- [ ] AWS Bedrock and AgentCore: managed models, agent runtime, memory and gateway
+- [ ] Google Vertex AI: Gemini models, Agent Engine and ADK deployment
+- [ ] Multi-cloud agents: one agent codebase deployed to Azure and Bedrock
+
+## Deployment & Serving
+
+- [ ] Serving an agent behind FastAPI: async endpoints, streaming, timeouts
+- [ ] Containerizing AI services with Docker
+- [ ] CI/CD for agents: evals as a gate, Azure DevOps or GitHub Actions pipelines
+- [ ] Self-hosted serving with vLLM: continuous batching and PagedAttention
+- [ ] Inference optimization: quantization, KV cache, speculative decoding
+
 ## Safety, Security, Ethics
 
 - AI safety and ethics
 - Prompt injection attacks
+- [ ] Indirect prompt injection: instructions hidden in retrieved documents or tool results
+- [ ] OWASP Top 10 for LLM Applications: the standard risk checklist
+- [ ] Guardrails: input and output validators around the agent (Guardrails AI, NeMo, Azure Content Safety)
+- [ ] PII redaction before prompts and logs
+- [ ] EU AI Act: risk tiers and obligations for deployed systems
 - [[Jailbreaking crafts prompts that bypass an LLM's safety guardrails|Jailbreaking — prompts that bypass safety guardrails]]
 - [[Jailbreak defense layers because input and output filters run outside the model|Jailbreak defense — layer filters outside the model]]
 - Adversarial testing
