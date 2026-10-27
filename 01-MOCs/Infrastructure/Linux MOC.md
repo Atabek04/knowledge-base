@@ -74,6 +74,7 @@ Operating system fundamentals, Linux kernel architecture, Unix/Linux history, an
 ### Network & JSON CLI Tools
 
 - [[curl transfers data to and from servers over many protocols|curl: transfer data over many protocols]]
+    - [[curl MOC|curl roadmap: requests, -w formatting, endpoint probing]]
 - [[jq parses, filters, and transforms JSON data on the command line|jq: parse/filter/transform JSON in the shell]]
 
 ### Shell Scripting Fundamentals
