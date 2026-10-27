@@ -122,7 +122,7 @@ Where every discipline above is applied to building something new.
 - Customer discovery and validation (lean startup)
 - Business model design (Business Model Canvas)
 - Minimum viable product and lean testing
-- Entrepreneurial finance — seed funding, venture capital, valuation of startups
+- Entrepreneurial finance — seed funding, venture capital, valuation of startups (roadmap in [[Startups & Venture Funding MOC]])
 - Building the founding team
 - Go-to-market and scaling execution
 - *Canonical: Osterwalder, "Business Model Generation" · Ries, "The Lean Startup" · HBS Entrepreneurial Finance*
