@@ -30,6 +30,9 @@ Roadmap order: foundations, then messaging guarantees, then the four meanings of
 - [ ] Dead letter queues and retry topics
 - [ ] Backpressure and consumer lag
 - [ ] Log compaction: the topic as a durable table
+- [ ] Async request/reply over a broker: reply topic plus correlation id
+- [ ] Kafka listeners and advertised.listeners: clients reconnect to the address the broker advertises
+- [ ] Cross-cluster replication: MirrorMaker 2 copies topics between Kafka clusters
 
 ## Event Design and Schemas
 
@@ -76,6 +79,7 @@ Roadmap order: foundations, then messaging guarantees, then the four meanings of
 - [ ] Choreography vs orchestration
 - [ ] Saga pattern: local transactions plus compensations
 - [ ] Process manager and state machines
+- [ ] Integrating across organisations: shared broker vs replicated clusters vs async API at the boundary
 - [ ] Eventual consistency and how users experience it
     - [[Eventual consistency lets replicas accept writes during a partition and converge afterward|Eventual consistency: replicas converge after a partition]]
 
