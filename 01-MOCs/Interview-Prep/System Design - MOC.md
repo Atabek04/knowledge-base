@@ -92,6 +92,90 @@
 - [[A newly launched instance needs warm-up before it can serve traffic|New instance needs warm-up before serving — alive is not ready]]
 - [[Pre-warming and spare headroom absorb bursts that reactive scaling cannot|Pre-warm + headroom absorb bursts reactive scaling cannot]]
 
+### Surviving Traffic Spikes
+
+#### Why a spike takes a system down
+- [ ] A spike is arrival rate growing faster than capacity can; a push to every user is the classic trigger
+- [ ] Little's Law: requests in flight = arrival rate × latency, so a slower dependency raises concurrency at the same RPS
+- [ ] Utilization and the latency knee: past ~70-80% busy, queues grow and latency rises nonlinearly
+- [ ] Saturation is the first exhausted resource (threads, connections, file descriptors, ports), often not CPU
+- [ ] Idle CPU on a hung service usually means threads blocked on I/O
+- [ ] Latency collapse: clients time out and retry while the server finishes work nobody waits for
+- [ ] Thundering herd: many clients act at the same moment (push, cache expiry, reconnect after an outage)
+- [ ] Retry storm: retries at every layer multiply load (3 layers × 3 tries = 27×)
+- [ ] Cascading failure: an overloaded node drops out, its load moves to the survivors, they fall too
+- [ ] 502 vs 503 vs 504: bad or no upstream response / shed or no ready backend / upstream too slow
+
+#### Why autoscaling trails a spike
+- [ ] Scaling lag = metric delay + decision loop + instance start + warm-up + readiness
+- [ ] Scaling on CPU misses I/O-bound overload; scale on RPS, concurrency or queue depth
+- [ ] Scaling the app tier moves the bottleneck to the shared DB, auth server or downstream API
+- [ ] The ceiling is the hardware you own; elastic capacity is a cloud property, not a k8s one
+
+#### Defences
+- [ ] Capacity planning and load tests with realistic downstream latency, not only happy-path RPS
+- [ ] Headroom and pre-scaling before known events (scheduled scaling)
+- [ ] Spread the trigger: send pushes in batches with jitter over minutes, never to everyone in one second
+- [ ] Client-side jitter and backoff after app open and on errors
+- [ ] Rate limiting at the edge: token bucket per user, IP or endpoint
+- [[Load shedding drops excess requests to keep the core service alive|Load shedding: drop excess to keep the core alive]]
+- [ ] Virtual waiting room: admit N users per second into a hot flow
+- [ ] Timeouts on every call, budgets that shrink down the chain, deadline propagation
+- [ ] Retry budgets with capped, jittered exponential backoff
+- [ ] Bulkheads: a separate pool per dependency so one slow API cannot take every thread
+- [ ] Circuit breakers fail fast on a broken dependency and free threads
+- [ ] Graceful degradation: a cached or reduced answer instead of an error
+- [ ] Async work: accept, queue, process at a controlled rate
+- [ ] Caching hot reads, and the trap of a cache that hides missing capacity
+
+#### Kubernetes specifics
+- [ ] Requests drive scheduling and HPA percentages; CPU limits throttle, memory limits OOM-kill
+- [ ] Readiness removes a pod from Service endpoints; no ready pods means no endpoints
+- [ ] Liveness tied to a busy pool or a dependency kills pods under load and starts a restart loop
+- [ ] Startup probe shields a slow JVM start from liveness kills
+- [ ] HPA reaction time: 15 s sync loop, 15 s metrics-server scrape, 10% tolerance, new-pod readiness delay
+- [ ] HPA behavior: scale-up policies and stabilization windows
+- [ ] HPA on custom or external metrics; KEDA Prometheus scaler
+- [ ] KEDA cron scaler pre-scales before a known event
+- [ ] VPA modes; Recreate evicts pods; never VPA and HPA on the same CPU metric
+- [ ] PodDisruptionBudget covers voluntary disruptions only, not overload
+
+#### On-prem specifics
+- [ ] Fixed nodes: no Cluster Autoscaler, pods beyond free capacity stay Pending
+- [ ] Permanent headroom (spare replicas and nodes) replaces elastic capacity
+- [ ] L4 load balancing (LVS-DR, keepalived VIP) vs L7 (nginx)
+- [ ] nginx LB pair: active-passive (keepalived VRRP moves the VIP to the standby) vs active-active (both nodes serve, traffic split upstream)
+- [ ] TCP accept queue: listen backlog is capped by `net.core.somaxconn`
+- [ ] nginx `worker_connections` and `worker_rlimit_nofile`; a proxied request holds two connections
+- [ ] Ephemeral ports and the 4-tuple: an LB talking to one VIP:port runs out of local ports
+- [ ] Upstream `keepalive` pool reuses connections and cuts handshakes through the firewall
+- [ ] conntrack and firewall session tables: a full table drops new connections
+- [ ] nginx passive health checks: `max_fails`/`fail_timeout` mark a backend down after one timeout
+- [ ] `proxy_next_upstream` retries and their tries/timeout limits
+- [ ] nginx proxy connect/read timeouts (60 s default) hold slots for hung backends
+- [ ] Diagnose per hop with `$upstream_status`, `$upstream_response_time`, `$upstream_addr`
+
+#### JVM and Spring Boot specifics
+- [ ] Thread-per-request: Tomcat `maxThreads` 200, `acceptCount` 100, `maxConnections` 8192
+- [ ] Blocking calls to a slow SOAP gateway exhaust Tomcat threads, and health checks stall with them
+- [ ] HikariCP sizing: a small pool (~cores × 2) beats a big one
+- [ ] HTTP client pools: max-per-route and acquire timeout are hidden queues
+- [ ] JVM start, JIT warm-up and GC under tight CPU limits
+- [ ] Virtual threads (Java 21+) lift the thread cap, not the DB or downstream limits
+
+#### Case: 28.10.2026 push incident
+- [ ] Push to all users → ×8 users in 2 min → ~90-100k connections per LB → auth service hung with normal CPU → restart
+- [ ] Which defences above would have prevented it, cheapest first
+
+#### Read more
+- [Google SRE: Addressing Cascading Failures](https://sre.google/sre-book/addressing-cascading-failures/)
+- [Kubernetes: Horizontal Pod Autoscaling](https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/)
+- [Firebase: Scale FCM sending](https://firebase.google.com/docs/cloud-messaging/scale-fcm)
+- [nginx upstream module](https://nginx.org/en/docs/http/ngx_http_upstream_module.html)
+- [HikariCP: About Pool Sizing](https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing)
+- [AWS Builders' Library: Using load shedding to avoid overload](https://aws.amazon.com/builders-library/using-load-shedding-to-avoid-overload/)
+- [Tomcat HTTP connector](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html)
+
 ### High Availability
 - [ ] Redundancy
 - [ ] Failover mechanisms
