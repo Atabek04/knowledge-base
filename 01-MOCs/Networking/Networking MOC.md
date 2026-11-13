@@ -26,10 +26,19 @@ Concepts for understanding network communication patterns, protocols, and real-t
 - [[Network Layer wraps segments into packets by adding IP addresses|L3 Network: segments into packets with IP addresses]]
 - [[IP addresses flow hierarchically from IANA through RIRs and ISPs|IP allocation flows IANA → RIRs → ISPs]]
 - [[Routers have private IP for LAN and public IP for internet|Routers: private LAN IP, public internet IP (NAT)]]
+- [[Destination NAT forwards traffic from a public IP to a private server|Destination NAT: public IP forwarded to a private server]]
+- [[Hairpin NAT lets an inside client reach an inside server through its public address|Hairpin NAT: inside client U-turns through the public IP]]
 
 ### Layer 4: Transport
 - [[Transport Layer breaks data into segments with TCP headers|L4 Transport: data into segments with TCP headers]]
 - [[TCP provides reliable ordered error-checked data delivery over networks|TCP: reliable, ordered, error-checked delivery]]
+
+## DNS
+
+- [[DNS resolves a domain name to an IP address by asking a resolver|DNS: name to IP, answered by your resolver]]
+- [[Split-horizon DNS gives different answers for the same name depending on who asks|Split-horizon DNS: public IP outside, private IP inside]]
+- [[An internal DNS server that owns a zone never asks the public DNS for names in it|Internal zone copy hides public records]]
+- [[Hosts file and Kubernetes hostAliases override DNS for one machine or one pod|Hosts file and hostAliases override DNS locally]]
 
 ## Protocol Foundations
 
