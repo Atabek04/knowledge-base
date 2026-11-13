@@ -163,8 +163,8 @@
 - [ ] JVM start, JIT warm-up and GC under tight CPU limits
 - [ ] Virtual threads (Java 21+) lift the thread cap, not the DB or downstream limits
 
-#### Case: 28.10.2026 push incident
-- [ ] Push to all users → ×8 users in 2 min → ~90-100k connections per LB → auth service hung with normal CPU → restart
+#### Case: a push-triggered spike
+- [ ] Push to all users → active users jump an order of magnitude within minutes → load balancers saturate on connections → a shared dependency hangs with idle CPU → manual restart
 - [ ] Which defences above would have prevented it, cheapest first
 
 #### Read more
