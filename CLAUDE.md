@@ -511,6 +511,15 @@ An incident in `Incidents/` describes the <b>mechanism</b>, never the system it 
 - <b>Exception</b>: a public third-party breach already in the press may name the company and link its source.
 - No Impact or Timeline sections. If a lesson is reusable, it becomes an atomic note and the incident links it.
 
+### Real events anywhere in the published folders
+
+<b>The incident rules cover every published file, not only `Incidents/`.</b> A MOC "Case:" bullet, a worked example, or a scenario drawn from real work obeys the same Never and Always lists above. A real event is recognisable by its shape even with every name removed, so these details count as identifying too:
+
+- <b>Never</b>: the date or week it happened, exact or near-exact figures (user counts, multipliers, connection counts, durations, error rates), or a sentence that says which of the owner's own services broke.
+- <b>Always</b>: orders of magnitude ("an order of magnitude within minutes", "tens of thousands of connections"), and the role a component played ("a shared dependency", "the auth tier") instead of the system it was.
+- <b>Before every commit that touches a published folder</b>: scan the diff for dates, specific figures, and the words "case", "incident", "outage" or "our". Genericise anything that matches before committing, and tell the owner what was changed.
+- A detail that only makes sense with the real numbers stays private: put it in `00-Inbox/` or in a note with `draft: true`.
+
 ## Tech Stack Context
 
 - Languages: Java, Kotlin, Python
